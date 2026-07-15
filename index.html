@@ -878,11 +878,25 @@
     const featured = document.querySelector("#stageFeatured");
     const list = document.querySelector("#contentList");
 
+    function publicHref(href) {
+      const fileMatch = href.match(/drive\.google\.com\/file\/d\/([^/]+)\//);
+      if (fileMatch) {
+        return `https://drive.google.com/uc?export=download&id=${fileMatch[1]}`;
+      }
+      const folderMatch = href.match(/drive\.google\.com\/drive\/folders\/([^/?#]+)/);
+      if (folderMatch && !href.includes("usp=")) {
+        return `${href}?usp=sharing`;
+      }
+      return href;
+    }
+
     function linkButton(label, href) {
       const a = document.createElement("a");
       a.className = "button";
       a.textContent = label;
-      a.href = href;
+      a.href = publicHref(href);
+      a.target = "_blank";
+      a.rel = "noopener";
       return a;
     }
 
