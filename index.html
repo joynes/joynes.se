@@ -29,6 +29,7 @@
       color: var(--ink);
       font-family: "Lucida Console", "Courier New", monospace;
       scroll-behavior: smooth;
+      overflow-x: hidden;
     }
 
     body {
@@ -39,6 +40,7 @@
       --chaos-hue: 0deg;
       --drift-x: 0px;
       --drift-y: 0px;
+      padding-bottom: 42px;
     }
 
     body::before {
@@ -226,6 +228,7 @@
     .intro {
       position: relative;
       z-index: 1;
+      min-width: 0;
       transform-style: preserve-3d;
       animation: titleFloat 5.5s ease-in-out infinite, colorBob 11s linear infinite;
     }
@@ -316,6 +319,7 @@
     .category-panel {
       position: relative;
       z-index: 2;
+      min-width: 0;
       padding: 18px;
       border: 1px solid rgba(255, 176, 0, 0.42);
       border-radius: 6px;
@@ -543,6 +547,15 @@
       filter: hue-rotate(80deg) saturate(1.4);
     }
 
+    .button.playing {
+      color: var(--green);
+      border-color: var(--green);
+      background: rgba(81, 255, 138, 0.12);
+      box-shadow:
+        3px 3px 0 rgba(255, 90, 0, 0.58),
+        0 0 18px rgba(81, 255, 138, 0.35);
+    }
+
     .content-list {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -607,6 +620,429 @@
       font-size: 12px;
     }
 
+    .player {
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      z-index: 30;
+      width: min(330px, calc(100% - 20px));
+      min-height: 58px;
+      transform: translateY(calc(100% + 22px)) scale(0.96);
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 7px;
+      align-items: center;
+      padding: 7px;
+      border: 1px solid rgba(49, 243, 255, 0.55);
+      border-radius: 3px;
+      background:
+        linear-gradient(90deg, rgba(255, 176, 0, 0.2), transparent 38%),
+        linear-gradient(180deg, rgba(48, 48, 58, 0.96), rgba(3, 3, 7, 0.96));
+      box-shadow:
+        0 0 0 1px rgba(255, 176, 0, 0.25),
+        0 0 20px rgba(49, 243, 255, 0.22),
+        0 12px 34px rgba(0, 0, 0, 0.7);
+      opacity: 0;
+      pointer-events: none;
+      transition: transform 180ms ease, opacity 180ms ease;
+      backdrop-filter: blur(8px);
+    }
+
+    .player.ready {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .player::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 3px;
+      background:
+        repeating-linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.06) 0,
+          rgba(255, 255, 255, 0.06) 1px,
+          transparent 2px,
+          transparent 5px
+        );
+      opacity: 0.35;
+      pointer-events: none;
+    }
+
+    .player-main {
+      min-width: 0;
+      position: relative;
+      z-index: 1;
+      display: grid;
+      gap: 4px;
+    }
+
+    .player-label {
+      color: var(--green);
+      font-size: 9px;
+      text-transform: uppercase;
+      text-shadow: 0 0 12px rgba(81, 255, 138, 0.65);
+    }
+
+    .player-title {
+      color: var(--ink);
+      font-size: 11px;
+      line-height: 1.25;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      text-shadow: 2px 0 0 rgba(223, 29, 45, 0.65), -2px 0 0 rgba(49, 88, 255, 0.65);
+    }
+
+    .progress {
+      position: relative;
+      height: 8px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 176, 0, 0.45);
+      background:
+        linear-gradient(90deg, var(--cyan), var(--green), var(--amber), var(--red)) 0 / var(--pct, 0%) 100% no-repeat,
+        rgba(0, 0, 0, 0.45);
+      cursor: pointer;
+      touch-action: none;
+      appearance: none;
+      -webkit-appearance: none;
+      width: 100%;
+    }
+
+    .visualizer {
+      width: 100%;
+      height: 26px;
+      border: 1px solid rgba(49, 243, 255, 0.34);
+      background:
+        repeating-linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0.05) 0,
+          rgba(255, 255, 255, 0.05) 1px,
+          transparent 2px,
+          transparent 8px
+        ),
+        rgba(0, 0, 0, 0.36);
+      box-shadow: inset 0 0 16px rgba(49, 243, 255, 0.14);
+    }
+
+    .progress::-webkit-slider-runnable-track {
+      height: 8px;
+      background: transparent;
+    }
+
+    .progress::-moz-range-track {
+      height: 8px;
+      background: transparent;
+    }
+
+    .progress::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 8px;
+      height: 14px;
+      margin-top: -3px;
+      border: 1px solid var(--ink);
+      background: var(--cyan);
+      box-shadow: 0 0 12px rgba(49, 243, 255, 0.8);
+    }
+
+    .progress::-moz-range-thumb {
+      width: 8px;
+      height: 14px;
+      border: 1px solid var(--ink);
+      border-radius: 0;
+      background: var(--cyan);
+      box-shadow: 0 0 16px rgba(49, 243, 255, 0.7);
+    }
+
+    .player-controls {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+
+    .player-button {
+      display: inline-grid;
+      place-items: center;
+      width: 28px;
+      height: 24px;
+      border: 1px solid currentColor;
+      color: var(--cyan);
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.16), transparent 45%),
+        rgba(0, 0, 0, 0.42);
+      font: inherit;
+      font-size: 14px;
+      line-height: 1;
+      text-transform: uppercase;
+      cursor: pointer;
+      box-shadow: 2px 2px 0 rgba(255, 90, 0, 0.5);
+    }
+
+    .player-button:hover {
+      color: var(--green);
+      filter: hue-rotate(90deg) saturate(1.4);
+    }
+
+    .player-button.small {
+      width: 23px;
+      height: 22px;
+      font-size: 12px;
+      color: var(--amber);
+    }
+
+    .queue {
+      position: relative;
+      z-index: 1;
+      display: none;
+      width: 100%;
+      max-height: 96px;
+      overflow: auto;
+      padding: 6px;
+      border: 1px solid rgba(255, 176, 0, 0.24);
+      color: var(--muted);
+      font-size: 10px;
+      line-height: 1.45;
+      background: rgba(0, 0, 0, 0.22);
+    }
+
+    .player.queue-open .queue {
+      display: block;
+    }
+
+    .queue-track {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .queue-track.active {
+      color: var(--green);
+    }
+
+    .book-reader {
+      position: relative;
+      z-index: 3;
+      display: grid;
+      gap: 14px;
+      margin: 22px 0;
+      padding: 18px;
+      border: 1px solid rgba(255, 176, 0, 0.44);
+      border-radius: 6px;
+      background:
+        radial-gradient(circle at 12% 20%, rgba(81, 255, 138, 0.16), transparent 25%),
+        radial-gradient(circle at 88% 0%, rgba(223, 29, 45, 0.18), transparent 28%),
+        linear-gradient(135deg, rgba(49, 243, 255, 0.1), rgba(0, 0, 0, 0.72));
+      box-shadow:
+        0 0 0 1px rgba(49, 243, 255, 0.18),
+        0 0 34px rgba(255, 176, 0, 0.16);
+      overflow: hidden;
+    }
+
+    .book-reader[hidden] {
+      display: none;
+    }
+
+    .book-reader::before {
+      content: "READ MODE";
+      position: absolute;
+      right: 14px;
+      top: 10px;
+      color: rgba(49, 243, 255, 0.16);
+      font-size: clamp(30px, 9vw, 96px);
+      font-weight: 900;
+      letter-spacing: 0;
+      pointer-events: none;
+      animation: ghostFloat 6s ease-in-out infinite alternate;
+    }
+
+    .book-toolbar,
+    .book-page,
+    .book-nav {
+      position: relative;
+      z-index: 1;
+    }
+
+    .book-kicker {
+      margin: 0 0 8px;
+      color: var(--green);
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .book-toolbar h2 {
+      margin: 0;
+      color: var(--amber);
+      font-size: clamp(26px, 6vw, 54px);
+      line-height: 0.98;
+      text-transform: uppercase;
+      text-shadow: 3px 0 0 rgba(223, 29, 45, 0.7), -3px 0 0 rgba(49, 88, 255, 0.62);
+    }
+
+    .book-tabs {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 2px 0 10px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+      scrollbar-color: var(--amber) rgba(0, 0, 0, 0.3);
+    }
+
+    .chapter-button {
+      flex: 0 0 auto;
+      min-width: 46px;
+      min-height: 36px;
+      border: 1px solid rgba(49, 243, 255, 0.48);
+      color: var(--cyan);
+      background: rgba(0, 0, 0, 0.38);
+      font: inherit;
+      font-size: 12px;
+      cursor: pointer;
+      box-shadow: 2px 2px 0 rgba(223, 29, 45, 0.45);
+    }
+
+    .chapter-button.active {
+      color: var(--green);
+      border-color: var(--green);
+      background: rgba(81, 255, 138, 0.12);
+    }
+
+    .book-page {
+      --book-paper: #f4e5b3;
+      --book-paper-2: #d7c878;
+      --book-ink: #2b2214;
+      --book-heading: #8d1c1c;
+      --book-accent: #ff5a00;
+      --book-note: #6a3b18;
+      position: relative;
+      min-height: 320px;
+      max-height: min(68vh, 720px);
+      overflow: auto;
+      padding: clamp(18px, 4vw, 38px);
+      border: 1px solid rgba(49, 243, 255, 0.28);
+      background:
+        radial-gradient(circle at 18% 12%, rgba(255, 176, 0, 0.18), transparent 16rem),
+        radial-gradient(circle at 86% 24%, rgba(255, 90, 0, 0.09), transparent 13rem),
+        repeating-linear-gradient(
+          0deg,
+          rgba(95, 70, 24, 0.12) 0,
+          rgba(95, 70, 24, 0.12) 1px,
+          transparent 2px,
+          transparent 6px
+        ),
+        repeating-linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0.07) 0,
+          rgba(255, 255, 255, 0.07) 1px,
+          transparent 1px,
+          transparent 28px
+        ),
+        linear-gradient(135deg, var(--book-paper, #f1e6b9), var(--book-paper-2, #d8c88e));
+      color: var(--book-ink, #160e08);
+      font-family: "Lucida Console", "Courier New", monospace;
+      font-size: clamp(15px, 2.2vw, 18px);
+      line-height: 1.78;
+      box-shadow:
+        inset 0 0 34px rgba(33, 18, 0, 0.24),
+        inset 0 0 0 3px rgba(255, 255, 255, 0.08),
+        0 0 24px rgba(49, 243, 255, 0.12);
+      text-shadow: 1px 0 0 rgba(223, 29, 45, 0.12);
+    }
+
+    .book-page::before,
+    .book-page::after {
+      content: "";
+      position: sticky;
+      display: block;
+      height: 0;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .book-page::before {
+      top: 0;
+      box-shadow:
+        0 0 0 9999px rgba(255, 255, 255, 0),
+        inset 0 18px 24px rgba(255, 255, 255, 0.18);
+    }
+
+    .book-page::after {
+      bottom: 0;
+      box-shadow: inset 0 -24px 26px rgba(0, 0, 0, 0.2);
+    }
+
+    .book-page h3 {
+      position: relative;
+      margin: 0 0 22px;
+      color: var(--book-heading, #6a190d);
+      font-family: "Lucida Console", "Courier New", monospace;
+      font-size: clamp(21px, 5vw, 40px);
+      line-height: 1.08;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      text-shadow:
+        2px 0 0 rgba(223, 29, 45, 0.35),
+        -2px 0 0 rgba(49, 243, 255, 0.28);
+    }
+
+    .book-page h3::after {
+      content: "";
+      display: block;
+      width: min(180px, 52%);
+      height: 4px;
+      margin-top: 14px;
+      background: linear-gradient(90deg, var(--book-accent, var(--amber)), transparent);
+      box-shadow: 0 0 16px var(--book-accent, var(--amber));
+    }
+
+    .book-page p {
+      position: relative;
+      margin: 0 0 1.18em;
+      padding: 0.1em 0;
+    }
+
+    .book-page p.dialogue {
+      margin-left: 0;
+      padding: 0.45em 0.55em 0.45em 1.05em;
+      border-left: 3px solid var(--book-accent, var(--cyan));
+      background:
+        linear-gradient(90deg, rgba(49, 243, 255, 0.12), transparent 68%),
+        rgba(0, 0, 0, 0.035);
+      text-indent: 0;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.055);
+    }
+
+    .book-page p.note {
+      display: inline-block;
+      padding: 0.45em 0.7em;
+      border: 1px dashed color-mix(in srgb, var(--book-accent, var(--amber)) 62%, #000 38%);
+      color: var(--book-note, #563c22);
+      font-style: italic;
+      background: rgba(255, 255, 255, 0.16);
+      transform: rotate(-0.35deg);
+    }
+
+    .book-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .book-count {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
     @media (max-width: 900px) {
       .hero,
       .stage {
@@ -615,7 +1051,71 @@
 
       .hero {
         min-height: auto;
-        padding: 46px 0 38px;
+        gap: 16px;
+        padding: 28px 0 28px;
+      }
+
+      .category-panel {
+        position: sticky;
+        top: 58px;
+        z-index: 9;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        padding: 10px;
+        margin-inline: -6px;
+        border-radius: 4px;
+        animation: none;
+      }
+
+      .panel-label {
+        margin-bottom: 8px;
+        font-size: 11px;
+      }
+
+      .category-grid {
+        display: flex;
+        grid-template-columns: none;
+        gap: 8px;
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 0 2px 10px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-color: var(--cyan) rgba(0, 0, 0, 0.38);
+        scrollbar-width: thin;
+      }
+
+      .category-grid::-webkit-scrollbar {
+        height: 7px;
+      }
+
+      .category-grid::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.36);
+      }
+
+      .category-grid::-webkit-scrollbar-thumb {
+        background: linear-gradient(90deg, var(--cyan), var(--amber), var(--green));
+        border-radius: 999px;
+      }
+
+      .category-button {
+        flex: 0 0 clamp(116px, 26vw, 154px);
+        min-height: 50px;
+        padding: 9px;
+        scroll-snap-align: start;
+        box-shadow: 2px 2px 0 rgba(255, 90, 0, 0.55);
+      }
+
+      .category-name {
+        font-size: 13px;
+      }
+
+      .category-sub {
+        display: none;
       }
 
       .stage {
@@ -638,56 +1138,26 @@
         text-align: left;
       }
 
-      .category-grid,
       .content-list {
         grid-template-columns: 1fr;
       }
 
       .hero {
-        gap: 16px;
         padding-top: 22px;
       }
 
       .category-panel {
-        position: sticky;
-        top: 56px;
-        z-index: 9;
-        padding: 10px;
-        margin-inline: -6px;
-        border-radius: 4px;
-      }
-
-      .panel-label {
-        margin-bottom: 8px;
-        font-size: 11px;
-      }
-
-      .category-grid {
-        display: flex;
-        gap: 8px;
-        overflow-x: auto;
-        padding: 0 0 8px;
-        scroll-snap-type: x mandatory;
+        top: 72px;
       }
 
       .category-button {
-        flex: 0 0 118px;
-        min-height: 48px;
-        padding: 9px;
-        scroll-snap-align: start;
-        box-shadow: 2px 2px 0 rgba(255, 90, 0, 0.55);
-      }
-
-      .category-name {
-        font-size: 13px;
-      }
-
-      .category-sub {
-        display: none;
+        flex-basis: 112px;
       }
 
       h1 {
         font-size: clamp(48px, 22vw, 104px);
+        max-width: 100%;
+        overflow-wrap: anywhere;
       }
 
       .tagline {
@@ -697,6 +1167,26 @@
 
       .stage {
         padding: 14px;
+      }
+
+      .player {
+        right: 8px;
+        bottom: 8px;
+        width: min(310px, calc(100% - 16px));
+        padding: 7px;
+      }
+
+      .player-controls {
+        gap: 5px;
+      }
+
+      .book-reader {
+        padding: 12px;
+      }
+
+      .book-page {
+        max-height: 56vh;
+        padding: 18px;
       }
     }
 
@@ -747,11 +1237,48 @@
 
     <section id="contentList" class="content-list" aria-label="Selected archive items"></section>
 
+    <section id="bookReader" class="book-reader" aria-label="Jaro och Grodan book" hidden>
+      <div class="book-toolbar">
+        <p class="book-kicker">Story archive // local read mode</p>
+        <h2>Jaro och Grodan</h2>
+      </div>
+      <div id="chapterTabs" class="book-tabs" aria-label="Book chapters"></div>
+      <article class="book-page">
+        <h3 id="chapterTitle">Chapter waits for signal</h3>
+        <div id="chapterBody"></div>
+      </article>
+      <div class="book-nav">
+        <button class="button" id="prevChapter" type="button">Previous</button>
+        <span class="book-count" id="chapterCount">0 / 0</span>
+        <button class="button" id="nextChapter" type="button">Next</button>
+        <button class="button" id="closeBook" type="button">Close book</button>
+      </div>
+    </section>
+
+    <aside class="player" id="player" aria-label="Music player">
+      <audio id="audioElement" preload="metadata" playsinline></audio>
+      <div class="player-main">
+        <div class="player-label" id="playerLabel">No track loaded</div>
+        <div class="player-title" id="playerTitle">Choose a song from Music, Old MP3 or Jaro & Grodan</div>
+        <canvas class="visualizer" id="visualizer" aria-hidden="true"></canvas>
+        <input class="progress" id="progress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+      </div>
+      <div class="player-controls">
+        <button class="player-button small" id="prevTrack" type="button" aria-label="Previous track" title="Previous">⏮</button>
+        <button class="player-button" id="togglePlay" type="button" aria-label="Play" title="Play">▶</button>
+        <button class="player-button small" id="nextTrack" type="button" aria-label="Next track" title="Next">⏭</button>
+        <button class="player-button small" id="toggleQueue" type="button" aria-label="Show playlist" title="Playlist">▤</button>
+        <button class="player-button small" id="hidePlayer" type="button" aria-label="Hide player" title="Hide">×</button>
+        <div class="queue" id="queueList">Playlist waits for first signal.</div>
+      </div>
+    </aside>
+
     <footer>
       joynes.se // HTML on GitHub Pages // archive files linked directly from Google Drive
     </footer>
   </main>
 
+  <script src="assets/jaro-book.js"></script>
   <script>
     const categories = [
       {
@@ -877,11 +1404,71 @@
     const description = document.querySelector("#stageDescription");
     const featured = document.querySelector("#stageFeatured");
     const list = document.querySelector("#contentList");
-
+    const player = document.querySelector("#player");
+    const audio = document.querySelector("#audioElement");
+    const playerLabel = document.querySelector("#playerLabel");
+    const playerTitle = document.querySelector("#playerTitle");
+    const progress = document.querySelector("#progress");
+    const visualizer = document.querySelector("#visualizer");
+    const visualizerCtx = visualizer.getContext("2d");
+    const queueList = document.querySelector("#queueList");
+    const togglePlay = document.querySelector("#togglePlay");
+    const prevTrack = document.querySelector("#prevTrack");
+    const nextTrack = document.querySelector("#nextTrack");
+    const toggleQueue = document.querySelector("#toggleQueue");
+    const hidePlayer = document.querySelector("#hidePlayer");
+    const bookReader = document.querySelector("#bookReader");
+    const chapterTabs = document.querySelector("#chapterTabs");
+    const bookPage = document.querySelector(".book-page");
+    const chapterTitle = document.querySelector("#chapterTitle");
+    const chapterBody = document.querySelector("#chapterBody");
+    const chapterCount = document.querySelector("#chapterCount");
+    const prevChapter = document.querySelector("#prevChapter");
+    const nextChapter = document.querySelector("#nextChapter");
+    const closeBook = document.querySelector("#closeBook");
+    const bookChapters = window.jaroBookChapters || [];
+    let currentChapterIndex = 0;
+    const savedBookState = JSON.parse(localStorage.getItem("joynesBookState") || "{}");
+    const bookScrollPositions = savedBookState.scrollPositions || {};
+    let lastBookChapterIndex = savedBookState.chapterIndex || 0;
+    let currentCategory = categories[0];
+    let playlist = [];
+    let currentTrackIndex = -1;
+    let audioContext;
+    let analyser;
+    let analyserData;
+    let audioEnergy = 0;
+    let bassEnergy = 0;
+    let visualizerReady = false;
+    const localAudio = {
+      "1vNt2hkEQtSwjHo7Ylfll3P9eC1znW5AI": "assets/audio/01-02-joynes-babble-20.mp3",
+      "1AVLAEd7aFaeDYTCFcMLmleV-WejtTwMg": "assets/audio/02-03-joynes-cyborg-hybrid.mp3",
+      "1NbzHEFaCKILOCOqpU6QY2wXm3vjzNasD": "assets/audio/03-04-joynes-flangman.mp3",
+      "15ikpxU4WS3vS9GEuhMsEZC7Z5KErUtGj": "assets/audio/04-05-joynes-sor-the-bridge.mp3",
+      "1kaU5iF7jg-yMCmvkQinOVDI7imfmvEeG": "assets/audio/05-06-joynes-ich-bin-stark.mp3",
+      "18ftDgEyaIUtr4OsRF_DPhtqW_Vt4BhEg": "assets/audio/06-07-joynes-jaro-and-grodan.mp3",
+      "1fmzkD03YIFPIbQjEcgtC9aBWFgWGzkaF": "assets/audio/07-08-joynes-mod4-maria-remix.mp3",
+      "1S5rwI-_Z1cdz8WMHeN3e8rfJAeM1v698": "assets/audio/08-09-joynes-tror-jag-vet-vad-du-vill-ha.mp3",
+      "1qfVi5GcYoXM1fx8aKOIdlLIUGFCkdXRx": "assets/audio/09-10-joynes-ninjaneedsbass.mp3",
+      "1-Xp_STC122y5rCDvOtRZWxaFyrZCR6JG": "assets/audio/10-sectop.mp3",
+      "1WDPnpiOIz83tT2WtnqLmYIFSXbKEK4Zv": "assets/audio/11-bacols.mp3",
+      "1YTCRhjgGbaQTdyrVnnrf3T2UToKf85QH": "assets/audio/12-danf.mp3",
+      "1Qkl9tvAXNOc1uEYUANuw-2Alzlj62Odp": "assets/audio/13-drakz.mp3",
+      "1_QcQfeNK-_lr8uk3Sj5jPdzOmTET0fHG": "assets/audio/14-druno.mp3",
+      "1SYxi1JRx5whTT_4BWCdEbT49FDrq6oYz": "assets/audio/15-dzew2x.mp3",
+      "1AtFGZJ4uAiCOyDp3YpedmZ0M2pyMTvOG": "assets/audio/16-hentia.mp3",
+      "1OoexLejv6I8wGARWKfcxP8XUS4CsFcgC": "assets/audio/17-hrm.mp3",
+      "18yKtydWlCh_iIj44PQ817Tmxxo03GXZX": "assets/audio/18-nudro.mp3",
+      "1NfJ5bARwXxuWKY5X_bxrp28qSLXUxcos": "assets/audio/19-sbantmod.mp3",
+      "1Rhr6TLR8nAqREnG5G1tZTAA-BJlg0qtD": "assets/audio/20-sdrugzl2.mp3",
+      "1YU4d8cKDRVM4bL5lOxPJ-OnmlNh5xvhj": "assets/audio/21-serd.mp3",
+      "1Z5IokTdUy0OqP97NhosvPnbxBEzntsSn": "assets/audio/22-sploth.mp3",
+      "1UgRTK9CYg3s-45Xqji22-7wXKblqLyJO": "assets/audio/23-tnes.mp3"
+    };
     function publicHref(href) {
       const fileMatch = href.match(/drive\.google\.com\/file\/d\/([^/]+)\//);
       if (fileMatch) {
-        return `https://drive.google.com/uc?export=download&id=${fileMatch[1]}`;
+        return `https://drive.usercontent.google.com/download?id=${fileMatch[1]}&export=download`;
       }
       const folderMatch = href.match(/drive\.google\.com\/drive\/folders\/([^/?#]+)/);
       if (folderMatch && !href.includes("usp=")) {
@@ -890,7 +1477,248 @@
       return href;
     }
 
-    function linkButton(label, href) {
+    function isDriveFile(href) {
+      return /drive\.google\.com\/file\/d\/([^/]+)\//.test(href);
+    }
+
+    function driveFileId(href) {
+      return href.match(/drive\.google\.com\/file\/d\/([^/]+)\//)?.[1];
+    }
+
+    function audioHref(href) {
+      const id = driveFileId(href);
+      return id && localAudio[id] ? localAudio[id] : publicHref(href);
+    }
+
+    function isPlayableAction(category, label, href, context = "item") {
+      if (!isDriveFile(href)) return false;
+      if (context === "featured") {
+        if (category.id === "music" || category.id === "old") return true;
+        return label === "Song";
+      }
+      if (category.id === "music" || category.id === "old") return label === "Drive";
+      return label === "Song";
+    }
+
+    function isBookAction(label, href) {
+      if (!isDriveFile(href)) return false;
+      return /text|txt|doc|story/i.test(label) || /^html\s+\d+$/i.test(label);
+    }
+
+    function renderChapterTabs() {
+      chapterTabs.replaceChildren(...bookChapters.map((chapter, index) => {
+        const button = document.createElement("button");
+        button.className = `chapter-button${index === currentChapterIndex ? " active" : ""}`;
+        button.type = "button";
+        button.textContent = index === 0 ? "P" : String(index).padStart(2, "0");
+        button.title = chapter.title;
+        button.addEventListener("click", () => showChapter(index));
+        return button;
+      }));
+    }
+
+    function renderParagraphs(text) {
+      const paragraphs = [];
+      let buffer = [];
+      const flush = (className = "") => {
+        const content = buffer.join(" ").replace(/\s+/g, " ").trim();
+        buffer = [];
+        if (!content) return;
+        paragraphs.push({ className, content });
+      };
+
+      text.split("\n").forEach((rawLine) => {
+        const line = rawLine.trim();
+        if (!line) {
+          flush();
+          return;
+        }
+        if (/^[-–]\s+/.test(line)) {
+          flush();
+          paragraphs.push({ className: "dialogue", content: line });
+          return;
+        }
+        if (/^Jaro\s+o(?:ch)?\s+grodan\s+(?:del\s+)?\d+/i.test(line)) {
+          flush();
+          paragraphs.push({ className: "note", content: line });
+          return;
+        }
+        if (/^(Fortsättning|Spännande|Som vanligt|Då blir|Fan\.|Okej,|okej,|Detta avsnitt|Jag kan inte ens|Hur ska|Ska de)/i.test(line)) {
+          flush();
+          paragraphs.push({ className: "note", content: line });
+          return;
+        }
+        buffer.push(line);
+      });
+      flush();
+
+      if (!paragraphs.length) {
+        const empty = document.createElement("p");
+        empty.textContent = "No text in this chapter.";
+        return [empty];
+      }
+      return paragraphs.map(({ className, content }) => {
+        const p = document.createElement("p");
+        if (className) p.className = className;
+        p.textContent = content;
+        return p;
+      });
+    }
+
+    function saveBookPosition() {
+      if (!bookChapters.length) return;
+      bookScrollPositions[currentChapterIndex] = bookPage.scrollTop;
+      lastBookChapterIndex = currentChapterIndex;
+      localStorage.setItem("joynesBookState", JSON.stringify({
+        chapterIndex: currentChapterIndex,
+        scrollPositions: bookScrollPositions
+      }));
+    }
+
+    function showChapter(index, options = {}) {
+      if (!bookChapters.length) return;
+      if (!options.skipSave) saveBookPosition();
+      currentChapterIndex = (index + bookChapters.length) % bookChapters.length;
+      lastBookChapterIndex = currentChapterIndex;
+      const chapter = bookChapters[currentChapterIndex];
+      chapterTitle.textContent = chapter.title;
+      chapterBody.replaceChildren(...renderParagraphs(chapter.body));
+      chapterCount.textContent = `${currentChapterIndex + 1} / ${bookChapters.length}`;
+      renderChapterTabs();
+      bookPage.scrollTop = options.forceTop ? 0 : (bookScrollPositions[currentChapterIndex] || 0);
+      saveBookPosition();
+    }
+
+    function openBook(index = lastBookChapterIndex) {
+      if (!bookChapters.length) return;
+      bookReader.hidden = false;
+      showChapter(index, { skipSave: true });
+      bookReader.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    function playableFromCategory(category) {
+      return category.items.flatMap(([name, meta, actions]) => {
+        const playable = actions.find(([label, href]) => isPlayableAction(category, label, href));
+        return playable ? [{ title: name, meta, href: audioHref(playable[1]) }] : [];
+      });
+    }
+
+    function renderQueue() {
+      if (!playlist.length) {
+        queueList.textContent = "Playlist waits for first signal.";
+        return;
+      }
+      queueList.replaceChildren(...playlist.map((track, index) => {
+        const row = document.createElement("div");
+        row.className = `queue-track${index === currentTrackIndex ? " active" : ""}`;
+        row.textContent = `${String(index + 1).padStart(2, "0")} ${track.title}`;
+        return row;
+      }));
+    }
+
+    function setPlayingButtons() {
+      document.querySelectorAll("[data-play-url]").forEach((button) => {
+        button.classList.toggle("playing", button.dataset.playUrl === audio.src && !audio.paused);
+      });
+    }
+
+    function setPlayIcon(isPlaying) {
+      togglePlay.textContent = isPlaying ? "⏸" : "▶";
+      togglePlay.setAttribute("aria-label", isPlaying ? "Pause" : "Play");
+      togglePlay.title = isPlaying ? "Pause" : "Play";
+    }
+
+    function showPlayer() {
+      player.classList.add("ready");
+    }
+
+    function setupAudioAnalysis() {
+      if (visualizerReady) {
+        audioContext?.resume?.();
+        return;
+      }
+      const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+      if (!AudioContextClass) return;
+      audioContext = new AudioContextClass();
+      analyser = audioContext.createAnalyser();
+      analyser.fftSize = 256;
+      analyser.smoothingTimeConstant = 0.78;
+      analyserData = new Uint8Array(analyser.frequencyBinCount);
+      const source = audioContext.createMediaElementSource(audio);
+      source.connect(analyser);
+      analyser.connect(audioContext.destination);
+      visualizerReady = true;
+    }
+
+    function wirePress(element, handler) {
+      let lastPointer = 0;
+      element.addEventListener("pointerdown", (event) => {
+        if (event.button && event.button !== 0) return;
+        lastPointer = Date.now();
+        handler(event);
+      });
+      element.addEventListener("click", (event) => {
+        if (Date.now() - lastPointer < 600) return;
+        handler(event);
+      });
+    }
+
+    function playTrack(index) {
+      if (!playlist.length) return;
+      showPlayer();
+      setupAudioAnalysis();
+      currentTrackIndex = (index + playlist.length) % playlist.length;
+      const track = playlist[currentTrackIndex];
+      if (audio.src !== track.href) {
+        audio.src = track.href;
+      }
+      playerLabel.textContent = `Loading track // ${currentTrackIndex + 1} of ${playlist.length}`;
+      playerTitle.textContent = track.title;
+      setPlayIcon(true);
+      renderQueue();
+      setPlayingButtons();
+      audio.play().then(() => {
+        playerLabel.textContent = `Now playing // ${currentTrackIndex + 1} of ${playlist.length}`;
+        playerTitle.textContent = track.title;
+        setPlayIcon(true);
+        renderQueue();
+        setPlayingButtons();
+      }).catch((error) => {
+        playerLabel.textContent = error?.name === "NotAllowedError" ? "Tap play to start" : "Could not start audio";
+        playerTitle.textContent = track.title;
+        setPlayIcon(false);
+        renderQueue();
+        setPlayingButtons();
+      });
+    }
+
+    function startPlaylist(category, href) {
+      playlist = playableFromCategory(category);
+      const directHref = audioHref(href);
+      const index = playlist.findIndex((track) => track.href === directHref);
+      playTrack(index >= 0 ? index : 0);
+    }
+
+    function linkButton(label, href, category, context = "item") {
+      if (category && isPlayableAction(category, label, href, context)) {
+        const button = document.createElement("button");
+        button.className = "button";
+        button.type = "button";
+        button.textContent = label === "Song" ? "Play song" : "Play";
+        button.dataset.playUrl = audioHref(href);
+        wirePress(button, () => startPlaylist(category, href));
+        return button;
+      }
+
+      if (isBookAction(label, href)) {
+        const button = document.createElement("button");
+        button.className = "button";
+        button.type = "button";
+        button.textContent = "Read book";
+        button.addEventListener("click", () => openBook());
+        return button;
+      }
+
       const a = document.createElement("a");
       a.className = "button";
       a.textContent = label;
@@ -904,13 +1732,14 @@
       document.querySelectorAll(".category-button").forEach((button) => {
         button.classList.toggle("active", button.dataset.category === category.id);
       });
+      currentCategory = category;
 
       visual.dataset.glyph = category.glyph;
       kicker.textContent = category.kicker;
       title.textContent = category.title;
       description.textContent = category.description;
 
-      featured.replaceChildren(...category.featured.map(([label, href]) => linkButton(label, href)));
+      featured.replaceChildren(...category.featured.map(([label, href]) => linkButton(label, href, category, "featured")));
 
       list.replaceChildren(...category.items.map(([name, meta, actions]) => {
         const article = document.createElement("article");
@@ -928,7 +1757,7 @@
 
         const actionRow = document.createElement("div");
         actionRow.className = "item-actions";
-        actions.forEach(([label, href]) => actionRow.append(linkButton(label, href)));
+        actions.forEach(([label, href]) => actionRow.append(linkButton(label, href, category)));
 
         article.append(head, actionRow);
         return article;
@@ -949,6 +1778,132 @@
     });
 
     renderCategory(categories[0]);
+    showChapter(savedBookState.chapterIndex || 0, { skipSave: true });
+    bookReader.hidden = true;
+
+    wirePress(togglePlay, () => {
+      setupAudioAnalysis();
+      if (!audio.src) {
+        playlist = playableFromCategory(currentCategory);
+        playTrack(0);
+        return;
+      }
+      showPlayer();
+      if (audio.paused) {
+        audio.play().then(() => {
+          playerLabel.textContent = playlist.length && currentTrackIndex >= 0
+            ? `Now playing // ${currentTrackIndex + 1} of ${playlist.length}`
+            : "Now playing";
+          setPlayIcon(true);
+          setPlayingButtons();
+        }).catch((error) => {
+          playerLabel.textContent = error?.name === "NotAllowedError" ? "Tap play to start" : "Could not start audio";
+          setPlayIcon(false);
+          setPlayingButtons();
+        });
+      } else {
+        audio.pause();
+      }
+    });
+
+    wirePress(nextTrack, () => playTrack(currentTrackIndex + 1));
+    wirePress(prevTrack, () => playTrack(currentTrackIndex - 1));
+    audio.addEventListener("play", () => {
+      setPlayIcon(true);
+      setPlayingButtons();
+    });
+    audio.addEventListener("pause", () => {
+      setPlayIcon(false);
+      setPlayingButtons();
+    });
+    audio.addEventListener("error", () => {
+      playerLabel.textContent = "Audio link failed";
+      setPlayIcon(false);
+      setPlayingButtons();
+    });
+    audio.addEventListener("ended", () => playTrack(currentTrackIndex + 1));
+    audio.addEventListener("timeupdate", () => {
+      const pct = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
+      progress.value = String(pct);
+      progress.style.setProperty("--pct", `${pct}%`);
+    });
+
+    function seekToRatio(ratio) {
+      if (!audio.duration) return;
+      const clamped = Math.min(1, Math.max(0, ratio));
+      audio.currentTime = clamped * audio.duration;
+      progress.value = String(clamped * 100);
+      progress.style.setProperty("--pct", `${clamped * 100}%`);
+    }
+
+    progress.addEventListener("input", () => {
+      seekToRatio(Number(progress.value) / 100);
+    });
+    wirePress(toggleQueue, () => {
+      player.classList.toggle("queue-open");
+    });
+    wirePress(hidePlayer, () => {
+      player.classList.remove("ready", "queue-open");
+    });
+    nextChapter.addEventListener("click", () => showChapter(currentChapterIndex + 1));
+    prevChapter.addEventListener("click", () => showChapter(currentChapterIndex - 1));
+    closeBook.addEventListener("click", () => {
+      saveBookPosition();
+      bookReader.hidden = true;
+    });
+    bookPage.addEventListener("scroll", () => {
+      saveBookPosition();
+    }, { passive: true });
+    window.addEventListener("beforeunload", saveBookPosition);
+
+    function drawVisualizer(now) {
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const width = Math.max(1, Math.floor(visualizer.clientWidth * dpr));
+      const height = Math.max(1, Math.floor(visualizer.clientHeight * dpr));
+      if (visualizer.width !== width || visualizer.height !== height) {
+        visualizer.width = width;
+        visualizer.height = height;
+      }
+
+      let average = 0;
+      let bass = 0;
+      if (analyser && analyserData) {
+        analyser.getByteFrequencyData(analyserData);
+        const bins = analyserData.length;
+        const bassBins = Math.max(4, Math.floor(bins * 0.16));
+        for (let i = 0; i < bins; i++) average += analyserData[i];
+        for (let i = 0; i < bassBins; i++) bass += analyserData[i];
+        average = average / bins / 255;
+        bass = bass / bassBins / 255;
+      } else if (player.classList.contains("ready")) {
+        average = 0.12 + Math.max(0, Math.sin(now * 0.006)) * 0.08;
+        bass = average * 0.8;
+      }
+
+      audioEnergy += (average - audioEnergy) * 0.18;
+      bassEnergy += (bass - bassEnergy) * 0.22;
+
+      visualizerCtx.clearRect(0, 0, width, height);
+      const bars = 24;
+      const gap = 2 * dpr;
+      const barWidth = (width - gap * (bars - 1)) / bars;
+      for (let i = 0; i < bars; i++) {
+        const bin = analyserData ? analyserData[Math.floor((i / bars) * analyserData.length)] / 255 : Math.abs(Math.sin(now * 0.004 + i * 0.65)) * audioEnergy;
+        const h = Math.max(2 * dpr, bin * height * 0.92);
+        const x = i * (barWidth + gap);
+        const y = height - h;
+        const hue = 170 - i * 3 + bassEnergy * 90;
+        visualizerCtx.fillStyle = `hsl(${hue}, 100%, ${48 + bin * 26}%)`;
+        visualizerCtx.shadowColor = `hsla(${hue}, 100%, 62%, 0.75)`;
+        visualizerCtx.shadowBlur = 7 * dpr;
+        visualizerCtx.fillRect(x, y, barWidth, h);
+      }
+
+      document.body.style.setProperty("--audio-energy", audioEnergy.toFixed(3));
+      requestAnimationFrame(drawVisualizer);
+    }
+
+    requestAnimationFrame(drawVisualizer);
 
     const canvas = document.querySelector("#shader");
     const gl = canvas.getContext("webgl", { antialias: false, alpha: false });
@@ -965,6 +1920,7 @@
         precision mediump float;
         uniform vec2 resolution;
         uniform float time;
+        uniform float audioEnergy;
 
         float wave(vec2 p, float speed, float scale) {
           return sin(p.x * scale + time * speed) + cos(p.y * scale * 0.8 - time * speed * 0.7);
@@ -978,11 +1934,11 @@
           vec2 uv = gl_FragCoord.xy / resolution.xy;
           vec2 p = (uv - 0.5) * vec2(resolution.x / resolution.y, 1.0);
           vec2 q = p;
-          q.x += 0.08 * sin(time * 0.9 + p.y * 7.0);
-          q.y += 0.08 * cos(time * 0.7 + p.x * 9.0);
-          float v = wave(q, 1.7, 7.0) + wave(q.yx + 0.35, 1.2, 10.0) + wave(q + vec2(sin(time), cos(time)), 2.2, 15.0);
-          float rings = sin(28.0 * length(q) - time * 4.0);
-          float tunnel = 0.09 / max(0.05, abs(length(q) - 0.30 + 0.055 * sin(time + q.x * 8.0)));
+          q.x += (0.08 + audioEnergy * 0.12) * sin(time * (0.9 + audioEnergy) + p.y * (7.0 + audioEnergy * 8.0));
+          q.y += (0.08 + audioEnergy * 0.10) * cos(time * 0.7 + p.x * (9.0 + audioEnergy * 7.0));
+          float v = wave(q, 1.7 + audioEnergy * 2.0, 7.0) + wave(q.yx + 0.35, 1.2, 10.0 + audioEnergy * 8.0) + wave(q + vec2(sin(time), cos(time)), 2.2 + audioEnergy * 2.4, 15.0);
+          float rings = sin((28.0 + audioEnergy * 26.0) * length(q) - time * (4.0 + audioEnergy * 8.0));
+          float tunnel = (0.09 + audioEnergy * 0.08) / max(0.05, abs(length(q) - 0.30 + 0.055 * sin(time + q.x * 8.0)));
           float stars = step(0.985, hash(floor((uv + vec2(time * 0.015, -time * 0.02)) * resolution.xy / 4.0)));
           vec3 base = 0.5 + 0.5 * cos(time * 0.55 + vec3(0.0, 2.1, 4.2) + v * 1.2 + rings);
           vec3 sega = vec3(0.01, 0.02, 0.07) + base * 0.26;
@@ -990,8 +1946,9 @@
           vec3 cyan = vec3(0.0, 0.85, 1.0) * smoothstep(0.92, 0.08, length(q + vec2(0.18, -0.06))) * 0.28;
           vec3 magenta = vec3(1.0, 0.02, 0.8) * smoothstep(0.84, 0.06, length(q - vec2(0.25, 0.09))) * 0.22;
           vec3 green = vec3(0.18, 1.0, 0.35) * smoothstep(0.72, 0.08, length(q - vec2(-0.22, 0.22))) * 0.18;
-          float scan = 0.82 + 0.18 * sin(gl_FragCoord.y * 2.7 + time * 7.0);
-          gl_FragColor = vec4((sega + amber + cyan + magenta + green + stars * vec3(0.9, 0.8, 1.0)) * scan, 1.0);
+          float scan = 0.78 + 0.22 * sin(gl_FragCoord.y * (2.7 + audioEnergy * 4.0) + time * (7.0 + audioEnergy * 18.0));
+          vec3 reactive = vec3(audioEnergy * 0.24, audioEnergy * 0.36, audioEnergy * 0.42);
+          gl_FragColor = vec4((sega + amber + cyan + magenta + green + reactive + stars * vec3(0.9, 0.8, 1.0)) * scan, 1.0);
         }
       `;
 
@@ -1017,6 +1974,7 @@
 
       const resolution = gl.getUniformLocation(program, "resolution");
       const time = gl.getUniformLocation(program, "time");
+      const shaderAudioEnergy = gl.getUniformLocation(program, "audioEnergy");
       let start = performance.now();
 
       function draw(now) {
@@ -1030,6 +1988,7 @@
         }
         gl.uniform2f(resolution, width, height);
         gl.uniform1f(time, (now - start) / 1000);
+        gl.uniform1f(shaderAudioEnergy, audioEnergy);
         gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
         requestAnimationFrame(draw);
       }
@@ -1063,13 +2022,14 @@
       spriteCtx.scale(dpr, dpr);
       const t = now / 1000;
       sprites.forEach((sprite, index) => {
-        const x = ((sprite.x * innerWidth) + Math.sin(t * sprite.speed + sprite.phase) * 80 + t * (8 + index % 5)) % (innerWidth + 80) - 40;
-        const y = ((sprite.y * innerHeight) + Math.cos(t * sprite.speed * 0.8 + sprite.phase) * 55 + t * (index % 3)) % (innerHeight + 80) - 40;
+        const pulse = 1 + bassEnergy * 1.8;
+        const x = ((sprite.x * innerWidth) + Math.sin(t * sprite.speed + sprite.phase) * 80 * pulse + t * (8 + index % 5)) % (innerWidth + 80) - 40;
+        const y = ((sprite.y * innerHeight) + Math.cos(t * sprite.speed * 0.8 + sprite.phase) * 55 * pulse + t * (index % 3)) % (innerHeight + 80) - 40;
         spriteCtx.save();
         spriteCtx.translate(x, y);
-        spriteCtx.rotate(Math.sin(t * sprite.speed + sprite.phase) * 0.5);
-        spriteCtx.font = `${sprite.size}px "Lucida Console", monospace`;
-        spriteCtx.fillStyle = `hsla(${(sprite.hue + t * 70) % 360}, 100%, 65%, 0.26)`;
+        spriteCtx.rotate(Math.sin(t * sprite.speed + sprite.phase) * (0.5 + audioEnergy * 0.9));
+        spriteCtx.font = `${sprite.size * (1 + audioEnergy * 0.42)}px "Lucida Console", monospace`;
+        spriteCtx.fillStyle = `hsla(${(sprite.hue + t * (70 + audioEnergy * 160)) % 360}, 100%, 65%, ${0.26 + audioEnergy * 0.18})`;
         spriteCtx.shadowColor = `hsla(${(sprite.hue + 80) % 360}, 100%, 64%, 0.65)`;
         spriteCtx.shadowBlur = 16;
         spriteCtx.fillText(sprite.glyph, 0, 0);
