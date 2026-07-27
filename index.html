@@ -650,16 +650,22 @@
       transition: transform 170ms ease, border-color 170ms ease, box-shadow 170ms ease;
     }
 
+    .item.clickable {
+      cursor: pointer;
+    }
+
     .item.embed-card {
       grid-column: 1 / -1;
     }
 
-    .item:hover {
+    .item:hover,
+    .item:focus-visible {
       transform: translateY(-7px) rotateX(3deg) rotateZ(-0.5deg);
       border-color: var(--cyan);
       box-shadow:
         0 18px 38px rgba(0, 0, 0, 0.45),
         0 0 22px rgba(49, 243, 255, 0.18);
+      outline: none;
     }
 
     @keyframes itemFloat {
@@ -1959,16 +1965,33 @@
       const items = selectedItem ? [selectedItem] : category.items;
       list.replaceChildren(...items.map((item) => {
         const [name, meta, actions, extras = {}] = item;
+        const pageHref = itemHref(category, item);
         const article = document.createElement("article");
         article.className = "item";
         if (extras.embed) article.classList.add("embed-card");
+        if (!selectedItem) {
+          article.classList.add("clickable");
+          article.tabIndex = 0;
+          article.setAttribute("role", "link");
+          article.setAttribute("aria-label", `Open ${name}`);
+          article.addEventListener("click", (event) => {
+            if (event.target.closest("a, button, iframe")) return;
+            navigateTo(pageHref);
+          });
+          article.addEventListener("keydown", (event) => {
+            if (event.key !== "Enter" && event.key !== " ") return;
+            if (event.target.closest("a, button")) return;
+            event.preventDefault();
+            navigateTo(pageHref);
+          });
+        }
         article.style.setProperty("--float-delay", `${(name.length % 7) * 0.45}s`);
 
         const head = document.createElement("div");
         const h3 = document.createElement("h3");
         h3.className = "item-title";
         const titleLink = document.createElement("a");
-        titleLink.href = itemHref(category, item);
+        titleLink.href = pageHref;
         titleLink.textContent = name;
         h3.append(titleLink);
         const p = document.createElement("p");
@@ -1978,9 +2001,6 @@
 
         const actionRow = document.createElement("div");
         actionRow.className = "item-actions";
-        if (!selectedItem) {
-          actionRow.append(internalLinkButton("Page", itemHref(category, item)));
-        }
         actions.forEach(([label, href]) => actionRow.append(linkButton(label, href, category)));
 
         article.append(head);
