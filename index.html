@@ -1317,6 +1317,32 @@
         scroll-behavior: auto !important;
       }
     }
+    .music-controls {
+      margin: 1.5rem 0;
+      padding: 1.25rem;
+      border: 1px solid var(--line);
+      border-radius: .65rem;
+      background: var(--panel);
+    }
+    .music-mode-links { display: flex; flex-wrap: wrap; gap: .6rem; margin: .75rem 0; }
+    .music-mode-links [aria-current="page"] { border-color: var(--cyan); color: var(--cyan); }
+    .track-badge { display: inline-block; font-size: .75rem; color: var(--green); margin-bottom: .6rem; }
+    .ai-badge { color: #edb7ff; border: 1px solid #9e60c9; border-radius: .3rem; padding: .3rem .5rem; }
+    .stage-copy, .song-version, .song-version > div { min-width: 0; }
+    .song-version .item-title { overflow-wrap: anywhere; }
+    .source-details { flex-basis: 100%; min-width: 0; color: var(--muted); font-size: .8rem; overflow-wrap: anywhere; }
+    .source-details summary { cursor: pointer; padding: .75rem 0; }
+    .source-details p { line-height: 1.6; }
+    .queue-track button { font: inherit; color: inherit; text-align: left; background: transparent; border: 0; width: 100%; padding: .4rem; cursor: pointer; }
+    .queue-track button:focus-visible { outline: 2px solid var(--cyan); }
+    body.ai-mode { background: #100619; --line: rgba(200, 110, 255, .55); --panel: rgba(21, 8, 34, .86); }
+    body.ai-mode::after {
+      background: linear-gradient(115deg, rgba(152, 36, 231, .52), transparent 60%, rgba(31, 153, 186, .34)),
+        radial-gradient(circle at 75% 30%, rgba(208, 51, 241, .40), transparent 38rem);
+      box-shadow: inset 0 0 12rem rgba(177, 76, 239, .18);
+    }
+    body.ai-mode .music-controls { border-color: #a86ce0; }
+    body.ai-mode .stage-visual { box-shadow: inset 0 0 6rem rgba(177, 76, 239, .22); }
   </style>
 </head>
 <body>
@@ -1352,6 +1378,8 @@
         <div id="stageFeatured" class="featured"></div>
       </div>
     </section>
+
+    <section id="musicControls" class="music-controls" aria-label="Music modes and playlists" hidden></section>
 
     <section id="contentList" class="content-list" aria-label="Selected archive items"></section>
 
@@ -1397,6 +1425,8 @@
   </main>
 
   <script src="assets/jaro-book.js"></script>
+  <script src="assets/music-catalog.js"></script>
+  <script src="assets/music-library.js"></script>
   <script>
     const categories = [
       {
@@ -1543,13 +1573,7 @@
         .replace(/^-+|-+$/g, "") || "item";
     }
 
-    categories.forEach((category) => {
-      category.items.forEach((item) => {
-        const extras = item[3] || {};
-        extras.slug = extras.slug || slugify(item[0]);
-        item[3] = extras;
-      });
-    });
+
 
     const grid = document.querySelector("#categoryGrid");
     const visual = document.querySelector("#stageVisual");
@@ -1620,6 +1644,19 @@
       "1Z5IokTdUy0OqP97NhosvPnbxBEzntsSn": "assets/audio/22-sploth.mp3",
       "1UgRTK9CYg3s-45Xqji22-7wXKblqLyJO": "assets/audio/23-tnes.mp3"
     };
+    const musicLibrary = JoynesMusic.build(categories, window.joynesMusicCatalog, audioHref);
+    let aiMode = false;
+    let queueScope = "archive";
+    const musicControls = document.querySelector("#musicControls");
+
+    categories.forEach((category) => {
+      category.items.forEach((item) => {
+        const extras = item[3] || {};
+        extras.slug = extras.slug || slugify(item[0]);
+        item[3] = extras;
+      });
+    });
+
     function publicHref(href) {
       const fileMatch = href.match(/drive\.google\.com\/file\/d\/([^/]+)\//);
       if (fileMatch) {
@@ -1791,9 +1828,10 @@
     }
 
     function playableFromCategory(category) {
+      if (category.tracks) return category.tracks;
       return category.items.flatMap(([name, meta, actions]) => {
         const playable = actions.find(([label, href]) => isPlayableAction(category, label, href));
-        return playable ? [{ title: name, meta, href: audioHref(playable[1]) }] : [];
+        return playable ? [{ title: name, meta, href: audioHref(playable[1]), ai: false }] : [];
       });
     }
 
@@ -1805,14 +1843,20 @@
       queueList.replaceChildren(...playlist.map((track, index) => {
         const row = document.createElement("div");
         row.className = `queue-track${index === currentTrackIndex ? " active" : ""}`;
-        row.textContent = `${String(index + 1).padStart(2, "0")} ${track.title}`;
+        const button = document.createElement("button");
+        button.type = "button";
+        button.textContent = `${String(index + 1).padStart(2, "0")} ${track.title}${track.ai ? " · AI / Suno" : " · Original"}`;
+        button.setAttribute("aria-label", `Play ${track.title}`);
+        if (index === currentTrackIndex) button.setAttribute("aria-current", "true");
+        button.addEventListener("click", () => playTrack(index));
+        row.append(button);
         return row;
       }));
     }
 
     function setPlayingButtons() {
       document.querySelectorAll("[data-play-url]").forEach((button) => {
-        button.classList.toggle("playing", button.dataset.playUrl === audio.src && !audio.paused);
+        button.classList.toggle("playing", new URL(button.dataset.playUrl, document.baseURI).href === audio.src && !audio.paused);
       });
     }
 
@@ -1878,26 +1922,27 @@
       showPlayer();
       currentTrackIndex = (index + playlist.length) % playlist.length;
       const track = playlist[currentTrackIndex];
-      if (audio.src !== track.href) {
+      if (audio.src !== new URL(track.href, document.baseURI).href) {
         audio.src = track.href;
       }
+      updateAITheme();
       setupAudioAnalysis();
       playerLabel.textContent = `Loading track // ${currentTrackIndex + 1} of ${playlist.length}`;
-      playerTitle.textContent = track.title;
+      playerTitle.textContent = track.title + (track.ai ? " · AI-generated / Suno" : " · Original");
       setPlayIcon(true);
       setAudioPlayingState(true);
       renderQueue();
       setPlayingButtons();
       audio.play().then(() => {
-        playerLabel.textContent = `Now playing // ${currentTrackIndex + 1} of ${playlist.length}`;
-        playerTitle.textContent = track.title;
+        playerLabel.textContent = `Now playing // ${queueScope} // ${currentTrackIndex + 1} of ${playlist.length}`;
+        playerTitle.textContent = track.title + (track.ai ? " · AI-generated / Suno" : " · Original");
         setPlayIcon(true);
         syncAudioPlayingState();
         renderQueue();
         setPlayingButtons();
       }).catch((error) => {
         playerLabel.textContent = error?.name === "NotAllowedError" ? "Tap play to start" : "Could not start audio";
-        playerTitle.textContent = track.title;
+        playerTitle.textContent = track.title + (track.ai ? " · AI-generated / Suno" : " · Original");
         setPlayIcon(false);
         syncAudioPlayingState();
         renderQueue();
@@ -1906,8 +1951,16 @@
     }
 
     function startPlaylist(category, href) {
-      playlist = playableFromCategory(category);
       const directHref = audioHref(href);
+      const catalogTrack = musicLibrary.tracks.find(track => track.href === directHref);
+      if (catalogTrack) {
+        const selectedItem = parseRoute().item;
+        const group = selectedItem?.[3]?.groupId ? musicLibrary.groups.get(selectedItem[3].groupId) : null;
+        startMusicTrack(catalogTrack, category, group);
+        return;
+      }
+      playlist = playableFromCategory(category);
+      queueScope = category.title;
       const index = playlist.findIndex((track) => track.href === directHref);
       playTrack(index >= 0 ? index : 0);
     }
@@ -1941,11 +1994,147 @@
       return a;
     }
 
+    function updateAITheme() {
+      document.body.classList.toggle("ai-mode", aiMode || Boolean(playlist[currentTrackIndex]?.ai) || (!audio.src && currentCategory.id === "ai"));
+    }
+
+    function startMusicTrack(track, category, group = null) {
+      track = musicLibrary.tracks.find(entry => entry.href === track.href) || track;
+      let pool;
+      let shuffled = false;
+      if (category.sourcePlaylist) {
+        aiMode = false;
+        pool = category.tracks;
+        queueScope = category.title;
+      } else if (track.ai && (aiMode || category.id === "ai")) {
+        aiMode = true;
+        pool = musicLibrary.aiTracks;
+        shuffled = true;
+        queueScope = "AI-only shuffle";
+      } else if (group) {
+        if (!track.ai) aiMode = false;
+        pool = group.tracks;
+        queueScope = "Original & variations";
+      } else if (track.ai) {
+        aiMode = true;
+        pool = musicLibrary.aiTracks;
+        shuffled = true;
+        queueScope = "AI-only shuffle";
+      } else {
+        aiMode = false;
+        pool = playableFromCategory(category).map(entry => musicLibrary.tracks.find(candidate => candidate.href === entry.href) || entry).filter(entry => !entry.ai);
+        queueScope = "Archive originals";
+      }
+      playlist = JoynesMusic.queueStartingWith(pool, track, shuffled);
+      renderMusicControls(currentCategory);
+      playTrack(0);
+    }
+
+    function renderMusicControls(category) {
+      musicControls.hidden = !(["music", "old", "ai"].includes(category.id) || category.musicView);
+      if (musicControls.hidden) return;
+      const label = document.createElement("p");
+      label.className = "panel-label";
+      label.textContent = "Music modes & personal playlists";
+      const links = document.createElement("div");
+      links.className = "music-mode-links";
+      for (const [id, text] of [["music", "Originals & variations"], ["ai", "AI mode · shuffle"],
+        ...musicLibrary.personal.map(person => [person.id, person.title])]) {
+        const button = internalLinkButton(text, `#${id}`);
+        if (category.id === id) button.setAttribute("aria-current", "page");
+        button.addEventListener("click", () => {
+          if (id === "ai") {
+            aiMode = true;
+            // A switch changes the existing queue as well as the view.
+            if (audio.src) {
+              const current = playlist[currentTrackIndex];
+              startMusicTrack(current?.ai ? current : musicLibrary.aiTracks[0], categories.find(entry => entry.id === "ai"));
+            }
+          } else {
+            aiMode = false;
+            if (audio.src) {
+              const target = categories.find(entry => entry.id === id);
+              const pool = target.tracks || musicLibrary.tracks.filter(track => !track.ai);
+              const current = playlist[currentTrackIndex];
+              const first = pool.find(track => track.id === current?.id) || pool[0];
+              if (first) startMusicTrack(first, target);
+            }
+          }
+          updateAITheme();
+        });
+        links.append(button);
+      }
+      const info = document.createElement("p");
+      info.className = "item-meta";
+      info.textContent = category.sourcePlaylist
+        ? `${category.tracks.length} tracks · Source playlist: ${category.sourcePlaylist} · Plays only this list.`
+        : category.id === "ai" ? "47 AI-generated Suno tracks · Your chosen track first, then shuffle."
+        : "Open a song to choose its original or an AI variation. AI mode plays only AI music.";
+      musicControls.replaceChildren(label, links, info);
+    }
+
+    function renderSongVersions(category, item) {
+      const group = musicLibrary.groups.get(item[3].groupId);
+      const tracks = category.sourcePlaylist
+        ? group.tracks.filter(track => category.tracks.some(entry => entry.id === track.id))
+        : group.tracks;
+      const original = group.tracks.find(track => !track.ai);
+      description.textContent = original
+        ? "Choose the archive original or one of its clearly marked AI-generated variations."
+        : "AI-generated Suno music. Each version has its own recording and source metadata.";
+      featured.replaceChildren(internalLinkButton(`Back to ${category.title}`, categoryHref(category)));
+      if (category.sourcePlaylist) featured.append(internalLinkButton("All variations", `#music/${group.archiveItem?.[3]?.slug || group.id}`));
+      list.replaceChildren(...tracks.map(track => {
+        const article = document.createElement("article");
+        article.className = "item song-version";
+        const head = document.createElement("div");
+        const badge = document.createElement("span");
+        badge.className = `track-badge${track.ai ? " ai-badge" : ""}`;
+        const aiNumber = group.tracks.filter(entry => entry.ai).findIndex(entry => entry.id === track.id) + 1;
+        badge.textContent = track.ai ? `AI-generated · Variation ${aiNumber}` : "Archive original";
+        const heading = document.createElement("h3");
+        heading.className = "item-title";
+        heading.textContent = track.title;
+        const meta = document.createElement("p");
+        meta.className = "item-meta";
+        meta.textContent = [track.source, track.model, track.generationType, track.duration,
+          track.sourcePlaylists.length ? `Playlists: ${track.sourcePlaylists.join(", ")}` : ""].filter(Boolean).join(" · ");
+        head.append(badge, heading, meta);
+        const actions = document.createElement("div");
+        actions.className = "item-actions";
+        const play = document.createElement("button");
+        play.className = "button";
+        play.type = "button";
+        play.textContent = track.ai ? "Play AI variation" : "Play original";
+        play.dataset.playUrl = track.href;
+        play.addEventListener("click", () => startMusicTrack(track, category, group));
+        actions.append(play);
+        if (track.ai) actions.append(linkButton("Suno source", track.sourceUrl));
+        article.append(head, actions);
+        if (track.ai) {
+          const details = document.createElement("details");
+          details.className = "source-details";
+          const summary = document.createElement("summary");
+          summary.textContent = "Source & style";
+          const text = document.createElement("p");
+          text.textContent = track.style;
+          const filename = document.createElement("p");
+          filename.textContent = `Source file: ${track.sourceFile}`;
+          details.append(summary, text, filename);
+          article.append(details);
+        }
+        return article;
+      }));
+      setPlayingButtons();
+    }
+
     function renderCategory(category, selectedItem = null) {
       document.querySelectorAll(".category-button").forEach((button) => {
         button.classList.toggle("active", button.dataset.category === category.id);
       });
       currentCategory = category;
+      renderMusicControls(category);
+      updateAITheme();
 
       visual.dataset.glyph = category.glyph;
       kicker.textContent = selectedItem ? `${category.title} item` : category.kicker;
@@ -1962,6 +2151,10 @@
         featured.replaceChildren(...category.featured.map(([label, href]) => linkButton(label, href, category, "featured")));
       }
 
+      if (selectedItem?.[3]?.groupId) {
+        renderSongVersions(category, selectedItem);
+        return;
+      }
       const items = selectedItem ? [selectedItem] : category.items;
       list.replaceChildren(...items.map((item) => {
         const [name, meta, actions, extras = {}] = item;
@@ -2001,7 +2194,11 @@
 
         const actionRow = document.createElement("div");
         actionRow.className = "item-actions";
-        actions.forEach(([label, href]) => actionRow.append(linkButton(label, href, category)));
+        if (extras.groupId) {
+          actionRow.append(internalLinkButton("Original & variations", pageHref));
+        } else {
+          actions.forEach(([label, href]) => actionRow.append(linkButton(label, href, category)));
+        }
 
         article.append(head);
         if (extras.embed) {
@@ -2045,21 +2242,23 @@
     wirePress(togglePlay, () => {
       setupAudioAnalysis();
       if (!audio.src) {
-        playlist = playableFromCategory(currentCategory);
-        playTrack(0);
+        const tracks = currentCategory.tracks || playableFromCategory(currentCategory);
+        if (tracks.length) startMusicTrack(tracks[0], currentCategory);
         return;
       }
       showPlayer();
       if (audio.paused) {
         setAudioPlayingState(true);
-        audio.play().then(() => {
+      audio.play().then(() => {
+        if (playlist[currentTrackIndex] !== track) return;
           playerLabel.textContent = playlist.length && currentTrackIndex >= 0
-            ? `Now playing // ${currentTrackIndex + 1} of ${playlist.length}`
+            ? `Now playing // ${queueScope} // ${currentTrackIndex + 1} of ${playlist.length}`
             : "Now playing";
           setPlayIcon(true);
           syncAudioPlayingState();
           setPlayingButtons();
-        }).catch((error) => {
+      }).catch((error) => {
+        if (playlist[currentTrackIndex] !== track) return;
           playerLabel.textContent = error?.name === "NotAllowedError" ? "Tap play to start" : "Could not start audio";
           setPlayIcon(false);
           syncAudioPlayingState();
@@ -2094,7 +2293,14 @@
     });
     audio.addEventListener("ended", () => {
       setAudioPlayingState(false);
-      playTrack(currentTrackIndex + 1);
+      if (currentTrackIndex === playlist.length - 1 && queueScope.includes("shuffle") && playlist.length > 1) {
+        const last = playlist[currentTrackIndex];
+        playlist = JoynesMusic.shuffle(playlist);
+        if (playlist[0].id === last.id) [playlist[0], playlist[1]] = [playlist[1], playlist[0]];
+        playTrack(0);
+      } else {
+        playTrack(currentTrackIndex + 1);
+      }
     });
     audio.addEventListener("timeupdate", () => {
       const pct = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
