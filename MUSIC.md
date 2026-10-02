@@ -8,6 +8,6 @@ Each recording preserves its title, Suno URL, model, generation type, duration, 
 
 Personal playlists follow source memberships exactly: Estelle (1 track), Milian (7 tracks), Stephanie (the Suno playlist named Steffi, 3 tracks). The user initially said “Emilia”; Milian is the provisional name based on the supplied metadata, pending clarification.
 
-AI mode plays the selected recording first and shuffles all remaining AI recordings without repetition within a cycle. Personal playback queues only their categorized recordings. Opening a song from the archive allows an original/variations queue; choosing the original exits AI-only playback.
+AI mode is a switch inside Music, at `#music/ai`, and has no separate portal. Old `#ai` links redirect to the Music mode. AI mode plays the selected recording first and shuffles all remaining AI recordings without repetition within a cycle. Personal playback queues only their categorized recordings. Opening a song from the archive allows an original/variations queue; choosing the original exits AI-only playback.
 
 Run catalog and grouping tests with `node --test scripts/test-music.cjs`. Serve the site with `python3 serve.py` for local audio playback and seeking. GitHub Pages publishes the root of `master`; joynes.se forwards to that Pages site.

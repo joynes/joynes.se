@@ -41,6 +41,8 @@ test('archive originals retain all known variations without merging unknown titl
 });
 test('AI shuffle starts with selected recording and contains only AI, once per cycle', () => {
   const lib = library();
+  assert.ok(lib.categories.every(category => category.id !== 'ai'));
+  assert.equal(lib.aiView.title, 'Music');
   const selected = lib.aiTracks[12];
   const queue = api.queueStartingWith(lib.aiTracks, selected, true);
   assert.equal(queue[0].id, selected.id);

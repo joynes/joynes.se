@@ -1698,11 +1698,12 @@
     }
 
     function categoryHref(category) {
+      if (category.id === "ai") return "#music/ai";
       return `#${category.id}`;
     }
 
     function itemHref(category, item) {
-      return `#${category.id}/${item[3]?.slug || slugify(item[0])}`;
+      return `${categoryHref(category)}/${item[3]?.slug || slugify(item[0])}`;
     }
 
     function internalLinkButton(label, href) {
@@ -1715,8 +1716,13 @@
 
     function parseRoute() {
       const raw = decodeURIComponent(window.location.hash.replace(/^#\/?/, "")).trim();
-      const [categoryId, itemSlug] = raw.split("/").filter(Boolean);
-      const category = categories.find((entry) => entry.id === categoryId) || categories[0];
+      const [categoryId, subroute, versionSlug] = raw.split("/").filter(Boolean);
+      const isAIView = (categoryId === "music" && subroute === "ai") || categoryId === "ai";
+      const category = isAIView ? musicLibrary.aiView : categories.find((entry) => entry.id === categoryId) || categories[0];
+      const itemSlug = isAIView && categoryId === "music" ? versionSlug : subroute;
+      if (categoryId === "ai") {
+        history.replaceState(null, "", `#music/ai${itemSlug ? "/" + itemSlug : ""}`);
+      }
       const item = itemSlug
         ? category.items.find((entry) => entry[3]?.slug === itemSlug)
         : null;
@@ -2040,7 +2046,7 @@
       links.className = "music-mode-links";
       for (const [id, text] of [["music", "Originals & variations"], ["ai", "AI mode · shuffle"],
         ...musicLibrary.personal.map(person => [person.id, person.title])]) {
-        const button = internalLinkButton(text, `#${id}`);
+        const button = internalLinkButton(text, id === "ai" ? "#music/ai" : `#${id}`);
         if (category.id === id) button.setAttribute("aria-current", "page");
         button.addEventListener("click", () => {
           if (id === "ai") {
@@ -2048,7 +2054,7 @@
             // A switch changes the existing queue as well as the view.
             if (audio.src) {
               const current = playlist[currentTrackIndex];
-              startMusicTrack(current?.ai ? current : musicLibrary.aiTracks[0], categories.find(entry => entry.id === "ai"));
+              startMusicTrack(current?.ai ? current : musicLibrary.aiTracks[0], musicLibrary.aiView);
             }
           } else {
             aiMode = false;
@@ -2130,7 +2136,7 @@
 
     function renderCategory(category, selectedItem = null) {
       document.querySelectorAll(".category-button").forEach((button) => {
-        button.classList.toggle("active", button.dataset.category === category.id);
+        button.classList.toggle("active", button.dataset.category === (category.id === "ai" ? "music" : category.id));
       });
       currentCategory = category;
       renderMusicControls(category);

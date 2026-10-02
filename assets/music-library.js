@@ -79,13 +79,12 @@
     music.sub = 'Originals, variations and personal playlists.';
     const aiTracks = tracks.filter(track => track.ai);
     const aiCategory = {
-      id: 'ai', name: 'AI Music', title: 'AI Music', glyph: 'AI', musicView: true,
-      kicker: 'Suno · AI-generated', sub: '47 Suno tracks · AI-only shuffle.',
+      id: 'ai', name: 'Music', title: 'Music', glyph: 'M', musicView: true,
+      kicker: 'AI mode · Suno · Shuffle', sub: '47 Suno tracks · AI-only shuffle.',
       description: 'AI-generated music from Suno. Choose any version to play it first, then shuffle through only AI tracks.',
       featured: [], tracks: aiTracks,
       items: [...groups.values()].filter(group => group.tracks.some(track => track.ai)).map(group => groupItem(group))
     };
-    categories.splice(1, 0, aiCategory);
     const personal = [
       { id: 'estelle', title: 'Estelle', sourcePlaylist: 'Estelle' },
       { id: 'milian', title: 'Milian', sourcePlaylist: 'Milian' },
@@ -102,7 +101,7 @@
           .map(group => groupItem(group, selected.filter(track => track.groupId === group.id)))
       });
     }
-    return { groups, tracks, aiTracks, personal, groupItem };
+    return { groups, tracks, aiTracks, personal, groupItem, aiView: aiCategory };
   }
   root.JoynesMusic = { songKey, groupKey, shuffle, queueStartingWith, build };
 })(typeof window === 'undefined' ? globalThis : window);
