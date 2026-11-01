@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "updatedAt": "2026-11-01",
   "objective": "Alla identifierade spel och relevanta spelversioner ska fungera på webben, testas och publiceras.",
-  "currentGame": "small-wonders",
+  "currentGame": "marble-tables",
   "games": [
     {
       "id": "web-quizzes",
@@ -390,7 +390,7 @@
       "id": "small-wonders",
       "title": "Small Wonders / Inuti språkmodellen",
       "order": 7,
-      "status": "tested_locally",
+      "status": "published_verified",
       "sources": [
         {
           "kind": "github",
@@ -434,11 +434,23 @@
         {
           "check": "public build identity",
           "result": "all 109 public files byte-equal and SHA256 verified, canonical HTML also equal; successful Pages run 40133289033"
+        },
+        {
+          "command": "HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ node scripts/test-small-wonders-navigation.cjs",
+          "result": "passed on live homepage: all three real new-tab links, tower input station, complete naming mission and legacy inventory at 360x740 and 1440x1000"
+        },
+        {
+          "command": "HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ node scripts/test-games-navigation.cjs",
+          "result": "passed live: existing game iframes, Retro/AI routing and music regression"
+        },
+        {
+          "check": "homepage deployment identity",
+          "result": "HTML and catalog byte-equal to tested source; canonical homepage current; successful Pages run 41283165519. Public game repo HEAD remains verified 5d3c30c."
         }
       ],
-      "publishedUrl": null,
-      "implementationCommit": null,
-      "deploymentCommit": null,
+      "publishedUrl": "https://joynes.github.io/llmspel-play/",
+      "implementationCommit": "c13d5ac7c0b652e247746ba8312c5c42a9dc8bb8",
+      "deploymentCommit": "5d3c30caf93a756fc86e8bd00459b9a4886ee753",
       "category": "ai",
       "webAdaptation": "ai",
       "categoryLabel": "AI-spel",
@@ -468,7 +480,12 @@
       "limits": [
         "Later tower chapters are explicitly previews; current playable chapter has nine stations.",
         "Name workshop uses adjacent-character counts, not a trained neural transformer."
-      ]
+      ],
+      "homepageIntegrationCommit": "9411200bb9ced634eb6a72ab728af8e7a54a1b3d",
+      "homepageVerifiedFiles": {
+        "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82",
+        "assets/games-catalog.js": "2d80cf8f0e241a58cc14b9729fd485109d3817c3b4729b92ff403f89eba23561"
+      }
     },
     {
       "id": "marble-tables",
