@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="sv">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#6a0dad"><title>Milians Grimace Matte-spel</title><link rel="stylesheet" href="styles.css"><script type="module" src="app.mjs"></script></head>
+<body><main>
+  <p class="badge">AI-spel · Gemini-versionen</p>
+  <h1>Milians Grimace Matte-spel</h1>
+  <div id="grimace" aria-hidden="true"><i class="eye left"></i><i class="eye right"></i><i class="mouth"></i></div>
+  <section id="menu" aria-label="Välj räknesätt">
+    <p>Hjälp Grimace att räkna! Välj plus eller minus. Frågorna blir svårare när du klarar fler.</p>
+    <div class="choices"><button data-mode="plus">Plus +</button><button data-mode="minus">Minus −</button></div>
+    <p id="progress"></p>
+  </section>
+  <section id="play" hidden aria-label="Räkna med Grimace">
+    <div class="toolbar"><span id="mode-label"></span><button id="back" class="small">Till menyn</button></div>
+    <p id="score" role="status"></p>
+    <h2 id="question" tabindex="-1"></h2>
+    <div id="options" class="choices" aria-label="Svarsalternativ"></div>
+    <p id="feedback" role="status" aria-live="polite"></p>
+    <button id="next" hidden>Nästa fråga →</button>
+  </section>
+  <p id="storage-note" class="note" hidden>Framstegen sparas bara medan den här sidan är öppen. Webbläsaren tillåter inte lagring.</p>
+  <footer><a href="../../#games/ai">Alla AI-spel</a><a href="source-notes.md">Om spelet och originalet</a></footer>
+</main></body></html>

@@ -3,8 +3,9 @@
   "private": true,
   "scripts": {
     "preview": "python3 scripts/preview-games.py",
-    "test": "node --test scripts/test-music.cjs scripts/test-web-quizzes.mjs",
-    "test:quiz:browser": "node scripts/test-web-quizzes-browser.cjs"
+    "test": "node --test scripts/test-music.cjs scripts/test-web-quizzes.mjs scripts/test-grimace-gemini.mjs",
+    "test:quiz:browser": "node scripts/test-web-quizzes-browser.cjs",
+    "test:grimace:browser": "node scripts/test-grimace-gemini-browser.cjs"
   },
   "devDependencies": {
     "playwright": "1.58.2"

@@ -63,7 +63,7 @@
       "id": "grimace-gemini",
       "title": "Milians Grimace Matte-spel — Gemini",
       "order": 2,
-      "status": "pending",
+      "status": "tested_locally",
       "sources": [
         {
           "kind": "github",
@@ -71,13 +71,31 @@
         }
       ],
       "work": "Bevara originalets spelregler; testa plus/minus, rätt/fel, omstart och mobil.",
-      "tests": [],
+      "tests": [
+        {
+          "command": "npm test",
+          "result": "passed: 11 tests, including arithmetic, progression, answer locking and storage plus music/quiz regressions"
+        },
+        {
+          "command": "npm run test:grimace:browser",
+          "result": "passed: both modes, 13 answers, retry, persistence, keyboard, mobile and blocked/corrupt storage"
+        },
+        {
+          "command": "node scripts/test-games-navigation.cjs",
+          "result": "passed: Retro/AI filtering, both playable embedded games, nested routes and music regression"
+        },
+        {
+          "check": "visual",
+          "result": "desktop 1440x1000 and mobile 360x740 inspected"
+        }
+      ],
       "publishedUrl": null,
       "implementationCommit": null,
       "deploymentCommit": null,
       "category": "ai",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-spel"
+      "categoryLabel": "AI-spel",
+      "sourceCommit": "f3b4d568066075a11cf7d2c43afae108a75a6b03"
     },
     {
       "id": "grimace-codex",
