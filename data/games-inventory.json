@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "updatedAt": "2026-11-01",
   "objective": "Alla identifierade spel och relevanta spelversioner ska fungera på webben, testas och publiceras.",
-  "currentGame": "neon-interceptor",
+  "currentGame": "worldforge",
   "games": [
     {
       "id": "web-quizzes",
@@ -1030,7 +1030,7 @@
       "id": "neon-interceptor",
       "title": "Neon Bastion & Manta",
       "order": 16,
-      "status": "tested_live_pending_catalog",
+      "status": "published_verified",
       "sources": [
         {
           "kind": "github",
@@ -1062,9 +1062,13 @@
         {
           "command": "npm test; npm run test:neon:links; node scripts/test-games-navigation.cjs (homepage)",
           "result": "passed: 32 homepage unit tests; own-tab links from desktop and mobile, intentional landscape rotation, actual Bastion/Manta public menus and runtime variants20/21; AI inclusion and retro exclusion; previous games and AI music regressions"
+        },
+        {
+          "check": "published homepage integration",
+          "result": "passed: Pages run41308670778 succeeded; all four canonical catalog/index/document/audit files hash-match. Public homepage own-tab links at mobile/desktop reach the correct public Bastion/Manta runtime editions and full20/21-sector menus; landscape flow and AI/retro filtering verified."
         }
       ],
-      "publishedUrl": null,
+      "publishedUrl": "https://neon-interceptor.joynez11.chatgpt.site/",
       "implementationCommit": "e497f79e63f7ad402430a3db15a3e1fc2847aa49",
       "deploymentCommit": "e497f79e63f7ad402430a3db15a3e1fc2847aa49",
       "category": "ai",
@@ -1104,7 +1108,10 @@
         "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82",
         "docs/games/neon-interceptor.md": "1e58974a4ccf0a99ad856372fd7e2d53a5be6ecbdccffed5afdbf2194cdbc287",
         "docs/games/neon-interceptor-assets.json": "56ff5f4e82f61f929dc6451b4e5c15ac86cfa7302545dcc98508b8bd6614ad22"
-      }
+      },
+      "catalogUrl": "https://joynes.github.io/joynes.se/#games/ai/neon-interceptor",
+      "catalogCommit": "0fb22ddf2f464fcf610261d72a18b4e8841d0cef",
+      "catalogDeploymentRun": 41308670778
     },
     {
       "id": "worldforge",
