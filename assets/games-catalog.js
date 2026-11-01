@@ -7,7 +7,7 @@ window.joynesPublishedGames = [
     description: "AI-spel · Svenska, fem matteområden, läsning, istiden, 19 korsord och Breakout. Åldersval, sparade framsteg, butik och offlinestöd.",
     href: "games/hardword/",
     source: "https://github.com/joynes/hardword",
-    version: "118-web.1"
+    version: "118-web.2"
   },
   {
     id: "memit",

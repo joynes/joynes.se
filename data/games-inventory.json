@@ -334,7 +334,7 @@
         },
         {
           "command": "node scripts/test-hardword-recovery.cjs",
-          "result": "passed: wrong answers, three-error restart and canceled timers after screen changes"
+          "result": "passed: wrong answers, three-error restart and canceled timers after screen changes; one-time reward link and toast removal after navigation passed"
         },
         {
           "command": "node scripts/test-hardword-breakout.cjs",

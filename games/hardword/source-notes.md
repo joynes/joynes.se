@@ -31,6 +31,7 @@ Spardatakoder använder ursprungliga nyckelnamn för överföring från andra in
 - Föråldrade antal i menytexterna är rättade.
 - Tangentbord kan aktivera klickbara kort och korsordsfält. Breakout stöder piltangenter och mellanslag samt originalets mus/touch.
 - På mobil täcker myntvisaren inte sifferknapparna. Även femsiffriga summor får plats. Breakout-canvas skalas inom skärmen. Omarkerad text har läsbar ljus färg.
+- Belöningslänkarnas tillfälliga ruta städas bort även om spelaren byter meny under tiden. En belöning räknas fortfarande bara en gång per värde och enhet.
 - Musikshuffle känner igen föregående spår även med de nya relativa sökvägarna.
 
 Musik, typsnitt och ikoner är byte-identiska med originalet. SHA256 finns i `original-assets.json`.
@@ -40,7 +41,7 @@ Musik, typsnitt och ikoner är byte-identiska med originalet. SHA256 finns i `or
 - `npm test`: namnrymd, lagringsfel, originaltillgångarnas hash, manifest/sökvägar, JS-syntax och befintliga spel-/musikregressioner.
 - `node scripts/test-hardword-browser.cjs`: alla 192 ordfrågor, 810 mattesvar, 174 läs-/istidsfrågor och 127 korsordsord genom synliga kontroller. Normal åldersstyrning och nivåupplåsning används, utan debug. 252 lärbanor blir faktiskt intjänade över de fyra testsessionerna.
 - `node scripts/test-hardword-support.cjs`: ytterligare 2 484 genererade matematik-/klockfrågor kontrolleras mot aritmetik och SVG-visarnas riktning. Alla korsordsord och läsalternativ valideras. De intjänade sparfilerna överförs genom appens gränssnitt. Köp, aktiv avatar, föräldrapanel, korrupt/blockerad lagring, touch, breda tal och musikshuffle provas.
-- `node scripts/test-hardword-recovery.cjs`: fel svar, tre-felsgräns, omstart och gamla timers efter meny-/banbyte.
+- `node scripts/test-hardword-recovery.cjs`: fel svar, tre-felsgräns, omstart, gamla timers efter meny-/banbyte samt belöningslänkens engångsregel och städning av rutan.
 - `node scripts/test-hardword-breakout.cjs`: komplett vinst på första banan med en automatiserad spelare som endast skickar paddel-/startinput. Bollpositioner, block, liv och resultat ändras inte av spelaren. Därefter verkliga missar, Game Over, omspel och stoppad spelloop vid menybyte.
 - `node scripts/test-hardword-physics.cjs`: separata, kontrollerade motortester för instansiering/kollision på alla 15 layouter, bossens träffar och 49 bonuseffekter. Dessa enhetsscenarier använder arrangerade bollpositioner och redovisas inte som fullständigt spelade banor.
 - `node scripts/test-hardword-offline.cjs`: rätt SW-scope, inga omladdningar vid första installationen, spelbar ordfråga offline och orörda syskondata.

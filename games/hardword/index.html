@@ -7411,7 +7411,7 @@ if(appAge && _urlGo){
         _msg.innerHTML=`💰 +${_gcAmt} mynt!<br><span style="font-size:.9rem;font-weight:700;opacity:.85">Belöning inlöst!</span>`;
         document.body.appendChild(_msg);
         soundStar();
-        viewTimeout(()=>_msg.remove(),2800);
+        setTimeout(()=>_msg.remove(),2800);
       },400);
     }
   }
