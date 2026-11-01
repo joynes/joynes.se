@@ -1,6 +1,15 @@
 // Only tested releases belong here. The complete work queue is in data/games-inventory.json.
 window.joynesPublishedGames = [
   {
+    id: "grimace-codex",
+    title: "Milians Grimace Matte-spel — Codex",
+    kind: "ai",
+    description: "AI-spel · Codex-versionen · Tio plusfrågor och tio minusfrågor. Fortsätt där du slutade eller spela om en klarad bana.",
+    href: "games/grimace-codex/",
+    source: "https://github.com/joynes/test-codex-math-game",
+    version: "2.0.0"
+  },
+  {
     id: "grimace-gemini",
     title: "Milians Grimace Matte-spel",
     kind: "ai",

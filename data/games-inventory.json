@@ -120,7 +120,7 @@
       "id": "grimace-codex",
       "title": "Milians Grimace Matte-spel — Codex",
       "order": 3,
-      "status": "pending",
+      "status": "tested_locally",
       "sources": [
         {
           "kind": "github",
@@ -128,13 +128,31 @@
         }
       ],
       "work": "Separat implementation av samma spelidé. Bevara som egen spelbar variant.",
-      "tests": [],
+      "tests": [
+        {
+          "command": "npm test",
+          "result": "passed: 14 tests including all 20 questions, both complete courses, replay, duplicate locking and storage validation plus regressions"
+        },
+        {
+          "command": "npm run test:grimace-codex:browser",
+          "result": "passed: all 20 original questions, both endings, replay, immediate resume, retry, keyboard, touch, exit and storage recovery"
+        },
+        {
+          "command": "node scripts/test-games-navigation.cjs",
+          "result": "passed: all three published game iframes, category routes and AI music regression"
+        },
+        {
+          "check": "visual",
+          "result": "desktop 1440x1000 and mobile 360x740 inspected"
+        }
+      ],
       "publishedUrl": null,
       "implementationCommit": null,
       "deploymentCommit": null,
       "category": "ai",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-spel"
+      "categoryLabel": "AI-spel",
+      "sourceCommit": "07bf4ed2be5b219de95dc5a647f3d832f23b5e44"
     },
     {
       "id": "quiz-sdl",

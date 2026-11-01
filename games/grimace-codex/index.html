@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#6a0dad"><title>Milians Grimace Matte-spel – Codex</title><link rel="stylesheet" href="styles.css"><script type="module" src="app.mjs"></script></head>
+<body><main>
+<p class="badge">AI-spel · Codex-versionen</p><h1>Milians Grimace Matte-spel</h1>
+<div id="grimace" aria-hidden="true"><i class="eye left"></i><i class="eye right"></i></div>
+<section id="menu" aria-label="Välj räknesätt"><p>Tio frågor i plus och tio i minus. Öva i din takt med Grimace! Dina framsteg sparas.</p><div class="choices"><button data-mode="plus">Plus +</button><button data-mode="minus">Minus −</button></div><p id="progress"></p><button id="exit" class="small">Avsluta spelet</button></section>
+<section id="play" hidden aria-label="Mattefrågor"><div class="toolbar"><span id="mode-label"></span><button id="back" class="small">Till menyn</button></div><p id="score" role="status"></p><h2 id="question" tabindex="-1"></h2><div id="options" class="choices" aria-label="Svarsalternativ"></div><p id="feedback" role="status" aria-live="polite"></p><button id="next" hidden>Nästa fråga →</button><button id="restart" class="secondary" hidden>Spela igen från början</button></section>
+<section id="exit-screen" hidden><h2 tabindex="-1">Tack för att du spelade!</h2><p>Du kan fortsätta där du slutade.</p><button id="return">Till startmenyn</button></section>
+<p id="storage-note" class="note" hidden>Framstegen sparas bara medan den här sidan är öppen. Webbläsaren tillåter inte lagring.</p><footer><a href="../../#games/ai">Alla AI-spel</a><a href="source-notes.md">Om spelet och originalet</a></footer>
+</main></body></html>
