@@ -811,7 +811,7 @@
       "id": "sdl-space",
       "title": "SDL Space / hinderbana",
       "order": 13,
-      "status": "pending",
+      "status": "tested_local",
       "sources": [
         {
           "kind": "github",
@@ -819,13 +819,47 @@
         }
       ],
       "work": "simple_game_using_sdl2_wasm har spelare, hinder, kollision och poäng. Grafikdemona är inte separata spel.",
-      "tests": [],
+      "tests": [
+        {
+          "command": "npm test",
+          "result": "passed: 32 tests including native JS/WASM/data/license identity and all five original bundled shader/audio segments."
+        },
+        {
+          "command": "npm run test:sdl-space:browser",
+          "result": "passed locally: native >=300-frame mouse survival, all 8 rock slots and >=5 sizes, normalized mouse/keyboard, normal Tab and Space/Enter controls, frozen native frames during pause, real collision/frame score/reset/replay, actual nonzero native audio output, touch/cancel and touch collision/replay, portrait/landscape mapping and full viewport bounds, manual new round, JS/WASM/data 503 errors with playable retries."
+        },
+        {
+          "check": "visual",
+          "result": "Desktop 1280x1000, game-over, portrait 390x844 and landscape 844x390 screenshots inspected. Found and fixed original viewport not following resized canvas; final landscape and desktop render full scene."
+        },
+        {
+          "command": "CHECK_GAMES_NAV=1 npm run test:sdl-space:browser; node scripts/test-games-navigation.cjs",
+          "result": "passed locally: full native game suite plus playable iframe in Retrospel, excluded from AI-spel; previous embedded games and AI music routes passed."
+        }
+      ],
       "publishedUrl": null,
       "implementationCommit": null,
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel"
+      "categoryLabel": "AI-remake av retrospel",
+      "sourceCommit": "184adda998c5b91e07c0f7cfebe464d87cd4b09a",
+      "sourcePeriod": "2020-07",
+      "webPath": "games/sdl-space/",
+      "implementationNotes": "Original SDL2/WebGL/WASM runtime, data and JS retained byte-for-byte. Eight rock slots, native frame score and collisions/reset seed1 retained. New host prefetch/error recovery, start/pause/restart/HTML game over, mouse-coordinate scaling, mapped keyboard/touch with duplicate native touch blocked, normal Tab/Enter/Space navigation and WebGL viewport resize repair. Native memory read-only test observer; no gameplay state writes.",
+      "releaseFilesSha256": {
+        "games/sdl-space/LICENSE": "c341890046b73102f5bb63b9b567913766467930e9d34ae2935b5a134da18cab",
+        "games/sdl-space/app.mjs": "536ebc9e63008e2d8930d04f7bfb5a90bab89baa220b973a2d5cb0ca46cbbddb",
+        "games/sdl-space/engine/simple_game_using_sdl2_wasm.data": "8b9e3ba7c7d9dde694788f026715186e900176606f30dcf648f9779a26d4287e",
+        "games/sdl-space/engine/simple_game_using_sdl2_wasm.js": "a68d8e655e8b060c2674a7b8a251889b04c77816a89a5a5b0a52d35e30d32b49",
+        "games/sdl-space/engine/simple_game_using_sdl2_wasm.wasm": "cc154d82acc79d92d419909064cee2e0a444925959f39224157196984eb6ff49",
+        "games/sdl-space/index.html": "c8a97ed7cad6c9fdfb208f2901aa1fa3274969ae0bb871ca5e1dc1b239cf3f5c",
+        "games/sdl-space/provenance.json": "8bb1d152becb8495f0368fb7749b7ab83921e22861eed2c74e0948ded9c103ff",
+        "games/sdl-space/source-notes.md": "7d0037f71fee5c98521fc8117f84469ccaf661bbd3243245784fad8edbb177c9",
+        "games/sdl-space/styles.css": "a0c9e37cd8f27b56404da83390766a771e01ceee6198144dc1dfe355269a152f",
+        "assets/games-catalog.js": "fd2657746d781df064848295134ecd8ed3db1967f5567ebc5ff185044f37a496",
+        "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82"
+      }
     },
     {
       "id": "network-2d",

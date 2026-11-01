@@ -1,6 +1,16 @@
 // Only tested releases belong here. The complete work queue is in data/games-inventory.json.
 window.joynesPublishedGames = [
   {
+    id: "sdl-space",
+    title: "SDL Space — hinderbana",
+    kind: "retro",
+    description: "AI-remake av retrospel · Original 2020 · Undvik inkommande stenar med mus, finger eller tangentbord. Ursprunglig SDL2-/WebAssembly-motor, shadergrafik och ljudeffekt bevarade.",
+    href: "games/sdl-space/",
+    source: "https://github.com/joynes/sdl2-samples-with-wasm-support/tree/184adda998c5b91e07c0f7cfebe464d87cd4b09a",
+    sourceLabel: "Originalkod och webbbygge",
+    version: "2020-sdl-web.1"
+  },
+  {
     id: "car-topview",
     title: "Bilspel ovanifrån",
     kind: "ai",
