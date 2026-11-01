@@ -30,4 +30,8 @@ Image `registry.fly.io/test-network-game:deployment-01M6BBZHGFP7EW9YFJ2WDN72PN`,
 
 Fly CLI:s nödvändiga officiella uppdatering krävde utrymme. Endast egna tillfälliga kloner, förhandsvisningskopior, analysmiljöer och installerade testberoenden rensades efter godkända tester. Källkod, låsfil, testat bygge och skärmbilder finns kvar. Livekontrollen använde hemsiderepots befintliga Playwright1.58.2.
 
-Länkning och kontroll från hemsidans AI-spel återstår innan inventeringen klarmarkeras.
+## Länkat och slutverifierat
+
+[Spela](https://test-network-game.fly.dev/) · [AI-spel på hemsidan](https://joynes.github.io/joynes.se/#games/ai/network-2d)
+
+Katalogcommit `dc10cf65385bb3d4f198fef4f6bf27cfb9efb896`, lyckad Pages-körning `41300742912` och deployment-API succeed. Katalog/HTML/dokument SHA256-verifierade vid integrationspubliceringen. Länkar till spelplan och autopilot öppnar riktiga serveranslutningar i separata flikar på både desktop och mobil från den publika hemsidan. AI-kategori/retro-exkludering samt tidigare spel och AI-musik passerade livekontrollen. Inventeringen är klarmarkerad och kön går vidare till Three.js Network Game.
