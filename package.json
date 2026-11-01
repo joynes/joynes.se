@@ -11,7 +11,8 @@
     "test:memit:browser": "node scripts/test-memit-browser.cjs",
     "test:school:browser": "node scripts/test-hardword-browser.cjs && node scripts/test-hardword-support.cjs && node scripts/test-hardword-recovery.cjs && node scripts/test-hardword-physics.cjs && node scripts/test-hardword-breakout.cjs && node scripts/test-hardword-offline.cjs",
     "test:small-wonders:links": "node scripts/test-small-wonders-navigation.cjs",
-    "test:marble:browser": "node scripts/test-marble-browser.cjs"
+    "test:marble:browser": "node scripts/test-marble-browser.cjs",
+    "test:driving:browser": "node scripts/test-driving-browser.cjs && node scripts/test-driving-layout.cjs"
   },
   "devDependencies": {
     "playwright": "1.58.2"

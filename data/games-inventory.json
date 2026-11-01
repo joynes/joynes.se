@@ -543,15 +543,32 @@
       "id": "simple-driving",
       "title": "Simple Driving Game",
       "order": 9,
-      "status": "in_progress",
+      "status": "tested_local",
       "sources": [
         {
           "kind": "github",
           "url": "https://github.com/joynes/SimpleDrivingGame"
         }
       ],
-      "work": "Unity-källa. Identifiera spelmekanik, tillgångar och webbexport; testa körning på tangentbord och touch.",
-      "tests": [],
+      "work": "Polisvarianten rekonstruerad i det gemensamma native-bygget, med källans modell/textur och exakt matchande körparametrar. Originalfel rättade; full lokal verifiering klar. Publicering/livekontroll återstår.",
+      "tests": [
+        {
+          "command": "node scripts/test-driving-browser.cjs",
+          "result": "passed locally: full 3-gate mission, actual victory and replay on desktop and native touch; keyboard, multi-touch steering, cancel, focus release/real deceleration, frozen native physics in pause, resume/Tab, restart, aspect, fullscreen, Retro integration; separate loader/WASM/data/framework failures all recover to actual driving"
+        },
+        {
+          "command": "node scripts/test-driving-layout.cjs",
+          "result": "passed locally: portrait 390x844 and landscape 844x390 fullscreen; all driving controls, native pause and visible exit fit and work"
+        },
+        {
+          "command": "verify-driving-assets.py --source-repo SOURCE",
+          "result": "passed: 6476 original objects and all 12 AudioClips/resources byte-preserved; 17 documented original asset edits + 3 source-police assets; all 10 source physics settings match. Repeated conversion gives identical data bytes."
+        },
+        {
+          "command": "npm test; node scripts/test-games-navigation.cjs",
+          "result": "passed: 23 unit/data regressions plus six previous embedded games, categories and music"
+        }
+      ],
       "publishedUrl": null,
       "implementationCommit": null,
       "deploymentCommit": null,
@@ -559,7 +576,9 @@
       "webAdaptation": "ai",
       "categoryLabel": "AI-remake av retrospel",
       "sourceCommit": "3f606f1b872fd051db28ebca1f10a9600b6293fb",
-      "investigation": "Shared city with unity_bus proven by 140 exact explicit transforms. Later source selects different police model; older native build drives bus. Preserve differences; no publication yet."
+      "investigation": "Shared city with unity_bus proven by 140 exact explicit transforms. Later source selects different police model; older native build drives bus. Preserve differences; no publication yet.",
+      "originalWebBuildCommit": "3f18cf90f94f996dd1c414d58cb6cd8f23f481d6",
+      "webVersion": "2023-police-web.1"
     },
     {
       "id": "unity-bus",

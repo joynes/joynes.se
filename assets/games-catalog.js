@@ -1,6 +1,17 @@
 // Only tested releases belong here. The complete work queue is in data/games-inventory.json.
 window.joynesPublishedGames = [
   {
+    id: "simple-driving",
+    title: "Simple Driving Game — Polisbil",
+    kind: "retro",
+    description: "AI-remake av retrospel · Original 2023 · Kör polisbilen genom stadens tre portar. Ursprunglig 3D-stad och Unity-fysik, återställd polisbil, tangentbord och touch.",
+    href: "games/simple-driving/",
+    embed: false,
+    source: "https://github.com/joynes/joynes.se/tree/master/games/simple-driving",
+    sourceLabel: "Webbkod",
+    version: "2023-police-web.1"
+  },
+  {
     id: "marble-tables",
     title: "Marble Tables",
     kind: "retro",

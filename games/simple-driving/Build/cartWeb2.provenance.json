@@ -1,0 +1,157 @@
+{
+  "nativeInputSha256": "e87553eae7e63f0bb54b6dc209665adc93c611018c959b467314a6086cba2a18",
+  "outputSha256": "f464a31a28caeec8b24e2059aa57e517c4a3c670fc62462fce9f5055f7dd47f5",
+  "vehicle": "police",
+  "changes": [
+    {
+      "file": "level1",
+      "id": 1765,
+      "fields": {
+        "combineParents": "removed one missing object; all 5 valid groups retained"
+      }
+    },
+    {
+      "file": "level1",
+      "id": 1586,
+      "type": "MeshCollider"
+    },
+    {
+      "file": "level1",
+      "id": 1698,
+      "type": "RectTransform"
+    },
+    {
+      "file": "sharedassets1.assets",
+      "id": 296,
+      "fields": {
+        "backgroundAlpha": 0.95
+      }
+    },
+    {
+      "file": "sharedassets1.assets",
+      "id": 298,
+      "fields": {
+        "backgroundAlpha": 0.95
+      }
+    },
+    {
+      "file": "sharedassets1.assets",
+      "id": 299,
+      "fields": {
+        "backgroundAlpha": 0.95
+      }
+    },
+    {
+      "file": "sharedassets1.assets",
+      "id": 300,
+      "fields": {
+        "backgroundAlpha": 0.95
+      }
+    },
+    {
+      "file": "level1",
+      "id": 1827,
+      "fields": {
+        "mustCollectAllPickups": true,
+        "pickupsToCompleteObjective": 3
+      }
+    },
+    {
+      "file": "level1",
+      "id": 1839,
+      "fields": {
+        "gameMode": 0
+      }
+    },
+    {
+      "file": "level1",
+      "id": 1840,
+      "fields": {
+        "gameMode": 0
+      }
+    },
+    {
+      "file": "level1",
+      "id": 1841,
+      "fields": {
+        "gameMode": 0
+      }
+    },
+    {
+      "file": "sharedassets1.assets",
+      "id": 320,
+      "type": "Texture2D",
+      "name": "JoynesSourcePoliceTexture"
+    },
+    {
+      "file": "sharedassets1.assets",
+      "id": 321,
+      "type": "Material",
+      "name": "JoynesSourcePoliceMaterial"
+    },
+    {
+      "file": "sharedassets1.assets",
+      "id": 322,
+      "type": "Mesh",
+      "name": "JoynesSourcePoliceMesh"
+    },
+    {
+      "file": "level1",
+      "id": 1359,
+      "type": "MeshFilter"
+    },
+    {
+      "file": "level1",
+      "id": 1083,
+      "type": "MeshRenderer"
+    },
+    {
+      "file": "level1",
+      "id": 694,
+      "type": "Transform"
+    },
+    {
+      "file": "level1",
+      "id": 219,
+      "type": "GameObject"
+    },
+    {
+      "file": "level1",
+      "id": 419,
+      "type": "GameObject"
+    },
+    {
+      "file": "level1",
+      "id": 391,
+      "type": "GameObject"
+    }
+  ],
+  "sourceRepoCommit": "3f606f1b872fd051db28ebca1f10a9600b6293fb",
+  "tools": {
+    "UnityPy": "1.25.4",
+    "PyYAML": "6.0.3"
+  },
+  "meshExportSha256": "6f20a049585d20f7403d9c2498fe5ec589a198ab4e9848717f6b68cc020bbdd8",
+  "pivotNormalization": {
+    "CarPolice": [
+      115.82745742797852,
+      203.78866577148438,
+      0.0
+    ],
+    "WP1": [
+      -96.33943557739258,
+      72.91240119934082,
+      1.0839557647705078
+    ]
+  },
+  "sourceFilesSha256": {
+    "Assets/Karting/Scenes/MainScene.unity": "89dd946686cbbcf6190693b74f834bd355aae1564c6885fd25723cce50cc54fb",
+    "Assets/Karting/Prefabs/KartClassic/KartClassic_Player.prefab": "9c8a1ac01ed2553387e99ec8bfdb0d873f22f529715e7e6519e7cd78844a1937",
+    "Assets/Karting/Scripts/KartSystems/TypeOfVehicle.cs": "89378ed81eafef46ae9fd211409ea1e5e9be8dd2660b381b9b71fb83786efbe1",
+    "Assets/Karting/Scripts/KartSystems/Inputs/KeyboardInput.cs": "6e02907059fab2047fa134337a52022e074c01baaf91a2437df14a83a00adea2",
+    "Assets/Karting/Scripts/KartSystems/ArcadeKart.cs": "e7d49f197112b5475e1fa91304f07e75aab4f4d237be3f801d2ba02dff4f6d8a",
+    "Assets/Urban American Assets/Props/Vehicles/Police Car.prefab": "e1d3290699361e46b50da1de6173734eeb365563c2370cb821eb9b6922f39c67",
+    "Assets/Urban American Assets/Props/Vehicles/Source/CarPack.FBX": "5fea9a128deb34d0727b00700261032db61d4862ce00386071eaea2c60f4a6cc",
+    "Assets/Urban American Assets/Props/Vehicles/Source/CarPolice.psd": "e63451db98b84c5b5e73cae280cc55b44a75db57db01244c6c99ee172fcd7411"
+  }
+}
