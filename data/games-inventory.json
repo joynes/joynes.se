@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "updatedAt": "2026-11-01",
   "objective": "Alla identifierade spel och relevanta spelversioner ska fungera på webben, testas och publiceras.",
-  "currentGame": "quiz-sdl",
+  "currentGame": "memit",
   "games": [
     {
       "id": "web-quizzes",
@@ -178,7 +178,7 @@
       "id": "quiz-sdl",
       "title": "Läs- och ordquiz",
       "order": 4,
-      "status": "tested_locally",
+      "status": "published_verified",
       "sources": [
         {
           "kind": "github",
@@ -202,15 +202,32 @@
         {
           "check": "visual",
           "result": "desktop 1440x1000 and mobile 360x740 inspected; controls scroll without horizontal overflow"
+        },
+        {
+          "command": "GAME_BASE_URL=https://joynes.github.io/joynes.se/games/quiz-sdl/ npm run test:reading:browser",
+          "result": "passed live: all 35 words, three stages, image decoding, real letter/reward audio, coins, retry, replay, touch, keyboard and fetch recovery"
+        },
+        {
+          "command": "HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ node scripts/test-games-navigation.cjs",
+          "result": "passed live: four playable embedded games, category routes and music regression"
+        },
+        {
+          "check": "deployed identity",
+          "result": "all 112 code/data/media/catalog files byte-equal to tested source; successful Pages run 41278461087"
         }
       ],
-      "publishedUrl": null,
-      "implementationCommit": null,
-      "deploymentCommit": null,
+      "publishedUrl": "https://joynes.github.io/joynes.se/games/quiz-sdl/",
+      "implementationCommit": "bd39e6cfd3a42d621f70d77955115f0438f0f6cd",
+      "deploymentCommit": "bd39e6cfd3a42d621f70d77955115f0438f0f6cd",
       "category": "retro",
       "webAdaptation": "ai",
       "categoryLabel": "AI-remake av retrospel",
-      "sourceCommit": "fd14bf5c57febc4b17e8e2cfa4bd464787d026cc"
+      "sourceCommit": "fd14bf5c57febc4b17e8e2cfa4bd464787d026cc",
+      "verifiedFiles": {
+        "fileCount": 112,
+        "sha256OfSortedFileHashes": "19f3ba304ac0be3c6705ed8d826b2e129e55ebda0c4a626ea0babe99fd21efff",
+        "commit": "bd39e6cfd3a42d621f70d77955115f0438f0f6cd"
+      }
     },
     {
       "id": "memit",
