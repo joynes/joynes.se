@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "updatedAt": "2026-11-01",
   "objective": "Alla identifierade spel och relevanta spelversioner ska fungera på webben, testas och publiceras.",
-  "currentGame": "car-topview",
+  "currentGame": "sdl-space",
   "games": [
     {
       "id": "web-quizzes",
@@ -745,7 +745,7 @@
       "id": "car-topview",
       "title": "Bilspel ovanifrån",
       "order": 12,
-      "status": "tested_local",
+      "status": "published_verified",
       "sources": [
         {
           "kind": "github",
@@ -769,11 +769,23 @@
         {
           "command": "CHECK_GAMES_NAV=1 npm run test:car-topview:browser; node scripts/test-games-navigation.cjs",
           "result": "passed locally: AI category launches playable iframe, excluded from Retrospel; previous embedded games and music navigation passed."
+        },
+        {
+          "command": "GAME_BASE_URL=https://joynes.github.io/joynes.se/games/car-topview/ HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ CHECK_GAMES_NAV=1 npm run test:car-topview:browser",
+          "result": "passed on live site: full real keyboard, mouse button and simultaneous touch suite; four walls, actual car pixels, decoded loop audio/pitch/gain, pause/release/restart, portrait and compact landscape control bounds with driving, three network failures/retry followed by actual driving; playable AI iframe and retro exclusion."
+        },
+        {
+          "command": "HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ node scripts/test-games-navigation.cjs",
+          "result": "passed on live site: previous embedded games and AI music navigation."
+        },
+        {
+          "check": "release-identity",
+          "result": "All 10 game/media/catalog/index files match release SHA256 on canonical URLs. Pages 41294880333 success; deployment API succeed."
         }
       ],
-      "publishedUrl": null,
-      "implementationCommit": null,
-      "deploymentCommit": null,
+      "publishedUrl": "https://joynes.github.io/joynes.se/games/car-topview/",
+      "implementationCommit": "f2d65e8a50755b078d2f45af74537be2caf49ad4",
+      "deploymentCommit": "f2d65e8a50755b078d2f45af74537be2caf49ad4",
       "category": "ai",
       "webAdaptation": "ai",
       "categoryLabel": "AI-spel",
@@ -792,7 +804,8 @@
         "games/car-topview/styles.css": "9bc64a6886b2d597e8f791879d2f03631db5ae962f540fe4b686b0eb8fff9947",
         "assets/games-catalog.js": "4fea3ef6b179dd8fe5c102b165b2c1ec541efa1f129b962b787cfe5fb532e3cf",
         "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82"
-      }
+      },
+      "deploymentRun": 41294880333
     },
     {
       "id": "sdl-space",

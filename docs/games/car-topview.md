@@ -18,4 +18,10 @@ En första felaktig reverse-assert jämförde med positionen före utrullning; k
 
 Desktop 1280×1000 och porträtt 390×844 visuellt granskade. Kompakt liggande vy 844×390 håller plan och kontroller synliga samtidigt; både gränser och riktig touchkörning passerade och skärmbilden granskades. Testet läser renderade koordinater och ljudobjekt, skriver inte till bilens tillstånd.
 
-Katalogkontroll passerade lokalt: spelbar iframe under AI-spel, utelämnad från Retrospel. Tidigare spel och AI-musik passerade navigationsregression. Publicering och liveverifiering återstår.
+Katalogkontroll passerade lokalt: spelbar iframe under AI-spel, utelämnad från Retrospel. Tidigare spel och AI-musik passerade navigationsregression. Publiceringen är verifierad enligt nedan.
+
+## Publicerad och verifierad
+
+https://joynes.github.io/joynes.se/games/car-topview/
+
+Kodcommit `f2d65e8a50755b078d2f45af74537be2caf49ad4`, Pages-körning `41294880333` lyckad. Alla tio spel-/media-/katalog-/HTML-filer matchar SHA256 på kanoniska liveadresser. Hela webbläsarsviten, inklusive riktiga musknappar, touch, ljud, tre nätfel/nytt försök och spelbar AI-iframe, passerade på liveadressen. Tidigare spel och AI-musik passerade navigationsregression. Inventeringen går vidare till SDL Space.
