@@ -878,7 +878,7 @@
       "id": "network-2d",
       "title": "Hello Multiplayer Game",
       "order": 14,
-      "status": "pending",
+      "status": "tested_live_pending_catalog",
       "sources": [
         {
           "kind": "github",
@@ -886,13 +886,61 @@
         }
       ],
       "work": "Canvas/Socket.IO. Testa riktiga samtidiga klienter och server, inte bara en statisk sida.",
-      "tests": [],
+      "tests": [
+        {
+          "command": "pnpm test",
+          "result": "passed in private source checkout: complete client/server build and 3 authoritative movement/input/time-budget tests."
+        },
+        {
+          "command": "pnpm lint",
+          "result": "passed client and server."
+        },
+        {
+          "command": "pnpm test:browser",
+          "result": "passed locally: 3 real clients share world, authoritative movement and remote pixels, four bounds, focus release, tuning controls, real touch/independent finger release/cancel, portrait/landscape, new figure, single clock timer, WebSocket outage/retry, original autopilot, departure cleanup and actual server restart with all clients recovering."
+        },
+        {
+          "command": "NETWORK_BASE_URL=https://test-network-game.fly.dev/ EXPECTED_RELEASE=09c53f8d3988bfa19d629d64f53a8a450b4d47e3 node tests/browser.cjs",
+          "result": "passed on live Fly app: 3 real clients share world; complete browser suite excluding intentional production server restart. Exact release/version checked before gameplay."
+        },
+        {
+          "check": "external-release-identity",
+          "result": "All 3 public client files match locally tested build SHA256 on canonical Fly URLs; health.version1.1.0 and release09c53f8 match. Direct Machine status started/host ok and fly scale show app1/shared1CPU256MB/arn verified."
+        },
+        {
+          "check": "visual",
+          "result": "Desktop1280x1000, portrait390x844 and landscape844x390 inspected. Local Du label remains visible at lower world edge."
+        },
+        {
+          "command": "npm run test:multiplayer:links; node scripts/test-games-navigation.cjs; npm test",
+          "result": "passed locally: desktop/mobile own-tab live multiplayer and autopilot with real server connection, AI inclusion/retro exclusion; previous game/music navigation; 32 homepage data/rule checks."
+        }
+      ],
       "publishedUrl": null,
-      "implementationCommit": null,
-      "deploymentCommit": null,
+      "implementationCommit": "09c53f8d3988bfa19d629d64f53a8a450b4d47e3",
+      "deploymentCommit": "09c53f8d3988bfa19d629d64f53a8a450b4d47e3",
       "category": "ai",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-spel"
+      "categoryLabel": "AI-spel",
+      "sourceCommit": "d7d6c33989481dce3e68364f8d438445f34d1e0c",
+      "sourcePeriod": "2025-09",
+      "implementationRepository": "https://github.com/joynes/test-network-game",
+      "externalUrl": "https://test-network-game.fly.dev/",
+      "deploymentImage": "registry.fly.io/test-network-game:deployment-01M6BBZHGFP7EW9YFJ2WDN72PN",
+      "deploymentRegion": "arn",
+      "machineCount": 1,
+      "sourceCommitsPushed": false,
+      "implementationNotes": "Preserved 2025 shared-world prototype: emoji avatars, 800x450 world, speed250, prediction/reconciliation, interpolation controls and original autopilot. Swedish responsive UI, reliable focus/touch/reconnect, one clock timer, bounded server input/time handling. Existing Fly hosting/region/256MB VM retained with one authoritative in-memory world. Private source changes committed locally in persistent sibling checkout per repo no-push policy; no build artifacts committed.",
+      "externalReleaseFilesSha256": {
+        "assets/index-5bc3b591.js": "afdfbbaffd0f72f6bd1220079ffbc2208637d116bca0e0ff7610e1a29901402f",
+        "assets/index-9320aff1.css": "9320aff115fc1c88a5a6d6bc9a732b806cab11a3ebc8fba105674a2e519f7c1f",
+        "index.html": "26bc39fde94507b61c98cca8532ffc4e499eb246239aa73e1ffa97f2b9041ea3"
+      },
+      "catalogReleaseFilesSha256": {
+        "assets/games-catalog.js": "097d2e6866024cf3b7320a8dba46b376283d7aa2c346979d2b7f23ee307328e7",
+        "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82",
+        "docs/games/network-2d.md": "5ed94ee064d88e9f60d642e42ec9f044eb444beec02c21519b86c5a24f174699"
+      }
     },
     {
       "id": "network-3d",

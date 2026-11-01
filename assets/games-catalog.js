@@ -1,6 +1,19 @@
 // Only tested releases belong here. The complete work queue is in data/games-inventory.json.
 window.joynesPublishedGames = [
   {
+    id: "network-2d",
+    title: "Hello Multiplayer Game",
+    kind: "ai",
+    description: "AI-spel · Original 2025 · Rör färgade figurer på en gemensam spelplan i realtid. Tangentbord, touch och autopilot. Spela tillsammans i egna fönster.",
+    href: "https://test-network-game.fly.dev/",
+    embed: false,
+    playLabel: "Öppna spelplanen",
+    modes: [["Autopilot", "https://test-network-game.fly.dev/?bot=1"]],
+    source: "https://github.com/joynes/joynes.se/blob/master/docs/games/network-2d.md",
+    sourceLabel: "Om webbversionen",
+    version: "1.1.0"
+  },
+  {
     id: "sdl-space",
     title: "SDL Space — hinderbana",
     kind: "retro",

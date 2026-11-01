@@ -16,7 +16,8 @@
     "test:bus:browser": "DRIVING_GAME_ID=unity-bus node scripts/test-driving-browser.cjs && DRIVING_GAME_ID=unity-bus node scripts/test-driving-layout.cjs",
     "test:godot-reading:browser": "node scripts/test-godot-reading-browser.cjs",
     "test:car-topview:browser": "node scripts/test-car-topview-browser.cjs",
-    "test:sdl-space:browser": "node scripts/test-sdl-space-browser.cjs"
+    "test:sdl-space:browser": "node scripts/test-sdl-space-browser.cjs",
+    "test:multiplayer:links": "node scripts/test-network-2d-navigation.cjs"
   },
   "devDependencies": {
     "playwright": "1.58.2"
