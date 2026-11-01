@@ -1,0 +1,6 @@
+CWSDPMI release5, Charles W Sandmann. Unmodified binary and original documentation.
+You have the right to receive its source code and binary updates.
+Corresponding source is included in csdpmi5s.zip.
+Official binary: https://www.delorie.com/pub/djgpp/current/v2misc/csdpmi5b.zip
+Official source: https://www.delorie.com/pub/djgpp/current/v2misc/csdpmi5s.zip
+The supplied documentation describes redistribution permission and -x compatibility mode.

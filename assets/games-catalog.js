@@ -1,6 +1,16 @@
 // Only tested releases belong here. The complete work queue is in data/games-inventory.json.
 window.joynesPublishedGames = [
   {
+    id: "rall-026",
+    title: "Rall v026 — ASCII",
+    kind: "retro",
+    description: "AI-remake av retrospel · Original 1998 · Duell mellan två hustak med originalets ASCII-grafik, röster och musik. En spelare mot datorn eller två på samma skärm. Tangentbord och touch.",
+    href: "games/rall-026/",
+    source: "https://github.com/joynes/joynes.se/blob/master/games/rall-026/source-notes.md",
+    sourceLabel: "Källor och bevarande",
+    version: "1998-web.1"
+  },
+  {
     id: "shadow-racer",
     title: "ShadowRacer",
     kind: "retro",

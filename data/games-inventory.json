@@ -1295,21 +1295,43 @@
       "id": "rall-026",
       "title": "Rall v026 — ASCII",
       "order": 19,
-      "status": "pending",
+      "status": "tested_locally",
       "sources": [
         {
           "kind": "drive-release",
           "url": "https://drive.google.com/file/d/1cfHERaNYoya5ZZmlUe3ZzySeNkCug_aB/view"
         }
       ],
-      "work": "Drive-release som ZIP. Inspektera original och återskapa spelets faktiska regler.",
-      "tests": [],
+      "work": "Full original DOS release preserved and running in self-hosted DOSBox. Browser/touch/audio/pause/recovery tested; publication and canonical verification remain.",
+      "tests": [
+        {
+          "command": "npm test",
+          "result": "passed: 32 Node tests and four Python preservation tests; all 23 original files and compatibility support byte-verified"
+        },
+        {
+          "command": "npm run test:rall-026:browser (Chromium147; full desktop/recovery, focused cover and final mobile layout)",
+          "result": "passed locally: native menus and sound submenu, audio clock/no dropped stable blocks, independent players, aim, actual glass destruction/barrel cover, both native death/results/menu returns, reacting computer, true pause/restart/quit; real CDP two-finger movement/release/cancel, 844x390/667x375/390x844; four real503 errors/retry, no external HTTP or JS errors"
+        },
+        {
+          "command": "npm run test:rall-026:links",
+          "result": "passed locally: actual native iframe movement on mobile/desktop viewport, included Retro and excluded AI"
+        }
+      ],
       "publishedUrl": null,
       "implementationCommit": null,
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel"
+      "categoryLabel": "AI-remake av retrospel",
+      "sourceYear": 1998,
+      "originalReleaseDates": [
+        "1998-12-09",
+        "1998-12-10"
+      ],
+      "sourceManifest": "games/rall-026/source-manifest.json",
+      "resourceAudit": "docs/games/rall-026-assets.json",
+      "catalogUrl": "https://joynes.github.io/joynes.se/#games/retro/rall-026",
+      "implementationRepository": "https://github.com/joynes/joynes.se"
     },
     {
       "id": "rall-030",

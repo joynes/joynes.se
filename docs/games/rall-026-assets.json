@@ -1,0 +1,31 @@
+{
+  "game": "rall-026",
+  "path": "games/rall-026/",
+  "runtime": "Unmodified DOS 1998 / emulators8.5.2 / CWSDPMI5 -p -x",
+  "assets": {
+    "games/rall-026/app.mjs": "341a8e3e0db2fa2e6d7d552191543a031bcad456dd9ee4ccb08de3a8657622f2",
+    "games/rall-026/audio.mjs": "4a39ad6220b87888c02be9656286c809355ab7a6c8ecfc4d566e4567c0d3526b",
+    "games/rall-026/dosbox.conf": "5bcc9e753408c915f713cdd5a365e755c82c33f60de5e92b70ea071710b82120",
+    "games/rall-026/game.jsdos": "204024b40d8d18aa2066229711124de30e01cf08afb3bc05f48448d3848157d4",
+    "games/rall-026/index.html": "b10c840a3c04d4e516e1c186870d741235f535993b5de0d2907226aace199c79",
+    "games/rall-026/native-text.mjs": "306ccef75b62ff80748460c8d2ca6ca988a75e854804021f1838492b8777de09",
+    "games/rall-026/original/rall-v026-ascii.zip": "f762915d3e1b55bb91e0ad5e97405a62880ff72980efd4a5394012cc4868da1e",
+    "games/rall-026/source-manifest.json": "bdcf21b97e87809fe1f2df25f5eb56811341a81bdf0f71c9cfa8e4dabe73c705",
+    "games/rall-026/source-notes.md": "3292d86f1125f33befe652b225a3f6b2067b48c7e2282868855a5d9c54dd50c3",
+    "games/rall-026/styles.css": "4c01e2f6b3269ef4ae791627c2297d83a0a37af3a9107dc704bcbff2ea74bf06",
+    "games/rall-026/vendor/cwsdpmi/CWSDPMI.DOC": "fb436f4e7c8678fb5d4fafc9587f96ad97b4f4bd658a27680eda1f59a9dd0930",
+    "games/rall-026/vendor/cwsdpmi/CWSDPMI.EXE": "d382764a98cd86e604a817564283df62ac852b17f39eac76e2e34cd98352e5c8",
+    "games/rall-026/vendor/cwsdpmi/SOURCE.txt": "211d75aba8913203808c27a6d9fa82ab26c38378f661e2e1f66ff8cb68c8a14e",
+    "games/rall-026/vendor/cwsdpmi/csdpmi5s.zip": "1198a2ee09eccf19361411a546b43d6cfb83d6f22247bb3316ee683d093ef63a",
+    "games/rall-026/vendor/emulators/LICENSE": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+    "games/rall-026/vendor/emulators/LICENSE_LIBZIP": "a9cd243af1ddc15a33cc331b23a76c7685d63e3557c37cfb4ed124eeb3cfba8c",
+    "games/rall-026/vendor/emulators/SOURCE.txt": "c29c6b9cbd5d11def27b4b988c77bee6d725e82756d819469a6bcd8a100f61f1",
+    "games/rall-026/vendor/emulators/emulators.js": "066176a9e9e6babfb5388552a5154f3c1f81ed778af3bf4a1f9f904161e3c4bb",
+    "games/rall-026/vendor/emulators/sources/dosbox-528578d.tar.gz": "797efaf22246bbc5b2e6be0a6c791a58addd2bca330e0aa93232780a77e06019",
+    "games/rall-026/vendor/emulators/sources/emulators-v8.5.2.tar.gz": "4f92834936f774ad1e0f8d2cc0fc05dc73cd9962d2b8da0a09f56139a2a70f28",
+    "games/rall-026/vendor/emulators/wdosbox.js": "a0806cc99e0c66bc594e7efd78eb22d675af7ebb0a4de543697cbe5cd7440a2e",
+    "games/rall-026/vendor/emulators/wdosbox.wasm": "b33afba80de1a420c123086e5952d135de041f9e85d4444170e29d9249ec049c",
+    "games/rall-026/vendor/emulators/wlibzip.js": "b8e55c2aa4c96e961c9965f289c0f40b5d44f02a557dcf980ddc29787b493842",
+    "games/rall-026/vendor/emulators/wlibzip.wasm": "25064d970c42ca7ea0fdb8b058204d6e41cc8826a676219677772f5591e8337b"
+  }
+}

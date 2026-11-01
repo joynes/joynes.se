@@ -1,0 +1,46 @@
+{
+  "originalArchiveSha256": "f762915d3e1b55bb91e0ad5e97405a62880ff72980efd4a5394012cc4868da1e",
+  "originalDriveId": "1cfHERaNYoya5ZZmlUe3ZzySeNkCug_aB",
+  "originalYear": 1998,
+  "originalFiles": {
+    "Rall0026/Readme.txt": "f8bbde7c3f751d1f706d165a9fcf7d1c86b4b186b2b10713bf520838470655e3",
+    "Rall0026/rall.exe": "0b1b0c36b500cc2c652e41a07ab903f84dec5724cfffda14e4b5d0c0697754f2",
+    "Rall0026/sound/DIE.WAV": "1d53f6553474857b2267c89b12d684978f9a659bdeccaf3fc16f28a9ebf34bd8",
+    "Rall0026/sound/GLASS.WAV": "0c9c51e0143538500210ea6bd11ff5e03b6b6c1893bb8a7ff8eff3b83fe6b3f1",
+    "Rall0026/sound/JQP.WAV": "18dc04764e1cff8d97fffd9c0f94513457c85ad535f4f9c694cc92c721c4edb9",
+    "Rall0026/sound/LOAD1.WAV": "d0c58fa997563adac542176aaab2cd7e66449c1292cddacd7f5122c8eb3be32d",
+    "Rall0026/sound/LOAD2.WAV": "20233721e49f96be0cfaa3023b212b6842cf45c574dc4e5b3fc70739136ecccd",
+    "Rall0026/sound/NEAR.WAV": "2c8c4c71169efe22cf47cf3ef1d8391cc4efdf7e387b701f39a85cc97dc545f2",
+    "Rall0026/sound/RALL.WAV": "1002cf7876d01cb981d80d8a280f7eb9d14c7083ef4c923ebb98aa6aaba5b14f",
+    "Rall0026/sound/SHOT2.WAV": "8f85322b5950d4d1927cfd2e66fd60cf87686a2f29717e3f8886faa7fcebbe30",
+    "Rall0026/sound/Shot1.wav": "7cdbcc0737fc8f55e68d03451be04054b7150578111223f71ab01ca5c251b3ec",
+    "Rall0026/music/SONG3.MID": "6e43f0da53db7ad526aad324d66ef9941fc6fbe29386efa9f4707abf6b125b1a",
+    "Rall0026/music/Song4.mid": "643c5e739c33fb465eaec5dd7e9c788238a74595d9b7a308a86d1960ab2d587c",
+    "Rall0026/music/song1.mid": "4b3a7ad68e0d2bf87973b6b4890e111c1085b2903eafa7414c2784b260378966",
+    "Rall0026/music/song2.mid": "c615712d6321a79e84611bfe724f5e86d416e4fd8d5c649df6b031290c209bef",
+    "Rall0026/graph/Menu": "249645b646c9c447de3f32bb3ac67e92a1da39ccf2d1962a005a2d92fc84b282",
+    "Rall0026/graph/arena": "3d6920ae3ccb558c6ab865a06539917f6a0e56c62f2ded7761d2a7c88ceac5d5",
+    "Rall0026/graph/contents": "a1c2a3f4317e1fc8e7cd07bbe7f2540dc4efe25b57ea51c06027a62c932e8c9d",
+    "Rall0026/graph/control": "7f30e83ccbc0799eacf0e57d7e8b7758138181d3dc22cd1b02cf6807be216d17",
+    "Rall0026/graph/die.txt": "91cfe876f30f7f987c087ebc3278b3b9f517a32c490d37bfa0efa60d2178c4fa",
+    "Rall0026/graph/intro": "e23065ad363994dc0de3ccb9b47478179d149d70ca6b95e57b52d44feeabe943",
+    "Rall0026/graph/options": "66d278dc8a708323a2c7e84b356feac91fc3b660c1f23f915c9925af5acc03d7",
+    "Rall0026/graph/rallb": "b9808e49951a26d4877f033afa72813b6e35fca386bec54ca356335bc11d2cbf"
+  },
+  "supportFiles": {
+    "Rall0026/CWSDPMI.EXE": "d382764a98cd86e604a817564283df62ac852b17f39eac76e2e34cd98352e5c8",
+    ".jsdos/dosbox.conf": "5bcc9e753408c915f713cdd5a365e755c82c33f60de5e92b70ea071710b82120",
+    ".jsdos/jsdos.json": "9e9b0ff38a272c15a21f287f4b9f8f04d389d8007b36c3b35536d0c69f58391d"
+  },
+  "bundleSha256": "204024b40d8d18aa2066229711124de30e01cf08afb3bc05f48448d3848157d4",
+  "emulator": {
+    "version": "8.5.2",
+    "backend": "dosboxDirect",
+    "dosboxCommit": "528578d5a6f76afd4d5ef4e722b5670826f1183a"
+  },
+  "dpmi": {
+    "release": 5,
+    "arguments": "-p -x",
+    "binaryUnmodified": true
+  }
+}
