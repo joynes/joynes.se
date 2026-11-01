@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "updatedAt": "2026-11-01",
   "objective": "Alla identifierade spel och relevanta spelversioner ska fungera på webben, testas och publiceras.",
-  "currentGame": "hardword",
+  "currentGame": "small-wonders",
   "games": [
     {
       "id": "web-quizzes",
@@ -299,7 +299,7 @@
       "id": "hardword",
       "title": "Skoluppgifter / Ordhjälten",
       "order": 6,
-      "status": "tested_locally",
+      "status": "published_verified",
       "sources": [
         {
           "kind": "github",
@@ -355,15 +355,36 @@
         {
           "check": "visual",
           "result": "desktop and 360px mobile, normal/wide arithmetic, Breakout win inspected; mobile coin overlay and dark win text fixed"
+        },
+        {
+          "command": "GAME_BASE_URL=https://joynes.github.io/joynes.se/games/hardword/ npm run test:school:browser",
+          "result": "passed live on final 311927c: all 192 word questions, 810 math answers, 174 reading/ice-age questions, all 19 crosswords/127 words, normal unlocks, 2484 generated arithmetic/clock validations, transfer of 252 earned courses, shop/avatar/parent panel, mobile touch/five-digit layout, storage errors, reward links, loss/restart, controlled 15-layout/boss/49-drop engine scenarios, full paddle-controlled level-one win, game over/replay and offline play"
+        },
+        {
+          "command": "HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ node scripts/test-games-navigation.cjs",
+          "result": "passed live: six playable game iframes, Retro/AI routing and music regression"
+        },
+        {
+          "check": "deployed identity",
+          "result": "all 16 code/data/media/catalog files byte-equal to final tested commit; canonical URL without query also byte-equal; successful Pages run 41281184548"
         }
       ],
-      "publishedUrl": null,
-      "implementationCommit": null,
-      "deploymentCommit": null,
+      "publishedUrl": "https://joynes.github.io/joynes.se/games/hardword/",
+      "implementationCommit": "311927ceff5e9097a64fd0615393c853139279b4",
+      "deploymentCommit": "311927ceff5e9097a64fd0615393c853139279b4",
       "category": "ai",
       "webAdaptation": "ai",
       "categoryLabel": "AI-spel",
-      "sourceCommit": "445d73d1c9e43593d4a5c4f6843790de2d611e13"
+      "sourceCommit": "445d73d1c9e43593d4a5c4f6843790de2d611e13",
+      "verifiedFiles": {
+        "fileCount": 16,
+        "sha256OfSortedFileHashes": "127c0c5e5eadb59a0281113456b32fa455da0f4b716aaaf037bafd9e2681cc0e",
+        "commit": "311927ceff5e9097a64fd0615393c853139279b4"
+      },
+      "implementationCommits": [
+        "cbd03b581ca0cca57dde8c44b037d354a4e45e25",
+        "311927ceff5e9097a64fd0615393c853139279b4"
+      ]
     },
     {
       "id": "small-wonders",
