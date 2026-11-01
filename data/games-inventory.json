@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "updatedAt": "2026-11-01",
   "objective": "Alla identifierade spel och relevanta spelversioner ska fungera på webben, testas och publiceras.",
-  "currentGame": "memit",
+  "currentGame": "hardword",
   "games": [
     {
       "id": "web-quizzes",
@@ -233,7 +233,7 @@
       "id": "memit",
       "title": "Memit",
       "order": 5,
-      "status": "tested_locally",
+      "status": "published_verified",
       "sources": [
         {
           "kind": "github",
@@ -261,11 +261,23 @@
         {
           "check": "visual",
           "result": "desktop 1440x1000 and mobile 360x740 inspected; no horizontal overflow"
+        },
+        {
+          "command": "GAME_BASE_URL=https://joynes.github.io/joynes.se/games/memit/ npm run test:memit:browser",
+          "result": "passed live: all 127 practice cards and exam questions, ten grid and typing questions, scoring, replay, mobile, keyboard and recovery; harness waits for asynchronous pack loading"
+        },
+        {
+          "command": "HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ node scripts/test-games-navigation.cjs",
+          "result": "passed live: five playable iframes, category routes and music regression"
+        },
+        {
+          "check": "deployed identity",
+          "result": "all 133 code/data/image/catalog files byte-equal; successful Pages run 41278930286"
         }
       ],
-      "publishedUrl": null,
-      "implementationCommit": null,
-      "deploymentCommit": null,
+      "publishedUrl": "https://joynes.github.io/joynes.se/games/memit/",
+      "implementationCommit": "1c8d61f006fbac85eda189c45f786df21b3156f5",
+      "deploymentCommit": "1c8d61f006fbac85eda189c45f786df21b3156f5",
       "category": "retro",
       "webAdaptation": "ai",
       "categoryLabel": "AI-remake av retrospel",
@@ -276,6 +288,11 @@
         "date": "2026-11-01",
         "source": "https://www.dota2.com/datafeed/herolist?language=english",
         "note": "Original Dota pack absent from GitHub and available Drive archive; Drive Arabic data.js and strings.js are zero bytes. All four original modes restored using an explicitly labeled current official Valve portrait/name pack; exact historical roster cannot be verified."
+      },
+      "verifiedFiles": {
+        "fileCount": 133,
+        "sha256OfSortedFileHashes": "f3da6071dd47df4d16276e1e398434a9ee914aa8ca647080312213ca8727d9e3",
+        "commit": "1c8d61f006fbac85eda189c45f786df21b3156f5"
       }
     },
     {

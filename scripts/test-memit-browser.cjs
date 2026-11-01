@@ -9,7 +9,7 @@ async function typeCorrect(page,name){await page.locator('#answer').fill(name);a
  const browser=await chromium.launch({channel:'chrome',headless:true});
  try{
   const page=await browser.newPage({viewport:{width:1440,height:1000}});const errors=[],bad=[];page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)bad.push(r.url());});
-  await page.goto(base);assert.match(await page.locator('#dataset').innerText(),/127 hjältar/);
+  await page.goto(base);await page.locator('#menu').waitFor();assert.match(await page.locator('#dataset').innerText(),/127 hjältar/);
   await page.locator('[data-mode="practice"]').click();const practiced=new Set();
   for(let i=0;i<127;i++){
    const name=await nameFromPortrait(page);assert.equal(await page.locator('#name').innerText(),name);practiced.add(name);await page.locator('#portrait').evaluate(img=>img.decode());await page.locator('#next').click();
