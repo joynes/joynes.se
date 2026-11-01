@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "updatedAt": "2026-11-01",
   "objective": "Alla identifierade spel och relevanta spelversioner ska fungera på webben, testas och publiceras.",
-  "currentGame": "shadow-racer",
+  "currentGame": "rall026-ascii",
   "games": [
     {
       "id": "web-quizzes",
@@ -1193,7 +1193,7 @@
       "id": "shadow-racer",
       "title": "ShadowRacer",
       "order": 18,
-      "status": "tested_pending_publication",
+      "status": "published_verified",
       "sources": [
         {
           "kind": "drive-folder",
@@ -1229,11 +1229,23 @@
         {
           "command": "node scripts/test-games-navigation.cjs",
           "result": "passed: previous playable quiz, categories/nested routes/all-games and AI music regression"
+        },
+        {
+          "command": "GAME_BASE_URL=https://joynes.github.io/joynes.se/games/shadow-racer/ npm run test:shadow:browser",
+          "result": "passed full canonical live suite: both native tracks driven to genuine finish with zero crashes; native lap records/persistence, real keyboard, real crash/retry, exact timer/physics pause, native multi-touch/cancel/remaining thumb, rotation, four actual503 errors/playable retry, blocked storage and zero external HTTP requests"
+        },
+        {
+          "command": "HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ npm run test:shadow:links",
+          "result": "passed canonical live homepage: embedded native gameplay on desktop/mobile, both editions selectable and correct Retro/AI filters"
+        },
+        {
+          "check": "deployment and complete canonical SHA256 verification",
+          "result": "passed: Pages41343799566 succeeded for exact commit5be413d; all27 game/vendor/original/catalog/index/document/audit files match; public finish and mobile screenshots inspected"
         }
       ],
-      "publishedUrl": null,
-      "implementationCommit": null,
-      "deploymentCommit": null,
+      "publishedUrl": "https://joynes.github.io/joynes.se/games/shadow-racer/",
+      "implementationCommit": "5be413dc98f23ab3a849cfc56a3a0c8a5114e1c7",
+      "deploymentCommit": "5be413dc98f23ab3a849cfc56a3a0c8a5114e1c7",
       "category": "retro",
       "webAdaptation": "ai",
       "categoryLabel": "AI-remake av retrospel",
@@ -1246,7 +1258,38 @@
       "resourceAudit": "docs/games/shadow-racer-assets.json",
       "sourceManifest": "games/shadow-racer/source-manifest.json",
       "nativeObserverProof": "games/shadow-racer/native-observer-proof.json",
-      "catalogUrl": "https://joynes.github.io/joynes.se/#games/retro/shadow-racer"
+      "catalogUrl": "https://joynes.github.io/joynes.se/#games/retro/shadow-racer",
+      "catalogCommit": "5be413dc98f23ab3a849cfc56a3a0c8a5114e1c7",
+      "catalogDeploymentRun": 41343799566,
+      "publishedFileSha256": {
+        "games/shadow-racer/LICENSE_APE": "7e15278f714da10a6fcdb76321a4ae519b8e190f8b3881926298cffcd3497f14",
+        "games/shadow-racer/app.mjs": "7ff16b4ef8cef0f405327556c09570c7c01ff2a3535248f0e364881eb6fa2ec3",
+        "games/shadow-racer/index.html": "c5bc7a77d6c1572a1e2b9c28eed70ba6e6b8cbc9173281c454623c502a0744f8",
+        "games/shadow-racer/native-observer-proof.json": "782613371e494d411215ba826bc2c3456751417551a8339ba0c6bc09148038ab",
+        "games/shadow-racer/original/shadow-racer-20080928.swf": "ca347f3481ee254d60ec3bd856821b6f6546f8567120872509659844622a4e3b",
+        "games/shadow-racer/original/shadow-racer-20081005.swf": "4bf85f616c53e2f11fef8c40458e032c2555cbf0a8951bcddcf1f5ca26d73c89",
+        "games/shadow-racer/shadow-racer-20080928.swf": "6f56ab49e660bbc3c9b05471b0d2f7cf1d738414b988f953ca5ef79e2e501151",
+        "games/shadow-racer/shadow-racer-20081005.swf": "c33a6cee03e839251864e416d6f0e9e93aa855fd6bc6a99b80b67d2f7d85b257",
+        "games/shadow-racer/source-manifest.json": "d934d88f5f6a412ed61e1e19b61ddfdb81c3e2ec9e04633a90fc14cefe8967e5",
+        "games/shadow-racer/source-notes.md": "f119c335a57e2d320dd7ed3e8f6a76830762bd8dcf450f7a2ef5c443a0dfe6a2",
+        "games/shadow-racer/styles.css": "99cfe0b4cb54dd25ca9d7fd1897f22eca4f75208d0c4422904b00670ef2932da",
+        "games/shadow-racer/vendor/ruffle/172de42e6619eac8f371.wasm": "1ed33b9b71a6b01b9aafafed660be343ffeb2d246c5d79e6425a32bf93e38207",
+        "games/shadow-racer/vendor/ruffle/878d548199cddef07035.wasm": "af9b6a13a8f5e8d305bc3ce28a4edf3f6242df1183e8576ad4ca086e9f21eaea",
+        "games/shadow-racer/vendor/ruffle/LICENSE_APACHE": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+        "games/shadow-racer/vendor/ruffle/LICENSE_MIT": "4de9338a7879c68e911742a7d691f0797ff1ef8d8a6fb978b0c711e258fe959c",
+        "games/shadow-racer/vendor/ruffle/README.md": "cdbeefd04e27a2fe80f735210fa4c054e376802eb43a16d9b6eeae78500f2bde",
+        "games/shadow-racer/vendor/ruffle/core.ruffle.16d61072ac7fdc4d5013.js": "d27c6bdce2a34afb32e8dfa40970bc7e86cbcb912f92db7eb3e1ac70e943bd82",
+        "games/shadow-racer/vendor/ruffle/core.ruffle.16d61072ac7fdc4d5013.js.map": "29e40a59a1ee20c848adc5e1a99a8bc5d78beedcaaf1c6a41b9f4a455067a899",
+        "games/shadow-racer/vendor/ruffle/core.ruffle.994eeef0a471a88cd0e3.js": "d89e507ee60d550629e9229aa1e4dd4f9e75ec7db271e0135cbc87dab042ea51",
+        "games/shadow-racer/vendor/ruffle/core.ruffle.994eeef0a471a88cd0e3.js.map": "0c097859936752cbae062d7cbb3a9f54bf1f532c015d3eb18ddacbbcb9827457",
+        "games/shadow-racer/vendor/ruffle/package.json": "822dd0fe6f6a84d4ab41351acd2a789aa9ef75b3fe454ab846c0858157c48d89",
+        "games/shadow-racer/vendor/ruffle/ruffle.js": "26036a94567088dfb3de88a759e8ed10a4cea07b29500af36f345eef42420098",
+        "games/shadow-racer/vendor/ruffle/ruffle.js.map": "bf8dabc8144a0e087cdbade5da77de5a998ab55a271b32bae6e3173248d4188a",
+        "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82",
+        "assets/games-catalog.js": "4563700bc43d43dfb3e51b4acd65076d1f41a3fc420bbd4b2537a238d7469588",
+        "docs/games/shadow-racer.md": "5b98ef726985c66402150b7dc0d0fa85c43e44c84fd0f8d643b1ee5292501dcf",
+        "docs/games/shadow-racer-assets.json": "1b9dd2c13b47ce0ac3886b6f07af79d3a54262410d09836cdf9ede1ecadd9adf"
+      }
     },
     {
       "id": "rall-026",
