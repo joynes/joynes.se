@@ -25,11 +25,19 @@ const base = process.env.HOMEPAGE_BASE_URL || 'http://127.0.0.1:8767/';
     await page.locator('#contentList .item-title a').getByText('Milians Grimace Matte-spel',{exact:true}).click();
     await page.waitForFunction(()=>location.hash==='#games/ai/grimace-gemini' && document.querySelector('#stageTitle')?.textContent==='Milians Grimace Matte-spel');
     const mathFrame=page.frameLocator('iframe[title="Milians Grimace Matte-spel"]');
+    await page.waitForFunction(()=>{
+      const doc=document.querySelector('iframe[title="Milians Grimace Matte-spel"]')?.contentDocument;
+      return doc?.readyState==='complete' && doc.querySelector('script[type="module"]');
+    });
     await mathFrame.locator('[data-mode="plus"]').click();
     assert.equal(await mathFrame.locator('#options button').count(),4);
     await page.goto(base+'#games/ai/grimace-codex');
     await page.waitForFunction(()=>document.querySelector('#stageTitle')?.textContent==='Milians Grimace Matte-spel — Codex');
     const codexFrame=page.frameLocator('iframe[title="Milians Grimace Matte-spel — Codex"]');
+    await page.waitForFunction(()=>{
+      const doc=document.querySelector('iframe[title="Milians Grimace Matte-spel — Codex"]')?.contentDocument;
+      return doc?.readyState==='complete' && doc.querySelector('script[type="module"]');
+    });
     await codexFrame.locator('[data-mode="minus"]').click();
     assert.equal(await codexFrame.locator('#options button').count(),4);
     await page.locator('#gameControls').getByRole('link',{name:'Alla spel',exact:true}).click();

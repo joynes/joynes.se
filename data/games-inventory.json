@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "updatedAt": "2026-11-01",
   "objective": "Alla identifierade spel och relevanta spelversioner ska fungera på webben, testas och publiceras.",
-  "currentGame": "grimace-codex",
+  "currentGame": "quiz-sdl",
   "games": [
     {
       "id": "web-quizzes",
@@ -120,7 +120,7 @@
       "id": "grimace-codex",
       "title": "Milians Grimace Matte-spel — Codex",
       "order": 3,
-      "status": "tested_locally",
+      "status": "published_verified",
       "sources": [
         {
           "kind": "github",
@@ -144,15 +144,35 @@
         {
           "check": "visual",
           "result": "desktop 1440x1000 and mobile 360x740 inspected"
+        },
+        {
+          "command": "GAME_BASE_URL=https://joynes.github.io/joynes.se/games/grimace-codex/ npm run test:grimace-codex:browser",
+          "result": "passed on live site: all 20 questions, both endings, replay, resume, touch, keyboard, exit and storage recovery"
+        },
+        {
+          "command": "HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ node scripts/test-games-navigation.cjs",
+          "result": "passed on live site: three playable game iframes, categories and music regression; harness waits for iframe modules to load before clicking"
+        },
+        {
+          "check": "deployed identity",
+          "result": "six files verified byte-for-byte and SHA256; successful Pages run 41278151400"
         }
       ],
-      "publishedUrl": null,
-      "implementationCommit": null,
-      "deploymentCommit": null,
+      "publishedUrl": "https://joynes.github.io/joynes.se/games/grimace-codex/",
+      "implementationCommit": "6a7a0e937f22c3b42d58eceb47da1c70c2fc1334",
+      "deploymentCommit": "6a7a0e937f22c3b42d58eceb47da1c70c2fc1334",
       "category": "ai",
       "webAdaptation": "ai",
       "categoryLabel": "AI-spel",
-      "sourceCommit": "07bf4ed2be5b219de95dc5a647f3d832f23b5e44"
+      "sourceCommit": "07bf4ed2be5b219de95dc5a647f3d832f23b5e44",
+      "verifiedFileHashes": {
+        "games/grimace-codex/index.html": "ce032526246a59ec0e1d7b4369d34e27dab242410c369f71ff4f601349c4c0c2",
+        "games/grimace-codex/app.mjs": "9584940a9196c704c02ebbbb9f08a546ae13a250ae2fbf23ca2398889163b892",
+        "games/grimace-codex/core.mjs": "3a2369704de27b077329d5e1c4f185f9240bacfacaab4fd215016e3ce586e740",
+        "games/grimace-codex/questions.mjs": "0aba6d91d12c3aa49a9fb49e234952cdfc2c2389e753715dcdb13376b8af8b73",
+        "games/grimace-codex/styles.css": "8825eadb2ca8f75ed3ac22dc4c00c5f9b4b7630f8c5664c40e6eea8342015aa5",
+        "assets/games-catalog.js": "f2dfc3d33360e3e634cd810dbe4af82fd798e200c76393c69d6e96d2f506ad02"
+      }
     },
     {
       "id": "quiz-sdl",
