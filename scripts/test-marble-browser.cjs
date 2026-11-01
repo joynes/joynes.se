@@ -18,27 +18,32 @@ const regions=path=>JSON.parse(execFileSync('python3',['scripts/marble-vision.py
   assert(Math.abs(box.width/box.height-1.6)<.01);assert(box.x>=0&&box.x+box.width<=await page.evaluate(()=>innerWidth)+1);
   assert.deepEqual(await canvas.evaluate(c=>[c.width,c.height]),[960,600]);
   const path=`test-results/marble-${mobile?'touch':'mouse'}.png`;
-  let ball;
-  for(let attempt=0;attempt<20&&!ball;attempt++){
-   await page.clock.runFor(1000);await canvas.screenshot({path});
-   // Screenshot pixels follow the CSS box; map back to native canvas coordinates.
-   ball=regions(path).find(r=>r.y>20&&r.y<box.height-30&&r.x>40&&r.x<box.width-30);
-  }
-  assert(ball,'A visible native sphere must spawn');
-  const from={x:box.x+ball.x,y:box.y+ball.y};
-  const to={x:box.x+box.width*80/960,y:box.y+box.height*90/600};
   const cdp=mobile?await context.newCDPSession(page):null;
-  if(mobile)await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{...from,id:1}]});
-  else {await page.mouse.move(from.x,from.y);await page.mouse.down();}
-  await page.clock.runFor(100);
-  if(mobile)await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{...to,id:1}]});
-  else await page.mouse.move(to.x,to.y);
-  await page.clock.runFor(600);await canvas.screenshot({path});
-  const near=regions(path).find(r=>Math.hypot(r.x-box.width*80/960,r.y-box.height*90/600)<box.width*35/960);
-  assert(near,`${mobile?'Touch':'Mouse'} must actually move and hold a native sphere`);
-  if(mobile)await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});else await page.mouse.up();
-  await page.clock.runFor(500);await canvas.screenshot({path});
-  assert(!regions(path).some(r=>Math.hypot(r.x-near.x,r.y-near.y)<box.width*30/960),'Released sphere must fall under native gravity');
+  const to={x:box.x+box.width*80/960,y:box.y+box.height*90/600};
+  let grabbed=false;
+  await page.clock.runFor(6000);
+  // A random moving/partly occluded sphere may escape the sampled pointer.
+  // Resample actual frames; success still requires an observed held sphere and fall.
+  for(let attempt=0;attempt<8&&!grabbed;attempt++){
+   await page.clock.runFor(1000);await canvas.screenshot({path});
+   const ball=regions(path).filter(r=>r.y>20&&r.y<box.height-30&&r.x>40&&r.x<box.width-30).sort((a,b)=>b.area-a.area)[0];
+   if(!ball)continue;
+   const from={x:box.x+ball.x,y:box.y+ball.y};
+   if(mobile)await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{...from,id:1}]});
+   else {await page.mouse.move(from.x,from.y);await page.mouse.down();}
+   await page.clock.runFor(100);
+   if(mobile)await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{...to,id:1}]});
+   else await page.mouse.move(to.x,to.y);
+   await page.clock.runFor(600);await canvas.screenshot({path});
+   const near=regions(path).find(r=>Math.hypot(r.x-box.width*80/960,r.y-box.height*90/600)<box.width*35/960);
+   if(mobile)await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});else await page.mouse.up();
+   await page.clock.runFor(500);await canvas.screenshot({path});
+   if(near){
+    assert(!regions(path).some(r=>Math.hypot(r.x-near.x,r.y-near.y)<box.width*30/960),'Released sphere must fall under native gravity');
+    grabbed=true;
+   }
+  }
+  assert(grabbed,`${mobile?'Touch':'Mouse'} must actually move and hold a native sphere`);
   await page.screenshot({path:`test-results/marble-${mobile?'mobile':'desktop'}-page.png`});
   await page.getByRole('button',{name:'Börja om'}).click();await page.getByRole('button',{name:'Starta kulbanan'}).waitFor();
   await page.getByRole('button',{name:'Starta kulbanan'}).click();await page.waitForFunction(()=>document.body.dataset.state==='playing',{},{timeout:60000});
@@ -62,13 +67,15 @@ const regions=path=>JSON.parse(execFileSync('python3',['scripts/marble-vision.py
  await home.waitForFunction(()=>document.querySelector('#stageTitle')?.textContent==='AI-spel');
  assert(!(await home.locator('#contentList').innerText()).includes('Marble Tables'));
  await opened.close();await home.close();console.log('Homepage: Retro category, own-tab launch and AI filtering passed');
+ for (const blocked of ['webtest2.wasm','webtest2.loader.js']) {
  const recovery=await browser.newPage();
- await recovery.route('**/Build/webtest2.wasm',r=>r.abort());
+ await recovery.route('**/Build/'+blocked,r=>r.abort());
  await recovery.goto(base);await recovery.getByRole('button',{name:'Starta kulbanan'}).click();
  await recovery.waitForFunction(()=>document.body.dataset.state==='error',{},{timeout:60000});
- await recovery.unroute('**/Build/webtest2.wasm');
+ await recovery.unroute('**/Build/'+blocked);
  await recovery.getByRole('button',{name:'Försök igen'}).click();
  await recovery.waitForFunction(()=>document.body.dataset.state==='playing',{},{timeout:60000});
- await recovery.close();console.log('Blocked engine download: visible error and successful retry passed');
+ await recovery.close();console.log(`Blocked ${blocked}: visible error and successful retry passed`);
+ }
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1});

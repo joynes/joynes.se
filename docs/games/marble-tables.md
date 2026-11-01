@@ -15,7 +15,7 @@ Teknikreferenser: Unitys [WebGL-mallar](https://docs.unity3d.com/2021.3/Document
 
 ## Verifiering
 
-`npm run test:marble:browser` kör den riktiga WebGL-motorn i installerad Chrome med Playwright. Ingen spelstatus injiceras. Bildanalys via Python/Pillow lokaliserar verkliga renderade kulor, därefter används riktiga mus- respektive CDP-touchhändelser. Testet ser kulan flytta till en tom plats, stanna medan den hålls och falla efter släpp. Det kontrollerar även bildformat, omstart med ny motorstart, helskärm och fel/återhämtning efter blockerad WASM-hämtning. Slumpmässiga kulfärger kräver ibland väntan på en synlig varm/lila kula.
+`npm run test:marble:browser` kör den riktiga WebGL-motorn i installerad Chrome med Playwright. Ingen spelstatus injiceras. Bildanalys via Python/Pillow lokaliserar verkliga renderade kulor, därefter används riktiga mus- respektive CDP-touchhändelser. Testet ser kulan flytta till en tom plats, stanna medan den hålls och falla efter släpp. Det kontrollerar även bildformat, omstart med ny motorstart, helskärm och fel/återhämtning efter blockerad WASM- respektive laddarskript-hämtning. Slumpmässiga kulfärger kräver ibland väntan på en synlig varm/lila kula. En rullande eller delvis skymd kula kan missas; testet får välja en ny kula från en ny bild, men kräver alltid observerad förflyttning, hållning och gravitation.
 
 - Dator 1280×850 och touch 390×844: passerade lokalt.
 - Båda vyerna granskade visuellt. Hela banan syns, inga kontroller överlappar.

@@ -14,7 +14,13 @@ async function launch() {
   progress.value = 0;
   status.textContent = 'Laddar kulbanan…';
   try {
-    if (typeof createUnityInstance !== 'function') throw new Error('Laddaren saknas');
+    if (typeof createUnityInstance !== 'function') await new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = 'Build/webtest2.loader.js';
+      script.onload = resolve;
+      script.onerror = () => { script.remove(); reject(new Error('Laddaren saknas')); };
+      document.body.append(script);
+    });
     instance = await createUnityInstance(canvas, {
       dataUrl: 'Build/webtest2.data', frameworkUrl: 'Build/webtest2.framework.js',
       codeUrl: 'Build/webtest2.wasm', streamingAssetsUrl: 'StreamingAssets',
