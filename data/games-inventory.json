@@ -1,0 +1,527 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-01",
+  "objective": "Alla identifierade spel och relevanta spelversioner ska fungera på webben, testas och publiceras.",
+  "currentGame": "web-quizzes",
+  "games": [
+    {
+      "id": "web-quizzes",
+      "title": "Frågespelet",
+      "order": 1,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/joynes/web_quizzes"
+        }
+      ],
+      "work": "Webbspel; laga omstart, återkoppling och mobilvy. Rätta verifierade fel i frågebanken.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "grimace-gemini",
+      "title": "Milians Grimace Matte-spel — Gemini",
+      "order": 2,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/joynes/test-gemini-math-game"
+        }
+      ],
+      "work": "Bevara originalets spelregler; testa plus/minus, rätt/fel, omstart och mobil.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "grimace-codex",
+      "title": "Milians Grimace Matte-spel — Codex",
+      "order": 3,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/joynes/test-codex-math-game"
+        }
+      ],
+      "work": "Separat implementation av samma spelidé. Bevara som egen spelbar variant.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "quiz-sdl",
+      "title": "Läs- och ordquiz",
+      "order": 4,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/joynes/quiz_game"
+        }
+      ],
+      "work": "Källkod i SDL/C++; befintligt webbbygge finns i quiz_game_online. Kontrollera filer, inmatning och mobilstöd.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "memit",
+      "title": "Memit",
+      "order": 5,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/joynes/memit"
+        }
+      ],
+      "work": "Övnings-, gissnings- och provlägen. Återställ saknade bibliotek och speldata före publicering.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "hardword",
+      "title": "Skoluppgifter / Ordhjälten",
+      "order": 6,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/joynes/hardword"
+        }
+      ],
+      "work": "Granska aktuell webbversion och publicerad adress; bevara alla befintliga spellägen.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "small-wonders",
+      "title": "Small Wonders / Inuti språkmodellen",
+      "order": 7,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/joynes/llmspel"
+        }
+      ],
+      "work": "Källrepo och llmspel-play är samma projekt. Testa torn, spelbart kapitel, MicroGPT-demo och garden-vy.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "marble-tables",
+      "title": "Marble Tables",
+      "order": 8,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/joynes/marble_tables"
+        }
+      ],
+      "work": "Unity-källa och marble-web-test är samma projekt. Verifiera webbbygget och styrningen.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "simple-driving",
+      "title": "Simple Driving Game",
+      "order": 9,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/joynes/SimpleDrivingGame"
+        }
+      ],
+      "work": "Unity-källa. Identifiera spelmekanik, tillgångar och webbexport; testa körning på tangentbord och touch.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "unity-bus",
+      "title": "Bus Test Game",
+      "order": 10,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/joynes/unity_bus"
+        }
+      ],
+      "work": "Befintligt Unity WebGL-bygge. Utred relationen till SimpleDrivingGame utan att anta att de är samma.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "godot-reading",
+      "title": "Godot Reading Game",
+      "order": 11,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/joynes/godot-reading-game"
+        }
+      ],
+      "work": "Ofullständig Godot-prototyp med objekt och lägesrelationer. Återskapa saknade delar och gör webbversion.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "car-topview",
+      "title": "Bilspel ovanifrån",
+      "order": 12,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/joynes/car_topview_game"
+        }
+      ],
+      "work": "Godot-projekt. Bevara bilfysik och styrning i webbversion.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "sdl-space",
+      "title": "SDL Space / hinderbana",
+      "order": 13,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/joynes/sdl2-samples-with-wasm-support"
+        }
+      ],
+      "work": "simple_game_using_sdl2_wasm har spelare, hinder, kollision och poäng. Grafikdemona är inte separata spel.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "network-2d",
+      "title": "Hello Multiplayer Game",
+      "order": 14,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/joynes/test-network-game"
+        }
+      ],
+      "work": "Canvas/Socket.IO. Testa riktiga samtidiga klienter och server, inte bara en statisk sida.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "network-3d",
+      "title": "Three.js Network Game",
+      "order": 15,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/joynes/test-rig-gemini"
+        }
+      ],
+      "work": "3D/Socket.IO-prototyp. Testa spelare, anslutning, rörelse och touch med riktig server.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "neon-interceptor",
+      "title": "Neon Interceptor",
+      "order": 16,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/joynes/neon-interceptor"
+        }
+      ],
+      "work": "Befintligt aktivt spelprojekt. Granska rätt checkout och instruktioner; bevara kampanj, bossar, butik och multiplayer.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "worldforge",
+      "title": "WorldForge",
+      "order": 17,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/joynes/worldforge-self-test"
+        }
+      ],
+      "work": "Befintligt 3D-multiplayerspel. Testa byggande, uthållig lagring, avatarer och riktiga samtidiga klienter.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "shadow-racer",
+      "title": "ShadowRacer",
+      "order": 18,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "drive-folder",
+          "url": "https://drive.google.com/drive/folders/1TT9grPo0r_9tHhVN6Lm97YAjC5JnzQh7"
+        }
+      ],
+      "work": "ActionScript/Flash-källa och SWF i Drive. Granska spelmekanik och återanvänd originalmaterial i webbversion.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "rall-026",
+      "title": "Rall v026 — ASCII",
+      "order": 19,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "drive-release",
+          "url": "https://drive.google.com/file/d/1cfHERaNYoya5ZZmlUe3ZzySeNkCug_aB/view"
+        }
+      ],
+      "work": "Drive-release som ZIP. Inspektera original och återskapa spelets faktiska regler.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "rall-030",
+      "title": "Rall v030 — Fighter",
+      "order": 20,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "drive-release",
+          "url": "https://drive.google.com/file/d/1FGPeHw10MCgX4vUwJNITWSx8r84M4TZ8/view"
+        }
+      ],
+      "work": "Drive-release som ZIP. Inspektera före val av portningsmetod.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "rall-054",
+      "title": "Rall v054 / rall0054 — Tank",
+      "order": 21,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/joynes/rall0054"
+        },
+        {
+          "kind": "drive-folder",
+          "url": "https://drive.google.com/drive/folders/1p-GmiheGisYln6QAOKXopvhnkMfxCx2Y"
+        },
+        {
+          "kind": "drive-release",
+          "url": "https://drive.google.com/file/d/1kIgJjs2cZA_IERTcx5XekalUaSSO6aTS/view"
+        }
+      ],
+      "work": "Originalbeskrivningen anger stridsvagnsduell. Bevara originalkartor, grafik, styrning och eventuella spelarlägen.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "rall-006",
+      "title": "Rall006 — Tank",
+      "order": 22,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/joynes/rall006"
+        },
+        {
+          "kind": "drive-folder",
+          "url": "https://drive.google.com/drive/folders/1PP4d2mWdYiW7hGYP_l6O1iHyJyrd3Mt8"
+        }
+      ],
+      "work": "Befintlig remake behöver full kontroll mot originalets lag, rundor, kartor, normal/siege och powerups.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "rall-066",
+      "title": "Rall v066 — Tank2",
+      "order": 23,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "drive-release",
+          "url": "https://drive.google.com/file/d/18nKEpqA1gdMGeBfRbiRk2zMZC-y0xRtR/view"
+        }
+      ],
+      "work": "Drive-release. Jämför med rall006; slå bara ihop poster om faktisk versionsrelation verifieras.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "rall-073",
+      "title": "Rall v073 — Party",
+      "order": 24,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "drive-folder",
+          "url": "https://drive.google.com/drive/folders/1OF5tQh-sywpAlqT5XtKBRbsZPIDx_tfQ"
+        },
+        {
+          "kind": "drive-release",
+          "url": "https://drive.google.com/file/d/1PtpYPN1d2DzTHMuPNXIS9VEXSN7-0fhi/view"
+        }
+      ],
+      "work": "Drive-release och party-källmapp. Inspektera och porta originalets spellägen.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "rall-080",
+      "title": "Rall v080 — Fighter",
+      "order": 25,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "drive-folder",
+          "url": "https://drive.google.com/drive/folders/1oiYMpORqC5d_hAyliZp1rQJ1WzlqnhMs"
+        },
+        {
+          "kind": "drive-release",
+          "url": "https://drive.google.com/file/d/1RFYQXmmjhVtkOdJGWRZ3PrIArNm5sRek/view"
+        }
+      ],
+      "work": "Lokalt originalarkiv med C++-källa och Drive-release. Läs regler, grafik och ljud före portning.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "rall-008",
+      "title": "Rall008",
+      "order": 26,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "github",
+          "url": "https://github.com/joynes/rall008"
+        },
+        {
+          "kind": "drive-folder",
+          "url": "https://drive.google.com/drive/folders/1ApVIMy-WxmkkmHCtq9d7s2zmqfIQvjBz"
+        }
+      ],
+      "work": "Originalarkiv med Allegro/FMOD/Zoidcom. Utred spelregler och multiplayer; anta inte att det är identiskt med v080/v082.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    },
+    {
+      "id": "rall-082",
+      "title": "Rall v082 — Fighter Multi",
+      "order": 27,
+      "status": "pending",
+      "sources": [
+        {
+          "kind": "drive-release",
+          "url": "https://drive.google.com/file/d/1L8tDvObDXUk_P9UFcLxA9yn1oIK24s7c/view"
+        }
+      ],
+      "work": "Drive-release som MSI. Jämför med rall008; multiplayer måste verifieras före sammanslagning.",
+      "tests": [],
+      "publishedUrl": null,
+      "implementationCommit": null,
+      "deploymentCommit": null
+    }
+  ],
+  "candidatesToInspect": [
+    {
+      "repository": "picture_puzzle",
+      "evidence": "Granskad lib/main.dart är Flutter-räknarmallen; ingen pusselmekanik verifierad. Sök andra grenar/arkiv före beslut."
+    },
+    {
+      "repository": "lightbot",
+      "evidence": "Namnet räcker inte för spelklassificering. Läs programmet."
+    },
+    {
+      "repository": "relearn",
+      "evidence": "Terminalbaserad lärandeapp. Kontrollera om det finns spelmoment."
+    },
+    {
+      "repository": "test_share_unity_hello_world",
+      "evidence": "Unity-delningstest. Kontrollera om det innehåller ett faktiskt spel."
+    }
+  ],
+  "nonGames": [
+    {
+      "name": "jaro-och-grodan",
+      "reason": "original/source innehåller berättelsens textavsnitt; inget spelprogram i det granskade arkivet."
+    },
+    {
+      "name": "jaro-and-grodan",
+      "reason": "original innehåller Reason-projekt, PNG och XCF; grafik/musik, inte ett verifierat spel."
+    },
+    {
+      "name": "10 -20 - rall",
+      "reason": "Det granskade lokala arkivet innehåller fotografier."
+    },
+    {
+      "name": "joyEngine och OpenGL-mallar",
+      "reason": "Spelmotorer/teknikmallar är inte separata färdiga spel."
+    }
+  ]
+}
