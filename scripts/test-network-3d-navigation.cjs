@@ -1,0 +1,27 @@
+const assert=require('node:assert/strict');
+const {chromium}=require('playwright');
+const base=process.env.HOMEPAGE_BASE_URL||'http://127.0.0.1:8767/';
+(async()=>{const browser=await chromium.launch({channel:'chrome',args:['--disk-cache-size=1']});
+try {for(const viewport of [{width:390,height:844},{width:1280,height:1000}]) {
+  const page=await browser.newPage({viewport,reducedMotion:'reduce'}),errors=[];
+  page.on('pageerror',error=>errors.push(error.message));
+  await page.goto(base+'#games/ai/network-3d');
+  await page.waitForFunction(()=>document.querySelector('#stageTitle')?.textContent==='3D Network Game');
+  assert.equal(await page.locator('iframe').count(),0);
+  const link=page.getByRole('link',{name:'Öppna 3D-världen',exact:true}).first();
+  assert.equal(await link.getAttribute('href'),'https://test-3d-network-game.fly.dev/');
+  assert.equal(await link.getAttribute('target'),'_blank');
+  const [game]=await Promise.all([page.context().waitForEvent('page'),link.click()]);
+  game.on('pageerror',error=>errors.push(error.message));
+  await game.waitForFunction(()=>window.gameDiagnostics?.().connected);
+  assert.equal(await game.locator('.model-option').count(),6);
+  assert.ok(await game.getByText(/Första hämtningen är 51 MiB/).isVisible());
+  assert.match(await game.locator('#connection-status').textContent(),/Ansluten/);
+  await game.close();
+  await page.goto(base+'#games/retro');
+  assert.ok(!(await page.locator('#contentList').innerText()).includes('3D Network Game'));
+  await page.goto(base+'#games/ai');
+  assert.ok((await page.locator('#contentList').innerText()).includes('3D Network Game'));
+  assert.deepEqual(errors,[]);await page.close();
+}console.log('Passed: own-tab 3D world link and actual server connection on desktop/mobile, original model choices, AI category and retro exclusion.');
+}finally{await browser.close();}})().catch(error=>{console.error(error);process.exitCode=1});

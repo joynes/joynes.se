@@ -951,9 +951,9 @@
     },
     {
       "id": "network-3d",
-      "title": "Three.js Network Game",
+      "title": "3D Network Game",
       "order": 15,
-      "status": "pending",
+      "status": "tested_live_pending_catalog",
       "sources": [
         {
           "kind": "github",
@@ -961,13 +961,63 @@
         }
       ],
       "work": "3D/Socket.IO-prototyp. Testa spelare, anslutning, rörelse och touch med riktig server.",
-      "tests": [],
+      "tests": [
+        {
+          "command": "npm test (test-rig-gemini)",
+          "result": "passed: four tests including original/vendor byte identity, full shared scenery, collision substeps/centres, finite ordered bounded server inputs and time budgets"
+        },
+        {
+          "command": "npm run test:browser (local fixture)",
+          "result": "passed: three real clients, complete original rig and changing pose, shared forest, remote rendering, ordinary keyboard/tree collision/mouse/two-thumb input, all settings/export/persistence, one asset request per page, reconnect and real server restart, asset/module/config/storage/WebSocket recovery; desktop/portrait/landscape inspected"
+        },
+        {
+          "command": "NETWORK3D_BASE_URL=https://test-3d-network-game.fly.dev/ EXPECTED_RELEASE=c902a88145a7baf8a14635b4c10f7035e6ec506a npm run test:browser",
+          "result": "passed: real live multiplayer suite without restarting production; 16 live files including original FBX SHA256-match tested files; exact release health and one healthy ARN Machine verified"
+        },
+        {
+          "command": "npm test; npm run test:multiplayer-3d:links; node scripts/test-games-navigation.cjs (homepage)",
+          "result": "passed: 32 unit/regression tests; actual own-tab 3D server connections from desktop/mobile catalog; AI inclusion and retro exclusion; existing games and AI music navigation regressions"
+        }
+      ],
       "publishedUrl": null,
-      "implementationCommit": null,
-      "deploymentCommit": null,
+      "implementationCommit": "c902a88145a7baf8a14635b4c10f7035e6ec506a",
+      "deploymentCommit": "c902a88145a7baf8a14635b4c10f7035e6ec506a",
       "category": "ai",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-spel"
+      "categoryLabel": "AI-spel",
+      "sourceCommit": "e1106ae25e340f06f09a327351628451a0847694",
+      "sourcePeriod": "2025",
+      "implementationRepository": "https://github.com/joynes/test-rig-gemini",
+      "externalUrl": "https://test-3d-network-game.fly.dev/",
+      "deploymentImage": "registry.fly.io/test-3d-network-game:deployment-01M6BFWP82JM37J5MRY22AWCKK",
+      "deploymentRegion": "arn",
+      "machineCount": 1,
+      "sourceCommitsPushed": false,
+      "implementationNotes": "Complete original 53MB FBX, 74340 vertices, 65 bones and walk clip preserved; all six original choices are aliases for the same rig. Original speeds/camera/tint/100 trees/50 rocks retained, now one shared authoritative forest and collision model. Reliable loading/retry, isolated materials, hybrid/two-thumb controls, personal configuration export and reconnect cleanup. Private source commits retained in sibling checkout; existing Fly app and ARN shared1CPU/256MB retained with exactly one in-memory world.",
+      "externalReleaseFilesSha256": {
+        "index.html": "c899f31f5ca8fd56cfeda9b4ab5178dcfc5f1ac0ed58f890fc8d8fe52ef04725",
+        "main.js": "4ed77c23145edb598aff438105cfea806b755150490e48dcae2f8ceff24cf319",
+        "style.css": "3784389cb505c68d9017e52f482d4ded7d35a43f670c481e50931502a9c19ac7",
+        "config.yaml": "1340d534d43c1940219628ba8221cdbacda3077d6f4d37656036fa96298ba511",
+        "Walking.fbx": "26c016966dfd51be80068b96ca2672820b22785dc8020b02abdbac0477ff0d6b",
+        "shared/world.mjs": "8105809a70b7cfcd3786dc6c1553ee4edcbe3f8a37616db6d13377536e579f2d",
+        "vendor/provenance.json": "6e6d960551f122bce9442a28aafe3faf3af03c93a7fda4f95d64d7b2c670e260",
+        "vendor/three/examples/jsm/utils/SkeletonUtils.js": "e0dcb498b3383a032e6e934fcc5bfe07b5e99d4d4d1c77a7956fe935304abf5c",
+        "vendor/three/examples/jsm/loaders/FBXLoader.js": "1bf22b1ab6692e28cbf94638ca4b8fc3e595f0d7c382eb1328d91041d274ca47",
+        "vendor/three/examples/jsm/curves/NURBSCurve.js": "34dee297704432358680934a8d5acae35f05c71aa59ce7a8e97decb0ac38e452",
+        "vendor/three/examples/jsm/curves/NURBSUtils.js": "0abeeab213f423c6ea7170abe045e6d27d63c0a1164e67de1da881e0e5c7480f",
+        "vendor/three/examples/jsm/libs/fflate.module.js": "209a4412eb48ce609edb4391992a792ffcc3983d30ee7e2b0b89a8c470f3cd8a",
+        "vendor/three/build/three.module.js": "5289ca2dfde8572bd7715b9fa2ca929db12bae87e9a2cb53e431662df7039506",
+        "vendor/three/LICENSE": "4c40a1ef62450b857c3b2aaf294936304cd552d965fbcd9d32d4c5bcf4ba4454",
+        "vendor/js-yaml/js-yaml.mjs": "16f210b939b359b6ec8dde581eb62c157185711dc7b719b33779c43db5c31a91",
+        "vendor/js-yaml/LICENSE": "a07bc24468b9654ce76a547d47a2db282d07733b715db4c73a98bd63961f9550"
+      },
+      "deploymentImageManifestSha256": "b9869fd8b90e20c3e637175f0a03aa59de147d159a431d6620480dbebf24ccfe",
+      "catalogReleaseFilesSha256": {
+        "assets/games-catalog.js": "705e84d493a34fc869eb2ea53dffbaf0e488a3472a0e36a2de3f3dc5cf79e0de",
+        "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82",
+        "docs/games/network-3d.md": "5aa5b90875d0ded41070b596146440434bc5c056d16271c1a59956b8e9dbb498"
+      }
     },
     {
       "id": "neon-interceptor",

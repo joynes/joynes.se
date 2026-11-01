@@ -1,6 +1,18 @@
 // Only tested releases belong here. The complete work queue is in data/games-inventory.json.
 window.joynesPublishedGames = [
   {
+    id: "network-3d",
+    title: "3D Network Game",
+    kind: "ai",
+    description: "AI-spel · Original 2025 · Utforska en gemensam 3D-skog med andra spelare. Ursprunglig figur och gånganimation, 100 träd och 50 stenar. Tangentbord, mus och två tumkontroller. Figuren hämtas första gången: 51 MiB.",
+    href: "https://test-3d-network-game.fly.dev/",
+    embed: false,
+    playLabel: "Öppna 3D-världen",
+    source: "https://github.com/joynes/joynes.se/blob/master/docs/games/network-3d.md",
+    sourceLabel: "Om webbversionen",
+    version: "1.1.0"
+  },
+  {
     id: "network-2d",
     title: "Hello Multiplayer Game",
     kind: "ai",
