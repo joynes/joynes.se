@@ -37,4 +37,10 @@ Testerna använder installerad Chrome, Playwright och macOS Vision/Swift för av
 
 Hela `npm run test:bus:browser` passerade: samtliga tre portar, verklig vinst och omspel på dator och touch; tangentbord, flerfingerstyrning/cancel, fokusbyte och fysisk inbromsning, fryst fysik i paus/återupptagning, Tab, omstart, Retro-detalj/länk i egen flik, frånvaro under AI, samt fyra separata laddningsfel (loader/WASM/data/framework) med lyckat nytt försök och faktisk körning. Den separata helskärmskontrollen passerade i 390×844 och 844×390 med alla knappar, native paus och utgång. Vy- och vinstbilder granskades visuellt. Detta är Chrome-emulering, inte fysisk Safari-/Android-verifiering; äldre Unity har begränsat officiellt mobilstöd.
 
-Tillgångskontrollen ovan, hemsidans 23 enhetstester och tidigare spel-/musiknavigation passerade. Publicering och livekontroll återstår.
+Tillgångskontrollen ovan, hemsidans 23 enhetstester och tidigare spel-/musiknavigation passerade. ## Publicerat och verifierat 2026-11-01
+
+[Spela bussversionen](https://joynes.github.io/joynes.se/games/unity-bus/). Kod-/publiceringscommit `0b229fe109e6e88ee984300991512851216ed5fc`, lyckad Pages-körning `41292196144`.
+
+Hela browser- och helskärmssviten passerade också på den riktiga adressen med ovanstående båda kompletta uppdrag, vinst/omspel och alla fyra laddningsfel med faktisk körning efter nytt försök. Alla elva egna/gemensamma spelfiler, katalog och kanonisk hemsida jämfördes byte för byte. Tidigare spel och musik passerade navigationstestet.
+
+Det första deployförsöket avvisades med ett fel om föregående utrullning. En misslyckad omkörning fastnade i motsägelsefull GitHub-status: GET visade köad/noll jobb men cancel svarade att körningen redan var avslutad. Den avslutade föregångaren kunde inte heller avbrytas. Ett nytt Pages-bygge av samma oförändrade testade commit lyckades. Livekontrollen påbörjades efter lyckad utrullning. Ett lokalt diskutrymmesfel i testverktygen löstes genom städning av egna tillfälliga kopior; hela livekontrollen kördes därefter om och passerade.

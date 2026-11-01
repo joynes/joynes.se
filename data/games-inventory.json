@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "updatedAt": "2026-11-01",
   "objective": "Alla identifierade spel och relevanta spelversioner ska fungera på webben, testas och publiceras.",
-  "currentGame": "unity-bus",
+  "currentGame": "godot-reading",
   "games": [
     {
       "id": "web-quizzes",
@@ -610,14 +610,14 @@
       "id": "unity-bus",
       "title": "Bus Test Game",
       "order": 10,
-      "status": "tested_local",
+      "status": "published_verified",
       "sources": [
         {
           "kind": "github",
           "url": "https://github.com/joynes/unity_bus"
         }
       ],
-      "work": "Den äldre bussvarianten bevarad separat med ursprunglig grafik/fysik och fungerande treportsuppdrag. Gemensam webbvärd med polisversionen. Lokala hela mus-/touchuppdrag och laddnings-/helskärmskontroller passerade; publicering återstår.",
+      "work": "Äldre bussvarianten publicerad och verifierad separat. Ursprunglig grafik/fysik och fungerande treportsuppdrag; gemensam webbvärd med polisversionen. Hela mus-/touchuppdrag, vinst/omspel, laddningsåterhämtning och helskärm kontrollerade även på riktig adress.",
       "tests": [
         {
           "command": "npm run test:bus:browser",
@@ -630,16 +630,52 @@
         {
           "command": "npm test; node scripts/test-games-navigation.cjs",
           "result": "passed: 23 unit/data checks and previous embedded games/categories/music regression"
+        },
+        {
+          "command": "DRIVING_GAME_ID=simple-driving DRIVING_INPUT_MODE=desktop node scripts/test-driving-browser.cjs",
+          "result": "passed: existing police game full desktop mission/replay plus its Retro link and all 4 download-recovery cases using the shared test harness"
+        },
+        {
+          "command": "GAME_BASE_URL=https://joynes.github.io/joynes.se/games/unity-bus/ HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ npm run test:bus:browser",
+          "result": "passed live: both complete 3-gate missions, actual win/replay, keyboard/mouse and native touch; multi-touch/cancel, focus/deceleration, native pause/resume, restart, Retro own-tab integration, all 4 download-failure recovery cases reaching real driving; portrait/landscape fullscreen with all controls and functional native pause/exit"
+        },
+        {
+          "check": "release bytes",
+          "result": "all 11 bus/shared-runtime/catalog/canonical homepage files match tested bytes; successful Pages run 41292196144"
+        },
+        {
+          "command": "HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ node scripts/test-games-navigation.cjs",
+          "result": "passed live: prior embedded games, category routes and AI-music regression"
         }
       ],
-      "publishedUrl": null,
-      "implementationCommit": null,
-      "deploymentCommit": null,
+      "publishedUrl": "https://joynes.github.io/joynes.se/games/unity-bus/",
+      "implementationCommit": "0b229fe109e6e88ee984300991512851216ed5fc",
+      "deploymentCommit": "0b229fe109e6e88ee984300991512851216ed5fc",
       "category": "retro",
       "webAdaptation": "ai",
       "categoryLabel": "AI-remake av retrospel",
       "sourceCommit": "3f18cf90f94f996dd1c414d58cb6cd8f23f481d6",
-      "webVersion": "2023-bus-web.1"
+      "webVersion": "2023-bus-web.1",
+      "pagesRun": 41292196144,
+      "releaseFilesSha256": {
+        "games/unity-bus/index.html": "8ad4d9e50c65d6f4c2bb9f2a49ec121aad0720bac4bd8f20aed977fc1b21b5c7",
+        "games/unity-bus/Build/cartWeb2.provenance.json": "51bc500fbce90c9e8d1a10b4309ed5c985b4bec5a8804779ea9de87318d12362",
+        "games/unity-bus/Build/cartWeb2.data": "3fc864ef0834a9dfad46b04c003199082669f6db38b819f7a1512f6481b1e9ee",
+        "games/simple-driving/app.js": "3c8fc5e338827fb093fc192df9756d9525f12a74ddac55c3d4e2e64b0298ee09",
+        "games/simple-driving/styles.css": "6422a2a37f4b2d8de08b4a6d2f6a5cb0e5c246d6ca56c71b1958f77d15e9cdbd",
+        "games/simple-driving/StreamingAssets/UnityServicesProjectConfiguration.json": "2082dc7cfb373de4e9b12d43d9f0caf00a0e8c128ef860a627814840565bc7fe",
+        "games/simple-driving/Build/cartWeb2.wasm": "10cb1df56489a17bdab24b1ccdb3acad9f2049de604661c62409d9f26f100afd",
+        "games/simple-driving/Build/cartWeb2.loader.js": "b2857ce93350711103bd72fbc6b665f16bb09afdf65542b52549ecd05b812a54",
+        "games/simple-driving/Build/cartWeb2.framework.js": "18d7c9a73fddf3825d1e3cf71f948157e4720270e1e41651f687c76f29e4b3be",
+        "assets/games-catalog.js": "21dd2f3e1127c650fb616ef483d55f0aab87fb2a9011cda20b26ca619bfb14af",
+        "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82"
+      },
+      "deploymentRecovery": {
+        "failedAndInconsistentRerun": 41290922621,
+        "successfulFreshBuild": 41292196144,
+        "sameTestedCommit": "0b229fe109e6e88ee984300991512851216ed5fc",
+        "evidence": "Old rerun GET returned queued/no jobs while cancellation explicitly returned already completed. Fresh Pages build of identical commit succeeded; Pages deployment API status succeed. No website source/hosting settings changed."
+      }
     },
     {
       "id": "godot-reading",
