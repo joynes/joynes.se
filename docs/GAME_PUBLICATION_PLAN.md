@@ -36,10 +36,10 @@ Jaro och Grodan-mapparnas texter/grafik och fotoalbumet 10 -20 - rall är inte s
 | 5 | Memit | Publicerat och verifierat | Övnings-, gissnings- och provlägen. Återställ saknade bibliotek och speldata före publicering. |
 | 6 | Skoluppgifter / Ordhjälten | Publicerat och verifierat | Granska aktuell webbversion och publicerad adress; bevara alla befintliga spellägen. |
 | 7 | Small Wonders / Inuti språkmodellen | Publicerat och verifierat | Källrepo och llmspel-play är samma projekt. Testa torn, spelbart kapitel, MicroGPT-demo och garden-vy. |
-| 8 | Marble Tables | Väntar | Unity-källa och marble-web-test är samma projekt. Verifiera webbbygget och styrningen. |
-| 9 | Simple Driving Game | Väntar | Unity-källa. Identifiera spelmekanik, tillgångar och webbexport; testa körning på tangentbord och touch. |
-| 10 | Bus Test Game | Väntar | Befintligt Unity WebGL-bygge. Utred relationen till SimpleDrivingGame utan att anta att de är samma. |
-| 11 | Godot Reading Game | Väntar | Ofullständig Godot-prototyp med objekt och lägesrelationer. Återskapa saknade delar och gör webbversion. |
+| 8 | Marble Tables | Publicerat och verifierat | Unity-källa och marble-web-test är samma projekt. Verifiera webbbygget och styrningen. |
+| 9 | Simple Driving Game | Publicerat och verifierat | Unity-källa. Identifiera spelmekanik, tillgångar och webbexport; testa körning på tangentbord och touch. |
+| 10 | Bus Test Game | Publicerat och verifierat | Befintligt Unity WebGL-bygge. Utred relationen till SimpleDrivingGame utan att anta att de är samma. |
+| 11 | Godot Reading Game | Lokalt testad | Ofullständig Godot-prototyp med objekt och lägesrelationer. Återskapa saknade delar och gör webbversion. |
 | 12 | Bilspel ovanifrån | Väntar | Godot-projekt. Bevara bilfysik och styrning i webbversion. |
 | 13 | SDL Space / hinderbana | Väntar | simple_game_using_sdl2_wasm har spelare, hinder, kollision och poäng. Grafikdemona är inte separata spel. |
 | 14 | Hello Multiplayer Game | Väntar | Canvas/Socket.IO. Testa riktiga samtidiga klienter och server, inte bara en statisk sida. |
@@ -121,3 +121,5 @@ Jaro och Grodan-mapparnas texter/grafik och fotoalbumet 10 -20 - rall är inte s
 - **Pages-statusfel verifierat och ny byggbegäran skickad:** gamla omkörningen `41290922621` rapporterar köad/noll jobb i GET, men GitHub vägrar cancel med ”workflow run ... completed”. Även föregående `fcf0130` är verifierat färdig och kan inte avbrytas. Detta är motsägelsefull backend-status, inte en vanlig observerad timeout. Ett nytt Pages-bygge av oförändrad testad commit `0b229fe` begärdes via Pages build-API:t; den nya körningen är `41292196144`. Följ den nya körningen och gör hela livekontrollen när utrullningen lyckats.
 
 - **Bus Test Game / Buss publicerat och verifierat:** https://joynes.github.io/joynes.se/games/unity-bus/ . Kodcommit `0b229fe109e6e88ee984300991512851216ed5fc`; nytt Pages-bygge `41292196144` lyckades efter verifierat motsägelsefull status för den gamla omkörningen. Ingen hosting-/källinställning ändrades. Hela mus-/touchuppdraget, faktisk vinst/omspel, alla fyra nätverksfel med körbart nytt försök och stående/liggande helskärm med native paus/utgång passerade på riktig adress. Alla elva egna/gemensamma spel-/katalog-/HTML-filer byteverifierade och tidigare spel/musik passerade regression. Lokalt diskutrymmesfel löstes genom egna tillfälliga kopior före den godkända livehelkörningen. Nästa spel är Godot-läsprototypen.
+
+- **Godot Reading Game / Läs och placera lokalt testat:** en ursprunglig läsuppgift, tre flyttbara föremål, två plattformar och golv. Saknade bilder ersatta med egna SVG:er; JavaScript-fysik och gränsanpassning uttryckligen dokumenterade. Rätt/fel-avstånd/luft, riktiga mus-/touchlösningar på alla ytor, tangentbord, omspel och laddningsfel/nytt försök passerade. Täta mobilobjekt väljs var för sig efter närmaste centrum. 26 enhetstester godkända. Publicering återstår.

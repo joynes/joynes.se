@@ -681,7 +681,7 @@
       "id": "godot-reading",
       "title": "Godot Reading Game",
       "order": 11,
-      "status": "pending",
+      "status": "tested_local",
       "sources": [
         {
           "kind": "github",
@@ -689,13 +689,44 @@
         }
       ],
       "work": "Ofullständig Godot-prototyp med objekt och lägesrelationer. Återskapa saknade delar och gör webbversion.",
-      "tests": [],
+      "tests": [
+        {
+          "command": "npm test",
+          "result": "passed: 26 tests, including 3 Godot rules/physics tests and music/previous-game regression checks"
+        },
+        {
+          "command": "npm run test:godot-reading:browser",
+          "result": "passed locally: mouse solves on both platforms and floor; far/reversed/airborne negatives; third object gravity; replay; keyboard solve/release; real touch/cancel/portrait/landscape; module failure/retry; close adjacent objects individually picked by nearest center."
+        },
+        {
+          "check": "visual",
+          "result": "Desktop 1280x1000, portrait 390x844, landscape 844x390 screenshots inspected."
+        },
+        {
+          "command": "CHECK_GAMES_NAV=1 npm run test:godot-reading:browser; node scripts/test-games-navigation.cjs",
+          "result": "passed locally: playable iframe from Retrospel, excluded from AI-spel; previous embedded games and AI music navigation passed."
+        }
+      ],
       "publishedUrl": null,
       "implementationCommit": null,
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel"
+      "categoryLabel": "AI-remake av retrospel",
+      "sourceCommit": "97a4f8aa5381032663f51395c62bf5fa4811ccf3",
+      "sourcePeriod": "2023-12–2024-01",
+      "webPath": "games/godot-reading/",
+      "implementationNotes": "One authored relation, three original named objects, two platforms and floor. Missing spritesheet/font replaced by inline SVG and system font. JavaScript rectangle physics preserves dimensions/sensors/gravity, not native Godot engine. Visible boundary clamp, touch/keyboard and feedback added; source conflict doll corrected to actual balloon rule.",
+      "releaseFilesSha256": {
+        "games/godot-reading/app.mjs": "99656f76b5e72faec8deb7b0e8065b9ed4cc969bdaf88c56230d801058f57f71",
+        "games/godot-reading/core.mjs": "4e6543ec6311294c706c17cdb79b98da69b90cca136bab7aef029e8ddbf970c0",
+        "games/godot-reading/index.html": "845fb453722fc3f1445182d884fb8e89fef802e163d912df06d59833874822b6",
+        "games/godot-reading/provenance.json": "771ba6be93c5675555f2fc55745732b076f370dc88c280e08155b3fbc7ce05a8",
+        "games/godot-reading/source-notes.md": "13be371d8b47feaf696a94241ba9e421756214a98bd3ecff1660a2ab9738261f",
+        "games/godot-reading/styles.css": "f38ed2aac5cef8eb1805521a72e9c393fed01e482fb0f92acc37502a7d3a719c",
+        "assets/games-catalog.js": "7ea426ec7a9db328f45d0bc2f08b99d6da33691faa20a0769dab2af0f8834dc3",
+        "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82"
+      }
     },
     {
       "id": "car-topview",

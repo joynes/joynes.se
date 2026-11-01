@@ -1,6 +1,16 @@
 // Only tested releases belong here. The complete work queue is in data/games-inventory.json.
 window.joynesPublishedGames = [
   {
+    id: "godot-reading",
+    title: "Läs och placera",
+    kind: "retro",
+    description: "AI-remake av retrospel · Original 2023–2024 · Flytta tre föremål och lägg ballongen till höger om raketen. En återställd läsprototyp med två hyllor, golv och nyritade bilder.",
+    href: "games/godot-reading/",
+    source: "https://github.com/joynes/joynes.se/tree/master/games/godot-reading",
+    sourceLabel: "Webbkod och ursprung",
+    version: "2024-reading-web.1"
+  },
+  {
     id: "unity-bus",
     title: "Bus Test Game — Buss",
     kind: "retro",
