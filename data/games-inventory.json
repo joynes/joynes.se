@@ -178,7 +178,7 @@
       "id": "quiz-sdl",
       "title": "Läs- och ordquiz",
       "order": 4,
-      "status": "pending",
+      "status": "tested_locally",
       "sources": [
         {
           "kind": "github",
@@ -186,13 +186,31 @@
         }
       ],
       "work": "Källkod i SDL/C++; befintligt webbbygge finns i quiz_game_online. Kontrollera filer, inmatning och mobilstöd.",
-      "tests": [],
+      "tests": [
+        {
+          "command": "npm test",
+          "result": "passed: 17 tests including all 35 words, original assets, three courses, coin floor, duplicate locking and replay plus regressions"
+        },
+        {
+          "command": "npm run test:reading:browser",
+          "result": "passed: all 35 words, all three stages, image decoding, real letter/reward audio playback, keyboard, mobile, retry, coins, replay and HTTP 503 recovery"
+        },
+        {
+          "command": "node scripts/test-games-navigation.cjs",
+          "result": "passed: four playable iframes, Retro/AI routes and music regression"
+        },
+        {
+          "check": "visual",
+          "result": "desktop 1440x1000 and mobile 360x740 inspected; controls scroll without horizontal overflow"
+        }
+      ],
       "publishedUrl": null,
       "implementationCommit": null,
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel"
+      "categoryLabel": "AI-remake av retrospel",
+      "sourceCommit": "fd14bf5c57febc4b17e8e2cfa4bd464787d026cc"
     },
     {
       "id": "memit",

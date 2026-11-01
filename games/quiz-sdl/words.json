@@ -1,0 +1,148 @@
+[
+  [
+    {
+      "word": "ko",
+      "image": 0
+    },
+    {
+      "word": "bi",
+      "image": 1
+    },
+    {
+      "word": "is",
+      "image": 2
+    },
+    {
+      "word": "fe",
+      "image": 3
+    },
+    {
+      "word": "lo",
+      "image": 4
+    }
+  ],
+  [
+    {
+      "word": "bil",
+      "image": 0
+    },
+    {
+      "word": "hus",
+      "image": 1
+    },
+    {
+      "word": "sol",
+      "image": 2
+    },
+    {
+      "word": "bok",
+      "image": 3
+    },
+    {
+      "word": "mun",
+      "image": 4
+    },
+    {
+      "word": "ros",
+      "image": 5
+    },
+    {
+      "word": "båt",
+      "image": 6
+    },
+    {
+      "word": "väg",
+      "image": 7
+    },
+    {
+      "word": "ris",
+      "image": 8
+    },
+    {
+      "word": "fot",
+      "image": 9
+    },
+    {
+      "word": "yxa",
+      "image": 10
+    },
+    {
+      "word": "arm",
+      "image": 11
+    }
+  ],
+  [
+    {
+      "word": "orm",
+      "image": 0
+    },
+    {
+      "word": "sax",
+      "image": 1
+    },
+    {
+      "word": "sjö",
+      "image": 2
+    },
+    {
+      "word": "bär",
+      "image": 3
+    },
+    {
+      "word": "lök",
+      "image": 4
+    },
+    {
+      "word": "bro",
+      "image": 5
+    },
+    {
+      "word": "fat",
+      "image": 7
+    },
+    {
+      "word": "älg",
+      "image": 8
+    },
+    {
+      "word": "kex",
+      "image": 9
+    },
+    {
+      "word": "bad",
+      "image": 10
+    },
+    {
+      "word": "mur",
+      "image": 11
+    },
+    {
+      "word": "mås",
+      "image": 13
+    },
+    {
+      "word": "löv",
+      "image": 15
+    },
+    {
+      "word": "räv",
+      "image": 16
+    },
+    {
+      "word": "fil",
+      "image": 18
+    },
+    {
+      "word": "pil",
+      "image": 19
+    },
+    {
+      "word": "alg",
+      "image": 22
+    },
+    {
+      "word": "sko",
+      "image": 23
+    }
+  ]
+]

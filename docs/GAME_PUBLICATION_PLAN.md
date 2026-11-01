@@ -32,7 +32,7 @@ Jaro och Grodan-mapparnas texter/grafik och fotoalbumet 10 -20 - rall är inte s
 | 1 | Frågespelet | Väntar | Webbspel; laga omstart, återkoppling och mobilvy. Rätta verifierade fel i frågebanken. |
 | 2 | Milians Grimace Matte-spel — Gemini | Publicerat och verifierat | Bevara originalets spelregler; testa plus/minus, rätt/fel, omstart och mobil. |
 | 3 | Milians Grimace Matte-spel — Codex | Publicerat och verifierat | Separat implementation av samma spelidé. Bevara som egen spelbar variant. |
-| 4 | Läs- och ordquiz | Väntar | Källkod i SDL/C++; befintligt webbbygge finns i quiz_game_online. Kontrollera filer, inmatning och mobilstöd. |
+| 4 | Läs- och ordquiz | Lokalt testat | Källkod i SDL/C++; befintligt webbbygge finns i quiz_game_online. Kontrollera filer, inmatning och mobilstöd. |
 | 5 | Memit | Väntar | Övnings-, gissnings- och provlägen. Återställ saknade bibliotek och speldata före publicering. |
 | 6 | Skoluppgifter / Ordhjälten | Väntar | Granska aktuell webbversion och publicerad adress; bevara alla befintliga spellägen. |
 | 7 | Small Wonders / Inuti språkmodellen | Väntar | Källrepo och llmspel-play är samma projekt. Testa torn, spelbart kapitel, MicroGPT-demo och garden-vy. |
@@ -85,3 +85,5 @@ Jaro och Grodan-mapparnas texter/grafik och fotoalbumet 10 -20 - rall är inte s
 - **Grimace Codex lokalt testat:** originalets tio plus- och tio minusfrågor bevarade, båda slutresultaten spelade genom riktiga kontroller, omspel och direkt återupptagning efter omladdning verifierade. Mobil, tangentbord, lagring och inbäddning passerade. Separat AI-spel eftersom dess fasta banor skiljer sig från Gemini-varianten. Publicering återstår.
 
 - **Grimace Codex publicerat och verifierat:** https://joynes.github.io/joynes.se/games/grimace-codex/ . Spelcommit `6a7a0e937f22c3b42d58eceb47da1c70c2fc1334`, Pages-körning `41278151400`. Alla tjugo frågor, båda slutresultaten, omspel, lagring, mobil och tangentbord passerade på riktig adress. Sex filer jämfördes byte för byte. Navigationstestet väntar nu på att iframe-modulerna är färdigladdade innan första knapptryckningen; kontrollen av alla tre spel och musik passerade därefter. Nästa spel är SDL-baserat läs- och ordquiz.
+
+- **Läs- och ordquiz lokalt testat:** portat SDL/C++-reglerna till responsiv webb med originalbilder och bokstavsljud. Alla 35 ord/tre banor, riktiga ljuduppspelningar, bildavkodning, mynt, omspel, mobil/tangentbord och nätverksåterhämtning passerade. Slutresultat visas där originalets modulo hindrade avslut. Stavningen käx rättad till kex. Publicering återstår.

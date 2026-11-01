@@ -1,0 +1,7 @@
+<!doctype html><html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#171620"><title>Läs- och ordquiz</title><link rel="stylesheet" href="styles.css"><script type="module" src="app.mjs"></script></head><body><main>
+<header><p class="badge">AI-remake av retrospel · Original 2023</p><h1>Läs- och ordquiz</h1><button id="sound" aria-pressed="false">Ljud på</button></header>
+<p id="loading" role="status">Laddar orden…</p><div id="error" hidden><p>Orden kunde inte laddas. Försök igen.</p><button id="retry">Försök igen</button></div>
+<section id="menu" hidden><h2>Välj bana</h2><p>Läs ordet och välj bilden som passar. Tryck på en bokstav för att höra den!</p><p>Rätt svar: +1 mynt. Fel svar: −1 mynt, som lägst 0. Du får försöka igen.</p><div id="stages"></div></section>
+<section id="play" hidden><div class="toolbar"><button id="back">Till banvalet</button><span id="position"></span><span class="coins"><img src="res/image/coin.png" alt="Mynt"><span id="coins" role="status">0</span></span></div>
+<h2 id="prompt" tabindex="-1">Vilken bild passar ordet?</h2><div id="letters" aria-label="Lyssna på bokstäverna"></div><div id="options"></div><p id="feedback" role="status" aria-live="polite"></p><button id="next" hidden>Nästa ord →</button><button id="replay" hidden>Spela banan igen</button></section>
+<p id="audio-note" role="status"></p><footer><a href="../../#games/retro">Alla retrospel</a><a href="source-notes.md">Om spelet och originalet</a></footer></main></body></html>

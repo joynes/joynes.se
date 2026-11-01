@@ -1,6 +1,15 @@
 // Only tested releases belong here. The complete work queue is in data/games-inventory.json.
 window.joynesPublishedGames = [
   {
+    id: "quiz-sdl",
+    title: "Läs- och ordquiz",
+    kind: "retro",
+    description: "AI-remake av retrospel · Original 2023 · Tre banor med 35 ord, bildval, bokstavsljud och mynt. Originalets bilder och ljud är bevarade.",
+    href: "games/quiz-sdl/",
+    source: "https://github.com/joynes/quiz_game",
+    version: "1.0.0"
+  },
+  {
     id: "grimace-codex",
     title: "Milians Grimace Matte-spel — Codex",
     kind: "ai",
