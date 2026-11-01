@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "updatedAt": "2026-11-01",
   "objective": "Alla identifierade spel och relevanta spelversioner ska fungera på webben, testas och publiceras.",
-  "currentGame": "simple-driving",
+  "currentGame": "unity-bus",
   "games": [
     {
       "id": "web-quizzes",
@@ -543,14 +543,14 @@
       "id": "simple-driving",
       "title": "Simple Driving Game",
       "order": 9,
-      "status": "tested_local",
+      "status": "published_verified",
       "sources": [
         {
           "kind": "github",
           "url": "https://github.com/joynes/SimpleDrivingGame"
         }
       ],
-      "work": "Polisvarianten rekonstruerad i det gemensamma native-bygget, med källans modell/textur och exakt matchande körparametrar. Originalfel rättade; full lokal verifiering klar. Publicering/livekontroll återstår.",
+      "work": "Polisvarianten publicerad och verifierad med källans modell/textur och exakt matchande körparametrar i den gemensamma native-motorn. Alla tre portar, vinst, omspel, tangentbord/touch, helskärm och laddningsåterhämtning testade även publikt.",
       "tests": [
         {
           "command": "node scripts/test-driving-browser.cjs",
@@ -567,18 +567,44 @@
         {
           "command": "npm test; node scripts/test-games-navigation.cjs",
           "result": "passed: 23 unit/data regressions plus six previous embedded games, categories and music"
+        },
+        {
+          "command": "GAME_BASE_URL=https://joynes.github.io/joynes.se/games/simple-driving/ HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ npm run test:driving:browser",
+          "result": "passed live: full 3-gate missions, real victory and replay on mouse/keyboard and touch; two-finger steering/cancel, focus release/deceleration, native pause/resume, Tab, restart, fullscreen portrait/landscape with controls and real pause/exit; Retro own-tab integration; all 4 failed downloads recover to actual driving"
+        },
+        {
+          "check": "published release identity",
+          "result": "all 11 game/catalog/canonical homepage files match tested bytes; Pages run 41288939136 succeeded for fcf01304dba49a6864346d3e43f4b4cb74f115f3"
+        },
+        {
+          "command": "HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ node scripts/test-games-navigation.cjs",
+          "result": "passed live: previous embedded games, categories and AI music regression"
         }
       ],
-      "publishedUrl": null,
-      "implementationCommit": null,
-      "deploymentCommit": null,
+      "publishedUrl": "https://joynes.github.io/joynes.se/games/simple-driving/",
+      "implementationCommit": "fcf01304dba49a6864346d3e43f4b4cb74f115f3",
+      "deploymentCommit": "fcf01304dba49a6864346d3e43f4b4cb74f115f3",
       "category": "retro",
       "webAdaptation": "ai",
       "categoryLabel": "AI-remake av retrospel",
       "sourceCommit": "3f606f1b872fd051db28ebca1f10a9600b6293fb",
-      "investigation": "Shared city with unity_bus proven by 140 exact explicit transforms. Later source selects different police model; older native build drives bus. Preserve differences; no publication yet.",
+      "investigation": "Shared city with unity_bus proven by 140 exact explicit transforms. Later source selects different police model; restored using all source body/wheel triangles and original texture. Older native bus version remains separately queued.",
       "originalWebBuildCommit": "3f18cf90f94f996dd1c414d58cb6cd8f23f481d6",
-      "webVersion": "2023-police-web.1"
+      "webVersion": "2023-police-web.1",
+      "pagesRun": 41288939136,
+      "releaseFilesSha256": {
+        "games/simple-driving/index.html": "50a08145ea9f21eb062a86a92c2009128a2d82828a746f1d6b4799e39b9493ac",
+        "games/simple-driving/styles.css": "6422a2a37f4b2d8de08b4a6d2f6a5cb0e5c246d6ca56c71b1958f77d15e9cdbd",
+        "games/simple-driving/app.js": "3c8fc5e338827fb093fc192df9756d9525f12a74ddac55c3d4e2e64b0298ee09",
+        "games/simple-driving/StreamingAssets/UnityServicesProjectConfiguration.json": "2082dc7cfb373de4e9b12d43d9f0caf00a0e8c128ef860a627814840565bc7fe",
+        "games/simple-driving/Build/cartWeb2.framework.js": "18d7c9a73fddf3825d1e3cf71f948157e4720270e1e41651f687c76f29e4b3be",
+        "games/simple-driving/Build/cartWeb2.provenance.json": "b199a0a7ab36d03c8646610df9a663e358ecf5258f439dbadd0c48f00137fdc7",
+        "games/simple-driving/Build/cartWeb2.loader.js": "b2857ce93350711103bd72fbc6b665f16bb09afdf65542b52549ecd05b812a54",
+        "games/simple-driving/Build/cartWeb2.wasm": "10cb1df56489a17bdab24b1ccdb3acad9f2049de604661c62409d9f26f100afd",
+        "games/simple-driving/Build/cartWeb2.data": "f464a31a28caeec8b24e2059aa57e517c4a3c670fc62462fce9f5055f7dd47f5",
+        "assets/games-catalog.js": "d10f6467e21dec03b82b095d0edc98eedef333b50c436282582d3d90d7c9ef41",
+        "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82"
+      }
     },
     {
       "id": "unity-bus",

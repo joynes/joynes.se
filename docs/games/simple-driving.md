@@ -48,4 +48,8 @@ Kontrollerna täcker hela uppdraget med alla tre portar, vinst och omspel på da
 
 Hela browser-sviten passerade efter korrigerad laddningsåterhämtning och helskärmskontroller. Dator och touch körde båda alla tre portar, visade riktig vinstskärm och återställde alla portar genom Play Again. Samtliga fyra blockerade laddningsfiler återhämtade sig till faktisk körning. Den separata kontrollen i stående/liggande helskärm passerade inklusive native paus och synlig utgång. Båda layouterna granskades visuellt. Inga JavaScript- eller Unity-fel loggades i positiva körningar.
 
-Alla tre kopierade motorfiler jämfördes byte för byte mot originalbygget. Den oberoende tillgångs-/fysikkontrollen passerade. Hemsidans 23 enhetstester och tidigare spel-/musiknavigation passerade. Publicering och riktig speladress verifieras separat innan klarmarkering.
+Alla tre kopierade motorfiler jämfördes byte för byte mot originalbygget. Den oberoende tillgångs-/fysikkontrollen passerade. Hemsidans 23 enhetstester och tidigare spel-/musiknavigation passerade. ## Publicerat och verifierat 2026-11-01
+
+[Spela polisversionen](https://joynes.github.io/joynes.se/games/simple-driving/). Spel-/publiceringscommit `fcf01304dba49a6864346d3e43f4b4cb74f115f3`, lyckad Pages-körning `41288939136`.
+
+`GAME_BASE_URL=https://joynes.github.io/joynes.se/games/simple-driving/ HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ npm run test:driving:browser` passerade i sin helhet: båda kompletta uppdragen och omspel, faktisk styrning/paus/släpp, rätt hemsideslänk, fyra negativa laddningsfall med återhämtning och stående/liggande helskärm med verklig paus och synlig utgång. Alla elva spel-, katalog- och kanoniska hemsidesfiler matchar testad kod byte för byte. Hemsidans tidigare spel och musik passerade regression. Filhashar och körkommandon finns i inventeringen.
