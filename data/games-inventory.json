@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "updatedAt": "2026-11-01",
   "objective": "Alla identifierade spel och relevanta spelversioner ska fungera på webben, testas och publiceras.",
-  "currentGame": "web-quizzes",
+  "currentGame": "grimace-gemini",
   "games": [
     {
       "id": "web-quizzes",
       "title": "Frågespelet",
       "order": 1,
-      "status": "locally_verified",
+      "status": "published_verified",
       "sources": [
         {
           "kind": "github",
@@ -32,15 +32,32 @@
         {
           "check": "visual",
           "result": "desktop 1440x1000 and mobile 412x915 inspected; long answers wrap, controls visible"
+        },
+        {
+          "command": "GAME_BASE_URL=https://joynes.github.io/joynes.se/games/web-quizzes/ npm run test:quiz:browser",
+          "result": "passed on live site: all 154 questions, all 12 stages, mobile, persistence, keyboard and recovery"
+        },
+        {
+          "command": "HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ node scripts/test-games-navigation.cjs",
+          "result": "passed on live site: retro/AI categories and playable embedded quiz"
         }
       ],
-      "publishedUrl": null,
-      "implementationCommit": null,
-      "deploymentCommit": null,
+      "publishedUrl": "https://joynes.github.io/joynes.se/games/web-quizzes/",
+      "implementationCommit": "7babf4a60f3c3aff1e3443456a38586758b72316",
+      "deploymentCommit": "7babf4a60f3c3aff1e3443456a38586758b72316",
       "category": "retro",
       "webAdaptation": "ai",
       "categoryLabel": "AI-remake av retrospel",
-      "sourceCommit": "616543b83cb56b00d98c8c5bbfd04b175d1a0eef"
+      "sourceCommit": "616543b83cb56b00d98c8c5bbfd04b175d1a0eef",
+      "releaseFilesSha256": {
+        "games/web-quizzes/index.html": "4a587a342a067a67d21063d6de8918d332c157cd51e6b2d304090caed5bc5007",
+        "games/web-quizzes/styles.css": "9292b88b37c2e46e67851e940b115c4423461dd794f89e0f2572ae4a540d1fad",
+        "games/web-quizzes/core.mjs": "9343cb10ac9998bb930be10b6f15c5250aa06bde8c99f94ff66a06a287808b69",
+        "games/web-quizzes/questions.json": "9bb2d82c4e317c1747b7ae58b99e10436f936c87896f5c97e114d9921c57bd61",
+        "games/web-quizzes/app.mjs": "707b8d6004c33cee1690289cdb15e475fd9eb248b53387dc1a6c684bd99f110b",
+        "games/web-quizzes/source-notes.md": "3a18494f56de0f8a2b45206b101a109d2002d7625b149633cac008cbde932b55",
+        "assets/games-catalog.js": "e8906cc0dd883c78ebfa722ee8751fd12f7958b07a69958b2a38103acfbbc5b2"
+      }
     },
     {
       "id": "grimace-gemini",

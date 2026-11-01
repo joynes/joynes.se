@@ -74,3 +74,6 @@ Jaro och Grodan-mapparnas texter/grafik och fotoalbumet 10 -20 - rall är inte s
 - Startat första spelet: Frågespelet (web_quizzes). Originalets omstart återställer inte gränssnittet, banbyte återställer inte spelomgången, och frågebanken innehåller sakfel som behöver rättas före publicering. Alla 12 banor ska bevaras.
 
 - Första spelets webbversion är lokalt verifierad: 12 banor, 154 frågor, omstart, rekord, mobil/tangentbord, nätverksåterhämtning och fungerande katalog/iframe. Publicering och kontroll på riktig adress återstår.
+
+- **Frågespelet är publicerat och verifierat:** https://joynes.github.io/joynes.se/games/web-quizzes/ . Spelcommit och publicerad version: `7babf4a60f3c3aff1e3443456a38586758b72316`. Alla 12 banor/154 frågor kördes även på den riktiga adressen, inklusive mobiltryck, omstart, lagring och återhämtning. Katalogen och spelbar iframe verifierades också där. Filerna jämfördes byte för byte med lokalt testad kod.
+- Nästa spel i kön är Milians Grimace Matte-spel, Gemini-varianten. Övriga spel är fortfarande inte klarmarkerade.
