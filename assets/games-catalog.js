@@ -1,6 +1,19 @@
 // Only tested releases belong here. The complete work queue is in data/games-inventory.json.
 window.joynesPublishedGames = [
   {
+    id: "small-wonders",
+    title: "Small Wonders / Inuti språkmodellen",
+    kind: "ai",
+    description: "AI-spel · Spela i egen flik: LLM-tornets introduktion, namnverkstaden och det äldre matematikäventyret. Senare kapitel är förhandsvisningar.",
+    href: "https://joynes.github.io/llmspel-play/",
+    modes: [["Namnverkstad", "https://joynes.github.io/llmspel-play/?demo"], ["Matematikäventyret", "https://joynes.github.io/llmspel-play/?garden"]],
+    embed: false,
+    playLabel: "LLM-tornet",
+    source: "https://github.com/joynes/llmspel-play",
+    sourceLabel: "Webbbygge",
+    version: "5d3c30c"
+  },
+  {
     id: "hardword",
     title: "Skoluppgifter / Ordhjälten",
     kind: "ai",

@@ -390,21 +390,85 @@
       "id": "small-wonders",
       "title": "Small Wonders / Inuti språkmodellen",
       "order": 7,
-      "status": "pending",
+      "status": "tested_locally",
       "sources": [
         {
           "kind": "github",
           "url": "https://github.com/joynes/llmspel"
+        },
+        {
+          "kind": "github-public-build",
+          "url": "https://github.com/joynes/llmspel-play"
         }
       ],
       "work": "Källrepo och llmspel-play är samma projekt. Testa torn, spelbart kapitel, MicroGPT-demo och garden-vy.",
-      "tests": [],
+      "tests": [
+        {
+          "command": "npm run build -- --base=/llmspel-play/ (source repo)",
+          "result": "passed TypeScript/Vite; all 109 output files exactly match existing public build"
+        },
+        {
+          "command": "PLAYWRIGHT_BASE_URL=<production preview>/llmspel-play/ npx playwright test --workers=2 --reporter=list (source repo)",
+          "result": "passed: 33 tests for all three full routes, mathematics, mistakes/help, save/reload, keyboard/touch, music, storage denial, accessibility and four viewport sizes"
+        },
+        {
+          "command": "PLAYWRIGHT_BASE_URL=https://joynes.github.io/llmspel-play/ npx playwright test --workers=2 --reporter=list (source repo)",
+          "result": "passed live: same complete 33-test suite, full nine-station tower, complete naming mission and five-experiment legacy adventure/gate"
+        },
+        {
+          "command": "node scripts/test-small-wonders-navigation.cjs",
+          "result": "passed local homepage: three real new-tab game links, tower input station, complete name mission and legacy satchel at 360x740 and 1440x1000"
+        },
+        {
+          "command": "node scripts/test-games-navigation.cjs",
+          "result": "passed: existing six game integrations, Retro/AI routing and music regression"
+        },
+        {
+          "command": "npm test",
+          "result": "passed: 23 homepage/game/music tests"
+        },
+        {
+          "check": "visual",
+          "result": "360px native naming mission and homepage launcher inspected; full standalone suite validates 360x640,390x844,844x390,1280x800"
+        },
+        {
+          "check": "public build identity",
+          "result": "all 109 public files byte-equal and SHA256 verified, canonical HTML also equal; successful Pages run 40133289033"
+        }
+      ],
       "publishedUrl": null,
       "implementationCommit": null,
       "deploymentCommit": null,
       "category": "ai",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-spel"
+      "categoryLabel": "AI-spel",
+      "sourceCommit": "c13d5ac7c0b652e247746ba8312c5c42a9dc8bb8",
+      "verificationCommit": "e6b665abd359f072607c5c74c8463aa44a9c793b",
+      "publicBuildCommit": "5d3c30caf93a756fc86e8bd00459b9a4886ee753",
+      "verifiedFiles": {
+        "fileCount": 109,
+        "sha256OfSortedFileHashes": "94c8bfb0dee4b2ba352de8fc290132ec47b8fee5d384c1f2c49f7a81d89dd9b2",
+        "publicBuildCommit": "5d3c30caf93a756fc86e8bd00459b9a4886ee753",
+        "sourceCommit": "c13d5ac7c0b652e247746ba8312c5c42a9dc8bb8"
+      },
+      "modes": [
+        {
+          "name": "LLM-tornet",
+          "url": "https://joynes.github.io/llmspel-play/"
+        },
+        {
+          "name": "Namnverkstaden",
+          "url": "https://joynes.github.io/llmspel-play/?demo"
+        },
+        {
+          "name": "Matematikäventyret",
+          "url": "https://joynes.github.io/llmspel-play/?garden"
+        }
+      ],
+      "limits": [
+        "Later tower chapters are explicitly previews; current playable chapter has nine stations.",
+        "Name workshop uses adjacent-character counts, not a trained neural transformer."
+      ]
     },
     {
       "id": "marble-tables",

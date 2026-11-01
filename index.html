@@ -1565,8 +1565,8 @@
     gamesCategory.items.forEach(item => { item[3] = { ...item[3], gameKind: "retro" }; });
     for (const game of window.joynesPublishedGames || []) {
       gamesCategory.items.unshift([game.title, game.description,
-        [["Spela", game.href], ["Källkod", game.source]],
-        {slug: game.id, gameKind: game.kind, embed: game.href, embedTitle: game.title, embedOnDetail: true}]);
+        [[game.playLabel || "Spela", game.href], ...(game.modes || []), [game.sourceLabel || "Källkod", game.source]],
+        {slug: game.id, gameKind: game.kind, embed: game.embed === false ? null : game.href, embedTitle: game.title, embedOnDetail: true}]);
     }
 
     function slugify(value) {
