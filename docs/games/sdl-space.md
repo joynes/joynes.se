@@ -26,4 +26,10 @@ Native-konsolraden om main_loop_timing före loopstart är ursprunglig: SDL_GL_S
 - Separata 503-fel för JS, WASM och data kräver att nytt försök följs av ett faktiskt styrbart skepp.
 - Skärmbilder på desktop 1280×1000, porträtt 390×844, landskap 844×390 och Game over granskade. Visuell kontroll hittade först partiellt renderad scen efter rotation; viewport-fix och test lades till före publicering.
 
-Katalogkontroll passerade lokalt: spelbar iframe under Retrospel, utelämnat från AI-spel. Tidigare spel och AI-musik passerade navigationsregression. Publicering och liveverifiering återstår.
+Katalogkontroll passerade lokalt: spelbar iframe under Retrospel, utelämnat från AI-spel. Tidigare spel och AI-musik passerade navigationsregression. Publiceringen är verifierad enligt nedan.
+
+## Publicerad och verifierad
+
+https://joynes.github.io/joynes.se/games/sdl-space/
+
+Kodcommit `6b1f8695611e69e5c5107f77f0aea9c8158b0fff`, Pages-körning `41296724273` lyckad och deployment-API succeed. Alla elva spel-/motor-/licens-/katalog-/HTML-filer SHA256-verifierade från kanoniska liveadresser. Hela motorsviten och katalogkontrollen passerade även på liveadressen, inklusive native-poäng/ljud, faktiskt touchomspel och tre nätfel med körbart nytt försök. Tidigare spel och AI-musik passerade navigationsregression. Inventeringen går vidare till Hello Multiplayer Game.

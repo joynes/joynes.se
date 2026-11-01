@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "updatedAt": "2026-11-01",
   "objective": "Alla identifierade spel och relevanta spelversioner ska fungera på webben, testas och publiceras.",
-  "currentGame": "sdl-space",
+  "currentGame": "network-2d",
   "games": [
     {
       "id": "web-quizzes",
@@ -811,7 +811,7 @@
       "id": "sdl-space",
       "title": "SDL Space / hinderbana",
       "order": 13,
-      "status": "tested_local",
+      "status": "published_verified",
       "sources": [
         {
           "kind": "github",
@@ -835,11 +835,23 @@
         {
           "command": "CHECK_GAMES_NAV=1 npm run test:sdl-space:browser; node scripts/test-games-navigation.cjs",
           "result": "passed locally: full native game suite plus playable iframe in Retrospel, excluded from AI-spel; previous embedded games and AI music routes passed."
+        },
+        {
+          "command": "GAME_BASE_URL=https://joynes.github.io/joynes.se/games/sdl-space/ HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ CHECK_GAMES_NAV=1 npm run test:sdl-space:browser",
+          "result": "passed on live site: entire unchanged native engine suite, >=300-frame survival, eight rock slots, actual collision/frame points/reset/replay, keyboard/Tab/Enter/Space, native audio output, real touch collision and replay, viewport/mapping after rotation, manual restart, JS/WASM/data errors with actual playable retries and retro iframe."
+        },
+        {
+          "command": "HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ node scripts/test-games-navigation.cjs",
+          "result": "passed live: previous embedded games, retro/AI/all-game routes, AI music navigation."
+        },
+        {
+          "check": "release-identity",
+          "result": "All 11 game/license/engine/catalog/index files SHA256 match canonical live URLs. Pages 41296724273 success and deployment API succeed."
         }
       ],
-      "publishedUrl": null,
-      "implementationCommit": null,
-      "deploymentCommit": null,
+      "publishedUrl": "https://joynes.github.io/joynes.se/games/sdl-space/",
+      "implementationCommit": "6b1f8695611e69e5c5107f77f0aea9c8158b0fff",
+      "deploymentCommit": "6b1f8695611e69e5c5107f77f0aea9c8158b0fff",
       "category": "retro",
       "webAdaptation": "ai",
       "categoryLabel": "AI-remake av retrospel",
@@ -859,7 +871,8 @@
         "games/sdl-space/styles.css": "a0c9e37cd8f27b56404da83390766a771e01ceee6198144dc1dfe355269a152f",
         "assets/games-catalog.js": "fd2657746d781df064848295134ecd8ed3db1967f5567ebc5ff185044f37a496",
         "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82"
-      }
+      },
+      "deploymentRun": 41296724273
     },
     {
       "id": "network-2d",
