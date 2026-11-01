@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "updatedAt": "2026-11-01",
   "objective": "Alla identifierade spel och relevanta spelversioner ska fungera på webben, testas och publiceras.",
-  "currentGame": "rall026-ascii",
+  "currentGame": "rall-026",
   "games": [
     {
       "id": "web-quizzes",
