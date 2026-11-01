@@ -1,6 +1,18 @@
 // Only tested releases belong here. The complete work queue is in data/games-inventory.json.
 window.joynesPublishedGames = [
   {
+    id: "worldforge",
+    title: "WorldForge",
+    kind: "ai",
+    description: "AI-spel · Original 2026 · Bygg en gemensam 3D-vattenpark med andra spelare. Block, pooler, rutschkanor och egna figurer sparas. Tangentbord, mus och touch i liggande mobilvy.",
+    href: "https://worldforge-self-test.joynez11.chatgpt.site/",
+    embed: false,
+    playLabel: "Öppna WorldForge",
+    source: "https://github.com/joynes/joynes.se/blob/master/docs/games/worldforge.md",
+    sourceLabel: "Om spelet",
+    version: "9751aa6"
+  },
+  {
     id: "neon-interceptor",
     title: "Neon Bastion & Manta",
     kind: "ai",

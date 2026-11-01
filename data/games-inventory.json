@@ -1117,7 +1117,7 @@
       "id": "worldforge",
       "title": "WorldForge",
       "order": 17,
-      "status": "pending",
+      "status": "tested_catalog_pending",
       "sources": [
         {
           "kind": "github",
@@ -1125,13 +1125,50 @@
         }
       ],
       "work": "Befintligt 3D-multiplayerspel. Testa byggande, uthållig lagring, avatarer och riktiga samtidiga klienter.",
-      "tests": [],
-      "publishedUrl": null,
-      "implementationCommit": null,
-      "deploymentCommit": null,
+      "tests": [
+        {
+          "command": "npm test (unchanged WorldForge source)",
+          "result": "passed: 97 deterministic tests; existing APPROVED report source hash recomputed exactly; source and GitHub main 9751aa6 match"
+        },
+        {
+          "command": "node scripts/verify-worldforge-assets.cjs",
+          "result": "passed: all 107 public and compiled client files SHA256 match live site; HTML shell excluded"
+        },
+        {
+          "command": "npm run test:worldforge:browser (Chromium147 live)",
+          "result": "passed: actual Babylon renderer/opaque14.5 camera, keyboard/jump/landing, native touch/cancel, two HTTP/D1 clients/peer motion, delivered 3-second upload and response stalls, real avatar preview/autosave/JSON export/import, ordinary wood block placement, foreign-owner403, D1 block/avatar reload persistence, exact own block pickaxe removal and normal leave. No global reset/debug permission or injected game state."
+        },
+        {
+          "check": "WebKit rerun limitation",
+          "result": "local browser process would not complete launch after machine reboot; not counted as a fresh pass"
+        },
+        {
+          "command": "npm run test:worldforge:links (local homepage, public game)",
+          "result": "passed: desktop/mobile own-tab link, real live lobby and health, AI inclusion and retro exclusion"
+        },
+        {
+          "command": "npm test; node scripts/test-games-navigation.cjs (homepage)",
+          "result": "passed: 32 tests and previous games/AI music navigation regression"
+        },
+        {
+          "check": "visual",
+          "result": "desktop1280x800 and landscape touch844x390 screenshots inspected; actual own block, two real avatars, visible compact two-row dock outside 3D canvas"
+        }
+      ],
+      "publishedUrl": "https://worldforge-self-test.joynez11.chatgpt.site/",
+      "implementationCommit": "9751aa60e7709732cf46feff2ca022014276d2a3",
+      "deploymentCommit": "9751aa60e7709732cf46feff2ca022014276d2a3",
       "category": "ai",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-spel"
+      "categoryLabel": "AI-spel",
+      "implementationRepository": "https://github.com/joynes/worldforge-self-test",
+      "externalUrl": "https://worldforge-self-test.joynez11.chatgpt.site/",
+      "embed": false,
+      "resourceAudit": "docs/games/worldforge-assets.json",
+      "catalogUrl": "https://joynes.github.io/joynes.se/#games/ai/worldforge",
+      "hostingVersion": 38,
+      "hostingDeployment": "appgdep_6ab03eb025b08191aee23a9f6c2206f8",
+      "sourceReportHash": "698d28efa57e9c317a483d7dae9619e8c22eb894066e16423ba834191c7a4f01"
     },
     {
       "id": "shadow-racer",

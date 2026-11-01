@@ -43,9 +43,9 @@ Jaro och Grodan-mapparnas texter/grafik och fotoalbumet 10 -20 - rall är inte s
 | 12 | Bilspel ovanifrån | Publicerat och verifierat | Godot-projekt. Bevara bilfysik och styrning i webbversion. |
 | 13 | SDL Space / hinderbana | Publicerat och verifierat | simple_game_using_sdl2_wasm har spelare, hinder, kollision och poäng. Grafikdemona är inte separata spel. |
 | 14 | Hello Multiplayer Game | Publicerat och verifierat | Canvas/Socket.IO. Testa riktiga samtidiga klienter och server, inte bara en statisk sida. |
-| 15 | Three.js Network Game | Väntar | 3D/Socket.IO-prototyp. Testa spelare, anslutning, rörelse och touch med riktig server. |
-| 16 | Neon Interceptor | Väntar | Befintligt aktivt spelprojekt. Granska rätt checkout och instruktioner; bevara kampanj, bossar, butik och multiplayer. |
-| 17 | WorldForge | Väntar | Befintligt 3D-multiplayerspel. Testa byggande, uthållig lagring, avatarer och riktiga samtidiga klienter. |
+| 15 | Three.js Network Game | Publicerat och verifierat | 3D/Socket.IO-prototyp. Testa spelare, anslutning, rörelse och touch med riktig server. |
+| 16 | Neon Interceptor | Publicerat och verifierat | Befintligt aktivt spelprojekt. Granska rätt checkout och instruktioner; bevara kampanj, bossar, butik och multiplayer. |
+| 17 | WorldForge | Speltestat, katalogpublicering återstår | Befintligt 3D-multiplayerspel. Testa byggande, uthållig lagring, avatarer och riktiga samtidiga klienter. |
 | 18 | ShadowRacer | Väntar | ActionScript/Flash-källa och SWF i Drive. Granska spelmekanik och återanvänd originalmaterial i webbversion. |
 | 19 | Rall v026 — ASCII | Väntar | Drive-release som ZIP. Inspektera original och återskapa spelets faktiska regler. |
 | 20 | Rall v030 — Fighter | Väntar | Drive-release som ZIP. Inspektera före val av portningsmetod. |
@@ -137,3 +137,5 @@ Jaro och Grodan-mapparnas texter/grafik och fotoalbumet 10 -20 - rall är inte s
 - **Hello Multiplayer Game verifierat på Fly:** 2025-prototypens figurer, värld, fart, prediction/reconciliation, interpoleringsreglage och autopilot bevarade. Privata källändringar committade till `09c53f8`; bygge, lint, tre serverregeltester och riktig lokal treklientsvit med serveromstart godkända. Samma treklientsvit passerade på https://test-network-game.fly.dev/ med korrekt release-SHA, actual touch, återanslutning och WebSocket-fel/nytt försök. Alla tre publika klientfiler byteverifierade. En befintlig 256MB-instans i Stockholm uppdaterad med färdigbyggd image efter första försöket mötte kapacitetsfel vid skapande av ny instans. En gemensam värld/en Machine verifierad. Länkning från hemsidan och katalogkontroll återstår.
 
 - **Hello Multiplayer Game publicerat och länkat:** Fly-release `09c53f8` är speltestad på riktig server med tre samtidiga klienter. Katalogcommit `dc10cf6`, lyckad Pages-körning `41300742912`. Desktop/mobil öppnar spelplan och autopilot i egna fönster från den riktiga hemsidan och når en riktig serveranslutning. AI-/retrofiltrering samt tidigare spel/AI-musik godkända. Alla tre katalog-/HTML-/dokumentfiler byteverifierade vid integrationspubliceringen. Fjorton spel är klarmarkerade; nästa är Three.js Network Game.
+
+- **WorldForge speltestat på befintlig publicering:** källcommit `9751aa6`, Sites-version38. Alla 97 regeltester och 107 resurshashar stämmer. Verklig Chromium-spelning med två HTTP/D1-klienter, touch/cancel, tresekunders nätfördröjningar, figursparning/överföring, vanligt byggande, ägarskap, omladdning och hacka godkända. Egna testblock borttagna; användarnas värld bevarad. WebKit kunde inte starta efter datorns omstart och räknas inte som en ny godkänd körning. Lokal hemsideslänk och tidigare spel/musik godkända. Katalogpublicering och slutlig livekontroll återstår.

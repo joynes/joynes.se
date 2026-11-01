@@ -21,7 +21,9 @@
     "test:multiplayer-3d:links": "node scripts/test-network-3d-navigation.cjs",
     "test:neon:browser": "node scripts/test-neon-interceptor-browser.cjs",
     "test:neon:coop": "node scripts/test-neon-interceptor-coop.cjs",
-    "test:neon:links": "node scripts/test-neon-interceptor-navigation.cjs"
+    "test:neon:links": "node scripts/test-neon-interceptor-navigation.cjs",
+    "test:worldforge:browser": "node scripts/test-worldforge-browser.cjs",
+    "test:worldforge:links": "node scripts/test-worldforge-navigation.cjs"
   },
   "devDependencies": {
     "playwright": "1.58.2"
