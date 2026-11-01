@@ -1028,9 +1028,9 @@
     },
     {
       "id": "neon-interceptor",
-      "title": "Neon Interceptor",
+      "title": "Neon Bastion & Manta",
       "order": 16,
-      "status": "pending",
+      "status": "tested_live_pending_catalog",
       "sources": [
         {
           "kind": "github",
@@ -1038,13 +1038,73 @@
         }
       ],
       "work": "Befintligt aktivt spelprojekt. Granska rätt checkout och instruktioner; bevara kampanj, bossar, butik och multiplayer.",
-      "tests": [],
+      "tests": [
+        {
+          "command": "npm test; npm --prefix game-server test (schmup)",
+          "result": "passed: 30 client and 117 server tests; both source checkouts clean; both exact source commits confirmed on GitHub and Sites production provenance"
+        },
+        {
+          "command": "existing test-optional-features-browser.mjs against unchanged source via local Vite",
+          "result": "passed: Chromium/WebKit, both editions; optional flags, preserved saves, backup/undo, pause/countdown/restart, result/record/medals, difficulty and reward-free training. Unchanged test logic; screenshot output redirected and Chrome disk cache bounded; these instrumented checks are distinct from normal play."
+        },
+        {
+          "command": "test-neon-interceptor-browser.cjs against both public Sites",
+          "result": "passed: Chromium147/WebKit26.6, complete maps20/21, actual free ship selection/persistence, mixer, real keyboard/relative pointer/touch/cancel, bomb cooldown and played stage soundtrack, real scene pause/resume, portrait/landscape recovery and exit cleanup. Read-only Pixi observer; no player state injection."
+        },
+        {
+          "command": "test-neon-interceptor-coop.cjs against both public Sites and real Fly server",
+          "result": "passed: three genuine isolated production browser clients in each default protocol, authentic tickets, fourth-seat rejection, final sector20/21, original rescue options, actual touch movement rendered on both peers, release hold and real bomb cooldown. Matchmaking isolated in newly created test rooms; no fabricated state or production restart."
+        },
+        {
+          "check": "public resource integrity and visual QA",
+          "result": "passed: all439 non-HTML original public assets per edition SHA256-match source; audition HTML original intact plus one hosting insertion; menus/solo/multiplayer/portrait visually inspected. Automated touch and WebKit only, not physical iPad validation."
+        },
+        {
+          "command": "npm test; npm run test:neon:links; node scripts/test-games-navigation.cjs (homepage)",
+          "result": "passed: 32 homepage unit tests; own-tab links from desktop and mobile, intentional landscape rotation, actual Bastion/Manta public menus and runtime variants20/21; AI inclusion and retro exclusion; previous games and AI music regressions"
+        }
+      ],
       "publishedUrl": null,
-      "implementationCommit": null,
-      "deploymentCommit": null,
+      "implementationCommit": "e497f79e63f7ad402430a3db15a3e1fc2847aa49",
+      "deploymentCommit": "e497f79e63f7ad402430a3db15a3e1fc2847aa49",
       "category": "ai",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-spel"
+      "categoryLabel": "AI-spel",
+      "sourceCommit": "e497f79e63f7ad402430a3db15a3e1fc2847aa49",
+      "sourcePeriod": "2026-09–2026-11",
+      "implementationRepository": "https://github.com/joynes/neon-interceptor",
+      "sourceCommitsPushed": true,
+      "externalUrl": "https://neon-interceptor.joynez11.chatgpt.site/",
+      "implementationNotes": "Existing clean active project preserved without changes or redundant game/server deployment. Both public Sites releases 0.3.15 verified succeeded with GitHub source provenance and live badges: Bastion20/Manta21 full campaigns, original art/music/shop/optional features and both actual 3-player multiplayer protocols. 439 original non-HTML assets per site hash-match; source audition HTML intact with hosting insertion. Root integration links both full editions in separate tabs.",
+      "editions": [
+        {
+          "name": "Neon Bastion",
+          "variant": "interceptor",
+          "url": "https://neon-interceptor.joynez11.chatgpt.site/",
+          "commit": "e497f79e63f7ad402430a3db15a3e1fc2847aa49",
+          "branch": "feat/authoritative-multiplayer",
+          "sitesVersion": 77,
+          "sitesDeploymentId": "appgdep_6ae6f7254ed88191bbe4cc7352f4e02f",
+          "sectors": 20
+        },
+        {
+          "name": "Manta Bastion",
+          "variant": "manta",
+          "url": "https://manta-interceptor.joynez11.chatgpt.site/",
+          "commit": "a5a6424e806a47530a8509ddac7803223c8f4ad3",
+          "branch": "deploy/manta-site",
+          "sitesVersion": 35,
+          "sitesDeploymentId": "appgdep_6ae6f708708c819189bbd23036333bf2",
+          "sectors": 21
+        }
+      ],
+      "resourceAudit": "docs/games/neon-interceptor-assets.json",
+      "catalogReleaseFilesSha256": {
+        "assets/games-catalog.js": "6960cfecf2a0d8b1ad26b8d01260c895f4466a89fd88ca5c3b87320364d0ebc6",
+        "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82",
+        "docs/games/neon-interceptor.md": "1e58974a4ccf0a99ad856372fd7e2d53a5be6ecbdccffed5afdbf2194cdbc287",
+        "docs/games/neon-interceptor-assets.json": "56ff5f4e82f61f929dc6451b4e5c15ac86cfa7302545dcc98508b8bd6614ad22"
+      }
     },
     {
       "id": "worldforge",

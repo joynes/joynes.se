@@ -18,7 +18,10 @@
     "test:car-topview:browser": "node scripts/test-car-topview-browser.cjs",
     "test:sdl-space:browser": "node scripts/test-sdl-space-browser.cjs",
     "test:multiplayer:links": "node scripts/test-network-2d-navigation.cjs",
-    "test:multiplayer-3d:links": "node scripts/test-network-3d-navigation.cjs"
+    "test:multiplayer-3d:links": "node scripts/test-network-3d-navigation.cjs",
+    "test:neon:browser": "node scripts/test-neon-interceptor-browser.cjs",
+    "test:neon:coop": "node scripts/test-neon-interceptor-coop.cjs",
+    "test:neon:links": "node scripts/test-neon-interceptor-navigation.cjs"
   },
   "devDependencies": {
     "playwright": "1.58.2"

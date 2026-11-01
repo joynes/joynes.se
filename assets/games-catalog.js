@@ -1,6 +1,19 @@
 // Only tested releases belong here. The complete work queue is in data/games-inventory.json.
 window.joynesPublishedGames = [
   {
+    id: "neon-interceptor",
+    title: "Neon Bastion & Manta",
+    kind: "ai",
+    description: "AI-spel · Original 2026 · Två arkadflygspel med 20 respektive 21 sektorer, hangar, bossträning och samarbete för 2–3 piloter. Tangentbord och touch. Spelas liggande.",
+    href: "https://neon-interceptor.joynez11.chatgpt.site/",
+    embed: false,
+    playLabel: "Spela Bastion",
+    modes: [["Spela Manta", "https://manta-interceptor.joynez11.chatgpt.site/"]],
+    source: "https://github.com/joynes/joynes.se/blob/master/docs/games/neon-interceptor.md",
+    sourceLabel: "Om spelen",
+    version: "0.3.15"
+  },
+  {
     id: "network-3d",
     title: "3D Network Game",
     kind: "ai",
