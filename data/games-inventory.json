@@ -745,7 +745,7 @@
       "id": "car-topview",
       "title": "Bilspel ovanifrån",
       "order": 12,
-      "status": "pending",
+      "status": "tested_local",
       "sources": [
         {
           "kind": "github",
@@ -753,13 +753,46 @@
         }
       ],
       "work": "Godot-projekt. Bevara bilfysik och styrning i webbversion.",
-      "tests": [],
+      "tests": [
+        {
+          "command": "npm test",
+          "result": "passed: 30 tests including four car physics/media tests."
+        },
+        {
+          "command": "npm run test:car-topview:browser",
+          "result": "passed locally: actual image pixels; forward/reverse/friction/stationary turn/drift; four walls; pause/release/reset; decoded loop audio, speed pitch and actual gain mute/pause; real simultaneous touch with independent finger release/cancel; image/audio/module 503 recovery followed by driving; compact landscape board/control bounds and actual touch driving."
+        },
+        {
+          "check": "visual",
+          "result": "Desktop 1280x1000, portrait 390x844 and compact landscape 844x390 screenshots inspected. Landscape board and all driving controls simultaneously visible."
+        },
+        {
+          "command": "CHECK_GAMES_NAV=1 npm run test:car-topview:browser; node scripts/test-games-navigation.cjs",
+          "result": "passed locally: AI category launches playable iframe, excluded from Retrospel; previous embedded games and music navigation passed."
+        }
+      ],
       "publishedUrl": null,
       "implementationCommit": null,
       "deploymentCommit": null,
       "category": "ai",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-spel"
+      "categoryLabel": "AI-spel",
+      "sourceCommit": "5450575feeb6d6b42c48e7d2708ea3863da424c8",
+      "sourcePeriod": "2024-12",
+      "webPath": "games/car-topview/",
+      "implementationNotes": "Latest free-drive Godot4 prototype; original car PNG and looping PCM24 engine WAV preserved. Acceleration 400, max speed 800, friction 200, steer 3 rad/s, drift factor 2, pitch 0.5–3. JavaScript formula port and rotated rectangle wall contacts, not native Godot. Source wall collision offset repaired; start/pause/reset/mute and multitouch added. No authored races or score.",
+      "releaseFilesSha256": {
+        "games/car-topview/app.mjs": "3b17cbec3279c8bb9cdb29962c13191e8c66ae21b5b383715aa5eb76a9f2d067",
+        "games/car-topview/car.png": "92daedcd612290c05ff3debedce20b1ac0b1006c8a9d03b035b21b7be9df2236",
+        "games/car-topview/core.mjs": "fb54033ea52e79f93b7458d4a8ab8f0958e9e3042a01b1bb1875e08cbe11dd9c",
+        "games/car-topview/engine.wav": "729dbfa505b858123746d8f2930691a066b5da46934ff075bc30de1efa1d5732",
+        "games/car-topview/index.html": "1658e242744d6750d4a69cbb5c5dd8981216bb984596109bfb94a0e65b5374d4",
+        "games/car-topview/provenance.json": "2c7a3b776e92c8842f8e3b698d0ae788f322775001715e4b079da54f9778f6f9",
+        "games/car-topview/source-notes.md": "0edea94add602063b18c1227da52ebbfdc0109307516e4b16929ea7fc89087dd",
+        "games/car-topview/styles.css": "9bc64a6886b2d597e8f791879d2f03631db5ae962f540fe4b686b0eb8fff9947",
+        "assets/games-catalog.js": "4fea3ef6b179dd8fe5c102b165b2c1ec541efa1f129b962b787cfe5fb532e3cf",
+        "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82"
+      }
     },
     {
       "id": "sdl-space",

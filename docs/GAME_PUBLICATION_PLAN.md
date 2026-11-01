@@ -40,7 +40,7 @@ Jaro och Grodan-mapparnas texter/grafik och fotoalbumet 10 -20 - rall är inte s
 | 9 | Simple Driving Game | Publicerat och verifierat | Unity-källa. Identifiera spelmekanik, tillgångar och webbexport; testa körning på tangentbord och touch. |
 | 10 | Bus Test Game | Publicerat och verifierat | Befintligt Unity WebGL-bygge. Utred relationen till SimpleDrivingGame utan att anta att de är samma. |
 | 11 | Godot Reading Game | Publicerat och verifierat | Ofullständig Godot-prototyp med objekt och lägesrelationer. Återskapa saknade delar och gör webbversion. |
-| 12 | Bilspel ovanifrån | Väntar | Godot-projekt. Bevara bilfysik och styrning i webbversion. |
+| 12 | Bilspel ovanifrån | Lokalt testad | Godot-projekt. Bevara bilfysik och styrning i webbversion. |
 | 13 | SDL Space / hinderbana | Väntar | simple_game_using_sdl2_wasm har spelare, hinder, kollision och poäng. Grafikdemona är inte separata spel. |
 | 14 | Hello Multiplayer Game | Väntar | Canvas/Socket.IO. Testa riktiga samtidiga klienter och server, inte bara en statisk sida. |
 | 15 | Three.js Network Game | Väntar | 3D/Socket.IO-prototyp. Testa spelare, anslutning, rörelse och touch med riktig server. |
@@ -125,3 +125,5 @@ Jaro och Grodan-mapparnas texter/grafik och fotoalbumet 10 -20 - rall är inte s
 - **Godot Reading Game / Läs och placera lokalt testat:** en ursprunglig läsuppgift, tre flyttbara föremål, två plattformar och golv. Saknade bilder ersatta med egna SVG:er; JavaScript-fysik och gränsanpassning uttryckligen dokumenterade. Rätt/fel-avstånd/luft, riktiga mus-/touchlösningar på alla ytor, tangentbord, omspel och laddningsfel/nytt försök passerade. Täta mobilobjekt väljs var för sig efter närmaste centrum. 26 enhetstester godkända. Publicering återstår.
 
 - **Läs och placera publicerat och verifierat:** https://joynes.github.io/joynes.se/games/godot-reading/ . Kodcommit `6a2a118629c635838aa29c77e051a2c36f802486`, Pages-körning `41293921395`. Hela mus-/tangentbords-/touchsviten passerade på riktig adress, inklusive två hyllor/golv, felaktiga placeringar, tredje föremålet, omspel, tätt placerade föremål och nätfel/nytt försök. Alla åtta spel-/katalog-/HTML-filer byteverifierade. Tidigare spel och AI-musik passerade katalogregression. Elva spel är nu verifierade; nästa är Bilspel ovanifrån.
+
+- **Bilspel ovanifrån lokalt testat:** original från december 2024, alltså AI-spel enligt åldersindelningen. Bilbild och motorljud bytebevarade. Senaste rörelseformler, stillastående styrning, drift, maxfart och ljudton bevarade i JavaScript-port; väggarnas felplacerade kollisionsytor rättade. Faktisk körning fram/back, fyra väggkontakter, paus/omstart, avkodat loopljud/volym, samtidig touch och tre laddningsfel med körbart nytt försök passerade. 30 enhetstester godkända. Liggande mobilvy komprimeras så plan och knappar syns samtidigt; slutkontroll/publicering återstår.

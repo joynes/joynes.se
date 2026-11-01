@@ -1,6 +1,16 @@
 // Only tested releases belong here. The complete work queue is in data/games-inventory.json.
 window.joynesPublishedGames = [
   {
+    id: "car-topview",
+    title: "Bilspel ovanifrån",
+    kind: "ai",
+    description: "AI-spel · Original december 2024 · Fri körning med polisbil, drift och ursprungligt motorljud. Styr med tangentbord eller samtidiga touchknappar. Inga lopp eller poäng.",
+    href: "games/car-topview/",
+    source: "https://github.com/joynes/joynes.se/tree/master/games/car-topview",
+    sourceLabel: "Webbkod och ursprung",
+    version: "2024-car-web.1"
+  },
+  {
     id: "godot-reading",
     title: "Läs och placera",
     kind: "retro",
