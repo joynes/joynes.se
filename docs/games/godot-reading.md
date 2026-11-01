@@ -15,3 +15,9 @@ Exakta källhashar finns i `games/godot-reading/provenance.json`. Spelarnas publ
 - Skärmbilder `test-results/godot-reading-{desktop,mobile,landscape}.png` visuellt granskade. Testet läser bara synlig DOM och skickar vanliga inmatningshändelser; det injicerar inte speltillstånd.
 
 Katalogkontroll passerade lokalt: startbart iframe från Retrospel, utelämnat från AI-spel. Tidigare inbäddade spel och AI-musik passerade navigationsregression. Publicering verifieras separat före klarmarkering i inventeringen.
+
+## Publicering verifierad
+
+https://joynes.github.io/joynes.se/games/godot-reading/
+
+Kodcommit `6a2a118629c635838aa29c77e051a2c36f802486`, lyckad Pages-körning `41293921395`. Hela webbläsarsviten med katalogkontroll och tidigare spel/musik passerade också på liveadressen. Alla åtta spel-/katalog-/HTML-filer SHA256-verifierade från kanoniska publika URL:er. Inventeringen är klarmarkerad och kön går vidare till Bilspel ovanifrån.

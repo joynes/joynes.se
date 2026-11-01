@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "updatedAt": "2026-11-01",
   "objective": "Alla identifierade spel och relevanta spelversioner ska fungera på webben, testas och publiceras.",
-  "currentGame": "godot-reading",
+  "currentGame": "car-topview",
   "games": [
     {
       "id": "web-quizzes",
@@ -681,7 +681,7 @@
       "id": "godot-reading",
       "title": "Godot Reading Game",
       "order": 11,
-      "status": "tested_local",
+      "status": "published_verified",
       "sources": [
         {
           "kind": "github",
@@ -705,11 +705,23 @@
         {
           "command": "CHECK_GAMES_NAV=1 npm run test:godot-reading:browser; node scripts/test-games-navigation.cjs",
           "result": "passed locally: playable iframe from Retrospel, excluded from AI-spel; previous embedded games and AI music navigation passed."
+        },
+        {
+          "command": "GAME_BASE_URL=https://joynes.github.io/joynes.se/games/godot-reading/ HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ CHECK_GAMES_NAV=1 npm run test:godot-reading:browser",
+          "result": "passed on live site: full mouse/keyboard/real touch suite, two platforms and floor, wrong/airborne/far placement, third-object gravity, replay, nearest adjacent selection, cancellation and module recovery; playable retro iframe and AI exclusion."
+        },
+        {
+          "command": "HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ node scripts/test-games-navigation.cjs",
+          "result": "passed on live site: previous embedded games, retro/AI/all-game routes and music navigation."
+        },
+        {
+          "check": "release-identity",
+          "result": "All 8 game/catalog/index files match release SHA256 hashes on canonical live URLs. Pages run 41293921395 success; deployment API status succeed."
         }
       ],
-      "publishedUrl": null,
-      "implementationCommit": null,
-      "deploymentCommit": null,
+      "publishedUrl": "https://joynes.github.io/joynes.se/games/godot-reading/",
+      "implementationCommit": "6a2a118629c635838aa29c77e051a2c36f802486",
+      "deploymentCommit": "6a2a118629c635838aa29c77e051a2c36f802486",
       "category": "retro",
       "webAdaptation": "ai",
       "categoryLabel": "AI-remake av retrospel",
@@ -726,7 +738,8 @@
         "games/godot-reading/styles.css": "f38ed2aac5cef8eb1805521a72e9c393fed01e482fb0f92acc37502a7d3a719c",
         "assets/games-catalog.js": "7ea426ec7a9db328f45d0bc2f08b99d6da33691faa20a0769dab2af0f8834dc3",
         "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82"
-      }
+      },
+      "deploymentRun": 41293921395
     },
     {
       "id": "car-topview",
