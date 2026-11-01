@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "updatedAt": "2026-11-01",
   "objective": "Alla identifierade spel och relevanta spelversioner ska fungera på webben, testas och publiceras.",
-  "currentGame": "grimace-gemini",
+  "currentGame": "grimace-codex",
   "games": [
     {
       "id": "web-quizzes",
@@ -63,7 +63,7 @@
       "id": "grimace-gemini",
       "title": "Milians Grimace Matte-spel — Gemini",
       "order": 2,
-      "status": "tested_locally",
+      "status": "published_verified",
       "sources": [
         {
           "kind": "github",
@@ -87,15 +87,34 @@
         {
           "check": "visual",
           "result": "desktop 1440x1000 and mobile 360x740 inspected"
+        },
+        {
+          "command": "GAME_BASE_URL=https://joynes.github.io/joynes.se/games/grimace-gemini/ npm run test:grimace:browser",
+          "result": "passed on deployed e933196: arithmetic, persistence, mobile, keyboard, retry and storage recovery"
+        },
+        {
+          "command": "HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ node scripts/test-games-navigation.cjs",
+          "result": "passed on deployed e933196: both categories and playable game iframes"
+        },
+        {
+          "check": "deployed file identity",
+          "result": "SHA256 and byte equality verified for HTML, modules, CSS and catalog; Pages run 41277943873 succeeded"
         }
       ],
-      "publishedUrl": null,
-      "implementationCommit": null,
-      "deploymentCommit": null,
+      "publishedUrl": "https://joynes.github.io/joynes.se/games/grimace-gemini/",
+      "implementationCommit": "e933196f98954c74c9917bb83d9f3374aeacdbc8",
+      "deploymentCommit": "e933196f98954c74c9917bb83d9f3374aeacdbc8",
       "category": "ai",
       "webAdaptation": "ai",
       "categoryLabel": "AI-spel",
-      "sourceCommit": "f3b4d568066075a11cf7d2c43afae108a75a6b03"
+      "sourceCommit": "f3b4d568066075a11cf7d2c43afae108a75a6b03",
+      "verifiedFileHashes": {
+        "games/grimace-gemini/index.html": "23b4a954ef9a2e0727a4141d49144901c4f80bd2f50b12f4e675f175e99dcecc",
+        "games/grimace-gemini/app.mjs": "038d066b9a36dd6c4e4c0b6d76d17b6a32e8e3e555140d749d99306af01c345d",
+        "games/grimace-gemini/core.mjs": "afbe23a4d4b130cff84afacb199d785bc7c666f7f99f567b4030c370e2e734d3",
+        "games/grimace-gemini/styles.css": "eac894c87349643e5c7c072594e4d5503ec7ce0cfac7d4172add4c381d000fba",
+        "assets/games-catalog.js": "c4e15570b87d5e3bb8757e3d63026c56cb16ab2359b47df4355aaf202de10025"
+      }
     },
     {
       "id": "grimace-codex",

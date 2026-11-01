@@ -30,7 +30,7 @@ Jaro och Grodan-mapparnas texter/grafik och fotoalbumet 10 -20 - rall är inte s
 | Ordning | Spel eller version | Status vid planstart | Uppgift |
 | --- | --- | --- | --- |
 | 1 | Frågespelet | Väntar | Webbspel; laga omstart, återkoppling och mobilvy. Rätta verifierade fel i frågebanken. |
-| 2 | Milians Grimace Matte-spel — Gemini | Lokalt testat | Bevara originalets spelregler; testa plus/minus, rätt/fel, omstart och mobil. |
+| 2 | Milians Grimace Matte-spel — Gemini | Publicerat och verifierat | Bevara originalets spelregler; testa plus/minus, rätt/fel, omstart och mobil. |
 | 3 | Milians Grimace Matte-spel — Codex | Väntar | Separat implementation av samma spelidé. Bevara som egen spelbar variant. |
 | 4 | Läs- och ordquiz | Väntar | Källkod i SDL/C++; befintligt webbbygge finns i quiz_game_online. Kontrollera filer, inmatning och mobilstöd. |
 | 5 | Memit | Väntar | Övnings-, gissnings- och provlägen. Återställ saknade bibliotek och speldata före publicering. |
@@ -79,3 +79,5 @@ Jaro och Grodan-mapparnas texter/grafik och fotoalbumet 10 -20 - rall är inte s
 - Nästa spel i kön är Milians Grimace Matte-spel, Gemini-varianten. Övriga spel är fortfarande inte klarmarkerade.
 
 - **Grimace Gemini lokalt testat:** båda räknesätten, separat progression, skydd mot dubbla poäng, lagring/återhämtning, tangentbord och mobil. Lila originalutseende bevarat. Nästa fråga har en knapp så att återkopplingen kan läsas i egen takt. Katalogen visar spelet under AI-spel. Publicering och kontroll på riktig adress återstår.
+
+- **Grimace Gemini publicerat och verifierat:** https://joynes.github.io/joynes.se/games/grimace-gemini/ . Spelcommit `e933196f98954c74c9917bb83d9f3374aeacdbc8`, Pages-körning `41277943873`. Båda räknesätten, mobil, tangentbord, lagring och hemsidans spelbara inbäddning testades på den riktiga adressen efter lyckad publicering. Spelfiler och katalog jämfördes byte för byte. Ett första kontrollförsök innan utrullningen var klar nådde ännu inte spelet; efter avslutad utrullning passerade hela sviten. Nästa spel är Codex-varianten.
