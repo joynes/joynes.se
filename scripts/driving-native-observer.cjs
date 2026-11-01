@@ -18,11 +18,13 @@ exports.observeDriver = async function(page, calibrate) {
   }).map(candidate => candidate.index), candidates);
   const index = moving.at(-1);
   if (!index) throw new Error('Browser input did not move an observed native vehicle pose');
-  return async () => page.evaluate(index => {
+  const read = async () => page.evaluate(index => {
     const values = Array.from(instance.Module.HEAPF32.subarray(index, index + 7));
     const [x, y, z, qx, qy, qz, qw] = values;
     const quaternionLength = Math.hypot(qx, qy, qz, qw);
     if (![x,y,z,qx,qy,qz,qw].every(Number.isFinite) || Math.abs(quaternionLength - 1) > .02) throw new Error('Native pose no longer valid');
     return {x,y,z,yaw:Math.atan2(2*(qw*qy+qx*qz),1-2*(qy*qy+qz*qz))};
   }, index);
+  read.samples=()=>page.evaluate(indices=>indices.map(index=>({index,pose:Array.from(instance.Module.HEAPF32.subarray(index,index+7))})),moving);
+  return read;
 };

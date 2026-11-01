@@ -1,4 +1,4 @@
-"""Restore the later source police variant in its shared native city runtime.
+"""Adapt the original bus or restore the later police variant in their native city runtime.
 Analysis/build dependency: UnityPy==1.25.4, PyYAML==6.0.3, Pillow.
 No changes to compiled WASM, framework or engine loader. Never edits input files.
 """
@@ -199,6 +199,8 @@ source_files = ['Assets/Karting/Scenes/MainScene.unity',
                 'Assets/Karting/Scripts/KartSystems/TypeOfVehicle.cs',
                 'Assets/Karting/Scripts/KartSystems/Inputs/KeyboardInput.cs',
                 'Assets/Karting/Scripts/KartSystems/ArcadeKart.cs']
+if args.vehicle == 'bus':
+    source_files = ['ProjectVersion.txt', 'dependencies.txt', 'index.html']
 if args.vehicle == 'police':
     source_files += ['Assets/Urban American Assets/Props/Vehicles/Police Car.prefab',
                      'Assets/Urban American Assets/Props/Vehicles/Source/CarPack.FBX',

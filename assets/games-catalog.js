@@ -1,6 +1,17 @@
 // Only tested releases belong here. The complete work queue is in data/games-inventory.json.
 window.joynesPublishedGames = [
   {
+    id: "unity-bus",
+    title: "Bus Test Game — Buss",
+    kind: "retro",
+    description: "AI-remake av retrospel · Original 2023 · Den äldre bussversionen: tre checkpoint-portar, en 3D-stad och ursprunglig Unity-fysik. Mus, tangentbord och touch.",
+    href: "games/unity-bus/",
+    embed: false,
+    source: "https://github.com/joynes/unity_bus",
+    sourceLabel: "Originalbygge",
+    version: "2023-bus-web.1"
+  },
+  {
     id: "simple-driving",
     title: "Simple Driving Game — Polisbil",
     kind: "retro",

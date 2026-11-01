@@ -31,6 +31,12 @@ added = set(after) - set(before)
 assert changed | added == expected, f'Undocumented asset changes: {(changed | added) ^ expected}'
 assert hashlib.sha256(a.original.read_bytes()).hexdigest() == manifest['nativeInputSha256']
 assert hashlib.sha256(a.release.read_bytes()).hexdigest() == manifest['outputSha256']
+if manifest['vehicle'] == 'bus':
+    preserved_types = ['GameObject', 'Transform', 'Mesh', 'MeshFilter', 'MeshRenderer',
+                       'SkinnedMeshRenderer', 'Material', 'Texture2D', 'Animator', 'AnimationClip',
+                       'Rigidbody', 'WheelCollider', 'Camera']
+    assert all(key not in changed for key, obj in before.items() if obj.type.name in preserved_types), 'Bus visuals, placement, camera or drivetrain changed'
+    assert ('level1', 1820) not in changed and ('level1', 1819) not in changed, 'Original kart physics/input must be preserved'
 sounds = [key for key, obj in before.items() if obj.type.name == 'AudioClip']
 assert all(key not in changed for key in sounds)
 # External audio/streaming resource bytes are also retained, not just AudioClip headers.

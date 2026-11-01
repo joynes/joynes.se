@@ -610,21 +610,36 @@
       "id": "unity-bus",
       "title": "Bus Test Game",
       "order": 10,
-      "status": "pending",
+      "status": "tested_local",
       "sources": [
         {
           "kind": "github",
           "url": "https://github.com/joynes/unity_bus"
         }
       ],
-      "work": "Befintligt Unity WebGL-bygge. Utred relationen till SimpleDrivingGame utan att anta att de är samma.",
-      "tests": [],
+      "work": "Den äldre bussvarianten bevarad separat med ursprunglig grafik/fysik och fungerande treportsuppdrag. Gemensam webbvärd med polisversionen. Lokala hela mus-/touchuppdrag och laddnings-/helskärmskontroller passerade; publicering återstår.",
+      "tests": [
+        {
+          "command": "npm run test:bus:browser",
+          "result": "passed locally: full 3-gate missions, actual win/replay on desktop and native touch; keyboard, multi-touch/cancel, focus/deceleration, native pause, Tab, restart, own-tab Retro integration, fullscreen portrait/landscape with controls and exit; loader/WASM/data/framework failures all recover to actual driving"
+        },
+        {
+          "command": "verify-driving-assets.py ORIGINAL RELEASE PROVENANCE",
+          "result": "passed: 6482 original objects preserved, 11 documented edits, 0 additions; all original model/transform/render/material/texture/animation/camera/drivetrain/input and 12 audio objects/resources unchanged. Repeated conversion using public sources produces identical data bytes."
+        },
+        {
+          "command": "npm test; node scripts/test-games-navigation.cjs",
+          "result": "passed: 23 unit/data checks and previous embedded games/categories/music regression"
+        }
+      ],
       "publishedUrl": null,
       "implementationCommit": null,
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel"
+      "categoryLabel": "AI-remake av retrospel",
+      "sourceCommit": "3f18cf90f94f996dd1c414d58cb6cd8f23f481d6",
+      "webVersion": "2023-bus-web.1"
     },
     {
       "id": "godot-reading",
