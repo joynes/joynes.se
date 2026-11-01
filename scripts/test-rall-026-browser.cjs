@@ -72,7 +72,8 @@ async function cover(p){
   await p.keyboard.down('KeyQ');await p.waitForFunction(()=>Number(rall026Diagnostics().screen.text.split('\n')[20].slice(73).trim())<=0,null,{polling:10,timeout:3000});await p.keyboard.up('KeyQ');
   // Opposing key owners are released before/after a genuine emulator pause.
   await p.keyboard.down('ArrowRight');await p.waitForTimeout(120);await p.locator('#pause').click();await p.keyboard.up('ArrowRight');
-  const frozen=await diagnostics(p);assert(frozen.paused);assert.deepEqual(frozen.held,[]);await p.waitForTimeout(700);const still=await diagnostics(p);assert.equal(still.screen.ticks,frozen.screen.ticks);assert.equal(still.frames,frozen.frames);assert.equal(still.audio.queued,0);
+  // Pause is a queued emulator command; observe after its next cooperative yield.
+  await p.waitForTimeout(120);const frozen=await diagnostics(p);assert(frozen.paused);assert.deepEqual(frozen.held,[]);await p.waitForTimeout(700);const still=await diagnostics(p);assert.equal(still.screen.ticks,frozen.screen.ticks);assert.equal(still.frames,frozen.frames);assert.equal(still.audio.queued,0);
   await p.locator('#resume').click();await p.waitForTimeout(200);assert(!(await diagnostics(p)).paused);
   await p.screenshot({path:path.join(out,'desktop.png')});
   // Restart the original, then win with a real shot from a clear aligned lane.
