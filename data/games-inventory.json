@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "updatedAt": "2026-11-01",
   "objective": "Alla identifierade spel och relevanta spelversioner ska fungera på webben, testas och publiceras.",
-  "currentGame": "network-3d",
+  "currentGame": "neon-interceptor",
   "games": [
     {
       "id": "web-quizzes",
@@ -953,7 +953,7 @@
       "id": "network-3d",
       "title": "3D Network Game",
       "order": 15,
-      "status": "tested_live_pending_catalog",
+      "status": "published_verified",
       "sources": [
         {
           "kind": "github",
@@ -977,9 +977,13 @@
         {
           "command": "npm test; npm run test:multiplayer-3d:links; node scripts/test-games-navigation.cjs (homepage)",
           "result": "passed: 32 unit/regression tests; actual own-tab 3D server connections from desktop/mobile catalog; AI inclusion and retro exclusion; existing games and AI music navigation regressions"
+        },
+        {
+          "check": "public homepage integration",
+          "result": "passed: successful Pages run 41305100519, three canonical catalog/index/document file hashes, own-tab real server connections and AI/retro filtering at desktop and mobile from the public homepage"
         }
       ],
-      "publishedUrl": null,
+      "publishedUrl": "https://test-3d-network-game.fly.dev/",
       "implementationCommit": "c902a88145a7baf8a14635b4c10f7035e6ec506a",
       "deploymentCommit": "c902a88145a7baf8a14635b4c10f7035e6ec506a",
       "category": "ai",
@@ -1017,7 +1021,10 @@
         "assets/games-catalog.js": "705e84d493a34fc869eb2ea53dffbaf0e488a3472a0e36a2de3f3dc5cf79e0de",
         "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82",
         "docs/games/network-3d.md": "5aa5b90875d0ded41070b596146440434bc5c056d16271c1a59956b8e9dbb498"
-      }
+      },
+      "catalogUrl": "https://joynes.github.io/joynes.se/#games/ai/network-3d",
+      "catalogCommit": "6b70bb237005c0411acabed78003e2df815ee192",
+      "catalogDeploymentRun": 41305100519
     },
     {
       "id": "neon-interceptor",
