@@ -491,7 +491,7 @@
       "id": "marble-tables",
       "title": "Marble Tables",
       "order": 8,
-      "status": "pending",
+      "status": "tested_local",
       "sources": [
         {
           "kind": "github",
@@ -499,13 +499,20 @@
         }
       ],
       "work": "Unity-källa och marble-web-test är samma projekt. Verifiera webbbygget och styrningen.",
-      "tests": [],
+      "tests": [
+        {
+          "command": "npm run test:marble:browser",
+          "result": "passed locally: real native sphere spawning, mouse/touch drag and hold, release under gravity, restart, full camera aspect, fullscreen; blocked WASM download and retry"
+        }
+      ],
       "publishedUrl": null,
       "implementationCommit": null,
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel"
+      "categoryLabel": "AI-remake av retrospel",
+      "sourceCommit": "b7994d00c0d740d2d7738028daf5c6528c110372",
+      "originalWebBuildCommit": "4d139e8a9ba9b5ebe265dd5cb7301da2b4b3578d"
     },
     {
       "id": "simple-driving",

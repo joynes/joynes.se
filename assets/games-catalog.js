@@ -1,6 +1,17 @@
 // Only tested releases belong here. The complete work queue is in data/games-inventory.json.
 window.joynesPublishedGames = [
   {
+    id: "marble-tables",
+    title: "Marble Tables",
+    kind: "retro",
+    description: "AI-remake av retrospel · Original 2022 · En öppen 3D-kulbana. Dra och släpp färgade kulor bland ramperna. Originalets Unity-fysik bevarad, nytt webbgränssnitt med AI.",
+    href: "games/marble-tables/",
+    embed: false,
+    source: "https://github.com/joynes/marble-web-test",
+    sourceLabel: "Ursprungligt webbbygge",
+    version: "1.0.2-web.1"
+  },
+  {
     id: "small-wonders",
     title: "Small Wonders / Inuti språkmodellen",
     kind: "ai",
