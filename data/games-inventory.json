@@ -543,7 +543,7 @@
       "id": "simple-driving",
       "title": "Simple Driving Game",
       "order": 9,
-      "status": "pending",
+      "status": "in_progress",
       "sources": [
         {
           "kind": "github",
@@ -557,7 +557,9 @@
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel"
+      "categoryLabel": "AI-remake av retrospel",
+      "sourceCommit": "3f606f1b872fd051db28ebca1f10a9600b6293fb",
+      "investigation": "Shared city with unity_bus proven by 140 exact explicit transforms. Later source selects different police model; older native build drives bus. Preserve differences; no publication yet."
     },
     {
       "id": "unity-bus",
