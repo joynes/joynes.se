@@ -1380,6 +1380,7 @@
     </section>
 
     <section id="musicControls" class="music-controls" aria-label="Music modes and playlists" hidden></section>
+    <nav id="gameControls" class="music-controls" aria-label="Spelkategorier" hidden></nav>
 
     <section id="contentList" class="content-list" aria-label="Selected archive items"></section>
 
@@ -1427,6 +1428,7 @@
   <script src="assets/jaro-book.js"></script>
   <script src="assets/music-catalog.js"></script>
   <script src="assets/music-library.js"></script>
+  <script src="assets/games-catalog.js"></script>
   <script>
     const categories = [
       {
@@ -1487,24 +1489,20 @@
       {
         id: "games",
         name: "Games",
-        sub: "Jaro, Grodan and Rall-era folders.",
+        sub: "Retrospel och nyare AI-spel.",
         glyph: "G",
         kicker: "Playable relic zone",
         title: "Games",
-        description: "Games, prototypes and Rall-era material from the archive.",
+        description: "Retrospel görs om för webben med AI. Här samlas också de nyare AI-spelen. Välj en kategori eller öppna ett spel.",
         featured: [
-          ["Jaro och grodan", "https://drive.google.com/drive/folders/1vJtWafQtNoVrV2W67I-3Ppe3iG0S4rNb"],
-          ["Rall v080", "https://drive.google.com/drive/folders/1oiYMpORqC5d_hAyliZp1rQJ1WzlqnhMs"],
-          ["Jaro art", "https://drive.google.com/file/d/1ZcwL3DSsfld_ZpIT_kMzqhI72LFoVd5G/view"]
+          ["Retrospel", "#games/retro"],
+          ["AI-spel", "#games/ai"]
         ],
         items: [
-          ["Jaro och grodan", "HTML game and source folder", [["Folder", "https://drive.google.com/drive/folders/1vJtWafQtNoVrV2W67I-3Ppe3iG0S4rNb"], ["HTML", "https://drive.google.com/file/d/1XAWiNWA3SJ-5RqNOaHsJE76FmXTR9v2Q/view"]]],
-          ["Jaro and grodan art", "Image and music project folder", [["Folder", "https://drive.google.com/drive/folders/1hYgJW1YouD4t9A-pPLccu7iJMgNUaTG-"], ["Image", "https://drive.google.com/file/d/1ZcwL3DSsfld_ZpIT_kMzqhI72LFoVd5G/view"]]],
           ["Rall v080 - fighter", "Game archive folder", [["Folder", "https://drive.google.com/drive/folders/1oiYMpORqC5d_hAyliZp1rQJ1WzlqnhMs"]]],
           ["rall006", "Web remake using AI.", [["Play remake", "https://rall006-tank-game.joynez11.chatgpt.site/?v=2"], ["Folder", "https://drive.google.com/drive/folders/1PP4d2mWdYiW7hGYP_l6O1iHyJyrd3Mt8"]], { embed: "https://rall006-tank-game.joynez11.chatgpt.site/?v=2", embedTitle: "rall006 web remake using AI" }],
           ["rall0054", "Game archive folder", [["Folder", "https://drive.google.com/drive/folders/1p-GmiheGisYln6QAOKXopvhnkMfxCx2Y"]]],
           ["rall008", "Game archive folder", [["Folder", "https://drive.google.com/drive/folders/1ApVIMy-WxmkkmHCtq9d7s2zmqfIQvjBz"]]],
-          ["10 -20 - rall", "Game archive folder", [["Folder", "https://drive.google.com/drive/folders/1P2uRT8Aqos9k_J7qkc0wxPku5vzpzGB6"]]]
         ]
       },
       {
@@ -1562,6 +1560,14 @@
         ]
       },
     ];
+
+    const gamesCategory = categories.find(category => category.id === "games");
+    gamesCategory.items.forEach(item => { item[3] = { ...item[3], gameKind: "retro" }; });
+    for (const game of window.joynesPublishedGames || []) {
+      gamesCategory.items.unshift([game.title, game.description,
+        [["Spela", game.href], ["Källkod", game.source]],
+        {slug: game.id, gameKind: game.kind, embed: game.href, embedTitle: game.title, embedOnDetail: true}]);
+    }
 
     function slugify(value) {
       return String(value)
@@ -1698,6 +1704,7 @@
     }
 
     function categoryHref(category) {
+      if (category.gameFilter) return `#games/${category.gameFilter}`;
       if (category.id === "ai") return "#music/ai";
       return `#${category.id}`;
     }
@@ -1718,8 +1725,14 @@
       const raw = decodeURIComponent(window.location.hash.replace(/^#\/?/, "")).trim();
       const [categoryId, subroute, versionSlug] = raw.split("/").filter(Boolean);
       const isAIView = (categoryId === "music" && subroute === "ai") || categoryId === "ai";
-      const category = isAIView ? musicLibrary.aiView : categories.find((entry) => entry.id === categoryId) || categories[0];
-      const itemSlug = isAIView && categoryId === "music" ? versionSlug : subroute;
+      const isGameFilter = categoryId === "games" && ["retro", "ai"].includes(subroute);
+      let category = isAIView ? musicLibrary.aiView : categories.find((entry) => entry.id === categoryId) || categories[0];
+      if (isGameFilter) {
+        category = {...gamesCategory, gameFilter: subroute, title: subroute === "retro" ? "Retrospel" : "AI-spel",
+          description: subroute === "retro" ? "Äldre spel som görs om för webben med AI. Arkiv och spelbara webbversioner samlas här." : "De nyare spelen, skapade med AI. Fler testade spel publiceras här efter hand.",
+          items: gamesCategory.items.filter(item => item[3]?.gameKind === subroute)};
+      }
+      const itemSlug = (isAIView && categoryId === "music") || isGameFilter ? versionSlug : subroute;
       if (categoryId === "ai") {
         history.replaceState(null, "", `#music/ai${itemSlug ? "/" + itemSlug : ""}`);
       }
@@ -2134,12 +2147,30 @@
       setPlayingButtons();
     }
 
+    function renderGameControls(category) {
+      const controls = document.querySelector("#gameControls");
+      controls.hidden = category.id !== "games";
+      if (controls.hidden) return;
+      const links = document.createElement("div");
+      links.className = "music-mode-links";
+      for (const [filter, label] of [["", "Alla spel"], ["retro", "Retrospel"], ["ai", "AI-spel"]]) {
+        const link = internalLinkButton(label, filter ? `#games/${filter}` : "#games");
+        if ((category.gameFilter || "") === filter) link.setAttribute("aria-current", "page");
+        links.append(link);
+      }
+      const note = document.createElement("p");
+      note.className = "item-meta";
+      note.textContent = "Retrospel: äldre original, nya webbversioner gjorda med AI. AI-spel: de nyare spelen.";
+      controls.replaceChildren(links, note);
+    }
+
     function renderCategory(category, selectedItem = null) {
       document.querySelectorAll(".category-button").forEach((button) => {
         button.classList.toggle("active", button.dataset.category === (category.id === "ai" ? "music" : category.id));
       });
       currentCategory = category;
       renderMusicControls(category);
+      renderGameControls(category);
       updateAITheme();
 
       visual.dataset.glyph = category.glyph;
@@ -2162,12 +2193,20 @@
         return;
       }
       const items = selectedItem ? [selectedItem] : category.items;
+      if (!items.length && category.id === "games") {
+        const empty = document.createElement("p");
+        empty.className = "item-meta";
+        empty.textContent = "Nästa spel håller på att testas. Här visas det när publiceringen är klar.";
+        list.replaceChildren(empty);
+        return;
+      }
       list.replaceChildren(...items.map((item) => {
         const [name, meta, actions, extras = {}] = item;
         const pageHref = itemHref(category, item);
         const article = document.createElement("article");
         article.className = "item";
-        if (extras.embed) article.classList.add("embed-card");
+        const showEmbed = extras.embed && (!extras.embedOnDetail || selectedItem);
+        if (showEmbed) article.classList.add("embed-card");
         if (!selectedItem) {
           article.classList.add("clickable");
           article.tabIndex = 0;
@@ -2207,7 +2246,7 @@
         }
 
         article.append(head);
-        if (extras.embed) {
+        if (showEmbed) {
           const embed = document.createElement("div");
           embed.className = "item-embed";
           const iframe = document.createElement("iframe");

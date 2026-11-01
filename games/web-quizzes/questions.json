@@ -1,0 +1,1809 @@
+[
+  {
+    "id": "1",
+    "title": "Allmänbildning",
+    "questions": [
+      {
+        "question": "What is the capital of England?",
+        "options": [
+          "New York",
+          "London",
+          "Paris",
+          "Tokyo"
+        ],
+        "answer": 1,
+        "id": "s01-q01"
+      },
+      {
+        "question": "Who is the author of '1984'?",
+        "options": [
+          "George Orwell",
+          "J.K. Rowling",
+          "Stephen King",
+          "Ernest Hemingway"
+        ],
+        "answer": 0,
+        "id": "s01-q02"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Samhälle och demokrati",
+    "questions": [
+      {
+        "question": "Vilka tre områden samverkar för att forma och styra samhället?",
+        "options": [
+          "Politik, ekonomi, och kultur",
+          "Politik, religion, och vetenskap",
+          "Ekonomi, vetenskap, och kultur",
+          "Politik, vetenskap, och kultur"
+        ],
+        "answer": 0,
+        "id": "s02-q01"
+      },
+      {
+        "question": "Vad kännetecknar offentlig förvaltning?",
+        "options": [
+          "Bara rättslig verksamhet",
+          "Bara faktisk verksamhet",
+          "Det inkluderar både rättslig verksamhet och faktisk verksamhet",
+          "Inget av ovanstående"
+        ],
+        "answer": 2,
+        "id": "s02-q02"
+      },
+      {
+        "question": "Vad innebär myndigheternas självständighet i enskilda ärenden enligt regeringsformen?",
+        "options": [
+          "Att en minister personligen utför myndighetens arbete",
+          "Ingen myndighet får bestämma hur en förvaltningsmyndighet beslutar i ett enskilt fall om myndighetsutövning eller tillämpning av lag",
+          "Att alla myndigheter styrs av en enda minister",
+          "Inget av ovanstående"
+        ],
+        "answer": 1,
+        "sourceUrl": "https://www.regeringen.se/sa-styrs-sverige/myndigheter-och-bolag-med-statligt-agande/",
+        "id": "s02-q03"
+      },
+      {
+        "question": "Hur många kommuner och regioner finns det i Sverige (uppgift i originalspelet från 2023)?",
+        "options": [
+          "200 kommuner och 18 regioner",
+          "220 kommuner och 20 regioner",
+          "290 kommuner och 21 regioner",
+          "300 kommuner och 25 regioner"
+        ],
+        "answer": 2,
+        "id": "s02-q04"
+      },
+      {
+        "question": "Vad innebär demokrati?",
+        "options": [
+          "Styrelseform där makten ligger hos en enda person",
+          "Styrelseform där makten ligger hos en liten grupp",
+          "Styrelseform där makten ligger hos folket",
+          "Styrelseform där makten ligger hos en monark"
+        ],
+        "answer": 2,
+        "id": "s02-q05"
+      },
+      {
+        "question": "I vilken lag finns formuleringen att all makt utgår ifrån folket?",
+        "options": [
+          "I brottsbalken",
+          "I förvaltningslagen",
+          "I regeringsformen",
+          "I tryckfrihetsförordningen"
+        ],
+        "answer": 2,
+        "id": "s02-q06"
+      },
+      {
+        "question": "Hur styrs Sverige?",
+        "options": [
+          "Genom direktdemokrati",
+          "Genom monarki",
+          "Genom diktatur",
+          "Genom representativ parlamentarism"
+        ],
+        "answer": 3,
+        "id": "s02-q07"
+      },
+      {
+        "question": "Vad innebär representativ parlamentarism?",
+        "options": [
+          "Medborgarna deltar direkt i alla politiska beslut",
+          "Medborgarna väljer representanter till ett parlament som tar beslut och styr landet på deras vägnar",
+          "En ensam ledare tar alla beslut",
+          "En monark tar alla beslut"
+        ],
+        "answer": 1,
+        "id": "s02-q08"
+      },
+      {
+        "question": "Vad är regeringens främsta uppgifter?",
+        "options": [
+          "Styra landet, förvalta offentliga resurser, upprätthålla lag och ordning, skydda nationens intressen",
+          "Bestämma skattesatser, skapa lagar, upprätthålla ordning och säkerhet",
+          "Lägga fram budgetförslag, förhandla med andra länder, upprätthålla säkerheten",
+          "Skydda medborgarnas rättigheter, bestämma räntan, fördela offentliga medel"
+        ],
+        "answer": 0,
+        "id": "s02-q09"
+      },
+      {
+        "question": "Vad kännetecknar offentlig förvaltning?",
+        "options": [
+          "Rättslig verksamhet, faktisk verksamhet",
+          "Kommersiell verksamhet, faktisk verksamhet",
+          "Faktisk verksamhet, politisk verksamhet",
+          "Inget av ovanstående"
+        ],
+        "answer": 0,
+        "id": "s02-q10"
+      },
+      {
+        "question": "Vad menas med en oskriven social norm?",
+        "options": [
+          "En lag",
+          "En skriven regel",
+          "En oskriven regel eller standard som styr och påverkar beteendet och förväntningarna i ett samhälle eller en grupp",
+          "En politisk ideologi"
+        ],
+        "answer": 2,
+        "id": "s02-q11"
+      },
+      {
+        "question": "Vilka är Sveriges grundlagar?",
+        "options": [
+          "Regeringsformen, Tryckfrihetsförordningen, Yttrandefrihetsgrundlagen, Successionsordningen",
+          "Regeringsformen, Strafflagen, Civilrätten, Successionsordningen",
+          "Regeringsformen, Tryckfrihetsförordningen, Konsumenträtten, Successionsordningen",
+          "Regeringsformen, Tryckfrihetsförordningen, Yttrandefrihetsgrundlagen, Äktenskapsbalken"
+        ],
+        "answer": 0,
+        "id": "s02-q12"
+      },
+      {
+        "question": "Vad är en folkomröstning?",
+        "options": [
+          "En process där alla röstberättigade medborgare i en nation röstar om ett specifikt ämne eller en fråga",
+          "En process där alla ledamöter av riksdagen röstar om ett specifikt ämne eller en fråga",
+          "En process där regeringen röstar om ett specifikt ämne eller en fråga",
+          "En process där kungen röstar om ett specifikt ämne eller en fråga"
+        ],
+        "answer": 0,
+        "id": "s02-q13"
+      },
+      {
+        "question": "Vad är välfärd?",
+        "options": [
+          "Rikedom och ekonomiskt välstånd",
+          "En individ eller ett samhälles hälsa, lycka och förmåga att blomstra",
+          "Politisk stabilitet",
+          "Ett annat namn för regeringen"
+        ],
+        "answer": 1,
+        "id": "s02-q14"
+      },
+      {
+        "question": "Vad innebär begreppet 'rättsstat'?",
+        "options": [
+          "Ett samhälle där offentlig makt utövas under lagarna och där rättssäkerhet upprätthålls",
+          "Ett samhälle där rättsliga beslut baseras på en ledares vilja",
+          "Ett samhälle där kriminaliteten är låg",
+          "Ett samhälle där det finns många advokater"
+        ],
+        "answer": 0,
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/kungorelse-1974152-om-beslutad-ny-regeringsform_sfs-1974-152swedish/",
+        "id": "s02-q15"
+      },
+      {
+        "question": "Vad reglerar successionsordningen?",
+        "options": [
+          "Svenska tronföljden och kungliga familjens ställning",
+          "Svenska lagar och regler",
+          "Riksdagens arbetsordning",
+          "Stadgar för offentliga myndigheter"
+        ],
+        "answer": 0,
+        "id": "s02-q16"
+      },
+      {
+        "question": "Vilken av följande rättigheter är grundlagsskyddad i Sverige?",
+        "options": [
+          "Rätten att bilda och vara medlem i föreningar",
+          "Rätten att alltid parkera gratis",
+          "Rätten att rösta i amerikanska presidentval",
+          "Rätten att inneha vilket vapen som helst"
+        ],
+        "answer": 0,
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/kungorelse-1974152-om-beslutad-ny-regeringsform_sfs-1974-152swedish/",
+        "id": "s02-q17"
+      },
+      {
+        "question": "Vilken särskild beslutsordning krävs för att ändra en svensk grundlag?",
+        "options": [
+          "Genom folkomröstning",
+          "Två likalydande riksdagsbeslut med ett riksdagsval mellan besluten",
+          "Genom en domstolsbeslut",
+          "Genom kungens beslut"
+        ],
+        "answer": 1,
+        "sourceUrl": "https://www.riksdagen.se/sv/sa-fungerar-riksdagen/demokrati/sveriges-grundlagar-och-riksdagsordningen/",
+        "id": "s02-q18"
+      },
+      {
+        "question": "Vilket alternativ innehåller tre opinionsfriheter enligt regeringsformen?",
+        "options": [
+          "Yttrandefrihet, informationsfrihet och föreningsfrihet",
+          "Rätt att alltid parkera gratis, gratis bio och gratis resor",
+          "Rätt att bestämma över alla myndigheter, domstolar och företag",
+          "Rätt att slippa alla skatter och avgifter"
+        ],
+        "answer": 0,
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/kungorelse-1974152-om-beslutad-ny-regeringsform_sfs-1974-152swedish/",
+        "id": "s02-q19"
+      },
+      {
+        "question": "Vad innebär offentlighetsprincipen?",
+        "options": [
+          "Allmänheten har rätt att ta del av allmänna handlingar hos myndigheter, om uppgifterna inte omfattas av sekretess",
+          "Offentliga tjänstemän måste alltid bära uniform",
+          "Alla regeringsmöten ska sändas på TV",
+          "Alla dokument måste publiceras på internet"
+        ],
+        "answer": 0,
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/tryckfrihetsforordning-1949105_sfs-1949-105/",
+        "id": "s02-q20"
+      },
+      {
+        "question": "Vad innebär meddelarfrihet i grundlagsskyddade medier?",
+        "options": [
+          "Rätten att sprida information utan censur",
+          "Rätt att lämna uppgifter för offentliggörande i sådana medier, med vissa lagstadgade undantag",
+          "Rätten att säga vad man tycker på sociala medier",
+          "Rätten att kritisera regeringen"
+        ],
+        "answer": 1,
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/tryckfrihetsforordning-1949105_sfs-1949-105/",
+        "id": "s02-q21"
+      },
+      {
+        "question": "Vad innebär myndigheternas självständighet i enskilda ärenden enligt regeringsformen?",
+        "options": [
+          "Ministrar får inte ändra beslut som har fattats av riksdagen",
+          "Ingen myndighet får bestämma hur en förvaltningsmyndighet beslutar i ett enskilt fall om myndighetsutövning eller tillämpning av lag",
+          "Ministrar får inte besöka myndigheter",
+          "Ministrar får inte tala offentligt om sina åsikter"
+        ],
+        "answer": 1,
+        "sourceUrl": "https://www.regeringen.se/sa-styrs-sverige/myndigheter-och-bolag-med-statligt-agande/",
+        "id": "s02-q22"
+      },
+      {
+        "question": "Vilka sex principer ingår i den statliga värdegrunden?",
+        "options": [
+          "Ärlighet, Öppenhet, Ansvar",
+          "Effektivitet, Noggrannhet, Struktur",
+          "Tolerans, Mångfald, Respekt",
+          "Demokrati, legalitet, objektivitet, fri åsiktsbildning, respekt samt effektivitet och service"
+        ],
+        "answer": 3,
+        "sourceUrl": "https://www.statenssc.se/om-statens-servicecenter/vardegrund",
+        "id": "s02-q23"
+      },
+      {
+        "question": "Vilken funktion är Sveriges statschef enligt regeringsformen?",
+        "options": [
+          "Statsministern",
+          "Kungen",
+          "Talmannen",
+          "Regeringschefen"
+        ],
+        "answer": 1,
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/kungorelse-1974152-om-beslutad-ny-regeringsform_sfs-1974-152swedish/",
+        "id": "s02-q24"
+      },
+      {
+        "question": "Vad innebär den politiska modellen nattväktarstat?",
+        "options": [
+          "Polisen patrullerar på natten",
+          "Staten har bara ansvar för försvar, polis och rättsväsende",
+          "All offentlig verksamhet stänger vid midnatt",
+          "Staten övervakar medborgare dygnet runt"
+        ],
+        "answer": 1,
+        "id": "s02-q25"
+      },
+      {
+        "question": "Vad är en motion i riksdagen?",
+        "options": [
+          "En begäran om riksdagens ställningstagande",
+          "En lagförslag",
+          "En anmälan om misstanke om brott",
+          "En begäran om att riksdagen ska upplösas"
+        ],
+        "answer": 0,
+        "id": "s02-q26"
+      },
+      {
+        "question": "Vem väljer Sveriges statsminister?",
+        "options": [
+          "Riksdagen",
+          "Kungen",
+          "Folket direkt i allmänna val",
+          "Regeringen"
+        ],
+        "answer": 0,
+        "id": "s02-q27"
+      },
+      {
+        "question": "Vilken domstol är högsta instans för allmänna domstolar i Sverige?",
+        "options": [
+          "Riksdagen",
+          "Regeringen",
+          "Högsta domstolen",
+          "Justitiekanslern"
+        ],
+        "answer": 2,
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/kungorelse-1974152-om-beslutad-ny-regeringsform_sfs-1974-152swedish/",
+        "id": "s02-q28"
+      },
+      {
+        "question": "Vad innebär det att Sverige är en konstitutionell monarki?",
+        "options": [
+          "Kungen är landets högsta politiska ledare",
+          "Kungen har bara ceremoniella uppgifter",
+          "Kungen styr landet tillsammans med regeringen",
+          "Kungen kan fatta beslut om lagar och regler"
+        ],
+        "answer": 1,
+        "id": "s02-q29"
+      },
+      {
+        "question": "Vad innebär ett tvåkammarsystem i ett parlament?",
+        "options": [
+          "Ett system där olika lagförslag debatteras",
+          "Ett system där politiker delas upp i olika grupper",
+          "Ett system för att dela upp riksdagen i mindre grupper",
+          "Ett system där riksdagens arbete är uppdelat i två delar eller 'kammare'"
+        ],
+        "answer": 3,
+        "id": "s02-q30"
+      },
+      {
+        "question": "Vilket år inträdde Sverige i Europeiska Unionen?",
+        "options": [
+          "1995",
+          "2000",
+          "1991",
+          "1986"
+        ],
+        "answer": 0,
+        "id": "s02-q31"
+      },
+      {
+        "question": "Vad innebär begreppet 'Allemansrätten'?",
+        "options": [
+          "Rätt att röra sig fritt i naturen och att tillfälligt uppehålla sig där",
+          "Rätt att äga mark",
+          "Rätt att bygga var som helst i Sverige",
+          "Rätt att använda någon annans mark för kommersiella ändamål"
+        ],
+        "answer": 0,
+        "id": "s02-q32"
+      },
+      {
+        "question": "Vad innebär det att en lag är 'grundlagsfäst' i Sverige?",
+        "options": [
+          "Lagen kan inte ändras",
+          "Lagen är inskriven i Sveriges grundlag",
+          "Lagen har stöd av alla partier i riksdagen",
+          "Lagen gäller bara för svenska medborgare"
+        ],
+        "answer": 1,
+        "id": "s02-q33"
+      },
+      {
+        "question": "Vad innebär det att Sverige är en 'välfärdsstat'?",
+        "options": [
+          "Alla medborgare får ekonomiskt stöd av staten",
+          "Staten har ett utbrett socialt skyddsnät och erbjuder omfattande offentliga tjänster",
+          "Staten tar hand om alla sjuka och gamla",
+          "Ingen får tjäna mer än en viss summa pengar"
+        ],
+        "answer": 1,
+        "id": "s02-q34"
+      },
+      {
+        "question": "Vad reglerar Successionsordningen?",
+        "options": [
+          "Den svenska skolordningen",
+          "Den svenska tronföljden och den kungliga familjens ställning",
+          "Svensk kommunallag",
+          "Svenska strafflagen"
+        ],
+        "answer": 1,
+        "id": "s02-q35"
+      },
+      {
+        "question": "Vilka är tre exempel på grundlagsskyddade fri- och rättigheter?",
+        "options": [
+          "Informationsfrihet, rättssäkerhet, skydd mot diskriminering",
+          "Rätten att köra bil, rätten att resa, rätten att jobba",
+          "Rätten att vara ledig på helger, rätten till semester, rätten till sjukvård",
+          "Rätten till skolgång, rätten att rösta, rätten till pension"
+        ],
+        "answer": 0,
+        "id": "s02-q36"
+      },
+      {
+        "question": "Vilken särskild beslutsordning krävs för att ändra en svensk grundlag?",
+        "options": [
+          "Genom en folkomröstning",
+          "Genom ett beslut av kungen",
+          "Genom ett beslut av regeringen",
+          "Två likalydande riksdagsbeslut med ett riksdagsval mellan besluten"
+        ],
+        "answer": 3,
+        "sourceUrl": "https://www.riksdagen.se/sv/sa-fungerar-riksdagen/demokrati/sveriges-grundlagar-och-riksdagsordningen/",
+        "id": "s02-q37"
+      },
+      {
+        "question": "Vad innebär offentlighetsprincipen?",
+        "options": [
+          "Allmänheten har rätt att ta del av allmänna handlingar hos myndigheter, om uppgifterna inte omfattas av sekretess",
+          "Att offentliga byggnader måste vara öppna för allmänheten",
+          "Att alla offentliga sammanträden måste sändas på TV",
+          "Att alla offentliga tjänstemän måste ge intervjuer till pressen"
+        ],
+        "answer": 0,
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/tryckfrihetsforordning-1949105_sfs-1949-105/",
+        "id": "s02-q38"
+      },
+      {
+        "question": "I vilka grundlagar finns regler om meddelarfrihet?",
+        "options": [
+          "I regeringsformen",
+          "I tryckfrihetsförordningen",
+          "I lagen om offentlig upphandling",
+          "Tryckfrihetsförordningen och yttrandefrihetsgrundlagen"
+        ],
+        "answer": 3,
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/tryckfrihetsforordning-1949105_sfs-1949-105/",
+        "id": "s02-q39"
+      },
+      {
+        "question": "Vad innebär myndigheternas självständighet i enskilda ärenden enligt regeringsformen?",
+        "options": [
+          "Att ministrar inte får ta semester",
+          "Ingen myndighet får bestämma hur en förvaltningsmyndighet beslutar i ett enskilt fall om myndighetsutövning eller tillämpning av lag",
+          "Att ministrar inte får prata med pressen",
+          "Att ministrar inte får rösta i riksdagen"
+        ],
+        "answer": 1,
+        "sourceUrl": "https://www.regeringen.se/sa-styrs-sverige/myndigheter-och-bolag-med-statligt-agande/",
+        "id": "s02-q40"
+      },
+      {
+        "question": "Vad reglerar Successionsordningen i Sverige?",
+        "options": [
+          "Den svenska tronföljden och den kungliga familjens ställning",
+          "Sveriges statsministers befogenheter",
+          "Sveriges utrikespolitik",
+          "Sveriges ekonomi"
+        ],
+        "answer": 0,
+        "id": "s02-q41"
+      },
+      {
+        "question": "Vilken rättighet ger individen frihet att fritt uttrycka åsikter, kritisera makthavare och delta i samhällsdebatten?",
+        "options": [
+          "Religionsfrihet",
+          "Informationsfrihet",
+          "Yttrandefrihet",
+          "Demonstrationsfrihet"
+        ],
+        "answer": 2,
+        "id": "s02-q42"
+      },
+      {
+        "question": "Vilket alternativ beskriver regeringens och riksdagsledamöternas förslagsrätt?",
+        "options": [
+          "Genom en folkomröstning",
+          "Regeringen kan lämna propositioner och ledamöter kan lämna motioner",
+          "Genom ett domstolsbeslut",
+          "Genom en kunglig förordning"
+        ],
+        "answer": 1,
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/kungorelse-1974152-om-beslutad-ny-regeringsform_sfs-1974-152swedish/",
+        "id": "s02-q43"
+      },
+      {
+        "question": "Vad innebär offentlighetsprincipen?",
+        "options": [
+          "Allmänheten har rätt att ta del av allmänna handlingar hos myndigheter, om uppgifterna inte omfattas av sekretess",
+          "Allmänhetens rätt att offentligt kritisera regeringen",
+          "Myndigheternas rätt att hålla information hemlig",
+          "Allmänhetens rätt att rösta i allmänna val"
+        ],
+        "answer": 0,
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/tryckfrihetsforordning-1949105_sfs-1949-105/",
+        "id": "s02-q44"
+      },
+      {
+        "question": "Vad innebär myndigheternas självständighet i enskilda ärenden enligt regeringsformen?",
+        "options": [
+          "Det är förbjudet för ministrar att delta i riksdagens arbete",
+          "Ingen myndighet får bestämma hur en förvaltningsmyndighet beslutar i ett enskilt fall om myndighetsutövning eller tillämpning av lag",
+          "Det är förbjudet för ministrar att ändra lagar",
+          "Det är förbjudet för ministrar att lämna landet utan tillstånd"
+        ],
+        "answer": 1,
+        "sourceUrl": "https://www.regeringen.se/sa-styrs-sverige/myndigheter-och-bolag-med-statligt-agande/",
+        "id": "s02-q45"
+      },
+      {
+        "question": "Vilka sex principer ingår i den statliga värdegrunden?",
+        "options": [
+          "Demokrati, legalitet, objektivitet, fri åsiktsbildning, respekt samt effektivitet och service",
+          "Konfidentialitet, integritet, ansvar, professionalism, respekt",
+          "Ekonomisk tillväxt, produktivitet, lönsamhet, konkurrens",
+          "Partipolitiska lojaliteter, personligt engagemang, ekonomisk tillväxt"
+        ],
+        "answer": 0,
+        "sourceUrl": "https://www.statenssc.se/om-statens-servicecenter/vardegrund",
+        "id": "s02-q46"
+      },
+      {
+        "question": "Vad innebär kravet på effektivitet och service inom offentlig förvaltning?",
+        "options": [
+          "Förvaltningen ska anstränga sig att använda sina resurser effektivt och leverera högkvalitativa tjänster till medborgarna",
+          "Förvaltningen ska sätta winst och ekonomisk tillväxt först",
+          "Förvaltningen ska prioritera att ge service till de mest förmögna medborgarna",
+          "Förvaltningen ska sträva efter att anställa så många människor som möjligt"
+        ],
+        "answer": 0,
+        "id": "s02-q47"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Demokrati",
+    "questions": [
+      {
+        "question": "Vad betyder ordet demokrati?",
+        "options": [
+          "En form av monarki",
+          "En styrelseform där makten ligger hos folket",
+          "En styrelseform där en enda person har all makt",
+          "En styrelseform där religionen styr"
+        ],
+        "answer": 1,
+        "id": "s03-q01"
+      },
+      {
+        "question": "Vad innebär det att all makt utgår ifrån folket? Och i vilken lag finns den formuleringen?",
+        "options": [
+          "Det innebär att det är kungen som har all makt, finns i Sveriges konstitution",
+          "Det innebär att det är medborgarna som är den högsta auktoriteten, finns i den svenska regeringsformen",
+          "Det innebär att det är regeringen som har all makt, finns i den amerikanska konstitutionen",
+          "Det innebär att all makt utgår från riksdagen, finns i Sveriges konstitution"
+        ],
+        "answer": 1,
+        "id": "s03-q02"
+      },
+      {
+        "question": "Varför är demokrati en färskvara?",
+        "options": [
+          "Eftersom den måste konsumeras snabbt",
+          "Eftersom demokratiska institutioner måste ständigt förnyas",
+          "Eftersom den blir gammal och otidsenlig",
+          "Eftersom den förlorar sin smak efter ett tag"
+        ],
+        "answer": 1,
+        "id": "s03-q03"
+      },
+      {
+        "question": "Hur styrs Sverige?",
+        "options": [
+          "Genom en diktatur",
+          "Genom en monarki",
+          "Genom representativ parlamentarism",
+          "Genom direkt demokrati"
+        ],
+        "answer": 2,
+        "id": "s03-q04"
+      },
+      {
+        "question": "Vad innebär representativ parlamentarism?",
+        "options": [
+          "Medborgarna väljer en kung att styra",
+          "Medborgarna väljer representanter till ett parlament som tar beslut på deras vägnar",
+          "Regeringen tar alla beslut utan inblandning av medborgarna",
+          "Medborgarna röstar direkt på alla lagar och beslut"
+        ],
+        "answer": 1,
+        "id": "s03-q05"
+      },
+      {
+        "question": "Vad händer i en demokrati om regeringen inte agerar i enlighet med folkets vilja?",
+        "options": [
+          "Regeringen kan avsättas i nästa val",
+          "Regeringen kan bli avsatt omedelbart",
+          "Folket kan inte göra något åt det",
+          "Regeringen måste betala böter"
+        ],
+        "answer": 0,
+        "id": "s03-q06"
+      },
+      {
+        "question": "Var hittar man formuleringen 'All offentlig makt i Sverige utgår från folket'?",
+        "options": [
+          "I den svenska regeringsformen, 1 kap. 1§",
+          "I den svenska konstitutionen",
+          "I den amerikanska konstitutionen",
+          "I EU:s grundlag"
+        ],
+        "answer": 0,
+        "id": "s03-q07"
+      },
+      {
+        "question": "Varför behöver demokratiska principer och institutioner utmanas och förnyas regelbundet?",
+        "options": [
+          "För att passa in i det moderna samhället",
+          "För att undvika att demokratin eroderar och ersätts av auktoritära eller totalitära system",
+          "För att människor tröttnar på gamla idéer",
+          "För att det är en del av demokratins definition"
+        ],
+        "answer": 1,
+        "id": "s03-q08"
+      },
+      {
+        "question": "Vem väljer medborgarna i en representativ parlamentarism?",
+        "options": [
+          "Representanter till en kung",
+          "Representanter till ett parlament",
+          "En president",
+          "En diktator"
+        ],
+        "answer": 1,
+        "id": "s03-q09"
+      },
+      {
+        "question": "Vad gör de valda representanterna i en representativ parlamentarism?",
+        "options": [
+          "De utövar all makt utan insyn",
+          "De tar beslut och styr landet på medborgarnas vägnar",
+          "De avgör vilka lagar som ska röstas om av folket",
+          "De styr över alla religiösa institutioner"
+        ],
+        "answer": 1,
+        "id": "s03-q10"
+      },
+      {
+        "question": "Vilken roll spelar medborgarna i en demokrati?",
+        "options": [
+          "De spelar ingen roll",
+          "De får utse makten genom att välja sina representanter",
+          "De fungerar endast som rådgivare till regeringen",
+          "De implementerar lagarna"
+        ],
+        "answer": 1,
+        "id": "s03-q11"
+      },
+      {
+        "question": "I vilken lagstiftning sägs det att 'All offentlig makt i Sverige utgår från folket'?",
+        "options": [
+          "I den svenska konstitutionen",
+          "I EU:s grundlag",
+          "I den amerikanska konstitutionen",
+          "I den svenska regeringsformen"
+        ],
+        "answer": 3,
+        "id": "s03-q12"
+      },
+      {
+        "question": "Varför kan demokrati betraktas som en färskvara?",
+        "options": [
+          "För att den behöver förnyas ständigt",
+          "För att den har ett utgångsdatum",
+          "För att den kan bli omodern",
+          "För att den kan skadas av dåligt väder"
+        ],
+        "answer": 0,
+        "id": "s03-q13"
+      },
+      {
+        "question": "Vilken typ av regeringssystem använder Sverige?",
+        "options": [
+          "Direkt demokrati",
+          "Representativ parlamentarism",
+          "Konstitutionell monarki",
+          "Autokrati"
+        ],
+        "answer": 1,
+        "id": "s03-q14"
+      },
+      {
+        "question": "Vad innebär det att leva under en representativ parlamentarism?",
+        "options": [
+          "Medborgarna väljer direkt på alla lagar och beslut",
+          "Regeringen tar alla beslut utan inblandning av medborgarna",
+          "Medborgarna väljer representanter till ett parlament som tar beslut på deras vägnar",
+          "All makt ligger hos en kung eller drottning"
+        ],
+        "answer": 2,
+        "id": "s03-q15"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Roller och ansvar",
+    "questions": [
+      {
+        "question": "Hur ser rollerna och maktfördelningen ut mellan politiker, tjänstemän, medborgare och massmedia?",
+        "options": [
+          "Politiker utnämner tjänstemän, medborgare övervakas av massmedia",
+          "Tjänstemän väljs av medborgare, politiker granskas av massmedia",
+          "Medborgare väljer politiker, tjänstemän är experter, massmedia informerar och granskar",
+          "Massmedia väljer politiker, medborgare styr tjänstemän"
+        ],
+        "answer": 2,
+        "id": "s04-q01"
+      },
+      {
+        "question": "Vilka är regeringens främsta uppgifter?",
+        "options": [
+          "Styra landet, förvalta offentliga resurser, upprätthålla lag och ordning, skydda nationens intressen",
+          "Skapa nya lagar, förhandla internationella avtal, sköta lokal förvaltning",
+          "Bestämma räntan, trycka pengar, kontrollera massmedia",
+          "Bekämpa brott, organisera militären, bygga infrastruktur"
+        ],
+        "answer": 0,
+        "id": "s04-q02"
+      },
+      {
+        "question": "Vilka är riksdagens främsta uppgifter?",
+        "options": [
+          "Att stifta lagar och besluta om statens utgifter och inkomster i statsbudgeten",
+          "Att styra landet och skydda nationens intressen",
+          "Att övervaka massmedia och bestämma vilka lagar som ska avskaffas",
+          "Att bestämma räntan och trycka pengar"
+        ],
+        "answer": 0,
+        "id": "s04-q03"
+      },
+      {
+        "question": "Vilken roll har vår kung/kungafamilj?",
+        "options": [
+          "De är landets politiska ledare och fattar alla beslut",
+          "De har en mestadels ceremoniell och representativ roll",
+          "De styr riksdagen och utnämner premiärministern",
+          "De är ansvariga för att skapa nya lagar och för att styra militären"
+        ],
+        "answer": 1,
+        "id": "s04-q04"
+      },
+      {
+        "question": "Vem delegerar medborgare sin makt till i en demokrati?",
+        "options": [
+          "Till tjänstemän",
+          "Till massmedia",
+          "Till folkvalda politiker",
+          "Till kungafamiljen"
+        ],
+        "answer": 2,
+        "id": "s04-q05"
+      },
+      {
+        "question": "Vilken roll har tjänstemän i samhället?",
+        "options": [
+          "De är experter och specialister",
+          "De är beslutsfattare på olika nivåer",
+          "De väljs av medborgarna",
+          "De granskar politiker"
+        ],
+        "answer": 0,
+        "id": "s04-q06"
+      },
+      {
+        "question": "Vilket uppdrag har medierna?",
+        "options": [
+          "Att informera och granska",
+          "Att fatta politiska beslut",
+          "Att genomföra lagar",
+          "Att representera landet vid officiella ceremonier"
+        ],
+        "answer": 0,
+        "id": "s04-q07"
+      },
+      {
+        "question": "Vad ingår i regeringens uppdrag att skydda nationens intressen?",
+        "options": [
+          "Att försvara landets suveränitet och förhandla med andra länder",
+          "Att stifta lagar",
+          "Att besluta om statens utgifter och inkomster",
+          "Att välja politiker på olika nivåer i samhället"
+        ],
+        "answer": 0,
+        "id": "s04-q08"
+      },
+      {
+        "question": "Vilken är kungafamiljens främsta roll?",
+        "options": [
+          "Att stifta lagar",
+          "Att styra landet",
+          "Att representera landet vid officiella ceremonier och evenemang",
+          "Att fatta politiska beslut och genomföra dem"
+        ],
+        "answer": 2,
+        "id": "s04-q09"
+      },
+      {
+        "question": "Vilken roll har medborgarna i maktfördelningen?",
+        "options": [
+          "Delegerar sin makt till folkvalda politiker",
+          "De granskar politiker",
+          "De tillhandahåller specialiserad kunskap",
+          "De representerar landet vid officiella ceremonier"
+        ],
+        "answer": 0,
+        "id": "s04-q10"
+      },
+      {
+        "question": "Vad är en av de främsta uppgifterna för tjänstemän i samhället?",
+        "options": [
+          "De bestämmer statens budget",
+          "De är experter och specialister inom olika områden",
+          "De väljs till olika positioner av medborgarna",
+          "De granskar andra tjänstemän"
+        ],
+        "answer": 1,
+        "id": "s04-q11"
+      },
+      {
+        "question": "Vilken roll spelar massmedia i samhället?",
+        "options": [
+          "De fungerar som ett verktyg för regeringen att sprida propaganda",
+          "De tillhandahåller underhållning till medborgarna",
+          "De har ett uppdrag att både informera och granska",
+          "De bestämmer vilka lagar som ska stiftas"
+        ],
+        "answer": 2,
+        "id": "s04-q12"
+      },
+      {
+        "question": "Vilken är en av regeringens huvuduppgifter i förhållande till landets resurser?",
+        "options": [
+          "De säljer landets resurser till högstbjudande",
+          "De förvaltar offentliga resurser som budgetering, skatteintag och fördelning av resurser",
+          "De köper resurser från andra länder",
+          "De distribuerar alla landets resurser jämnt mellan medborgarna"
+        ],
+        "answer": 1,
+        "id": "s04-q13"
+      },
+      {
+        "question": "Vilken roll har kungen och kungafamiljen i officiella sammanhang?",
+        "options": [
+          "De stiftar lagar och beslutar om statens budget",
+          "De styr alla aspekter av regeringen",
+          "De representerar landet vid officiella ceremonier, statsbesök och internationella evenemang",
+          "De granskar och godkänner alla beslut som fattas av riksdagen"
+        ],
+        "answer": 2,
+        "id": "s04-q14"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Förvaltning och domstolar",
+    "questions": [
+      {
+        "question": "Vart kan ett beslut från Lantmäteriet om en fastighetsgräns överklagas?",
+        "options": [
+          "Förvaltningsrätten",
+          "Högsta förvaltningsdomstolen",
+          "Mark- och miljödomstolen",
+          "Högsta domstolen"
+        ],
+        "answer": 2,
+        "sourceUrl": "https://www.domstol.se/amnen/mark-och-miljo/fastighet/overklaga-lantmateriets-beslut/",
+        "id": "s05-q01"
+      },
+      {
+        "question": "Vilken domstol kan en person överklaga till om hen anser att Skatteverkets beslut om skattesatsen eller skatteavdraget inte är rättvist?",
+        "options": [
+          "Högsta domstolen",
+          "Hovrätten",
+          "Tingsrätten",
+          "Förvaltningsrätten"
+        ],
+        "answer": 3,
+        "id": "s05-q02"
+      },
+      {
+        "question": "Vad är en vanlig uppgift för en förvaltningsmyndighet?",
+        "options": [
+          "Att handlägga ärenden och genomföra beslut inom sitt ansvarsområde",
+          "Att ensam ändra grundlagarna",
+          "Att ersätta riksdagen i alla omröstningar",
+          "Att bestämma alla domar i enskilda mål"
+        ],
+        "answer": 0,
+        "sourceUrl": "https://www.regeringen.se/sa-styrs-sverige/myndigheter-och-bolag-med-statligt-agande/",
+        "id": "s05-q03"
+      },
+      {
+        "question": "Vad är en vanlig uppgift för en förvaltningsmyndighet?",
+        "options": [
+          "Att handlägga ärenden och genomföra beslut inom sitt ansvarsområde",
+          "Att ensam ändra grundlagarna",
+          "Att ersätta riksdagen i alla omröstningar",
+          "Att bestämma alla domar i enskilda mål"
+        ],
+        "answer": 0,
+        "sourceUrl": "https://www.regeringen.se/sa-styrs-sverige/myndigheter-och-bolag-med-statligt-agande/",
+        "id": "s05-q04"
+      },
+      {
+        "question": "Vilken av följande uppgifter tillhör offentlig förvaltning?",
+        "options": [
+          "Undervisning",
+          "Utrikespolitik",
+          "Stifta lagar",
+          "Döma i brottmål"
+        ],
+        "answer": 0,
+        "id": "s05-q05"
+      },
+      {
+        "question": "Vilken domstol skulle granska ett överklagat ärende från förvaltningsrätten?",
+        "options": [
+          "Högsta domstolen",
+          "Hovrätten",
+          "Tingsrätten",
+          "Kammarrätten"
+        ],
+        "answer": 3,
+        "id": "s05-q06"
+      },
+      {
+        "question": "Till vilken domstol kan ett avgörande från kammarrätten överklagas, där prövningstillstånd normalt krävs?",
+        "options": [
+          "Ärendet skulle gå tillbaka till förvaltningsrätten",
+          "Ärendet skulle gå till tingsrätten",
+          "Ärendet skulle gå till Högsta förvaltningsdomstolen",
+          "Ärendet skulle gå till Högsta domstolen"
+        ],
+        "answer": 2,
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/kungorelse-1974152-om-beslutad-ny-regeringsform_sfs-1974-152swedish/",
+        "id": "s05-q07"
+      },
+      {
+        "question": "Vilket av följande är ett exempel på rättslig verksamhet inom offentlig förvaltning?",
+        "options": [
+          "Undervisning",
+          "Ärendehandläggning vid Försäkringskassan",
+          "Byggande och underhåll av gator",
+          "Transportverksamhet"
+        ],
+        "answer": 1,
+        "id": "s05-q08"
+      },
+      {
+        "question": "Vilket av följande är ett exempel på faktisk verksamhet inom offentlig förvaltning?",
+        "options": [
+          "Brottsbekämpning",
+          "Ärendehandläggning vid Skatteverket",
+          "Undervisning",
+          "Stiftande av lagar"
+        ],
+        "answer": 2,
+        "id": "s05-q09"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "title": "Myndigheter och offentlig sektor",
+    "questions": [
+      {
+        "question": "Hur styr regeringen de statliga förvaltningsmyndigheter som lyder under regeringen?",
+        "options": [
+          "Via kommunfullmäktige",
+          "Via riksdagen",
+          "Genom ministerstyre",
+          "Genom regleringsbrev och instruktioner från regeringen"
+        ],
+        "answer": 3,
+        "sourceUrl": "https://www.regeringen.se/sa-styrs-sverige/myndigheter-och-bolag-med-statligt-agande/",
+        "id": "s06-q01"
+      },
+      {
+        "question": "Vad innebär myndigheternas självständighet i enskilda ärenden enligt regeringsformen?",
+        "options": [
+          "Ingen myndighet får bestämma hur en förvaltningsmyndighet beslutar i ett enskilt fall om myndighetsutövning eller tillämpning av lag",
+          "Ett system där ministrar styr direkt över tingsrätter",
+          "Ett system där ministrar övervakar kommunfullmäktige",
+          "Ett system där ministrar har makt att ändra regleringsbrev"
+        ],
+        "answer": 0,
+        "sourceUrl": "https://www.regeringen.se/sa-styrs-sverige/myndigheter-och-bolag-med-statligt-agande/",
+        "id": "s06-q02"
+      },
+      {
+        "question": "Hur många kommuner finns det i Sverige (uppgift i originalspelet från 2023)?",
+        "options": [
+          "100",
+          "250",
+          "290",
+          "350"
+        ],
+        "answer": 2,
+        "id": "s06-q03"
+      },
+      {
+        "question": "Vad är en viktig skillnad mellan offentlig sektor och privat sektor i Sverige gällande ägande och drift?",
+        "options": [
+          "Båda ägs och drivs av privata företag",
+          "Offentlig sektor ägs av staten och drivs av privata företag",
+          "Offentlig sektor ägs och drivs av staten eller kommuner och regioner, medan privat sektor ägs av privata företag eller enskilda individer",
+          "Båda ägs och drivs av staten eller kommuner och landsting"
+        ],
+        "answer": 2,
+        "id": "s06-q04"
+      },
+      {
+        "question": "Hur finansieras huvudsakligen den offentliga sektorn i Sverige?",
+        "options": [
+          "Genom försäljning av varor och tjänster",
+          "Genom privata investeringar",
+          "Genom skatter och avgifter som tas ut från medborgarna",
+          "Genom lån från internationella finansinstitut"
+        ],
+        "answer": 2,
+        "id": "s06-q05"
+      },
+      {
+        "question": "Vilken roll spelar juridiken i samspel mellan politik och förvaltning?",
+        "options": [
+          "Den skapar ramar och regler",
+          "Den fastställer mål och beslut",
+          "Den genomför och verkställer beslut",
+          "Den har ingen direkt inverkan"
+        ],
+        "answer": 0,
+        "id": "s06-q06"
+      },
+      {
+        "question": "Vilket av följande är ett kännetecken för den offentliga sektorn i Sverige jämfört med den privata sektorn?",
+        "options": [
+          "Den strävar efter att generera vinst och maximera avkastning för aktieägarna",
+          "Den ägs av privata företag eller enskilda individer",
+          "Den är föremål för politisk styrning och ansvar gentemot medborgarna och deras valda representanter",
+          "Den finansieras genom försäljning av varor och tjänster samt investeringar från privata aktörer"
+        ],
+        "answer": 2,
+        "id": "s06-q07"
+      },
+      {
+        "question": "Vad är en vanlig uppgift för den offentliga förvaltningen i Sverige?",
+        "options": [
+          "Att generera vinst och maximera avkastning för aktieägarna",
+          "Att följa regler och lagar som reglerar arbetsförhållanden och anställningsskydd",
+          "Att ärendehandläggning, t.ex. hos Försäkringskassan, Skatteverket",
+          "Att finansieras genom försäljning av varor och tjänster samt investeringar från privata aktörer"
+        ],
+        "answer": 2,
+        "id": "s06-q08"
+      },
+      {
+        "question": "Vad är en vanlig uppgift för en förvaltningsmyndighet?",
+        "options": [
+          "Att handlägga ärenden och genomföra beslut inom sitt ansvarsområde",
+          "Att ensam ändra grundlagarna",
+          "Att ersätta riksdagen i alla omröstningar",
+          "Att bestämma alla domar i enskilda mål"
+        ],
+        "answer": 0,
+        "sourceUrl": "https://www.regeringen.se/sa-styrs-sverige/myndigheter-och-bolag-med-statligt-agande/",
+        "id": "s06-q09"
+      },
+      {
+        "question": "Vart kan ett beslut från Lantmäteriet om en fastighetsgräns överklagas?",
+        "options": [
+          "Högsta förvaltningsdomstolen",
+          "Kammarrätten",
+          "Hovrätt",
+          "Mark- och miljödomstolen"
+        ],
+        "answer": 3,
+        "sourceUrl": "https://www.domstol.se/amnen/mark-och-miljo/fastighet/overklaga-lantmateriets-beslut/",
+        "id": "s06-q10"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "title": "Grundlagar och rättigheter",
+    "questions": [
+      {
+        "question": "Vad menas med en oskriven social norm?",
+        "options": [
+          "En lag i riksdagen",
+          "En skriftlig regel inom en organisation",
+          "En oskriven regel som styr beteendet och förväntningarna i ett samhälle eller grupp",
+          "En officiell regel fastställd av regeringen"
+        ],
+        "answer": 2,
+        "id": "s07-q01"
+      },
+      {
+        "question": "Vilken av följande är inte en av Sveriges grundlagar?",
+        "options": [
+          "Regeringsformen",
+          "Tryckfrihetsförordningen",
+          "Yttrandefrihetsgrundlagen",
+          "Arbetsrättslag"
+        ],
+        "answer": 3,
+        "id": "s07-q02"
+      },
+      {
+        "question": "Vilken rättighet skyddas av Tryckfrihetsförordningen?",
+        "options": [
+          "Rätten att fritt utöva sin religion eller tro",
+          "Rätten att fritt publicera och sprida information utan statlig censur",
+          "Rätten att fritt bilda och vara medlem i föreningar och organisationer",
+          "Skydd mot diskriminering på grund av kön, etnisk tillhörighet, religion, funktionsnedsättning, sexuell läggning och andra grunder"
+        ],
+        "answer": 1,
+        "id": "s07-q03"
+      },
+      {
+        "question": "Vad innebär rättssäkerhet?",
+        "options": [
+          "Rätt till en rättvis rättegång, skydd mot godtyckliga frihetsberövanden och krav på rättssäkerhetsprinciper",
+          "Rätten att fritt uttrycka åsikter, kritisera makthavare och delta i samhällsdebatten",
+          "Rätten att fritt ta del av information och dokument som innehas av myndigheter och andra offentliga organ",
+          "Rätten att fritt och fredligt samlas och demonstrera för olika ändamål"
+        ],
+        "answer": 0,
+        "id": "s07-q04"
+      },
+      {
+        "question": "Vad reglerar Successionsordningen?",
+        "options": [
+          "Den svenska tronföljden och den kungliga familjens ställning",
+          "Skyddet för yttrandefriheten och tryckfriheten",
+          "Rätten att fritt uttrycka åsikter och delta i samhällsdebatten",
+          "Skydd mot diskriminering på grund av kön, etnisk tillhörighet, religion, funktionsnedsättning, sexuell läggning och andra grunder"
+        ],
+        "answer": 0,
+        "id": "s07-q05"
+      },
+      {
+        "question": "Vad är huvudfokus för offentlig sektor?",
+        "options": [
+          "Att generera vinst",
+          "Att tillhandahålla offentliga tjänster och uppfylla samhällsbehov",
+          "Att maximera aktieägarnas avkastning",
+          "Att konkurrera på en fri marknad"
+        ],
+        "answer": 1,
+        "id": "s07-q06"
+      },
+      {
+        "question": "Vad innebär myndigheternas självständighet i enskilda ärenden enligt regeringsformen?",
+        "options": [
+          "Ett politiskt system där en minister har högsta exekutiva makt",
+          "Ingen myndighet får bestämma hur en förvaltningsmyndighet beslutar i ett enskilt fall om myndighetsutövning eller tillämpning av lag",
+          "En typ av styrelse i en myndighet",
+          "Ett system där ministeriet har kontroll över alla offentliga tjänster"
+        ],
+        "answer": 1,
+        "sourceUrl": "https://www.regeringen.se/sa-styrs-sverige/myndigheter-och-bolag-med-statligt-agande/",
+        "id": "s07-q07"
+      },
+      {
+        "question": "Hur många regioner har vi i Sverige (uppgift i originalspelet från 2023)?",
+        "options": [
+          "50",
+          "10",
+          "21",
+          "29"
+        ],
+        "answer": 2,
+        "id": "s07-q08"
+      },
+      {
+        "question": "Vad är kopplingen mellan politik, juridik och förvaltning?",
+        "options": [
+          "Det finns ingen koppling",
+          "Politiken bestämmer juridikens ramar och förvaltningen följer dessa",
+          "Politiken fastställer mål och beslut, juridiken skapar ramar och regler, och förvaltningen genomför och verkställer dessa beslut inom ramen för lagstiftningen",
+          "Juridiken styr politiken och förvaltningen utför politikens beslut"
+        ],
+        "answer": 2,
+        "id": "s07-q09"
+      },
+      {
+        "question": "Vad är en viktig skillnad mellan offentlig sektor och privat sektor när det gäller ägande och drift?",
+        "options": [
+          "Offentlig sektor ägs och drivs av privata företag medan privat sektor ägs av staten",
+          "Både offentlig sektor och privat sektor ägs och drivs av staten",
+          "Både offentlig sektor och privat sektor ägs och drivs av privata företag",
+          "Offentlig sektor ägs och drivs av staten eller kommuner och regioner, medan privat sektor ägs av privata företag eller enskilda individer"
+        ],
+        "answer": 3,
+        "id": "s07-q10"
+      },
+      {
+        "question": "Vad menas med en oskriven social norm?",
+        "options": [
+          "En lag som alla måste följa",
+          "En skriven regel som styr ett företags policy",
+          "En oskriven regel eller standard som styr och påverkar beteendet och förväntningarna i ett samhälle eller en grupp",
+          "En matematisk term"
+        ],
+        "answer": 2,
+        "id": "s07-q11"
+      },
+      {
+        "question": "Vilken är inte en av Sveriges grundlagar?",
+        "options": [
+          "Regeringsformen",
+          "Tryckfrihetsförordningen",
+          "Konstitutionslagen",
+          "Successionsordningen"
+        ],
+        "answer": 2,
+        "id": "s07-q12"
+      },
+      {
+        "question": "Vilket påstående beskriver regeringsformens mål om rätten till arbete?",
+        "options": [
+          "Det är ett mål för det allmänna, inte en garanti att varje person får en anställning",
+          "Varje person garanteras en viss statlig anställning",
+          "Endast riksdagsledamöter får arbeta",
+          "Arbetsgivare får aldrig ställa krav på kompetens"
+        ],
+        "answer": 0,
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/kungorelse-1974152-om-beslutad-ny-regeringsform_sfs-1974-152swedish/",
+        "id": "s07-q13"
+      },
+      {
+        "question": "Vilken grundlag skyddar yttrandefriheten och inkluderar kommunikationsformer som radio, tv och internet?",
+        "options": [
+          "Yttrandefrihetsgrundlagen",
+          "Tryckfrihetsförordningen",
+          "Regeringsformen",
+          "Successionsordningen"
+        ],
+        "answer": 0,
+        "id": "s07-q14"
+      },
+      {
+        "question": "Vilken rättighet innebär skydd mot diskriminering på grund av kön, etnisk tillhörighet, religion, funktionsnedsättning, sexuell läggning och andra grunder?",
+        "options": [
+          "Yttrandefrihet",
+          "Tryckfrihet",
+          "Rättssäkerhet",
+          "Skydd mot diskriminering"
+        ],
+        "answer": 3,
+        "id": "s07-q15"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "title": "Grundlagsfrågor",
+    "questions": [
+      {
+        "question": "Vilket alternativ beskriver regeringens och riksdagsledamöternas förslagsrätt?",
+        "options": [
+          "Endast regeringen",
+          "Endast riksdagen",
+          "Regeringen kan lämna propositioner och ledamöter kan lämna motioner",
+          "Endast en medborgarförening"
+        ],
+        "answer": 2,
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/kungorelse-1974152-om-beslutad-ny-regeringsform_sfs-1974-152swedish/",
+        "id": "s08-q01"
+      },
+      {
+        "question": "Vilket utskott gör en konstitutionell prövning av ett förslag till ändring av en grundlag?",
+        "options": [
+          "Finansutskottet",
+          "Konstitutionsutskottet",
+          "Utbildningsutskottet",
+          "Försvarsutskottet"
+        ],
+        "answer": 1,
+        "id": "s08-q02"
+      },
+      {
+        "question": "Vilket påstående beskriver regeringsformens mål om rätten till arbete?",
+        "options": [
+          "Det är ett mål för det allmänna, inte en garanti att varje person får en anställning",
+          "Varje person garanteras en viss statlig anställning",
+          "Endast riksdagsledamöter får arbeta",
+          "Arbetsgivare får aldrig ställa krav på kompetens"
+        ],
+        "answer": 0,
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/kungorelse-1974152-om-beslutad-ny-regeringsform_sfs-1974-152swedish/",
+        "id": "s08-q03"
+      },
+      {
+        "question": "Vilken produkt eller tjänst är typiskt inte upphandlad inom offentlig verksamhet?",
+        "options": [
+          "Sanering",
+          "Bygg- och anläggning",
+          "Hyllvaror",
+          "Privat hushållsrengöring"
+        ],
+        "answer": 3,
+        "id": "s08-q04"
+      },
+      {
+        "question": "Vilken särskild beslutsordning krävs för att ändra en svensk grundlag?",
+        "options": [
+          "En tredjedel",
+          "Hälften",
+          "Två likalydande riksdagsbeslut med ett riksdagsval mellan besluten",
+          "Tre fjärdedelar"
+        ],
+        "answer": 2,
+        "sourceUrl": "https://www.riksdagen.se/sv/sa-fungerar-riksdagen/demokrati/sveriges-grundlagar-och-riksdagsordningen/",
+        "id": "s08-q05"
+      },
+      {
+        "question": "Vad krävs mellan det första och det andra beslutet om en grundlagsändring?",
+        "options": [
+          "Ett riksdagsval och att den nyvalda riksdagen har samlats",
+          "Det implementeras omedelbart",
+          "Det skickas till EU för godkännande",
+          "Det sänds till folkomröstning"
+        ],
+        "answer": 0,
+        "sourceUrl": "https://www.riksdagen.se/sv/sa-fungerar-riksdagen/demokrati/sveriges-grundlagar-och-riksdagsordningen/",
+        "id": "s08-q06"
+      },
+      {
+        "question": "Vad innebär informationsfrihet enligt regeringsformen?",
+        "options": [
+          "Rätten att publicera vilken information som helst",
+          "Frihet att inhämta och ta emot upplysningar och ta del av andras yttranden",
+          "Rätten att inte dela med sig av sin personliga information",
+          "Rätten att ha tillgång till allt innehåll på internet"
+        ],
+        "answer": 1,
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/kungorelse-1974152-om-beslutad-ny-regeringsform_sfs-1974-152swedish/",
+        "id": "s08-q07"
+      },
+      {
+        "question": "Vad innebär rättssäkerhet?",
+        "options": [
+          "Rätt till en rättvis rättegång, skydd mot godtyckliga frihetsberövanden och krav på rättssäkerhetsprinciper",
+          "Rätten att bli behandlad rättvist av polisen",
+          "Rätten att ha en säker bostad",
+          "Rätten att inte bli stämd"
+        ],
+        "answer": 0,
+        "id": "s08-q08"
+      },
+      {
+        "question": "Vilken grundlagsskyddad rättighet skyddar mot diskriminering?",
+        "options": [
+          "Demonstrationsfrihet",
+          "Religionsfrihet",
+          "Skydd mot diskriminering",
+          "Yttrandefrihet"
+        ],
+        "answer": 2,
+        "id": "s08-q09"
+      },
+      {
+        "question": "Vilken tjänst är typiskt upphandlad inom offentlig verksamhet?",
+        "options": [
+          "Fastighetsmäklartjänster",
+          "Hälso- och sjukvårdstjänster",
+          "Bilförsäljning",
+          "Restaurangverksamhet"
+        ],
+        "answer": 1,
+        "id": "s08-q10"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "title": "Öppenhet och självständighet",
+    "questions": [
+      {
+        "question": "Vad innebär offentlighetsprincipen?",
+        "options": [
+          "Allmänhetens rätt att påverka politiska beslut",
+          "Allmänheten har rätt att ta del av allmänna handlingar hos myndigheter, om uppgifterna inte omfattas av sekretess",
+          "Offentliga myndigheters skyldighet att informera allmänheten om sina beslut",
+          "Allmänhetens rätt att vara medlem i offentliga myndigheter"
+        ],
+        "answer": 1,
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/tryckfrihetsforordning-1949105_sfs-1949-105/",
+        "id": "s09-q01"
+      },
+      {
+        "question": "Vad innebär meddelarfrihet i grundlagsskyddade medier?",
+        "options": [
+          "Rätt att lämna uppgifter för offentliggörande i sådana medier, med vissa lagstadgade undantag",
+          "Alla medborgare har rätt att meddela myndigheter om brott",
+          "Anställda har rätt att meddela sina chefer om missförhållanden på arbetsplatsen",
+          "Allmänheten har rätt att meddela politiska ledare om deras åsikter"
+        ],
+        "answer": 0,
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/tryckfrihetsforordning-1949105_sfs-1949-105/",
+        "id": "s09-q02"
+      },
+      {
+        "question": "I vilka grundlagar finns regler om meddelarfrihet?",
+        "options": [
+          "Lag om offentlig förvaltning",
+          "Tryckfrihetsförordningen och yttrandefrihetsgrundlagen",
+          "Lag om anställningsskydd",
+          "Lag om informationsfrihet"
+        ],
+        "answer": 1,
+        "sourceUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/tryckfrihetsforordning-1949105_sfs-1949-105/",
+        "id": "s09-q03"
+      },
+      {
+        "question": "Vad innebär myndigheternas självständighet i enskilda ärenden enligt regeringsformen?",
+        "options": [
+          "Ministrar får inte arbeta inom myndigheter",
+          "Ingen myndighet får bestämma hur en förvaltningsmyndighet beslutar i ett enskilt fall om myndighetsutövning eller tillämpning av lag",
+          "Ministrar får inte ha någon kontakt med myndigheter",
+          "Ministrar får inte vara medlemmar i politiska partier"
+        ],
+        "answer": 1,
+        "sourceUrl": "https://www.regeringen.se/sa-styrs-sverige/myndigheter-och-bolag-med-statligt-agande/",
+        "id": "s09-q04"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "title": "Statlig värdegrund",
+    "questions": [
+      {
+        "question": "Vilka sex principer ingår i den statliga värdegrunden?",
+        "options": [
+          "Demokrati, legalitet, objektivitet, fri åsiktsbildning, respekt samt effektivitet och service",
+          "Laglighet, Rättssäkerhet, Diskriminering, Sekretess, Effektivitet",
+          "Objektivitet, Likabehandling, Sekretess, Öppenhet, Laglighet",
+          "Rättssäkerhet, Diskriminering, Effektivitet, Objektivitet, Öppenhet"
+        ],
+        "answer": 0,
+        "sourceUrl": "https://www.statenssc.se/om-statens-servicecenter/vardegrund",
+        "id": "s10-q01"
+      },
+      {
+        "question": "Vad innebär kraven på effektivitet och service i praktiken inom offentlig förvaltning?",
+        "options": [
+          "Att använda resurser effektivt, leverera högkvalitativa tjänster, optimera arbetsprocesser, tillhandahålla snabb service",
+          "Att minimera kostnader, öka vinsten, fokusera på försäljning",
+          "Att maximera antalet anställda, minska arbetsbelastningen, öka löner",
+          "Att öka skatteintäkterna, minska offentliga utgifter, främja ekonomisk tillväxt"
+        ],
+        "answer": 0,
+        "id": "s10-q02"
+      },
+      {
+        "question": "Vad innebär kraven på objektivitet och saklighet samt likhetskrav i praktiken inom offentlig förvaltning?",
+        "options": [
+          "Att fatta beslut baserat på faktiska uppgifter, vara opartiska, tillämpa en icke-diskriminerande policy",
+          "Att fatta beslut baserat på personliga åsikter, vara opartiska, tillämpa en diskriminerande policy",
+          "Att fatta beslut baserat på faktiska uppgifter, vara partiska, tillämpa en icke-diskriminerande policy",
+          "Att fatta beslut baserat på personliga åsikter, vara partiska, tillämpa en diskriminerande policy"
+        ],
+        "answer": 0,
+        "id": "s10-q03"
+      },
+      {
+        "question": "Vad innebär laglighetsprincipen i offentlig förvaltning?",
+        "options": [
+          "Att offentlig förvaltning ska grundas på lagar och följa dem",
+          "Att offentlig förvaltning ska skapa nya lagar",
+          "Att offentlig förvaltning inte ska följa lagar",
+          "Att offentlig förvaltning ska kritisera lagar"
+        ],
+        "answer": 0,
+        "id": "s10-q04"
+      },
+      {
+        "question": "Vad innebär rättssäkerhetsprincipen i offentlig förvaltning?",
+        "options": [
+          "Medborgare ska ha rätt att få sina rättigheter och skyldigheter tillgodosedda på ett rättssäkert sätt",
+          "Medborgare ska inte ha rätt att få sina rättigheter och skyldigheter tillgodosedda",
+          "Rättssäkerhet har ingen betydelse inom offentlig förvaltning",
+          "Rättssäkerhet innebär rätten att bryta lagen utan konsekvenser"
+        ],
+        "answer": 0,
+        "id": "s10-q05"
+      },
+      {
+        "question": "Vad innebär principen om likabehandling och icke-diskriminering i offentlig förvaltning?",
+        "options": [
+          "Alla människor ska behandlas lika och diskriminering på grund av kön, etnicitet, religion, funktionsnedsättning eller annan grund är förbjuden",
+          "Diskriminering är tillåten inom offentlig förvaltning",
+          "Endast vissa människor ska behandlas lika inom offentlig förvaltning",
+          "Principen om likabehandling och icke-diskriminering gäller inte för offentlig förvaltning"
+        ],
+        "answer": 0,
+        "id": "s10-q06"
+      },
+      {
+        "question": "Vad innebär öppenhets- och transparensprincipen i offentlig förvaltning?",
+        "options": [
+          "Offentlig förvaltning ska vara öppen och transparent i sin verksamhet och beslutsfattande",
+          "Offentlig förvaltning ska vara stängd och ogenomskinlig",
+          "Offentlig förvaltning behöver inte vara öppen eller transparent",
+          "Öppenhet och transparens har ingen betydelse inom offentlig förvaltning"
+        ],
+        "answer": 0,
+        "id": "s10-q07"
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "title": "Respekt och transparens",
+    "questions": [
+      {
+        "question": "Vad innebär likhetskravet i praktiken inom offentlig förvaltning?",
+        "options": [
+          "Alla medborgare ska betala lika mycket skatt",
+          "Kandidater till en tjänst bedöms utifrån deras kompetens, erfarenhet och lämplighet",
+          "Offentliga tjänster bör tillhandahållas på olika sätt beroende på medborgarens inkomst",
+          "Baserat på kön eller etnicitet väljs kandidater till en tjänst"
+        ],
+        "answer": 1,
+        "id": "s11-q01"
+      },
+      {
+        "question": "Vad innebär kravet på respekt i offentlig förvaltning?",
+        "options": [
+          "Alla människor ska bemötas med värdighet, uppmärksamhet och ömsesidig respekt",
+          "Respekt innebär att man ska vara rädd för myndigheterna",
+          "Kravet på respekt innebär att tjänstemän alltid har rätt",
+          "Kravet på respekt betyder att man ska behandla alla olika beroende på deras status eller position"
+        ],
+        "answer": 0,
+        "id": "s11-q02"
+      },
+      {
+        "question": "Varför är kravet på transparens så viktigt inom offentlig förvaltning?",
+        "options": [
+          "Transparens främjar öppenhet och tillit, bygger förtroende hos medborgarna och säkerställer ansvarsskyldighet",
+          "Transparens är viktigt för att dölja offentliga åtgärder och beslut",
+          "Transparens är bara viktigt för privatsektorn, inte för offentlig förvaltning",
+          "Transparens är viktigt eftersom det minskar insynen i offentlig förvaltning"
+        ],
+        "answer": 0,
+        "id": "s11-q03"
+      },
+      {
+        "question": "Hur kan likhetskravet praktiseras under en rekryteringsprocess i offentlig förvaltning?",
+        "options": [
+          "Genom att rekrytera baserat på vänskap",
+          "Genom att rekrytera baserat på kön och etnicitet",
+          "Genom att rekrytera baserat på kompetens, erfarenhet och lämplighet för tjänsten",
+          "Genom att rekrytera baserat på ålder och religion"
+        ],
+        "answer": 2,
+        "id": "s11-q04"
+      },
+      {
+        "question": "Vilket påstående bäst beskriver kravet på respekt inom offentlig förvaltning?",
+        "options": [
+          "Respekt innebär att tjänstemän ska be om ursäkt för sina handlingar",
+          "Respekt innebär att bara respektera dem som har högre positioner",
+          "Respekt innebär att bemöta alla med värdighet, uppmärksamhet och ömsesidig respekt",
+          "Respekt innebär att favorisera vissa individer"
+        ],
+        "answer": 2,
+        "id": "s11-q05"
+      },
+      {
+        "question": "Varför bidrar kravet på transparens till förtroende hos medborgarna inom offentlig förvaltning?",
+        "options": [
+          "Eftersom det döljer offentliga beslut",
+          "Eftersom det gör det möjligt för korruption",
+          "Eftersom det skapar osäkerhet",
+          "Eftersom det främjar öppenhet, tillåter insyn och säkerställer ansvarsskyldighet"
+        ],
+        "answer": 3,
+        "id": "s11-q06"
+      },
+      {
+        "question": "Vilken faktor får inte vara avgörande vid rekrytering enligt likhetskravet inom offentlig förvaltning?",
+        "options": [
+          "Kompetens",
+          "Erfarenhet",
+          "Lämplighet för tjänsten",
+          "Etnicitet"
+        ],
+        "answer": 3,
+        "id": "s11-q07"
+      },
+      {
+        "question": "Vad innebär ett respektfullt bemötande av en medborgare i offentlig förvaltning?",
+        "options": [
+          "Att ignorera medborgarens behov och frågor",
+          "Att ge vag eller felaktig information",
+          "Att lyssna aktivt på deras behov och frågor, ge tydlig information och vara tillmötesgående",
+          "Att ge medborgaren minsta möjliga tid och uppmärksamhet"
+        ],
+        "answer": 2,
+        "id": "s11-q08"
+      },
+      {
+        "question": "Vad är en konsekvens av bristande transparens inom offentlig förvaltning?",
+        "options": [
+          "Ökad tillit hos medborgarna",
+          "Förbättrad ansvarsskyldighet",
+          "Minskad risk för korruption",
+          "Ökad risk för missbruk av makt"
+        ],
+        "answer": 3,
+        "id": "s11-q09"
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "title": "Samhällsnytta och begrepp",
+    "questions": [
+      {
+        "question": "Vilken yrkesgrupp förknippas med juridisk rådgivning och en särskild tystnadsplikt?",
+        "options": [
+          "Advokater",
+          "Bilmekaniker",
+          "Arkitekter",
+          "Busschaufförer"
+        ],
+        "answer": 0,
+        "sourceUrl": "https://www.advokatsamfundet.se/Anlita-en-advokat/Vad-ar-en-advokat/",
+        "id": "s12-q01"
+      },
+      {
+        "question": "Vad syftar begreppet 'samhällsnytta' på?",
+        "options": [
+          "Den positiva effekten en verksamhet har för individens vinst",
+          "Den negativa effekten en verksamhet har för samhället",
+          "Den positiva effekten en verksamhet har för samhället",
+          "Ingen av de ovan"
+        ],
+        "answer": 2,
+        "id": "s12-q02"
+      },
+      {
+        "question": "Vad handlar 'respekt' om i offentlig förvaltning?",
+        "options": [
+          "Att ignorera andra människors behov",
+          "Att behandla andra med hänsyn och tolerans",
+          "Att prioritera egna behov över andra",
+          "Att visa intolerans mot olikheter"
+        ],
+        "answer": 1,
+        "id": "s12-q03"
+      },
+      {
+        "question": "Vad innebär begreppet 'legalitet' i offentlig förvaltning?",
+        "options": [
+          "Att agera enligt gällande lagar och föreskrifter",
+          "Att bryta gällande lagar och föreskrifter",
+          "Att ignorera gällande lagar och föreskrifter",
+          "Inget av ovanstående"
+        ],
+        "answer": 0,
+        "id": "s12-q04"
+      },
+      {
+        "question": "Vad innebär begreppet 'service' i offentlig förvaltning?",
+        "options": [
+          "Att ignorera andras behov och önskemål",
+          "Att tillhandahålla tjänster eller assistans till andra för att möta deras behov och önskemål",
+          "Att vara otillgänglig och oprofessionell",
+          "Inget av ovanstående"
+        ],
+        "answer": 1,
+        "id": "s12-q05"
+      },
+      {
+        "question": "Vad innebär begreppet 'objektivitet' i offentlig förvaltning?",
+        "options": [
+          "Att fatta beslut baserat på personliga åsikter",
+          "Att påverka beslut med partipolitik",
+          "Att fatta beslut baserat på faktiska och relevanta uppgifter",
+          "Att fatta beslut baserat på irrelevanta uppgifter"
+        ],
+        "answer": 2,
+        "id": "s12-q06"
+      },
+      {
+        "question": "Vad innebär begreppet 'saklighet' i offentlig förvaltning?",
+        "options": [
+          "Att fatta beslut baserat på irrelevanta uppgifter",
+          "Att påverka beslut med personliga intressen",
+          "Att göra bedömningar baserat på objektiva kriterier",
+          "Inget av ovanstående"
+        ],
+        "answer": 2,
+        "id": "s12-q07"
+      },
+      {
+        "question": "Vad innebär begreppet 'likhetskrav' i offentlig förvaltning?",
+        "options": [
+          "Att behandla alla människor olika",
+          "Att tillämpa en diskriminerande policy",
+          "Att behandla alla människor lika och inte diskriminera på grund av kön, etnicitet, religion, funktionsnedsättning eller annan grund",
+          "Att gynna eller missgynna någon specifik grupp"
+        ],
+        "answer": 2,
+        "id": "s12-q08"
+      },
+      {
+        "question": "Vilken yrkesgrupp förknippas med juridisk rådgivning och en särskild tystnadsplikt?",
+        "options": [
+          "Advokater",
+          "Bilmekaniker",
+          "Arkitekter",
+          "Busschaufförer"
+        ],
+        "answer": 0,
+        "sourceUrl": "https://www.advokatsamfundet.se/Anlita-en-advokat/Vad-ar-en-advokat/",
+        "id": "s12-q09"
+      },
+      {
+        "question": "Vad är en betydande aspekt av samhällsnytta?",
+        "options": [
+          "Att främja social rättvisa och skydda sårbara grupper",
+          "Att främja ojämlikhet och social exkludering",
+          "Att främja korruption och maktmissbruk",
+          "Att främja miljöskador och resursslöseri"
+        ],
+        "answer": 0,
+        "id": "s12-q10"
+      },
+      {
+        "question": "Vad innebär begreppet 'respekt' i offentlig förvaltning?",
+        "options": [
+          "Att behandla andra med förakt och intolerans",
+          "Att behandla andra med hänsyn, värdering och tolerans",
+          "Att ignorera och misskänna olikheter",
+          "Inget av ovanstående"
+        ],
+        "answer": 1,
+        "id": "s12-q11"
+      },
+      {
+        "question": "Vad innebär begreppet 'legalitet' i offentlig förvaltning?",
+        "options": [
+          "Att agera i strid med gällande lagar och föreskrifter",
+          "Att agera utan hänsyn till gällande lagar och föreskrifter",
+          "Att agera enligt gällande lagar och föreskrifter",
+          "Inget av ovanstående"
+        ],
+        "answer": 2,
+        "id": "s12-q12"
+      }
+    ]
+  }
+]

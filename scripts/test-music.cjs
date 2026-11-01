@@ -11,7 +11,9 @@ const api = context.window.JoynesMusic;
 const catalog = context.window.joynesMusicCatalog;
 function library() {
   const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
-  const categoryCode = html.match(/const categories = ([\s\S]*?);\s*function slugify/)[1];
+  const categoryMatch = html.match(/const categories = (\[[\s\S]*?\n    \]);/);
+  assert.ok(categoryMatch, 'the source category array is available');
+  const categoryCode = categoryMatch[1];
   const categories = vm.runInContext(categoryCode, context);
   return { categories, ...api.build(categories, catalog, href => href) };
 }

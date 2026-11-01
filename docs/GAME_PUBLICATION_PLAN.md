@@ -8,6 +8,12 @@ Den maskinläsbara kön finns i [games-inventory.json](../data/games-inventory.j
 
 Jaro och Grodan-mapparnas texter/grafik och fotoalbumet 10 -20 - rall är inte spelprogram. Kvarvarande kandidater, bland annat picture_puzzle och lightbot, ska kontrolleras innan de klassificeras. Ett tomt projekt får inte redovisas som ett färdigt spel.
 
+## Kategorier
+
+- **Retrospel:** äldre spel som görs om till webb med AI. Den publicerade versionen märks **AI-remake av retrospel**.
+- **AI-spel:** de nyare spelen från ungefär de senaste två åren, enligt Johannes instruktion.
+- Ny publicering eller ny port ändrar inte ett gammalt originals kategori. Båda kategorierna använder AI; skillnaden är spelets ursprung.
+
 ## Arbetsgång per spel
 
 1. Läs originalets källor, dokumentation, regler, banor och tillgångar. Dokumentera vad som ska bevaras och vilken version som används.
@@ -66,3 +72,5 @@ Jaro och Grodan-mapparnas texter/grafik och fotoalbumet 10 -20 - rall är inte s
 - Kontrollerat aktuellt huvudrepo och identifierat källor på GitHub och Drive.
 - Verifierat att flera tidigare spelmärkta arkiv är texter, konst eller fotografier.
 - Startat första spelet: Frågespelet (web_quizzes). Originalets omstart återställer inte gränssnittet, banbyte återställer inte spelomgången, och frågebanken innehåller sakfel som behöver rättas före publicering. Alla 12 banor ska bevaras.
+
+- Första spelets webbversion är lokalt verifierad: 12 banor, 154 frågor, omstart, rekord, mobil/tangentbord, nätverksåterhämtning och fungerande katalog/iframe. Publicering och kontroll på riktig adress återstår.

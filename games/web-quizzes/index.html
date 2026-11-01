@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#040406">
+  <meta name="description" content="Joynes Frågespelet: 12 banor med allmänbildning och samhällsfrågor. En AI-bearbetad webbversion av originalet från 2023.">
+  <title>Frågespelet · Joynes Retrospel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="header">
+      <a class="back" href="../../#games">← Alla spel</a>
+      <span class="badge">AI-remake av retrospel · Original 2023</span>
+    </header>
+    <div class="intro">
+      <p class="eyebrow">Joynes spelarkiv</p>
+      <h1>Frågespelet</h1>
+      <p>Välj en bana och utmana dina kunskaper. Rätt svar ger en poäng. Fel svar tar bort en poäng, men du får försöka igen.</p>
+    </div>
+    <section id="menu" aria-labelledby="menu-title" class="panel">
+      <h2 id="menu-title">Välj bana</h2>
+      <p class="muted">Ditt bästa resultat sparas på den här enheten.</p>
+      <div id="stages" class="stages"><p role="status">Laddar frågor…</p></div>
+    </section>
+    <section id="play" class="panel" aria-labelledby="question" hidden>
+      <div class="toolbar">
+        <button id="back-menu" class="button" type="button">← Byt bana</button>
+        <span id="stage-name" class="muted"></span>
+      </div>
+      <div class="scoreboard"><span id="progress-text"></span><strong id="score"></strong></div>
+      <progress id="progress" value="0" max="1" aria-label="Avklarade frågor"></progress>
+      <h2 id="question" tabindex="-1"></h2>
+      <div id="options" class="options"></div>
+      <p id="feedback" class="feedback" role="status" aria-live="polite" aria-atomic="true"></p>
+      <button id="next" class="button primary" type="button" hidden>Nästa fråga →</button>
+    </section>
+    <section id="result" class="panel result" aria-labelledby="result-title" hidden>
+      <p class="eyebrow">Banan avklarad</p>
+      <h2 id="result-title" tabindex="-1">Bra jobbat!</h2>
+      <p id="final-score"></p>
+      <p id="record" class="muted"></p>
+      <div class="result-actions"><button id="restart" type="button" class="button primary">Spela banan igen</button><button id="choose-stage" type="button" class="button">Välj en annan bana</button></div>
+    </section>
+    <p id="storage-notice" class="muted" role="status" hidden>Resultatet kunde inte sparas på den här enheten. Du kan fortsätta spela.</p>
+    <footer>Original: <a href="https://github.com/joynes/web_quizzes">web_quizzes</a> · <a href="source-notes.md">Version och frågekällor</a> · <span>Webbversion 2.0.0</span></footer>
+  </main>
+  <script type="module" src="app.mjs"></script>
+</body>
+</html>

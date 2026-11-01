@@ -8,7 +8,7 @@
       "id": "web-quizzes",
       "title": "Frågespelet",
       "order": 1,
-      "status": "pending",
+      "status": "locally_verified",
       "sources": [
         {
           "kind": "github",
@@ -16,10 +16,31 @@
         }
       ],
       "work": "Webbspel; laga omstart, återkoppling och mobilvy. Rätta verifierade fel i frågebanken.",
-      "tests": [],
+      "tests": [
+        {
+          "command": "npm test",
+          "result": "passed: 8 tests (4 music regressions, 4 quiz rule/data tests)"
+        },
+        {
+          "command": "npm run test:quiz:browser",
+          "result": "passed: all 12 stages, all 154 questions through visible controls; restart; wrong answers; stage switching; persisted records; keyboard; mobile touch; blocked storage; fetch failure/retry"
+        },
+        {
+          "command": "node scripts/test-games-navigation.cjs",
+          "result": "passed: Retro/AI filtering; playable iframe; nested routes; all-games view; AI music regression"
+        },
+        {
+          "check": "visual",
+          "result": "desktop 1440x1000 and mobile 412x915 inspected; long answers wrap, controls visible"
+        }
+      ],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "retro",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-remake av retrospel",
+      "sourceCommit": "616543b83cb56b00d98c8c5bbfd04b175d1a0eef"
     },
     {
       "id": "grimace-gemini",
@@ -36,7 +57,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "ai",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-spel"
     },
     {
       "id": "grimace-codex",
@@ -53,7 +77,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "ai",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-spel"
     },
     {
       "id": "quiz-sdl",
@@ -70,7 +97,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "retro",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-remake av retrospel"
     },
     {
       "id": "memit",
@@ -87,7 +117,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "retro",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-remake av retrospel"
     },
     {
       "id": "hardword",
@@ -104,7 +137,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "ai",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-spel"
     },
     {
       "id": "small-wonders",
@@ -121,7 +157,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "ai",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-spel"
     },
     {
       "id": "marble-tables",
@@ -138,7 +177,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "retro",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-remake av retrospel"
     },
     {
       "id": "simple-driving",
@@ -155,7 +197,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "retro",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-remake av retrospel"
     },
     {
       "id": "unity-bus",
@@ -172,7 +217,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "retro",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-remake av retrospel"
     },
     {
       "id": "godot-reading",
@@ -189,7 +237,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "retro",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-remake av retrospel"
     },
     {
       "id": "car-topview",
@@ -206,7 +257,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "ai",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-spel"
     },
     {
       "id": "sdl-space",
@@ -223,7 +277,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "retro",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-remake av retrospel"
     },
     {
       "id": "network-2d",
@@ -240,7 +297,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "ai",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-spel"
     },
     {
       "id": "network-3d",
@@ -257,7 +317,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "ai",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-spel"
     },
     {
       "id": "neon-interceptor",
@@ -274,7 +337,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "ai",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-spel"
     },
     {
       "id": "worldforge",
@@ -291,7 +357,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "ai",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-spel"
     },
     {
       "id": "shadow-racer",
@@ -308,7 +377,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "retro",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-remake av retrospel"
     },
     {
       "id": "rall-026",
@@ -325,7 +397,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "retro",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-remake av retrospel"
     },
     {
       "id": "rall-030",
@@ -342,7 +417,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "retro",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-remake av retrospel"
     },
     {
       "id": "rall-054",
@@ -367,7 +445,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "retro",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-remake av retrospel"
     },
     {
       "id": "rall-006",
@@ -388,7 +469,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "retro",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-remake av retrospel"
     },
     {
       "id": "rall-066",
@@ -405,7 +489,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "retro",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-remake av retrospel"
     },
     {
       "id": "rall-073",
@@ -426,7 +513,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "retro",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-remake av retrospel"
     },
     {
       "id": "rall-080",
@@ -447,7 +537,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "retro",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-remake av retrospel"
     },
     {
       "id": "rall-008",
@@ -468,7 +561,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "retro",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-remake av retrospel"
     },
     {
       "id": "rall-082",
@@ -485,7 +581,10 @@
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
-      "deploymentCommit": null
+      "deploymentCommit": null,
+      "category": "retro",
+      "webAdaptation": "ai",
+      "categoryLabel": "AI-remake av retrospel"
     }
   ],
   "candidatesToInspect": [
@@ -523,5 +622,10 @@
       "name": "joyEngine och OpenGL-mallar",
       "reason": "Spelmotorer/teknikmallar är inte separata färdiga spel."
     }
-  ]
+  ],
+  "classification": {
+    "retro": "Äldre original som görs om till webbspel med AI. Ursprung och AI-remake märks separat.",
+    "ai": "Nyare spel från ungefär de senaste två åren, enligt Johannes kategorisering.",
+    "publicationDoesNotChangeOriginalEra": true
+  }
 }

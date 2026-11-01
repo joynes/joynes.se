@@ -1,2 +1,4 @@
 drive-archive/
 PUBLICATION_CANDIDATES.md
+node_modules/
+test-results/
