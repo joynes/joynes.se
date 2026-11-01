@@ -21,4 +21,8 @@ Teknikreferenser: Unitys [WebGL-mallar](https://docs.unity3d.com/2021.3/Document
 - Båda vyerna granskade visuellt. Hela banan syns, inga kontroller överlappar.
 - `test-results/marble-*-page.png`: granskningsbilder (ignorerade av Git).
 
-Livekontroll och byteverifiering dokumenteras efter publicering i inventeringen.
+## Publicerat och verifierat 2026-11-01
+
+[Spela Marble Tables](https://joynes.github.io/joynes.se/games/marble-tables/). Slutlig spelcommit `2d3ff421e0f2da60703a53ac6e6490fa352e1473`, lyckad Pages-körning `41284460478`.
+
+Hela ovanstående svit passerade även på riktig adress, inklusive hemsidans knapp i egen flik, Retro-kategorin, mobil/dator och båda laddningsfelen med lyckade nya försök. Alla tio spel-, katalog- och hemsidesfiler jämfördes byte för byte; även den kanoniska adressen matchar testad HTML. Hemsidans äldre spel och musikregression passerade. Fullständiga filhashar ligger i inventeringen.

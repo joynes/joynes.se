@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "updatedAt": "2026-11-01",
   "objective": "Alla identifierade spel och relevanta spelversioner ska fungera på webben, testas och publiceras.",
-  "currentGame": "marble-tables",
+  "currentGame": "simple-driving",
   "games": [
     {
       "id": "web-quizzes",
@@ -491,7 +491,7 @@
       "id": "marble-tables",
       "title": "Marble Tables",
       "order": 8,
-      "status": "tested_local",
+      "status": "published_verified",
       "sources": [
         {
           "kind": "github",
@@ -503,16 +503,41 @@
         {
           "command": "npm run test:marble:browser",
           "result": "passed locally: real native sphere spawning, mouse/touch drag and hold, release under gravity, restart, full camera aspect, fullscreen; blocked WASM download and retry"
+        },
+        {
+          "command": "GAME_BASE_URL=https://joynes.github.io/joynes.se/games/marble-tables/ HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ npm run test:marble:browser",
+          "result": "passed live: native mouse/touch grab, hold and gravity; restart and fullscreen; homepage Retro link/new tab and AI exclusion; WASM and loader failure/retry"
+        },
+        {
+          "check": "release identity",
+          "result": "all 10 game/catalog/homepage files match tested local bytes; canonical URL verified; original 5 engine/config files preserved"
+        },
+        {
+          "command": "HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ node scripts/test-games-navigation.cjs",
+          "result": "passed: six previous games and music/category regressions"
         }
       ],
-      "publishedUrl": null,
-      "implementationCommit": null,
-      "deploymentCommit": null,
+      "publishedUrl": "https://joynes.github.io/joynes.se/games/marble-tables/",
+      "implementationCommit": "2d3ff421e0f2da60703a53ac6e6490fa352e1473",
+      "deploymentCommit": "2d3ff421e0f2da60703a53ac6e6490fa352e1473",
       "category": "retro",
       "webAdaptation": "ai",
       "categoryLabel": "AI-remake av retrospel",
       "sourceCommit": "b7994d00c0d740d2d7738028daf5c6528c110372",
-      "originalWebBuildCommit": "4d139e8a9ba9b5ebe265dd5cb7301da2b4b3578d"
+      "originalWebBuildCommit": "4d139e8a9ba9b5ebe265dd5cb7301da2b4b3578d",
+      "pagesRun": 41284460478,
+      "releaseFilesSha256": {
+        "games/marble-tables/index.html": "901a31675356e19bd2f7a25e92ffbae8affec6f1ea62cfa7b39b00c369247c9b",
+        "games/marble-tables/styles.css": "6835fe298b3fc839f949184a7b589e5ccd38a4f7cc45c2a1ec0c4325dafbe34f",
+        "games/marble-tables/app.js": "87c0c706df818d2bbc4ee9139faa1c05dcaaf9b58aad9b53c60d0b8f8840b5e3",
+        "games/marble-tables/StreamingAssets/UnityServicesProjectConfiguration.json": "2082dc7cfb373de4e9b12d43d9f0caf00a0e8c128ef860a627814840565bc7fe",
+        "games/marble-tables/Build/webtest2.data": "6bbaa22ff6ee91245a53d91dc364fbee0f08a11596d90dd179cd00dc703ebe10",
+        "games/marble-tables/Build/webtest2.loader.js": "b2857ce93350711103bd72fbc6b665f16bb09afdf65542b52549ecd05b812a54",
+        "games/marble-tables/Build/webtest2.wasm": "21646613724f3e83081ea3ba8747c214dfdcc3f3afeee4b2aa079698255c55d7",
+        "games/marble-tables/Build/webtest2.framework.js": "f919ef198c7e13ea63de927dfc3b300189b0efc910895846d06761872b039fb7",
+        "assets/games-catalog.js": "0fe747dee926a08bb6ee902eb7ecccf277afdba50a8345fa8886cf71be478766",
+        "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82"
+      }
     },
     {
       "id": "simple-driving",
