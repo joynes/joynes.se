@@ -299,7 +299,7 @@
       "id": "hardword",
       "title": "Skoluppgifter / Ordhjälten",
       "order": 6,
-      "status": "pending",
+      "status": "tested_locally",
       "sources": [
         {
           "kind": "github",
@@ -307,13 +307,63 @@
         }
       ],
       "work": "Granska aktuell webbversion och publicerad adress; bevara alla befintliga spellägen.",
-      "tests": [],
+      "tests": [
+        {
+          "command": "npm test",
+          "result": "passed: 23 tests including isolated progress/cache URLs, blocked/full storage, original assets and regressions"
+        },
+        {
+          "command": "node scripts/test-hardword-browser.cjs stories",
+          "result": "passed: all 44 courses / 192 questions through visible controls, normal unlocks and reload persistence"
+        },
+        {
+          "command": "node scripts/test-hardword-browser.cjs math",
+          "result": "passed: all 27 levels / 135 courses / 810 correct answers, real digit entry, duplicate answer lock, normal unlocks"
+        },
+        {
+          "command": "node scripts/test-hardword-browser.cjs reading",
+          "result": "passed: all 54 reading/ice-age texts and 174 questions, normal level unlocks"
+        },
+        {
+          "command": "node scripts/test-hardword-browser.cjs crosswords",
+          "result": "passed: all 19 puzzles / 127 words and secret words through visible grid/word controls"
+        },
+        {
+          "command": "node scripts/test-hardword-support.cjs",
+          "result": "passed: 2484 generated arithmetic/clock questions independently checked; transfer of actual 252 earned courses; shop/avatar/parent panel; invalid import; storage recovery; mobile input and five-digit layout; Breakout touch drag; music shuffle"
+        },
+        {
+          "command": "node scripts/test-hardword-recovery.cjs",
+          "result": "passed: wrong answers, three-error restart and canceled timers after screen changes"
+        },
+        {
+          "command": "node scripts/test-hardword-breakout.cjs",
+          "result": "passed: full level-one win using only real paddle/launch input, save, real misses/game over, replay, keyboard, stopped game loop"
+        },
+        {
+          "command": "node scripts/test-hardword-physics.cjs",
+          "result": "passed: controlled engine unit scenarios for collision damage in all 15 layouts, 12-hit boss through collision, 49 drop effects; not claimed as full gameplay on all 15 levels"
+        },
+        {
+          "command": "node scripts/test-hardword-offline.cjs",
+          "result": "passed: scoped SW/cache, no initial reload, offline playable quiz, sibling storage/cache preserved"
+        },
+        {
+          "command": "node scripts/test-games-navigation.cjs",
+          "result": "passed: six playable game iframes, Retro/AI routes and AI music regression"
+        },
+        {
+          "check": "visual",
+          "result": "desktop and 360px mobile, normal/wide arithmetic, Breakout win inspected; mobile coin overlay and dark win text fixed"
+        }
+      ],
       "publishedUrl": null,
       "implementationCommit": null,
       "deploymentCommit": null,
       "category": "ai",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-spel"
+      "categoryLabel": "AI-spel",
+      "sourceCommit": "445d73d1c9e43593d4a5c4f6843790de2d611e13"
     },
     {
       "id": "small-wonders",

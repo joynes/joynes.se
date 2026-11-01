@@ -1,6 +1,15 @@
 // Only tested releases belong here. The complete work queue is in data/games-inventory.json.
 window.joynesPublishedGames = [
   {
+    id: "hardword",
+    title: "Skoluppgifter / Ordhjälten",
+    kind: "ai",
+    description: "AI-spel · Svenska, fem matteområden, läsning, istiden, 19 korsord och Breakout. Åldersval, sparade framsteg, butik och offlinestöd.",
+    href: "games/hardword/",
+    source: "https://github.com/joynes/hardword",
+    version: "118-web.1"
+  },
+  {
     id: "memit",
     title: "Memit",
     kind: "retro",
