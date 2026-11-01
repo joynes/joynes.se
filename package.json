@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "preview": "python3 scripts/preview-games.py",
-    "test": "node --test scripts/test-music.cjs scripts/test-web-quizzes.mjs scripts/test-grimace-gemini.mjs scripts/test-grimace-codex.mjs scripts/test-quiz-sdl.mjs scripts/test-memit.mjs scripts/test-hardword.cjs scripts/test-godot-reading.mjs scripts/test-car-topview.mjs scripts/test-sdl-space.mjs",
+    "test": "node --test scripts/test-music.cjs scripts/test-web-quizzes.mjs scripts/test-grimace-gemini.mjs scripts/test-grimace-codex.mjs scripts/test-quiz-sdl.mjs scripts/test-memit.mjs scripts/test-hardword.cjs scripts/test-godot-reading.mjs scripts/test-car-topview.mjs scripts/test-sdl-space.mjs && python3 scripts/test-shadow-racer.py",
     "test:quiz:browser": "node scripts/test-web-quizzes-browser.cjs",
     "test:grimace:browser": "node scripts/test-grimace-gemini-browser.cjs",
     "test:grimace-codex:browser": "node scripts/test-grimace-codex-browser.cjs",
@@ -23,7 +23,10 @@
     "test:neon:coop": "node scripts/test-neon-interceptor-coop.cjs",
     "test:neon:links": "node scripts/test-neon-interceptor-navigation.cjs",
     "test:worldforge:browser": "node scripts/test-worldforge-browser.cjs",
-    "test:worldforge:links": "node scripts/test-worldforge-navigation.cjs"
+    "test:worldforge:links": "node scripts/test-worldforge-navigation.cjs",
+    "test:shadow:browser": "node scripts/test-shadow-racer-browser.cjs",
+    "test:shadow:links": "node scripts/test-shadow-racer-navigation.cjs",
+    "test:shadow:preservation": "python3 scripts/test-shadow-racer.py"
   },
   "devDependencies": {
     "playwright": "1.58.2"

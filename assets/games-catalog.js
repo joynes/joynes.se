@@ -1,6 +1,16 @@
 // Only tested releases belong here. The complete work queue is in data/games-inventory.json.
 window.joynesPublishedGames = [
   {
+    id: "shadow-racer",
+    title: "ShadowRacer",
+    kind: "retro",
+    description: "AI-remake av retrospel · Original 2008 · Kör den fjädrande bilen genom hela hinderbanan. Två bevarade originalutgåvor, krasch, tidtagning och lokala rekord. Tangentbord och touch.",
+    href: "games/shadow-racer/",
+    source: "https://github.com/joynes/joynes.se/blob/master/games/shadow-racer/source-notes.md",
+    sourceLabel: "Källor och bevarande",
+    version: "2008-web.1"
+  },
+  {
     id: "worldforge",
     title: "WorldForge",
     kind: "ai",

@@ -1193,21 +1193,60 @@
       "id": "shadow-racer",
       "title": "ShadowRacer",
       "order": 18,
-      "status": "pending",
+      "status": "tested_pending_publication",
       "sources": [
         {
           "kind": "drive-folder",
           "url": "https://drive.google.com/drive/folders/1TT9grPo0r_9tHhVN6Lm97YAjC5JnzQh7"
         }
       ],
-      "work": "ActionScript/Flash-källa och SWF i Drive. Granska spelmekanik och återanvänd originalmaterial i webbversion.",
-      "tests": [],
+      "work": "Båda kompletta Flash/AS3-utgåvorna bevarade i självhostad Ruffle. Läsande native-observer, svenska kontroller, riktig touch, paus, lokala rekord och felåterhämtning.",
+      "tests": [
+        {
+          "command": "npm test",
+          "result": "passed: 32 previous Node tests and 2 Python preservation tests covering both original SWF SHA256 values, reproducible native runtimes,337 byte-identical methods plus all old run instructions, and read-only opcode whitelist"
+        },
+        {
+          "command": "npm run test:shadow:browser (local Chromium147)",
+          "result": "passed for both original20080928 and20081005: actual browser keyboard back/forward, native key feedback, exact native timer/physics pause and no paused-time catch-up, real crash, normal retry and edition exit. Full original track driven to genuine x3403.28 finish with zero crashes,674 observed frames and real12.39-second records for both; native rules/collisions untouched. Read-only pilot sends DOM keyboard events through normal controls; no game-state injection."
+        },
+        {
+          "check": "native results and local persistence",
+          "result": "passed: original mode/position/timer determine finish; real lap times saved under own edition, displayed and restored after reload; edition switch removes active runtime and isolates records"
+        },
+        {
+          "check": "mobile and visual",
+          "result": "passed: real CDP multi-touch gas/lean, remaining thumb resumes gas after other lifts, cancel releases actual native key; 844x390/390x844/landscape recovery; desktop/crash/finish/mobile screenshots inspected"
+        },
+        {
+          "check": "network and storage failures",
+          "result": "passed: actual503 on interface, loader, SWF and WASM with fresh-document playable retry; unavailable storage still allows native driving; zero external HTTP requests including obsolete score endpoints"
+        },
+        {
+          "command": "npm run test:shadow:links",
+          "result": "passed local homepage: desktop/mobile embedded native gameplay and actual driving, both editions selectable, Retro inclusion/AI exclusion"
+        },
+        {
+          "command": "node scripts/test-games-navigation.cjs",
+          "result": "passed: previous playable quiz, categories/nested routes/all-games and AI music regression"
+        }
+      ],
       "publishedUrl": null,
       "implementationCommit": null,
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel"
+      "categoryLabel": "AI-remake av retrospel",
+      "sourceYear": 2008,
+      "originalReleaseDates": [
+        "2008-09-28",
+        "2008-10-05"
+      ],
+      "implementationRepository": "https://github.com/joynes/joynes.se",
+      "resourceAudit": "docs/games/shadow-racer-assets.json",
+      "sourceManifest": "games/shadow-racer/source-manifest.json",
+      "nativeObserverProof": "games/shadow-racer/native-observer-proof.json",
+      "catalogUrl": "https://joynes.github.io/joynes.se/#games/retro/shadow-racer"
     },
     {
       "id": "rall-026",

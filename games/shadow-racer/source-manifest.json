@@ -1,0 +1,29 @@
+{
+  "folder": "https://drive.google.com/drive/folders/1TT9grPo0r_9tHhVN6Lm97YAjC5JnzQh7",
+  "originals": [
+    {
+      "version": "20080928",
+      "driveId": "1qddu16lVULMHOZZj8u4Eg14MQhvnGZL_",
+      "file": "original/shadow-racer-20080928.swf",
+      "bytes": 20341,
+      "sha256": "ca347f3481ee254d60ec3bd856821b6f6546f8567120872509659844622a4e3b"
+    },
+    {
+      "version": "20081005",
+      "driveId": "13aBmuP42Lz5JKDKzJjwTRRV1P35LGqJq",
+      "file": "original/shadow-racer-20081005.swf",
+      "bytes": 32428,
+      "sha256": "4bf85f616c53e2f11fef8c40458e032c2555cbf0a8951bcddcf1f5ca26d73c89"
+    }
+  ],
+  "byteIdenticalDuplicate": {
+    "driveId": "1L4EEn7CWEmZkL1pTIPHa00xCvTOEawWK",
+    "matchesVersion": "20080928"
+  },
+  "ruffle": {
+    "version": "0.7.1",
+    "officialArchive": "https://github.com/ruffle-rs/ruffle/releases/download/v0.7.1/ruffle-0.7.1-web-selfhosted.zip",
+    "archiveSha256": "ef12edbee135d581a9cd523837d746da30a07a64dbf1cf472d2e472c656f4b5e",
+    "renderer": "canvas"
+  }
+}
