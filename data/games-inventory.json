@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "updatedAt": "2026-11-01",
   "objective": "Alla identifierade spel och relevanta spelversioner ska fungera på webben, testas och publiceras.",
-  "currentGame": "worldforge",
+  "currentGame": "shadow-racer",
   "games": [
     {
       "id": "web-quizzes",
@@ -1117,7 +1117,7 @@
       "id": "worldforge",
       "title": "WorldForge",
       "order": 17,
-      "status": "tested_catalog_pending",
+      "status": "published_verified",
       "sources": [
         {
           "kind": "github",
@@ -1153,6 +1153,18 @@
         {
           "check": "visual",
           "result": "desktop1280x800 and landscape touch844x390 screenshots inspected; actual own block, two real avatars, visible compact two-row dock outside 3D canvas"
+        },
+        {
+          "command": "HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ npm run test:worldforge:links",
+          "result": "passed on canonical published homepage: desktop/mobile own-tab link reaches actual live lobby; AI inclusion/retro exclusion and health ready"
+        },
+        {
+          "check": "canonical catalog files and Pages status",
+          "result": "passed: successful Pages run41336710668 for exact catalog commit66c76ea; all 3 catalog/document/audit hashes match canonical live URLs"
+        },
+        {
+          "check": "post-test cleanup",
+          "result": "passed: zero persistent blocks remain from either exact QA profile"
         }
       ],
       "publishedUrl": "https://worldforge-self-test.joynez11.chatgpt.site/",
@@ -1168,7 +1180,14 @@
       "catalogUrl": "https://joynes.github.io/joynes.se/#games/ai/worldforge",
       "hostingVersion": 38,
       "hostingDeployment": "appgdep_6ab03eb025b08191aee23a9f6c2206f8",
-      "sourceReportHash": "698d28efa57e9c317a483d7dae9619e8c22eb894066e16423ba834191c7a4f01"
+      "sourceReportHash": "698d28efa57e9c317a483d7dae9619e8c22eb894066e16423ba834191c7a4f01",
+      "catalogCommit": "66c76ea53cb3e403a8bff9a55ab3db924bbf6635",
+      "catalogDeploymentRun": 41336710668,
+      "publishedFileSha256": {
+        "assets/games-catalog.js": "2834c6b8d685eecf9aa5a35b98b702007223dcf7ca5cddbe2b4569f1ca428ead",
+        "docs/games/worldforge.md": "256ea3317260ef758a5dd94f5ecad5a3ab4d674caf40d39b9d81aa8bd26d065a",
+        "docs/games/worldforge-assets.json": "3fff753caa75822e9a4962033784b2449c5c461c9fb492ff999bee965c02b321"
+      }
     },
     {
       "id": "shadow-racer",

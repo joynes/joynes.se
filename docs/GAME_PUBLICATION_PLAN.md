@@ -45,7 +45,7 @@ Jaro och Grodan-mapparnas texter/grafik och fotoalbumet 10 -20 - rall är inte s
 | 14 | Hello Multiplayer Game | Publicerat och verifierat | Canvas/Socket.IO. Testa riktiga samtidiga klienter och server, inte bara en statisk sida. |
 | 15 | Three.js Network Game | Publicerat och verifierat | 3D/Socket.IO-prototyp. Testa spelare, anslutning, rörelse och touch med riktig server. |
 | 16 | Neon Interceptor | Publicerat och verifierat | Befintligt aktivt spelprojekt. Granska rätt checkout och instruktioner; bevara kampanj, bossar, butik och multiplayer. |
-| 17 | WorldForge | Speltestat, katalogpublicering återstår | Befintligt 3D-multiplayerspel. Testa byggande, uthållig lagring, avatarer och riktiga samtidiga klienter. |
+| 17 | WorldForge | Publicerat och verifierat | Befintligt 3D-multiplayerspel. Testa byggande, uthållig lagring, avatarer och riktiga samtidiga klienter. |
 | 18 | ShadowRacer | Väntar | ActionScript/Flash-källa och SWF i Drive. Granska spelmekanik och återanvänd originalmaterial i webbversion. |
 | 19 | Rall v026 — ASCII | Väntar | Drive-release som ZIP. Inspektera original och återskapa spelets faktiska regler. |
 | 20 | Rall v030 — Fighter | Väntar | Drive-release som ZIP. Inspektera före val av portningsmetod. |
@@ -139,3 +139,5 @@ Jaro och Grodan-mapparnas texter/grafik och fotoalbumet 10 -20 - rall är inte s
 - **Hello Multiplayer Game publicerat och länkat:** Fly-release `09c53f8` är speltestad på riktig server med tre samtidiga klienter. Katalogcommit `dc10cf6`, lyckad Pages-körning `41300742912`. Desktop/mobil öppnar spelplan och autopilot i egna fönster från den riktiga hemsidan och når en riktig serveranslutning. AI-/retrofiltrering samt tidigare spel/AI-musik godkända. Alla tre katalog-/HTML-/dokumentfiler byteverifierade vid integrationspubliceringen. Fjorton spel är klarmarkerade; nästa är Three.js Network Game.
 
 - **WorldForge speltestat på befintlig publicering:** källcommit `9751aa6`, Sites-version38. Alla 97 regeltester och 107 resurshashar stämmer. Verklig Chromium-spelning med två HTTP/D1-klienter, touch/cancel, tresekunders nätfördröjningar, figursparning/överföring, vanligt byggande, ägarskap, omladdning och hacka godkända. Egna testblock borttagna; användarnas värld bevarad. WebKit kunde inte starta efter datorns omstart och räknas inte som en ny godkänd körning. Lokal hemsideslänk och tidigare spel/musik godkända. Katalogpublicering och slutlig livekontroll återstår.
+
+- **WorldForge publicerat och verifierat från hemsidan:** https://worldforge-self-test.joynez11.chatgpt.site/ . Oförändrad källcommit `9751aa6`, katalogcommit `66c76ea`, lyckad Pages-körning `41336710668`. Dator/mobil öppnar verklig lobby från den kanoniska hemsidan och AI-/retrofiltreringen stämmer. Alla tre publicerade katalog-/dokument-/auditfiler matchar SHA256. Noll testblock kvar i D1. Sjutton spelposter är verifierade; nästa är ShadowRacer.
