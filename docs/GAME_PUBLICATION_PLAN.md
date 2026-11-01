@@ -33,7 +33,7 @@ Jaro och Grodan-mapparnas texter/grafik och fotoalbumet 10 -20 - rall är inte s
 | 2 | Milians Grimace Matte-spel — Gemini | Publicerat och verifierat | Bevara originalets spelregler; testa plus/minus, rätt/fel, omstart och mobil. |
 | 3 | Milians Grimace Matte-spel — Codex | Publicerat och verifierat | Separat implementation av samma spelidé. Bevara som egen spelbar variant. |
 | 4 | Läs- och ordquiz | Publicerat och verifierat | Källkod i SDL/C++; befintligt webbbygge finns i quiz_game_online. Kontrollera filer, inmatning och mobilstöd. |
-| 5 | Memit | Väntar | Övnings-, gissnings- och provlägen. Återställ saknade bibliotek och speldata före publicering. |
+| 5 | Memit | Lokalt testat | Övnings-, gissnings- och provlägen. Återställ saknade bibliotek och speldata före publicering. |
 | 6 | Skoluppgifter / Ordhjälten | Väntar | Granska aktuell webbversion och publicerad adress; bevara alla befintliga spellägen. |
 | 7 | Small Wonders / Inuti språkmodellen | Väntar | Källrepo och llmspel-play är samma projekt. Testa torn, spelbart kapitel, MicroGPT-demo och garden-vy. |
 | 8 | Marble Tables | Väntar | Unity-källa och marble-web-test är samma projekt. Verifiera webbbygget och styrningen. |
@@ -89,3 +89,5 @@ Jaro och Grodan-mapparnas texter/grafik och fotoalbumet 10 -20 - rall är inte s
 - **Läs- och ordquiz lokalt testat:** portat SDL/C++-reglerna till responsiv webb med originalbilder och bokstavsljud. Alla 35 ord/tre banor, riktiga ljuduppspelningar, bildavkodning, mynt, omspel, mobil/tangentbord och nätverksåterhämtning passerade. Slutresultat visas där originalets modulo hindrade avslut. Stavningen käx rättad till kex. Publicering återstår.
 
 - **Läs- och ordquiz publicerat och verifierat:** https://joynes.github.io/joynes.se/games/quiz-sdl/ . Spelcommit `bd39e6cfd3a42d621f70d77955115f0438f0f6cd`, Pages-körning `41278461087`. Alla 35 ord i tre banor, bilder, ljud, mynt, omspel, mobil/tangentbord och återhämtning testade på riktig adress. Hemsidans fyra spelbara inbäddningar passerade. Alla 112 kod-, data-, media- och katalogfiler verifierades byte för byte; inventeringen innehåller manifestets kontrollsumma. Nästa spel är Memit.
+
+- **Memit lokalt testat:** alla fyra ursprungliga lägen bevarade, inklusive negativ poäng och Levenshtein-delpoäng. GitHub saknar data/bilder; Drive-arbetskopians arabiska datafiler är tomma och Git-historiken samma initiala commit. Därför uttryckligen återställd Dota-uppsättning med 127 officiella Valve-namn/porträtt, inte ett påstående om identisk historisk roster. Alla 127 övningskort/provfrågor, tio bild- och skrivfrågor, bildavkodning, poäng, omspel, mobil/tangentbord, nätverksfel och inbäddning passerade. Publicering återstår.

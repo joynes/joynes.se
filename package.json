@@ -3,11 +3,12 @@
   "private": true,
   "scripts": {
     "preview": "python3 scripts/preview-games.py",
-    "test": "node --test scripts/test-music.cjs scripts/test-web-quizzes.mjs scripts/test-grimace-gemini.mjs scripts/test-grimace-codex.mjs scripts/test-quiz-sdl.mjs",
+    "test": "node --test scripts/test-music.cjs scripts/test-web-quizzes.mjs scripts/test-grimace-gemini.mjs scripts/test-grimace-codex.mjs scripts/test-quiz-sdl.mjs scripts/test-memit.mjs",
     "test:quiz:browser": "node scripts/test-web-quizzes-browser.cjs",
     "test:grimace:browser": "node scripts/test-grimace-gemini-browser.cjs",
     "test:grimace-codex:browser": "node scripts/test-grimace-codex-browser.cjs",
-    "test:reading:browser": "node scripts/test-quiz-sdl-browser.cjs"
+    "test:reading:browser": "node scripts/test-quiz-sdl-browser.cjs",
+    "test:memit:browser": "node scripts/test-memit-browser.cjs"
   },
   "devDependencies": {
     "playwright": "1.58.2"

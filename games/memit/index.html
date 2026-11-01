@@ -1,0 +1,16 @@
+<!doctype html><html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101010"><title>Memit – lär dig Dota-hjältarna</title><link rel="stylesheet" href="styles.css"><script type="module" src="app.mjs"></script></head><body><main>
+<header><p class="badge">AI-remake av retrospel · Original 2013</p><h1>Memit</h1><p>Lär dig känna igen Dota-hjältarna.</p></header>
+<p id="loading" role="status">Laddar hjältarna…</p><section id="error" hidden><h2>Hjältarna kunde inte laddas.</h2><button id="retry">Försök igen</button></section>
+<section id="menu" hidden><h2>Välj spelläge</h2><p id="dataset"></p><div class="modes">
+<button data-mode="practice"><strong>Öva</strong><span>Se alla bilder och namn i lugn och ro.</span></button>
+<button data-mode="guess"><strong>Gissa</strong><span>Tio namn, sex bilder per fråga. Rätt +1, fel −1.</span></button>
+<button data-mode="take10"><strong>Ta 10</strong><span>Skriv namnet på tio slumpade hjältar.</span></button>
+<button data-mode="exam"><strong>Prov</strong><span>Skriv namnet på alla hjältar.</span></button></div>
+<p class="note">Återställd Dota-uppsättning med officiella namn och bilder. <a href="source-notes.md">Läs om återställningen</a>.</p></section>
+<section id="play" hidden><div class="toolbar"><button id="back">Till menyn</button><span id="mode-label"></span></div><p id="position"></p><p id="score" role="status"></p><h2 id="prompt" tabindex="-1"></h2>
+<img id="portrait" alt="Dota-hjälte att namnge" hidden><p id="name" hidden></p><div id="grid" hidden aria-label="Välj rätt bild"></div>
+<form id="answer-form" hidden><label for="answer">Hjältens namn</label><div class="entry"><input id="answer" type="text" maxlength="80" required autocomplete="off" autocapitalize="off" spellcheck="false"><button type="submit">Svara</button></div></form>
+<p id="feedback" role="status" aria-live="polite"></p><button id="next" hidden>Nästa →</button><div id="result" hidden><h3 id="result-title"></h3><p id="result-detail"></p><button id="replay">Spela samma läge igen</button></div>
+<p id="typing-rules" class="note" hidden>Rätt namn ger +1 poäng. Fel svar ger −1, med avdraget minskat om stavningen är minst hälften rätt. Du får se rätt namn och skriva det igen. Poängen kan bli negativ. Stora bokstäver och mellanslag påverkar inte svaret.</p></section>
+<footer><a href="../../#games/retro">Alla retrospel</a><a href="source-notes.md">Om spelet och källorna</a><a href="https://www.dota2.com/heroes" target="_blank" rel="noopener">Dota 2 hos Valve</a></footer>
+</main></body></html>

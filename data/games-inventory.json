@@ -233,21 +233,50 @@
       "id": "memit",
       "title": "Memit",
       "order": 5,
-      "status": "pending",
+      "status": "tested_locally",
       "sources": [
         {
           "kind": "github",
           "url": "https://github.com/joynes/memit"
+        },
+        {
+          "kind": "google-drive",
+          "url": "https://drive.google.com/drive/folders/132I5hcv_54GvCpR1gem7aeGRxo4DfizT"
         }
       ],
       "work": "Övnings-, gissnings- och provlägen. Återställ saknade bibliotek och speldata före publicering.",
-      "tests": [],
+      "tests": [
+        {
+          "command": "npm test",
+          "result": "passed: 20 tests including all 127 asset hashes, all four modes, negative/similarity scoring, duplicate locking and regressions"
+        },
+        {
+          "command": "npm run test:memit:browser",
+          "result": "passed: all 127 practice cards and exam questions, ten grid questions, ten typing questions, image decoding, scoring, replay, keyboard, mobile and HTTP 503 recovery"
+        },
+        {
+          "command": "node scripts/test-games-navigation.cjs",
+          "result": "passed: five playable game iframes, Retro/AI routes and AI music regression"
+        },
+        {
+          "check": "visual",
+          "result": "desktop 1440x1000 and mobile 360x740 inspected; no horizontal overflow"
+        }
+      ],
       "publishedUrl": null,
       "implementationCommit": null,
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel"
+      "categoryLabel": "AI-remake av retrospel",
+      "sourceCommit": "0374025ade4f22aff6b1af45cf0cdf96c4ea5b22",
+      "restoredDataset": {
+        "title": "Dota 2 – återställd uppsättning",
+        "count": 127,
+        "date": "2026-11-01",
+        "source": "https://www.dota2.com/datafeed/herolist?language=english",
+        "note": "Original Dota pack absent from GitHub and available Drive archive; Drive Arabic data.js and strings.js are zero bytes. All four original modes restored using an explicitly labeled current official Valve portrait/name pack; exact historical roster cannot be verified."
+      }
     },
     {
       "id": "hardword",

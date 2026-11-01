@@ -1,6 +1,15 @@
 // Only tested releases belong here. The complete work queue is in data/games-inventory.json.
 window.joynesPublishedGames = [
   {
+    id: "memit",
+    title: "Memit",
+    kind: "retro",
+    description: "AI-remake av retrospel · Original 2013 · Fyra minneslägen med en återställd Dota-uppsättning: 127 hjältar, bildgissning och namnprov.",
+    href: "games/memit/",
+    source: "https://github.com/joynes/memit",
+    version: "2.0.0"
+  },
+  {
     id: "quiz-sdl",
     title: "Läs- och ordquiz",
     kind: "retro",
