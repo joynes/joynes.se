@@ -1,0 +1,6 @@
+// Only native filesystem changes are saved, never CPU/game-memory snapshots.
+function database(){return new Promise((resolve,reject)=>{const r=indexedDB.open('rall030-native-files',1);r.onupgradeneeded=()=>r.result.createObjectStore('files');r.onerror=()=>reject(r.error);r.onsuccess=()=>resolve(r.result);});}
+export async function loadFiles(){const db=await database();try{return await new Promise((resolve,reject)=>{const t=db.transaction('files'),r=t.objectStore('files').get('changes');r.onsuccess=()=>resolve(r.result||null);r.onerror=()=>reject(r.error);});}finally{db.close();}}
+export async function storeFiles(data){const db=await database();try{await new Promise((resolve,reject)=>{const t=db.transaction('files','readwrite');t.objectStore('files').put(data,'changes');t.oncomplete=resolve;t.onerror=()=>reject(t.error);});}finally{db.close();}}
+export async function clearFiles(){const db=await database();try{await new Promise((resolve,reject)=>{const t=db.transaction('files','readwrite');t.objectStore('files').delete('changes');t.oncomplete=resolve;t.onerror=()=>reject(t.error);});}finally{db.close();}}
+export function downloadFiles(data){const url=URL.createObjectURL(new Blob([data],{type:'application/zip'})),a=document.createElement('a');a.href=url;a.download='rall030-egna-filer.jsdos';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}

@@ -48,7 +48,7 @@ Jaro och Grodan-mapparnas texter/grafik och fotoalbumet 10 -20 - rall är inte s
 | 17 | WorldForge | Publicerat och verifierat | Befintligt 3D-multiplayerspel. Testa byggande, uthållig lagring, avatarer och riktiga samtidiga klienter. |
 | 18 | ShadowRacer | Publicerat och verifierat | ActionScript/Flash-källa och SWF i Drive. Granska spelmekanik och återanvänd originalmaterial i webbversion. |
 | 19 | Rall v026 — ASCII | Publicerat och verifierat | Drive-release som ZIP. Inspektera original och återskapa spelets faktiska regler. |
-| 20 | Rall v030 — Fighter | Väntar | Drive-release som ZIP. Inspektera före val av portningsmetod. |
+| 20 | Rall v030 — Fighter | Lokal verifiering pågår | Oförändrat DOS-original från 1999; musbrygga, återfunnen musik, två spelare och nativa redigerare. Publicering inväntar avslutade spel- och återhämtningstester. |
 | 21 | Rall v054 / rall0054 — Tank | Väntar | Originalbeskrivningen anger stridsvagnsduell. Bevara originalkartor, grafik, styrning och eventuella spelarlägen. |
 | 22 | Rall006 — Tank | Väntar | Befintlig remake behöver full kontroll mot originalets lag, rundor, kartor, normal/siege och powerups. |
 | 23 | Rall v066 — Tank2 | Väntar | Drive-release. Jämför med rall006; slå bara ihop poster om faktisk versionsrelation verifieras. |

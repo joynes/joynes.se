@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "preview": "python3 scripts/preview-games.py",
-    "test": "node --test scripts/test-music.cjs scripts/test-web-quizzes.mjs scripts/test-grimace-gemini.mjs scripts/test-grimace-codex.mjs scripts/test-quiz-sdl.mjs scripts/test-memit.mjs scripts/test-hardword.cjs scripts/test-godot-reading.mjs scripts/test-car-topview.mjs scripts/test-sdl-space.mjs && python3 scripts/test-shadow-racer.py && python3 scripts/test-rall-026.py",
+    "test": "node --test scripts/test-music.cjs scripts/test-web-quizzes.mjs scripts/test-grimace-gemini.mjs scripts/test-grimace-codex.mjs scripts/test-quiz-sdl.mjs scripts/test-memit.mjs scripts/test-hardword.cjs scripts/test-godot-reading.mjs scripts/test-car-topview.mjs scripts/test-sdl-space.mjs && python3 scripts/test-shadow-racer.py && python3 scripts/test-rall-026.py && python3 scripts/test-rall-030.py",
     "test:quiz:browser": "node scripts/test-web-quizzes-browser.cjs",
     "test:grimace:browser": "node scripts/test-grimace-gemini-browser.cjs",
     "test:grimace-codex:browser": "node scripts/test-grimace-codex-browser.cjs",
@@ -29,7 +29,13 @@
     "test:shadow:preservation": "python3 scripts/test-shadow-racer.py",
     "test:rall-026:preservation": "python3 scripts/test-rall-026.py",
     "test:rall-026:browser": "node scripts/test-rall-026-browser.cjs",
-    "test:rall-026:links": "node scripts/test-rall-026-navigation.cjs"
+    "test:rall-026:links": "node scripts/test-rall-026-navigation.cjs",
+    "test:rall-030:preservation": "python3 scripts/test-rall-030.py",
+    "test:rall-030:browser": "node scripts/test-rall-030-browser.cjs",
+    "test:rall-030:mobile": "node scripts/test-rall-030-mobile.cjs",
+    "test:rall-030:editors": "node scripts/test-rall-030-editors.cjs",
+    "test:rall-030:recovery": "node scripts/test-rall-030-recovery.cjs",
+    "test:rall-030:sound": "node scripts/test-rall-030-sound.cjs"
   },
   "devDependencies": {
     "playwright": "1.58.2"

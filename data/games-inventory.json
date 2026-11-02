@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-01",
+  "updatedAt": "2026-11-02",
   "objective": "Alla identifierade spel och relevanta spelversioner ska fungera på webben, testas och publiceras.",
   "currentGame": "rall-030",
   "games": [
@@ -1381,21 +1381,62 @@
       "id": "rall-030",
       "title": "Rall v030 — Fighter",
       "order": 20,
-      "status": "pending",
+      "status": "in_progress",
       "sources": [
         {
           "kind": "drive-release",
           "url": "https://drive.google.com/file/d/1FGPeHw10MCgX4vUwJNITWSx8r84M4TZ8/view"
         }
       ],
-      "work": "Drive-release som ZIP. Inspektera före val av portningsmetod.",
-      "tests": [],
+      "work": "Oförändrat DOS-original från 1999 i självhostad DOSBox. Webbkontroller, tvåspelarläge, nativa redigerare och filbackup testas lokalt före publicering.",
+      "tests": [
+        {
+          "command": "python3 scripts/test-rall-030.py",
+          "result": "passed: 173 original files byte-identical, eight separately attributed recovered XM files, 169-byte mouse adapter rebuilt from NASM source"
+        },
+        {
+          "command": "npm run test:rall-030:browser",
+          "result": "passed locally: real native-menu clicks, original campaign and short stage, ordinary movement/attacks, pause frame freeze, filesystem export/restart and native return to menu"
+        },
+        {
+          "command": "npm run test:rall-030:mobile",
+          "result": "passed locally: real touch Options menu, both original Human1/Human2 profiles in native HUD, simultaneous P1/P2 touches, independent lift/cancel; 390x844 and 844x390 visually inspected"
+        },
+        {
+          "command": "npm run test:rall-030:editors",
+          "result": "passed locally: native name edit/save, independent ZIP assertion Name = QA30 in CHARACT.CHA, backup import and native reload visually verified, stage editor opened"
+        },
+        {
+          "command": "npm run test:rall-030:recovery",
+          "result": "passed locally: four actual 503 failures followed by playable native main menu after fresh-document retry"
+        },
+        {
+          "command": "npm run test:rall-030:sound",
+          "result": "eight recovered XM tracks passed through native Sound Studio; extended MIDI check remains failing (silent native MIDI output), under investigation before publication"
+        }
+      ],
       "publishedUrl": null,
       "implementationCommit": null,
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel"
+      "categoryLabel": "AI-remake av retrospel",
+      "preservation": {
+        "originalYear": 1999,
+        "originalFileCount": 173,
+        "originalFilesByteIdentical": true,
+        "restoredMusicCount": 8,
+        "relatedMusicRevisions": [
+          "Nudro4",
+          "Hentia4",
+          "Dzew2x"
+        ],
+        "notes": "games/rall-030/source-notes.md"
+      },
+      "remainingBeforePublication": [
+        "Resolve or explicitly document original native MIDI playback limitation",
+        "Final release checks, homepage integration, commit/publish and canonical live verification"
+      ]
     },
     {
       "id": "rall-054",

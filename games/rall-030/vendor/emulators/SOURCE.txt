@@ -1,0 +1,7 @@
+Unmodified emulators8.5.2 runtime. GPLv2; see LICENSE.
+Emulators source and build scripts are included in sources/emulators-v8.5.2.tar.gz.
+Corresponding DOSBox submodule source is included in sources/dosbox-528578d.tar.gz.
+https://github.com/caiiiycuk/emulators/tree/v8.5.2
+https://github.com/js-dos/dosbox/tree/528578d5a6f76afd4d5ef4e722b5670826f1183a
+Libzip1.5 source is inside the emulators source archive; BSD notice: LICENSE_LIBZIP.
+The original Rall program and its assets are separate, unmodified DOS files and retain their original notice.
