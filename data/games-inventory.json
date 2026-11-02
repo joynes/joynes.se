@@ -47,7 +47,7 @@
       "deploymentCommit": "7babf4a60f3c3aff1e3443456a38586758b72316",
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel",
+      "categoryLabel": "AI remake of a retro game",
       "sourceCommit": "616543b83cb56b00d98c8c5bbfd04b175d1a0eef",
       "releaseFilesSha256": {
         "games/web-quizzes/index.html": "4a587a342a067a67d21063d6de8918d332c157cd51e6b2d304090caed5bc5007",
@@ -106,7 +106,7 @@
       "deploymentCommit": "e933196f98954c74c9917bb83d9f3374aeacdbc8",
       "category": "ai",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-spel",
+      "categoryLabel": "AI game",
       "sourceCommit": "f3b4d568066075a11cf7d2c43afae108a75a6b03",
       "verifiedFileHashes": {
         "games/grimace-gemini/index.html": "23b4a954ef9a2e0727a4141d49144901c4f80bd2f50b12f4e675f175e99dcecc",
@@ -163,7 +163,7 @@
       "deploymentCommit": "6a7a0e937f22c3b42d58eceb47da1c70c2fc1334",
       "category": "ai",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-spel",
+      "categoryLabel": "AI game",
       "sourceCommit": "07bf4ed2be5b219de95dc5a647f3d832f23b5e44",
       "verifiedFileHashes": {
         "games/grimace-codex/index.html": "ce032526246a59ec0e1d7b4369d34e27dab242410c369f71ff4f601349c4c0c2",
@@ -221,7 +221,7 @@
       "deploymentCommit": "bd39e6cfd3a42d621f70d77955115f0438f0f6cd",
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel",
+      "categoryLabel": "AI remake of a retro game",
       "sourceCommit": "fd14bf5c57febc4b17e8e2cfa4bd464787d026cc",
       "verifiedFiles": {
         "fileCount": 112,
@@ -280,7 +280,7 @@
       "deploymentCommit": "1c8d61f006fbac85eda189c45f786df21b3156f5",
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel",
+      "categoryLabel": "AI remake of a retro game",
       "sourceCommit": "0374025ade4f22aff6b1af45cf0cdf96c4ea5b22",
       "restoredDataset": {
         "title": "Dota 2 – återställd uppsättning",
@@ -374,7 +374,7 @@
       "deploymentCommit": "311927ceff5e9097a64fd0615393c853139279b4",
       "category": "ai",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-spel",
+      "categoryLabel": "AI game",
       "sourceCommit": "445d73d1c9e43593d4a5c4f6843790de2d611e13",
       "verifiedFiles": {
         "fileCount": 16,
@@ -453,7 +453,7 @@
       "deploymentCommit": "5d3c30caf93a756fc86e8bd00459b9a4886ee753",
       "category": "ai",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-spel",
+      "categoryLabel": "AI game",
       "sourceCommit": "c13d5ac7c0b652e247746ba8312c5c42a9dc8bb8",
       "verificationCommit": "e6b665abd359f072607c5c74c8463aa44a9c793b",
       "publicBuildCommit": "5d3c30caf93a756fc86e8bd00459b9a4886ee753",
@@ -498,7 +498,7 @@
           "url": "https://github.com/joynes/marble_tables"
         }
       ],
-      "work": "Unity-källa och marble-web-test är samma projekt. Verifiera webbbygget och styrningen.",
+      "work": "Original Unity physics preserved; English interface, native touch dragging and keyboard-only interaction on desktop and in mobile browser contexts.",
       "tests": [
         {
           "command": "npm run test:marble:browser",
@@ -523,37 +523,58 @@
         {
           "command": "npm run test:marble:touch-cancel",
           "result": "passed locally: real CDP touchCancel releases an actually held native marble under Unity gravity"
+        },
+        {
+          "command": "GAME_BASE_URL=https://joynes.github.io/joynes.se/games/marble-tables/ npm run test:marble:keyboard",
+          "result": "passed on canonical live site: keyboard-only start, actual native marble drag/hold/gravity, independent release, blur, native toolbar Tab/Enter and fullscreen cursor alignment; desktop and mobile contexts"
+        },
+        {
+          "command": "GAME_BASE_URL=https://joynes.github.io/joynes.se/games/marble-tables/ npm run test:marble:touch-cancel",
+          "result": "passed on canonical live site: actual CDP touchCancel releases a held native marble under gravity"
+        },
+        {
+          "command": "GAME_BASE_URL=https://joynes.github.io/joynes.se/games/marble-tables/ HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ npm run test:marble:browser",
+          "result": "passed on canonical live site after input update: native mouse/touch drag/hold/gravity, restart, fullscreen, homepage own-tab launch and both resource failure/retry cases"
+        },
+        {
+          "command": "python3 scripts/verify-game-assets.py marble-tables",
+          "result": "passed on canonical live site: all 12 game/native-engine/configuration/shared-portal/document assets match the tested release"
         }
       ],
       "publishedUrl": "https://joynes.github.io/joynes.se/games/marble-tables/",
-      "implementationCommit": "2d3ff421e0f2da60703a53ac6e6490fa352e1473",
-      "deploymentCommit": "2d3ff421e0f2da60703a53ac6e6490fa352e1473",
+      "implementationCommit": "5ea295cf092444bcee10434953fb12de9ba961b6",
+      "deploymentCommit": "5ea295cf092444bcee10434953fb12de9ba961b6",
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel",
+      "categoryLabel": "AI remake of a retro game",
       "sourceCommit": "b7994d00c0d740d2d7738028daf5c6528c110372",
       "originalWebBuildCommit": "4d139e8a9ba9b5ebe265dd5cb7301da2b4b3578d",
-      "pagesRun": 41284460478,
+      "pagesRun": 41444093434,
       "releaseFilesSha256": {
-        "games/marble-tables/index.html": "901a31675356e19bd2f7a25e92ffbae8affec6f1ea62cfa7b39b00c369247c9b",
-        "games/marble-tables/styles.css": "6835fe298b3fc839f949184a7b589e5ccd38a4f7cc45c2a1ec0c4325dafbe34f",
-        "games/marble-tables/app.js": "87c0c706df818d2bbc4ee9139faa1c05dcaaf9b58aad9b53c60d0b8f8840b5e3",
-        "games/marble-tables/StreamingAssets/UnityServicesProjectConfiguration.json": "2082dc7cfb373de4e9b12d43d9f0caf00a0e8c128ef860a627814840565bc7fe",
         "games/marble-tables/Build/webtest2.data": "6bbaa22ff6ee91245a53d91dc364fbee0f08a11596d90dd179cd00dc703ebe10",
+        "games/marble-tables/Build/webtest2.framework.js": "f919ef198c7e13ea63de927dfc3b300189b0efc910895846d06761872b039fb7",
         "games/marble-tables/Build/webtest2.loader.js": "b2857ce93350711103bd72fbc6b665f16bb09afdf65542b52549ecd05b812a54",
         "games/marble-tables/Build/webtest2.wasm": "21646613724f3e83081ea3ba8747c214dfdcc3f3afeee4b2aa079698255c55d7",
-        "games/marble-tables/Build/webtest2.framework.js": "f919ef198c7e13ea63de927dfc3b300189b0efc910895846d06761872b039fb7",
-        "assets/games-catalog.js": "0fe747dee926a08bb6ee902eb7ecccf277afdba50a8345fa8886cf71be478766",
-        "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82"
+        "games/marble-tables/StreamingAssets/UnityServicesProjectConfiguration.json": "2082dc7cfb373de4e9b12d43d9f0caf00a0e8c128ef860a627814840565bc7fe",
+        "games/marble-tables/app.js": "d1f32a802c8379d4e5497e11259ad867fcd3740e592766555954a18d1e70b48d",
+        "games/marble-tables/index.html": "a1f6bdee3fe1c4109745a54987bd6c0b10a9c626e8203160730df1ef18e34b89",
+        "games/marble-tables/keyboard-pointer.js": "5b632567ac794907c83cc9cb6b13da9db6134a9fd958e3bc9be470d424cda0e4",
+        "games/marble-tables/styles.css": "914fc2b4f7e261a0659d9c4056306ce45f98e84058ef4e81f153393891d6501d",
+        "index.html": "0376598b1426b7f2330e25981e21db37706e8493efe0e01a52597d60b223c633",
+        "assets/games-catalog.js": "23f140c3bad59d7367a47deada4bf8966298c64a8cb66fa87a26a89ab7c858c2",
+        "docs/games/marble-tables.md": "c874f19933c45e222382e5d243db2dd8493f3e6a9468656854b9ef3ceed225da"
       },
       "inputSupport": {
-        "physicalKeyboardDesktop": "passed locally",
-        "physicalKeyboardMobileContext": "passed locally",
-        "mobileTouch": "passed locally, including actual touchCancel",
+        "physicalKeyboardDesktop": "passed on canonical live site",
+        "physicalKeyboardMobileContext": "passed on canonical live site",
+        "mobileTouch": "passed on canonical live site, including actual touchCancel",
         "nativePhysicsPreserved": true,
         "physicalDeviceCheck": "not claimed",
-        "audit": "docs/INPUT_SUPPORT_AUDIT.md"
-      }
+        "audit": "docs/INPUT_SUPPORT_AUDIT.md",
+        "releaseCommit": "5ea295cf092444bcee10434953fb12de9ba961b6"
+      },
+      "previousWrapperCommit": "2d3ff421e0f2da60703a53ac6e6490fa352e1473",
+      "resourceAudit": "docs/games/marble-tables-assets.json"
     },
     {
       "id": "simple-driving",
@@ -602,7 +623,7 @@
       "deploymentCommit": "fcf01304dba49a6864346d3e43f4b4cb74f115f3",
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel",
+      "categoryLabel": "AI remake of a retro game",
       "sourceCommit": "3f606f1b872fd051db28ebca1f10a9600b6293fb",
       "investigation": "Shared city with unity_bus proven by 140 exact explicit transforms. Later source selects different police model; restored using all source body/wheel triangles and original texture. Older native bus version remains separately queued.",
       "originalWebBuildCommit": "3f18cf90f94f996dd1c414d58cb6cd8f23f481d6",
@@ -669,7 +690,7 @@
       "deploymentCommit": "0b229fe109e6e88ee984300991512851216ed5fc",
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel",
+      "categoryLabel": "AI remake of a retro game",
       "sourceCommit": "3f18cf90f94f996dd1c414d58cb6cd8f23f481d6",
       "webVersion": "2023-bus-web.1",
       "pagesRun": 41292196144,
@@ -740,7 +761,7 @@
       "deploymentCommit": "6a2a118629c635838aa29c77e051a2c36f802486",
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel",
+      "categoryLabel": "AI remake of a retro game",
       "sourceCommit": "97a4f8aa5381032663f51395c62bf5fa4811ccf3",
       "sourcePeriod": "2023-12–2024-01",
       "webPath": "games/godot-reading/",
@@ -804,7 +825,7 @@
       "deploymentCommit": "f2d65e8a50755b078d2f45af74537be2caf49ad4",
       "category": "ai",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-spel",
+      "categoryLabel": "AI game",
       "sourceCommit": "5450575feeb6d6b42c48e7d2708ea3863da424c8",
       "sourcePeriod": "2024-12",
       "webPath": "games/car-topview/",
@@ -870,7 +891,7 @@
       "deploymentCommit": "6b1f8695611e69e5c5107f77f0aea9c8158b0fff",
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel",
+      "categoryLabel": "AI remake of a retro game",
       "sourceCommit": "184adda998c5b91e07c0f7cfebe464d87cd4b09a",
       "sourcePeriod": "2020-07",
       "webPath": "games/sdl-space/",
@@ -941,7 +962,7 @@
       "deploymentCommit": "09c53f8d3988bfa19d629d64f53a8a450b4d47e3",
       "category": "ai",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-spel",
+      "categoryLabel": "AI game",
       "sourceCommit": "d7d6c33989481dce3e68364f8d438445f34d1e0c",
       "sourcePeriod": "2025-09",
       "implementationRepository": "https://github.com/joynes/test-network-game",
@@ -1004,7 +1025,7 @@
       "deploymentCommit": "c902a88145a7baf8a14635b4c10f7035e6ec506a",
       "category": "ai",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-spel",
+      "categoryLabel": "AI game",
       "sourceCommit": "e1106ae25e340f06f09a327351628451a0847694",
       "sourcePeriod": "2025",
       "implementationRepository": "https://github.com/joynes/test-rig-gemini",
@@ -1089,7 +1110,7 @@
       "deploymentCommit": "e497f79e63f7ad402430a3db15a3e1fc2847aa49",
       "category": "ai",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-spel",
+      "categoryLabel": "AI game",
       "sourceCommit": "e497f79e63f7ad402430a3db15a3e1fc2847aa49",
       "sourcePeriod": "2026-09–2026-11",
       "implementationRepository": "https://github.com/joynes/neon-interceptor",
@@ -1188,7 +1209,7 @@
       "deploymentCommit": "9751aa60e7709732cf46feff2ca022014276d2a3",
       "category": "ai",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-spel",
+      "categoryLabel": "AI game",
       "implementationRepository": "https://github.com/joynes/worldforge-self-test",
       "externalUrl": "https://worldforge-self-test.joynez11.chatgpt.site/",
       "embed": false,
@@ -1264,7 +1285,7 @@
       "deploymentCommit": "5be413dc98f23ab3a849cfc56a3a0c8a5114e1c7",
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel",
+      "categoryLabel": "AI remake of a retro game",
       "sourceYear": 2008,
       "originalReleaseDates": [
         "2008-09-28",
@@ -1350,7 +1371,7 @@
       "deploymentCommit": "a87e7a40a4377e7d699229deb0ad1f6d33f018ca",
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel",
+      "categoryLabel": "AI remake of a retro game",
       "sourceYear": 1998,
       "originalReleaseDates": [
         "1998-12-09",
@@ -1461,6 +1482,10 @@
         {
           "command": "python3 scripts/verify-rall-030-assets.py",
           "result": "passed on canonical live site: all 44 game/runtime/source/original/catalog/index/document SHA-256 values match; deployed ledger independently verified as a 45th asset"
+        },
+        {
+          "command": "python3 scripts/verify-rall-030-assets.py",
+          "result": "passed after English shared-portal update: all 44 assets match, native game release unchanged"
         }
       ],
       "publishedUrl": "https://joynes.github.io/joynes.se/games/rall-030/",
@@ -1468,7 +1493,7 @@
       "deploymentCommit": "c5a99d18cbe217901a0bf9c4d7668e7ca880f1f7",
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel",
+      "categoryLabel": "AI remake of a retro game",
       "preservation": {
         "originalYear": 1999,
         "originalFileCount": 173,
@@ -1530,11 +1555,12 @@
         "games/rall-030/vendor/emulators/wlibzip.wasm": "25064d970c42ca7ea0fdb8b058204d6e41cc8826a676219677772f5591e8337b",
         "games/rall-030/vendor/mouse-compat/ALMOUSE.COM": "200942106e626955510b84426802de31790979c1f55d225d7bb65cb74cd3ba37",
         "games/rall-030/vendor/mouse-compat/almouse.asm": "307b24361235edbf526d49ba4c9bc6323c73c4ded087a70832ab903834d2c1c5",
-        "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82",
-        "assets/games-catalog.js": "f5e02cbfdfd541c2bca80946146a1f3ff368d71cc52d776c0f57e4eab15753d1",
+        "index.html": "0376598b1426b7f2330e25981e21db37706e8493efe0e01a52597d60b223c633",
+        "assets/games-catalog.js": "23f140c3bad59d7367a47deada4bf8966298c64a8cb66fa87a26a89ab7c858c2",
         "docs/games/rall-030.md": "fd819f7eccea21de808aa561486b291bd37c5c500bae36d770c7ab9477440168",
-        "docs/games/rall-030-assets.json": "80411a1d15306ab4dca154962f475abdadc49a3ef33675cfcb70942fbb7c2852"
-      }
+        "docs/games/rall-030-assets.json": "2e2a1d363e9d184f253b694da284e83eec56fc9b76cb0966211b08f8b7bad1ad"
+      },
+      "sharedInterfaceCommit": "5ea295cf092444bcee10434953fb12de9ba961b6"
     },
     {
       "id": "rall-054",
@@ -1571,7 +1597,7 @@
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel"
+      "categoryLabel": "AI remake of a retro game"
     },
     {
       "id": "rall-006",
@@ -1595,7 +1621,7 @@
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel"
+      "categoryLabel": "AI remake of a retro game"
     },
     {
       "id": "rall-066",
@@ -1615,7 +1641,7 @@
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel"
+      "categoryLabel": "AI remake of a retro game"
     },
     {
       "id": "rall-073",
@@ -1639,7 +1665,7 @@
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel"
+      "categoryLabel": "AI remake of a retro game"
     },
     {
       "id": "rall-080",
@@ -1663,7 +1689,7 @@
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel"
+      "categoryLabel": "AI remake of a retro game"
     },
     {
       "id": "rall-008",
@@ -1687,7 +1713,7 @@
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel"
+      "categoryLabel": "AI remake of a retro game"
     },
     {
       "id": "rall-082",
@@ -1707,7 +1733,7 @@
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI-remake av retrospel"
+      "categoryLabel": "AI remake of a retro game"
     }
   ],
   "candidatesToInspect": [

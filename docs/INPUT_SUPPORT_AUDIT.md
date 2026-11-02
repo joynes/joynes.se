@@ -19,7 +19,8 @@ For each game, verify:
 - **Marble Tables:** keyboard-only native marble manipulation now passes in desktop
   and mobile browser contexts. Real touch end/cancel, gravity, independent key
   release, blur cleanup, toolbar keyboard navigation and fullscreen also pass
-  locally. Latest canonical release evidence is recorded in the inventory.
+  locally and on the canonical public site. All 12 released assets match the
+  tested version; the five native Unity build/configuration files are unchanged.
 - **rall0054, v080 and rall008:** still incomplete web adaptations. They must pass
   the complete input checklist before being marked as published and verified.
 - **Other published games:** retain their existing release evidence. The added
