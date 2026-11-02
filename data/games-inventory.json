@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "updatedAt": "2026-11-02",
   "objective": "Alla identifierade spel och relevanta spelversioner ska fungera på webben, testas och publiceras.",
-  "currentGame": "rall-030",
+  "currentGame": "rall-054",
   "games": [
     {
       "id": "web-quizzes",
@@ -1381,14 +1381,14 @@
       "id": "rall-030",
       "title": "Rall v030 — Fighter",
       "order": 20,
-      "status": "in_progress",
+      "status": "published_verified",
       "sources": [
         {
           "kind": "drive-release",
           "url": "https://drive.google.com/file/d/1FGPeHw10MCgX4vUwJNITWSx8r84M4TZ8/view"
         }
       ],
-      "work": "Oförändrat DOS-original från 1999 i självhostad DOSBox. Webbkontroller, tvåspelarläge, nativa redigerare och filbackup testas lokalt före publicering.",
+      "work": "Originalets DOS-Fighter från 1999 publicerat och verifierat: oförändrade originalfiler, två mänskliga profiler, datorfigurer, tangentbord/touch, MOD/MIDI och nativa redigerare med filbackup.",
       "tests": [
         {
           "command": "python3 scripts/test-rall-030.py",
@@ -1417,11 +1417,39 @@
         {
           "command": "npm run test:rall-030:links",
           "result": "passed locally after initial zero-size frame guard: playable native fighter in homepage iframe on 390x844 and 1280x1000, Retro included and AI excluded"
+        },
+        {
+          "command": "GAME_BASE_URL=https://joynes.github.io/joynes.se/games/rall-030/ npm run test:rall-030:browser",
+          "result": "passed on canonical live site: native menus, campaign/short stage, keyboard movement/attacks, pause frame freeze, filesystem backup/restart, original return to menu"
+        },
+        {
+          "command": "GAME_BASE_URL=https://joynes.github.io/joynes.se/games/rall-030/ npm run test:rall-030:mobile",
+          "result": "passed on canonical live site: actual touch menu, native Human1/Human2 HUD, simultaneous P1/P2 touch and independent lift/cancel, portrait and landscape"
+        },
+        {
+          "command": "GAME_BASE_URL=https://joynes.github.io/joynes.se/games/rall-030/ npm run test:rall-030:editors",
+          "result": "passed on canonical live site: native name edit/save, independent backup ZIP content, import and native reload, original stage editor"
+        },
+        {
+          "command": "GAME_BASE_URL=https://joynes.github.io/joynes.se/games/rall-030/ npm run test:rall-030:sound",
+          "result": "passed on canonical live site: all eight recovered XM and all eight original MIDI tracks produce native audio"
+        },
+        {
+          "command": "GAME_BASE_URL=https://joynes.github.io/joynes.se/games/rall-030/ npm run test:rall-030:recovery",
+          "result": "passed on canonical live site: actual app/loader/bundle/WASM 503 failures recover to playable main menu after fresh-document retry"
+        },
+        {
+          "command": "HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ npm run test:rall-030:links",
+          "result": "passed on canonical live site: actual original fighter in homepage iframe on 390x844 and 1280x1000; Retro included, AI excluded"
+        },
+        {
+          "command": "python3 scripts/verify-rall-030-assets.py",
+          "result": "passed on canonical live site: all 44 game/runtime/source/original/catalog/index/document SHA-256 values match; deployed ledger independently verified as a 45th asset"
         }
       ],
-      "publishedUrl": null,
-      "implementationCommit": null,
-      "deploymentCommit": null,
+      "publishedUrl": "https://joynes.github.io/joynes.se/games/rall-030/",
+      "implementationCommit": "c5a99d18cbe217901a0bf9c4d7668e7ca880f1f7",
+      "deploymentCommit": "c5a99d18cbe217901a0bf9c4d7668e7ca880f1f7",
       "category": "retro",
       "webAdaptation": "ai",
       "categoryLabel": "AI-remake av retrospel",
@@ -1437,9 +1465,60 @@
         ],
         "notes": "games/rall-030/source-notes.md"
       },
-      "remainingBeforePublication": [
-        "Push tested release, await GitHub Pages and verify canonical gameplay and all 44 asset hashes"
-      ]
+      "sourceYear": 1999,
+      "sourceManifest": "games/rall-030/source-manifest.json",
+      "resourceAudit": "docs/games/rall-030-assets.json",
+      "catalogUrl": "https://joynes.github.io/joynes.se/#games/retro/rall-030",
+      "implementationRepository": "https://github.com/joynes/joynes.se",
+      "catalogCommit": "c5a99d18cbe217901a0bf9c4d7668e7ca880f1f7",
+      "catalogDeploymentRun": 41372438155,
+      "publishedFileSha256": {
+        "games/rall-030/app.mjs": "4f4133be5e6e7e09d5b68fa6f8e7db4fe9877eed375b488df37af186b48e397d",
+        "games/rall-030/audio-profile.cfg": "e52a2b0019d2e10342c39b190e45e608d5e2886293bb4aeeaea484b8422e7492",
+        "games/rall-030/audio.mjs": "4a39ad6220b87888c02be9656286c809355ab7a6c8ecfc4d566e4567c0d3526b",
+        "games/rall-030/cursor-template.json": "39962a489eb5edb583ac66e64415926f0605d5f1bee098fdbd782232e6a28f08",
+        "games/rall-030/cursor.mjs": "1f2f7197a3a7bfc653b43d8244bc398c2d574eec27b6e540f9e46e246cbe7268",
+        "games/rall-030/dosbox.conf": "b28cecd44d677fbeaf3d1787a0393db02a21ade7a695c4d30a3c84022a370b87",
+        "games/rall-030/font.json": "de9bde1990b45b7fe2f2b8c308ce58c5a192798824d42a71e0b22ebb210091a4",
+        "games/rall-030/game.jsdos": "b35f1e3e5b4deb52a44e6f132e288a4baee7148472cf7ce23178ad0567ea36ca",
+        "games/rall-030/headers.json": "79358a095a7d55144cfbd596b0777543daaa1b7a6a245b97f2cd9763378cea3e",
+        "games/rall-030/index.html": "f8c7dec278e1715977daf56218b597851e8351957f133c75a90f1e149cb54221",
+        "games/rall-030/observe.mjs": "7c821f8c88392085dacb54243b0519e3772c8a7ca987c9bebcd330796f3f045f",
+        "games/rall-030/original/rall-v030-fighter.zip": "06565cd6ab475ae9ff5bffa35f833813161be6a300e3c5036b17893e20dbe098",
+        "games/rall-030/recovered-music/bacols.xm": "ead695ca85c24f3a7fac9808f1e467ffd8f62148eff8afa10f5eada2eb1dcdea",
+        "games/rall-030/recovered-music/drakz.xm": "776f8c9b7201ce425904986a230a43bbffb029b48074e0633424af72a05f3feb",
+        "games/rall-030/recovered-music/druno.xm": "7888462cf3549c093b5210abc236e130fcdebe5f2f5873dd48bae6bd31d4131c",
+        "games/rall-030/recovered-music/dzew2x.xm": "7d8df5fbd954434d827185889a27e7c4ec08045e50f05b811fd5628030385358",
+        "games/rall-030/recovered-music/hentia4.xm": "e555038259da6ba7bbc349f5c89064f13941ffe9a4690eaf22b598e1a7679a50",
+        "games/rall-030/recovered-music/nudro4.xm": "f80ac16147d3793756ebcbf8787dd73ce7e49932b550b5e1d218aa7e22262a41",
+        "games/rall-030/recovered-music/sdrugzl.xm": "27763f662c3102b8d2bae99cd88cd94151a17e7994e92fd3525a9d664d45b7a9",
+        "games/rall-030/recovered-music/sectop.xm": "bb86a441146ae784dae75b34da7608c94a55546c857a16ea7c9476158a39635d",
+        "games/rall-030/recovered-music/sources.json": "3e472c39250d35a830b49805daefb39536b66afb4fa189edb414db6dc8c818fa",
+        "games/rall-030/saves.mjs": "773fc20c34e0a44d27daa9e9e185e7fe2d57c6003ee8e0caf5039531b5d31805",
+        "games/rall-030/source-manifest.json": "48a6b400b9f5765621e4c914d5a098e26d577525b7c353622f33143066c03b3e",
+        "games/rall-030/source-notes.md": "42136a3a9eed4fd2cd0dc9c4dc932987afe3d59011acb4d4fe567291b7920b59",
+        "games/rall-030/styles.css": "36340eaf14bef32c60a294f8ad6e250457d0425ccf210234add130f8fd40899b",
+        "games/rall-030/vendor/cwsdpmi/CWSDPMI.DOC": "fb436f4e7c8678fb5d4fafc9587f96ad97b4f4bd658a27680eda1f59a9dd0930",
+        "games/rall-030/vendor/cwsdpmi/CWSDPMI.EXE": "d382764a98cd86e604a817564283df62ac852b17f39eac76e2e34cd98352e5c8",
+        "games/rall-030/vendor/cwsdpmi/SOURCE.txt": "211d75aba8913203808c27a6d9fa82ab26c38378f661e2e1f66ff8cb68c8a14e",
+        "games/rall-030/vendor/cwsdpmi/csdpmi5s.zip": "1198a2ee09eccf19361411a546b43d6cfb83d6f22247bb3316ee683d093ef63a",
+        "games/rall-030/vendor/emulators/LICENSE": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+        "games/rall-030/vendor/emulators/LICENSE_LIBZIP": "a9cd243af1ddc15a33cc331b23a76c7685d63e3557c37cfb4ed124eeb3cfba8c",
+        "games/rall-030/vendor/emulators/SOURCE.txt": "c29c6b9cbd5d11def27b4b988c77bee6d725e82756d819469a6bcd8a100f61f1",
+        "games/rall-030/vendor/emulators/emulators.js": "066176a9e9e6babfb5388552a5154f3c1f81ed778af3bf4a1f9f904161e3c4bb",
+        "games/rall-030/vendor/emulators/sources/dosbox-528578d.tar.gz": "797efaf22246bbc5b2e6be0a6c791a58addd2bca330e0aa93232780a77e06019",
+        "games/rall-030/vendor/emulators/sources/emulators-v8.5.2.tar.gz": "4f92834936f774ad1e0f8d2cc0fc05dc73cd9962d2b8da0a09f56139a2a70f28",
+        "games/rall-030/vendor/emulators/wdosbox.js": "a0806cc99e0c66bc594e7efd78eb22d675af7ebb0a4de543697cbe5cd7440a2e",
+        "games/rall-030/vendor/emulators/wdosbox.wasm": "b33afba80de1a420c123086e5952d135de041f9e85d4444170e29d9249ec049c",
+        "games/rall-030/vendor/emulators/wlibzip.js": "b8e55c2aa4c96e961c9965f289c0f40b5d44f02a557dcf980ddc29787b493842",
+        "games/rall-030/vendor/emulators/wlibzip.wasm": "25064d970c42ca7ea0fdb8b058204d6e41cc8826a676219677772f5591e8337b",
+        "games/rall-030/vendor/mouse-compat/ALMOUSE.COM": "200942106e626955510b84426802de31790979c1f55d225d7bb65cb74cd3ba37",
+        "games/rall-030/vendor/mouse-compat/almouse.asm": "307b24361235edbf526d49ba4c9bc6323c73c4ded087a70832ab903834d2c1c5",
+        "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82",
+        "assets/games-catalog.js": "f5e02cbfdfd541c2bca80946146a1f3ff368d71cc52d776c0f57e4eab15753d1",
+        "docs/games/rall-030.md": "fd819f7eccea21de808aa561486b291bd37c5c500bae36d770c7ab9477440168",
+        "docs/games/rall-030-assets.json": "80411a1d15306ab4dca154962f475abdadc49a3ef33675cfcb70942fbb7c2852"
+      }
     },
     {
       "id": "rall-054",
