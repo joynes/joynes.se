@@ -1412,7 +1412,11 @@
         },
         {
           "command": "npm run test:rall-030:sound",
-          "result": "eight recovered XM tracks passed through native Sound Studio; extended MIDI check remains failing (silent native MIDI output), under investigation before publication"
+          "result": "passed locally: all eight recovered XM and all eight original MIDI tracks produce native audio through Sound Studio; separate Allegro FM profile, Stop before mode change and IRQ 7 / DMA 1"
+        },
+        {
+          "command": "npm run test:rall-030:links",
+          "result": "passed locally after initial zero-size frame guard: playable native fighter in homepage iframe on 390x844 and 1280x1000, Retro included and AI excluded"
         }
       ],
       "publishedUrl": null,
@@ -1434,8 +1438,7 @@
         "notes": "games/rall-030/source-notes.md"
       },
       "remainingBeforePublication": [
-        "Resolve or explicitly document original native MIDI playback limitation",
-        "Final release checks, homepage integration, commit/publish and canonical live verification"
+        "Push tested release, await GitHub Pages and verify canonical gameplay and all 44 asset hashes"
       ]
     },
     {

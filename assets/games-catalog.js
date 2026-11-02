@@ -1,6 +1,16 @@
 // Only tested releases belong here. The complete work queue is in data/games-inventory.json.
 window.joynesPublishedGames = [
   {
+    id: "rall-030",
+    title: "Rall v030 — Fighter",
+    kind: "retro",
+    description: "AI-remake av retrospel · Original 1999 · Sidscrollande slagsmål med händer, svärd och datorstyrda motståndare. Originalbanor, två spelare, musik och egna figur- och banredigerare. Tangentbord och touch.",
+    href: "games/rall-030/",
+    source: "https://github.com/joynes/joynes.se/blob/master/games/rall-030/source-notes.md",
+    sourceLabel: "Källor och bevarande",
+    version: "1999-web.1"
+  },
+  {
     id: "rall-026",
     title: "Rall v026 — ASCII",
     kind: "retro",

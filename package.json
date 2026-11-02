@@ -35,7 +35,8 @@
     "test:rall-030:mobile": "node scripts/test-rall-030-mobile.cjs",
     "test:rall-030:editors": "node scripts/test-rall-030-editors.cjs",
     "test:rall-030:recovery": "node scripts/test-rall-030-recovery.cjs",
-    "test:rall-030:sound": "node scripts/test-rall-030-sound.cjs"
+    "test:rall-030:sound": "node scripts/test-rall-030-sound.cjs",
+    "test:rall-030:links": "node scripts/test-rall-030-navigation.cjs"
   },
   "devDependencies": {
     "playwright": "1.58.2"

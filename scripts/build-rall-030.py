@@ -13,7 +13,7 @@ with zipfile.ZipFile(archive) as src,zipfile.ZipFile(ROOT/'game.jsdos','w',zipfi
         assert entry.filename.startswith('rall003/') and '..' not in Path(entry.filename).parts
         data=src.read(entry);dst.writestr(copy.copy(entry),data)
         if not entry.is_dir():manifest['originalFiles'][entry.filename]=sha(data)
-    additions={'rall003/ALMOUSE.COM':(ROOT/'vendor/mouse-compat/ALMOUSE.COM').read_bytes(),'rall003/CWSDPMI.EXE':(ROOT/'vendor/cwsdpmi/CWSDPMI.EXE').read_bytes(),'.jsdos/dosbox.conf':(ROOT/'dosbox.conf').read_bytes(),'.jsdos/jsdos.json':b'{"version":"8"}\n'}
+    additions={'rall003/allegro.cfg':(ROOT/'audio-profile.cfg').read_bytes(),'rall003/ALMOUSE.COM':(ROOT/'vendor/mouse-compat/ALMOUSE.COM').read_bytes(),'rall003/CWSDPMI.EXE':(ROOT/'vendor/cwsdpmi/CWSDPMI.EXE').read_bytes(),'.jsdos/dosbox.conf':(ROOT/'dosbox.conf').read_bytes(),'.jsdos/jsdos.json':b'{"version":"8"}\n'}
     for item in meta:
         data=(ROOT/'recovered-music'/item['file']).read_bytes();target='rall003/music/mod/'+aliases[item['file']];additions[target]=data
         manifest['recoveredMusic'].append({**item,'runtimePath':target,'sha256':sha(data),'relatedRevision':item['file'] in ['nudro4.xm','hentia4.xm','dzew2x.xm']})

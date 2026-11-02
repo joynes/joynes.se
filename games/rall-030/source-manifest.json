@@ -178,6 +178,7 @@
     "rall003/graph/Stage/Default/back7.pcx": "16908ecb10e091ee146636e747ba0046db4615f0c0fd71208019f4abf9e1fcb2"
   },
   "supportFiles": {
+    "rall003/allegro.cfg": "e52a2b0019d2e10342c39b190e45e608d5e2886293bb4aeeaea484b8422e7492",
     "rall003/ALMOUSE.COM": "200942106e626955510b84426802de31790979c1f55d225d7bb65cb74cd3ba37",
     "rall003/CWSDPMI.EXE": "d382764a98cd86e604a817564283df62ac852b17f39eac76e2e34cd98352e5c8",
     ".jsdos/dosbox.conf": "b28cecd44d677fbeaf3d1787a0393db02a21ade7a695c4d30a3c84022a370b87",
@@ -265,7 +266,7 @@
       "relatedRevision": true
     }
   ],
-  "bundleSha256": "2f114a0836c38bf026c816d6a02b9fc04da55b2bbff26d13e3305989f9f92bb3",
+  "bundleSha256": "b35f1e3e5b4deb52a44e6f132e288a4baee7148472cf7ce23178ad0567ea36ca",
   "emulator": {
     "version": "8.5.2",
     "backend": "dosboxDirect"

@@ -1,6 +1,6 @@
 # Rall v030 Fighter: bevarande och webbanpassning
 
-Status: under lokal verifiering. Spelet är ännu inte tillagt i den publika spelkatalogen.
+Webbversion av originalet från 1999. Aktuell verifieringsstatus förs i repots `data/games-inventory.json`.
 
 ## Ursprung
 
@@ -96,3 +96,10 @@ Originalet kan lämna en gammal sista siffra kvar när en statusräknare blir
 kortare (exempelvis 100 till 75 ser ut som 750). Webben visar därför inga
 egna numeriska kopior av dessa fält. QA:s `hud` är en läsning av visade
 pixlar, inte ett påstående om det interna talet i spelminnet.
+
+### MIDI-ljudprofil
+
+Originalets `sound.cfg` är bevarad. En separat nytillagd `allegro.cfg`
+(`audio-profile.cfg` i webbpaketet) anger `midi_card = 1`, vilket ger fungerande
+FM-MIDI i den emulerade ljudhårdvaran. Utan denna profil väljs en MIDI-utgång
+som inte ger ljud i webbläsaren. Inga originalfiler eller MIDI-data ändras.

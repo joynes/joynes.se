@@ -12,7 +12,7 @@ function press(owner,key){if(!ci||paused||held.has(owner))return;held.set(owner,
 function release(owner){const key=held.get(owner);if(key===undefined)return;held.delete(owner);const n=counts.get(key)-1;if(n)counts.set(key,n);else{counts.delete(key);ci?.sendKeyEvent(key,false);}}
 function releaseAll(){for(const owner of [...held.keys()])release(owner);ci?.sendMouseButton(0,false);}
 async function pulse(key){const owner=Symbol();press(owner,key);await wait(80);release(owner);}
-function resize(w,h){$('view').width=w;$('view').height=h;ctx=$('view').getContext('2d',{alpha:false});img=ctx.createImageData(w,h);}
+function resize(w,h){if(!w||!h)return;$('view').width=w;$('view').height=h;ctx=$('view').getContext('2d',{alpha:false});img=ctx.createImageData(w,h);}
 function render(rgb,rgba){if(!img||(!rgb&&!rgba))return;if(rgba)img.data.set(rgba);else for(let a=0,b=0;a<rgb.length;a+=3,b+=4){img.data[b]=rgb[a];img.data[b+1]=rgb[a+1];img.data[b+2]=rgb[a+2];img.data[b+3]=255;}ctx.putImageData(img,0,0);frames++;}
 async function snapshot(){return ci?ci.screenshot():null;}
 async function cursor(){const im=await snapshot();return im?findCursor(im.data,im.width,im.height,templates):null;}
