@@ -125,10 +125,10 @@ async function mission(page,box,pose,mobile,cdp){
  await home.goto(homebase+'#games/retro');
  await home.locator('#contentList .item-title a').getByText(gameTitle,{exact:true}).click();
  await home.waitForFunction(id=>location.hash==='#games/retro/'+id,gameId);
- const [opened]=await Promise.all([home.context().waitForEvent('page'),home.getByRole('link',{name:'Spela',exact:true}).first().click()]);
+ const [opened]=await Promise.all([home.context().waitForEvent('page'),home.getByRole('link',{name:'Play',exact:true}).first().click()]);
  await opened.waitForLoadState();assert.equal(new URL(opened.url()).pathname,new URL(base).pathname);
  await opened.getByRole('button',{name:'Starta körspelet'}).waitFor();
- await home.goto(homebase+'#games/ai');await home.waitForFunction(()=>document.querySelector('#stageTitle')?.textContent==='AI-spel');
+ await home.goto(homebase+'#games/ai');await home.waitForFunction(()=>document.querySelector('#stageTitle')?.textContent==='AI games');
  assert(!(await home.locator('#contentList').innerText()).includes(gameTitle));
  await opened.close();await home.close();console.log('Homepage: Retro detail, actual game link in own tab and AI exclusion passed');
  }

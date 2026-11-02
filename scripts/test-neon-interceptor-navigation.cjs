@@ -6,7 +6,7 @@ try{for(const viewport of [{width:390,height:844},{width:1280,height:1000}]){
  const page=await browser.newPage({viewport,reducedMotion:'reduce'}),errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto(base+'#games/ai/neon-interceptor');await page.waitForFunction(()=>document.querySelector('#stageTitle')?.textContent==='Neon Bastion & Manta');
  assert.equal(await page.locator('iframe').count(),0);
- for(const [label,url,variant,sectors] of [['Spela Bastion','https://neon-interceptor.joynez11.chatgpt.site/','interceptor',20],['Spela Manta','https://manta-interceptor.joynez11.chatgpt.site/','manta',21]]){
+ for(const [label,url,variant,sectors] of [['Play Bastion','https://neon-interceptor.joynez11.chatgpt.site/','interceptor',20],['Play Manta','https://manta-interceptor.joynez11.chatgpt.site/','manta',21]]){
   const link=page.getByRole('link',{name:label,exact:true}).first();assert.equal(await link.getAttribute('href'),url);assert.equal(await link.getAttribute('target'),'_blank');
   const [game]=await Promise.all([page.context().waitForEvent('page'),link.click()]);game.on('pageerror',e=>errors.push(e.message));
   if(viewport.width<viewport.height){await game.locator('.orientation-notice').waitFor();await game.setViewportSize({width:844,height:390});}

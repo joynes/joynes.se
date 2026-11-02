@@ -12,13 +12,13 @@ async function launch() {
   start.disabled = true;
   progress.hidden = false;
   progress.value = 0;
-  status.textContent = 'Laddar kulbanan…';
+  status.textContent = 'Loading playground…';
   try {
     if (typeof createUnityInstance !== 'function') await new Promise((resolve, reject) => {
       const script = document.createElement('script');
       script.src = 'Build/webtest2.loader.js';
       script.onload = resolve;
-      script.onerror = () => { script.remove(); reject(new Error('Laddaren saknas')); };
+      script.onerror = () => { script.remove(); reject(new Error('The loader is unavailable')); };
       document.body.append(script);
     });
     instance = await createUnityInstance(canvas, {
@@ -26,16 +26,17 @@ async function launch() {
       codeUrl: 'Build/webtest2.wasm', streamingAssetsUrl: 'StreamingAssets',
       companyName: 'DefaultCompany', productName: 'Marble tables', productVersion: '1.0.2',
       matchWebGLToCanvasSize: false, devicePixelRatio: 1,
-      showBanner(message, type) { if (type === 'error') status.textContent = 'Spelmotorn rapporterar ett fel. Prova att börja om eller ladda om sidan.'; }
+      showBanner(message, type) { if (type === 'error') status.textContent = 'The game engine reported an error. Try restarting or reloading the page.'; }
     }, value => { progress.value = value; });
     start.hidden = true;
     restart.disabled = false;
-    status.textContent = 'Kulbanan är igång. Dra en kula och släpp!';
+    status.textContent = 'Playground ready. Drag a marble with touch, mouse or the keyboard crosshair.';
     document.body.dataset.state = 'playing';
+    canvas.focus({preventScroll:true});
   } catch (error) {
-    status.textContent = 'Spelet kunde inte laddas. Kontrollera anslutningen och försök igen.';
+    status.textContent = 'The game could not load. Check your connection and try again.';
     start.disabled = false;
-    start.textContent = 'Försök igen';
+    start.textContent = 'Try again';
     document.body.dataset.state = 'error';
   } finally { busy = false; progress.hidden = true; }
 }
@@ -46,6 +47,8 @@ document.querySelector('#fullscreen').addEventListener('click', async () => {
   try {
     if (document.fullscreenElement) await document.exitFullscreen();
     else await document.querySelector('#stage').requestFullscreen();
-  } catch { status.textContent = 'Helskärm stöds inte här. Prova webbläsarens helskärmsläge eller vrid skärmen.'; }
+  } catch { status.textContent = 'Fullscreen is unavailable here. Try the browser fullscreen mode or rotate the screen.'; }
 });
 canvas.addEventListener('pointerdown', () => canvas.focus({preventScroll: true}));
+
+const keyboardPointer=installKeyboardPointer(canvas,document.querySelector('#stage'),()=>Boolean(instance));

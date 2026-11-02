@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "updatedAt": "2026-11-02",
-  "objective": "Alla identifierade spel och relevanta spelversioner ska fungera på webben, testas och publiceras.",
+  "objective": "Make every identified game and relevant version playable on the web, tested and published.",
   "currentGame": "rall-054",
   "games": [
     {
@@ -515,6 +515,14 @@
         {
           "command": "HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ node scripts/test-games-navigation.cjs",
           "result": "passed: six previous games and music/category regressions"
+        },
+        {
+          "command": "npm run test:marble:keyboard",
+          "result": "passed locally in desktop and touch-enabled mobile contexts: keyboard-only start, native marble drag/hold/gravity, independent key release, blur cleanup, native Tab/button navigation and fullscreen cursor alignment"
+        },
+        {
+          "command": "npm run test:marble:touch-cancel",
+          "result": "passed locally: real CDP touchCancel releases an actually held native marble under Unity gravity"
         }
       ],
       "publishedUrl": "https://joynes.github.io/joynes.se/games/marble-tables/",
@@ -537,6 +545,14 @@
         "games/marble-tables/Build/webtest2.framework.js": "f919ef198c7e13ea63de927dfc3b300189b0efc910895846d06761872b039fb7",
         "assets/games-catalog.js": "0fe747dee926a08bb6ee902eb7ecccf277afdba50a8345fa8886cf71be478766",
         "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82"
+      },
+      "inputSupport": {
+        "physicalKeyboardDesktop": "passed locally",
+        "physicalKeyboardMobileContext": "passed locally",
+        "mobileTouch": "passed locally, including actual touchCancel",
+        "nativePhysicsPreserved": true,
+        "physicalDeviceCheck": "not claimed",
+        "audit": "docs/INPUT_SUPPORT_AUDIT.md"
       }
     },
     {
@@ -1524,7 +1540,7 @@
       "id": "rall-054",
       "title": "Rall v054 / rall0054 — Tank",
       "order": 21,
-      "status": "pending",
+      "status": "in_progress",
       "sources": [
         {
           "kind": "github",
@@ -1539,8 +1555,17 @@
           "url": "https://drive.google.com/file/d/1kIgJjs2cZA_IERTcx5XekalUaSSO6aTS/view"
         }
       ],
-      "work": "Originalbeskrivningen anger stridsvagnsduell. Bevara originalkartor, grafik, styrning och eventuella spelarlägen.",
-      "tests": [],
+      "work": "Inspect the original 2002 Windows release and all six maps; preserve gameplay and media. Test a browser compatibility runtime because the referenced C++ source directory is absent from the inspected archives.",
+      "tests": [
+        {
+          "check": "source audit",
+          "result": "81 release files in the original SFX ZIP, no C/C++ sources; local and Drive folders also lack the project-referenced src directory."
+        },
+        {
+          "check": "local compatibility probe",
+          "result": "Unchanged PE32 executable starts in Boxedwine/Wine and reaches 640x480 graphics after generated-log staging fix; black screen remains under investigation. Not playable or published."
+        }
+      ],
       "publishedUrl": null,
       "implementationCommit": null,
       "deploymentCommit": null,
@@ -1725,5 +1750,18 @@
     "retro": "Äldre original som görs om till webbspel med AI. Ursprung och AI-remake märks separat.",
     "ai": "Nyare spel från ungefär de senaste två åren, enligt Johannes kategorisering.",
     "publicationDoesNotChangeOriginalEra": true
+  },
+  "requirements": {
+    "language": "English",
+    "input": [
+      "Mobile touch",
+      "Physical keyboard on desktop and mobile"
+    ],
+    "inputAudit": "docs/INPUT_SUPPORT_AUDIT.md",
+    "priorityGames": [
+      "rall-054",
+      "rall-080",
+      "rall-008"
+    ]
   }
 }

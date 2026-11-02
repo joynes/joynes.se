@@ -1380,7 +1380,7 @@
     </section>
 
     <section id="musicControls" class="music-controls" aria-label="Music modes and playlists" hidden></section>
-    <nav id="gameControls" class="music-controls" aria-label="Spelkategorier" hidden></nav>
+    <nav id="gameControls" class="music-controls" aria-label="Game categories" hidden></nav>
 
     <section id="contentList" class="content-list" aria-label="Selected archive items"></section>
 
@@ -1489,14 +1489,14 @@
       {
         id: "games",
         name: "Games",
-        sub: "Retrospel och nyare AI-spel.",
+        sub: "Retro games and newer AI games.",
         glyph: "G",
         kicker: "Playable relic zone",
         title: "Games",
-        description: "Retrospel görs om för webben med AI. Här samlas också de nyare AI-spelen. Välj en kategori eller öppna ett spel.",
+        description: "Retro games adapted for the web using AI, alongside newer AI games. Choose a category or open a game.",
         featured: [
-          ["Retrospel", "#games/retro"],
-          ["AI-spel", "#games/ai"]
+          ["Retro games", "#games/retro"],
+          ["AI games", "#games/ai"]
         ],
         items: [
           ["Rall v080 - fighter", "Game archive folder", [["Folder", "https://drive.google.com/drive/folders/1oiYMpORqC5d_hAyliZp1rQJ1WzlqnhMs"]]],
@@ -1565,7 +1565,7 @@
     gamesCategory.items.forEach(item => { item[3] = { ...item[3], gameKind: "retro" }; });
     for (const game of window.joynesPublishedGames || []) {
       gamesCategory.items.unshift([game.title, game.description,
-        [[game.playLabel || "Spela", game.href], ...(game.modes || []), [game.sourceLabel || "Källkod", game.source]],
+        [[game.playLabel || "Play", game.href], ...(game.modes || []), [game.sourceLabel || "Source code", game.source]],
         {slug: game.id, gameKind: game.kind, embed: game.embed === false ? null : game.href, embedTitle: game.title, embedOnDetail: true}]);
     }
 
@@ -1728,8 +1728,8 @@
       const isGameFilter = categoryId === "games" && ["retro", "ai"].includes(subroute);
       let category = isAIView ? musicLibrary.aiView : categories.find((entry) => entry.id === categoryId) || categories[0];
       if (isGameFilter) {
-        category = {...gamesCategory, gameFilter: subroute, title: subroute === "retro" ? "Retrospel" : "AI-spel",
-          description: subroute === "retro" ? "Äldre spel som görs om för webben med AI. Arkiv och spelbara webbversioner samlas här." : "De nyare spelen, skapade med AI. Fler testade spel publiceras här efter hand.",
+        category = {...gamesCategory, gameFilter: subroute, title: subroute === "retro" ? "Retro games" : "AI games",
+          description: subroute === "retro" ? "Older games adapted for the web using AI. Browse archives and playable web versions." : "Newer games created with AI. More tested games will be published here.",
           items: gamesCategory.items.filter(item => item[3]?.gameKind === subroute)};
       }
       const itemSlug = (isAIView && categoryId === "music") || isGameFilter ? versionSlug : subroute;
@@ -2153,14 +2153,14 @@
       if (controls.hidden) return;
       const links = document.createElement("div");
       links.className = "music-mode-links";
-      for (const [filter, label] of [["", "Alla spel"], ["retro", "Retrospel"], ["ai", "AI-spel"]]) {
+      for (const [filter, label] of [["", "All games"], ["retro", "Retro games"], ["ai", "AI games"]]) {
         const link = internalLinkButton(label, filter ? `#games/${filter}` : "#games");
         if ((category.gameFilter || "") === filter) link.setAttribute("aria-current", "page");
         links.append(link);
       }
       const note = document.createElement("p");
       note.className = "item-meta";
-      note.textContent = "Retrospel: äldre original, nya webbversioner gjorda med AI. AI-spel: de nyare spelen.";
+      note.textContent = "Retro games: older originals adapted for the web using AI. AI games: newer games.";
       controls.replaceChildren(links, note);
     }
 
@@ -2196,7 +2196,7 @@
       if (!items.length && category.id === "games") {
         const empty = document.createElement("p");
         empty.className = "item-meta";
-        empty.textContent = "Nästa spel håller på att testas. Här visas det när publiceringen är klar.";
+        empty.textContent = "The next game is being tested. It will appear here once published.";
         list.replaceChildren(empty);
         return;
       }

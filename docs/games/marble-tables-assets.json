@@ -1,0 +1,17 @@
+{
+  "game": "marble-tables",
+  "assets": {
+    "games/marble-tables/Build/webtest2.data": "6bbaa22ff6ee91245a53d91dc364fbee0f08a11596d90dd179cd00dc703ebe10",
+    "games/marble-tables/Build/webtest2.framework.js": "f919ef198c7e13ea63de927dfc3b300189b0efc910895846d06761872b039fb7",
+    "games/marble-tables/Build/webtest2.loader.js": "b2857ce93350711103bd72fbc6b665f16bb09afdf65542b52549ecd05b812a54",
+    "games/marble-tables/Build/webtest2.wasm": "21646613724f3e83081ea3ba8747c214dfdcc3f3afeee4b2aa079698255c55d7",
+    "games/marble-tables/StreamingAssets/UnityServicesProjectConfiguration.json": "2082dc7cfb373de4e9b12d43d9f0caf00a0e8c128ef860a627814840565bc7fe",
+    "games/marble-tables/app.js": "d1f32a802c8379d4e5497e11259ad867fcd3740e592766555954a18d1e70b48d",
+    "games/marble-tables/index.html": "a1f6bdee3fe1c4109745a54987bd6c0b10a9c626e8203160730df1ef18e34b89",
+    "games/marble-tables/keyboard-pointer.js": "5b632567ac794907c83cc9cb6b13da9db6134a9fd958e3bc9be470d424cda0e4",
+    "games/marble-tables/styles.css": "914fc2b4f7e261a0659d9c4056306ce45f98e84058ef4e81f153393891d6501d",
+    "index.html": "0376598b1426b7f2330e25981e21db37706e8493efe0e01a52597d60b223c633",
+    "assets/games-catalog.js": "23f140c3bad59d7367a47deada4bf8966298c64a8cb66fa87a26a89ab7c858c2",
+    "docs/games/marble-tables.md": "c874f19933c45e222382e5d243db2dd8493f3e6a9468656854b9ef3ceed225da"
+  }
+}
