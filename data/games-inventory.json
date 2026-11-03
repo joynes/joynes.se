@@ -986,11 +986,15 @@
         {
           "check": "renewed-input-audit-2026-11-03-local",
           "result": "Full native gameplay/audio/recovery suite and all desktop/mobile-keyboard/actual-touch checks passed. Fixed stale key repeats after pause/focus; added Space for native sound and native mouse-up cleanup. Two contacts, cancel, held-touch restart, actual frame-window blur/resume and fully visible embedded landscape board passed. Earlier quiz/reading/driving frame regressions passed. Native JS/WASM/data/license and packaged assets unchanged."
+        },
+        {
+          "check": "renewed-input-audit-2026-11-03-live",
+          "result": "Full native gameplay/audio/recovery and expanded desktop/phone-portrait/phone-landscape input suites passed on canonical public URLs. Real touch ownership, cancellation, held-touch restart, keyboard native sound, alias/diagonal/release, pause/focus cleanup, visible embedded board after menu return and genuine frame-window blur/resume passed. Reading and five quiz frame regressions passed live. All 12 release files SHA256 match; Pages 41712783066 succeeded."
         }
       ],
       "publishedUrl": "https://joynes.github.io/joynes.se/games/sdl-space/",
-      "implementationCommit": "6b1f8695611e69e5c5107f77f0aea9c8158b0fff",
-      "deploymentCommit": "6b1f8695611e69e5c5107f77f0aea9c8158b0fff",
+      "implementationCommit": "1baa58a2d93ed0fdc19a7b19f943848e9f54b393",
+      "deploymentCommit": "1baa58a2d93ed0fdc19a7b19f943848e9f54b393",
       "category": "retro",
       "webAdaptation": "ai",
       "categoryLabel": "AI remake of a retro game",
@@ -1012,10 +1016,11 @@
         "index.html": "d32a76a53b611b8c4e0c266d217ec74c68c8cc924b712647e5443a3bc8aa0436",
         "docs/games/sdl-space.md": "58a44e43e8d62615215f5c5b3426f99282d9249005be2ea9833332151a875c0e"
       },
-      "deploymentRun": 41296724273,
+      "deploymentRun": 41712783066,
       "websiteSection": "retro",
-      "renewedAuditStatus": "local-passed-awaiting-live",
-      "renewedAuditSourceCommit": "468838a"
+      "renewedAuditStatus": "passed",
+      "renewedAuditSourceCommit": "468838a",
+      "renewedAuditCommit": "ac82ccd"
     },
     {
       "id": "network-2d",

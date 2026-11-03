@@ -392,23 +392,23 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/sdl-space",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "ceef3ab7d1719c49789a917ce539f56bc9d2ca47",
-      "auditStatus": "local-passed-awaiting-live",
+      "auditStatus": "passed",
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/sdl-space/",
       "sourceHead": "184adda998c5b91e07c0f7cfebe464d87cd4b09a",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "e2210e5e21fc64a0e143d127be3abf29689c455a",
-      "repositoryHeadCommit": "468838ae5c6ec245bb139c33d184d1e5a89f4e2d",
+      "repositoryHeadCommit": "ac82ccda6e8a6d2e7f28fbad78f0b2662248636a",
       "auditUrl": "https://github.com/joynes/sdl2-samples-with-wasm-support/tree/audit/2026-11-03-baseline",
-      "auditCommit": "468838ae5c6ec245bb139c33d184d1e5a89f4e2d",
+      "auditCommit": "ac82ccda6e8a6d2e7f28fbad78f0b2662248636a",
       "auditEvidence": {
         "game": "sdl-space",
         "date": "2026-11-03",
         "baselineCommit": "ceef3ab7d1719c49789a917ce539f56bc9d2ca47",
-        "result": "local-passed-awaiting-live",
+        "result": "passed",
         "scope": "Actual Chromium desktop and mobile browser contexts, with touch enabled and keyboard events in both. Physical phones/tablets and Safari are not covered by this result.",
-        "checks": "Passed full native browser survival/collision/score/replay/audio/four-file-recovery checks plus desktop and touch-enabled portrait/landscape keyboard-only input, diagonal/alias independent release, pause/focus stale-repeat cleanup, actual Space-triggered native audio, keyboard and held-touch restart, two-finger drag ownership and cancel, real embedded frame-window focus/pause/resume and complete landscape scene. Earlier reading/quiz/driving frame regressions passed.",
-        "findings": "Fixed stale held-key repeats resuming movement after pause/focus. Added keyboard Space for original native click sound, native mouse-up on touch cleanup, and English interface/source notes. Found and fixed homepage scroll clipping after returning from the menu. All original native JS/WASM/data/license and bundled assets unchanged.",
+        "checks": "Passed local and canonical-live full native survival/collision/score/replay/audio/recovery tests and expanded desktop/mobile keyboard plus real touch input in portrait/landscape. Includes aliases/diagonal/release, stale repeats after pause/focus, keyboard native audio/restart, two-finger ownership/cancel, held-touch restart, actual frame-window blur/resume and complete visible board after returning from the menu. Reading and five quiz frame regressions passed live; driving regression passed locally. All 12 live release files SHA256 match Pages 41712783066 / 1baa58a2d93ed0fdc19a7b19f943848e9f54b393.",
+        "findings": "Fixed stale repeats, added Space for original native sound and native touch mouse-up cleanup; English interface/notes. Fixed homepage landscape scrolling when returning to game focus. A live quiz regression initially clicked before its module loaded; harness now waits for full document readiness and passes. All original engine/data/license/assets unchanged.",
         "testScripts": [
           "scripts/test-sdl-space-browser.cjs",
           "scripts/test-sdl-space-input.cjs",
@@ -416,7 +416,10 @@
           "scripts/test-sdl-space.mjs"
         ],
         "publicUrl": "https://joynes.github.io/joynes.se/games/sdl-space/"
-      }
+      },
+      "auditFixCommit": "468838a",
+      "deploymentCommit": "1baa58a2d93ed0fdc19a7b19f943848e9f54b393",
+      "deploymentRun": 41712783066
     },
     {
       "id": "network-2d",
@@ -644,5 +647,5 @@
       "publicUrl": null
     }
   ],
-  "currentAuditGame": "sdl-space"
+  "currentAuditGame": "network-2d"
 }

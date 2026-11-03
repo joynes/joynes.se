@@ -62,7 +62,7 @@ The machine-readable queue, source links, version relationships, test evidence a
 | 10 | Bus Test Game | Excluded at owner request; do not republish |
 | 11 | Godot Reading Game | Published and verified under earlier release checks |
 | 12 | Top-down Driving | Renewed local/live keyboard and touch audit passed |
-| 13 | SDL Space / hinderbana | Published and verified under earlier release checks |
+| 13 | SDL Space — Survival | Renewed local/live keyboard and touch audit passed |
 | 14 | Hello Multiplayer Game | Published and verified under earlier release checks |
 | 15 | 3D Network Game | Published and verified under earlier release checks |
 | 16 | Neon Bastion & Manta | Published and verified under earlier release checks |
