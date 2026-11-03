@@ -737,17 +737,21 @@
     "Visible fullscreen control operable by touch and keyboard, with entry/exit and both orientations verified.",
     "Keyboard input retained on phones/tablets; independent release, cancellation, lost focus and restart verified through the browser."
   ],
-  "currentAuditFocus": "concise English homepage copy, then SDL fullscreen",
+  "currentAuditFocus": "in-game fullscreen and secondary-finger actions",
   "englishInterfaceRequirement": "All website interface text must be concise and in English.",
-  "homepageEnglishCopyStatus": "local-passed-awaiting-live",
+  "homepageEnglishCopyStatus": "passed",
   "homepageEnglishCopyEvidence": {
-    "result": "local-passed-awaiting-live",
+    "result": "passed",
     "shortEnglishGameLabels": 7,
     "shortenedGameDescriptions": 18,
     "checks": "Unit/preservation tests, desktop/mobile music sections and routes, embedded game navigation, attached-keyboard/touch frame checks, Small Wonders launch routes, existing story URLs and book-reader controls passed. Mobile screenshots inspected.",
     "releaseFilesSha256": {
       "index.html": "88f081676712447228a197d2c8a2c0d258b71c4b0528be4e867259c60fd4e111",
       "assets/games-catalog.js": "5b175bd702ea0130e3ba590c960f039d57b05a200c72d0b019fe8be52fbddc16"
-    }
-  }
+    },
+    "deploymentCommit": "8e3772876a9d83509cd3ae667fe76bd36127dd09",
+    "deploymentRun": 41720750972,
+    "liveChecks": "Canonical desktop/mobile game navigation and music sections passed. Both public runtime files match the tested hashes."
+  },
+  "originalContentTranslationScope": "awaiting-user-choice"
 }
