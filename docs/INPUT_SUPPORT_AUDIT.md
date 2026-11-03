@@ -14,6 +14,8 @@ For each game, verify:
 4. Release one held input without releasing another. Cancel touch, change focus,
    pause and restart without leaving any input held.
 5. Keep touch controls inside the game view, without button rows below the game.
+   Use the existing AI games as the interaction reference: floating thumb control
+   or direct dragging for movement, with action buttons over the opposite edge.
 6. Provide a visible fullscreen control, usable by touch and keyboard. Test entry,
    exit and the complete game plus controls in portrait and landscape.
 7. Check the published homepage launch path.
