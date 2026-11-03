@@ -36,7 +36,8 @@
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "b811889c0c1174a27c6629766e59d6be2a3935df",
       "repositoryHeadCommit": "b811889c0c1174a27c6629766e59d6be2a3935df",
-      "auditUrl": "https://github.com/joynes/web_quizzes/tree/audit/2026-11-03-baseline"
+      "auditUrl": "https://github.com/joynes/web_quizzes/tree/audit/2026-11-03-baseline",
+      "englishInterfaceAuditStatus": "pending"
     },
     {
       "id": "grimace-gemini",
@@ -71,7 +72,8 @@
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "5629f74cb3bd8faa936942a3ca5c66cddebc3ddd",
       "repositoryHeadCommit": "5629f74cb3bd8faa936942a3ca5c66cddebc3ddd",
-      "auditUrl": "https://github.com/joynes/test-gemini-math-game/tree/audit/2026-11-03-baseline"
+      "auditUrl": "https://github.com/joynes/test-gemini-math-game/tree/audit/2026-11-03-baseline",
+      "englishInterfaceAuditStatus": "pending"
     },
     {
       "id": "grimace-codex",
@@ -106,7 +108,8 @@
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "ec659b6944b24f3825133ee9d79c10301e50d6fd",
       "repositoryHeadCommit": "ec659b6944b24f3825133ee9d79c10301e50d6fd",
-      "auditUrl": "https://github.com/joynes/test-codex-math-game/tree/audit/2026-11-03-baseline"
+      "auditUrl": "https://github.com/joynes/test-codex-math-game/tree/audit/2026-11-03-baseline",
+      "englishInterfaceAuditStatus": "pending"
     },
     {
       "id": "quiz-sdl",
@@ -141,7 +144,8 @@
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "b6e2421b9cd11d84710c9029773e3db502dc1597",
       "repositoryHeadCommit": "b6e2421b9cd11d84710c9029773e3db502dc1597",
-      "auditUrl": "https://github.com/joynes/quiz_game/tree/audit/2026-11-03-baseline"
+      "auditUrl": "https://github.com/joynes/quiz_game/tree/audit/2026-11-03-baseline",
+      "englishInterfaceAuditStatus": "pending"
     },
     {
       "id": "memit",
@@ -176,7 +180,8 @@
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "b6b0a4b50b7e60bdef1f26a5a7a324c22726f9af",
       "repositoryHeadCommit": "b6b0a4b50b7e60bdef1f26a5a7a324c22726f9af",
-      "auditUrl": "https://github.com/joynes/memit/tree/audit/2026-11-03-baseline"
+      "auditUrl": "https://github.com/joynes/memit/tree/audit/2026-11-03-baseline",
+      "englishInterfaceAuditStatus": "pending"
     },
     {
       "id": "hardword",
@@ -223,7 +228,8 @@
       "sourceRestorationCommit": "3564d5164f82c5e95726021b93bde3284a967c9d",
       "repositoryHeadCommit": "3564d5164f82c5e95726021b93bde3284a967c9d",
       "auditUrl": "https://github.com/joynes/hardword/tree/audit/2026-11-03-baseline",
-      "inGameControlsAndFullscreenStatus": "pending"
+      "inGameControlsAndFullscreenStatus": "pending",
+      "englishInterfaceAuditStatus": "pending"
     },
     {
       "id": "small-wonders",
@@ -260,7 +266,8 @@
       },
       "auditTestCommit": "0999254eb63b1d173acf8cedb42033e945d6f24a",
       "auditUrl": "https://github.com/joynes/llmspel/tree/audit/2026-11-03-baseline",
-      "inGameControlsAndFullscreenStatus": "pending"
+      "inGameControlsAndFullscreenStatus": "pending",
+      "englishInterfaceAuditStatus": "pending"
     },
     {
       "id": "marble-tables",
@@ -305,7 +312,8 @@
         }
       },
       "auditTestCommit": "48d2bdf566020a00ecf2e509626318897def263a",
-      "inGameControlsAndFullscreenStatus": "pending"
+      "inGameControlsAndFullscreenStatus": "pending",
+      "englishInterfaceAuditStatus": "pending"
     },
     {
       "id": "godot-reading",
@@ -348,7 +356,8 @@
         }
       },
       "auditTestCommit": "d7418fac35e3f12ee487541734fd47e8203f8c7e",
-      "inGameControlsAndFullscreenStatus": "pending"
+      "inGameControlsAndFullscreenStatus": "pending",
+      "englishInterfaceAuditStatus": "pending"
     },
     {
       "id": "car-topview",
@@ -388,7 +397,8 @@
       "deploymentCommit": "70f663b9fee52f8b53bdf9f264638ed2d2f2abfb",
       "deploymentRun": 41718411431,
       "inGameControlsAndFullscreenStatus": "passed",
-      "secondaryActionTouchAuditStatus": "passed"
+      "secondaryActionTouchAuditStatus": "passed",
+      "englishInterfaceAuditStatus": "passed"
     },
     {
       "id": "sdl-space",
@@ -427,7 +437,8 @@
       "auditFixCommit": "468838a",
       "deploymentCommit": "1baa58a2d93ed0fdc19a7b19f943848e9f54b393",
       "deploymentRun": 41712783066,
-      "inGameControlsAndFullscreenStatus": "pending"
+      "inGameControlsAndFullscreenStatus": "pending",
+      "englishInterfaceAuditStatus": "passed"
     },
     {
       "id": "network-2d",
@@ -483,7 +494,8 @@
       "deploymentCommit": "b0fa91de733e236b0441cb09d66529bc99020f98",
       "auditCommit": "cc9c98d896153fa34eafe69b16f0b400b458708e",
       "catalogCommit": "f907ce217f136b7d12e06935c3f87ffef9d72b79",
-      "catalogDeploymentRun": 41715530963
+      "catalogDeploymentRun": 41715530963,
+      "englishInterfaceAuditStatus": "passed"
     },
     {
       "id": "network-3d",
@@ -502,7 +514,8 @@
       "sourceRestorationCommit": "2fdb82ea1c01fd831002343d8063f1a2fd51e402",
       "repositoryHeadCommit": "2fdb82ea1c01fd831002343d8063f1a2fd51e402",
       "auditUrl": "https://github.com/joynes/test-rig-gemini/tree/audit/2026-11-03-baseline",
-      "inGameControlsAndFullscreenStatus": "pending"
+      "inGameControlsAndFullscreenStatus": "pending",
+      "englishInterfaceAuditStatus": "pending"
     },
     {
       "id": "neon-interceptor",
@@ -522,7 +535,8 @@
       "sourceRestorationCommit": "6fd7a27158930bf062ae81d1f8dd88d8eb0a44b2",
       "repositoryHeadCommit": "6fd7a27158930bf062ae81d1f8dd88d8eb0a44b2",
       "auditUrl": "https://github.com/joynes/neon-interceptor/tree/audit/2026-11-03-baseline",
-      "inGameControlsAndFullscreenStatus": "pending"
+      "inGameControlsAndFullscreenStatus": "pending",
+      "englishInterfaceAuditStatus": "pending"
     },
     {
       "id": "worldforge",
@@ -542,7 +556,8 @@
       "sourceRestorationCommit": "9b6e537398a12aeb212491f8fe671faa9d22ff55",
       "repositoryHeadCommit": "9b6e537398a12aeb212491f8fe671faa9d22ff55",
       "auditUrl": "https://github.com/joynes/worldforge-self-test/tree/audit/2026-11-03-baseline",
-      "inGameControlsAndFullscreenStatus": "pending"
+      "inGameControlsAndFullscreenStatus": "pending",
+      "englishInterfaceAuditStatus": "pending"
     },
     {
       "id": "shadow-racer",
@@ -561,7 +576,8 @@
       "sourceTreeVerified": true,
       "sourceTreeScope": "New repository; archived original and web files are inside web-release.",
       "auditUrl": "https://github.com/joynes/shadow-racer/tree/audit/2026-11-03-baseline",
-      "inGameControlsAndFullscreenStatus": "pending"
+      "inGameControlsAndFullscreenStatus": "pending",
+      "englishInterfaceAuditStatus": "pending"
     },
     {
       "id": "rall-026",
@@ -580,7 +596,8 @@
       "sourceTreeVerified": true,
       "sourceTreeScope": "New repository; archived original and web files are inside web-release.",
       "auditUrl": "https://github.com/joynes/rall-026/tree/audit/2026-11-03-baseline",
-      "inGameControlsAndFullscreenStatus": "pending"
+      "inGameControlsAndFullscreenStatus": "pending",
+      "englishInterfaceAuditStatus": "pending"
     },
     {
       "id": "rall-030",
@@ -599,7 +616,8 @@
       "sourceTreeVerified": true,
       "sourceTreeScope": "New repository; archived original and web files are inside web-release.",
       "auditUrl": "https://github.com/joynes/rall-030/tree/audit/2026-11-03-baseline",
-      "inGameControlsAndFullscreenStatus": "pending"
+      "inGameControlsAndFullscreenStatus": "pending",
+      "englishInterfaceAuditStatus": "pending"
     },
     {
       "id": "rall-054",
@@ -618,7 +636,8 @@
       "sourceRestorationCommit": "58f6a89f2440f84afe624a76b205145e1ce2f073",
       "repositoryHeadCommit": "58f6a89f2440f84afe624a76b205145e1ce2f073",
       "auditUrl": "https://github.com/joynes/rall0054/tree/audit/2026-11-03-baseline",
-      "inGameControlsAndFullscreenStatus": "pending"
+      "inGameControlsAndFullscreenStatus": "pending",
+      "englishInterfaceAuditStatus": "pending"
     },
     {
       "id": "rall-006",
@@ -637,7 +656,8 @@
       "sourceRestorationCommit": "01650af6ff701890d8aea9ebd2497e8d09cd50b2",
       "repositoryHeadCommit": "01650af6ff701890d8aea9ebd2497e8d09cd50b2",
       "auditUrl": "https://github.com/joynes/rall006/tree/audit/2026-11-03-baseline",
-      "inGameControlsAndFullscreenStatus": "pending"
+      "inGameControlsAndFullscreenStatus": "pending",
+      "englishInterfaceAuditStatus": "pending"
     },
     {
       "id": "rall-080",
@@ -656,7 +676,8 @@
       "sourceTreeVerified": true,
       "sourceTreeScope": "New repository; archived original and web files are inside web-release.",
       "auditUrl": "https://github.com/joynes/rall-v080-fighter/tree/audit/2026-11-03-baseline",
-      "inGameControlsAndFullscreenStatus": "pending"
+      "inGameControlsAndFullscreenStatus": "pending",
+      "englishInterfaceAuditStatus": "pending"
     },
     {
       "id": "rall-008",
@@ -675,7 +696,8 @@
       "sourceRestorationCommit": "0d41ad85eea7a85aae0e53568f92042d0e65ca29",
       "repositoryHeadCommit": "0d41ad85eea7a85aae0e53568f92042d0e65ca29",
       "auditUrl": "https://github.com/joynes/rall008/tree/audit/2026-11-03-baseline",
-      "inGameControlsAndFullscreenStatus": "pending"
+      "inGameControlsAndFullscreenStatus": "pending",
+      "englishInterfaceAuditStatus": "pending"
     },
     {
       "id": "rall-066",
@@ -684,7 +706,8 @@
       "auditStatus": "source-inspection-pending",
       "releaseStatus": "pending",
       "publicUrl": null,
-      "inGameControlsAndFullscreenStatus": "pending"
+      "inGameControlsAndFullscreenStatus": "pending",
+      "englishInterfaceAuditStatus": "pending"
     },
     {
       "id": "rall-073",
@@ -693,7 +716,8 @@
       "auditStatus": "source-inspection-pending",
       "releaseStatus": "pending",
       "publicUrl": null,
-      "inGameControlsAndFullscreenStatus": "pending"
+      "inGameControlsAndFullscreenStatus": "pending",
+      "englishInterfaceAuditStatus": "pending"
     },
     {
       "id": "rall-082",
@@ -702,7 +726,8 @@
       "auditStatus": "source-inspection-pending",
       "releaseStatus": "pending",
       "publicUrl": null,
-      "inGameControlsAndFullscreenStatus": "pending"
+      "inGameControlsAndFullscreenStatus": "pending",
+      "englishInterfaceAuditStatus": "pending"
     }
   ],
   "currentAuditGame": "sdl-space",
@@ -712,5 +737,17 @@
     "Visible fullscreen control operable by touch and keyboard, with entry/exit and both orientations verified.",
     "Keyboard input retained on phones/tablets; independent release, cancellation, lost focus and restart verified through the browser."
   ],
-  "currentAuditFocus": "concise English homepage copy, then SDL fullscreen"
+  "currentAuditFocus": "concise English homepage copy, then SDL fullscreen",
+  "englishInterfaceRequirement": "All website interface text must be concise and in English.",
+  "homepageEnglishCopyStatus": "local-passed-awaiting-live",
+  "homepageEnglishCopyEvidence": {
+    "result": "local-passed-awaiting-live",
+    "shortEnglishGameLabels": 7,
+    "shortenedGameDescriptions": 18,
+    "checks": "Unit/preservation tests, desktop/mobile music sections and routes, embedded game navigation, attached-keyboard/touch frame checks, Small Wonders launch routes, existing story URLs and book-reader controls passed. Mobile screenshots inspected.",
+    "releaseFilesSha256": {
+      "index.html": "88f081676712447228a197d2c8a2c0d258b71c4b0528be4e867259c60fd4e111",
+      "assets/games-catalog.js": "5b175bd702ea0130e3ba590c960f039d57b05a200c72d0b019fe8be52fbddc16"
+    }
+  }
 }

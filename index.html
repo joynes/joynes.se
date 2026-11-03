@@ -1449,10 +1449,10 @@
 
     <section id="contentList" class="content-list" aria-label="Selected archive items"></section>
 
-    <section id="bookReader" class="book-reader" aria-label="Jaro och Grodan book" hidden>
+    <section id="bookReader" class="book-reader" aria-label="Jaro & Grodan book" hidden>
       <div class="book-toolbar">
             <p class="book-kicker">Story reader</p>
-        <h2>Jaro och Grodan</h2>
+        <h2>Jaro & Grodan</h2>
       </div>
       <div id="chapterTabs" class="book-tabs" aria-label="Book chapters"></div>
       <article class="book-page">
@@ -1471,7 +1471,7 @@
       <audio id="audioElement" preload="metadata" playsinline></audio>
       <div class="player-main">
         <div class="player-label" id="playerLabel">No track loaded</div>
-        <div class="player-title" id="playerTitle">Choose a song from Music or Jaro & Grodan</div>
+        <div class="player-title" id="playerTitle">Choose a track</div>
         <canvas class="visualizer" id="visualizer" aria-hidden="true"></canvas>
         <input class="progress" id="progress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek">
       </div>
@@ -1481,7 +1481,7 @@
         <button class="player-button small" id="nextTrack" type="button" aria-label="Next track" title="Next">⏭</button>
         <button class="player-button small" id="toggleQueue" type="button" aria-label="Show playlist" title="Playlist">▤</button>
         <button class="player-button small" id="hidePlayer" type="button" aria-label="Hide player" title="Hide">×</button>
-        <div class="queue" id="queueList">Playlist waits for first signal.</div>
+        <div class="queue" id="queueList">Choose a track.</div>
       </div>
     </aside>
 
@@ -1493,17 +1493,17 @@
   <script src="assets/jaro-book.js"></script>
   <script src="assets/music-catalog.js"></script>
   <script src="assets/music-library.js?v=b71509c3cf69"></script>
-  <script src="assets/games-catalog.js?v=78bcee7c3cb2"></script>
+  <script src="assets/games-catalog.js?v=5b175bd702ea"></script>
   <script>
     const categories = [
       {
         id: "music",
         name: "Music",
-        sub: "Finished tracks from the release folder.",
+        sub: "Songs and AI variations.",
         glyph: "M",
         kicker: "Main archive level",
         title: "Music",
-        description: "The main Joynes tracks are presented as a playable journey through the old archive.",
+        description: "Songs and AI variations.",
         featured: [
           ["Jaro and grodan", "https://drive.google.com/file/d/18ftDgEyaIUtr4OsRF_DPhtqW_Vt4BhEg/view"],
           ["SOR the bridge", "https://drive.google.com/file/d/15ikpxU4WS3vS9GEuhMsEZC7Z5KErUtGj/view"],
@@ -1524,11 +1524,11 @@
       {
         id: "old",
         name: "Old MP3",
-        sub: "Weird early exports and lost names.",
+        sub: "Early recordings.",
         glyph: "8",
         kicker: "Sublevel: old exports",
         title: "Old MP3",
-        description: "Short names, strange names, and early exports from the archive.",
+        description: "Early MP3 recordings.",
         featured: [
           ["sectop", "https://drive.google.com/file/d/1-Xp_STC122y5rCDvOtRZWxaFyrZCR6JG/view"],
           ["sploth", "https://drive.google.com/file/d/1Z5IokTdUy0OqP97NhosvPnbxBEzntsSn/view"],
@@ -1554,11 +1554,11 @@
       {
         id: "games",
         name: "Games",
-        sub: "Quiz games, retro games and AI games.",
+        sub: "Quizzes, retro and AI games.",
         glyph: "G",
         kicker: "Playable relic zone",
         title: "Games",
-        description: "Choose Quiz games, Retro games or AI games, or browse all games together.",
+        description: "Quizzes, AI games and older games adapted with AI.",
         featured: [
           ["Quiz games", "#games/quizzes"],
           ["Retro games", "#games/retro"],
@@ -1574,11 +1574,11 @@
       {
         id: "apps",
         name: "Apps",
-        sub: "Android tools and experiments.",
+        sub: "Android apps.",
         glyph: "A",
         kicker: "App channel",
         title: "Apps",
-        description: "Android apps and small software experiments from the Joynes orbit.",
+        description: "Android apps.",
         featured: [
           ["TerminalHub", "https://play.google.com/apps/internaltest/4701725873625043385"],
           ["NudgeAlarm", "https://play.google.com/store/apps/details?id=se.joynes.nudgealarm"],
@@ -1592,11 +1592,11 @@
       {
         id: "films",
         name: "Films",
-        sub: "Music videos and future moving pictures.",
+        sub: "Music videos.",
         glyph: "F",
         kicker: "Video signal",
         title: "Films",
-        description: "Music videos and future film uploads get their own channel, keeping the archive ready for more moving image material later.",
+        description: "Music videos.",
         featured: [
           ["SOR video remix", "https://drive.google.com/file/d/18pVrpeM1pkWBYZASlyFotrEaMpi38WVQ/view"],
           ["Mod4 Maria remix", "https://drive.google.com/file/d/1TRQh8YiHUHDCFtWoo81OGdltGuTozm91/view"]
@@ -1609,20 +1609,20 @@
       {
         id: "jaro",
         name: "Jaro & Grodan",
-        sub: "Texts, game and song in one story level.",
+        sub: "Stories, music and games.",
         glyph: "J",
         kicker: "Story archive",
         title: "Jaro & Grodan",
-        description: "Jaro och Grodan gets a dedicated level because it crosses music, game, image and text. This is where the story versions live.",
+        description: "Stories, music and games.",
         featured: [
           ["Story text", "https://drive.google.com/file/d/16jFiNjv4vfuRefvvHL8g0iaE1PreIs4P/view"],
           ["Song", "https://drive.google.com/file/d/18ftDgEyaIUtr4OsRF_DPhtqW_Vt4BhEg/view"],
           ["Game folder", "https://drive.google.com/drive/folders/1vJtWafQtNoVrV2W67I-3Ppe3iG0S4rNb"]
         ],
         items: [
-          ["07 - joynes - Jaro and grodan", "Song and short song description", [["Song", "https://drive.google.com/file/d/18ftDgEyaIUtr4OsRF_DPhtqW_Vt4BhEg/view"], ["Text", "https://drive.google.com/file/d/1YYcgsGJDGAS5Q7SMUU49Ygo1s774RHsD/view"]]],
-          ["Jaro och Grodan text archive", "Older story and game text versions", [["HTML text", "https://drive.google.com/file/d/16jFiNjv4vfuRefvvHL8g0iaE1PreIs4P/view"], ["TXT", "https://drive.google.com/file/d/1RjWP_br7_hB3nXTyGAK3mQVBDyTyGz6s/view"], ["DOC", "https://drive.google.com/file/d/1l8bAP98Ac3xKZM-Ye3L6Q6Q9v41i5W_U/view"], ["HTML 2", "https://drive.google.com/file/d/1DgCPYL3dIXpRvkaE0WDutDa21QfUnEh9/view"], ["HTML 3", "https://drive.google.com/file/d/1qTDyptn7FQcV3DiUKFJuuWV3iKLKD8ID/view"]]],
-          ["Jaro och grodan game", "HTML game and source folder", [["Folder", "https://drive.google.com/drive/folders/1vJtWafQtNoVrV2W67I-3Ppe3iG0S4rNb"], ["HTML", "https://drive.google.com/file/d/1XAWiNWA3SJ-5RqNOaHsJE76FmXTR9v2Q/view"]]]
+          ["07 - joynes - Jaro and grodan", "Song and notes", [["Song", "https://drive.google.com/file/d/18ftDgEyaIUtr4OsRF_DPhtqW_Vt4BhEg/view"], ["Text", "https://drive.google.com/file/d/1YYcgsGJDGAS5Q7SMUU49Ygo1s774RHsD/view"]]],
+          ["Story archive", "Original story versions", [["HTML text", "https://drive.google.com/file/d/16jFiNjv4vfuRefvvHL8g0iaE1PreIs4P/view"], ["TXT", "https://drive.google.com/file/d/1RjWP_br7_hB3nXTyGAK3mQVBDyTyGz6s/view"], ["DOC", "https://drive.google.com/file/d/1l8bAP98Ac3xKZM-Ye3L6Q6Q9v41i5W_U/view"], ["HTML 2", "https://drive.google.com/file/d/1DgCPYL3dIXpRvkaE0WDutDa21QfUnEh9/view"], ["HTML 3", "https://drive.google.com/file/d/1qTDyptn7FQcV3DiUKFJuuWV3iKLKD8ID/view"]], {slug: "jaro-och-grodan-text-archive"}],
+          ["Jaro & Grodan game", "Original game", [["Folder", "https://drive.google.com/drive/folders/1vJtWafQtNoVrV2W67I-3Ppe3iG0S4rNb"], ["HTML", "https://drive.google.com/file/d/1XAWiNWA3SJ-5RqNOaHsJE76FmXTR9v2Q/view"]], {slug: "jaro-och-grodan-game"}]
         ]
       },
     ];
@@ -1631,7 +1631,7 @@
     gamesCategory.items.forEach(item => { item[3] = { ...item[3], gameKind: "retro" }; });
     for (const game of window.joynesPublishedGames || []) {
       gamesCategory.items.unshift([game.title, game.description,
-        [[game.playLabel || "Play", game.href], ...(game.modes || []), [game.sourceLabel || "Source code", game.source]],
+        [[game.playLabel || "Play", game.href], ...(game.modes || []), [game.sourceLabel || "Source", game.source]],
         {slug: game.id, gameKind: game.kind, gameGenre: game.genre, embed: game.embed === false ? null : game.href, embedTitle: game.title, embedOnDetail: true}]);
     }
 
@@ -1926,7 +1926,7 @@
 
     function renderQueue() {
       if (!playlist.length) {
-        queueList.textContent = "Playlist waits for first signal.";
+        queueList.textContent = "Choose a track.";
         return;
       }
       queueList.replaceChildren(...playlist.map((track, index) => {
@@ -2180,8 +2180,8 @@
         : group.tracks;
       const original = group.tracks.find(track => !track.ai);
       description.textContent = original
-        ? "Choose the archive original or one of its clearly marked AI-generated variations."
-        : "AI-generated Suno music. Each version has its own recording and source metadata.";
+        ? "Original recording and AI variations."
+        : "AI-generated with Suno.";
       featured.replaceChildren(internalLinkButton(`Back to ${category.title}`, categoryHref(category)));
       if (category.sourcePlaylist) featured.append(internalLinkButton("All variations", `#music/${group.archiveItem?.[3]?.slug || group.id}`));
       list.replaceChildren(...tracks.map(track => {
@@ -2288,7 +2288,7 @@
       if (!items.length && category.id === "games") {
         const empty = document.createElement("p");
         empty.className = "item-meta";
-        empty.textContent = "The next game is being tested. It will appear here once published.";
+        empty.textContent = "More games are being tested.";
         list.replaceChildren(empty);
         return;
       }
@@ -2326,8 +2326,11 @@
         h3.append(titleLink);
         const p = document.createElement("p");
         p.className = "item-meta";
-        p.textContent = meta;
-        head.append(h3, p);
+        p.textContent = extras.groupId
+          ? String(meta).replace(/^(Release track|Old MP3 export)(?:\s*·\s*)?/, "").replace(/(\d+) AI-generated/, "$1 AI")
+          : meta;
+        head.append(h3);
+        if (p.textContent) head.append(p);
 
         const actionRow = document.createElement("div");
         actionRow.className = "item-actions";

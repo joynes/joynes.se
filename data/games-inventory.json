@@ -6,7 +6,7 @@
   "games": [
     {
       "id": "web-quizzes",
-      "title": "Frågespelet",
+      "title": "Quiz Game",
       "order": 1,
       "status": "published_verified",
       "sources": [
@@ -58,11 +58,12 @@
         "games/web-quizzes/source-notes.md": "3a18494f56de0f8a2b45206b101a109d2002d7625b149633cac008cbde932b55",
         "assets/games-catalog.js": "e8906cc0dd883c78ebfa722ee8751fd12f7958b07a69958b2a38103acfbbc5b2"
       },
-      "websiteSection": "quizzes"
+      "websiteSection": "quizzes",
+      "originalTitle": "Frågespelet"
     },
     {
       "id": "grimace-gemini",
-      "title": "Milians Grimace Matte-spel — Gemini",
+      "title": "Grimace Maths — Gemini",
       "order": 2,
       "status": "published_verified",
       "sources": [
@@ -116,11 +117,12 @@
         "games/grimace-gemini/styles.css": "eac894c87349643e5c7c072594e4d5503ec7ce0cfac7d4172add4c381d000fba",
         "assets/games-catalog.js": "c4e15570b87d5e3bb8757e3d63026c56cb16ab2359b47df4355aaf202de10025"
       },
-      "websiteSection": "quizzes"
+      "websiteSection": "quizzes",
+      "originalTitle": "Milians Grimace Matte-spel — Gemini"
     },
     {
       "id": "grimace-codex",
-      "title": "Milians Grimace Matte-spel — Codex",
+      "title": "Grimace Maths — Codex",
       "order": 3,
       "status": "published_verified",
       "sources": [
@@ -175,11 +177,12 @@
         "games/grimace-codex/styles.css": "8825eadb2ca8f75ed3ac22dc4c00c5f9b4b7630f8c5664c40e6eea8342015aa5",
         "assets/games-catalog.js": "f2dfc3d33360e3e634cd810dbe4af82fd798e200c76393c69d6e96d2f506ad02"
       },
-      "websiteSection": "quizzes"
+      "websiteSection": "quizzes",
+      "originalTitle": "Milians Grimace Matte-spel — Codex"
     },
     {
       "id": "quiz-sdl",
-      "title": "Läs- och ordquiz",
+      "title": "Word Quiz",
       "order": 4,
       "status": "published_verified",
       "sources": [
@@ -231,7 +234,8 @@
         "sha256OfSortedFileHashes": "19f3ba304ac0be3c6705ed8d826b2e129e55ebda0c4a626ea0babe99fd21efff",
         "commit": "bd39e6cfd3a42d621f70d77955115f0438f0f6cd"
       },
-      "websiteSection": "quizzes"
+      "websiteSection": "quizzes",
+      "originalTitle": "Läs- och ordquiz"
     },
     {
       "id": "memit",
@@ -302,7 +306,7 @@
     },
     {
       "id": "hardword",
-      "title": "Skoluppgifter / Ordhjälten",
+      "title": "Learning Games",
       "order": 6,
       "status": "published_verified",
       "sources": [
@@ -420,11 +424,12 @@
         "games/hardword/source-notes.md": "7781fa5d0d650c8687adc92f6c5a58c422a6729209fece5bcb5b81a083fbf231",
         "assets/games-catalog.js": "154b2c02aec44d0085bb1b547d11eaa72ea06b765df79201da2f08171c729c7b",
         "index.html": "1b4bddd2fda56eac501826c40f5894e92eab9d49e288a73e41b7d54e00224673"
-      }
+      },
+      "originalTitle": "Skoluppgifter / Ordhjälten"
     },
     {
       "id": "small-wonders",
-      "title": "Small Wonders / Inuti språkmodellen",
+      "title": "Small Wonders",
       "order": 7,
       "status": "published_verified",
       "sources": [
@@ -532,7 +537,8 @@
       },
       "websiteSection": "ai",
       "sourceAuditCommit": "0999254eb63b1d173acf8cedb42033e945d6f24a",
-      "browserBuildCommit": "ba1f7bf3c25fbae98fcbcd534d49c278b6da593b"
+      "browserBuildCommit": "ba1f7bf3c25fbae98fcbcd534d49c278b6da593b",
+      "originalTitle": "Small Wonders / Inuti språkmodellen"
     },
     {
       "id": "marble-tables",
@@ -781,7 +787,7 @@
     },
     {
       "id": "godot-reading",
-      "title": "Godot Reading Game",
+      "title": "Read and Place",
       "order": 11,
       "status": "published_verified",
       "sources": [
@@ -862,7 +868,8 @@
         "games/godot-reading/source-notes.md": "0e1b35e181f573430ce7676319d4e857167d571063ccdc01929435470501eed0",
         "index.html": "ccc47c210371e05181903a44c8514d7a0e8f4dd760d93a590820bf0f95ec4d70",
         "docs/games/godot-reading.md": "cc8a74b4661dcf78daacb15fcd4158268cd711b6ed362c4a7b8355ae80383d47"
-      }
+      },
+      "originalTitle": "Godot Reading Game"
     },
     {
       "id": "car-topview",

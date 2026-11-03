@@ -6,7 +6,7 @@ async function openGame(parent,label,errors){
 (async()=>{const browser=await chromium.launch(process.env.CHROMIUM_PLAYWRIGHT_MODULE?{headless:true}:{headless:true,channel:'chrome'});try{
  for(const viewport of [{width:360,height:740},{width:1440,height:1000}]){
   const p=await browser.newPage({viewport,reducedMotion:'reduce'});const errors=[];p.on('pageerror',e=>errors.push(e.message));
-  await p.goto(base+'#games/ai/small-wonders');await p.waitForFunction(()=>document.querySelector('#stageTitle')?.textContent==='Small Wonders / Inuti språkmodellen');
+  await p.goto(base+'#games/ai/small-wonders');await p.waitForFunction(()=>document.querySelector('#stageTitle')?.textContent==='Small Wonders');
   for(const [label,url]of [['LLM tower','https://joynes.github.io/llmspel-play/'],['Name workshop','https://joynes.github.io/llmspel-play/?demo'],['Maths adventure','https://joynes.github.io/llmspel-play/?garden']]){
    const link=p.getByRole('link',{name:label,exact:true}).first();assert.equal(await link.getAttribute('href'),url);assert.equal(await link.getAttribute('target'),'_blank');
   }
