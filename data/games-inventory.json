@@ -486,6 +486,10 @@
         {
           "check": "2026-11-03 renewed audit — local",
           "result": "33 production-preview tests passed. Reproduced and fixed held movement after canvas focus transfer in all three routes; visible labels now supply accessible names. Added mobile keyboard and real touch tests pass opposing directions, independent key/contact release, cancellation and focus cleanup. Public build ba1f7bf contains exactly the 109 tested files; live checks pending."
+        },
+        {
+          "check": "2026-11-03 renewed audit — canonical live build",
+          "result": "Passed all 33 full-route gameplay/accessibility/recovery tests and added real touch plus mobile-keyboard input checks on all three routes. All 109 build files match tested SHA256. Private source 0999254, public build ba1f7bf, successful Pages run 41696898935. Homepage launchers pass at desktop/mobile widths."
         }
       ],
       "publishedUrl": "https://joynes.github.io/llmspel-play/",
