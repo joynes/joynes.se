@@ -1,94 +1,52 @@
-const assert = require('node:assert/strict');
-const fs = require('node:fs');
-const {chromium} = require(process.env.CHROMIUM_PLAYWRIGHT_MODULE || 'playwright');
-const base = process.env.GAME_BASE_URL || 'http://127.0.0.1:8767/games/car-topview/';
-const home = process.env.HOMEPAGE_BASE_URL || 'http://127.0.0.1:8767/';
-async function pose(game) { return game.locator('#view').evaluate(c => ({x:+c.dataset.x, angle:+c.dataset.angle, speed:+c.dataset.speed})); }
-async function active(game, control, expected) { assert.equal(await game.locator(`[data-control="${control}"]`).evaluate(b=>b.classList.contains('active')), expected, control); }
-(async () => {
-  fs.mkdirSync('test-results', {recursive:true});
-  const browser = await chromium.launch();
-  try {
-    for (const viewport of [{width:1280,height:1000},{width:390,height:844},{width:844,height:390}]) {
-      const mobile = viewport.width < 1000;
-      const context = await browser.newContext({viewport,isMobile:mobile,hasTouch:mobile});
-      const p = await context.newPage(), errors=[];
-      p.on('pageerror', e=>errors.push(e.message));
-      await p.clock.install();
-      await p.goto(base);
-      await p.locator('#start').focus(); await p.keyboard.press('Enter');
-      await p.locator('#view').waitFor();
-      await p.keyboard.down('ArrowUp'); await p.keyboard.down('KeyW');
-      await p.clock.runFor(400); await p.keyboard.up('ArrowUp');
-      await active(p,'up',true);
-      const first=await pose(p); await p.clock.runFor(300);
-      assert((await pose(p)).x<first.x-10,'remaining accelerator key continues driving');
-      await p.keyboard.down('KeyD'); await p.clock.runFor(300);
-      assert((await pose(p)).angle>.8);
-      await p.keyboard.up('KeyW'); await active(p,'up',false); await active(p,'right',true);
-      await p.keyboard.up('KeyD');
-      // Reset, pause and focus cleanup must discard old hardware autorepeat.
-      for (const action of ['reset','pause','focus']) {
-        await p.locator('#reset').focus(); await p.keyboard.press('Enter');
-        await p.keyboard.down('ArrowUp'); await p.clock.runFor(300);
-        if(action==='reset') { await p.locator('#reset').focus(); await p.keyboard.press('Enter'); }
-        if(action==='pause') { await p.keyboard.press('KeyP'); await p.locator('#resume').focus(); await p.keyboard.press('Enter'); }
-        if(action==='focus') { await p.locator('#sound').focus(); await p.locator('#view').focus(); }
-        await p.keyboard.down('ArrowUp'); await active(p,'up',false);
-        await p.keyboard.up('ArrowUp'); await p.keyboard.down('ArrowUp'); await active(p,'up',true);
-        await p.keyboard.up('ArrowUp');
-      }
-      if(mobile) {
-        const cdp=await context.newCDPSession(p);
-        const point=async(control,id)=>{const r=await p.locator(`[data-control="${control}"]`).boundingBox();return{x:r.x+r.width/2,y:r.y+r.height/2,id};};
-        await p.locator('#reset').focus(); await p.keyboard.press('Enter');
-        const up=await point('up',1),right=await point('right',2);
-        await p.keyboard.down('ArrowUp');
-        await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[up]});
-        await p.keyboard.up('ArrowUp'); await active(p,'up',true);
-        await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[up,right]});
-        await p.clock.runFor(400); assert((await pose(p)).angle>1);
-        await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[up]});
-        await active(p,'up',false); await active(p,'right',true);
-        await p.keyboard.down('ArrowUp');
-        await cdp.send('Input.dispatchTouchEvent',{type:'touchCancel',touchPoints:[]});
-        await active(p,'up',true); await active(p,'right',false); await p.keyboard.up('ArrowUp');
-        const old=await point('up',3);
-        await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[old]});
-        await p.locator('#reset').focus(); await p.keyboard.press('Enter');
-        await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{...old,x:old.x+2}]});
-        await p.clock.runFor(300); assert.deepEqual(await pose(p),{x:512,angle:0,speed:0});
-        await cdp.send('Input.dispatchTouchEvent',{type:'touchCancel',touchPoints:[]});
-        // A real frame-window focus change must pause and release touch, too.
-        await p.goto(home+'#games/ai/car-topview');
-        const frame=p.locator('iframe[title="Top-down Driving"]');
-        const game=p.frameLocator('iframe[title="Top-down Driving"]');
-        await frame.scrollIntoViewIfNeeded(); await game.locator('#start').focus(); await p.keyboard.press('Enter');
-        await game.locator('#view').waitFor(); await frame.scrollIntoViewIfNeeded();
-        if(viewport.width===844) for(const selector of ['#board','.controls']) {
-          const r=await game.locator(selector).boundingBox();
-          assert(r.y>=48&&r.y+r.height<=viewport.height,`${selector} fully visible inside the site`);
-        }
-        const r=await game.locator('[data-control="up"]').boundingBox();
-        await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:r.x+r.width/2,y:r.y+r.height/2,id:4}]});
-        await p.clock.runFor(400); assert((await pose(game)).x<500);
-        await p.locator('#choose-title').focus();
-        assert.equal(await game.locator('#pause-screen').isVisible(),true);
-        assert.equal(await game.locator('.controls .active').count(),0);
-        const frozen=await pose(game); await p.clock.runFor(400); assert.deepEqual(await pose(game),frozen);
-        await cdp.send('Input.dispatchTouchEvent',{type:'touchCancel',touchPoints:[]});
-        await game.locator('#resume').focus(); await p.keyboard.press('Enter');
-        await p.keyboard.down('KeyW'); await p.clock.runFor(400); await p.keyboard.up('KeyW');
-        assert((await pose(game)).x<frozen.x-10);
-        if(viewport.width===844) await p.setViewportSize({width:390,height:844});
-        await game.getByRole('link',{name:'← AI games',exact:true}).tap();
-        await p.waitForFunction(()=>location.hash==='#games/ai'&&!document.querySelector('iframe'));
-        await cdp.detach();
-      }
-      assert.deepEqual(errors,[]);
-      await p.screenshot({path:`test-results/car-topview-input-${viewport.width}.png`,fullPage:true});
-      await context.close();
-      console.log('PASS driving controls',viewport.width,'keyboard aliases, stale-repeat cleanup, simultaneous touch, independent release/cancel, restart and frame focus');
-    }
-  } finally { await browser.close(); }
-})().catch(e=>{console.error(e);process.exitCode=1;});
+const assert=require('node:assert/strict'),fs=require('node:fs');
+const {chromium}=require(process.env.CHROMIUM_PLAYWRIGHT_MODULE||'playwright');
+const base=process.env.GAME_BASE_URL||'http://127.0.0.1:8767/games/car-topview/';
+const home=process.env.HOMEPAGE_BASE_URL||'http://127.0.0.1:8767/';
+async function pose(game){return game.locator('#view').evaluate(c=>({x:+c.dataset.x,angle:+c.dataset.angle,speed:+c.dataset.speed}));}
+async function active(game,key,value){assert.equal(await game.locator('#thumbpad').getAttribute('data-'+key),String(value),key);}
+async function bounds(game){const canvas=await game.locator('#view').boundingBox();for(const selector of['#sound','#pause','#reset','#fullscreen','#thumbpad','#thumb-knob']){const r=await game.locator(selector).boundingBox();assert(r.x>=canvas.x-1&&r.y>=canvas.y-1&&r.x+r.width<=canvas.x+canvas.width+1&&r.y+r.height<=canvas.y+canvas.height+1,selector+' stays inside the rendered game');}assert.equal(await game.locator('.controls').count(),0,'there is no button row below the board');}
+(async()=>{fs.mkdirSync('test-results',{recursive:true});const browser=await chromium.launch(process.env.CHROMIUM_PLAYWRIGHT_MODULE?{headless:true}:{channel:'chrome',headless:true});try{
+ for(const viewport of[{width:1280,height:1000},{width:390,height:844},{width:844,height:390}]){
+  const mobile=viewport.width<1000,context=await browser.newContext({viewport,isMobile:mobile,hasTouch:mobile}),p=await context.newPage(),errors=[];
+  p.on('pageerror',e=>errors.push(e.message));await p.clock.install();await p.goto(base);await p.locator('#start').focus();await p.keyboard.press('Enter');await p.locator('#view').waitFor();
+  await p.keyboard.down('ArrowUp');await p.keyboard.down('KeyW');await p.clock.runFor(400);await p.keyboard.up('ArrowUp');await active(p,'up',true);const first=await pose(p);await p.clock.runFor(300);assert((await pose(p)).x<first.x-10);await p.keyboard.down('KeyD');await p.clock.runFor(300);assert((await pose(p)).angle>.8);await p.keyboard.up('KeyW');await active(p,'up',false);await active(p,'right',true);await p.keyboard.up('KeyD');
+  for(const action of['reset','pause','focus']){
+   await p.locator('#reset').focus();await p.keyboard.press('Enter');await p.keyboard.down('ArrowUp');await p.clock.runFor(300);
+   if(action==='reset'){await p.locator('#reset').focus();await p.keyboard.press('Enter');}
+   if(action==='pause'){await p.keyboard.press('KeyP');await p.locator('#resume').focus();await p.keyboard.press('Enter');}
+   if(action==='focus'){await p.locator('#sound').focus();await p.locator('#view').focus();}
+   await p.keyboard.down('ArrowUp');await active(p,'up',false);await p.keyboard.up('ArrowUp');await p.keyboard.down('ArrowUp');await active(p,'up',true);await p.keyboard.up('ArrowUp');
+  }
+  await bounds(p);await p.locator('#fullscreen').focus();await p.keyboard.press('Enter');await p.waitForFunction(()=>document.fullscreenElement?.id==='board');await p.clock.runFor(100);await bounds(p);
+  await p.locator('#reset').focus();await p.keyboard.press('Enter');await p.keyboard.down('KeyW');await p.clock.runFor(600);await p.keyboard.up('KeyW');assert((await pose(p)).x<480,'keyboard driving works in native fullscreen');
+  await p.locator('#fullscreen').focus();await p.keyboard.press('Enter');await p.waitForFunction(()=>!document.fullscreenElement);await p.clock.runFor(64);
+  if(mobile){
+   const cdp=await context.newCDPSession(p);
+   async function center(game,id,x=.25,y=.72){const r=await game.locator('#view').boundingBox();return{x:r.x+r.width*x,y:r.y+r.height*y,id};}
+   async function reset(){await p.locator('#reset').focus();await p.keyboard.press('Enter');}
+   for(const direction of['reverse','left']){await reset();const start=await center(p,20);await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[start]});await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{...start,x:start.x+(direction==='left'?-35:0),y:start.y+(direction==='reverse'?35:0)}]});await p.clock.runFor(700);const driven=await pose(p);assert(direction==='reverse'?driven.x>550:driven.angle<-1.8,'touchpad '+direction+' changes actual car motion');await cdp.send('Input.dispatchTouchEvent',{type:'touchCancel',touchPoints:[]});}
+   await reset();let origin=await center(p,1),owner={...origin,y:origin.y-40},second=await center(p,2,.8,.7);
+   await p.keyboard.down('ArrowUp');await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[origin]});await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[owner]});await p.keyboard.up('ArrowUp');await active(p,'up',true);
+   owner={...owner,x:owner.x+40};await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[owner]});await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[owner,second]});await p.clock.runFor(400);assert((await pose(p)).angle>1);await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[second]});await active(p,'up',true);await active(p,'right',true);
+   await p.keyboard.down('ArrowRight');await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await active(p,'up',false);await active(p,'right',true);await p.keyboard.up('ArrowRight');
+   await reset();origin=await center(p,3);await p.keyboard.down('ArrowUp');await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[origin]});await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{...origin,x:origin.x+35}]});await active(p,'right',true);await cdp.send('Input.dispatchTouchEvent',{type:'touchCancel',touchPoints:[]});await active(p,'up',true);await active(p,'right',false);await p.keyboard.up('ArrowUp');
+   // A second finger can use an action without stealing the movement contact.
+   origin=await center(p,4);owner={...origin,y:origin.y-40};await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[origin]});await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[owner]});const sound=await p.locator('#sound').boundingBox(),action={x:sound.x+sound.width/2,y:sound.y+sound.height/2,id:5};const was=await p.locator('#sound').getAttribute('aria-pressed');await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[owner,action]});await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[action]});assert.notEqual(await p.locator('#sound').getAttribute('aria-pressed'),was);await active(p,'up',true);
+   async function secondAction(selector,id){const r=await p.locator(selector).boundingBox(),contact={x:r.x+r.width/2,y:r.y+r.height/2,id};await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[owner,contact]});await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[contact]});}
+   await secondAction('#fullscreen',6);await p.waitForFunction(()=>document.fullscreenElement?.id==='board');await p.clock.runFor(64);await active(p,'up',false);await bounds(p);await secondAction('#fullscreen',7);await p.waitForFunction(()=>!document.fullscreenElement);await p.clock.runFor(64);
+   await secondAction('#pause',8);assert.equal(await p.locator('#pause-screen').isVisible(),true);await secondAction('#resume',9);assert.equal(await p.locator('#pause-screen').isVisible(),false);
+   await secondAction('#reset',10);await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{...owner,x:owner.x+20}]});await p.clock.runFor(300);assert.deepEqual(await pose(p),{x:512,angle:0,speed:0});await cdp.send('Input.dispatchTouchEvent',{type:'touchCancel',touchPoints:[]});
+   await p.locator('#fullscreen').tap();await p.waitForFunction(()=>document.fullscreenElement?.id==='board');
+   if(viewport.width===390)await cdp.send('Emulation.setDeviceMetricsOverride',{width:844,height:390,screenWidth:844,screenHeight:390,mobile:true,deviceScaleFactor:1,screenOrientation:{type:'landscapePrimary',angle:90}});
+   await p.clock.runFor(100);await bounds(p);await reset();origin=await center(p,6);await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[origin]});await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{...origin,y:origin.y-40,x:origin.x+35}]});await p.clock.runFor(400);assert((await pose(p)).angle>1&&((await pose(p)).speed>30),'touch acceleration and steering work together in fullscreen');await cdp.send('Input.dispatchTouchEvent',{type:'touchCancel',touchPoints:[]});await p.screenshot({path:`test-results/car-thumbpad-fullscreen-${viewport.width}.png`});
+   await p.locator('#fullscreen').tap();await p.waitForFunction(()=>!document.fullscreenElement);if(viewport.width===390)await p.setViewportSize(viewport);
+   await p.goto(home+'#games/ai/car-topview');const selector='iframe[title="Top-down Driving"]',frame=p.locator(selector),game=p.frameLocator(selector);await frame.scrollIntoViewIfNeeded();await game.locator('#start:enabled').focus();await p.keyboard.press('Enter');await game.locator('#view').waitFor();await frame.scrollIntoViewIfNeeded();await bounds(game);
+   if(viewport.width===844){const r=await game.locator('#board').boundingBox();assert(r.y>=48&&r.y+r.height<=390,'whole embedded scene is visible');}
+   origin=await center(game,7);await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[origin]});await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{...origin,y:origin.y-40}]});await p.clock.runFor(400);assert((await pose(game)).x<500);await p.locator('#choose-title').focus();assert.equal(await game.locator('#pause-screen').isVisible(),true);await active(game,'up',false);const frozen=await pose(game);await p.clock.runFor(400);assert.deepEqual(await pose(game),frozen);await cdp.send('Input.dispatchTouchEvent',{type:'touchCancel',touchPoints:[]});await game.locator('#resume').focus();await p.keyboard.press('Enter');await p.keyboard.down('KeyW');await p.clock.runFor(400);await p.keyboard.up('KeyW');assert((await pose(game)).x<frozen.x-10);
+   await game.locator('#fullscreen').tap();const child=p.frames().find(f=>f.url().includes('/games/car-topview/'));await child.waitForFunction(()=>document.fullscreenElement?.id==='board');assert.equal(await p.evaluate(()=>document.fullscreenElement?.tagName),'IFRAME');await p.clock.runFor(100);await bounds(game);await game.locator('#fullscreen').tap();await child.waitForFunction(()=>!document.fullscreenElement);await p.clock.runFor(100);
+   if(viewport.width===844)await p.setViewportSize({width:390,height:844});await game.getByRole('link',{name:'← AI games',exact:true}).tap();await p.waitForFunction(()=>location.hash==='#games/ai'&&!document.querySelector('iframe'));await cdp.detach();
+  }
+  assert.deepEqual(errors,[]);await context.close();console.log('PASS in-game driving controls',viewport.width,'keyboard, mixed input, thumbpad diagonal/two contacts, action touch, cancel/reset/focus, native fullscreen/rotation and embedded fullscreen');
+ }
+ const fallback=await browser.newPage({viewport:{width:390,height:844},isMobile:true,hasTouch:true});await fallback.addInitScript(()=>Object.defineProperty(Element.prototype,'requestFullscreen',{value:undefined,configurable:true}));await fallback.goto(base);await fallback.locator('#start').click();await fallback.locator('#view').waitFor();await fallback.locator('#fullscreen').tap();assert.equal(await fallback.locator('#board').evaluate(e=>e.classList.contains('game-view-expanded')),true);await bounds(fallback);await fallback.keyboard.press('Escape');assert.equal(await fallback.locator('#board').evaluate(e=>e.classList.contains('game-view-expanded')),false);await fallback.close();console.log('PASS expanded-view fallback and keyboard Escape');
+}finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1});

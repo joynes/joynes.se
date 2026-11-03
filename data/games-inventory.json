@@ -912,6 +912,10 @@
         {
           "check": "renewed-input-audit-2026-11-03-live",
           "result": "Passed the full gameplay/audio/recovery suite and all desktop/phone-portrait/phone-landscape keyboard and actual touch checks on canonical public URLs. All 10 release files match the tested SHA256 ledger. Pages 41711372662 succeeded."
+        },
+        {
+          "check": "in-game-touchpad-fullscreen-2026-11-03-local",
+          "result": "Full original physics/media/browser suite and all desktop/mobile keyboard, four touch directions, diagonal acceleration/steering, mixed ownership, secondary-contact release/cancel, second-finger sound/pause/resume/reset/fullscreen, stale-contact restart and real frame focus checks passed. All controls are inside the scene; no button row below. Native standalone/iframe fullscreen with touch/keyboard, rotation and missing-API Escape fallback passed. Original PNG/WAV/core unchanged. Shared helper load failure and playable retry passed. Root unit/preservation and games/music navigation passed."
         }
       ],
       "publishedUrl": "https://joynes.github.io/joynes.se/games/car-topview/",
@@ -925,22 +929,24 @@
       "webPath": "games/car-topview/",
       "implementationNotes": "Latest free-drive Godot4 prototype; original car PNG and looping PCM24 engine WAV preserved. Acceleration 400, max speed 800, friction 200, steer 3 rad/s, drift factor 2, pitch 0.5–3. JavaScript formula port and rotated rectangle wall contacts, not native Godot. Source wall collision offset repaired; start/pause/reset/mute and multitouch added. No authored races or score.",
       "releaseFilesSha256": {
-        "games/car-topview/app.mjs": "fcc2c5bb3f1bf28efd02887286c550892d76ecaa08daa2dcb5eba5013974129b",
+        "games/car-topview/app.mjs": "cf2af38959b4f9984801918d8bd47356a96408fb4cbe35dfa64417e1560be4d7",
         "games/car-topview/car.png": "92daedcd612290c05ff3debedce20b1ac0b1006c8a9d03b035b21b7be9df2236",
         "games/car-topview/core.mjs": "fb54033ea52e79f93b7458d4a8ab8f0958e9e3042a01b1bb1875e08cbe11dd9c",
         "games/car-topview/engine.wav": "729dbfa505b858123746d8f2930691a066b5da46934ff075bc30de1efa1d5732",
-        "games/car-topview/index.html": "4b2531dd1b30808f778b043655f7be6db66d7d8c24b0bbd2b23a7df626d04d14",
+        "games/car-topview/index.html": "26d922fd5c5a1695a18814f32f3cc8747865174cc3167d40c33ccca5398b0ab9",
         "games/car-topview/provenance.json": "2c7a3b776e92c8842f8e3b698d0ae788f322775001715e4b079da54f9778f6f9",
-        "games/car-topview/source-notes.md": "61af1a77dc1ecd68bcd1a08eb2a67e9401ba5e566426054ee6a47126fba8e035",
-        "games/car-topview/styles.css": "9bc64a6886b2d597e8f791879d2f03631db5ae962f540fe4b686b0eb8fff9947",
-        "assets/games-catalog.js": "e380fdf4b62eff1c25954df9b574cc089d8a41d7b1b801304ef22df1b48111af",
-        "index.html": "0e88bfc7ababbaeb209ae156584b775188fe9d80461c64024adfa7ea6971e2d0"
+        "games/car-topview/source-notes.md": "faa47094f8562e8ee44d13afa6e4d1cb594e6033eb6c8d698ed8fc13400338d9",
+        "games/car-topview/styles.css": "c0ca28230c48a8ba86416d90bfa40616c679ba76647578319a81f5666d33a1d6",
+        "assets/games-catalog.js": "78bcee7c3cb28af058b352368ee46842bc73aef4e609134fe119aa8d8a823bbe",
+        "index.html": "9b64c564af7a4d225e31e41417ee863443f34aa7ce194226267f30a5e765a121",
+        "assets/game-view.mjs": "2a5f351c51b3f32983967ab206d4286667ff47e961b6d10fbce6b6ed03cfe93a"
       },
       "deploymentRun": 41711372662,
       "websiteSection": "ai",
-      "renewedAuditStatus": "passed",
-      "renewedAuditSourceCommit": "3a2d4a6",
-      "renewedAuditCommit": "d047115"
+      "renewedAuditStatus": "local-passed-awaiting-live",
+      "renewedAuditSourceCommit": "df4bd128c42489756aa32362cf6dfd12c2af7c4e",
+      "renewedAuditCommit": "d047115",
+      "inGameControlsAndFullscreenStatus": "local-passed-awaiting-live"
     },
     {
       "id": "sdl-space",

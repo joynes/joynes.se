@@ -9,9 +9,10 @@ Work on one game at a time: checkpoint its source, implement, verify actual game
 ## Current queue
 
 1. Hello Multiplayer is complete: full local/live gameplay and input suites, in-game thumbpad, native fullscreen, rotation and homepage integration passed.
-2. Revisit Top-down Driving: replace the control row below the board with an in-game touchpad and add fullscreen.
+2. Top-down Driving passed the additional layout/fullscreen checks locally: in-game floating thumbpad and overlaid actions, all touch directions, second-finger action controls, native fullscreen and rotation. Publish and verify it next.
 3. Revisit SDL Space: retain direct touch dragging and add an in-game fullscreen control.
 4. Check the remaining real-time releases individually: Ordhjälten/Breakout, Small Wonders (three routes), Marble Tables, Läs och placera, 3D Network Game, Neon Bastion and Manta, WorldForge, ShadowRacer, Rall v026 and Rall v030. Their earlier results remain valid for the tested scope; the additional fullscreen/control-placement requirements still need verification.
-5. Finish the unpublished native Rall adaptations without treating archive links as playable releases. Each must satisfy the same requirements before publication.
+5. Recheck secondary-finger activation on the other in-game action buttons, including Hello Multiplayer’s restart/fullscreen controls; the driving audit caught browser click suppression during an existing touch.
+6. Finish the unpublished native Rall adaptations without treating archive links as playable releases. Each must satisfy the same requirements before publication.
 
 Per-game state and source/result commits are tracked in [game-repositories.json](../data/game-repositories.json). The wider publication queue remains in [GAME_PUBLICATION_PLAN.md](GAME_PUBLICATION_PLAN.md).
