@@ -590,11 +590,15 @@
         {
           "check": "2026-11-03 renewed audit — local landscape repair",
           "result": "Canonical pre-repair game passed native mouse/touch drag, hold, gravity, restart, fullscreen, keyboard-native marble manipulation in desktop/mobile contexts, engine load failures and retry. Reproduced clipped landscape view. Repaired HTML/CSS passes full native touch cancellation and keyboard drag/drop/focus/fullscreen at 844x390. Unity files unchanged. Live repair verification pending."
+        },
+        {
+          "check": "2026-11-03 renewed audit — canonical live landscape repair",
+          "result": "Passed real native touch drag/hold/cancel/gravity/restart and keyboard native marble manipulation, independent release, focus cleanup and fullscreen at 844x390. All 12 canonical release/shared files match tested SHA256; successful Pages run 41698933846. All five native Unity build/configuration files unchanged."
         }
       ],
       "publishedUrl": "https://joynes.github.io/joynes.se/games/marble-tables/",
-      "implementationCommit": "5ea295cf092444bcee10434953fb12de9ba961b6",
-      "deploymentCommit": "5ea295cf092444bcee10434953fb12de9ba961b6",
+      "implementationCommit": "6242a8ac51a5165977203f084773718e097076ae",
+      "deploymentCommit": "6242a8ac51a5165977203f084773718e097076ae",
       "category": "retro",
       "webAdaptation": "ai",
       "categoryLabel": "AI remake of a retro game",

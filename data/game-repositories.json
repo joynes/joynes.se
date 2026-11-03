@@ -269,20 +269,20 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/marble-tables",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "510a0e2bda1005eb43bc1fa79c0642c785aa590c",
-      "auditStatus": "local-passed-awaiting-live",
+      "auditStatus": "passed",
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/marble-tables/",
       "sourceHead": "b7994d00c0d740d2d7738028daf5c6528c110372",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "1278ab41fe79d6b0ec52b8886aa7cd923abb0d61",
-      "repositoryHeadCommit": "48d2bdf566020a00ecf2e509626318897def263a",
+      "repositoryHeadCommit": "f98882a96952c264f15c305e7da7f2ebdb05df72",
       "auditUrl": "https://github.com/joynes/marble_tables/tree/audit/2026-11-03-baseline",
-      "auditCommit": "48d2bdf566020a00ecf2e509626318897def263a",
+      "auditCommit": "f98882a96952c264f15c305e7da7f2ebdb05df72",
       "auditEvidence": {
         "game": "marble-tables",
         "date": "2026-11-03",
         "baselineCommit": "510a0e2bda1005eb43bc1fa79c0642c785aa590c",
-        "result": "local-passed-awaiting-live",
+        "result": "passed",
         "scope": "Actual Chromium desktop and mobile browser contexts, with touch enabled and keyboard events in both. Physical phones/tablets and Safari are not covered by this result.",
         "checks": "Canonical release passed native mouse/touch drag, hold, actual gravity, restart, fullscreen, blocked engine files/retry, homepage launcher, and full keyboard/native marble manipulation in desktop and mobile contexts. Added landscape case reproduced the clipped view. Fixed layout passed full native touch cancellation and attached-keyboard drag/drop/fullscreen/focus checks in 844x390. Prior 12-asset canonical identity check passed; new wrapper/style publication awaits live verification.",
         "findings": "Fixed the complete scene not fitting a short landscape phone viewport by moving HTML controls beside it. Native Unity code, scene, physics and assets are unchanged. No movement or input mapping defect was found.",
@@ -291,8 +291,18 @@
           "scripts/test-marble-keyboard.cjs",
           "scripts/marble-vision.py"
         ],
-        "publicUrl": "https://joynes.github.io/joynes.se/games/marble-tables/"
-      }
+        "publicUrl": "https://joynes.github.io/joynes.se/games/marble-tables/",
+        "liveVerification": {
+          "homepageCommit": "6242a8ac51a5165977203f084773718e097076ae",
+          "pagesRun": 41698933846,
+          "checks": "Passed canonical 844x390 native touch drag/hold/cancel/gravity/restart and mobile-context keyboard native marble drag/drop, independent release, focus cleanup and fullscreen. All 12 game/shared files match the tested asset ledger.",
+          "commands": [
+            "RALL_HEADLESS_SHELL=1 MARBLE_TOUCH_CANCEL=1 MARBLE_LANDSCAPE=1 GAME_BASE_URL=https://joynes.github.io/joynes.se/games/marble-tables/ node scripts/test-marble-browser.cjs",
+            "RALL_HEADLESS_SHELL=1 MARBLE_ONLY_MOBILE=1 MARBLE_LANDSCAPE=1 GAME_BASE_URL=https://joynes.github.io/joynes.se/games/marble-tables/ node scripts/test-marble-keyboard.cjs"
+          ]
+        }
+      },
+      "auditTestCommit": "48d2bdf566020a00ecf2e509626318897def263a"
     },
     {
       "id": "godot-reading",
@@ -574,5 +584,5 @@
       "publicUrl": null
     }
   ],
-  "currentAuditGame": "marble-tables"
+  "currentAuditGame": "godot-reading"
 }
