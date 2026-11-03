@@ -17,6 +17,10 @@ Eighteen games remain published after removing the police-car and bus proof-of-c
 - Preserve the original gameplay, levels, graphics and audio. Keep original archives and document compatibility changes and uncertain version relationships.
 - Test real multiplayer clients and servers when multiplayer is part of the game.
 
+## Website sections
+
+Games contains three subsections: Quiz games, Retro games and AI games. Knowledge, word and maths quizzes are grouped under Quiz games; the other games follow the Retro/AI classification.
+
 ## Categories
 
 **Retro games** are older originals adapted for the web using AI. **AI games** are the newer games from roughly the last two years, following Johannes's classification. A new adaptation does not change an older original into a newer AI game.

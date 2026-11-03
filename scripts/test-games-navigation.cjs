@@ -1,24 +1,24 @@
 const assert = require('node:assert/strict');
-const {chromium} = require('playwright');
+const {chromium} = require(process.env.CHROMIUM_PLAYWRIGHT_MODULE||'playwright');
 const base = process.env.HOMEPAGE_BASE_URL || 'http://127.0.0.1:8767/';
 
 (async () => {
-  const browser = await chromium.launch({channel:'chrome',headless:true});
+  const browser = await chromium.launch(process.env.CHROMIUM_PLAYWRIGHT_MODULE?{headless:true}:{channel:'chrome',headless:true});
   try {
     const page = await browser.newPage({viewport:{width:412,height:915},reducedMotion:'reduce'});
     const errors=[];
     page.on('pageerror',error=>errors.push(error.message));
-    await page.goto(base+'#games/retro');
-    await page.waitForFunction(()=>document.querySelector('#stageTitle')?.textContent==='Retro games');
+    await page.goto(base+'#games/quizzes');
+    await page.waitForFunction(()=>document.querySelector('#stageTitle')?.textContent==='Quiz games');
     assert.equal(await page.locator('#categoryGrid .active').getAttribute('data-category'),'games');
     assert.ok((await page.locator('#contentList').innerText()).includes('Frågespelet'));
     await page.locator('#contentList .item-title a').getByText('Frågespelet',{exact:true}).click();
-    await page.waitForFunction(()=>location.hash==='#games/retro/web-quizzes' && document.querySelector('#stageTitle')?.textContent==='Frågespelet');
+    await page.waitForFunction(()=>location.hash==='#games/quizzes/web-quizzes' && document.querySelector('#stageTitle')?.textContent==='Frågespelet');
     const frame=page.frameLocator('iframe[title="Frågespelet"]');
     await frame.locator('.stage-button').first().click();
     assert.equal(await frame.locator('#play').isVisible(),true);
     assert.ok(await frame.getByText('AI-remake av retrospel · Original 2023',{exact:true}).isVisible());
-    await page.goto(base+'#games/retro/quiz-sdl');
+    await page.goto(base+'#games/quizzes/quiz-sdl');
     await page.waitForFunction(()=>document.querySelector('#stageTitle')?.textContent==='Läs- och ordquiz');
     const readingFrame=page.frameLocator('iframe[title="Läs- och ordquiz"]');
     await readingFrame.locator('#stages button').first().click();
@@ -29,12 +29,12 @@ const base = process.env.HOMEPAGE_BASE_URL || 'http://127.0.0.1:8767/';
     await memitFrame.locator('#menu').waitFor();
     await memitFrame.locator('[data-mode="guess"]').click();
     assert.equal(await memitFrame.locator('#grid button').count(),6);
-    await page.locator('#gameControls').getByRole('link',{name:'AI games',exact:true}).click();
-    await page.waitForFunction(()=>location.hash==='#games/ai' && document.querySelector('#stageTitle')?.textContent==='AI games');
+    await page.locator('#gameControls').getByRole('link',{name:'Quiz games',exact:true}).click();
+    await page.waitForFunction(()=>location.hash==='#games/quizzes' && document.querySelector('#stageTitle')?.textContent==='Quiz games');
     assert.ok((await page.locator('#contentList').innerText()).includes('Milians Grimace Matte-spel'));
-    assert.ok(!(await page.locator('#contentList').innerText()).includes('Frågespelet'));
+    assert.ok((await page.locator('#contentList').innerText()).includes('Frågespelet'));
     await page.locator('#contentList .item-title a').getByText('Milians Grimace Matte-spel',{exact:true}).click();
-    await page.waitForFunction(()=>location.hash==='#games/ai/grimace-gemini' && document.querySelector('#stageTitle')?.textContent==='Milians Grimace Matte-spel');
+    await page.waitForFunction(()=>location.hash==='#games/quizzes/grimace-gemini' && document.querySelector('#stageTitle')?.textContent==='Milians Grimace Matte-spel');
     const mathFrame=page.frameLocator('iframe[title="Milians Grimace Matte-spel"]');
     await page.waitForFunction(()=>{
       const doc=document.querySelector('iframe[title="Milians Grimace Matte-spel"]')?.contentDocument;
@@ -42,7 +42,7 @@ const base = process.env.HOMEPAGE_BASE_URL || 'http://127.0.0.1:8767/';
     });
     await mathFrame.locator('[data-mode="plus"]').click();
     assert.equal(await mathFrame.locator('#options button').count(),4);
-    await page.goto(base+'#games/ai/grimace-codex');
+    await page.goto(base+'#games/quizzes/grimace-codex');
     await page.waitForFunction(()=>document.querySelector('#stageTitle')?.textContent==='Milians Grimace Matte-spel — Codex');
     const codexFrame=page.frameLocator('iframe[title="Milians Grimace Matte-spel — Codex"]');
     await page.waitForFunction(()=>{
@@ -51,7 +51,7 @@ const base = process.env.HOMEPAGE_BASE_URL || 'http://127.0.0.1:8767/';
     });
     await codexFrame.locator('[data-mode="minus"]').click();
     assert.equal(await codexFrame.locator('#options button').count(),4);
-    await page.goto(base+'#games/ai/hardword');
+    await page.goto(base+'#games/quizzes/hardword');
     await page.waitForFunction(()=>document.querySelector('#stageTitle')?.textContent==='Skoluppgifter / Ordhjälten');
     const schoolFrame=page.frameLocator('iframe[title="Skoluppgifter / Ordhjälten"]');
     await schoolFrame.locator('#ageCard8').click();

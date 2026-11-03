@@ -136,6 +136,7 @@ window.joynesPublishedGames = [
   },
   {
     id: "hardword",
+    genre: "quiz",
     title: "Skoluppgifter / Ordhjälten",
     kind: "ai",
     description: "AI game · Swedish, five maths areas, reading, the Ice Age, 19 crosswords and Breakout. Age selection, saved progress, a shop and offline support.",
@@ -154,6 +155,7 @@ window.joynesPublishedGames = [
   },
   {
     id: "quiz-sdl",
+    genre: "quiz",
     title: "Läs- och ordquiz",
     kind: "retro",
     description: "AI remake of a retro game · Original 2023 · Three stages with 35 words, picture choices, letter sounds and coins. Original pictures and audio preserved.",
@@ -163,6 +165,7 @@ window.joynesPublishedGames = [
   },
   {
     id: "grimace-codex",
+    genre: "quiz",
     title: "Milians Grimace Matte-spel — Codex",
     kind: "ai",
     description: "AI game · Codex edition · Ten addition and ten subtraction questions. Continue your progress or replay a completed stage.",
@@ -172,6 +175,7 @@ window.joynesPublishedGames = [
   },
   {
     id: "grimace-gemini",
+    genre: "quiz",
     title: "Milians Grimace Matte-spel",
     kind: "ai",
     description: "AI game · Gemini edition · Practise addition and subtraction with Grimace. Increasing difficulty and separately saved progress.",
@@ -181,6 +185,7 @@ window.joynesPublishedGames = [
   },
   {
     id: "web-quizzes",
+    genre: "quiz",
     title: "Frågespelet",
     kind: "retro",
     description: "AI remake of a retro game · Original 2023 · 12 stages and 154 knowledge questions. Play on desktop or mobile and save your best results.",

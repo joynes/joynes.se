@@ -57,7 +57,8 @@
         "games/web-quizzes/app.mjs": "707b8d6004c33cee1690289cdb15e475fd9eb248b53387dc1a6c684bd99f110b",
         "games/web-quizzes/source-notes.md": "3a18494f56de0f8a2b45206b101a109d2002d7625b149633cac008cbde932b55",
         "assets/games-catalog.js": "e8906cc0dd883c78ebfa722ee8751fd12f7958b07a69958b2a38103acfbbc5b2"
-      }
+      },
+      "websiteSection": "quizzes"
     },
     {
       "id": "grimace-gemini",
@@ -114,7 +115,8 @@
         "games/grimace-gemini/core.mjs": "afbe23a4d4b130cff84afacb199d785bc7c666f7f99f567b4030c370e2e734d3",
         "games/grimace-gemini/styles.css": "eac894c87349643e5c7c072594e4d5503ec7ce0cfac7d4172add4c381d000fba",
         "assets/games-catalog.js": "c4e15570b87d5e3bb8757e3d63026c56cb16ab2359b47df4355aaf202de10025"
-      }
+      },
+      "websiteSection": "quizzes"
     },
     {
       "id": "grimace-codex",
@@ -172,7 +174,8 @@
         "games/grimace-codex/questions.mjs": "0aba6d91d12c3aa49a9fb49e234952cdfc2c2389e753715dcdb13376b8af8b73",
         "games/grimace-codex/styles.css": "8825eadb2ca8f75ed3ac22dc4c00c5f9b4b7630f8c5664c40e6eea8342015aa5",
         "assets/games-catalog.js": "f2dfc3d33360e3e634cd810dbe4af82fd798e200c76393c69d6e96d2f506ad02"
-      }
+      },
+      "websiteSection": "quizzes"
     },
     {
       "id": "quiz-sdl",
@@ -227,7 +230,8 @@
         "fileCount": 112,
         "sha256OfSortedFileHashes": "19f3ba304ac0be3c6705ed8d826b2e129e55ebda0c4a626ea0babe99fd21efff",
         "commit": "bd39e6cfd3a42d621f70d77955115f0438f0f6cd"
-      }
+      },
+      "websiteSection": "quizzes"
     },
     {
       "id": "memit",
@@ -293,7 +297,8 @@
         "fileCount": 133,
         "sha256OfSortedFileHashes": "f3da6071dd47df4d16276e1e398434a9ee914aa8ca647080312213ca8727d9e3",
         "commit": "1c8d61f006fbac85eda189c45f786df21b3156f5"
-      }
+      },
+      "websiteSection": "retro"
     },
     {
       "id": "hardword",
@@ -384,7 +389,8 @@
       "implementationCommits": [
         "cbd03b581ca0cca57dde8c44b037d354a4e45e25",
         "311927ceff5e9097a64fd0615393c853139279b4"
-      ]
+      ],
+      "websiteSection": "quizzes"
     },
     {
       "id": "small-wonders",
@@ -485,7 +491,8 @@
       "homepageVerifiedFiles": {
         "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82",
         "assets/games-catalog.js": "2d80cf8f0e241a58cc14b9729fd485109d3817c3b4729b92ff403f89eba23561"
-      }
+      },
+      "websiteSection": "ai"
     },
     {
       "id": "marble-tables",
@@ -574,7 +581,8 @@
         "releaseCommit": "5ea295cf092444bcee10434953fb12de9ba961b6"
       },
       "previousWrapperCommit": "2d3ff421e0f2da60703a53ac6e6490fa352e1473",
-      "resourceAudit": "docs/games/marble-tables-assets.json"
+      "resourceAudit": "docs/games/marble-tables-assets.json",
+      "websiteSection": "retro"
     },
     {
       "id": "simple-driving",
@@ -644,7 +652,8 @@
       },
       "previousPublishedUrl": "https://joynes.github.io/joynes.se/games/simple-driving/",
       "exclusionReason": "Removed at the owner's request: proof-of-concept driving demo with too little gameplay.",
-      "doNotRepublish": true
+      "doNotRepublish": true,
+      "websiteSection": null
     },
     {
       "id": "unity-bus",
@@ -718,7 +727,8 @@
       },
       "previousPublishedUrl": "https://joynes.github.io/joynes.se/games/unity-bus/",
       "exclusionReason": "Removed at the owner's request: proof-of-concept driving demo with too little gameplay.",
-      "doNotRepublish": true
+      "doNotRepublish": true,
+      "websiteSection": null
     },
     {
       "id": "godot-reading",
@@ -782,7 +792,8 @@
         "assets/games-catalog.js": "7ea426ec7a9db328f45d0bc2f08b99d6da33691faa20a0769dab2af0f8834dc3",
         "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82"
       },
-      "deploymentRun": 41293921395
+      "deploymentRun": 41293921395,
+      "websiteSection": "retro"
     },
     {
       "id": "car-topview",
@@ -848,7 +859,8 @@
         "assets/games-catalog.js": "4fea3ef6b179dd8fe5c102b165b2c1ec541efa1f129b962b787cfe5fb532e3cf",
         "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82"
       },
-      "deploymentRun": 41294880333
+      "deploymentRun": 41294880333,
+      "websiteSection": "ai"
     },
     {
       "id": "sdl-space",
@@ -915,7 +927,8 @@
         "assets/games-catalog.js": "fd2657746d781df064848295134ecd8ed3db1967f5567ebc5ff185044f37a496",
         "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82"
       },
-      "deploymentRun": 41296724273
+      "deploymentRun": 41296724273,
+      "websiteSection": "retro"
     },
     {
       "id": "network-2d",
@@ -990,7 +1003,8 @@
       },
       "catalogUrl": "https://joynes.github.io/joynes.se/#games/ai/network-2d",
       "catalogCommit": "dc10cf65385bb3d4f198fef4f6bf27cfb9efb896",
-      "catalogDeploymentRun": 41300742912
+      "catalogDeploymentRun": 41300742912,
+      "websiteSection": "ai"
     },
     {
       "id": "network-3d",
@@ -1067,7 +1081,8 @@
       },
       "catalogUrl": "https://joynes.github.io/joynes.se/#games/ai/network-3d",
       "catalogCommit": "6b70bb237005c0411acabed78003e2df815ee192",
-      "catalogDeploymentRun": 41305100519
+      "catalogDeploymentRun": 41305100519,
+      "websiteSection": "ai"
     },
     {
       "id": "neon-interceptor",
@@ -1154,7 +1169,8 @@
       },
       "catalogUrl": "https://joynes.github.io/joynes.se/#games/ai/neon-interceptor",
       "catalogCommit": "0fb22ddf2f464fcf610261d72a18b4e8841d0cef",
-      "catalogDeploymentRun": 41308670778
+      "catalogDeploymentRun": 41308670778,
+      "websiteSection": "ai"
     },
     {
       "id": "worldforge",
@@ -1230,7 +1246,8 @@
         "assets/games-catalog.js": "2834c6b8d685eecf9aa5a35b98b702007223dcf7ca5cddbe2b4569f1ca428ead",
         "docs/games/worldforge.md": "256ea3317260ef758a5dd94f5ecad5a3ab4d674caf40d39b9d81aa8bd26d065a",
         "docs/games/worldforge-assets.json": "3fff753caa75822e9a4962033784b2449c5c461c9fb492ff999bee965c02b321"
-      }
+      },
+      "websiteSection": "ai"
     },
     {
       "id": "shadow-racer",
@@ -1332,7 +1349,8 @@
         "assets/games-catalog.js": "4563700bc43d43dfb3e51b4acd65076d1f41a3fc420bbd4b2537a238d7469588",
         "docs/games/shadow-racer.md": "5b98ef726985c66402150b7dc0d0fa85c43e44c84fd0f8d643b1ee5292501dcf",
         "docs/games/shadow-racer-assets.json": "1b9dd2c13b47ce0ac3886b6f07af79d3a54262410d09836cdf9ede1ecadd9adf"
-      }
+      },
+      "websiteSection": "retro"
     },
     {
       "id": "rall-026",
@@ -1418,7 +1436,8 @@
         "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82",
         "docs/games/rall-026.md": "e689906009815f758a854b186622c68c8fb482ebafd1e260e2091592f1147049",
         "docs/games/rall-026-assets.json": "23aad475f25009756710699965ca81d63f71b7eb230cdfed2ed10e201cc6150b"
-      }
+      },
+      "websiteSection": "retro"
     },
     {
       "id": "rall-030",
@@ -1566,7 +1585,8 @@
         "docs/games/rall-030.md": "fd819f7eccea21de808aa561486b291bd37c5c500bae36d770c7ab9477440168",
         "docs/games/rall-030-assets.json": "2e2a1d363e9d184f253b694da284e83eec56fc9b76cb0966211b08f8b7bad1ad"
       },
-      "sharedInterfaceCommit": "5ea295cf092444bcee10434953fb12de9ba961b6"
+      "sharedInterfaceCommit": "5ea295cf092444bcee10434953fb12de9ba961b6",
+      "websiteSection": "retro"
     },
     {
       "id": "rall-054",
@@ -1609,7 +1629,8 @@
       "webAdaptation": "ai",
       "categoryLabel": "AI remake of a retro game",
       "compatibilityNotes": "docs/games/rall-054-compatibility.md",
-      "prototypeSource": "scripts/rall054-probe-ui/"
+      "prototypeSource": "scripts/rall054-probe-ui/",
+      "websiteSection": "retro"
     },
     {
       "id": "rall-006",
@@ -1633,7 +1654,8 @@
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI remake of a retro game"
+      "categoryLabel": "AI remake of a retro game",
+      "websiteSection": "retro"
     },
     {
       "id": "rall-066",
@@ -1653,7 +1675,8 @@
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI remake of a retro game"
+      "categoryLabel": "AI remake of a retro game",
+      "websiteSection": "retro"
     },
     {
       "id": "rall-073",
@@ -1677,7 +1700,8 @@
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI remake of a retro game"
+      "categoryLabel": "AI remake of a retro game",
+      "websiteSection": "retro"
     },
     {
       "id": "rall-080",
@@ -1701,7 +1725,8 @@
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI remake of a retro game"
+      "categoryLabel": "AI remake of a retro game",
+      "websiteSection": "retro"
     },
     {
       "id": "rall-008",
@@ -1725,7 +1750,8 @@
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI remake of a retro game"
+      "categoryLabel": "AI remake of a retro game",
+      "websiteSection": "retro"
     },
     {
       "id": "rall-082",
@@ -1745,7 +1771,8 @@
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI remake of a retro game"
+      "categoryLabel": "AI remake of a retro game",
+      "websiteSection": "retro"
     }
   ],
   "candidatesToInspect": [

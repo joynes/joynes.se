@@ -78,7 +78,7 @@
       }
     }
     music.description = 'Original Joynes tracks and new AI interpretations. Open a song to explore its original and variations, or switch to AI-only shuffle.';
-    music.sub = 'Originals, variations and personal playlists.';
+    music.sub = 'Originals, Old MP3, AI variations and personal playlists.';
     const aiTracks = tracks.filter(track => track.ai);
     const aiCategory = {
       id: 'ai', name: 'Music', title: 'Music', glyph: 'M', musicView: true,

@@ -1489,12 +1489,13 @@
       {
         id: "games",
         name: "Games",
-        sub: "Retro games and newer AI games.",
+        sub: "Quiz games, retro games and AI games.",
         glyph: "G",
         kicker: "Playable relic zone",
         title: "Games",
-        description: "Retro games adapted for the web using AI, alongside newer AI games. Choose a category or open a game.",
+        description: "Choose Quiz games, Retro games or AI games, or browse all games together.",
         featured: [
+          ["Quiz games", "#games/quizzes"],
           ["Retro games", "#games/retro"],
           ["AI games", "#games/ai"]
         ],
@@ -1566,7 +1567,7 @@
     for (const game of window.joynesPublishedGames || []) {
       gamesCategory.items.unshift([game.title, game.description,
         [[game.playLabel || "Play", game.href], ...(game.modes || []), [game.sourceLabel || "Source code", game.source]],
-        {slug: game.id, gameKind: game.kind, embed: game.embed === false ? null : game.href, embedTitle: game.title, embedOnDetail: true}]);
+        {slug: game.id, gameKind: game.kind, gameGenre: game.genre, embed: game.embed === false ? null : game.href, embedTitle: game.title, embedOnDetail: true}]);
     }
 
     function slugify(value) {
@@ -1727,12 +1728,13 @@
       const [categoryId, subroute, versionSlug] = raw.split("/").filter(Boolean);
       const isAIView = (categoryId === "music" && subroute === "ai") || categoryId === "ai";
       const isOldView = (categoryId === "music" && subroute === "old") || categoryId === "old";
-      const isGameFilter = categoryId === "games" && ["retro", "ai"].includes(subroute);
+      const isGameFilter = categoryId === "games" && ["retro", "ai", "quizzes"].includes(subroute);
       let category = isAIView ? musicLibrary.aiView : categories.find((entry) => entry.id === (isOldView ? "old" : categoryId)) || categories[0];
       if (isGameFilter) {
-        category = {...gamesCategory, gameFilter: subroute, title: subroute === "retro" ? "Retro games" : "AI games",
-          description: subroute === "retro" ? "Older games adapted for the web using AI. Browse archives and playable web versions." : "Newer games created with AI. More tested games will be published here.",
-          items: gamesCategory.items.filter(item => item[3]?.gameKind === subroute)};
+        category = {...gamesCategory, gameFilter: subroute,
+          title: subroute === "quizzes" ? "Quiz games" : subroute === "retro" ? "Retro games" : "AI games",
+          description: subroute === "quizzes" ? "Knowledge, word and maths quiz games." : subroute === "retro" ? "Older games adapted for the web using AI." : "Newer games created with AI.",
+          items: gamesCategory.items.filter(item => subroute === "quizzes" ? item[3]?.gameGenre === "quiz" : item[3]?.gameKind === subroute && item[3]?.gameGenre !== "quiz")};
       }
       const itemSlug = ((isAIView || isOldView) && categoryId === "music") || isGameFilter ? versionSlug : subroute;
       if (categoryId === "ai") {
@@ -1740,7 +1742,7 @@
       }
       if (categoryId === "old") history.replaceState(null, "", `#music/old${itemSlug ? "/" + itemSlug : ""}`);
       const item = itemSlug
-        ? category.items.find((entry) => entry[3]?.slug === itemSlug)
+        ? (category.items.find((entry) => entry[3]?.slug === itemSlug) || (isGameFilter && gamesCategory.items.find(entry => entry[3]?.slug === itemSlug)))
         : null;
       return { category, item };
     }
@@ -2156,14 +2158,14 @@
       if (controls.hidden) return;
       const links = document.createElement("div");
       links.className = "music-mode-links";
-      for (const [filter, label] of [["", "All games"], ["retro", "Retro games"], ["ai", "AI games"]]) {
+      for (const [filter, label] of [["", "All games"], ["quizzes", "Quiz games"], ["retro", "Retro games"], ["ai", "AI games"]]) {
         const link = internalLinkButton(label, filter ? `#games/${filter}` : "#games");
         if ((category.gameFilter || "") === filter) link.setAttribute("aria-current", "page");
         links.append(link);
       }
       const note = document.createElement("p");
       note.className = "item-meta";
-      note.textContent = "Retro games: older originals adapted for the web using AI. AI games: newer games.";
+      note.textContent = "Quiz games: questions, words and maths. Retro games: older originals adapted using AI. AI games: newer games.";
       controls.replaceChildren(links, note);
     }
 
