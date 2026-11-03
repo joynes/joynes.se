@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-03",
+  "updatedAt": "2026-11-04",
   "objective": "Make every identified game and relevant version playable on the web, tested and published.",
   "currentGame": "rall-054",
   "games": [
@@ -984,11 +984,15 @@
         {
           "check": "enhanced-edition-local",
           "result": "Passed all three courses through real keyboard/touch, medals/unlocks/ghost persistence, actual generated audio, eleven load failures with playable retries, expanded input/focus/restart/native fullscreen/fallback, both mobile orientations/rotation, installed Chrome controls and homepage edition switch. Original full/input regression and root tests pass."
+        },
+        {
+          "check": "original-and-enhanced-2026-11-04-live",
+          "result": "All three courses completed on canonical URLs through keyboard and native touch; full generated-audio/load-recovery, input/restart/focus/native fullscreen/fallback, real iframe focus and original-game full/input regression suites passed. Canonical embedded and actual joynes.se direct-window edition switch, real driving, simultaneous touch boost and keyboard/touch fullscreen passed at desktop, phone portrait and phone landscape sizes. All 25 runtime/integration/documentation files match SHA256; Pages deployment succeeded."
         }
       ],
       "publishedUrl": "https://joynes.github.io/joynes.se/games/car-topview/",
-      "implementationCommit": "70f663b9fee52f8b53bdf9f264638ed2d2f2abfb",
-      "deploymentCommit": "ada0aab7f00ef54891d3f38000ca1b63ce39c4e0",
+      "implementationCommit": "543ff67914cb99c4d6d3a50847a847546e46f6e8",
+      "deploymentCommit": "543ff67914cb99c4d6d3a50847a847546e46f6e8",
       "category": "ai",
       "webAdaptation": "ai",
       "categoryLabel": "AI game",
@@ -1023,14 +1027,14 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "docs/games/car-topview.md": "a72015e7e88fb97eff20c8af36015b7bfdfcbbc4ae1d438e14472773baca12b1"
       },
-      "deploymentRun": 41731059870,
+      "deploymentRun": 41735297215,
       "websiteSection": "ai",
       "renewedAuditStatus": "passed",
       "renewedAuditSourceCommit": "f8ba1cd81787d3062fda246d2e86a9fb36718324",
       "renewedAuditCommit": "f8ba1cd81787d3062fda246d2e86a9fb36718324",
       "inGameControlsAndFullscreenStatus": "passed",
       "enhancedEdition": {
-        "status": "local-passed-awaiting-live",
+        "status": "published_verified",
         "launchChoices": [
           "Original",
           "AI Enhanced"
@@ -1039,7 +1043,7 @@
         "soundAndMusic": "ElevenLabs",
         "title": "Night Circuit",
         "version": "1.0.0",
-        "sourceCommit": "8bc840c63f93df4e8115f9b5221bbd3f0eb42717",
+        "sourceCommit": "b1a184589f436b553b5a53e3268c6f24e4ac0ada",
         "webPath": "games/car-topview/enhanced/",
         "publicUrl": "https://joynes.github.io/joynes.se/games/car-topview/enhanced/",
         "localChecks": [
@@ -1050,7 +1054,11 @@
           "Actual off-road recovery penalty, time-limit loss and playable restart pass. Installed Chrome input suite and canonical homepage preview edition switch, driving and fullscreen pass in all three viewports.",
           "Original edition full gameplay/audio/wall/load-recovery suite and expanded touch/keyboard/fullscreen regressions pass. Original core, PNG and WAV unchanged. Root unit/preservation tests pass."
         ],
-        "provenance": "games/car-topview/enhanced/provenance.json"
+        "provenance": "games/car-topview/enhanced/provenance.json",
+        "verifiedAt": "2026-11-04",
+        "deploymentCommit": "543ff67914cb99c4d6d3a50847a847546e46f6e8",
+        "deploymentRun": 41735297215,
+        "liveChecks": "All three courses completed on canonical URLs through keyboard and native touch; full generated-audio/load-recovery, input/restart/focus/native fullscreen/fallback, real iframe focus and original-game full/input regression suites passed. Canonical embedded and actual joynes.se direct-window edition switch, real driving, simultaneous touch boost and keyboard/touch fullscreen passed at desktop, phone portrait and phone landscape sizes. All 25 runtime/integration/documentation files match SHA256; Pages deployment succeeded."
       }
     },
     {
