@@ -382,7 +382,15 @@ body { color:#fff; font-family:'Nunito',sans-serif; background:#0a0015; min-heig
 </style>
 <style>@media(max-width:419px){.carry-pad,.calc-pad,.carry-cell,.calc-d,.calc-op,.calc-cell{width:32px;min-width:32px}.calc-grid,.calc-cell{font-size:1.6rem}.card{padding:22px 16px}}</style>
 <style>@media(max-width:600px){.coin-bar{position:relative;bottom:auto;left:auto;right:auto;width:max-content;margin:12px auto 0}}</style>
-<style>#brkCanvas{max-width:100%;height:auto}</style>
+<style>
+#brkCanvas{max-width:100%;height:auto}
+@media(orientation:landscape) and (max-height:600px){
+  body.breakout-playing #s-breakout>.back-row{position:absolute;top:56px;left:16px;flex-direction:column;gap:8px;align-items:flex-start!important}
+  body.breakout-playing #brkGameWrap>div:first-child{position:absolute;top:160px;left:16px;flex-direction:column;gap:12px}
+  #brkCanvas{max-height:calc(100dvh - 84px);width:auto}
+  .brk-help{margin:4px 0;font-size:11px!important}
+}
+</style>
 </head>
 <body>
 <!-- Update notification banner — shown when a new SW is waiting for user approval -->
@@ -765,8 +773,8 @@ body { color:#fff; font-family:'Nunito',sans-serif; background:#0a0015; min-heig
       <span id="brkLives" style="font-size:.95rem">❤️❤️❤️</span>
       <span id="brkTimer" style="color:#56CC9D;font-weight:900;font-size:.95rem;display:none">⏱ 0:00</span>
     </div>
-    <canvas id="brkCanvas" tabindex="0" role="application" aria-label="Breakout: flytta paddeln med piltangenterna, starta eller skjut med mellanslag" style="display:block;margin:0 auto;border-radius:14px;border:2px solid rgba(196,77,255,.45);touch-action:none;cursor:none"></canvas>
-    <p style="color:white;text-align:center;font-size:.8rem">Mus eller touch: flytta paddeln. Tangentbord: piltangenter och mellanslag.</p>
+    <canvas id="brkCanvas" tabindex="0" role="application" aria-label="Breakout: arrow keys move the paddle; Space launches the ball" style="display:block;margin:0 auto;border-radius:14px;border:2px solid rgba(196,77,255,.45);touch-action:none;cursor:none"></canvas>
+    <p class="brk-help" style="color:white;text-align:center;font-size:.8rem">Touch or mouse: move. Keyboard: arrow keys move, Space launches.</p>
     <div id="brkOverlay" style="text-align:center;padding:18px 0;display:none">
       <div class="fb-title" id="brkOverlayTitle" style="font-size:1.4rem;margin-bottom:12px"></div>
       <div id="brkOverlayBtns"></div>
@@ -4764,7 +4772,8 @@ let brkBossActive=false, brkBoss=null;
 let brkMagnetTimer=0, brkBombFlash=0;
 let brkEffects={}, brkShield=false, brkStickyCount=0;
 let brkParticles=[];
-let _brkTouchActive=false, _touchLastX=null;
+let _brkTouchActive=false, _touchLastX=null, _brkTouchId=null;
+function brkClearTouch(){ _touchLastX=null; _brkTouchId=null; }
 let brkSingleBallTimer=0;
 let brkCombo=0, brkComboTimer=0, brkComboAnims=[], brkMaxCombo=0;
 const BRK_MAX_BALLS=3;
@@ -4782,21 +4791,35 @@ if(!Number.isFinite(brkDropFreq)||brkDropFreq<0||brkDropFreq>10)brkDropFreq=2;
 // Document-level touch controls — work anywhere on screen, not just on canvas
 (function(){
   document.addEventListener('touchstart',e=>{
-    if(!_brkTouchActive) return;
-    _touchLastX=e.touches[0].clientX;
+    if(!_brkTouchActive || _brkTouchId!==null || e.target.closest('button,a,input,select,textarea')) return;
+    const touch=e.changedTouches[0];
+    if(!touch) return;
+    _brkTouchId=touch.identifier; _touchLastX=touch.clientX;
     if(brkState==='ready') brkLaunch();
     else if(brkState==='playing'&&brkBalls.some(b=>b.alive&&b.onPad)) brkLaunch();
   },{passive:true});
   document.addEventListener('touchmove',e=>{
     if(!_brkTouchActive||_touchLastX===null) return;
+    const touch=Array.from(e.touches).find(t=>t.identifier===_brkTouchId);
+    if(!touch) return;
     e.preventDefault();
-    const x=e.touches[0].clientX;
+    const x=touch.clientX;
     const r=brkCanvas.getBoundingClientRect();
     brkMouseX=Math.max(0,Math.min(brkW,brkMouseX+(x-_touchLastX)*(brkW/r.width)));
     _touchLastX=x;
     if(brkState==='playing'&&brkBalls.some(b=>b.alive&&b.onPad)) brkLaunch();
   },{passive:false});
-  document.addEventListener('touchend',()=>{ if(_brkTouchActive) _touchLastX=null; });
+  document.addEventListener('touchend',e=>{
+    if(!_brkTouchActive || _brkTouchId===null) return;
+    if(Array.from(e.touches).some(t=>t.identifier===_brkTouchId)) return;
+    const next=e.touches[0];
+    if(next){ _brkTouchId=next.identifier; _touchLastX=next.clientX; }
+    else brkClearTouch();
+  });
+  document.addEventListener('touchcancel',brkClearTouch);
+  document.addEventListener('focusin',e=>{ if(e.target!==brkCanvas) brkClearTouch(); });
+  window.addEventListener('blur',brkClearTouch);
+  document.addEventListener('visibilitychange',()=>{ if(document.hidden) brkClearTouch(); });
 })();
 
 /* =========================================================
@@ -4903,6 +4926,7 @@ function brkSelectLevel(lv){ soundClick(); brkLevel=lv; brkStartGame(); }
 
 function brkStartGame(){
   stopBrk();
+  document.body.classList.add('breakout-playing');
   // apply per-level difficulty overrides before anything else
   const _lv=BRK_LVS[brkLevel-1]||{};
   brkDevStartSpd=_lv.startSpd??2.0;
@@ -4929,7 +4953,7 @@ function brkStartGame(){
     const r=brkCanvas.getBoundingClientRect();
     brkMouseX=(e.clientX-r.left)*(brkW/r.width);
   };
-  _brkTouchActive=true; _touchLastX=null;
+  _brkTouchActive=true; brkClearTouch();
   brkCanvas.onclick=()=>{ if(brkState==='ready') brkLaunch(); };
 
   brkStartLives=3+(brkPowerupsActive.includes('life')?1:0);
@@ -5024,8 +5048,9 @@ function brkLaunch(){
    BREAKOUT — GAME LOOP
    ========================================================= */
 function stopBrk(){
+  document.body.classList.remove('breakout-playing');
   if(brkRaf){cancelAnimationFrame(brkRaf);brkRaf=null;}
-  _brkTouchActive=false; _touchLastX=null;
+  _brkTouchActive=false; brkClearTouch();
   if(brkCanvas){brkCanvas.onmousemove=null;brkCanvas.onclick=null;}
   window.musicClearShuffle?.();
 }

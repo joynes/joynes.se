@@ -1,11 +1,11 @@
-const assert=require('node:assert/strict'),fs=require('node:fs');const {chromium}=require('playwright');
+const assert=require('node:assert/strict'),fs=require('node:fs');const {chromium}=require(process.env.CHROMIUM_PLAYWRIGHT_MODULE||'playwright');
 const base=process.env.GAME_BASE_URL||'http://127.0.0.1:8767/games/hardword/';
 const settings={viewport:{width:1000,height:1000},serviceWorkers:'block',reducedMotion:'reduce'};
 async function choose8(p){await p.locator('#ageCard8').click();}
 async function solveMath(p){const i=await p.locator('#mathOptionsGrid button').evaluateAll(b=>b.findIndex(x=>x._ok));await p.locator('#mathOptionsGrid button').nth(i).click();}
 async function openMath(p,name='Analog klocka'){await p.locator('#s-hub [onclick="openMathMenu()"] ').click();await p.locator('#mathMenuGrid .subject-card').filter({hasText:name}).click();await p.locator('#mathLevelsGrid .level-card').first().click();await p.locator('#mathBanorGrid .bana-card').first().click();}
 (async()=>{
- const browser=await chromium.launch({headless:true,channel:'chrome'});
+ const browser=await chromium.launch(process.env.CHROMIUM_PLAYWRIGHT_MODULE?{headless:true}:{headless:true,channel:'chrome'});
  try{
   let c=await browser.newContext(settings),p=await c.newPage();await p.goto(base);await choose8(p);
   const integrity=await p.evaluate(()=>{

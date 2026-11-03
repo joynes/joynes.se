@@ -47,3 +47,11 @@ Musik, typsnitt och ikoner är byte-identiska med originalet. SHA256 finns i `or
 - `node scripts/test-hardword-offline.cjs`: rätt SW-scope, inga omladdningar vid första installationen, spelbar ordfråga offline och orörda syskondata.
 
 Hela webbläsarsviten körs med `npm run test:school:browser`. Skärmbilder för dator, mobil, femsiffrig uppställning och Breakout granskas visuellt. Den automatiska Breakout-spelaren kan behöva försöka igen om slumpade negativa bonusar gör att den förlorar; spelets regler ändras inte för testerna.
+
+## Touch and keyboard audit — 3 November 2026
+
+The renewed browser check reproduced a Breakout defect: lifting one finger during a two-finger drag stopped the remaining finger from controlling the paddle. Touch cancellation also left the previous drag coordinate active.
+
+The web adaptation now tracks the controlling contact, transfers to a remaining contact without a position jump, and clears drag state on cancellation, focus changes, page hiding and restart. Touching a toolbar button no longer starts a canvas drag. Keyboard controls remain available on touch-capable devices. The board also fits within a short landscape viewport without changing its physics coordinates. The service-worker cache version is advanced so returning players receive the repaired release.
+
+`node scripts/test-hardword-input.cjs` checks real browser touch events, independent contact release, cancellation, keyboard menu navigation, paddle movement, launch, focus cleanup and restart. These are Chromium desktop/mobile-context checks, not a claim of physical Android or iOS verification.

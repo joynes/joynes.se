@@ -1,7 +1,7 @@
-const assert=require('node:assert/strict');const {chromium}=require('playwright');
+const assert=require('node:assert/strict');const {chromium}=require(process.env.CHROMIUM_PLAYWRIGHT_MODULE||'playwright');
 const base=process.env.GAME_BASE_URL||'http://127.0.0.1:8767/games/hardword/';
 (async()=>{
- const browser=await chromium.launch({headless:true,channel:'chrome'});
+ const browser=await chromium.launch(process.env.CHROMIUM_PLAYWRIGHT_MODULE?{headless:true}:{headless:true,channel:'chrome'});
  try{
   const context=await browser.newContext({viewport:{width:900,height:1000},serviceWorkers:'block'});const p=await context.newPage();const errors=[];p.on('pageerror',e=>errors.push(e.message));
   await p.goto(base);await p.clock.install();await p.addStyleTag({content:'*{animation:none!important;transition:none!important;scroll-behavior:auto!important}'});await p.locator('#ageCard8').click();await p.locator('#s-hub [onclick="openBreakout()"] ').click();await p.locator('#brkLevelGrid .bana-card').first().click();

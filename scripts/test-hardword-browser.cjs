@@ -1,5 +1,5 @@
 const assert=require('node:assert/strict');
-const {chromium}=require('playwright');
+const {chromium}=require(process.env.CHROMIUM_PLAYWRIGHT_MODULE||'playwright');
 const base=process.env.GAME_BASE_URL||'http://127.0.0.1:8767/games/hardword/';
 const phase=process.argv[2]||'all';
 const phases=phase==='all'?['stories','math','reading','crosswords']: [phase];

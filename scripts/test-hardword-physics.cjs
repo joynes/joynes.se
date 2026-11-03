@@ -1,8 +1,8 @@
 // Controlled collision scenarios exercise the original engine; these are unit
 // scenarios, separate from test-hardword-breakout.cjs's full paddle-controlled win.
-const assert=require('node:assert/strict');const {chromium}=require('playwright');
+const assert=require('node:assert/strict');const {chromium}=require(process.env.CHROMIUM_PLAYWRIGHT_MODULE||'playwright');
 const base=process.env.GAME_BASE_URL||'http://127.0.0.1:8767/games/hardword/';
-(async()=>{const browser=await chromium.launch({headless:true,channel:'chrome'});try{
+(async()=>{const browser=await chromium.launch(process.env.CHROMIUM_PLAYWRIGHT_MODULE?{headless:true}:{headless:true,channel:'chrome'});try{
  const p=await browser.newPage({viewport:{width:1000,height:1000},serviceWorkers:'block'});const errors=[];p.on('pageerror',e=>errors.push(e.message));
  const url=new URL(base);url.searchParams.set('age','8');url.searchParams.set('debug','');url.searchParams.set('go','breakout');await p.goto(url.href);await p.locator('#brkLevelGrid .bana-card').first().waitFor();
  await p.clock.install();let hits=0;

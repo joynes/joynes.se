@@ -1,7 +1,7 @@
-const assert=require('node:assert/strict');const {chromium}=require('playwright');
+const assert=require('node:assert/strict');const {chromium}=require(process.env.CHROMIUM_PLAYWRIGHT_MODULE||'playwright');
 const base=process.env.GAME_BASE_URL||'http://127.0.0.1:8767/games/hardword/';
 async function wrong(p,selector,prop){const i=await p.locator(selector).evaluateAll((bs,prop)=>bs.findIndex(b=>!b.disabled&&!b[prop]),prop);assert.ok(i>=0);await p.locator(selector).nth(i).click();}
-(async()=>{const browser=await chromium.launch({headless:true,channel:'chrome'});try{
+(async()=>{const browser=await chromium.launch(process.env.CHROMIUM_PLAYWRIGHT_MODULE?{headless:true}:{headless:true,channel:'chrome'});try{
  const p=await browser.newPage({serviceWorkers:'block',viewport:{width:1000,height:1000}});const errors=[];p.on('pageerror',e=>errors.push(e.message));await p.goto(base);await p.clock.install();await p.addStyleTag({content:'*{animation:none!important;transition:none!important;scroll-behavior:auto!important}'});await p.locator('#ageCard8').click();
  await p.locator('#s-hub [onclick="openMathMenu()"] ').click();await p.locator('#mathMenuGrid .subject-card').filter({hasText:'Analog klocka'}).click();await p.locator('#mathLevelsGrid .level-card').first().click();await p.locator('#mathBanorGrid .bana-card').first().click();
  for(let i=0;i<3;i++)await wrong(p,'#mathOptionsGrid button','_ok');assert.equal(await p.evaluate(()=>mathWrong),3);

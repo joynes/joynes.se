@@ -1,5 +1,5 @@
 const CACHE_PREFIX = 'joynes-hardword-';
-const CACHE = CACHE_PREFIX + 'v1';
+const CACHE = CACHE_PREFIX + 'v2';
 const ROOT = new URL('./', self.location.href);
 const ASSETS = ['./', './index.html', './storage.js', './accessibility.js', './manifest.json',
   './icon-192.png', './icon-512.png', './fonts/nunito-latin.woff2', './fonts/nunito-latin-ext.woff2',

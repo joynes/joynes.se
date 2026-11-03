@@ -142,7 +142,7 @@ window.joynesPublishedGames = [
     description: "AI game · Swedish, five maths areas, reading, the Ice Age, 19 crosswords and Breakout. Age selection, saved progress, a shop and offline support.",
     href: "games/hardword/",
     source: "https://github.com/joynes/hardword",
-    version: "118-web.2"
+    version: "118-web.3"
   },
   {
     id: "memit",

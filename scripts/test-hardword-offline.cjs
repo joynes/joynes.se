@@ -1,6 +1,6 @@
-const assert=require('node:assert/strict');const {chromium}=require('playwright');
+const assert=require('node:assert/strict');const {chromium}=require(process.env.CHROMIUM_PLAYWRIGHT_MODULE||'playwright');
 const base=process.env.GAME_BASE_URL||'http://127.0.0.1:8767/games/hardword/';
-(async()=>{const browser=await chromium.launch({headless:true,channel:'chrome'});try{
+(async()=>{const browser=await chromium.launch(process.env.CHROMIUM_PLAYWRIGHT_MODULE?{headless:true}:{headless:true,channel:'chrome'});try{
  const context=await browser.newContext({viewport:{width:1000,height:1000}});const p=await context.newPage();const errors=[];let navigations=0;p.on('pageerror',e=>errors.push(e.message));p.on('framenavigated',frame=>{if(frame===p.mainFrame())navigations++;});
  await p.goto(base);await p.locator('#ageCard8').click();
  await p.evaluate(async()=>{localStorage.setItem('sibling-game','keep');await caches.open('sibling-cache');await navigator.serviceWorker.ready;});

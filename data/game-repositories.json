@@ -16,7 +16,7 @@
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/web-quizzes/",
       "sourceHead": "616543b83cb56b00d98c8c5bbfd04b175d1a0eef",
-      "auditCommit": "7846ac25c6f13cb91e6bca3740ef356105ea9f4a",
+      "auditCommit": "9e3fc36445b7e99c9df58a7fed0822b31ed9ff0e",
       "auditEvidence": {
         "game": "web-quizzes",
         "date": "2026-11-03",
@@ -24,13 +24,15 @@
         "result": "passed",
         "browser": "Chromium 147, desktop and emulated mobile with touch enabled; keyboard events sent in both contexts. Physical Android/iOS devices were not tested.",
         "gameplay": "All 154 questions across all 12 stages, wrong answers, scoring, records, replay and load/storage recovery passed on the canonical public game.",
-        "input": "Completed a stage using only keyboard controls on desktop and mobile. Real CDP touch start/end/cancel, two contacts with independent lift, canceled answer/next buttons, attached keyboard after touch, tab focus loss, resume, restart and portrait/landscape passed locally and live.",
+        "input": "Completed a stage using only keyboard controls on desktop and mobile. Real CDP touch start/end/cancel, two contacts with independent lift, canceled answer/next buttons, attached keyboard after touch, keyboard focus transfer, resume, restart and portrait/landscape passed locally and live.",
         "changes": "No gameplay defect found. Added repeatable input regression and cached-Playwright support.",
         "commands": [
           "CHROMIUM_PLAYWRIGHT_MODULE=<playwright package> GAME_BASE_URL=https://joynes.github.io/joynes.se/games/web-quizzes/ node scripts/test-web-quizzes-browser.cjs",
           "CHROMIUM_PLAYWRIGHT_MODULE=<playwright package> GAME_BASE_URL=https://joynes.github.io/joynes.se/games/web-quizzes/ node scripts/test-web-quizzes-input.cjs"
-        ]
-      }
+        ],
+        "focusScope": "Keyboard focus was moved away from a held button through the browser. Headless tabs emulate active focus, so tab switching alone is not counted as an operating-system window-blur check."
+      },
+      "auditTestCommit": "7846ac25c6f13cb91e6bca3740ef356105ea9f4a"
     },
     {
       "id": "grimace-gemini",
@@ -45,7 +47,7 @@
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/grimace-gemini/",
       "sourceHead": "f3b4d568066075a11cf7d2c43afae108a75a6b03",
-      "auditCommit": "70e09960d5ba2b061aa6ce184575678e693e92a2",
+      "auditCommit": "75de1dfd61a65334d6d6009c8d8c7c8ab97d5b41",
       "auditEvidence": {
         "game": "grimace-gemini",
         "date": "2026-11-03",
@@ -58,8 +60,10 @@
           "scripts/test-grimace-gemini-browser.cjs",
           "scripts/test-math-mobile-input.cjs"
         ],
-        "publicUrl": "https://joynes.github.io/joynes.se/games/grimace-gemini/"
-      }
+        "publicUrl": "https://joynes.github.io/joynes.se/games/grimace-gemini/",
+        "focusScope": "Keyboard focus was moved away from a held button through the browser. Headless tabs emulate active focus, so tab switching alone is not counted as an operating-system window-blur check."
+      },
+      "auditTestCommit": "70e09960d5ba2b061aa6ce184575678e693e92a2"
     },
     {
       "id": "grimace-codex",
@@ -74,21 +78,23 @@
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/grimace-codex/",
       "sourceHead": "07bf4ed2be5b219de95dc5a647f3d832f23b5e44",
-      "auditCommit": "27056ed2c135202fc1d7dad8d8d62641e40b46b4",
+      "auditCommit": "78139a78ac05440fa31ea476ba6bbc1bd4d3f2e2",
       "auditEvidence": {
         "game": "grimace-codex",
         "date": "2026-11-03",
         "baselineCommit": "39d0cdc4a0f96cd189ceb0e6364c63eb46ba620e",
         "result": "passed",
         "scope": "Actual Chromium desktop and mobile browser contexts, with touch enabled and keyboard events in both. Physical phones/tablets and Safari are not covered by this result.",
-        "checks": "Passed live all 20 fixed questions, both endings, saved resume, replay, wrong answers, exit and storage recovery. Desktop and mobile keyboard answers, full mobile plus/minus courses using touch, independent lift/cancel, lost focus, canceled Next and keyboard restart passed.",
+        "checks": "Passed live all 20 fixed questions, both endings, saved resume, replay, wrong answers, exit and storage recovery. Desktop and mobile keyboard answers, full mobile plus/minus courses using touch, independent lift/cancel, keyboard focus transfer, canceled Next and keyboard restart passed.",
         "findings": "No gameplay defect found; added repeatable input verification.",
         "testScripts": [
           "scripts/test-grimace-codex-browser.cjs",
           "scripts/test-math-mobile-input.cjs"
         ],
-        "publicUrl": "https://joynes.github.io/joynes.se/games/grimace-codex/"
-      }
+        "publicUrl": "https://joynes.github.io/joynes.se/games/grimace-codex/",
+        "focusScope": "Keyboard focus was moved away from a held button through the browser. Headless tabs emulate active focus, so tab switching alone is not counted as an operating-system window-blur check."
+      },
+      "auditTestCommit": "27056ed2c135202fc1d7dad8d8d62641e40b46b4"
     },
     {
       "id": "quiz-sdl",
@@ -103,21 +109,23 @@
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/quiz-sdl/",
       "sourceHead": "fd14bf5c57febc4b17e8e2cfa4bd464787d026cc",
-      "auditCommit": "dd784b378f3879bf2a5845ba856334098b1e16d4",
+      "auditCommit": "ba956b4a56d89a93f4822e633d25dd4605f20db2",
       "auditEvidence": {
         "game": "quiz-sdl",
         "date": "2026-11-03",
         "baselineCommit": "4028b4688e3cdf0dffb18a145e2bfd9efcfdfdf9",
         "result": "passed",
         "scope": "Actual Chromium desktop and mobile browser contexts, with touch enabled and keyboard events in both. Physical phones/tablets and Safari are not covered by this result.",
-        "checks": "Passed live all 35 words and three stages, real letter/reward audio, image decoding, coin scoring, replay and fetch recovery. A full course passed with keyboard in desktop and mobile contexts. A 12-word mobile course alternated touch and keyboard; two contacts, independent lift/cancel, blur, canceled Next, focus release, replay and orientation passed.",
+        "checks": "Passed live all 35 words and three stages, real letter/reward audio, image decoding, coin scoring, replay and fetch recovery. A full course passed with keyboard in desktop and mobile contexts. A 12-word mobile course alternated touch and keyboard; two contacts, independent lift/cancel, keyboard focus transfer, canceled Next, focus release, replay and orientation passed.",
         "findings": "No gameplay defect found; added repeatable input verification.",
         "testScripts": [
           "scripts/test-quiz-sdl-browser.cjs",
           "scripts/test-quiz-sdl-input.cjs"
         ],
-        "publicUrl": "https://joynes.github.io/joynes.se/games/quiz-sdl/"
-      }
+        "publicUrl": "https://joynes.github.io/joynes.se/games/quiz-sdl/",
+        "focusScope": "Keyboard focus was moved away from a held button through the browser. Headless tabs emulate active focus, so tab switching alone is not counted as an operating-system window-blur check."
+      },
+      "auditTestCommit": "dd784b378f3879bf2a5845ba856334098b1e16d4"
     },
     {
       "id": "memit",
@@ -132,21 +140,23 @@
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/memit/",
       "sourceHead": "0374025ade4f22aff6b1af45cf0cdf96c4ea5b22",
-      "auditCommit": "f3f5942acce131de403a2aa3c8132d6a3c307672",
+      "auditCommit": "922df02e7ff7b1fa70d46cdfbb9d2fb27d43bacb",
       "auditEvidence": {
         "game": "memit",
         "date": "2026-11-03",
         "baselineCommit": "0764fd3be48aa1d75880a4393d9ae45b1b4a5e9a",
         "result": "passed",
         "scope": "Actual Chromium desktop and mobile browser contexts, with touch enabled and keyboard events in both. Physical phones/tablets and Safari are not covered by this result.",
-        "checks": "Passed live all 127 practice cards and full 127-question exam, ten grid questions, ten typed answers, image decoding, scoring, replay and fetch recovery. Keyboard play covered all four modes and completed both ten-question rounds on desktop and mobile. Real touch, independent contact lift/cancel, canceled Next, held-key focus cleanup, tab blur, touch-to-keyboard switching and orientation passed.",
+        "checks": "Passed live all 127 practice cards and full 127-question exam, ten grid questions, ten typed answers, image decoding, scoring, replay and fetch recovery. Keyboard play covered all four modes and completed both ten-question rounds on desktop and mobile. Real touch, independent contact lift/cancel, canceled Next, held-key focus cleanup, keyboard focus transfer, touch-to-keyboard switching and orientation passed.",
         "findings": "No gameplay defect found; added repeatable input verification.",
         "testScripts": [
           "scripts/test-memit-browser.cjs",
           "scripts/test-memit-input.cjs"
         ],
-        "publicUrl": "https://joynes.github.io/joynes.se/games/memit/"
-      }
+        "publicUrl": "https://joynes.github.io/joynes.se/games/memit/",
+        "focusScope": "Keyboard focus was moved away from a held button through the browser. Headless tabs emulate active focus, so tab switching alone is not counted as an operating-system window-blur check."
+      },
+      "auditTestCommit": "f3f5942acce131de403a2aa3c8132d6a3c307672"
     },
     {
       "id": "hardword",
@@ -157,10 +167,31 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/hardword",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "2eeb83426d0130e2828cb03e3ce3bad4acf6fd2a",
-      "auditStatus": "pending",
+      "auditStatus": "local-passed-awaiting-live",
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/hardword/",
-      "sourceHead": "445d73d1c9e43593d4a5c4f6843790de2d611e13"
+      "sourceHead": "445d73d1c9e43593d4a5c4f6843790de2d611e13",
+      "auditCommit": "d4fc3a3769cd927a0b976033ae2005dd55deea93",
+      "auditEvidence": {
+        "game": "hardword",
+        "date": "2026-11-03",
+        "baselineCommit": "2eeb83426d0130e2828cb03e3ce3bad4acf6fd2a",
+        "result": "local-passed-awaiting-live",
+        "scope": "Actual Chromium desktop and mobile browser contexts, with touch enabled and keyboard events in both. Physical phones/tablets and Safari are not covered by this result.",
+        "checks": "Full local regression passed: 192 word questions, 810 maths answers, 174 reading/Ice Age answers, 19 crosswords, 252 earned courses, progress transfer, generated-question validation, recovery, engine scenarios, actual paddle-controlled Breakout win, game over/replay and offline play. New actual touch and desktop/mobile keyboard tests reproduce the old multi-touch failure and pass with the repair: independent contact transfer, cancellation, actual keyboard focus changes, restart, full landscape board and scaled touch mapping. Physical device and operating-system window-blur tests are not claimed.",
+        "findings": "Fixed Breakout losing its drag when one contact ends, stale drag after cancellation/focus/restart, toolbar touches starting gameplay, and the board not fitting in landscape. Native learning/game physics and original media are preserved. Advanced the app-only offline cache to v2.",
+        "testScripts": [
+          "scripts/test-hardword-browser.cjs",
+          "scripts/test-hardword-support.cjs",
+          "scripts/test-hardword-recovery.cjs",
+          "scripts/test-hardword-physics.cjs",
+          "scripts/test-hardword-breakout.cjs",
+          "scripts/test-hardword-offline.cjs",
+          "scripts/test-hardword-input.cjs",
+          "scripts/test-hardword.cjs"
+        ],
+        "publicUrl": "https://joynes.github.io/joynes.se/games/hardword/"
+      }
     },
     {
       "id": "small-wonders",
@@ -416,5 +447,6 @@
       "releaseStatus": "pending",
       "publicUrl": null
     }
-  ]
+  ],
+  "currentAuditGame": "hardword"
 }

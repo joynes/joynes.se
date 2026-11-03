@@ -372,6 +372,10 @@
         {
           "check": "deployed identity",
           "result": "all 16 code/data/media/catalog files byte-equal to final tested commit; canonical URL without query also byte-equal; successful Pages run 41281184548"
+        },
+        {
+          "check": "2026-11-03 touch audit — local",
+          "result": "Full learning/recovery/physics/Breakout/offline suite passed. Reproduced and fixed multi-touch drag loss, cancellation/focus cleanup and short-landscape layout. Real touch transfer and keyboard in desktop/mobile contexts passed. Live verification pending."
         }
       ],
       "publishedUrl": "https://joynes.github.io/joynes.se/games/hardword/",
@@ -390,7 +394,8 @@
         "cbd03b581ca0cca57dde8c44b037d354a4e45e25",
         "311927ceff5e9097a64fd0615393c853139279b4"
       ],
-      "websiteSection": "quizzes"
+      "websiteSection": "quizzes",
+      "webReleaseVersion": "118-web.3"
     },
     {
       "id": "small-wonders",
