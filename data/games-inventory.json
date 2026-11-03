@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-02",
+  "updatedAt": "2026-11-03",
   "objective": "Make every identified game and relevant version playable on the web, tested and published.",
   "currentGame": "rall-054",
   "games": [
@@ -1589,7 +1589,11 @@
         },
         {
           "check": "local compatibility probe",
-          "result": "Unchanged PE32 executable starts in Boxedwine/Wine and reaches 640x480 graphics after generated-log staging fix; black screen remains under investigation. Not playable or published."
+          "result": "Official Boxedwine 26R1.0 SingleThreaded/Wine 6 reaches native gameplay through GDI: one graphics-request byte and graphics configuration differ; 79 other release files remain byte-identical. The executable original is preserved."
+        },
+        {
+          "check": "local touch and keyboard prototype",
+          "result": "Passed native player movement in desktop/mobile Chromium contexts; both human profiles, multi-touch, independent lift/cancel, focus cleanup, native pause/resume, fullscreen and restarted gameplay. Actual runtime bindings are blue/arrows and green/letter keys. Not published; combat outcomes, six-map coverage and release checks remain."
         }
       ],
       "publishedUrl": null,
@@ -1597,7 +1601,9 @@
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
-      "categoryLabel": "AI remake of a retro game"
+      "categoryLabel": "AI remake of a retro game",
+      "compatibilityNotes": "docs/games/rall-054-compatibility.md",
+      "prototypeSource": "scripts/rall054-probe-ui/"
     },
     {
       "id": "rall-006",

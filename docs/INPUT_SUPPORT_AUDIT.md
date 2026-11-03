@@ -21,8 +21,12 @@ For each game, verify:
   release, blur cleanup, toolbar keyboard navigation and fullscreen also pass
   locally and on the canonical public site. All 12 released assets match the
   tested version; the five native Unity build/configuration files are unchanged.
-- **rall0054, v080 and rall008:** still incomplete web adaptations. They must pass
-  the complete input checklist before being marked as published and verified.
+- **rall0054:** the local native-game prototype now passes keyboard movement in
+  desktop and mobile contexts, touch movement for both human players, simultaneous
+  input, independent lift/cancel, pause/resume, fullscreen and restarted gameplay.
+  It is still unpublished; combat outcomes, map coverage and release checks remain.
+- **v080 and rall008:** still incomplete web adaptations. They must pass the
+  complete input checklist before being marked as published and verified.
 - **Other published games:** retain their existing release evidence. The added
   mobile-browser physical-keyboard scenario still needs an explicit audit.
 
@@ -33,11 +37,24 @@ sounds and XM music. The project references a C++ source directory which is not
 present in the local archive, the inspected Drive folder or the release SFX ZIP.
 The release is dated March 2002, rather than its later Drive copy date.
 
-A local Boxedwine/Wine compatibility probe launches the unchanged PE32 program.
-Dropping pre-existing generated log files from the runtime staging area resolves
-its directory-creation error. The probe reaches 640×480 graphics but currently
-shows a black screen. This is not a passing gameplay result. Original release
-bytes remain preserved in the ignored `drive-archive/rall-054/` cache.
+A local compatibility probe using the official Boxedwine 26R1 web runtime and
+Wine 6 reaches the original intro and 640×480 main menu with the unchanged PE32
+program and all 81 release files. This improves on the older runtime's black
+screen. A reproducible GDI compatibility change now reaches native gameplay:
+one graphics-request byte and the graphics configuration differ, while the
+other 79 release files are byte-identical. Original release bytes remain
+preserved in the ignored `drive-archive/rall-054/` cache.
+
+The executable's actual bindings differ from the archived help: blue is the
+arrow-key player; green uses letter keys. The corrected browser checks observe
+those tanks in the native canvas and confirm both human tanks stay still without
+input. This avoids mistaking AI movement for a successful control test.
+
+These are Chromium desktop/mobile-context checks, not physical Android or Safari
+verification. The game is not yet a published, fully verified release.
+
+The investigation and original control bindings are recorded in
+[the rall0054 compatibility notes](games/rall-054-compatibility.md).
 
 The compatibility runtime and diagnostic artifacts are local experiments under
 ignored `test-results/rall054-wine/`; they are not a published game.

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>rall0054 — input prototype</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="game">
+    <header><p class="eyebrow">Retro game · local prototype</p><h1>rall0054</h1>
+      <p>The original 2002 tank game. This compatibility prototype is under test.</p>
+    </header>
+    <div class="toolbar" aria-label="Game controls">
+      <button id="start" disabled>Loading runtime…</button>
+      <label>Mode <select id="mode"><option value="single">Single player</option><option value="two">Two players</option></select></label>
+      <button id="continue" disabled>Continue · Enter</button>
+      <button id="pause" disabled>Pause / resume · W</button>
+      <button id="restart">Restart</button>
+      <button id="fullscreen">Fullscreen</button>
+    </div>
+    <p id="status" role="status">Preparing the original game…</p>
+    <section id="play-area" aria-label="Game and touch controls">
+      <div id="stage"><iframe id="runtime" title="Original rall0054 game" allow="autoplay; fullscreen"></iframe></div>
+      <div id="pads"></div>
+    </section>
+    <details><summary>Keyboard and touch controls</summary>
+      <p>Blue tank: arrows drive and turn, I / O rotate the gun left / right, P fires, U toggles siege mode.</p>
+      <p>Green tank: D / X drive, Z / C turn, B / N rotate the gun left / right, V fires, M toggles siege mode.</p>
+      <p>The original help image swaps the tank colours. Use the bindings above.</p>
+      <p>In siege mode, direction controls adjust aim and power. W pauses; Enter continues when prompted. Tab opens the original console. Shift+Tab returns focus to the toolbar. Touch buttons support holding movement and firing together.</p>
+      <p>Changing the mode restarts the original game. This avoids its documented computer-opponent issue when switching from single player to two players.</p>
+    </details>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

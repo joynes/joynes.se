@@ -38,7 +38,8 @@
     "test:rall-030:sound": "node scripts/test-rall-030-sound.cjs",
     "test:rall-030:links": "node scripts/test-rall-030-navigation.cjs",
     "test:marble:keyboard": "node scripts/test-marble-keyboard.cjs",
-    "test:marble:touch-cancel": "MARBLE_TOUCH_CANCEL=1 node scripts/test-marble-browser.cjs"
+    "test:marble:touch-cancel": "MARBLE_TOUCH_CANCEL=1 node scripts/test-marble-browser.cjs",
+    "test:rall-054:prototype": "node scripts/test-rall054-prototype.cjs"
   },
   "devDependencies": {
     "playwright": "1.58.2"
