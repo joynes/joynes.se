@@ -376,11 +376,15 @@
         {
           "check": "2026-11-03 touch audit — local",
           "result": "Full learning/recovery/physics/Breakout/offline suite passed. Reproduced and fixed multi-touch drag loss, cancellation/focus cleanup and short-landscape layout. Real touch transfer and keyboard in desktop/mobile contexts passed. Live verification pending."
+        },
+        {
+          "check": "2026-11-03 touch audit — canonical live release",
+          "result": "Passed desktop/mobile keyboard, actual touch transfer and cancellation, focus cleanup, restart, full landscape board with scaled touch mapping, offline play and app-only cache isolation. All 18 released game/shared files match tested source; Pages run 41694261319 succeeded. Physical device and OS window-blur checks are not claimed."
         }
       ],
       "publishedUrl": "https://joynes.github.io/joynes.se/games/hardword/",
-      "implementationCommit": "311927ceff5e9097a64fd0615393c853139279b4",
-      "deploymentCommit": "311927ceff5e9097a64fd0615393c853139279b4",
+      "implementationCommit": "95ff9b884a0686169ac193e2d86340ba37b46f98",
+      "deploymentCommit": "95ff9b884a0686169ac193e2d86340ba37b46f98",
       "category": "ai",
       "webAdaptation": "ai",
       "categoryLabel": "AI game",
@@ -392,10 +396,31 @@
       },
       "implementationCommits": [
         "cbd03b581ca0cca57dde8c44b037d354a4e45e25",
-        "311927ceff5e9097a64fd0615393c853139279b4"
+        "311927ceff5e9097a64fd0615393c853139279b4",
+        "95ff9b884a0686169ac193e2d86340ba37b46f98"
       ],
       "websiteSection": "quizzes",
-      "webReleaseVersion": "118-web.3"
+      "webReleaseVersion": "118-web.3",
+      "verifiedFileHashes": {
+        "games/hardword/accessibility.js": "b76897dff33900a428321b5004d12b6fb809ccbabbe9d64fbb82b9e37dc0f838",
+        "games/hardword/fonts/nunito-latin-ext.woff2": "511ce967375fd2d924483d798f1086a533259fc675181f62944ec1176fe8786d",
+        "games/hardword/fonts/nunito-latin.woff2": "20fc9b6fc618e7c3c68d3ac750a2a5dfbceb8521675458d2cea580b5693e4798",
+        "games/hardword/icon-192.png": "94561f93a73234565bf4c75c23b5780c4e83ea4474a84b10437fb6176d5c2be1",
+        "games/hardword/icon-512.png": "41bcb06764730fedb5810977c7a65cf9970d2fdedbbaa4e1008aea97d30d7d56",
+        "games/hardword/manifest.json": "0f3248acb10a18d31c9c0747d3ded7ab9309d7b7c952a15a31d256eb9dd4c6e0",
+        "games/hardword/index.html": "404166e8742fddce84e050c130fccda86a9369ed744a21aae1f24f316270b3f5",
+        "games/hardword/music.mp3": "4a97eff813eb4c57f803ed2d169a90c655eb27ca0ed5f1cdc63661c3884b8bdd",
+        "games/hardword/music2.mp3": "4a97eff813eb4c57f803ed2d169a90c655eb27ca0ed5f1cdc63661c3884b8bdd",
+        "games/hardword/music3.mp3": "ed71c5934456bc74b29be37d618e8c97bbb8a5a432d1c6e7b955d283383d5849",
+        "games/hardword/music5.mp3": "5b44989f9da087150af4eba511feee7d206d1f6651b053254c14b9289f8e1050",
+        "games/hardword/music4.mp3": "99afb1d8fa54820679a49785e96de91401d738affe0f5acfb755674cb676dfe0",
+        "games/hardword/storage.js": "857e245e3ca6a702ae047565241241d387aa3ec09b2bc87284dec76820e72849",
+        "games/hardword/sw.js": "d77b7d78300d37537c5dbafc1565b557ca184c4773731a1f706320b5d845e7cc",
+        "games/hardword/original-assets.json": "726a02253d5b136bd2f23acbf4605210ab09648a9a0519ecaa7d8e7241c5e685",
+        "games/hardword/source-notes.md": "7781fa5d0d650c8687adc92f6c5a58c422a6729209fece5bcb5b81a083fbf231",
+        "assets/games-catalog.js": "154b2c02aec44d0085bb1b547d11eaa72ea06b765df79201da2f08171c729c7b",
+        "index.html": "1b4bddd2fda56eac501826c40f5894e92eab9d49e288a73e41b7d54e00224673"
+      }
     },
     {
       "id": "small-wonders",

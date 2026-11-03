@@ -167,16 +167,16 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/hardword",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "2eeb83426d0130e2828cb03e3ce3bad4acf6fd2a",
-      "auditStatus": "local-passed-awaiting-live",
+      "auditStatus": "passed",
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/hardword/",
       "sourceHead": "445d73d1c9e43593d4a5c4f6843790de2d611e13",
-      "auditCommit": "d4fc3a3769cd927a0b976033ae2005dd55deea93",
+      "auditCommit": "bfb67d42782c57be0400495bc8486379c5976f34",
       "auditEvidence": {
         "game": "hardword",
         "date": "2026-11-03",
         "baselineCommit": "2eeb83426d0130e2828cb03e3ce3bad4acf6fd2a",
-        "result": "local-passed-awaiting-live",
+        "result": "passed",
         "scope": "Actual Chromium desktop and mobile browser contexts, with touch enabled and keyboard events in both. Physical phones/tablets and Safari are not covered by this result.",
         "checks": "Full local regression passed: 192 word questions, 810 maths answers, 174 reading/Ice Age answers, 19 crosswords, 252 earned courses, progress transfer, generated-question validation, recovery, engine scenarios, actual paddle-controlled Breakout win, game over/replay and offline play. New actual touch and desktop/mobile keyboard tests reproduce the old multi-touch failure and pass with the repair: independent contact transfer, cancellation, actual keyboard focus changes, restart, full landscape board and scaled touch mapping. Physical device and operating-system window-blur tests are not claimed.",
         "findings": "Fixed Breakout losing its drag when one contact ends, stale drag after cancellation/focus/restart, toolbar touches starting gameplay, and the board not fitting in landscape. Native learning/game physics and original media are preserved. Advanced the app-only offline cache to v2.",
@@ -190,8 +190,15 @@
           "scripts/test-hardword-input.cjs",
           "scripts/test-hardword.cjs"
         ],
-        "publicUrl": "https://joynes.github.io/joynes.se/games/hardword/"
-      }
+        "publicUrl": "https://joynes.github.io/joynes.se/games/hardword/",
+        "liveVerification": {
+          "homepageDeploymentCommit": "95ff9b884a0686169ac193e2d86340ba37b46f98",
+          "pagesRun": 41694261319,
+          "checks": "Passed canonical live desktop/mobile keyboard, real touch transfer/cancel, keyboard focus cleanup, restart, complete landscape board and scaled touch mapping; offline app-only cache and playable offline question. All 18 game/shared release files match SHA256.",
+          "scope": "Browser focus transfer tested; operating-system window blur and physical devices are not claimed."
+        }
+      },
+      "auditTestCommit": "d4fc3a3769cd927a0b976033ae2005dd55deea93"
     },
     {
       "id": "small-wonders",
@@ -448,5 +455,5 @@
       "publicUrl": null
     }
   ],
-  "currentAuditGame": "hardword"
+  "currentAuditGame": "small-wonders"
 }

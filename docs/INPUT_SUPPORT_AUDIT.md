@@ -16,7 +16,7 @@ For each game, verify:
 
 ## Renewed game-by-game audit — 3 November 2026
 
-Baseline and result commits are recorded in [game-repositories.json](../data/game-repositories.json). Frågespelet passed its full 154-question live regression and the added desktop/mobile keyboard, real touch, cancellation, independent contact release, focus, restart and orientation checks. No gameplay fix was needed. The Gemini and Codex maths games, Läs- och ordquiz and Memit also passed their complete gameplay regressions and added touch/mobile-keyboard checks. Ordhjälten has a locally verified Breakout repair awaiting publication and live verification. Other games remain pending in this renewed audit, regardless of their earlier release checks.
+Baseline and result commits are recorded in [game-repositories.json](../data/game-repositories.json). Frågespelet passed its full 154-question live regression and the added desktop/mobile keyboard, real touch, cancellation, independent contact release, focus, restart and orientation checks. No gameplay fix was needed. The Gemini and Codex maths games, Läs- och ordquiz and Memit also passed their complete gameplay regressions and added touch/mobile-keyboard checks. Ordhjälten’s Breakout repair passed locally and on the canonical public release, including independent touch transfer, cancellation, keyboard focus cleanup, restart, landscape scaling and offline play. Other games remain pending in this renewed audit, regardless of their earlier release checks.
 
 The new quiz checks verify real keyboard focus transfer while a button is held. Headless tabs emulate active focus, so opening another tab is not counted as an operating-system window-blur test.
 
