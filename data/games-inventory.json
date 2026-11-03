@@ -823,11 +823,15 @@
         {
           "check": "2026-11-03 renewed input audit — local",
           "result": "Full original scene/rule/physics and browser regressions passed. Reproduced and fixed held-key pickup repeat and clipped phone-landscape scene. Added desktop/mobile key/touch/cancel/focus/restart checks and a full embedded keyboard solution passed. Shared website frame sizing and top-level game Back repair also passed five quiz/memory games at 844x390. Publication/live verification pending."
+        },
+        {
+          "check": "2026-11-03 renewed input audit — canonical live release",
+          "result": "Passed complete scene/physics/recovery suite; desktop/mobile keys, repeat guard, Shift fine movement, real touch/cancel, focus and restart. Embedded keyboard solutions, real frame-window focus loss, rotation and top-level Back passed. Five quiz/memory frame regressions passed. Nine canonical assets match tested hashes; successful Pages run 41706396850."
         }
       ],
       "publishedUrl": "https://joynes.github.io/joynes.se/games/godot-reading/",
-      "implementationCommit": "6a2a118629c635838aa29c77e051a2c36f802486",
-      "deploymentCommit": "6a2a118629c635838aa29c77e051a2c36f802486",
+      "implementationCommit": "1c83045bde2feb0d2f16d5f3e137b06d1acad7a7",
+      "deploymentCommit": "1c83045bde2feb0d2f16d5f3e137b06d1acad7a7",
       "category": "retro",
       "webAdaptation": "ai",
       "categoryLabel": "AI remake of a retro game",
@@ -847,7 +851,18 @@
       },
       "deploymentRun": 41293921395,
       "websiteSection": "retro",
-      "webReleaseVersion": "2024-reading-web.2"
+      "webReleaseVersion": "2024-reading-web.2",
+      "verifiedFileHashes": {
+        "games/godot-reading/app.mjs": "7953ed3b3215445752bc0bff38d8305e246e5b13c2dc428efbad52799629e1ae",
+        "games/godot-reading/core.mjs": "4e6543ec6311294c706c17cdb79b98da69b90cca136bab7aef029e8ddbf970c0",
+        "games/godot-reading/provenance.json": "771ba6be93c5675555f2fc55745732b076f370dc88c280e08155b3fbc7ce05a8",
+        "games/godot-reading/index.html": "f95fde4321bf6d4289eec00ec1c3a6362139d677c42d276d05b347fc0a7e942e",
+        "assets/games-catalog.js": "8153788b2c15ea23864f29f1502915bc0d01cd4f73ae4168e57a94971ea05aa5",
+        "games/godot-reading/styles.css": "82389cff0b6c3330b492d290a4af4c6460fd373c816f78a756d22a3bd67ef401",
+        "games/godot-reading/source-notes.md": "0e1b35e181f573430ce7676319d4e857167d571063ccdc01929435470501eed0",
+        "index.html": "ccc47c210371e05181903a44c8514d7a0e8f4dd760d93a590820bf0f95ec4d70",
+        "docs/games/godot-reading.md": "cc8a74b4661dcf78daacb15fcd4158268cd711b6ed362c4a7b8355ae80383d47"
+      }
     },
     {
       "id": "car-topview",

@@ -11,7 +11,7 @@ async function drag(page,id,x,y,{touch=false,hold=false,cancel=false}={}){
  if(!hold){if(touch)await cdp.send('Input.dispatchTouchEvent',{type:cancel?'touchCancel':'touchEnd',touchPoints:[]});else await page.mouse.up();}
  if(cdp)await cdp.detach();
 }
-async function start(page){await page.goto(base);await page.clock.install();await page.locator('#start').click();await page.clock.runFor(6000);}
+async function start(page){await page.clock.install();await page.goto(base);await page.locator('#start').click();await page.clock.runFor(6000);}
 async function reset(page){await page.locator('#reset').click();await page.clock.runFor(6000);}
 async function pos(page,id){return page.locator(`[data-id="${id}"]`).evaluate(b=>({x:parseFloat(b.style.left)*1024/100,y:parseFloat(b.style.top)*600/100}));}
 async function success(page){assert.match(await page.locator('#feedback').innerText(),/^Rätt!/);}
