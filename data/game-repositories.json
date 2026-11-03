@@ -41,10 +41,25 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/grimace-gemini",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "1318b39c08c0537d8546b47843bf1511ca7313a4",
-      "auditStatus": "pending",
+      "auditStatus": "passed",
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/grimace-gemini/",
-      "sourceHead": "f3b4d568066075a11cf7d2c43afae108a75a6b03"
+      "sourceHead": "f3b4d568066075a11cf7d2c43afae108a75a6b03",
+      "auditCommit": "70e09960d5ba2b061aa6ce184575678e693e92a2",
+      "auditEvidence": {
+        "game": "grimace-gemini",
+        "date": "2026-11-03",
+        "baselineCommit": "1318b39c08c0537d8546b47843bf1511ca7313a4",
+        "result": "passed",
+        "scope": "Actual Chromium desktop and mobile browser contexts, with touch enabled and keyboard events in both. Physical phones/tablets and Safari are not covered by this result.",
+        "checks": "Passed live plus/minus gameplay, arithmetic, wrong answers, score persistence, storage errors and mode changes. Desktop keyboard answers and mobile keyboard after touch passed. Real touch cancellation, two contacts with independent lift, canceled Next, focus loss and restart passed in portrait/landscape.",
+        "findings": "No gameplay defect found; added repeatable input verification.",
+        "testScripts": [
+          "scripts/test-grimace-gemini-browser.cjs",
+          "scripts/test-math-mobile-input.cjs"
+        ],
+        "publicUrl": "https://joynes.github.io/joynes.se/games/grimace-gemini/"
+      }
     },
     {
       "id": "grimace-codex",

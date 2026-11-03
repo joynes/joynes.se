@@ -38,7 +38,8 @@
     "test:marble:keyboard": "node scripts/test-marble-keyboard.cjs",
     "test:marble:touch-cancel": "MARBLE_TOUCH_CANCEL=1 node scripts/test-marble-browser.cjs",
     "test:rall-054:prototype": "node scripts/test-rall054-prototype.cjs",
-    "test:quiz:input": "node scripts/test-web-quizzes-input.cjs"
+    "test:quiz:input": "node scripts/test-web-quizzes-input.cjs",
+    "test:math:input": "node scripts/test-math-mobile-input.cjs"
   },
   "devDependencies": {
     "playwright": "1.58.2"
