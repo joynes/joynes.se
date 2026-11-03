@@ -916,11 +916,15 @@
         {
           "check": "in-game-touchpad-fullscreen-2026-11-03-local",
           "result": "Full original physics/media/browser suite and all desktop/mobile keyboard, four touch directions, diagonal acceleration/steering, mixed ownership, secondary-contact release/cancel, second-finger sound/pause/resume/reset/fullscreen, stale-contact restart and real frame focus checks passed. All controls are inside the scene; no button row below. Native standalone/iframe fullscreen with touch/keyboard, rotation and missing-API Escape fallback passed. Original PNG/WAV/core unchanged. Shared helper load failure and playable retry passed. Root unit/preservation and games/music navigation passed."
+        },
+        {
+          "check": "in-game-touchpad-fullscreen-2026-11-03-live",
+          "result": "Full gameplay/audio/recovery and all expanded desktop/mobile keyboard, four touch directions, diagonal thumbpad, mixed ownership, cancellation/restart, real frame focus, second-finger sound/pause/resume/reset/fullscreen and native standalone/iframe fullscreen/rotation checks passed on canonical URLs. Missing-API fallback/Escape passed. All 11 release files match; Pages 41718411431 succeeded. Original core/PNG/WAV unchanged."
         }
       ],
       "publishedUrl": "https://joynes.github.io/joynes.se/games/car-topview/",
-      "implementationCommit": "32b543d32ef54d26a0708fde63b63892419e1f6b",
-      "deploymentCommit": "32b543d32ef54d26a0708fde63b63892419e1f6b",
+      "implementationCommit": "70f663b9fee52f8b53bdf9f264638ed2d2f2abfb",
+      "deploymentCommit": "70f663b9fee52f8b53bdf9f264638ed2d2f2abfb",
       "category": "ai",
       "webAdaptation": "ai",
       "categoryLabel": "AI game",
@@ -941,12 +945,12 @@
         "index.html": "9b64c564af7a4d225e31e41417ee863443f34aa7ce194226267f30a5e765a121",
         "assets/game-view.mjs": "2a5f351c51b3f32983967ab206d4286667ff47e961b6d10fbce6b6ed03cfe93a"
       },
-      "deploymentRun": 41711372662,
+      "deploymentRun": 41718411431,
       "websiteSection": "ai",
-      "renewedAuditStatus": "local-passed-awaiting-live",
+      "renewedAuditStatus": "passed",
       "renewedAuditSourceCommit": "df4bd128c42489756aa32362cf6dfd12c2af7c4e",
-      "renewedAuditCommit": "d047115",
-      "inGameControlsAndFullscreenStatus": "local-passed-awaiting-live"
+      "renewedAuditCommit": "e122ca5",
+      "inGameControlsAndFullscreenStatus": "passed"
     },
     {
       "id": "sdl-space",

@@ -359,23 +359,23 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/car-topview",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "f4836b5f2787781d0f27e96416b9c38b9d000579",
-      "auditStatus": "local-passed-awaiting-live",
+      "auditStatus": "passed",
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/car-topview/",
       "sourceHead": "5450575feeb6d6b42c48e7d2708ea3863da424c8",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "f67de46b997044830e1d6fd3f0e5eeba0132be46",
-      "repositoryHeadCommit": "df4bd128c42489756aa32362cf6dfd12c2af7c4e",
+      "repositoryHeadCommit": "e122ca5ebf96ba20cfe1054fdcdddec3afdb27f3",
       "auditUrl": "https://github.com/joynes/car_topview_game/tree/audit/2026-11-03-baseline",
-      "auditCommit": "df4bd128c42489756aa32362cf6dfd12c2af7c4e",
+      "auditCommit": "e122ca5ebf96ba20cfe1054fdcdddec3afdb27f3",
       "auditEvidence": {
         "game": "car-topview",
         "date": "2026-11-03",
         "baselineCommit": "f4836b5f2787781d0f27e96416b9c38b9d000579",
-        "result": "local-passed-awaiting-live",
+        "result": "passed",
         "scope": "Actual Chromium desktop and mobile browser contexts, with touch enabled and keyboard events in both. Physical phones/tablets and Safari are not covered by this result.",
-        "checks": "Local full driving/audio/four-wall/friction/drift suite passed, including two native media and two module failure/retry cases. Expanded desktop/phone portrait/landscape keyboard plus all touch directions, diagonal thumbpad, mixed ownership, independent secondary release/cancel, second-finger sound/pause/resume/reset/fullscreen, old-contact restart, real iframe focus cleanup/resume, all controls inside the scene, native standalone/iframe fullscreen, device rotation and unsupported-API Escape fallback passed. Root unit/preservation and games/music navigation checks passed.",
-        "findings": "Replaced the four-button row below the board with a translucent in-game floating thumbpad matching the AI games. Added in-game sound/pause/reset/fullscreen. Reproduced and fixed secondary touch actions failing to click while movement was held. Shared host helper preserves keyboard activation and browser fullscreen activation. Core physics, original PNG and WAV unchanged.",
+        "checks": "Passed local and canonical-live full driving/audio/wall/friction/drift and four loading-failure/recovery cases. Expanded desktop/phone portrait/landscape keyboard, all four touch directions, diagonal thumbpad acceleration/steering, mixed ownership, independent secondary release/cancel, second-finger sound/pause/resume/reset/fullscreen, stale-contact restart, real iframe focus/resume, all controls inside the rendered scene, native standalone and iframe fullscreen, rotation and missing-API Escape fallback passed. Root unit/preservation and games/music navigation passed. All 11 live release hashes match 70f663b9fee52f8b53bdf9f264638ed2d2f2abfb / Pages 41718411431 success.",
+        "findings": "Replaced controls below the board with an in-game floating thumbpad and overlaid sound/pause/reset/fullscreen. Reproduced and fixed secondary touch actions failing to click during an existing movement touch. Shared host helper supports keyboard activation and native fullscreen browser activation, including a second finger. Start waits for module readiness. Original PNG/WAV/core physics unchanged.",
         "testScripts": [
           "scripts/test-car-topview-browser.cjs",
           "scripts/test-car-topview-input.cjs",
@@ -384,10 +384,11 @@
         ],
         "publicUrl": "https://joynes.github.io/joynes.se/games/car-topview/"
       },
-      "auditFixCommit": "3a2d4a6",
-      "deploymentCommit": "32b543d32ef54d26a0708fde63b63892419e1f6b",
-      "deploymentRun": 41711372662,
-      "inGameControlsAndFullscreenStatus": "local-passed-awaiting-live"
+      "auditFixCommit": "df4bd128c42489756aa32362cf6dfd12c2af7c4e",
+      "deploymentCommit": "70f663b9fee52f8b53bdf9f264638ed2d2f2abfb",
+      "deploymentRun": 41718411431,
+      "inGameControlsAndFullscreenStatus": "passed",
+      "secondaryActionTouchAuditStatus": "passed"
     },
     {
       "id": "sdl-space",
@@ -704,12 +705,12 @@
       "inGameControlsAndFullscreenStatus": "pending"
     }
   ],
-  "currentAuditGame": "car-topview",
+  "currentAuditGame": "sdl-space",
   "realtimeControlRequirements": [
     "All gameplay actions available with touch, including simultaneous movement and action inputs.",
     "Touchpad/direct drag and action controls inside the game view, using the existing AI games as the reference; no control rows below the board.",
     "Visible fullscreen control operable by touch and keyboard, with entry/exit and both orientations verified.",
     "Keyboard input retained on phones/tablets; independent release, cancellation, lost focus and restart verified through the browser."
   ],
-  "currentAuditFocus": "in-game touchpad and fullscreen"
+  "currentAuditFocus": "concise English homepage copy, then SDL fullscreen"
 }

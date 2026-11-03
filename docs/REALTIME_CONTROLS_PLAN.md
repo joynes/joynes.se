@@ -9,7 +9,7 @@ Work on one game at a time: checkpoint its source, implement, verify actual game
 ## Current queue
 
 1. Hello Multiplayer is complete: full local/live gameplay and input suites, in-game thumbpad, native fullscreen, rotation and homepage integration passed.
-2. Top-down Driving passed the additional layout/fullscreen checks locally: in-game floating thumbpad and overlaid actions, all touch directions, second-finger action controls, native fullscreen and rotation. Publish and verify it next.
+2. Top-down Driving is complete: all touch directions, an in-game floating thumbpad and overlaid actions, second-finger controls, standalone/iframe native fullscreen and rotation passed locally and live.
 3. Revisit SDL Space: retain direct touch dragging and add an in-game fullscreen control.
 4. Check the remaining real-time releases individually: Ordhjälten/Breakout, Small Wonders (three routes), Marble Tables, Läs och placera, 3D Network Game, Neon Bastion and Manta, WorldForge, ShadowRacer, Rall v026 and Rall v030. Their earlier results remain valid for the tested scope; the additional fullscreen/control-placement requirements still need verification.
 5. Recheck secondary-finger activation on the other in-game action buttons, including Hello Multiplayer’s restart/fullscreen controls; the driving audit caught browser click suppression during an existing touch.

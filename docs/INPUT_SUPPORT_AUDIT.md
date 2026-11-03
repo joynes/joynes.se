@@ -22,7 +22,7 @@ For each game, verify:
 
 Fullscreen and controls inside the game view were added as requirements after the
 first eleven renewed audits. Their earlier input results remain recorded, but
-the affected real-time games also need this additional layout/fullscreen check. Top-down Driving now passes the added checks locally, including second-finger game actions and native fullscreen; its revised release is awaiting publication.
+the affected real-time games also need this additional layout/fullscreen check. Top-down Driving passed the added checks locally and live, including every touch direction, second-finger actions, controls inside the scene, native standalone/iframe fullscreen and rotation. All 11 release files match the tested version.
 
 ## Renewed game-by-game audit — 3 November 2026
 
