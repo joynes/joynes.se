@@ -1,4 +1,4 @@
-const assert=require('node:assert/strict');const{chromium}=require('playwright');const fs=require('node:fs');
+const assert=require('node:assert/strict');const{chromium}=require(process.env.CHROMIUM_PLAYWRIGHT_MODULE||'playwright');const fs=require('node:fs');
 const base=process.env.GAME_BASE_URL||'http://127.0.0.1:8767/games/godot-reading/';
 const home=process.env.HOMEPAGE_BASE_URL||'http://127.0.0.1:8767/';
 async function center(page,id){const r=await page.locator(`[data-id="${id}"]`).boundingBox();return{x:r.x+r.width/2,y:r.y+r.height/2};}
@@ -16,7 +16,7 @@ async function reset(page){await page.locator('#reset').click();await page.clock
 async function pos(page,id){return page.locator(`[data-id="${id}"]`).evaluate(b=>({x:parseFloat(b.style.left)*1024/100,y:parseFloat(b.style.top)*600/100}));}
 async function success(page){assert.match(await page.locator('#feedback').innerText(),/^Rätt!/);}
 async function notSuccess(page){assert.doesNotMatch(await page.locator('#feedback').innerText(),/^Rätt!/);}
-(async()=>{fs.mkdirSync('test-results',{recursive:true});const browser=await chromium.launch({channel:'chrome',headless:true});
+(async()=>{fs.mkdirSync('test-results',{recursive:true});const browser=await chromium.launch(process.env.CHROMIUM_PLAYWRIGHT_MODULE?{headless:true}:{channel:'chrome',headless:true});
  try{
  const page=await browser.newPage({viewport:{width:1280,height:1000},reducedMotion:'reduce'}),errors=[],bad=[];page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)bad.push(r.url());});await start(page);
  assert.equal(await page.locator('.object').count(),3);assert.equal(await page.locator('.platform').count(),2);

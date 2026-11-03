@@ -819,6 +819,10 @@
         {
           "check": "release-identity",
           "result": "All 8 game/catalog/index files match release SHA256 hashes on canonical live URLs. Pages run 41293921395 success; deployment API status succeed."
+        },
+        {
+          "check": "2026-11-03 renewed input audit — local",
+          "result": "Full original scene/rule/physics and browser regressions passed. Reproduced and fixed held-key pickup repeat and clipped phone-landscape scene. Added desktop/mobile key/touch/cancel/focus/restart checks and a full embedded keyboard solution passed. Shared website frame sizing and top-level game Back repair also passed five quiz/memory games at 844x390. Publication/live verification pending."
         }
       ],
       "publishedUrl": "https://joynes.github.io/joynes.se/games/godot-reading/",
@@ -842,7 +846,8 @@
         "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82"
       },
       "deploymentRun": 41293921395,
-      "websiteSection": "retro"
+      "websiteSection": "retro",
+      "webReleaseVersion": "2024-reading-web.2"
     },
     {
       "id": "car-topview",

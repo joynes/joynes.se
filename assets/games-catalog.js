@@ -108,7 +108,7 @@ window.joynesPublishedGames = [
     href: "games/godot-reading/",
     source: "https://github.com/joynes/joynes.se/tree/master/games/godot-reading",
     sourceLabel: "Web code and origins",
-    version: "2024-reading-web.1"
+    version: "2024-reading-web.2"
   },
   {
     id: "marble-tables",

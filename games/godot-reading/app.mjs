@@ -9,14 +9,14 @@ function render(){
 }
 function release(){if(active)active.dragging=false;active=null;pointer=null;point=null;$('#selection').textContent='';render();}
 function reset(){release();world=createWorld();last=0;acc=0;wasSolved=null;render();}
-function start(){running=true;$('#intro').hidden=true;$('#play').hidden=false;reset();buttons[0].focus();}
+function start(){running=true;document.body.dataset.state='playing';$('#intro').hidden=true;$('#play').hidden=false;reset();buttons[0].focus();}
 function position(e){const r=board.getBoundingClientRect();return{x:(e.clientX-r.left)/r.width*WIDTH,y:(e.clientY-r.top)/r.height*HEIGHT};}
 for(const b of buttons){
  b.addEventListener('pointerdown',e=>{if(pointer!==null||!running||e.button!==0)return;e.preventDefault();release();point=position(e);active=[...world.objects].sort((a,b)=>Math.hypot(a.x-point.x,a.y-point.y)-Math.hypot(b.x-point.x,b.y-point.y))[0];active.dragging=true;pointer=e.pointerId;const selected=buttons.find(button=>button.dataset.id===active.id);selected.setPointerCapture(e.pointerId);selected.focus();$('#selection').textContent=`${LABELS[active.id]} är upptagen.`;render();});
  b.addEventListener('pointermove',e=>{if(e.pointerId!==pointer||!active)return;const p=position(e);move(active,p.x-point.x,p.y-point.y);point=p;render();});
  for(const event of['pointerup','pointercancel','lostpointercapture'])b.addEventListener(event,e=>{if(e.pointerId===pointer)release();});
  b.addEventListener('keydown',e=>{
-  if(e.key===' '||e.key==='Enter'){e.preventDefault();const o=world.objects.find(o=>o.id===b.dataset.id);if(active===o){release();return;}release();active=o;active.dragging=true;$('#selection').textContent=`${LABELS[o.id]} är upptagen. Flytta med piltangenterna.`;render();}
+  if(e.key===' '||e.key==='Enter'){e.preventDefault();if(e.repeat)return;const o=world.objects.find(o=>o.id===b.dataset.id);if(active===o){release();return;}release();active=o;active.dragging=true;$('#selection').textContent=`${LABELS[o.id]} är upptagen. Flytta med piltangenterna.`;render();}
   else if(e.key==='Escape'){e.preventDefault();release();}
   else if(e.key.startsWith('Arrow')&&active?.id===b.dataset.id){e.preventDefault();const d=e.shiftKey?2:10;move(active,e.key==='ArrowLeft'?-d:e.key==='ArrowRight'?d:0,e.key==='ArrowUp'?-d:e.key==='ArrowDown'?d:0);render();}
  });

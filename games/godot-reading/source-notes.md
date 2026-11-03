@@ -32,3 +32,9 @@ Webbversionen rättar instruktionens gamla ord ”dockan” till ballongen som k
 `node --test scripts/test-godot-reading.mjs` kontrollerar geometri, fall till samtliga tre ytor, båda objektens marknärhet, högerområdets räckvidd, luftplacering, kroppskontakt och drag/släpp.
 
 `npm run test:godot-reading:browser` använder verkliga mus-, tangentbords- och touchhändelser. Det löser originaluppgiften på båda plattformarna och golvet, provar fel sida/långt avstånd/luften, flyttar det tredje föremålet, provar omstart, Escape, Tab, touch cancel och modulfel med återhämtning. Skärmbilder tas på dator och telefon i båda riktningarna. Testet skriver inte till spelvärlden.
+
+## Touch and keyboard audit — 3 November 2026
+
+Holding Space or Enter previously repeated the pick/drop toggle. Repeated keydown events are now ignored for that toggle; arrow-key repeat and Shift fine movement remain available. The complete scene fits short landscape viewports with the controls beside it. Controls can be expanded separately, and the existing reset remains visible. Original object geometry, gravity, platforms and success conditions are unchanged.
+
+Browser checks cover full keyboard solutions in desktop/mobile contexts, held-key repeat, fine movement, independent contact release, touch cancellation, actual focus cleanup, and restart while a contact remains down. Website integration also checks a complete keyboard solution in the iframe, real frame-window focus loss, a fully visible landscape scene and returning to the top-level game list.

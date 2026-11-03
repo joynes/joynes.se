@@ -21,3 +21,7 @@ Katalogkontroll passerade lokalt: startbart iframe från Retrospel, utelämnat f
 https://joynes.github.io/joynes.se/games/godot-reading/
 
 Kodcommit `6a2a118629c635838aa29c77e051a2c36f802486`, lyckad Pages-körning `41293921395`. Hela webbläsarsviten med katalogkontroll och tidigare spel/musik passerade också på liveadressen. Alla åtta spel-/katalog-/HTML-filer SHA256-verifierade från kanoniska publika URL:er. Inventeringen är klarmarkerad och kön går vidare till Bilspel ovanifrån.
+
+## Renewed input audit — 3 November 2026
+
+The web adapter now ignores repeated Space/Enter events when toggling an object. Landscape controls sit beside the complete scene. The homepage uses a shorter game frame on landscape phones and directs game Back links to the top-level list, avoiding a homepage nested inside a game. The original three objects, two shelves, floor, gravity and grounded/right-side success test remain unchanged.

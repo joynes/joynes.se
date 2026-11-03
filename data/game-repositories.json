@@ -313,14 +313,31 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/godot-reading",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "e423d53c0f59e3221f00cb9fdd292af86476e4a4",
-      "auditStatus": "pending",
+      "auditStatus": "local-passed-awaiting-live",
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/godot-reading/",
       "sourceHead": "97a4f8aa5381032663f51395c62bf5fa4811ccf3",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "c1a96a32c14aa8f0e602ed41511ca3dbcf611ff1",
-      "repositoryHeadCommit": "c1a96a32c14aa8f0e602ed41511ca3dbcf611ff1",
-      "auditUrl": "https://github.com/joynes/godot-reading-game/tree/audit/2026-11-03-baseline"
+      "repositoryHeadCommit": "d7418fac35e3f12ee487541734fd47e8203f8c7e",
+      "auditUrl": "https://github.com/joynes/godot-reading-game/tree/audit/2026-11-03-baseline",
+      "auditCommit": "d7418fac35e3f12ee487541734fd47e8203f8c7e",
+      "auditEvidence": {
+        "game": "godot-reading",
+        "date": "2026-11-03",
+        "baselineCommit": "e423d53c0f59e3221f00cb9fdd292af86476e4a4",
+        "result": "local-passed-awaiting-live",
+        "scope": "Actual Chromium desktop and mobile browser contexts, with touch enabled and keyboard events in both. Physical phones/tablets and Safari are not covered by this result.",
+        "checks": "Full browser regression passed original objects/platforms, wrong/far/airborne cases, real mouse and touch solutions, gravity, replay, keyboard solve and release, cancellation, orientation and module recovery. Added desktop/mobile input checks pass held-key repeat guard, Shift fine movement, independent touch release, cancellation, focus cleanup and restart with a live contact. Website iframe tests pass keyboard solutions, real frame-window focus cleanup, visible phone landscape board and top-level Back navigation; shared quiz/music navigation regression passed.",
+        "findings": "Fixed held Space/Enter repeatedly toggling pickup. Added compact landscape game layout and folded control help. Repaired shared homepage iframe sizing, redundant embedded headings, top-level game Back links, and loading game previews only on their detail page. Game core rules and original geometry are unchanged.",
+        "testScripts": [
+          "scripts/test-godot-reading-browser.cjs",
+          "scripts/test-godot-reading-input.cjs",
+          "scripts/test-game-frame-input.cjs"
+        ],
+        "publicUrl": "https://joynes.github.io/joynes.se/games/godot-reading/",
+        "siteRegression": "All five previously audited quiz/memory games also passed real touch answers, attached-keyboard start, held-answer frame-focus cancellation and top-level Back in the new 844x390 frame. Active portrait-to-landscape rotation also keeps the complete scene visible; resizing avoids interrupting a focused text field."
+      }
     },
     {
       "id": "car-topview",

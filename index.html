@@ -1404,6 +1404,10 @@
       .music-list .item.clickable .item-actions { justify-content: end; }
       footer { padding: 20px 0; }
     }
+    @media (orientation:landscape) and (max-height:600px) {
+      .item-embed { min-height:0; scroll-margin-top:56px; }
+      .item-embed iframe { height:calc(100dvh - 64px); min-height:0; scroll-margin-top:56px; }
+    }
   </style>
 </head>
 <body>
@@ -1489,7 +1493,7 @@
   <script src="assets/jaro-book.js"></script>
   <script src="assets/music-catalog.js"></script>
   <script src="assets/music-library.js?v=b71509c3cf69"></script>
-  <script src="assets/games-catalog.js?v=858355c3dc2a"></script>
+  <script src="assets/games-catalog.js?v=8153788b2c15"></script>
   <script>
     const categories = [
       {
@@ -1562,7 +1566,7 @@
         ],
         items: [
           ["Rall v080 - fighter", "Game archive folder", [["Folder", "https://drive.google.com/drive/folders/1oiYMpORqC5d_hAyliZp1rQJ1WzlqnhMs"]]],
-          ["rall006", "Web remake using AI.", [["Play remake", "https://rall006-tank-game.joynez11.chatgpt.site/?v=2"], ["Folder", "https://drive.google.com/drive/folders/1PP4d2mWdYiW7hGYP_l6O1iHyJyrd3Mt8"]], { embed: "https://rall006-tank-game.joynez11.chatgpt.site/?v=2", embedTitle: "rall006 web remake using AI" }],
+          ["rall006", "Web remake using AI.", [["Play remake", "https://rall006-tank-game.joynez11.chatgpt.site/?v=2"], ["Folder", "https://drive.google.com/drive/folders/1PP4d2mWdYiW7hGYP_l6O1iHyJyrd3Mt8"]], { embed: "https://rall006-tank-game.joynez11.chatgpt.site/?v=2", embedTitle: "rall006 web remake using AI", embedOnDetail: true }],
           ["rall0054", "Game archive folder", [["Folder", "https://drive.google.com/drive/folders/1p-GmiheGisYln6QAOKXopvhnkMfxCx2Y"]]],
           ["rall008", "Game archive folder", [["Folder", "https://drive.google.com/drive/folders/1ApVIMy-WxmkkmHCtq9d7s2zmqfIQvjBz"]]],
         ]
@@ -2242,6 +2246,16 @@
       controls.replaceChildren(links, note);
     }
 
+    function fitGameFrame() {
+      if (currentCategory?.id !== "games" ||
+          !window.matchMedia("(orientation:landscape) and (max-height:600px)").matches) return;
+      const frame = list.querySelector(".item-embed");
+      if (!frame) return;
+      const focused = frame.querySelector("iframe")?.contentDocument?.activeElement;
+      if (focused?.matches("input, textarea, [contenteditable='true']")) return;
+      frame.scrollIntoView({block:"start"});
+    }
+
     function renderCategory(category, selectedItem = null) {
       document.querySelectorAll(".category-button").forEach((button) => {
         button.classList.toggle("active", button.dataset.category === (["ai", "old"].includes(category.id) || category.musicView ? "music" : category.id));
@@ -2323,11 +2337,22 @@
           actions.forEach(([label, href]) => actionRow.append(linkButton(label, href, category)));
         }
 
-        article.append(head);
+        if (!showEmbed) article.append(head);
         if (showEmbed) {
           const embed = document.createElement("div");
           embed.className = "item-embed";
           const iframe = document.createElement("iframe");
+          iframe.addEventListener("load", () => {
+            if (!iframe.isConnected) return;
+            const siteRoot = new URL("./", location.href);
+            iframe.contentDocument?.querySelectorAll("a[href]").forEach(link => {
+              const target = new URL(link.href);
+              if (target.origin === siteRoot.origin &&
+                  [siteRoot.pathname, `${siteRoot.pathname}index.html`].includes(target.pathname) &&
+                  target.hash.startsWith("#games")) link.target = "_top";
+            });
+            if (selectedItem) fitGameFrame();
+          });
           iframe.src = extras.embed;
           iframe.title = extras.embedTitle || name;
           iframe.loading = "lazy";
@@ -2361,6 +2386,7 @@
     });
 
     window.addEventListener("hashchange", applyRoute);
+    window.addEventListener("resize", fitGameFrame);
     applyRoute();
     showChapter(savedBookState.chapterIndex || 0, { skipSave: true });
     bookReader.hidden = true;

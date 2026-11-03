@@ -41,7 +41,9 @@
     "test:quiz:input": "node scripts/test-web-quizzes-input.cjs",
     "test:math:input": "node scripts/test-math-mobile-input.cjs",
     "test:school:input": "node scripts/test-hardword-input.cjs",
-    "test:small-wonders:input": "node scripts/test-small-wonders-input.cjs"
+    "test:small-wonders:input": "node scripts/test-small-wonders-input.cjs",
+    "test:godot-reading:input": "node scripts/test-godot-reading-input.cjs",
+    "test:game-frames": "node scripts/test-game-frame-input.cjs && node scripts/test-game-frame-quizzes.cjs"
   },
   "devDependencies": {
     "playwright": "1.58.2"
