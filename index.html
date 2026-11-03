@@ -1157,6 +1157,7 @@
     }
 
     @media (max-width: 900px) {
+      .shell { padding-top: 8px; }
       .hero,
       .stage {
         grid-template-columns: 1fr;
@@ -1343,6 +1344,66 @@
     }
     body.ai-mode .music-controls { border-color: #a86ce0; }
     body.ai-mode .stage-visual { box-shadow: inset 0 0 6rem rgba(177, 76, 239, .22); }
+
+    #mainMenu > summary,
+    .playlist-menu > summary {
+      min-height: 44px;
+      padding: 12px;
+      color: var(--cyan);
+      cursor: pointer;
+      font-size: 13px;
+    }
+    #mainMenu > summary { color: var(--amber); }
+    #mainMenu[open] > summary { margin-bottom: 8px; }
+    .playlist-menu { flex-basis: 100%; }
+    .playlist-menu > summary { width: fit-content; }
+    .playlist-links { display: flex; flex-wrap: wrap; gap: 8px; padding: 4px 0; }
+    .featured:empty { display: none; }
+    .button { min-height: 44px; }
+    :is(summary, .button, .category-button):focus-visible {
+      outline: 2px solid var(--cyan);
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 900px) {
+      .topbar-inner { display: flex; min-height: 48px; padding: 0; }
+      .status, .intro, .stage-visual, .kicker, .stage .description { display: none; }
+      .hero { padding: 12px 0; gap: 0; }
+      .category-panel { position: relative; top: auto; margin: 0; padding: 0 8px; }
+      .category-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        overflow: visible;
+        padding: 0 4px 12px;
+      }
+      .category-button { min-height: 44px; padding: 12px; animation: none; }
+      .category-button:hover, .category-button:focus-visible, .category-button.active { transform: none; }
+      .stage { display: block; padding: 12px 14px; animation: none; }
+      .stage-copy { gap: 10px; }
+      .stage h2 { font-size: 28px; line-height: 1.15; overflow-wrap: anywhere; }
+      .music-controls { margin: 10px 0; padding: 8px 10px; }
+      .music-controls > .panel-label { display: none; }
+      .music-mode-links { gap: 6px; margin: 0; }
+      .music-mode-links > .button { flex: 1; padding: 10px 8px; text-align: center; }
+      .music-controls > .item-meta { margin-top: 6px; font-size: 11px; }
+      .playlist-menu > summary { padding: 10px 4px; }
+      .content-list { margin-top: 10px; gap: 8px; }
+      .item { min-height: 0; padding: 12px; gap: 8px; animation: none; }
+      .item:hover, .item:focus-visible { transform: none; }
+      .item.clickable .item-meta {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+      }
+      .item-title a { display: inline-block; padding: 6px 0; }
+      .item-actions { gap: 6px; }
+      .item-actions .button { font-size: 11px; }
+      .music-list .item.clickable { grid-template-columns: minmax(0, 1fr) auto; align-items: center; }
+      .music-list .item.clickable .item-title { font-size: 14px; }
+      .music-list .item.clickable .item-actions { justify-content: end; }
+      footer { padding: 20px 0; }
+    }
   </style>
 </head>
 <body>
@@ -1363,10 +1424,10 @@
         <p class="tagline">A time tunnel for old music, games, apps, films, pictures and text from the Joynes archive.</p>
       </div>
 
-      <aside class="category-panel" aria-labelledby="choose-title">
-        <p id="choose-title" class="panel-label">Choose a portal</p>
+      <details id="mainMenu" class="category-panel" open>
+        <summary id="choose-title">Menu</summary>
         <div id="categoryGrid" class="category-grid"></div>
-      </aside>
+      </details>
     </section>
 
     <section class="stage" aria-live="polite">
@@ -2059,12 +2120,21 @@
       if (musicControls.hidden) return;
       const label = document.createElement("p");
       label.className = "panel-label";
-      label.textContent = "Music modes & personal playlists";
+      label.textContent = "Music";
       const links = document.createElement("div");
       links.className = "music-mode-links";
-      for (const [id, text] of [["music", "Originals & variations"], ["old", "Old MP3"], ["ai", "AI mode · shuffle"],
+      const playlists = document.createElement("details");
+      playlists.className = "playlist-menu";
+      const summary = document.createElement("summary");
+      summary.textContent = category.sourcePlaylist ? `Playlists · ${category.name}` : "Playlists";
+      const playlistLinks = document.createElement("div");
+      playlistLinks.className = "playlist-links";
+      playlists.append(summary, playlistLinks);
+      for (const [id, text] of [["music", "Songs"], ["old", "Old MP3"], ["ai", "AI mode"],
         ...musicLibrary.personal.map(person => [person.id, person.title])]) {
         const button = internalLinkButton(text, id === "ai" ? "#music/ai" : id === "old" ? "#music/old" : `#${id}`);
+        if (id === "ai") button.setAttribute("aria-label", "AI mode · shuffle");
+        if (id === "music") button.setAttribute("aria-label", "Originals & variations");
         if (category.id === id) button.setAttribute("aria-current", "page");
         button.addEventListener("click", () => {
           if (id === "ai") {
@@ -2086,14 +2156,16 @@
           }
           updateAITheme();
         });
-        links.append(button);
+        (musicLibrary.personal.some(person => person.id === id) ? playlistLinks : links).append(button);
       }
+      links.append(playlists);
       const info = document.createElement("p");
       info.className = "item-meta";
       info.textContent = category.sourcePlaylist
-        ? `${category.tracks.length} tracks · Source playlist: ${category.sourcePlaylist} · Plays only this list.`
-        : category.id === "ai" ? "47 AI-generated Suno tracks · Your chosen track first, then shuffle."
-        : "Open a song to choose its original or an AI variation. AI mode plays only AI music.";
+        ? `${category.tracks.length} tracks · ${category.sourcePlaylist}`
+        : category.id === "ai" ? "AI-generated · Shuffle on"
+        : "";
+      info.hidden = !info.textContent;
       musicControls.replaceChildren(label, links, info);
     }
 
@@ -2165,15 +2237,18 @@
       }
       const note = document.createElement("p");
       note.className = "item-meta";
-      note.textContent = "Quiz games: questions, words and maths. Retro games: older originals adapted using AI. AI games: newer games.";
+      note.textContent = category.gameFilter === "retro" ? "Older games, adapted using AI." : category.gameFilter === "ai" ? "Newer AI games." : "";
+      note.hidden = !note.textContent;
       controls.replaceChildren(links, note);
     }
 
     function renderCategory(category, selectedItem = null) {
       document.querySelectorAll(".category-button").forEach((button) => {
-        button.classList.toggle("active", button.dataset.category === (["ai", "old"].includes(category.id) ? "music" : category.id));
+        button.classList.toggle("active", button.dataset.category === (["ai", "old"].includes(category.id) || category.musicView ? "music" : category.id));
       });
       currentCategory = category;
+      list.classList.toggle("music-list", ["music", "old", "ai"].includes(category.id) || !!category.musicView);
+      document.querySelector("#choose-title").textContent = `Menu · ${category.id === "old" || category.id === "ai" || category.musicView ? "Music" : category.name}`;
       renderMusicControls(category);
       renderGameControls(category);
       updateAITheme();
@@ -2184,13 +2259,11 @@
       description.textContent = selectedItem ? selectedItem[1] : category.description;
 
       if (selectedItem) {
-        const [, , actions] = selectedItem;
         featured.replaceChildren(
-          internalLinkButton(`Back to ${category.title}`, categoryHref(category)),
-          ...actions.map(([label, href]) => linkButton(label, href, category))
+          internalLinkButton(`Back to ${category.title}`, categoryHref(category))
         );
       } else {
-        featured.replaceChildren(...category.featured.map(([label, href]) => linkButton(label, href, category, "featured")));
+        featured.replaceChildren();
       }
 
       if (selectedItem?.[3]?.groupId) {
@@ -2245,7 +2318,7 @@
         const actionRow = document.createElement("div");
         actionRow.className = "item-actions";
         if (extras.groupId) {
-          actionRow.append(internalLinkButton("Original & variations", pageHref));
+          actionRow.append(internalLinkButton("Versions", pageHref));
         } else {
           actions.forEach(([label, href]) => actionRow.append(linkButton(label, href, category)));
         }
@@ -2268,7 +2341,9 @@
       }));
     }
 
-    categories.filter(category => category.id !== "old").forEach((category) => {
+    const mainMenu = document.querySelector("#mainMenu");
+    mainMenu.open = !window.matchMedia("(max-width: 900px)").matches;
+    categories.filter(category => category.id !== "old" && !category.musicView).forEach((category) => {
       const button = document.createElement("a");
       button.className = "category-button";
       button.dataset.category = category.id;
@@ -2280,6 +2355,7 @@
       button.addEventListener("click", (event) => {
         event.preventDefault();
         navigateTo(categoryHref(category));
+        if (window.matchMedia("(max-width: 900px)").matches) mainMenu.open = false;
       });
       grid.append(button);
     });
