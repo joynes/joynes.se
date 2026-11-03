@@ -14,6 +14,10 @@ For each game, verify:
    pause and restart without leaving any input held.
 5. Check portrait and landscape layouts and the published homepage launch path.
 
+## Renewed game-by-game audit — 3 November 2026
+
+Baseline and result commits are recorded in [game-repositories.json](../data/game-repositories.json). Frågespelet passed its full 154-question live regression and the added desktop/mobile keyboard, real touch, cancellation, independent contact release, focus, restart and orientation checks. No gameplay fix was needed. Other games remain pending in this renewed audit, regardless of their earlier release checks.
+
 ## Current findings
 
 - **Marble Tables:** keyboard-only native marble manipulation now passes in desktop

@@ -1,7 +1,7 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const {chromium} = require('playwright');
+const {chromium} = require(process.env.CHROMIUM_PLAYWRIGHT_MODULE || 'playwright');
 
 const base = process.env.GAME_BASE_URL || 'http://127.0.0.1:8767/games/web-quizzes/';
 const bank = JSON.parse(fs.readFileSync(path.join(__dirname, '../games/web-quizzes/questions.json')));
@@ -36,7 +36,7 @@ async function finishStage(page, index, touch = false) {
 }
 
 (async () => {
-  const browser = await chromium.launch({headless: true, channel: 'chrome'});
+  const browser = await chromium.launch(process.env.CHROMIUM_PLAYWRIGHT_MODULE ? {headless:true} : {headless:true,channel:'chrome'});
   try {
     const page = await browser.newPage({viewport: {width: 1440, height: 1000}});
     const errors = [];

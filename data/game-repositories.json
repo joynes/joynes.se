@@ -12,10 +12,25 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/web-quizzes",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "c264b6b17d10cddbae166cb9a1505e59d8c3a723",
-      "auditStatus": "pending",
+      "auditStatus": "passed",
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/web-quizzes/",
-      "sourceHead": "616543b83cb56b00d98c8c5bbfd04b175d1a0eef"
+      "sourceHead": "616543b83cb56b00d98c8c5bbfd04b175d1a0eef",
+      "auditCommit": "7846ac25c6f13cb91e6bca3740ef356105ea9f4a",
+      "auditEvidence": {
+        "game": "web-quizzes",
+        "date": "2026-11-03",
+        "baselineCommit": "c264b6b17d10cddbae166cb9a1505e59d8c3a723",
+        "result": "passed",
+        "browser": "Chromium 147, desktop and emulated mobile with touch enabled; keyboard events sent in both contexts. Physical Android/iOS devices were not tested.",
+        "gameplay": "All 154 questions across all 12 stages, wrong answers, scoring, records, replay and load/storage recovery passed on the canonical public game.",
+        "input": "Completed a stage using only keyboard controls on desktop and mobile. Real CDP touch start/end/cancel, two contacts with independent lift, canceled answer/next buttons, attached keyboard after touch, tab focus loss, resume, restart and portrait/landscape passed locally and live.",
+        "changes": "No gameplay defect found. Added repeatable input regression and cached-Playwright support.",
+        "commands": [
+          "CHROMIUM_PLAYWRIGHT_MODULE=<playwright package> GAME_BASE_URL=https://joynes.github.io/joynes.se/games/web-quizzes/ node scripts/test-web-quizzes-browser.cjs",
+          "CHROMIUM_PLAYWRIGHT_MODULE=<playwright package> GAME_BASE_URL=https://joynes.github.io/joynes.se/games/web-quizzes/ node scripts/test-web-quizzes-input.cjs"
+        ]
+      }
     },
     {
       "id": "grimace-gemini",
