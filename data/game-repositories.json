@@ -128,10 +128,25 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/memit",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "0764fd3be48aa1d75880a4393d9ae45b1b4a5e9a",
-      "auditStatus": "pending",
+      "auditStatus": "passed",
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/memit/",
-      "sourceHead": "0374025ade4f22aff6b1af45cf0cdf96c4ea5b22"
+      "sourceHead": "0374025ade4f22aff6b1af45cf0cdf96c4ea5b22",
+      "auditCommit": "ef2da7eb7b3bb406847cf299469c53fe40d15fcf",
+      "auditEvidence": {
+        "game": "memit",
+        "date": "2026-11-03",
+        "baselineCommit": "0764fd3be48aa1d75880a4393d9ae45b1b4a5e9a",
+        "result": "passed",
+        "scope": "Actual Chromium desktop and mobile browser contexts, with touch enabled and keyboard events in both. Physical phones/tablets and Safari are not covered by this result.",
+        "checks": "Passed live all 127 practice cards and full 127-question exam, ten grid questions, ten typed answers, image decoding, scoring, replay and fetch recovery. Keyboard play covered all four modes and completed both ten-question rounds on desktop and mobile. Real touch, independent contact lift/cancel, canceled Next, held-key focus cleanup, tab blur, touch-to-keyboard switching and orientation passed.",
+        "findings": "No gameplay defect found; added repeatable input verification.",
+        "testScripts": [
+          "scripts/test-memit-browser.cjs",
+          "scripts/test-memit-input.cjs"
+        ],
+        "publicUrl": "https://joynes.github.io/joynes.se/games/memit/"
+      }
     },
     {
       "id": "hardword",

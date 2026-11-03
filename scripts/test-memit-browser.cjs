@@ -1,12 +1,12 @@
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
-const {chromium}=require('playwright');
+const {chromium}=require(process.env.CHROMIUM_PLAYWRIGHT_MODULE||'playwright');
 const pack=JSON.parse(fs.readFileSync('games/memit/dota-heroes.json')).items;
 const base=process.env.GAME_BASE_URL||'http://127.0.0.1:8767/games/memit/';
 async function nameFromPortrait(page){const path=await page.locator('#portrait').getAttribute('src');const entry=pack.find(i=>i.image===path);assert.ok(entry);return entry.name;}
 async function typeCorrect(page,name){await page.locator('#answer').fill(name);await page.locator('#answer').press('Enter');await page.locator('#next').waitFor();assert.equal(await page.locator('#answer').isDisabled(),true);}
 (async()=>{
- const browser=await chromium.launch({channel:'chrome',headless:true});
+ const browser=await chromium.launch(process.env.CHROMIUM_PLAYWRIGHT_MODULE?{headless:true}:{channel:'chrome',headless:true});
  try{
   const page=await browser.newPage({viewport:{width:1440,height:1000}});const errors=[],bad=[];page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)bad.push(r.url());});
   await page.goto(base);await page.locator('#menu').waitFor();assert.match(await page.locator('#dataset').innerText(),/127 hjältar/);
