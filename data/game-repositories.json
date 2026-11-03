@@ -70,10 +70,25 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/grimace-codex",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "39d0cdc4a0f96cd189ceb0e6364c63eb46ba620e",
-      "auditStatus": "pending",
+      "auditStatus": "passed",
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/grimace-codex/",
-      "sourceHead": "07bf4ed2be5b219de95dc5a647f3d832f23b5e44"
+      "sourceHead": "07bf4ed2be5b219de95dc5a647f3d832f23b5e44",
+      "auditCommit": "27056ed2c135202fc1d7dad8d8d62641e40b46b4",
+      "auditEvidence": {
+        "game": "grimace-codex",
+        "date": "2026-11-03",
+        "baselineCommit": "39d0cdc4a0f96cd189ceb0e6364c63eb46ba620e",
+        "result": "passed",
+        "scope": "Actual Chromium desktop and mobile browser contexts, with touch enabled and keyboard events in both. Physical phones/tablets and Safari are not covered by this result.",
+        "checks": "Passed live all 20 fixed questions, both endings, saved resume, replay, wrong answers, exit and storage recovery. Desktop and mobile keyboard answers, full mobile plus/minus courses using touch, independent lift/cancel, lost focus, canceled Next and keyboard restart passed.",
+        "findings": "No gameplay defect found; added repeatable input verification.",
+        "testScripts": [
+          "scripts/test-grimace-codex-browser.cjs",
+          "scripts/test-math-mobile-input.cjs"
+        ],
+        "publicUrl": "https://joynes.github.io/joynes.se/games/grimace-codex/"
+      }
     },
     {
       "id": "quiz-sdl",
