@@ -998,7 +998,7 @@
         "games/car-topview/source-notes.md": "18b9c6dcc82e368965aecc0670e39d24d7612eb9b06ccfc0ba1fe05e21c8a5c5",
         "games/car-topview/styles.css": "c0ca28230c48a8ba86416d90bfa40616c679ba76647578319a81f5666d33a1d6",
         "assets/games-catalog.js": "9b371555e8c1c536ff93c7bdbfb0f5e242034e56d40aa5c3f6b0906193954a72",
-        "index.html": "117ccf5cb2eaac704de928d3161b4ac26cd9aa75bf9b3aa37ab1c48013c528f1",
+        "index.html": "4a8d6c838a460ba1e60dc0b566ba31137c10c3d0b6088fb497f135f8bd5cdcf6",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a"
       },
       "deploymentRun": 41718411431,
@@ -1092,7 +1092,7 @@
         "games/sdl-space/source-notes.md": "cec67cf314ea095e0b77e136972be9ca026e62b1b09a2f175a4768363245fc56",
         "games/sdl-space/styles.css": "71dd1274cb3d5ee861c48d31b951d3b99346e0dc0b3c61494ae4f2cbd69599e1",
         "assets/games-catalog.js": "9b371555e8c1c536ff93c7bdbfb0f5e242034e56d40aa5c3f6b0906193954a72",
-        "index.html": "117ccf5cb2eaac704de928d3161b4ac26cd9aa75bf9b3aa37ab1c48013c528f1",
+        "index.html": "4a8d6c838a460ba1e60dc0b566ba31137c10c3d0b6088fb497f135f8bd5cdcf6",
         "docs/games/sdl-space.md": "9c7377464a776097adac745626959ce2cf9a0e7e91a7d80a4591961e72c7a929",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a"
       },

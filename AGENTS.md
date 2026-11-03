@@ -8,6 +8,7 @@
 - Verify both input methods through the actual browser interface. Check simultaneous controls, key release, touch cancellation, lost focus and restart.
 - Work on one game at a time, test before publishing, and commit changes.
 - Finish the incomplete rall0054, v080 and rall008 adaptations. Their archive links do not count as playable web releases.
+- Verify game launch and fullscreen through joynes.se as well as the direct Pages URL; its forwarding frame does not delegate fullscreen.
 - Keep the publication inventory accurate. A successful build or a visible menu alone does not establish that a game works.
 
 # AI Enhanced editions

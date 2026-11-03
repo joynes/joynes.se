@@ -74,3 +74,7 @@ The investigation and original control bindings are recorded in
 
 The compatibility runtime and diagnostic artifacts are local experiments under
 ignored `test-results/rall054-wine/`; they are not a published game.
+
+## Domain forwarding
+
+`joynes.se` wraps the Pages site in a cross-origin forwarding frame without fullscreen permission. When fullscreen is unavailable in the host document, game details use direct Play links instead of trapping a game in an embedded preview. The direct game window supports its native fullscreen control. Desktop and mobile forwarding tests pass locally; public verification is pending.

@@ -757,5 +757,11 @@
     "liveChecks": "Canonical desktop/mobile game navigation and music sections passed. Both public runtime files match the tested hashes."
   },
   "originalContentTranslationScope": "awaiting-user-choice",
-  "enhancedEditionsPlan": "docs/AI_ENHANCED_GAMES_PLAN.md"
+  "enhancedEditionsPlan": "docs/AI_ENHANCED_GAMES_PLAN.md",
+  "forwardedDomainAudit": {
+    "domain": "https://joynes.se/",
+    "result": "local-passed-awaiting-live",
+    "checks": "Actual forwarding frame denies fullscreen; direct-window launch of Car and SDL passed desktop/mobile keyboard/touch native fullscreen in a local cross-origin reproduction.",
+    "script": "scripts/test-forwarded-game-launch.cjs"
+  }
 }
