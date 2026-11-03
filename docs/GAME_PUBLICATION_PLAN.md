@@ -2,6 +2,12 @@
 
 Make every identified game and relevant version from GitHub and Google Drive playable on the web, tested and published. Work on one game at a time and commit changes. An archive link, successful build or visible menu is not a finished web adaptation.
 
+## Repository checkpoint and renewed audit
+
+The current owner request is to checkpoint every game in its own repository before further repairs, reuse existing repositories, and create private repositories where no source repository exists. [game-repositories.json](../data/game-repositories.json) tracks the repository, baseline commit and new audit separately from historical release evidence. Public source-repository visibility is being clarified; public release hosting remains available.
+
+Audit published games in inventory order, one game at a time, including touch and keyboard in a mobile context. Record actual gameplay and recovery results, repair failures, then commit each tested result in its game repository and update the homepage release when needed. Keep unfinished Rall adaptations in the queue and keep the two excluded demos removed.
+
 ## Current priorities
 
 Finish **rall0054**, **v080** and **rall008** as separate games. They are not yet playable web releases. The active rall0054 compatibility investigation is recorded in [the input audit](INPUT_SUPPORT_AUDIT.md).
@@ -50,8 +56,8 @@ The machine-readable queue, source links, version relationships, test evidence a
 | 6 | Skoluppgifter / Ordhjälten | Published and verified under earlier release checks |
 | 7 | Small Wonders / Inuti språkmodellen | Published and verified under earlier release checks |
 | 8 | Marble Tables | Published and verified under earlier release checks |
-| 9 | Simple Driving Game | Published and verified under earlier release checks |
-| 10 | Bus Test Game | Published and verified under earlier release checks |
+| 9 | Simple Driving Game | Excluded at owner request; do not republish |
+| 10 | Bus Test Game | Excluded at owner request; do not republish |
 | 11 | Godot Reading Game | Published and verified under earlier release checks |
 | 12 | Bilspel ovanifrån | Published and verified under earlier release checks |
 | 13 | SDL Space / hinderbana | Published and verified under earlier release checks |
