@@ -13,7 +13,14 @@ For each game, verify:
 3. Repeat keyboard gameplay in a mobile browser context while touch is available.
 4. Release one held input without releasing another. Cancel touch, change focus,
    pause and restart without leaving any input held.
-5. Check portrait and landscape layouts and the published homepage launch path.
+5. Keep touch controls inside the game view, without button rows below the game.
+6. Provide a visible fullscreen control, usable by touch and keyboard. Test entry,
+   exit and the complete game plus controls in portrait and landscape.
+7. Check the published homepage launch path.
+
+Fullscreen and controls inside the game view were added as requirements after the
+first eleven renewed audits. Their earlier input results remain recorded, but
+those games also need this additional layout/fullscreen check.
 
 ## Renewed game-by-game audit — 3 November 2026
 
