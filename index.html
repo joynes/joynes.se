@@ -1406,7 +1406,7 @@
       <audio id="audioElement" preload="metadata" playsinline></audio>
       <div class="player-main">
         <div class="player-label" id="playerLabel">No track loaded</div>
-        <div class="player-title" id="playerTitle">Choose a song from Music, Old MP3 or Jaro & Grodan</div>
+        <div class="player-title" id="playerTitle">Choose a song from Music or Jaro & Grodan</div>
         <canvas class="visualizer" id="visualizer" aria-hidden="true"></canvas>
         <input class="progress" id="progress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek">
       </div>
@@ -1706,6 +1706,7 @@
     function categoryHref(category) {
       if (category.gameFilter) return `#games/${category.gameFilter}`;
       if (category.id === "ai") return "#music/ai";
+      if (category.id === "old") return "#music/old";
       return `#${category.id}`;
     }
 
@@ -1725,17 +1726,19 @@
       const raw = decodeURIComponent(window.location.hash.replace(/^#\/?/, "")).trim();
       const [categoryId, subroute, versionSlug] = raw.split("/").filter(Boolean);
       const isAIView = (categoryId === "music" && subroute === "ai") || categoryId === "ai";
+      const isOldView = (categoryId === "music" && subroute === "old") || categoryId === "old";
       const isGameFilter = categoryId === "games" && ["retro", "ai"].includes(subroute);
-      let category = isAIView ? musicLibrary.aiView : categories.find((entry) => entry.id === categoryId) || categories[0];
+      let category = isAIView ? musicLibrary.aiView : categories.find((entry) => entry.id === (isOldView ? "old" : categoryId)) || categories[0];
       if (isGameFilter) {
         category = {...gamesCategory, gameFilter: subroute, title: subroute === "retro" ? "Retro games" : "AI games",
           description: subroute === "retro" ? "Older games adapted for the web using AI. Browse archives and playable web versions." : "Newer games created with AI. More tested games will be published here.",
           items: gamesCategory.items.filter(item => item[3]?.gameKind === subroute)};
       }
-      const itemSlug = (isAIView && categoryId === "music") || isGameFilter ? versionSlug : subroute;
+      const itemSlug = ((isAIView || isOldView) && categoryId === "music") || isGameFilter ? versionSlug : subroute;
       if (categoryId === "ai") {
         history.replaceState(null, "", `#music/ai${itemSlug ? "/" + itemSlug : ""}`);
       }
+      if (categoryId === "old") history.replaceState(null, "", `#music/old${itemSlug ? "/" + itemSlug : ""}`);
       const item = itemSlug
         ? category.items.find((entry) => entry[3]?.slug === itemSlug)
         : null;
@@ -2057,9 +2060,9 @@
       label.textContent = "Music modes & personal playlists";
       const links = document.createElement("div");
       links.className = "music-mode-links";
-      for (const [id, text] of [["music", "Originals & variations"], ["ai", "AI mode · shuffle"],
+      for (const [id, text] of [["music", "Originals & variations"], ["old", "Old MP3"], ["ai", "AI mode · shuffle"],
         ...musicLibrary.personal.map(person => [person.id, person.title])]) {
-        const button = internalLinkButton(text, id === "ai" ? "#music/ai" : `#${id}`);
+        const button = internalLinkButton(text, id === "ai" ? "#music/ai" : id === "old" ? "#music/old" : `#${id}`);
         if (category.id === id) button.setAttribute("aria-current", "page");
         button.addEventListener("click", () => {
           if (id === "ai") {
@@ -2166,7 +2169,7 @@
 
     function renderCategory(category, selectedItem = null) {
       document.querySelectorAll(".category-button").forEach((button) => {
-        button.classList.toggle("active", button.dataset.category === (category.id === "ai" ? "music" : category.id));
+        button.classList.toggle("active", button.dataset.category === (["ai", "old"].includes(category.id) ? "music" : category.id));
       });
       currentCategory = category;
       renderMusicControls(category);
@@ -2263,7 +2266,7 @@
       }));
     }
 
-    categories.forEach((category) => {
+    categories.filter(category => category.id !== "old").forEach((category) => {
       const button = document.createElement("a");
       button.className = "category-button";
       button.dataset.category = category.id;

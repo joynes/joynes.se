@@ -63,3 +63,11 @@ test('personal queues match Suno playlist membership exactly', () => {
     assert.ok(queue.every(t => t.sourcePlaylists.includes(source)));
   }
 });
+test('Old MP3 remains a separate original-only queue inside Music', () => {
+  const lib = library();
+  const old = lib.categories.find(category => category.id === 'old');
+  assert.equal(old.tracks.length, 14);
+  assert.ok(old.tracks.every(track => !track.ai));
+  assert.equal(new Set(old.tracks.map(track => track.id)).size, 14);
+  assert.equal(lib.tracks.filter(track => !track.ai).length, 23);
+});

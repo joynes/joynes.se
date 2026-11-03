@@ -111,28 +111,6 @@ window.joynesPublishedGames = [
     version: "2024-reading-web.1"
   },
   {
-    id: "unity-bus",
-    title: "Bus Test Game — Buss",
-    kind: "retro",
-    description: "AI remake of a retro game · Original 2023 · The earlier bus version: three checkpoint gates, a 3D city and original Unity physics. Mouse, keyboard and touch.",
-    href: "games/unity-bus/",
-    embed: false,
-    source: "https://github.com/joynes/unity_bus",
-    sourceLabel: "Original build",
-    version: "2023-bus-web.1"
-  },
-  {
-    id: "simple-driving",
-    title: "Simple Driving Game — Polisbil",
-    kind: "retro",
-    description: "AI remake of a retro game · Original 2023 · Drive the police car through three city gates. Original 3D city and Unity physics, restored police car, keyboard and touch.",
-    href: "games/simple-driving/",
-    embed: false,
-    source: "https://github.com/joynes/joynes.se/tree/master/games/simple-driving",
-    sourceLabel: "Web code",
-    version: "2023-police-web.1"
-  },
-  {
     id: "marble-tables",
     title: "Marble Tables",
     kind: "retro",

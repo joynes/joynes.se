@@ -67,6 +67,8 @@
     }
     const music = categories.find(entry => entry.id === 'music');
     const old = categories.find(entry => entry.id === 'old');
+    const oldGroups = new Set(old.items.map(item => item[3].groupId));
+    old.tracks = tracks.filter(track => !track.ai && oldGroups.has(track.groupId));
     music.items.push(...old.items);
     for (const group of groups.values()) {
       if (!group.archiveItem) music.items.push(groupItem(group));

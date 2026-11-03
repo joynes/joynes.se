@@ -6,7 +6,7 @@ Make every identified game and relevant version from GitHub and Google Drive pla
 
 Finish **rall0054**, **v080** and **rall008** as separate games. They are not yet playable web releases. The active rall0054 compatibility investigation is recorded in [the input audit](INPUT_SUPPORT_AUDIT.md).
 
-Twenty games have passed their earlier release checks. That count does not mean that the new physical-keyboard-on-mobile requirement has already been verified for every game. Existing releases receive an additional input audit; Marble Tables is the first explicit keyboard repair.
+Eighteen games remain published after removing the police-car and bus proof-of-concept demos at the owner's request. These demos must not be republished without a new request. That count does not mean that the new physical-keyboard-on-mobile requirement has already been verified for every game. Existing releases receive an additional input audit; Marble Tables is the first explicit keyboard repair.
 
 ## Required behaviour
 
