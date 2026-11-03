@@ -59,7 +59,16 @@
         "assets/games-catalog.js": "e8906cc0dd883c78ebfa722ee8751fd12f7958b07a69958b2a38103acfbbc5b2"
       },
       "websiteSection": "quizzes",
-      "originalTitle": "Frågespelet"
+      "originalTitle": "Frågespelet",
+      "enhancedEdition": {
+        "status": "planned-after-original-audit",
+        "launchChoices": [
+          "Original",
+          "AI Enhanced"
+        ],
+        "graphics": "Blender",
+        "soundAndMusic": "ElevenLabs"
+      }
     },
     {
       "id": "grimace-gemini",
@@ -235,7 +244,16 @@
         "commit": "bd39e6cfd3a42d621f70d77955115f0438f0f6cd"
       },
       "websiteSection": "quizzes",
-      "originalTitle": "Läs- och ordquiz"
+      "originalTitle": "Läs- och ordquiz",
+      "enhancedEdition": {
+        "status": "planned-after-original-audit",
+        "launchChoices": [
+          "Original",
+          "AI Enhanced"
+        ],
+        "graphics": "Blender",
+        "soundAndMusic": "ElevenLabs"
+      }
     },
     {
       "id": "memit",
@@ -302,7 +320,16 @@
         "sha256OfSortedFileHashes": "f3da6071dd47df4d16276e1e398434a9ee914aa8ca647080312213ca8727d9e3",
         "commit": "1c8d61f006fbac85eda189c45f786df21b3156f5"
       },
-      "websiteSection": "retro"
+      "websiteSection": "retro",
+      "enhancedEdition": {
+        "status": "planned-after-original-audit",
+        "launchChoices": [
+          "Original",
+          "AI Enhanced"
+        ],
+        "graphics": "Blender",
+        "soundAndMusic": "ElevenLabs"
+      }
     },
     {
       "id": "hardword",
@@ -637,7 +664,16 @@
       "previousWrapperCommit": "2d3ff421e0f2da60703a53ac6e6490fa352e1473",
       "resourceAudit": "docs/games/marble-tables-assets.json",
       "websiteSection": "retro",
-      "webReleaseVersion": "1.0.2-web.2"
+      "webReleaseVersion": "1.0.2-web.2",
+      "enhancedEdition": {
+        "status": "planned-after-original-audit",
+        "launchChoices": [
+          "Original",
+          "AI Enhanced"
+        ],
+        "graphics": "Blender",
+        "soundAndMusic": "ElevenLabs"
+      }
     },
     {
       "id": "simple-driving",
@@ -869,7 +905,16 @@
         "index.html": "ccc47c210371e05181903a44c8514d7a0e8f4dd760d93a590820bf0f95ec4d70",
         "docs/games/godot-reading.md": "cc8a74b4661dcf78daacb15fcd4158268cd711b6ed362c4a7b8355ae80383d47"
       },
-      "originalTitle": "Godot Reading Game"
+      "originalTitle": "Godot Reading Game",
+      "enhancedEdition": {
+        "status": "planned-after-original-audit",
+        "launchChoices": [
+          "Original",
+          "AI Enhanced"
+        ],
+        "graphics": "Blender",
+        "soundAndMusic": "ElevenLabs"
+      }
     },
     {
       "id": "car-topview",
@@ -957,7 +1002,16 @@
       "renewedAuditStatus": "passed",
       "renewedAuditSourceCommit": "df4bd128c42489756aa32362cf6dfd12c2af7c4e",
       "renewedAuditCommit": "e122ca5",
-      "inGameControlsAndFullscreenStatus": "passed"
+      "inGameControlsAndFullscreenStatus": "passed",
+      "enhancedEdition": {
+        "status": "planned-after-original-audit",
+        "launchChoices": [
+          "Original",
+          "AI Enhanced"
+        ],
+        "graphics": "Blender",
+        "soundAndMusic": "ElevenLabs"
+      }
     },
     {
       "id": "sdl-space",
@@ -1037,7 +1091,16 @@
       "websiteSection": "retro",
       "renewedAuditStatus": "passed",
       "renewedAuditSourceCommit": "468838a",
-      "renewedAuditCommit": "ac82ccd"
+      "renewedAuditCommit": "ac82ccd",
+      "enhancedEdition": {
+        "status": "planned-after-original-audit",
+        "launchChoices": [
+          "Original",
+          "AI Enhanced"
+        ],
+        "graphics": "Blender",
+        "soundAndMusic": "ElevenLabs"
+      }
     },
     {
       "id": "network-2d",
@@ -1471,7 +1534,16 @@
         "docs/games/shadow-racer.md": "5b98ef726985c66402150b7dc0d0fa85c43e44c84fd0f8d643b1ee5292501dcf",
         "docs/games/shadow-racer-assets.json": "1b9dd2c13b47ce0ac3886b6f07af79d3a54262410d09836cdf9ede1ecadd9adf"
       },
-      "websiteSection": "retro"
+      "websiteSection": "retro",
+      "enhancedEdition": {
+        "status": "planned-after-original-audit",
+        "launchChoices": [
+          "Original",
+          "AI Enhanced"
+        ],
+        "graphics": "Blender",
+        "soundAndMusic": "ElevenLabs"
+      }
     },
     {
       "id": "rall-026",
@@ -1558,7 +1630,16 @@
         "docs/games/rall-026.md": "e689906009815f758a854b186622c68c8fb482ebafd1e260e2091592f1147049",
         "docs/games/rall-026-assets.json": "23aad475f25009756710699965ca81d63f71b7eb230cdfed2ed10e201cc6150b"
       },
-      "websiteSection": "retro"
+      "websiteSection": "retro",
+      "enhancedEdition": {
+        "status": "planned-after-original-audit",
+        "launchChoices": [
+          "Original",
+          "AI Enhanced"
+        ],
+        "graphics": "Blender",
+        "soundAndMusic": "ElevenLabs"
+      }
     },
     {
       "id": "rall-030",
@@ -1707,7 +1788,16 @@
         "docs/games/rall-030-assets.json": "2e2a1d363e9d184f253b694da284e83eec56fc9b76cb0966211b08f8b7bad1ad"
       },
       "sharedInterfaceCommit": "5ea295cf092444bcee10434953fb12de9ba961b6",
-      "websiteSection": "retro"
+      "websiteSection": "retro",
+      "enhancedEdition": {
+        "status": "planned-after-original-audit",
+        "launchChoices": [
+          "Original",
+          "AI Enhanced"
+        ],
+        "graphics": "Blender",
+        "soundAndMusic": "ElevenLabs"
+      }
     },
     {
       "id": "rall-054",
@@ -1751,7 +1841,16 @@
       "categoryLabel": "AI remake of a retro game",
       "compatibilityNotes": "docs/games/rall-054-compatibility.md",
       "prototypeSource": "scripts/rall054-probe-ui/",
-      "websiteSection": "retro"
+      "websiteSection": "retro",
+      "enhancedEdition": {
+        "status": "planned-after-original-audit",
+        "launchChoices": [
+          "Original",
+          "AI Enhanced"
+        ],
+        "graphics": "Blender",
+        "soundAndMusic": "ElevenLabs"
+      }
     },
     {
       "id": "rall-006",
@@ -1776,7 +1875,16 @@
       "category": "retro",
       "webAdaptation": "ai",
       "categoryLabel": "AI remake of a retro game",
-      "websiteSection": "retro"
+      "websiteSection": "retro",
+      "enhancedEdition": {
+        "status": "planned-after-original-audit",
+        "launchChoices": [
+          "Original",
+          "AI Enhanced"
+        ],
+        "graphics": "Blender",
+        "soundAndMusic": "ElevenLabs"
+      }
     },
     {
       "id": "rall-066",
@@ -1797,7 +1905,16 @@
       "category": "retro",
       "webAdaptation": "ai",
       "categoryLabel": "AI remake of a retro game",
-      "websiteSection": "retro"
+      "websiteSection": "retro",
+      "enhancedEdition": {
+        "status": "planned-after-original-audit",
+        "launchChoices": [
+          "Original",
+          "AI Enhanced"
+        ],
+        "graphics": "Blender",
+        "soundAndMusic": "ElevenLabs"
+      }
     },
     {
       "id": "rall-073",
@@ -1822,7 +1939,16 @@
       "category": "retro",
       "webAdaptation": "ai",
       "categoryLabel": "AI remake of a retro game",
-      "websiteSection": "retro"
+      "websiteSection": "retro",
+      "enhancedEdition": {
+        "status": "planned-after-original-audit",
+        "launchChoices": [
+          "Original",
+          "AI Enhanced"
+        ],
+        "graphics": "Blender",
+        "soundAndMusic": "ElevenLabs"
+      }
     },
     {
       "id": "rall-080",
@@ -1847,7 +1973,16 @@
       "category": "retro",
       "webAdaptation": "ai",
       "categoryLabel": "AI remake of a retro game",
-      "websiteSection": "retro"
+      "websiteSection": "retro",
+      "enhancedEdition": {
+        "status": "planned-after-original-audit",
+        "launchChoices": [
+          "Original",
+          "AI Enhanced"
+        ],
+        "graphics": "Blender",
+        "soundAndMusic": "ElevenLabs"
+      }
     },
     {
       "id": "rall-008",
@@ -1872,7 +2007,16 @@
       "category": "retro",
       "webAdaptation": "ai",
       "categoryLabel": "AI remake of a retro game",
-      "websiteSection": "retro"
+      "websiteSection": "retro",
+      "enhancedEdition": {
+        "status": "planned-after-original-audit",
+        "launchChoices": [
+          "Original",
+          "AI Enhanced"
+        ],
+        "graphics": "Blender",
+        "soundAndMusic": "ElevenLabs"
+      }
     },
     {
       "id": "rall-082",
@@ -1893,7 +2037,16 @@
       "category": "retro",
       "webAdaptation": "ai",
       "categoryLabel": "AI remake of a retro game",
-      "websiteSection": "retro"
+      "websiteSection": "retro",
+      "enhancedEdition": {
+        "status": "planned-after-original-audit",
+        "launchChoices": [
+          "Original",
+          "AI Enhanced"
+        ],
+        "graphics": "Blender",
+        "soundAndMusic": "ElevenLabs"
+      }
     }
   ],
   "candidatesToInspect": [

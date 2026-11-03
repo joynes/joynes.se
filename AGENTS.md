@@ -9,3 +9,9 @@
 - Work on one game at a time, test before publishing, and commit changes.
 - Finish the incomplete rall0054, v080 and rall008 adaptations. Their archive links do not count as playable web releases.
 - Keep the publication inventory accurate. A successful build or a visible menu alone does not establish that a game works.
+
+# AI Enhanced editions
+
+- After the current fixes, create a new AI Enhanced edition of each adapted older game, one game at a time.
+- Use new gameplay ideas, Blender graphics and ElevenLabs sound/music through the available skills.
+- Offer Original / AI Enhanced at launch once the enhanced edition is playable and verified. Preserve the restored edition and keep saves and assets separate.
