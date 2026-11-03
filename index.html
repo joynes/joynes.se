@@ -1493,7 +1493,7 @@
   <script src="assets/jaro-book.js"></script>
   <script src="assets/music-catalog.js"></script>
   <script src="assets/music-library.js?v=b71509c3cf69"></script>
-  <script src="assets/games-catalog.js?v=e380fdf4b62e"></script>
+  <script src="assets/games-catalog.js?v=ffb38fca81ee"></script>
   <script>
     const categories = [
       {
@@ -2351,7 +2351,12 @@
                   [siteRoot.pathname, `${siteRoot.pathname}index.html`].includes(target.pathname) &&
                   target.hash.startsWith("#games")) link.target = "_top";
             });
-            if (selectedItem) fitGameFrame();
+            if (selectedItem) {
+              fitGameFrame();
+              iframe.contentDocument?.addEventListener("focusin", () => {
+                requestAnimationFrame(() => { if (iframe.isConnected) fitGameFrame(); });
+              });
+            }
           });
           iframe.src = extras.embed;
           iframe.title = extras.embedTitle || name;

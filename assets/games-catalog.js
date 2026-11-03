@@ -82,13 +82,13 @@ window.joynesPublishedGames = [
   },
   {
     id: "sdl-space",
-    title: "SDL Space — hinderbana",
+    title: "SDL Space — Survival",
     kind: "retro",
     description: "AI remake of a retro game · Original 2020 · Dodge incoming rocks with a mouse, finger or keyboard. Original SDL2/WebAssembly engine, shader graphics and sound effect preserved.",
     href: "games/sdl-space/",
     source: "https://github.com/joynes/sdl2-samples-with-wasm-support/tree/184adda998c5b91e07c0f7cfebe464d87cd4b09a",
     sourceLabel: "Original code and web build",
-    version: "2020-sdl-web.1"
+    version: "2020-sdl-web.2"
   },
   {
     id: "car-topview",

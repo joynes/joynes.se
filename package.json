@@ -44,7 +44,8 @@
     "test:small-wonders:input": "node scripts/test-small-wonders-input.cjs",
     "test:godot-reading:input": "node scripts/test-godot-reading-input.cjs",
     "test:game-frames": "node scripts/test-game-frame-input.cjs && node scripts/test-game-frame-quizzes.cjs",
-    "test:car-topview:input": "node scripts/test-car-topview-input.cjs"
+    "test:car-topview:input": "node scripts/test-car-topview-input.cjs",
+    "test:sdl-space:input": "node scripts/test-sdl-space-input.cjs"
   },
   "devDependencies": {
     "playwright": "1.58.2"
