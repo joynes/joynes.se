@@ -78,3 +78,7 @@ ignored `test-results/rall054-wine/`; they are not a published game.
 ## Domain forwarding
 
 `joynes.se` wraps the Pages site in a cross-origin forwarding frame without fullscreen permission. When fullscreen is unavailable in the host document, game details use direct Play links instead of trapping a game in an embedded preview. The direct game window supports its native fullscreen control. Desktop and touch-enabled mobile forwarding tests also pass on joynes.se for Car and SDL, including direct-window launch and native fullscreen entry/exit. The complete SDL gameplay/input/fullscreen suites and Car regression suites pass on the direct public site. All 13 SDL and 11 Car release files match their SHA256 ledgers (Pages 41731059870).
+
+## ShadowRacer: 4 November follow-up
+
+Both native releases pass full course/crash/results checks with the frame-timed DOM-key pilot, plus separate trusted keyboard/native-touch suites in desktop and both mobile orientations. Combined native actions, independent ownership/release, cancellation, restart/focus cleanup, second-finger actions, native/fallback fullscreen, real iframe blur and domain forwarding pass locally and live. A delayed-control-module startup race is fixed and regression-tested. Native movies and the read-only observer are unchanged. All 25 public files match; Pages 41740884604 succeeded. Physical devices and Safari remain outside this scope.

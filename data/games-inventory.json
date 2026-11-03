@@ -1555,11 +1555,15 @@
         {
           "check": "delayed-controls-startup-local",
           "result": "The public candidate allowed Start before the input module loaded. New regression delays that module: disabled loading state, first keyboard activation and actual driving pass at all three viewport sizes. Local native iframe and forwarding launch checks also pass."
+        },
+        {
+          "check": "renewed-original-audit-2026-11-04-live",
+          "result": "Both original releases pass native reverse/forward/pause/timer, genuine crash/retry and complete frame-timed DOM-key course finishes, local record persistence and release switching. Separate trusted keyboard/native-touch input suites pass both releases in all three viewports, aliases/axes, combined native actions, independent release, mixed ownership, cancellation, stale held key/contact restart, second-finger actions and fullscreen/rotation. Real parent-frame blur/resume, paused native iframe fullscreen, touch exit/old-contact cleanup and Back navigation pass in all three viewports. Full five-resource 503/retry and blocked-storage suite passes. Native preservation and homepage unit suites pass. Local cross-origin forwarding launch opens direct playable games and keyboard/touch fullscreen at all three sizes. Prior public candidate: complete native gameplay/recovery and all six trusted input cases plus all three real iframe cases passed. The startup-only follow-up now passes all three delayed-module/first-activation/driving cases, all six trusted keyboard/native-touch cases, all three native iframe focus/fullscreen cases and actual joynes.se direct-window launch/driving/fullscreen cases. All 25 released files match SHA256; Pages 41740884604 succeeded."
         }
       ],
       "publishedUrl": "https://joynes.github.io/joynes.se/games/shadow-racer/",
-      "implementationCommit": "5be413dc98f23ab3a849cfc56a3a0c8a5114e1c7",
-      "deploymentCommit": "5be413dc98f23ab3a849cfc56a3a0c8a5114e1c7",
+      "implementationCommit": "23333ac4e0c9108a8aca6efe61ecbdf38441151b",
+      "deploymentCommit": "23333ac4e0c9108a8aca6efe61ecbdf38441151b",
       "category": "retro",
       "webAdaptation": "ai",
       "categoryLabel": "AI remake of a retro game",
@@ -1573,20 +1577,20 @@
       "sourceManifest": "games/shadow-racer/source-manifest.json",
       "nativeObserverProof": "games/shadow-racer/native-observer-proof.json",
       "catalogUrl": "https://joynes.github.io/joynes.se/#games/retro/shadow-racer",
-      "catalogCommit": "5be413dc98f23ab3a849cfc56a3a0c8a5114e1c7",
-      "catalogDeploymentRun": 41343799566,
+      "catalogCommit": "23333ac4e0c9108a8aca6efe61ecbdf38441151b",
+      "catalogDeploymentRun": 41740884604,
       "publishedFileSha256": {
         "games/shadow-racer/LICENSE_APE": "7e15278f714da10a6fcdb76321a4ae519b8e190f8b3881926298cffcd3497f14",
-        "games/shadow-racer/app.mjs": "7ff16b4ef8cef0f405327556c09570c7c01ff2a3535248f0e364881eb6fa2ec3",
-        "games/shadow-racer/index.html": "c5bc7a77d6c1572a1e2b9c28eed70ba6e6b8cbc9173281c454623c502a0744f8",
+        "games/shadow-racer/app.mjs": "7d95703090efadb61c3bd9597806bee224112644575ea6b02db92d0ef3a5d96c",
+        "games/shadow-racer/index.html": "4a8aa5c2325287a999038b62cdce4086e436e186d571467515c245aa68df651e",
         "games/shadow-racer/native-observer-proof.json": "782613371e494d411215ba826bc2c3456751417551a8339ba0c6bc09148038ab",
         "games/shadow-racer/original/shadow-racer-20080928.swf": "ca347f3481ee254d60ec3bd856821b6f6546f8567120872509659844622a4e3b",
         "games/shadow-racer/original/shadow-racer-20081005.swf": "4bf85f616c53e2f11fef8c40458e032c2555cbf0a8951bcddcf1f5ca26d73c89",
         "games/shadow-racer/shadow-racer-20080928.swf": "6f56ab49e660bbc3c9b05471b0d2f7cf1d738414b988f953ca5ef79e2e501151",
         "games/shadow-racer/shadow-racer-20081005.swf": "c33a6cee03e839251864e416d6f0e9e93aa855fd6bc6a99b80b67d2f7d85b257",
         "games/shadow-racer/source-manifest.json": "d934d88f5f6a412ed61e1e19b61ddfdb81c3e2ec9e04633a90fc14cefe8967e5",
-        "games/shadow-racer/source-notes.md": "f119c335a57e2d320dd7ed3e8f6a76830762bd8dcf450f7a2ef5c443a0dfe6a2",
-        "games/shadow-racer/styles.css": "99cfe0b4cb54dd25ca9d7fd1897f22eca4f75208d0c4422904b00670ef2932da",
+        "games/shadow-racer/source-notes.md": "d1f680859655beed1d83d9973e52cb857f8530f8979297d58e1bedbe8c8dd31e",
+        "games/shadow-racer/styles.css": "4beba6ff0fbaf07a0a0d55a0fe6f16b81882f8c0d392ca2cf41657e2fe92a7c5",
         "games/shadow-racer/vendor/ruffle/172de42e6619eac8f371.wasm": "1ed33b9b71a6b01b9aafafed660be343ffeb2d246c5d79e6425a32bf93e38207",
         "games/shadow-racer/vendor/ruffle/878d548199cddef07035.wasm": "af9b6a13a8f5e8d305bc3ce28a4edf3f6242df1183e8576ad4ca086e9f21eaea",
         "games/shadow-racer/vendor/ruffle/LICENSE_APACHE": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
@@ -1599,23 +1603,23 @@
         "games/shadow-racer/vendor/ruffle/package.json": "822dd0fe6f6a84d4ab41351acd2a789aa9ef75b3fe454ab846c0858157c48d89",
         "games/shadow-racer/vendor/ruffle/ruffle.js": "26036a94567088dfb3de88a759e8ed10a4cea07b29500af36f345eef42420098",
         "games/shadow-racer/vendor/ruffle/ruffle.js.map": "bf8dabc8144a0e087cdbade5da77de5a998ab55a271b32bae6e3173248d4188a",
-        "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82",
-        "assets/games-catalog.js": "4563700bc43d43dfb3e51b4acd65076d1f41a3fc420bbd4b2537a238d7469588",
-        "docs/games/shadow-racer.md": "5b98ef726985c66402150b7dc0d0fa85c43e44c84fd0f8d643b1ee5292501dcf",
-        "docs/games/shadow-racer-assets.json": "1b9dd2c13b47ce0ac3886b6f07af79d3a54262410d09836cdf9ede1ecadd9adf"
+        "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
+        "docs/games/shadow-racer-assets.json": "975b4f62c5a734aa26cccc910ec891a430b1f3d329e3f695574bec1efb928c94"
       },
       "websiteSection": "retro",
       "enhancedEdition": {
-        "status": "planned-after-original-audit",
+        "status": "in-development",
         "launchChoices": [
           "Original",
           "AI Enhanced"
         ],
         "graphics": "Blender",
-        "soundAndMusic": "ElevenLabs"
+        "soundAndMusic": "ElevenLabs",
+        "title": "Ridge Courier",
+        "concept": "A new 3D side-view delivery buggy: distinct routes, cargo stops, boost, checkpoints and Blender models with ElevenLabs audio."
       },
-      "renewedAuditStatus": "local-passed-awaiting-live",
-      "inGameControlsAndFullscreenStatus": "local-passed-awaiting-live",
+      "renewedAuditStatus": "passed",
+      "inGameControlsAndFullscreenStatus": "passed",
       "renewedAuditSourceCommit": "389aadf7c8c8366eae4a4083429d0cd22dac066f",
       "releaseFilesSha256": {
         "games/shadow-racer/LICENSE_APE": "7e15278f714da10a6fcdb76321a4ae519b8e190f8b3881926298cffcd3497f14",
@@ -1643,7 +1647,9 @@
         "games/shadow-racer/vendor/ruffle/ruffle.js.map": "bf8dabc8144a0e087cdbade5da77de5a998ab55a271b32bae6e3173248d4188a",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "docs/games/shadow-racer-assets.json": "975b4f62c5a734aa26cccc910ec891a430b1f3d329e3f695574bec1efb928c94"
-      }
+      },
+      "renewedAuditCommit": "8857df4121f7e433005e3d91dddc0ab09f7bb3fe",
+      "deploymentRun": 41740884604
     },
     {
       "id": "rall-026",
