@@ -25,7 +25,7 @@ Add the unfinished older Rall games after their original web editions are playab
 
 Use installed Blender 5.2.2 LTS for new models, scenes, animations and web exports. Save reproducible asset-building scripts and source `.blend` files in the private game repository; publish optimized game assets.
 
-Use the available `elevenlabs-api`, `music` and `sound-effects` skills. The connected plugin does not expose music/effect generation, so use the ElevenLabs API for those assets. Configuration is available; keys must remain outside source, logs and browser code. Generate assets for the current game only. Record prompts, provider/model, generation metadata and asset hashes, then verify the saved files and actual browser playback.
+Use the available `elevenlabs-api`, `music` and `sound-effects` skills. The connected ElevenLabs flow tool supports music and sound effects; prefer it, with the API skill available when finer parameters or exports require it. Configuration is available; keys must remain outside source, logs and browser code. Generate assets for the current game only. Record prompts, provider/model, generation metadata and asset hashes, then verify the saved files and actual browser playback.
 
 ## Release checklist
 
