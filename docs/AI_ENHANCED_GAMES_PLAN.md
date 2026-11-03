@@ -34,3 +34,7 @@ Use the available `elevenlabs-api`, `music` and `sound-effects` skills. The conn
 - Touch controls inside the scene, physical keyboard support on desktop and mobile, and fullscreen.
 - Actual browser gameplay tests for both editions, simultaneous input, cancellation, focus loss and restart.
 - Separate game commits, tested publication and live release verification before moving on.
+
+## First implementation
+
+Top-down Driving is first: its original mechanics, touch, keyboard and fullscreen have passed local and live verification, and its existing source repository is private. Build a new time-trial game with Blender courses/car graphics and ElevenLabs audio. Keep every other enhanced edition queued until its own original checks and enhanced gameplay tests pass.

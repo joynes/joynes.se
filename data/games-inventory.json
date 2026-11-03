@@ -1001,7 +1001,7 @@
         "games/car-topview/provenance.json": "2c7a3b776e92c8842f8e3b698d0ae788f322775001715e4b079da54f9778f6f9",
         "games/car-topview/source-notes.md": "18b9c6dcc82e368965aecc0670e39d24d7612eb9b06ccfc0ba1fe05e21c8a5c5",
         "games/car-topview/styles.css": "c0ca28230c48a8ba86416d90bfa40616c679ba76647578319a81f5666d33a1d6",
-        "assets/games-catalog.js": "9b371555e8c1c536ff93c7bdbfb0f5e242034e56d40aa5c3f6b0906193954a72",
+        "assets/games-catalog.js": "a43ba7404e9bba575771076345b7d9466a199ee46e53e3b19bb38a00ea8a61e8",
         "index.html": "4a8d6c838a460ba1e60dc0b566ba31137c10c3d0b6088fb497f135f8bd5cdcf6",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a"
       },
@@ -1099,7 +1099,7 @@
         "games/sdl-space/provenance.json": "8bb1d152becb8495f0368fb7749b7ab83921e22861eed2c74e0948ded9c103ff",
         "games/sdl-space/source-notes.md": "cec67cf314ea095e0b77e136972be9ca026e62b1b09a2f175a4768363245fc56",
         "games/sdl-space/styles.css": "71dd1274cb3d5ee861c48d31b951d3b99346e0dc0b3c61494ae4f2cbd69599e1",
-        "assets/games-catalog.js": "9b371555e8c1c536ff93c7bdbfb0f5e242034e56d40aa5c3f6b0906193954a72",
+        "assets/games-catalog.js": "a43ba7404e9bba575771076345b7d9466a199ee46e53e3b19bb38a00ea8a61e8",
         "index.html": "4a8d6c838a460ba1e60dc0b566ba31137c10c3d0b6088fb497f135f8bd5cdcf6",
         "docs/games/sdl-space.md": "9c7377464a776097adac745626959ce2cf9a0e7e91a7d80a4591961e72c7a929",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a"
@@ -1172,11 +1172,15 @@
         {
           "check": "renewed-homepage-fullscreen-audit-2026-11-03-live",
           "result": "Desktop/mobile canonical homepage arena/autopilot links open real connected games with working native fullscreen. All three integration files SHA256 matched homepage f907ce2; Pages 41715530963 succeeded. Default installed-Chrome input suite also passed."
+        },
+        {
+          "check": "second-finger-actions-1.1.2-local-live",
+          "result": "Full build/unit/lint, three-client gameplay and desktop/phone portrait/landscape input suites passed. Real secondary touch invokes native fullscreen and New figure while movement is held; restarted figure ignores stale contact. All three live client hashes and exact health release match."
         }
       ],
       "publishedUrl": "https://test-network-game.fly.dev/",
-      "implementationCommit": "b0fa91de733e236b0441cb09d66529bc99020f98",
-      "deploymentCommit": "b0fa91de733e236b0441cb09d66529bc99020f98",
+      "implementationCommit": "6956f5c22fbd04cf8142df8b780923faf6f2e22f",
+      "deploymentCommit": "6956f5c22fbd04cf8142df8b780923faf6f2e22f",
       "category": "ai",
       "webAdaptation": "ai",
       "categoryLabel": "AI game",
@@ -1184,15 +1188,15 @@
       "sourcePeriod": "2025-09",
       "implementationRepository": "https://github.com/joynes/test-network-game",
       "externalUrl": "https://test-network-game.fly.dev/",
-      "deploymentImage": "registry.fly.io/test-network-game:deployment-01M6HJB54ZWZ0DD9QZJEF0P1EG",
+      "deploymentImage": "registry.fly.io/test-network-game:deployment-01M6HRTQAT72H31DRZGVQNSQG6",
       "deploymentRegion": "arn",
       "machineCount": 1,
       "sourceCommitsPushed": true,
       "implementationNotes": "Preserved original 800x450 authoritative shared world, emoji figures, speed250, prediction/reconciliation, tuning and autopilot. English interface with translucent in-game thumbpad, restart/fullscreen overlay, keyboard aliases and stale-repeat cleanup after focus/restart. Native fullscreen and unsupported-API expanded view preserve scene proportions. Existing single Fly Machine/region/VM retained. Source commits pushed to the existing private audit branch; no generated builds committed.",
       "externalReleaseFilesSha256": {
-        "index.html": "03ef03e42f7eb6b21110af132c4b32385ec5b92167570c882b3ebd97754b9e32",
-        "assets/index-b712e067.css": "b712e06732d0982b12543de77c6a6c753fe60d8de64d9ba6d148244148b488f6",
-        "assets/index-73598e09.js": "dbe24b3153ec320574559301a1991b4d39f8aa92012e3f9aa88f4b877d0df6e6"
+        "index.html": "f7aa034320f360bd140bf94237dab3a092f0245a874a1ff3982d8f5b9c69bfc5",
+        "assets/index-a9746c54.js": "bfc3a908d5ce92a6f58551f21b621fa8112e348622ce2b4ebdd50dbd101808b0",
+        "assets/index-b712e067.css": "b712e06732d0982b12543de77c6a6c753fe60d8de64d9ba6d148244148b488f6"
       },
       "catalogReleaseFilesSha256": {
         "assets/games-catalog.js": "a601fabbdd5b516bb383bf327449b1468041deca6621f9240e644a998a513cf6",
@@ -1203,10 +1207,10 @@
       "catalogCommit": "f907ce217f136b7d12e06935c3f87ffef9d72b79",
       "catalogDeploymentRun": 41715530963,
       "websiteSection": "ai",
-      "deploymentImageManifestSha256": "e0818fdc809c716e1411de41e6f437be279256298f783f066f83232ddeea1b7e",
+      "deploymentImageManifestSha256": "4f0df4012ce34b149daaebd21f4b96e82638bef71ee7e432689f8aded921306d",
       "renewedAuditStatus": "passed",
       "inGameControlsAndFullscreenStatus": "passed",
-      "renewedAuditCommit": "b0fa91de733e236b0441cb09d66529bc99020f98"
+      "renewedAuditCommit": "5a0a93b4d00c8143614bcb430ff25f9ea24b2ff8"
     },
     {
       "id": "network-3d",

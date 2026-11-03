@@ -10,9 +10,9 @@ Work on one game at a time: checkpoint its source, implement, verify actual game
 
 1. Hello Multiplayer is complete: full local/live gameplay and input suites, in-game thumbpad, native fullscreen, rotation and homepage integration passed.
 2. Top-down Driving is complete: all touch directions, an in-game floating thumbpad and overlaid actions, second-finger controls, standalone/iframe native fullscreen and rotation passed locally and live.
-3. SDL Space passed the additional control/fullscreen suite locally in two browsers: all drag directions, second-finger actions, rotation, native audio, held-contact restart and iframe fullscreen. Publish and verify it next.
+3. SDL Space is complete: native gameplay, all drag directions, second-finger actions, rotation, audio, held-contact restart and iframe fullscreen passed locally and live. Car and SDL also pass direct-window launch/fullscreen through joynes.se.
 4. Check the remaining real-time releases individually: Ordhjälten/Breakout, Small Wonders (three routes), Marble Tables, Läs och placera, 3D Network Game, Neon Bastion and Manta, WorldForge, ShadowRacer, Rall v026 and Rall v030. Their earlier results remain valid for the tested scope; the additional fullscreen/control-placement requirements still need verification.
-5. Recheck secondary-finger activation on the other in-game action buttons, including Hello Multiplayer’s restart/fullscreen controls; the driving audit caught browser click suppression during an existing touch.
+5. Hello Multiplayer’s second-finger restart/fullscreen defect is fixed in 1.1.2 and verified locally/live. Recheck secondary-finger activation on each remaining game.
 6. Finish the unpublished native Rall adaptations without treating archive links as playable releases. Each must satisfy the same requirements before publication.
 
 Per-game state and source/result commits are tracked in [game-repositories.json](../data/game-repositories.json). The wider publication queue remains in [GAME_PUBLICATION_PLAN.md](GAME_PUBLICATION_PLAN.md).

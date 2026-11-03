@@ -462,7 +462,7 @@
       "sourceHead": "09c53f8d3988bfa19d629d64f53a8a450b4d47e3",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "7ad8541aff2fce467c91629077734e60ef55b4c1",
-      "repositoryHeadCommit": "cc9c98d896153fa34eafe69b16f0b400b458708e",
+      "repositoryHeadCommit": "5a0a93b4d00c8143614bcb430ff25f9ea24b2ff8",
       "auditUrl": "https://github.com/joynes/test-network-game/tree/audit/2026-11-03-baseline",
       "inGameControlsAndFullscreenStatus": "passed",
       "auditEvidence": {
@@ -471,10 +471,10 @@
         "baselineCommit": "64a46070ef0363c70c4bc3bdfbd94f049db7df53",
         "result": "passed",
         "scope": "Actual Chromium desktop and touch-enabled mobile browser contexts, including keyboard in both; physical phones and Safari not covered.",
-        "checks": "Full three-client authoritative gameplay/bounds/remote rendering/focus/tuning/reconnect/autopilot suite passed locally and live; only local suite restarts its owned server. Expanded desktop/portrait/landscape keyboard aliases/diagonal/release, stale-repeat cleanup, touch owner/secondary lift/cancel, held-contact restart, native fullscreen with keyboard/touch, in-fullscreen device rotation, control bounds within scene and unsupported-API Escape fallback all passed locally and live. Unit/build and client/server lint passed. Homepage preview opens both real arena/autopilot popups and native fullscreen. Canonical homepage arena/autopilot popup and native fullscreen checks passed at desktop and mobile sizes. All three integration file hashes match homepage f907ce217f136b7d12e06935c3f87ffef9d72b79 / Pages 41715530963 success. The default installed-Chrome input suite also passed.",
-        "findings": "Fixed reproduced stale hardware-repeat movement after focus/restart. English interface, translucent in-game thumbpad and overlaid restart/fullscreen controls, preserving all original movement/network mechanics.",
-        "sourceFixCommit": "159600f",
-        "deploymentCommit": "b0fa91de733e236b0441cb09d66529bc99020f98",
+        "checks": "Full three-client authoritative gameplay/bounds/remote rendering/focus/tuning/reconnect/autopilot suite passed locally and live; only local suite restarts its owned server. Expanded desktop/portrait/landscape keyboard aliases/diagonal/release, stale-repeat cleanup, touch owner/secondary lift/cancel, held-contact restart, native fullscreen with keyboard/touch, in-fullscreen device rotation, control bounds within scene and unsupported-API Escape fallback all passed locally and live. Unit/build and client/server lint passed. Homepage preview opens both real arena/autopilot popups and native fullscreen. Canonical homepage arena/autopilot popup and native fullscreen checks passed at desktop and mobile sizes. All three integration file hashes match homepage f907ce217f136b7d12e06935c3f87ffef9d72b79 / Pages 41715530963 success. The default installed-Chrome input suite also passed. Follow-up 1.1.2: all build/unit/lint, full three-client gameplay and expanded desktop/portrait/landscape input suites passed locally and live, including second-finger native fullscreen and New figure while movement is held. Restart invalidates the old contact. All three public client files match the local production build.",
+        "findings": "Fixed reproduced stale hardware-repeat movement after focus/restart. English interface, translucent in-game thumbpad and overlaid restart/fullscreen controls, preserving all original movement/network mechanics. Reproduced missing second-finger fullscreen activation; fixed native touch-release activation, immediate restart and duplicate compatibility-click/transition suppression.",
+        "sourceFixCommit": "1e00598",
+        "deploymentCommit": "6956f5c22fbd04cf8142df8b780923faf6f2e22f",
         "testScripts": [
           "tests/browser.cjs",
           "tests/input.cjs",
@@ -484,24 +484,25 @@
         "externalRelease": {
           "health": {
             "ok": true,
-            "version": "1.1.1",
-            "release": "b0fa91de733e236b0441cb09d66529bc99020f98"
+            "version": "1.1.2",
+            "release": "6956f5c22fbd04cf8142df8b780923faf6f2e22f"
           },
           "files": {
-            "index.html": "03ef03e42f7eb6b21110af132c4b32385ec5b92167570c882b3ebd97754b9e32",
-            "assets/index-b712e067.css": "b712e06732d0982b12543de77c6a6c753fe60d8de64d9ba6d148244148b488f6",
-            "assets/index-73598e09.js": "dbe24b3153ec320574559301a1991b4d39f8aa92012e3f9aa88f4b877d0df6e6"
+            "index.html": "f7aa034320f360bd140bf94237dab3a092f0245a874a1ff3982d8f5b9c69bfc5",
+            "assets/index-a9746c54.js": "bfc3a908d5ce92a6f58551f21b621fa8112e348622ce2b4ebdd50dbd101808b0",
+            "assets/index-b712e067.css": "b712e06732d0982b12543de77c6a6c753fe60d8de64d9ba6d148244148b488f6"
           }
         },
         "homepageCommit": "f907ce217f136b7d12e06935c3f87ffef9d72b79",
         "homepageDeploymentRun": 41715530963
       },
-      "auditFixCommit": "159600f",
-      "deploymentCommit": "b0fa91de733e236b0441cb09d66529bc99020f98",
-      "auditCommit": "cc9c98d896153fa34eafe69b16f0b400b458708e",
+      "auditFixCommit": "1e00598",
+      "deploymentCommit": "6956f5c22fbd04cf8142df8b780923faf6f2e22f",
+      "auditCommit": "5a0a93b4d00c8143614bcb430ff25f9ea24b2ff8",
       "catalogCommit": "f907ce217f136b7d12e06935c3f87ffef9d72b79",
       "catalogDeploymentRun": 41715530963,
-      "englishInterfaceAuditStatus": "passed"
+      "englishInterfaceAuditStatus": "passed",
+      "secondaryActionTouchAuditStatus": "passed"
     },
     {
       "id": "network-3d",
@@ -736,14 +737,14 @@
       "englishInterfaceAuditStatus": "pending"
     }
   ],
-  "currentAuditGame": "network-2d",
+  "currentAuditGame": "car-topview",
   "realtimeControlRequirements": [
     "All gameplay actions available with touch, including simultaneous movement and action inputs.",
     "Touchpad/direct drag and action controls inside the game view, using the existing AI games as the reference; no control rows below the board.",
     "Visible fullscreen control operable by touch and keyboard, with entry/exit and both orientations verified.",
     "Keyboard input retained on phones/tablets; independent release, cancellation, lost focus and restart verified through the browser."
   ],
-  "currentAuditFocus": "verify second-finger in-scene actions",
+  "currentAuditFocus": "build first AI Enhanced time-trial edition after verified original",
   "englishInterfaceRequirement": "All website interface text must be concise and in English.",
   "homepageEnglishCopyStatus": "passed",
   "homepageEnglishCopyEvidence": {

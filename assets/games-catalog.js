@@ -78,7 +78,7 @@ window.joynesPublishedGames = [
     modes: [["Autopilot", "https://test-network-game.fly.dev/?bot=1"]],
     source: "https://github.com/joynes/joynes.se/blob/master/docs/games/network-2d.md",
     sourceLabel: "Source",
-    version: "1.1.1"
+    version: "1.1.2"
   },
   {
     id: "sdl-space",
