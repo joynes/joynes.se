@@ -269,14 +269,30 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/marble-tables",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "510a0e2bda1005eb43bc1fa79c0642c785aa590c",
-      "auditStatus": "pending",
+      "auditStatus": "local-passed-awaiting-live",
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/marble-tables/",
       "sourceHead": "b7994d00c0d740d2d7738028daf5c6528c110372",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "1278ab41fe79d6b0ec52b8886aa7cd923abb0d61",
-      "repositoryHeadCommit": "1278ab41fe79d6b0ec52b8886aa7cd923abb0d61",
-      "auditUrl": "https://github.com/joynes/marble_tables/tree/audit/2026-11-03-baseline"
+      "repositoryHeadCommit": "48d2bdf566020a00ecf2e509626318897def263a",
+      "auditUrl": "https://github.com/joynes/marble_tables/tree/audit/2026-11-03-baseline",
+      "auditCommit": "48d2bdf566020a00ecf2e509626318897def263a",
+      "auditEvidence": {
+        "game": "marble-tables",
+        "date": "2026-11-03",
+        "baselineCommit": "510a0e2bda1005eb43bc1fa79c0642c785aa590c",
+        "result": "local-passed-awaiting-live",
+        "scope": "Actual Chromium desktop and mobile browser contexts, with touch enabled and keyboard events in both. Physical phones/tablets and Safari are not covered by this result.",
+        "checks": "Canonical release passed native mouse/touch drag, hold, actual gravity, restart, fullscreen, blocked engine files/retry, homepage launcher, and full keyboard/native marble manipulation in desktop and mobile contexts. Added landscape case reproduced the clipped view. Fixed layout passed full native touch cancellation and attached-keyboard drag/drop/fullscreen/focus checks in 844x390. Prior 12-asset canonical identity check passed; new wrapper/style publication awaits live verification.",
+        "findings": "Fixed the complete scene not fitting a short landscape phone viewport by moving HTML controls beside it. Native Unity code, scene, physics and assets are unchanged. No movement or input mapping defect was found.",
+        "testScripts": [
+          "scripts/test-marble-browser.cjs",
+          "scripts/test-marble-keyboard.cjs",
+          "scripts/marble-vision.py"
+        ],
+        "publicUrl": "https://joynes.github.io/joynes.se/games/marble-tables/"
+      }
     },
     {
       "id": "godot-reading",

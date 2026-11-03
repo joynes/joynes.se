@@ -65,3 +65,9 @@ The 2026-11-02 input update and its canonical release evidence are recorded in
 [data/games-inventory.json](../../data/games-inventory.json).
 
 [Play Marble Tables](https://joynes.github.io/joynes.se/games/marble-tables/).
+
+## Input audit — 3 November 2026
+
+Native marble dragging, holding, release under gravity, touch cancellation, keyboard grab/movement, independent key release, actual canvas focus cleanup, restart, fullscreen and loader recovery passed on the public game. The added landscape check reproduced a clipped scene on a short phone viewport. The repaired web layout places controls beside the scene, keeping the complete native view visible. Native physics, camera coordinates and the five Unity build/configuration files are unchanged.
+
+The landscape repair passed native touch/cancellation and attached-keyboard drag/drop checks in a mobile Chromium context before publication. These checks do not claim physical device or operating-system window-focus verification. Use `MARBLE_LANDSCAPE=1` with the browser/keyboard scripts for the added orientation case.

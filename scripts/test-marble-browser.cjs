@@ -9,13 +9,14 @@ const regions=path=>JSON.parse(execFileSync('python3',['scripts/marble-vision.py
  const browser=await chromium.launch(process.env.RALL_HEADLESS_SHELL?{args:['--enable-unsafe-swiftshader']}:{channel:'chrome',headless:true});
  try{
  for(const mobile of (process.env.MARBLE_TOUCH_CANCEL?[true]:[false,true])){
-  const context=await browser.newContext({viewport:mobile?{width:390,height:844}:{width:1280,height:850},hasTouch:mobile,isMobile:mobile,deviceScaleFactor:1});
+  const context=await browser.newContext({viewport:mobile?(process.env.MARBLE_LANDSCAPE?{width:844,height:390}:{width:390,height:844}):{width:1280,height:850},hasTouch:mobile,isMobile:mobile,deviceScaleFactor:1});
   const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(String(e)));
   await page.clock.install();await page.goto(base);await page.getByRole('button',{name:'Start playground'}).click();
   await page.waitForFunction(()=>document.body.dataset.state==='playing',{},{timeout:60000});
   await page.clock.pauseAt(new Date(await page.evaluate(()=>Date.now()+500)));
   const canvas=page.locator('canvas');await canvas.scrollIntoViewIfNeeded();const box=await canvas.boundingBox();
   assert(Math.abs(box.width/box.height-1.6)<.01);assert(box.x>=0&&box.x+box.width<=await page.evaluate(()=>innerWidth)+1);
+  if(process.env.MARBLE_LANDSCAPE)assert(box.y>=0&&box.y+box.height<=390,'entire native scene must fit in the landscape viewport');
   assert.deepEqual(await canvas.evaluate(c=>[c.width,c.height]),[960,600]);
   const path=`test-results/marble-${mobile?'touch':'mouse'}.png`;
   const cdp=mobile?await context.newCDPSession(page):null;

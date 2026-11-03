@@ -586,6 +586,10 @@
         {
           "command": "python3 scripts/verify-game-assets.py marble-tables",
           "result": "passed on canonical live site: all 12 game/native-engine/configuration/shared-portal/document assets match the tested release"
+        },
+        {
+          "check": "2026-11-03 renewed audit — local landscape repair",
+          "result": "Canonical pre-repair game passed native mouse/touch drag, hold, gravity, restart, fullscreen, keyboard-native marble manipulation in desktop/mobile contexts, engine load failures and retry. Reproduced clipped landscape view. Repaired HTML/CSS passes full native touch cancellation and keyboard drag/drop/focus/fullscreen at 844x390. Unity files unchanged. Live repair verification pending."
         }
       ],
       "publishedUrl": "https://joynes.github.io/joynes.se/games/marble-tables/",
@@ -622,7 +626,8 @@
       },
       "previousWrapperCommit": "2d3ff421e0f2da60703a53ac6e6490fa352e1473",
       "resourceAudit": "docs/games/marble-tables-assets.json",
-      "websiteSection": "retro"
+      "websiteSection": "retro",
+      "webReleaseVersion": "1.0.2-web.2"
     },
     {
       "id": "simple-driving",

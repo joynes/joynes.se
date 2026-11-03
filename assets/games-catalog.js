@@ -119,7 +119,7 @@ window.joynesPublishedGames = [
     embed: false,
     source: "https://github.com/joynes/marble-web-test",
     sourceLabel: "Original web build",
-    version: "1.0.2-web.1"
+    version: "1.0.2-web.2"
   },
   {
     id: "small-wonders",
