@@ -222,7 +222,8 @@
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "3564d5164f82c5e95726021b93bde3284a967c9d",
       "repositoryHeadCommit": "3564d5164f82c5e95726021b93bde3284a967c9d",
-      "auditUrl": "https://github.com/joynes/hardword/tree/audit/2026-11-03-baseline"
+      "auditUrl": "https://github.com/joynes/hardword/tree/audit/2026-11-03-baseline",
+      "inGameControlsAndFullscreenStatus": "pending"
     },
     {
       "id": "small-wonders",
@@ -258,7 +259,8 @@
         }
       },
       "auditTestCommit": "0999254eb63b1d173acf8cedb42033e945d6f24a",
-      "auditUrl": "https://github.com/joynes/llmspel/tree/audit/2026-11-03-baseline"
+      "auditUrl": "https://github.com/joynes/llmspel/tree/audit/2026-11-03-baseline",
+      "inGameControlsAndFullscreenStatus": "pending"
     },
     {
       "id": "marble-tables",
@@ -302,7 +304,8 @@
           ]
         }
       },
-      "auditTestCommit": "48d2bdf566020a00ecf2e509626318897def263a"
+      "auditTestCommit": "48d2bdf566020a00ecf2e509626318897def263a",
+      "inGameControlsAndFullscreenStatus": "pending"
     },
     {
       "id": "godot-reading",
@@ -344,7 +347,8 @@
           "testHarness": "Install the virtual clock before navigation so the original animation loop is controlled from its first frame."
         }
       },
-      "auditTestCommit": "d7418fac35e3f12ee487541734fd47e8203f8c7e"
+      "auditTestCommit": "d7418fac35e3f12ee487541734fd47e8203f8c7e",
+      "inGameControlsAndFullscreenStatus": "pending"
     },
     {
       "id": "car-topview",
@@ -381,7 +385,8 @@
       },
       "auditFixCommit": "3a2d4a6",
       "deploymentCommit": "32b543d32ef54d26a0708fde63b63892419e1f6b",
-      "deploymentRun": 41711372662
+      "deploymentRun": 41711372662,
+      "inGameControlsAndFullscreenStatus": "pending"
     },
     {
       "id": "sdl-space",
@@ -419,7 +424,8 @@
       },
       "auditFixCommit": "468838a",
       "deploymentCommit": "1baa58a2d93ed0fdc19a7b19f943848e9f54b393",
-      "deploymentRun": 41712783066
+      "deploymentRun": 41712783066,
+      "inGameControlsAndFullscreenStatus": "pending"
     },
     {
       "id": "network-2d",
@@ -430,15 +436,48 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/network-2d",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "64a46070ef0363c70c4bc3bdfbd94f049db7df53",
-      "auditStatus": "pending",
+      "auditStatus": "live-backend-passed-awaiting-homepage",
       "releaseStatus": "published_verified",
       "publicUrl": "https://test-network-game.fly.dev/",
       "guidanceReviewed": true,
       "sourceHead": "09c53f8d3988bfa19d629d64f53a8a450b4d47e3",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "7ad8541aff2fce467c91629077734e60ef55b4c1",
-      "repositoryHeadCommit": "7ad8541aff2fce467c91629077734e60ef55b4c1",
-      "auditUrl": "https://github.com/joynes/test-network-game/tree/audit/2026-11-03-baseline"
+      "repositoryHeadCommit": "86c6eb7b83dc18c7d9062383822f4c020d4dac7c",
+      "auditUrl": "https://github.com/joynes/test-network-game/tree/audit/2026-11-03-baseline",
+      "inGameControlsAndFullscreenStatus": "live-backend-passed-awaiting-homepage",
+      "auditEvidence": {
+        "game": "network-2d",
+        "date": "2026-11-03",
+        "baselineCommit": "64a46070ef0363c70c4bc3bdfbd94f049db7df53",
+        "result": "live-backend-passed-awaiting-homepage",
+        "scope": "Actual Chromium desktop and touch-enabled mobile browser contexts, including keyboard in both; physical phones and Safari not covered.",
+        "checks": "Full three-client authoritative gameplay/bounds/remote rendering/focus/tuning/reconnect/autopilot suite passed locally and live; only local suite restarts its owned server. Expanded desktop/portrait/landscape keyboard aliases/diagonal/release, stale-repeat cleanup, touch owner/secondary lift/cancel, held-contact restart, native fullscreen with keyboard/touch, in-fullscreen device rotation, control bounds within scene and unsupported-API Escape fallback all passed locally and live. Unit/build and client/server lint passed. Homepage preview opens both real arena/autopilot popups and native fullscreen.",
+        "findings": "Fixed reproduced stale hardware-repeat movement after focus/restart. English interface, translucent in-game thumbpad and overlaid restart/fullscreen controls, preserving all original movement/network mechanics.",
+        "sourceFixCommit": "159600f",
+        "deploymentCommit": "b0fa91de733e236b0441cb09d66529bc99020f98",
+        "testScripts": [
+          "tests/browser.cjs",
+          "tests/input.cjs",
+          "web-release/scripts/test-network-2d-navigation.cjs"
+        ],
+        "publicUrl": "https://test-network-game.fly.dev/",
+        "externalRelease": {
+          "health": {
+            "ok": true,
+            "version": "1.1.1",
+            "release": "b0fa91de733e236b0441cb09d66529bc99020f98"
+          },
+          "files": {
+            "index.html": "03ef03e42f7eb6b21110af132c4b32385ec5b92167570c882b3ebd97754b9e32",
+            "assets/index-b712e067.css": "b712e06732d0982b12543de77c6a6c753fe60d8de64d9ba6d148244148b488f6",
+            "assets/index-73598e09.js": "dbe24b3153ec320574559301a1991b4d39f8aa92012e3f9aa88f4b877d0df6e6"
+          }
+        }
+      },
+      "auditFixCommit": "159600f",
+      "deploymentCommit": "b0fa91de733e236b0441cb09d66529bc99020f98",
+      "auditCommit": "86c6eb7b83dc18c7d9062383822f4c020d4dac7c"
     },
     {
       "id": "network-3d",
@@ -456,7 +495,8 @@
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "2fdb82ea1c01fd831002343d8063f1a2fd51e402",
       "repositoryHeadCommit": "2fdb82ea1c01fd831002343d8063f1a2fd51e402",
-      "auditUrl": "https://github.com/joynes/test-rig-gemini/tree/audit/2026-11-03-baseline"
+      "auditUrl": "https://github.com/joynes/test-rig-gemini/tree/audit/2026-11-03-baseline",
+      "inGameControlsAndFullscreenStatus": "pending"
     },
     {
       "id": "neon-interceptor",
@@ -475,7 +515,8 @@
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "6fd7a27158930bf062ae81d1f8dd88d8eb0a44b2",
       "repositoryHeadCommit": "6fd7a27158930bf062ae81d1f8dd88d8eb0a44b2",
-      "auditUrl": "https://github.com/joynes/neon-interceptor/tree/audit/2026-11-03-baseline"
+      "auditUrl": "https://github.com/joynes/neon-interceptor/tree/audit/2026-11-03-baseline",
+      "inGameControlsAndFullscreenStatus": "pending"
     },
     {
       "id": "worldforge",
@@ -494,7 +535,8 @@
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "9b6e537398a12aeb212491f8fe671faa9d22ff55",
       "repositoryHeadCommit": "9b6e537398a12aeb212491f8fe671faa9d22ff55",
-      "auditUrl": "https://github.com/joynes/worldforge-self-test/tree/audit/2026-11-03-baseline"
+      "auditUrl": "https://github.com/joynes/worldforge-self-test/tree/audit/2026-11-03-baseline",
+      "inGameControlsAndFullscreenStatus": "pending"
     },
     {
       "id": "shadow-racer",
@@ -512,7 +554,8 @@
       "sourceHead": null,
       "sourceTreeVerified": true,
       "sourceTreeScope": "New repository; archived original and web files are inside web-release.",
-      "auditUrl": "https://github.com/joynes/shadow-racer/tree/audit/2026-11-03-baseline"
+      "auditUrl": "https://github.com/joynes/shadow-racer/tree/audit/2026-11-03-baseline",
+      "inGameControlsAndFullscreenStatus": "pending"
     },
     {
       "id": "rall-026",
@@ -530,7 +573,8 @@
       "sourceHead": null,
       "sourceTreeVerified": true,
       "sourceTreeScope": "New repository; archived original and web files are inside web-release.",
-      "auditUrl": "https://github.com/joynes/rall-026/tree/audit/2026-11-03-baseline"
+      "auditUrl": "https://github.com/joynes/rall-026/tree/audit/2026-11-03-baseline",
+      "inGameControlsAndFullscreenStatus": "pending"
     },
     {
       "id": "rall-030",
@@ -548,7 +592,8 @@
       "sourceHead": null,
       "sourceTreeVerified": true,
       "sourceTreeScope": "New repository; archived original and web files are inside web-release.",
-      "auditUrl": "https://github.com/joynes/rall-030/tree/audit/2026-11-03-baseline"
+      "auditUrl": "https://github.com/joynes/rall-030/tree/audit/2026-11-03-baseline",
+      "inGameControlsAndFullscreenStatus": "pending"
     },
     {
       "id": "rall-054",
@@ -566,7 +611,8 @@
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "58f6a89f2440f84afe624a76b205145e1ce2f073",
       "repositoryHeadCommit": "58f6a89f2440f84afe624a76b205145e1ce2f073",
-      "auditUrl": "https://github.com/joynes/rall0054/tree/audit/2026-11-03-baseline"
+      "auditUrl": "https://github.com/joynes/rall0054/tree/audit/2026-11-03-baseline",
+      "inGameControlsAndFullscreenStatus": "pending"
     },
     {
       "id": "rall-006",
@@ -584,7 +630,8 @@
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "01650af6ff701890d8aea9ebd2497e8d09cd50b2",
       "repositoryHeadCommit": "01650af6ff701890d8aea9ebd2497e8d09cd50b2",
-      "auditUrl": "https://github.com/joynes/rall006/tree/audit/2026-11-03-baseline"
+      "auditUrl": "https://github.com/joynes/rall006/tree/audit/2026-11-03-baseline",
+      "inGameControlsAndFullscreenStatus": "pending"
     },
     {
       "id": "rall-080",
@@ -602,7 +649,8 @@
       "sourceHead": null,
       "sourceTreeVerified": true,
       "sourceTreeScope": "New repository; archived original and web files are inside web-release.",
-      "auditUrl": "https://github.com/joynes/rall-v080-fighter/tree/audit/2026-11-03-baseline"
+      "auditUrl": "https://github.com/joynes/rall-v080-fighter/tree/audit/2026-11-03-baseline",
+      "inGameControlsAndFullscreenStatus": "pending"
     },
     {
       "id": "rall-008",
@@ -620,7 +668,8 @@
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "0d41ad85eea7a85aae0e53568f92042d0e65ca29",
       "repositoryHeadCommit": "0d41ad85eea7a85aae0e53568f92042d0e65ca29",
-      "auditUrl": "https://github.com/joynes/rall008/tree/audit/2026-11-03-baseline"
+      "auditUrl": "https://github.com/joynes/rall008/tree/audit/2026-11-03-baseline",
+      "inGameControlsAndFullscreenStatus": "pending"
     },
     {
       "id": "rall-066",
@@ -628,7 +677,8 @@
       "checkpointCommit": null,
       "auditStatus": "source-inspection-pending",
       "releaseStatus": "pending",
-      "publicUrl": null
+      "publicUrl": null,
+      "inGameControlsAndFullscreenStatus": "pending"
     },
     {
       "id": "rall-073",
@@ -636,7 +686,8 @@
       "checkpointCommit": null,
       "auditStatus": "source-inspection-pending",
       "releaseStatus": "pending",
-      "publicUrl": null
+      "publicUrl": null,
+      "inGameControlsAndFullscreenStatus": "pending"
     },
     {
       "id": "rall-082",
@@ -644,8 +695,15 @@
       "checkpointCommit": null,
       "auditStatus": "source-inspection-pending",
       "releaseStatus": "pending",
-      "publicUrl": null
+      "publicUrl": null,
+      "inGameControlsAndFullscreenStatus": "pending"
     }
   ],
-  "currentAuditGame": "network-2d"
+  "currentAuditGame": "network-2d",
+  "realtimeControlRequirements": [
+    "All gameplay actions available with touch, including simultaneous movement and action inputs.",
+    "Touchpad/direct drag and action controls inside the game view, using the existing AI games as the reference; no control rows below the board.",
+    "Visible fullscreen control operable by touch and keyboard, with entry/exit and both orientations verified.",
+    "Keyboard input retained on phones/tablets; independent release, cancellation, lost focus and restart verified through the browser."
+  ]
 }

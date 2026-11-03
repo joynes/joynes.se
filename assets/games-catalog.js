@@ -71,14 +71,14 @@ window.joynesPublishedGames = [
     id: "network-2d",
     title: "Hello Multiplayer Game",
     kind: "ai",
-    description: "AI game · Original 2025 · Move colourful characters around a shared arena in real time. Keyboard, touch and autopilot. Play together in separate windows.",
+    description: "AI game · Original 2025 · Share an arena with friends. In-game thumbpad, keyboard, fullscreen and autopilot.",
     href: "https://test-network-game.fly.dev/",
     embed: false,
     playLabel: "Open arena",
     modes: [["Autopilot", "https://test-network-game.fly.dev/?bot=1"]],
     source: "https://github.com/joynes/joynes.se/blob/master/docs/games/network-2d.md",
     sourceLabel: "About the web version",
-    version: "1.1.0"
+    version: "1.1.1"
   },
   {
     id: "sdl-space",

@@ -1033,7 +1033,7 @@
           "url": "https://github.com/joynes/test-network-game"
         }
       ],
-      "work": "Canvas/Socket.IO. Testa riktiga samtidiga klienter och server, inte bara en statisk sida.",
+      "work": "Verify authoritative shared-world gameplay and all keyboard/touch actions, in-game controls and fullscreen.",
       "tests": [
         {
           "command": "pnpm test",
@@ -1066,11 +1066,15 @@
         {
           "command": "HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ npm run test:multiplayer:links; node scripts/test-games-navigation.cjs",
           "result": "passed on live homepage: multiplayer/autopilot open working real server connections in separate tabs at both desktop/mobile; AI inclusion/retro exclusion; earlier games and AI music passed. All 3 integration files SHA256-verified at catalog release dc10cf6; Pages41300742912 success/deployment API succeed."
+        },
+        {
+          "check": "renewed-input-fullscreen-audit-2026-11-03",
+          "result": "Passed local and live full authoritative three-client gameplay/reconnect/autopilot suite, plus keyboard-only desktop and touch-enabled phone portrait/landscape, aliases/axes/release, focus/restart stale-repeat cleanup, two-finger ownership/cancel and held-touch restart. Native fullscreen works through keyboard/touch, including device rotation; controls remain inside rendered board. Missing-API fallback and Escape passed. All three live client hashes and health1.1.1/release b0fa91d match. Unit/build and lint passed. Homepage preview links/native fullscreen passed; updated canonical catalog awaits publication."
         }
       ],
       "publishedUrl": "https://test-network-game.fly.dev/",
-      "implementationCommit": "09c53f8d3988bfa19d629d64f53a8a450b4d47e3",
-      "deploymentCommit": "09c53f8d3988bfa19d629d64f53a8a450b4d47e3",
+      "implementationCommit": "b0fa91de733e236b0441cb09d66529bc99020f98",
+      "deploymentCommit": "b0fa91de733e236b0441cb09d66529bc99020f98",
       "category": "ai",
       "webAdaptation": "ai",
       "categoryLabel": "AI game",
@@ -1078,25 +1082,28 @@
       "sourcePeriod": "2025-09",
       "implementationRepository": "https://github.com/joynes/test-network-game",
       "externalUrl": "https://test-network-game.fly.dev/",
-      "deploymentImage": "registry.fly.io/test-network-game:deployment-01M6BBZHGFP7EW9YFJ2WDN72PN",
+      "deploymentImage": "registry.fly.io/test-network-game:deployment-01M6HJB54ZWZ0DD9QZJEF0P1EG",
       "deploymentRegion": "arn",
       "machineCount": 1,
-      "sourceCommitsPushed": false,
-      "implementationNotes": "Preserved 2025 shared-world prototype: emoji avatars, 800x450 world, speed250, prediction/reconciliation, interpolation controls and original autopilot. Swedish responsive UI, reliable focus/touch/reconnect, one clock timer, bounded server input/time handling. Existing Fly hosting/region/256MB VM retained with one authoritative in-memory world. Private source changes committed locally in persistent sibling checkout per repo no-push policy; no build artifacts committed.",
+      "sourceCommitsPushed": true,
+      "implementationNotes": "Preserved original 800x450 authoritative shared world, emoji figures, speed250, prediction/reconciliation, tuning and autopilot. English interface with translucent in-game thumbpad, restart/fullscreen overlay, keyboard aliases and stale-repeat cleanup after focus/restart. Native fullscreen and unsupported-API expanded view preserve scene proportions. Existing single Fly Machine/region/VM retained. Source commits pushed to the existing private audit branch; no generated builds committed.",
       "externalReleaseFilesSha256": {
-        "assets/index-5bc3b591.js": "afdfbbaffd0f72f6bd1220079ffbc2208637d116bca0e0ff7610e1a29901402f",
-        "assets/index-9320aff1.css": "9320aff115fc1c88a5a6d6bc9a732b806cab11a3ebc8fba105674a2e519f7c1f",
-        "index.html": "26bc39fde94507b61c98cca8532ffc4e499eb246239aa73e1ffa97f2b9041ea3"
+        "index.html": "03ef03e42f7eb6b21110af132c4b32385ec5b92167570c882b3ebd97754b9e32",
+        "assets/index-b712e067.css": "b712e06732d0982b12543de77c6a6c753fe60d8de64d9ba6d148244148b488f6",
+        "assets/index-73598e09.js": "dbe24b3153ec320574559301a1991b4d39f8aa92012e3f9aa88f4b877d0df6e6"
       },
       "catalogReleaseFilesSha256": {
-        "assets/games-catalog.js": "097d2e6866024cf3b7320a8dba46b376283d7aa2c346979d2b7f23ee307328e7",
-        "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82",
-        "docs/games/network-2d.md": "5ed94ee064d88e9f60d642e42ec9f044eb444beec02c21519b86c5a24f174699"
+        "assets/games-catalog.js": "a601fabbdd5b516bb383bf327449b1468041deca6621f9240e644a998a513cf6",
+        "index.html": "e9bfb52569966c146ae7e6a9e4e3df13143aa45a4c95465964adc8590f72d8dd",
+        "docs/games/network-2d.md": "292dd4d5de1dfafc8796cb5469ab311074ffe5abf75f15acb3b4c83438244dc7"
       },
       "catalogUrl": "https://joynes.github.io/joynes.se/#games/ai/network-2d",
       "catalogCommit": "dc10cf65385bb3d4f198fef4f6bf27cfb9efb896",
       "catalogDeploymentRun": 41300742912,
-      "websiteSection": "ai"
+      "websiteSection": "ai",
+      "deploymentImageManifestSha256": "e0818fdc809c716e1411de41e6f437be279256298f783f066f83232ddeea1b7e",
+      "renewedAuditStatus": "live-backend-passed-awaiting-homepage",
+      "inGameControlsAndFullscreenStatus": "live-backend-passed-awaiting-homepage"
     },
     {
       "id": "network-3d",

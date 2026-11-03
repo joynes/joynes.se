@@ -1,37 +1,29 @@
 # Hello Multiplayer Game
 
-Privat original: `joynes/test-network-game`, commit `d7d6c33989481dce3e68364f8d438445f34d1e0c`, september 2025. Kategori AI-spel enligt Johannes åldersindelning. Den fulla arbetskopian finns kvar i syskonrepot test-network-game, med lokala commits. Repots AGENTS.md säger att Git-push inte görs som standard; källändringarna har därför committats lokalt och den manuella Fly-publiceringen bygger denna arbetskopia. Genererade byggfiler har inte lagts till i Git.
+Private repository: `joynes/test-network-game`. The original dates from September 2025 and belongs to the AI games category. The current adaptation and its audit commits are preserved on `audit/2026-11-03-baseline` in that existing repository; the original local workspace and default branch remain available.
 
-## Ursprung och bevarad funktion
+## Preserved game
 
-En gemensam 800×450-spelplan med färgade emoji-figurer, hastighet 250 px/s och radie20. Servern håller den auktoritativa världen. Klienten använder prediction/reconciliation, buffrade snapshots, interpolation/extrapolation samt reglage för fördröjning och buffertstorlek. Originalets parametrar ?bot=1, ?auto=1 och ?autoplay=1 aktiverar slumpmässig autopilot. Inga poäng, lopp, skott, uppdrag eller beständiga konton finns i prototypen. De har inte ersatts med ett annat minispel.
+An authoritative server shares one 800×450 arena between colourful emoji figures. Movement remains 250 pixels/s with a radius of 20. Client prediction/reconciliation, snapshot interpolation/extrapolation, network tuning and the original `?bot=1`, `?auto=1` and `?autoplay=1` parameters remain. There are no authored races, shooting, missions, persistent accounts or scores.
 
-## Webb- och driftändringar
+The server accepts finite, ordered and bounded inputs, limits queues and simulates no more than its own available time. The world exists in process memory, so the existing Fly app uses one Machine. A server restart creates new figures; clients reconnect automatically. No persistent volumes are added.
 
-Svenskt gränssnitt, anslutningsstatus/nytt försök, ny figur, tydligt Du på den lokala figuren, proportionerlig spelplan och mobiljoystick. Ursprungliga nätverksreglage finns kvar under en stängbar inställningsdel. Joysticken använder koordinater relativt canvas och håller reda på rätt finger. Fokusbyte, Tab, blur, cancel och återanslutning släpper rörelser. Frametid begränsas efter bakgrundsvistelse. Gamla pending inputs/snapshots/epochs rensas vid ny session och bara en klocktimer används.
+## Touch, keyboard and fullscreen
 
-Servern tar emot ändliga, ordnade och begränsade inputpaket och använder en kort tidsbudget utifrån sina egna ticks, så en kö med för mycket klienttid inte blir en teleport. Normala rörelseformler, maxfart och världsgränser är bevarade. Interpolationens klocka fortsätter mellan snapshots; bakåtextrapolation och extrapolation utanför världen rättade.
+The English interface follows the existing AI-game touchpad pattern: a translucent floating thumb control inside the rendered arena, with compact New figure and Fullscreen controls at the opposite edge. There are no button rows below the board. A faint idle pad makes touch movement discoverable.
 
-Node22.22.0/pnpm9.15.4 och låst beroendefil används. Dockerbygget avbryts vid fel. /health anger version1.1.0 och release-SHA. Ursprunglig Fly-app/URL, Stockholm och delad1CPU/256MB behålls. Servervärlden ligger bara i processens minne, därför används en Machine. Serveromstart ger nya figurer; klienterna återansluter. Inga persistenta volymer fanns eller ändrades.
+One contact owns the thumbpad. A second finger cannot steal it or release it. End, cancel, lost capture, focus loss, session restart and fullscreen changes clear movement. Keyboard aliases and independent axes remain usable on a touch-enabled phone or tablet. A reproduced stale-key-repeat defect is fixed: after cleanup, an old held key cannot resume movement until release and a fresh press.
 
-## Testbevis
+The fullscreen control supports native browser fullscreen through both touch and keyboard. The original world aspect ratio remains intact with letterboxing as needed; the pad and buttons stay over the rendered scene. Browsers without the API get an expanded viewport with the same controls and an Escape exit. Physical phones and Safari still require device-specific verification.
 
-- `pnpm test`: full klient-/serverkompilering och tre tester för fart/normalisering/gränser, oberoende spelare, felaktiga/icke-ändliga/duplicerade inputs, ordning, kögräns och servertid.
-- `pnpm lint`: klient och server godkända.
-- `pnpm test:browser`: tre riktiga samtidiga klienter, varav en mobil. Serverns verkliga WebSocket-snapshots läses utan att skriva speltillstånd. Vanlig tangentstyrning flyttar spelaren och en annan klient återger den vid rätt position. Alla fyra gränser nås genom vanlig rörelse.
-- Riktig Tab/fokus-släppning, inställningsreglage, touch med samtidig andra kontakt och separat fingersläpp/cancel, ny figur utan gammal identitet, en klocktimer efter återanslutningar, klientens WebSocket-fel/nytt försök och faktisk autopilotrörelse verifierade.
-- En ägd lokal server stoppas och startas på riktigt; alla tre klienter återansluter med nya identiteter utan gamla figurer. Livesviten stoppar inte produktionsservern.
-- Samma livesvit passerade på `https://test-network-game.fly.dev/` med förväntad release `09c53f8d3988bfa19d629d64f53a8a450b4d47e3`. Alla tre publika klientfiler SHA256-matchar det lokalt testade bygget. Releasekontroll, native WebSocket-data och rendering verifierar faktisk delad server, inte bara HTTP200.
-- Desktop1280×1000, porträtt390×844 och landskap844×390 visuellt granskade. Du-etiketten rättades före slutverifiering så att den inte klipps vid nederkanten.
+## Verification and publication
 
-## Publicering
+The original and revised builds passed server movement, normalization, boundaries, independent players, invalid/duplicate inputs, input ordering, queue limits and server-time-budget tests. Client/server lint passed.
 
-Image `registry.fly.io/test-network-game:deployment-01M6BBZHGFP7EW9YFJ2WDN72PN`, SHA256-manifest `15714d32c1105d57816a7407e5412c2faf3f0ea977d6d80fbbf719793d65ab3a`. Ursprunglig app hade två stoppade instanser utan volymer. Antalet sattes till en för att undvika separata världar. Första deployförsöket byggde imagen korrekt men mötte kapacitetsfel när Fly försökte skapa en ny instans i arn. Efter verifiering av den kvarvarande befintliga instansen rullades exakt samma byggda image ut på plats med lyckad lease/rolling update och DNS-verifiering. Direkt Machine-status startad/host ok och scale show count1 verifierades tillsammans med riktig spelbarhet. Regionen och VM-storleken ändrades inte.
+The full browser suite runs three real clients, including a mobile context. It reads actual WebSocket snapshots, checks authoritative movement and remote rendered pixels, reaches four boundaries through ordinary controls, verifies focus release, tuning, owning/secondary fingers, cancellation, new identities, one clock timer, WebSocket failure/retry, genuine autopilot movement and disconnect cleanup. The local suite stops and restarts only its owned server and verifies all clients recover. It never modifies player positions.
 
-Fly CLI:s nödvändiga officiella uppdatering krävde utrymme. Endast egna tillfälliga kloner, förhandsvisningskopior, analysmiljöer och installerade testberoenden rensades efter godkända tester. Källkod, låsfil, testat bygge och skärmbilder finns kvar. Livekontrollen använde hemsiderepots befintliga Playwright1.58.2.
+The expanded input suite covers keyboard-only desktop, touch-enabled portrait and landscape contexts; aliases and independent axes; focus/restart stale-repeat cleanup; two-finger ownership/cancel; restart with a contact held; native fullscreen entry/exit with touch and keyboard; device rotation while fullscreen; controls within the actual rendered board; and an unsupported-API fallback with Escape.
 
-## Länkat och slutverifierat
+Version 1.1.1 is deployed from source commit `b0fa91de733e236b0441cb09d66529bc99020f98`. Both full gameplay and expanded input suites passed on the public Fly app, including native fullscreen, real touch and keyboard in mobile contexts. All three public client files match the tested build. The existing single Machine, Stockholm region and VM size are retained. Homepage integration verification is pending. Release hashes and results are recorded in [the inventory](../../data/games-inventory.json) and [repository map](../../data/game-repositories.json).
 
-[Spela](https://test-network-game.fly.dev/) · [AI-spel på hemsidan](https://joynes.github.io/joynes.se/#games/ai/network-2d)
-
-Katalogcommit `dc10cf65385bb3d4f198fef4f6bf27cfb9efb896`, lyckad Pages-körning `41300742912` och deployment-API succeed. Katalog/HTML/dokument SHA256-verifierade vid integrationspubliceringen. Länkar till spelplan och autopilot öppnar riktiga serveranslutningar i separata flikar på både desktop och mobil från den publika hemsidan. AI-kategori/retro-exkludering samt tidigare spel och AI-musik passerade livekontrollen. Inventeringen är klarmarkerad och kön går vidare till Three.js Network Game.
+[Play](https://test-network-game.fly.dev/) · [Homepage entry](https://joynes.github.io/joynes.se/#games/ai/network-2d)
