@@ -92,13 +92,13 @@ window.joynesPublishedGames = [
   },
   {
     id: "car-topview",
-    title: "Bilspel ovanifrån",
+    title: "Top-down Driving",
     kind: "ai",
     description: "AI game · Original December 2024 · Free driving with a police car, drifting and the original engine sound. Keyboard or simultaneous touch buttons. No races or scoring.",
     href: "games/car-topview/",
     source: "https://github.com/joynes/joynes.se/tree/master/games/car-topview",
     sourceLabel: "Web code and origins",
-    version: "2024-car-web.1"
+    version: "2024-car-web.2"
   },
   {
     id: "godot-reading",

@@ -8,26 +8,26 @@ function release(){keys.clear();pointers.clear();sync();}
 function draw(){
  ctx.fillStyle='#338033';ctx.fillRect(0,0,1024,600);ctx.fillStyle='#4d4d4d';ctx.fillRect(0,0,1024,20);ctx.fillRect(0,580,1024,20);ctx.fillRect(0,0,20,600);ctx.fillRect(1004,0,20,600);
  if(image){ctx.save();ctx.translate(car.x,car.y);ctx.rotate(car.angle+Math.PI*1.5);ctx.drawImage(image,-64,-64,128,128);ctx.restore();}
- $('#speed').textContent=`${Math.round(speed(car))} px/s`;Object.assign(canvas.dataset,{x:car.x.toFixed(2),y:car.y.toFixed(2),speed:speed(car).toFixed(2),angle:car.angle.toFixed(3)});$('#position').textContent=`Bilen är ${car.x<341?'till vänster':car.x>683?'till höger':'i mitten'}, ${car.y<200?'nära övre väggen':car.y>400?'nära nedre väggen':'mitt på höjden'}.`;
+ $('#speed').textContent=`${Math.round(speed(car))} px/s`;Object.assign(canvas.dataset,{x:car.x.toFixed(2),y:car.y.toFixed(2),speed:speed(car).toFixed(2),angle:car.angle.toFixed(3)});$('#position').textContent=`Car: ${car.x<341?'left':car.x>683?'right':'center'}, ${car.y<200?'near the top wall':car.y>400?'near the bottom wall':'middle height'}.`;
  if(source)source.playbackRate.value=pitch(car);
 }
-function pause(value){paused=value;release();last=0;acc=0;$('#pause-screen').hidden=!paused;$('#pause').textContent=paused?'Fortsätt':'Pausa';$('#pause').setAttribute('aria-pressed',String(paused));$('#state').textContent=paused?'Pausat':'Kör fritt';if(gain)gain.gain.value=(sound&&!paused)?0.5:0;}
+function pause(value){paused=value;release();last=0;acc=0;$('#pause-screen').hidden=!paused;$('#pause').textContent=paused?'Resume':'Pause';$('#pause').setAttribute('aria-pressed',String(paused));$('#state').textContent=paused?'Paused':'Free driving';if(gain)gain.gain.value=(sound&&!paused)?0.5:0;}
 async function start(){
- if(loading)return;loading=true;$('#error').hidden=true;$('#start').disabled=true;$('#start').textContent='Laddar bil och motorljud…';
+ if(loading)return;loading=true;$('#error').hidden=true;$('#start').disabled=true;$('#start').textContent='Loading car and engine sound…';
  try{
   audio??=new AudioContext();await audio.resume();
   const img=new Image();img.src='car.png';
-  const response=await fetch('engine.wav');if(!response.ok)throw new Error('Motorljudet kunde inte hämtas.');
+  const response=await fetch('engine.wav');if(!response.ok)throw new Error('Could not fetch the engine sound.');
   const buffer=await audio.decodeAudioData(await response.arrayBuffer());await img.decode();image=img;
   source?.stop();source=audio.createBufferSource();source.buffer=buffer;source.loop=true;gain=audio.createGain();gain.gain.value=sound?0.5:0;source.connect(gain).connect(audio.destination);source.start();
   running=true;car=createCar();$('#intro').hidden=true;$('#play').hidden=false;pause(false);draw();canvas.focus();
- }catch(error){$('#error-message').textContent='Bilen eller motorljudet kunde inte laddas. Kontrollera anslutningen och försök igen.';$('#error').hidden=false;}
- finally{loading=false;$('#start').disabled=false;$('#start').textContent='Starta med motorljud';}
+ }catch(error){$('#error-message').textContent='Could not load the car or engine sound. Check your connection and retry.';$('#error').hidden=false;}
+ finally{loading=false;$('#start').disabled=false;$('#start').textContent='Start with engine sound';}
 }
 $('#start').addEventListener('click',start);$('#retry').addEventListener('click',start);
 $('#reset').addEventListener('click',()=>{release();car=createCar();pause(false);draw();canvas.focus();});$('#pause').addEventListener('click',()=>{pause(!paused);if(!paused)canvas.focus();});$('#resume').addEventListener('click',()=>{pause(false);canvas.focus();});
-$('#sound').addEventListener('click',()=>{sound=!sound;$('#sound').textContent=sound?'Ljud på':'Ljud av';$('#sound').setAttribute('aria-pressed',String(sound));if(gain)gain.gain.value=(sound&&!paused)?0.5:0;if(sound)audio?.resume();});
-window.addEventListener('keydown',e=>{if(!running)return;if(['KeyP','Escape'].includes(e.code)){e.preventDefault();if(!e.repeat)pause(!paused);return;}if(!bindings[e.code]||paused||e.target.closest('button,a,summary,input'))return;e.preventDefault();keys.add(e.code);sync();});
+$('#sound').addEventListener('click',()=>{sound=!sound;$('#sound').textContent=sound?'Sound on':'Sound off';$('#sound').setAttribute('aria-pressed',String(sound));if(gain)gain.gain.value=(sound&&!paused)?0.5:0;if(sound)audio?.resume();});
+window.addEventListener('keydown',e=>{if(!running)return;if(['KeyP','Escape'].includes(e.code)){e.preventDefault();if(!e.repeat)pause(!paused);return;}if(!bindings[e.code]||paused||e.target.closest('button,a,summary,input'))return;e.preventDefault();if(e.repeat&&!keys.has(e.code))return;keys.add(e.code);sync();});
 window.addEventListener('keyup',e=>{keys.delete(e.code);sync();});
 for(const b of document.querySelectorAll('[data-control]')){
  b.addEventListener('pointerdown',e=>{if(!running||paused||e.button!==0)return;e.preventDefault();b.setPointerCapture(e.pointerId);pointers.set(e.pointerId,b.dataset.control);sync();canvas.focus();});

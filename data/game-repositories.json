@@ -355,14 +355,30 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/car-topview",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "f4836b5f2787781d0f27e96416b9c38b9d000579",
-      "auditStatus": "pending",
+      "auditStatus": "local-passed-awaiting-live",
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/car-topview/",
       "sourceHead": "5450575feeb6d6b42c48e7d2708ea3863da424c8",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "f67de46b997044830e1d6fd3f0e5eeba0132be46",
-      "repositoryHeadCommit": "f67de46b997044830e1d6fd3f0e5eeba0132be46",
-      "auditUrl": "https://github.com/joynes/car_topview_game/tree/audit/2026-11-03-baseline"
+      "repositoryHeadCommit": "3a2d4a6574a3cea1a6b62d5c1aba2dbc4f91ab19",
+      "auditUrl": "https://github.com/joynes/car_topview_game/tree/audit/2026-11-03-baseline",
+      "auditCommit": "3a2d4a6574a3cea1a6b62d5c1aba2dbc4f91ab19",
+      "auditEvidence": {
+        "game": "car-topview",
+        "date": "2026-11-03",
+        "baselineCommit": "f4836b5f2787781d0f27e96416b9c38b9d000579",
+        "result": "local-passed-awaiting-live",
+        "scope": "Actual Chromium desktop and mobile browser contexts, with touch enabled and keyboard events in both. Physical phones/tablets and Safari are not covered by this result.",
+        "checks": "Full real-browser driving/audio/four-wall/failure-recovery suite; keyboard-only desktop and touch-enabled portrait/landscape; aliases and mixed keyboard/touch ownership; two contacts with independent lift/cancel; stale-repeat protection after reset/pause/focus; real iframe-window focus cleanup, resume, landscape bounds and return navigation.",
+        "findings": "Reproduced stale held-key autorepeat reactivating acceleration after Reset. Guard now requires a fresh key press after release/reset/pause/focus. Interface and source notes translated into English. Original PNG, WAV and core physics unchanged.",
+        "testScripts": [
+          "scripts/test-car-topview-browser.cjs",
+          "scripts/test-car-topview-input.cjs",
+          "scripts/test-car-topview.mjs"
+        ],
+        "publicUrl": "https://joynes.github.io/joynes.se/games/car-topview/"
+      }
     },
     {
       "id": "sdl-space",
