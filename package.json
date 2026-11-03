@@ -45,7 +45,8 @@
     "test:godot-reading:input": "node scripts/test-godot-reading-input.cjs",
     "test:game-frames": "node scripts/test-game-frame-input.cjs && node scripts/test-game-frame-quizzes.cjs",
     "test:car-topview:input": "node scripts/test-car-topview-input.cjs",
-    "test:sdl-space:input": "node scripts/test-sdl-space-input.cjs"
+    "test:sdl-space:input": "node scripts/test-sdl-space-input.cjs",
+    "test:sdl-space:fullscreen": "node scripts/test-sdl-space-fullscreen.cjs"
   },
   "devDependencies": {
     "playwright": "1.58.2"

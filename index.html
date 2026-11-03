@@ -1493,7 +1493,7 @@
   <script src="assets/jaro-book.js"></script>
   <script src="assets/music-catalog.js"></script>
   <script src="assets/music-library.js?v=b71509c3cf69"></script>
-  <script src="assets/games-catalog.js?v=5b175bd702ea"></script>
+  <script src="assets/games-catalog.js?v=9b371555e8c1"></script>
   <script>
     const categories = [
       {
@@ -1630,9 +1630,12 @@
     const gamesCategory = categories.find(category => category.id === "games");
     gamesCategory.items.forEach(item => { item[3] = { ...item[3], gameKind: "retro" }; });
     for (const game of window.joynesPublishedGames || []) {
+      const gameHref = game.version && game.href.startsWith("games/")
+        ? `${game.href}${game.href.includes("?") ? "&" : "?"}v=${encodeURIComponent(game.version)}`
+        : game.href;
       gamesCategory.items.unshift([game.title, game.description,
-        [[game.playLabel || "Play", game.href], ...(game.modes || []), [game.sourceLabel || "Source", game.source]],
-        {slug: game.id, gameKind: game.kind, gameGenre: game.genre, embed: game.embed === false ? null : game.href, embedTitle: game.title, embedOnDetail: true}]);
+        [[game.playLabel || "Play", gameHref], ...(game.modes || []), [game.sourceLabel || "Source", game.source]],
+        {slug: game.id, gameKind: game.kind, gameGenre: game.genre, embed: game.embed === false ? null : gameHref, embedTitle: game.title, embedOnDetail: true}]);
     }
 
     function slugify(value) {
@@ -2253,7 +2256,8 @@
       if (!frame) return;
       const focused = frame.querySelector("iframe")?.contentDocument?.activeElement;
       if (focused?.matches("input, textarea, [contenteditable='true']")) return;
-      frame.scrollIntoView({block:"start"});
+      // Returning to play must not leave touch targets moving during a scroll.
+      frame.scrollIntoView({block:"start", behavior:"instant"});
     }
 
     function renderCategory(category, selectedItem = null) {

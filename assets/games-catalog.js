@@ -88,7 +88,7 @@ window.joynesPublishedGames = [
     href: "games/sdl-space/",
     source: "https://github.com/joynes/sdl2-samples-with-wasm-support/tree/184adda998c5b91e07c0f7cfebe464d87cd4b09a",
     sourceLabel: "Source",
-    version: "2020-sdl-web.2"
+    version: "2020-sdl-web.3"
   },
   {
     id: "car-topview",
@@ -98,7 +98,7 @@ window.joynesPublishedGames = [
     href: "games/car-topview/",
     source: "https://github.com/joynes/joynes.se/tree/master/games/car-topview",
     sourceLabel: "Source",
-    version: "2024-car-web.3"
+    version: "2024-car-web.4"
   },
   {
     id: "godot-reading",

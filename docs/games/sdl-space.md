@@ -11,3 +11,7 @@ The full gameplay suite observes native WebAssembly state without writing it. It
 Detailed rules, preservation facts and test commands are in [the source notes](../../games/sdl-space/source-notes.md). Publication and renewed-audit results are recorded in [the inventory](../../data/games-inventory.json) and [repository map](../../data/game-repositories.json).
 
 Canonical release: [Play SDL Space](https://joynes.github.io/joynes.se/games/sdl-space/).
+
+## Fullscreen and in-game controls
+
+The next update keeps pause, restart and fullscreen inside the rendered scene. Direct dragging remains the native mouse game’s touch control. A second finger can use the actions while a drag is held. The wrapper corrects pointer scaling against both CSS size and the current WebGL backbuffer, including fullscreen rotation; native engine bytes remain unchanged. The new browser suite verifies touch sound, native fullscreen, all drag directions, owning/secondary fingers, held-contact restart and fullscreen inside the homepage. Publication is pending.

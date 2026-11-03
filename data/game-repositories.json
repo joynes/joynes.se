@@ -368,23 +368,23 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/car-topview",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "f4836b5f2787781d0f27e96416b9c38b9d000579",
-      "auditStatus": "passed",
+      "auditStatus": "local-passed-awaiting-live",
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/car-topview/",
       "sourceHead": "5450575feeb6d6b42c48e7d2708ea3863da424c8",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "f67de46b997044830e1d6fd3f0e5eeba0132be46",
-      "repositoryHeadCommit": "e122ca5ebf96ba20cfe1054fdcdddec3afdb27f3",
+      "repositoryHeadCommit": "54334fc26aa70e6107e37f05ab3f9454f4ba14c0",
       "auditUrl": "https://github.com/joynes/car_topview_game/tree/audit/2026-11-03-baseline",
-      "auditCommit": "e122ca5ebf96ba20cfe1054fdcdddec3afdb27f3",
+      "auditCommit": "54334fc26aa70e6107e37f05ab3f9454f4ba14c0",
       "auditEvidence": {
         "game": "car-topview",
         "date": "2026-11-03",
         "baselineCommit": "f4836b5f2787781d0f27e96416b9c38b9d000579",
-        "result": "passed",
+        "result": "local-passed-awaiting-live",
         "scope": "Actual Chromium desktop and mobile browser contexts, with touch enabled and keyboard events in both. Physical phones/tablets and Safari are not covered by this result.",
-        "checks": "Passed local and canonical-live full driving/audio/wall/friction/drift and four loading-failure/recovery cases. Expanded desktop/phone portrait/landscape keyboard, all four touch directions, diagonal thumbpad acceleration/steering, mixed ownership, independent secondary release/cancel, second-finger sound/pause/resume/reset/fullscreen, stale-contact restart, real iframe focus/resume, all controls inside the rendered scene, native standalone and iframe fullscreen, rotation and missing-API Escape fallback passed. Root unit/preservation and games/music navigation passed. All 11 live release hashes match 70f663b9fee52f8b53bdf9f264638ed2d2f2abfb / Pages 41718411431 success.",
-        "findings": "Replaced controls below the board with an in-game floating thumbpad and overlaid sound/pause/reset/fullscreen. Reproduced and fixed secondary touch actions failing to click during an existing movement touch. Shared host helper supports keyboard activation and native fullscreen browser activation, including a second finger. Start waits for module readiness. Original PNG/WAV/core physics unchanged.",
+        "checks": "Local full driving/image/audio/wall/recovery suite and expanded desktop/mobile keyboard, all touch directions, mixed input, second-finger actions, native standalone/iframe fullscreen, rotation, focus cleanup and fallback passed after the shared fullscreen transition fix. Root versioned game URLs and immediate landscape frame fitting are included in the tested integration. Original core, PNG and WAV unchanged.",
+        "findings": "The shared fullscreen helper now invokes cleanup once per state transition so a later duplicate browser notification cannot clear a fresh key. Updated dependency/cache versions only in this game; its gameplay mechanics are unchanged.",
         "testScripts": [
           "scripts/test-car-topview-browser.cjs",
           "scripts/test-car-topview-input.cjs",
@@ -396,7 +396,7 @@
       "auditFixCommit": "df4bd128c42489756aa32362cf6dfd12c2af7c4e",
       "deploymentCommit": "70f663b9fee52f8b53bdf9f264638ed2d2f2abfb",
       "deploymentRun": 41718411431,
-      "inGameControlsAndFullscreenStatus": "passed",
+      "inGameControlsAndFullscreenStatus": "local-passed-awaiting-live",
       "secondaryActionTouchAuditStatus": "passed",
       "englishInterfaceAuditStatus": "passed"
     },
@@ -409,35 +409,38 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/sdl-space",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "ceef3ab7d1719c49789a917ce539f56bc9d2ca47",
-      "auditStatus": "passed",
+      "auditStatus": "local-passed-awaiting-live",
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/sdl-space/",
       "sourceHead": "184adda998c5b91e07c0f7cfebe464d87cd4b09a",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "e2210e5e21fc64a0e143d127be3abf29689c455a",
-      "repositoryHeadCommit": "ac82ccda6e8a6d2e7f28fbad78f0b2662248636a",
+      "repositoryHeadCommit": "f3f83015abd3e6f6b4d8528ba022f1aa1edeacff",
       "auditUrl": "https://github.com/joynes/sdl2-samples-with-wasm-support/tree/audit/2026-11-03-baseline",
-      "auditCommit": "ac82ccda6e8a6d2e7f28fbad78f0b2662248636a",
+      "auditCommit": "f3f83015abd3e6f6b4d8528ba022f1aa1edeacff",
       "auditEvidence": {
         "game": "sdl-space",
         "date": "2026-11-03",
         "baselineCommit": "ceef3ab7d1719c49789a917ce539f56bc9d2ca47",
-        "result": "passed",
+        "result": "local-passed-awaiting-live",
         "scope": "Actual Chromium desktop and mobile browser contexts, with touch enabled and keyboard events in both. Physical phones/tablets and Safari are not covered by this result.",
-        "checks": "Passed local and canonical-live full native survival/collision/score/replay/audio/recovery tests and expanded desktop/mobile keyboard plus real touch input in portrait/landscape. Includes aliases/diagonal/release, stale repeats after pause/focus, keyboard native audio/restart, two-finger ownership/cancel, held-touch restart, actual frame-window blur/resume and complete visible board after returning from the menu. Reading and five quiz frame regressions passed live; driving regression passed locally. All 12 live release files SHA256 match Pages 41712783066 / 1baa58a2d93ed0fdc19a7b19f943848e9f54b393.",
-        "findings": "Fixed stale repeats, added Space for original native sound and native touch mouse-up cleanup; English interface/notes. Fixed homepage landscape scrolling when returning to game focus. A live quiz regression initially clicked before its module loaded; harness now waits for full document readiness and passes. All original engine/data/license/assets unchanged.",
+        "checks": "Local full native survival >=300 frames, all eight rock slots, collision/frame score/replay, actual audio, five engine/host failures with playable retry, portrait/landscape, keyboard aliases/axes/release/repeat/focus and touch ownership/cancel/restart passed. New native fullscreen suite passed in cached Chromium and installed Chrome at desktop/phone portrait/landscape: real native keyboard/touch movement and audio, all drag directions, second-finger pause/resume/reset/fullscreen, rotation with correct coordinates, old-contact restart, full WebGL viewport, in-scene control bounds, iframe fullscreen and missing-API Escape fallback. Car full/input and seven earlier game frame regressions passed; root unit/preservation and game/music navigation passed.",
+        "findings": "Moved controls into the scene and added fullscreen without changing original engine/data/license bytes. Reproduced and fixed rotated-fullscreen pointer scaling by inverting SDL CSS/backbuffer scaling. Native touch audio resumes after a restarted engine. Disabled pause cannot resume a finished round. Shared helper cleans input once per fullscreen state change. Landscape frame focus fits immediately; local game page URLs carry release versions to refresh cached HTML. English help remains short.",
         "testScripts": [
           "scripts/test-sdl-space-browser.cjs",
           "scripts/test-sdl-space-input.cjs",
+          "scripts/test-sdl-space-fullscreen.cjs",
           "scripts/sdl-space-observer.cjs",
-          "scripts/test-sdl-space.mjs"
+          "scripts/test-sdl-space.mjs",
+          "assets/game-view.mjs",
+          "docs/games/sdl-space.md"
         ],
         "publicUrl": "https://joynes.github.io/joynes.se/games/sdl-space/"
       },
       "auditFixCommit": "468838a",
       "deploymentCommit": "1baa58a2d93ed0fdc19a7b19f943848e9f54b393",
       "deploymentRun": 41712783066,
-      "inGameControlsAndFullscreenStatus": "pending",
+      "inGameControlsAndFullscreenStatus": "local-passed-awaiting-live",
       "englishInterfaceAuditStatus": "passed"
     },
     {
@@ -737,7 +740,7 @@
     "Visible fullscreen control operable by touch and keyboard, with entry/exit and both orientations verified.",
     "Keyboard input retained on phones/tablets; independent release, cancellation, lost focus and restart verified through the browser."
   ],
-  "currentAuditFocus": "in-game fullscreen and secondary-finger actions",
+  "currentAuditFocus": "publish and verify native fullscreen and in-game actions",
   "englishInterfaceRequirement": "All website interface text must be concise and in English.",
   "homepageEnglishCopyStatus": "passed",
   "homepageEnglishCopyEvidence": {
@@ -753,5 +756,6 @@
     "deploymentRun": 41720750972,
     "liveChecks": "Canonical desktop/mobile game navigation and music sections passed. Both public runtime files match the tested hashes."
   },
-  "originalContentTranslationScope": "awaiting-user-choice"
+  "originalContentTranslationScope": "awaiting-user-choice",
+  "enhancedEditionsPlan": "docs/AI_ENHANCED_GAMES_PLAN.md"
 }

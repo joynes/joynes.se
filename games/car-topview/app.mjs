@@ -1,5 +1,5 @@
 import{createCar,step,speed,pitch}from'./core.mjs';
-import{bindFullscreen,bindGameAction}from'../../assets/game-view.mjs?v=2a5f351c51b3';
+import{bindFullscreen,bindGameAction}from'../../assets/game-view.mjs?v=9a65005d59b1';
 const $=s=>document.querySelector(s),canvas=$('#view'),ctx=canvas.getContext('2d');
 const keys=new Set(),touch={up:false,down:false,left:false,right:false},input={...touch};
 const thumb=$('#thumbpad'),knob=$('#thumb-knob');let pointer=null;

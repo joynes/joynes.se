@@ -2,12 +2,18 @@
 export function bindFullscreen(view, button, onChange = () => {}) {
   let previousOverflow = '';
   const expanded = () => document.fullscreenElement === view || view.classList.contains('game-view-expanded');
+  let previousExpanded = expanded();
   function update() {
     const active = expanded();
     button.setAttribute('aria-pressed', String(active));
     button.setAttribute('aria-label', active ? 'Exit fullscreen' : 'Enter fullscreen');
     button.title = active ? 'Exit fullscreen' : 'Fullscreen';
-    onChange(active);
+    // The API promise and fullscreenchange can report the same transition.
+    // Releasing input twice could discard a fresh key pressed between them.
+    if (active !== previousExpanded) {
+      previousExpanded = active;
+      onChange(active);
+    }
   }
   function closeFallback() {
     if (!view.classList.contains('game-view-expanded')) return;

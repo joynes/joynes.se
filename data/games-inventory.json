@@ -972,6 +972,10 @@
         {
           "check": "in-game-touchpad-fullscreen-2026-11-03-live",
           "result": "Full gameplay/audio/recovery and all expanded desktop/mobile keyboard, four touch directions, diagonal thumbpad, mixed ownership, cancellation/restart, real frame focus, second-finger sound/pause/resume/reset/fullscreen and native standalone/iframe fullscreen/rotation checks passed on canonical URLs. Missing-API fallback/Escape passed. All 11 release files match; Pages 41718411431 succeeded. Original core/PNG/WAV unchanged."
+        },
+        {
+          "check": "shared-fullscreen-transition-2026-11-03-local",
+          "result": "Full driving/audio/recovery and expanded keyboard/touch/fullscreen suites passed after updating the shared helper to clean input once per fullscreen transition. Gameplay/PNG/WAV unchanged; dependency and cache versions updated."
         }
       ],
       "publishedUrl": "https://joynes.github.io/joynes.se/games/car-topview/",
@@ -985,24 +989,24 @@
       "webPath": "games/car-topview/",
       "implementationNotes": "Latest free-drive Godot4 prototype; original car PNG and looping PCM24 engine WAV preserved. Acceleration 400, max speed 800, friction 200, steer 3 rad/s, drift factor 2, pitch 0.5–3. JavaScript formula port and rotated rectangle wall contacts, not native Godot. Source wall collision offset repaired; start/pause/reset/mute and multitouch added. No authored races or score.",
       "releaseFilesSha256": {
-        "games/car-topview/app.mjs": "cf2af38959b4f9984801918d8bd47356a96408fb4cbe35dfa64417e1560be4d7",
+        "games/car-topview/app.mjs": "6e693ad95b0098fabaf88c9f4722d6824d05e0c7157424c078f704b6eec84836",
         "games/car-topview/car.png": "92daedcd612290c05ff3debedce20b1ac0b1006c8a9d03b035b21b7be9df2236",
         "games/car-topview/core.mjs": "fb54033ea52e79f93b7458d4a8ab8f0958e9e3042a01b1bb1875e08cbe11dd9c",
         "games/car-topview/engine.wav": "729dbfa505b858123746d8f2930691a066b5da46934ff075bc30de1efa1d5732",
-        "games/car-topview/index.html": "26d922fd5c5a1695a18814f32f3cc8747865174cc3167d40c33ccca5398b0ab9",
+        "games/car-topview/index.html": "3e33b734ee9196e156e4531b50da3749a28c8af9e0da532280001d75629ea552",
         "games/car-topview/provenance.json": "2c7a3b776e92c8842f8e3b698d0ae788f322775001715e4b079da54f9778f6f9",
-        "games/car-topview/source-notes.md": "faa47094f8562e8ee44d13afa6e4d1cb594e6033eb6c8d698ed8fc13400338d9",
+        "games/car-topview/source-notes.md": "18b9c6dcc82e368965aecc0670e39d24d7612eb9b06ccfc0ba1fe05e21c8a5c5",
         "games/car-topview/styles.css": "c0ca28230c48a8ba86416d90bfa40616c679ba76647578319a81f5666d33a1d6",
-        "assets/games-catalog.js": "78bcee7c3cb28af058b352368ee46842bc73aef4e609134fe119aa8d8a823bbe",
-        "index.html": "9b64c564af7a4d225e31e41417ee863443f34aa7ce194226267f30a5e765a121",
-        "assets/game-view.mjs": "2a5f351c51b3f32983967ab206d4286667ff47e961b6d10fbce6b6ed03cfe93a"
+        "assets/games-catalog.js": "9b371555e8c1c536ff93c7bdbfb0f5e242034e56d40aa5c3f6b0906193954a72",
+        "index.html": "117ccf5cb2eaac704de928d3161b4ac26cd9aa75bf9b3aa37ab1c48013c528f1",
+        "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a"
       },
       "deploymentRun": 41718411431,
       "websiteSection": "ai",
-      "renewedAuditStatus": "passed",
-      "renewedAuditSourceCommit": "df4bd128c42489756aa32362cf6dfd12c2af7c4e",
+      "renewedAuditStatus": "local-passed-awaiting-live",
+      "renewedAuditSourceCommit": "54334fc",
       "renewedAuditCommit": "e122ca5",
-      "inGameControlsAndFullscreenStatus": "passed",
+      "inGameControlsAndFullscreenStatus": "local-passed-awaiting-live",
       "enhancedEdition": {
         "status": "planned-after-original-audit",
         "launchChoices": [
@@ -1061,6 +1065,10 @@
         {
           "check": "renewed-input-audit-2026-11-03-live",
           "result": "Full native gameplay/audio/recovery and expanded desktop/phone-portrait/phone-landscape input suites passed on canonical public URLs. Real touch ownership, cancellation, held-touch restart, keyboard native sound, alias/diagonal/release, pause/focus cleanup, visible embedded board after menu return and genuine frame-window blur/resume passed. Reading and five quiz frame regressions passed live. All 12 release files SHA256 match; Pages 41712783066 succeeded."
+        },
+        {
+          "check": "in-game-native-fullscreen-2026-11-03-local",
+          "result": "Full native gameplay/score/audio/replay and five asset/host loading failures with playable retry passed. Desktop/phone keyboard aliases, all axes, touch ownership/cancel/restart and real frame focus passed. New fullscreen suite passed in cached Chromium and installed Chrome: native keyboard/touch gameplay and actual audio, all drag directions, second-finger pause/resume/reset/fullscreen, rotation with correct pointer mapping, held-contact engine restart, native viewport, controls inside scene, iframe fullscreen and missing-API Escape. Car full/input and seven earlier frame regressions passed; root unit/preservation and navigation passed. Native engine/data/license unchanged."
         }
       ],
       "publishedUrl": "https://joynes.github.io/joynes.se/games/sdl-space/",
@@ -1075,22 +1083,23 @@
       "implementationNotes": "Original SDL2/WebGL/WASM runtime, data and JS retained byte-for-byte. Eight rock slots, native frame score and collisions/reset seed1 retained. New host prefetch/error recovery, start/pause/restart/HTML game over, mouse-coordinate scaling, mapped keyboard/touch with duplicate native touch blocked, normal Tab/Enter/Space navigation and WebGL viewport resize repair. Native memory read-only test observer; no gameplay state writes.",
       "releaseFilesSha256": {
         "games/sdl-space/LICENSE": "c341890046b73102f5bb63b9b567913766467930e9d34ae2935b5a134da18cab",
-        "games/sdl-space/app.mjs": "06c936ea1df7414dc0f050ff94992c59b77d3c8994482f7d81d888993c37fd87",
+        "games/sdl-space/app.mjs": "c0b81e5092126fa1c77bc20c8cfd3249eaa007d5470af13274bd3e59939bd3b3",
         "games/sdl-space/engine/simple_game_using_sdl2_wasm.data": "8b9e3ba7c7d9dde694788f026715186e900176606f30dcf648f9779a26d4287e",
         "games/sdl-space/engine/simple_game_using_sdl2_wasm.js": "a68d8e655e8b060c2674a7b8a251889b04c77816a89a5a5b0a52d35e30d32b49",
         "games/sdl-space/engine/simple_game_using_sdl2_wasm.wasm": "cc154d82acc79d92d419909064cee2e0a444925959f39224157196984eb6ff49",
-        "games/sdl-space/index.html": "f7eaf34132c150206d7cffca1772d3adbf1ada3cf4e0b4449600194097c0cdb0",
+        "games/sdl-space/index.html": "0529c8e93725aa3d8843e627b120b7def4b92f3560068c65c5ca33da34812c40",
         "games/sdl-space/provenance.json": "8bb1d152becb8495f0368fb7749b7ab83921e22861eed2c74e0948ded9c103ff",
-        "games/sdl-space/source-notes.md": "d1138528d2a89eebd8fa651a51b7e5de3bcb6c4fd31a6c1861f80a95d69da03e",
-        "games/sdl-space/styles.css": "a0c9e37cd8f27b56404da83390766a771e01ceee6198144dc1dfe355269a152f",
-        "assets/games-catalog.js": "ffb38fca81ee1aac9b9af4076a965c6ce14f08429294fb8835930e96cb23725b",
-        "index.html": "d32a76a53b611b8c4e0c266d217ec74c68c8cc924b712647e5443a3bc8aa0436",
-        "docs/games/sdl-space.md": "58a44e43e8d62615215f5c5b3426f99282d9249005be2ea9833332151a875c0e"
+        "games/sdl-space/source-notes.md": "cec67cf314ea095e0b77e136972be9ca026e62b1b09a2f175a4768363245fc56",
+        "games/sdl-space/styles.css": "71dd1274cb3d5ee861c48d31b951d3b99346e0dc0b3c61494ae4f2cbd69599e1",
+        "assets/games-catalog.js": "9b371555e8c1c536ff93c7bdbfb0f5e242034e56d40aa5c3f6b0906193954a72",
+        "index.html": "117ccf5cb2eaac704de928d3161b4ac26cd9aa75bf9b3aa37ab1c48013c528f1",
+        "docs/games/sdl-space.md": "9c7377464a776097adac745626959ce2cf9a0e7e91a7d80a4591961e72c7a929",
+        "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a"
       },
       "deploymentRun": 41712783066,
       "websiteSection": "retro",
-      "renewedAuditStatus": "passed",
-      "renewedAuditSourceCommit": "468838a",
+      "renewedAuditStatus": "local-passed-awaiting-live",
+      "renewedAuditSourceCommit": "f3f8301",
       "renewedAuditCommit": "ac82ccd",
       "enhancedEdition": {
         "status": "planned-after-original-audit",
@@ -1100,7 +1109,8 @@
         ],
         "graphics": "Blender",
         "soundAndMusic": "ElevenLabs"
-      }
+      },
+      "inGameControlsAndFullscreenStatus": "local-passed-awaiting-live"
     },
     {
       "id": "network-2d",
