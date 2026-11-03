@@ -63,7 +63,7 @@ The machine-readable queue, source links, version relationships, test evidence a
 | 11 | Godot Reading Game | Published and verified under earlier release checks |
 | 12 | Top-down Driving | Renewed local/live keyboard and touch audit passed |
 | 13 | SDL Space — Survival | Renewed local/live keyboard and touch audit passed |
-| 14 | Hello Multiplayer Game | Published and verified under earlier release checks |
+| 14 | Hello Multiplayer Game | Renewed local/live input, in-game touchpad and fullscreen passed |
 | 15 | 3D Network Game | Published and verified under earlier release checks |
 | 16 | Neon Bastion & Manta | Published and verified under earlier release checks |
 | 17 | WorldForge | Published and verified under earlier release checks |

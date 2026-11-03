@@ -436,23 +436,23 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/network-2d",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "64a46070ef0363c70c4bc3bdfbd94f049db7df53",
-      "auditStatus": "live-backend-passed-awaiting-homepage",
+      "auditStatus": "passed",
       "releaseStatus": "published_verified",
       "publicUrl": "https://test-network-game.fly.dev/",
       "guidanceReviewed": true,
       "sourceHead": "09c53f8d3988bfa19d629d64f53a8a450b4d47e3",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "7ad8541aff2fce467c91629077734e60ef55b4c1",
-      "repositoryHeadCommit": "86c6eb7b83dc18c7d9062383822f4c020d4dac7c",
+      "repositoryHeadCommit": "cc9c98d896153fa34eafe69b16f0b400b458708e",
       "auditUrl": "https://github.com/joynes/test-network-game/tree/audit/2026-11-03-baseline",
-      "inGameControlsAndFullscreenStatus": "live-backend-passed-awaiting-homepage",
+      "inGameControlsAndFullscreenStatus": "passed",
       "auditEvidence": {
         "game": "network-2d",
         "date": "2026-11-03",
         "baselineCommit": "64a46070ef0363c70c4bc3bdfbd94f049db7df53",
-        "result": "live-backend-passed-awaiting-homepage",
+        "result": "passed",
         "scope": "Actual Chromium desktop and touch-enabled mobile browser contexts, including keyboard in both; physical phones and Safari not covered.",
-        "checks": "Full three-client authoritative gameplay/bounds/remote rendering/focus/tuning/reconnect/autopilot suite passed locally and live; only local suite restarts its owned server. Expanded desktop/portrait/landscape keyboard aliases/diagonal/release, stale-repeat cleanup, touch owner/secondary lift/cancel, held-contact restart, native fullscreen with keyboard/touch, in-fullscreen device rotation, control bounds within scene and unsupported-API Escape fallback all passed locally and live. Unit/build and client/server lint passed. Homepage preview opens both real arena/autopilot popups and native fullscreen.",
+        "checks": "Full three-client authoritative gameplay/bounds/remote rendering/focus/tuning/reconnect/autopilot suite passed locally and live; only local suite restarts its owned server. Expanded desktop/portrait/landscape keyboard aliases/diagonal/release, stale-repeat cleanup, touch owner/secondary lift/cancel, held-contact restart, native fullscreen with keyboard/touch, in-fullscreen device rotation, control bounds within scene and unsupported-API Escape fallback all passed locally and live. Unit/build and client/server lint passed. Homepage preview opens both real arena/autopilot popups and native fullscreen. Canonical homepage arena/autopilot popup and native fullscreen checks passed at desktop and mobile sizes. All three integration file hashes match homepage f907ce217f136b7d12e06935c3f87ffef9d72b79 / Pages 41715530963 success. The default installed-Chrome input suite also passed.",
         "findings": "Fixed reproduced stale hardware-repeat movement after focus/restart. English interface, translucent in-game thumbpad and overlaid restart/fullscreen controls, preserving all original movement/network mechanics.",
         "sourceFixCommit": "159600f",
         "deploymentCommit": "b0fa91de733e236b0441cb09d66529bc99020f98",
@@ -473,11 +473,15 @@
             "assets/index-b712e067.css": "b712e06732d0982b12543de77c6a6c753fe60d8de64d9ba6d148244148b488f6",
             "assets/index-73598e09.js": "dbe24b3153ec320574559301a1991b4d39f8aa92012e3f9aa88f4b877d0df6e6"
           }
-        }
+        },
+        "homepageCommit": "f907ce217f136b7d12e06935c3f87ffef9d72b79",
+        "homepageDeploymentRun": 41715530963
       },
       "auditFixCommit": "159600f",
       "deploymentCommit": "b0fa91de733e236b0441cb09d66529bc99020f98",
-      "auditCommit": "86c6eb7b83dc18c7d9062383822f4c020d4dac7c"
+      "auditCommit": "cc9c98d896153fa34eafe69b16f0b400b458708e",
+      "catalogCommit": "f907ce217f136b7d12e06935c3f87ffef9d72b79",
+      "catalogDeploymentRun": 41715530963
     },
     {
       "id": "network-3d",
@@ -699,11 +703,12 @@
       "inGameControlsAndFullscreenStatus": "pending"
     }
   ],
-  "currentAuditGame": "network-2d",
+  "currentAuditGame": "car-topview",
   "realtimeControlRequirements": [
     "All gameplay actions available with touch, including simultaneous movement and action inputs.",
     "Touchpad/direct drag and action controls inside the game view, using the existing AI games as the reference; no control rows below the board.",
     "Visible fullscreen control operable by touch and keyboard, with entry/exit and both orientations verified.",
     "Keyboard input retained on phones/tablets; independent release, cancellation, lost focus and restart verified through the browser."
-  ]
+  ],
+  "currentAuditFocus": "in-game touchpad and fullscreen"
 }

@@ -8,7 +8,7 @@ Work on one game at a time: checkpoint its source, implement, verify actual game
 
 ## Current queue
 
-1. Finish Hello Multiplayer’s updated release verification. Its local expanded checks and initial live input checks pass.
+1. Hello Multiplayer is complete: full local/live gameplay and input suites, in-game thumbpad, native fullscreen, rotation and homepage integration passed.
 2. Revisit Top-down Driving: replace the control row below the board with an in-game touchpad and add fullscreen.
 3. Revisit SDL Space: retain direct touch dragging and add an in-game fullscreen control.
 4. Check the remaining real-time releases individually: Ordhjälten/Breakout, Small Wonders (three routes), Marble Tables, Läs och placera, 3D Network Game, Neon Bastion and Manta, WorldForge, ShadowRacer, Rall v026 and Rall v030. Their earlier results remain valid for the tested scope; the additional fullscreen/control-placement requirements still need verification.

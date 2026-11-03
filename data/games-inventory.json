@@ -1070,6 +1070,10 @@
         {
           "check": "renewed-input-fullscreen-audit-2026-11-03",
           "result": "Passed local and live full authoritative three-client gameplay/reconnect/autopilot suite, plus keyboard-only desktop and touch-enabled phone portrait/landscape, aliases/axes/release, focus/restart stale-repeat cleanup, two-finger ownership/cancel and held-touch restart. Native fullscreen works through keyboard/touch, including device rotation; controls remain inside rendered board. Missing-API fallback and Escape passed. All three live client hashes and health1.1.1/release b0fa91d match. Unit/build and lint passed. Homepage preview links/native fullscreen passed; updated canonical catalog awaits publication."
+        },
+        {
+          "check": "renewed-homepage-fullscreen-audit-2026-11-03-live",
+          "result": "Desktop/mobile canonical homepage arena/autopilot links open real connected games with working native fullscreen. All three integration files SHA256 matched homepage f907ce2; Pages 41715530963 succeeded. Default installed-Chrome input suite also passed."
         }
       ],
       "publishedUrl": "https://test-network-game.fly.dev/",
@@ -1098,12 +1102,13 @@
         "docs/games/network-2d.md": "292dd4d5de1dfafc8796cb5469ab311074ffe5abf75f15acb3b4c83438244dc7"
       },
       "catalogUrl": "https://joynes.github.io/joynes.se/#games/ai/network-2d",
-      "catalogCommit": "dc10cf65385bb3d4f198fef4f6bf27cfb9efb896",
-      "catalogDeploymentRun": 41300742912,
+      "catalogCommit": "f907ce217f136b7d12e06935c3f87ffef9d72b79",
+      "catalogDeploymentRun": 41715530963,
       "websiteSection": "ai",
       "deploymentImageManifestSha256": "e0818fdc809c716e1411de41e6f437be279256298f783f066f83232ddeea1b7e",
-      "renewedAuditStatus": "live-backend-passed-awaiting-homepage",
-      "inGameControlsAndFullscreenStatus": "live-backend-passed-awaiting-homepage"
+      "renewedAuditStatus": "passed",
+      "inGameControlsAndFullscreenStatus": "passed",
+      "renewedAuditCommit": "b0fa91de733e236b0441cb09d66529bc99020f98"
     },
     {
       "id": "network-3d",
