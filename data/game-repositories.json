@@ -99,10 +99,25 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/quiz-sdl",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "4028b4688e3cdf0dffb18a145e2bfd9efcfdfdf9",
-      "auditStatus": "pending",
+      "auditStatus": "passed",
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/quiz-sdl/",
-      "sourceHead": "fd14bf5c57febc4b17e8e2cfa4bd464787d026cc"
+      "sourceHead": "fd14bf5c57febc4b17e8e2cfa4bd464787d026cc",
+      "auditCommit": "dd784b378f3879bf2a5845ba856334098b1e16d4",
+      "auditEvidence": {
+        "game": "quiz-sdl",
+        "date": "2026-11-03",
+        "baselineCommit": "4028b4688e3cdf0dffb18a145e2bfd9efcfdfdf9",
+        "result": "passed",
+        "scope": "Actual Chromium desktop and mobile browser contexts, with touch enabled and keyboard events in both. Physical phones/tablets and Safari are not covered by this result.",
+        "checks": "Passed live all 35 words and three stages, real letter/reward audio, image decoding, coin scoring, replay and fetch recovery. A full course passed with keyboard in desktop and mobile contexts. A 12-word mobile course alternated touch and keyboard; two contacts, independent lift/cancel, blur, canceled Next, focus release, replay and orientation passed.",
+        "findings": "No gameplay defect found; added repeatable input verification.",
+        "testScripts": [
+          "scripts/test-quiz-sdl-browser.cjs",
+          "scripts/test-quiz-sdl-input.cjs"
+        ],
+        "publicUrl": "https://joynes.github.io/joynes.se/games/quiz-sdl/"
+      }
     },
     {
       "id": "memit",

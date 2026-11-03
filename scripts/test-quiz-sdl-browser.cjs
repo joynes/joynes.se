@@ -1,5 +1,5 @@
 const assert=require('node:assert/strict');
-const {chromium}=require('playwright');
+const {chromium}=require(process.env.CHROMIUM_PLAYWRIGHT_MODULE||'playwright');
 const base=process.env.GAME_BASE_URL||'http://127.0.0.1:8767/games/quiz-sdl/';
 async function solve(page,wrong=false,touch=false){
  const letters=await page.locator('#letters img').evaluateAll(imgs=>imgs.map(i=>i.alt).join('').toLowerCase());
@@ -7,7 +7,7 @@ async function solve(page,wrong=false,touch=false){
  const correct=page.locator('#options').getByRole('button',{name:letters,exact:true});await correct[touch?'tap':'click']();assert.equal(await page.locator('#options button:disabled').count(),4);return letters;
 }
 (async()=>{
- const browser=await chromium.launch({headless:true,channel:'chrome'});
+ const browser=await chromium.launch(process.env.CHROMIUM_PLAYWRIGHT_MODULE?{headless:true}:{headless:true,channel:'chrome'});
  try{
   const page=await browser.newPage({viewport:{width:1440,height:1000}});const errors=[],bad=[];
   page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)bad.push(r.url());});
