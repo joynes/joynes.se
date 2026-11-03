@@ -32,7 +32,10 @@
         ],
         "focusScope": "Keyboard focus was moved away from a held button through the browser. Headless tabs emulate active focus, so tab switching alone is not counted as an operating-system window-blur check."
       },
-      "auditTestCommit": "7846ac25c6f13cb91e6bca3740ef356105ea9f4a"
+      "auditTestCommit": "7846ac25c6f13cb91e6bca3740ef356105ea9f4a",
+      "sourceTreeVerified": true,
+      "sourceRestorationCommit": "b811889c0c1174a27c6629766e59d6be2a3935df",
+      "repositoryHeadCommit": "b811889c0c1174a27c6629766e59d6be2a3935df"
     },
     {
       "id": "grimace-gemini",
@@ -63,7 +66,10 @@
         "publicUrl": "https://joynes.github.io/joynes.se/games/grimace-gemini/",
         "focusScope": "Keyboard focus was moved away from a held button through the browser. Headless tabs emulate active focus, so tab switching alone is not counted as an operating-system window-blur check."
       },
-      "auditTestCommit": "70e09960d5ba2b061aa6ce184575678e693e92a2"
+      "auditTestCommit": "70e09960d5ba2b061aa6ce184575678e693e92a2",
+      "sourceTreeVerified": true,
+      "sourceRestorationCommit": "5629f74cb3bd8faa936942a3ca5c66cddebc3ddd",
+      "repositoryHeadCommit": "5629f74cb3bd8faa936942a3ca5c66cddebc3ddd"
     },
     {
       "id": "grimace-codex",
@@ -94,7 +100,10 @@
         "publicUrl": "https://joynes.github.io/joynes.se/games/grimace-codex/",
         "focusScope": "Keyboard focus was moved away from a held button through the browser. Headless tabs emulate active focus, so tab switching alone is not counted as an operating-system window-blur check."
       },
-      "auditTestCommit": "27056ed2c135202fc1d7dad8d8d62641e40b46b4"
+      "auditTestCommit": "27056ed2c135202fc1d7dad8d8d62641e40b46b4",
+      "sourceTreeVerified": true,
+      "sourceRestorationCommit": "ec659b6944b24f3825133ee9d79c10301e50d6fd",
+      "repositoryHeadCommit": "ec659b6944b24f3825133ee9d79c10301e50d6fd"
     },
     {
       "id": "quiz-sdl",
@@ -125,7 +134,10 @@
         "publicUrl": "https://joynes.github.io/joynes.se/games/quiz-sdl/",
         "focusScope": "Keyboard focus was moved away from a held button through the browser. Headless tabs emulate active focus, so tab switching alone is not counted as an operating-system window-blur check."
       },
-      "auditTestCommit": "dd784b378f3879bf2a5845ba856334098b1e16d4"
+      "auditTestCommit": "dd784b378f3879bf2a5845ba856334098b1e16d4",
+      "sourceTreeVerified": true,
+      "sourceRestorationCommit": "b6e2421b9cd11d84710c9029773e3db502dc1597",
+      "repositoryHeadCommit": "b6e2421b9cd11d84710c9029773e3db502dc1597"
     },
     {
       "id": "memit",
@@ -156,7 +168,10 @@
         "publicUrl": "https://joynes.github.io/joynes.se/games/memit/",
         "focusScope": "Keyboard focus was moved away from a held button through the browser. Headless tabs emulate active focus, so tab switching alone is not counted as an operating-system window-blur check."
       },
-      "auditTestCommit": "f3f5942acce131de403a2aa3c8132d6a3c307672"
+      "auditTestCommit": "f3f5942acce131de403a2aa3c8132d6a3c307672",
+      "sourceTreeVerified": true,
+      "sourceRestorationCommit": "b6b0a4b50b7e60bdef1f26a5a7a324c22726f9af",
+      "repositoryHeadCommit": "b6b0a4b50b7e60bdef1f26a5a7a324c22726f9af"
     },
     {
       "id": "hardword",
@@ -198,7 +213,10 @@
           "scope": "Browser focus transfer tested; operating-system window blur and physical devices are not claimed."
         }
       },
-      "auditTestCommit": "d4fc3a3769cd927a0b976033ae2005dd55deea93"
+      "auditTestCommit": "d4fc3a3769cd927a0b976033ae2005dd55deea93",
+      "sourceTreeVerified": true,
+      "sourceRestorationCommit": "3564d5164f82c5e95726021b93bde3284a967c9d",
+      "repositoryHeadCommit": "3564d5164f82c5e95726021b93bde3284a967c9d"
     },
     {
       "id": "small-wonders",
@@ -212,7 +230,10 @@
       "auditStatus": "pending",
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/llmspel-play/",
-      "sourceHead": "e6b665abd359f072607c5c74c8463aa44a9c793b"
+      "sourceHead": "e6b665abd359f072607c5c74c8463aa44a9c793b",
+      "sourceTreeVerified": true,
+      "sourceRestorationCommit": "32ccb338b8ad979685512d04d9e2e04613449b04",
+      "repositoryHeadCommit": "32ccb338b8ad979685512d04d9e2e04613449b04"
     },
     {
       "id": "marble-tables",
@@ -226,7 +247,10 @@
       "auditStatus": "pending",
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/marble-tables/",
-      "sourceHead": "b7994d00c0d740d2d7738028daf5c6528c110372"
+      "sourceHead": "b7994d00c0d740d2d7738028daf5c6528c110372",
+      "sourceTreeVerified": true,
+      "sourceRestorationCommit": "1278ab41fe79d6b0ec52b8886aa7cd923abb0d61",
+      "repositoryHeadCommit": "1278ab41fe79d6b0ec52b8886aa7cd923abb0d61"
     },
     {
       "id": "godot-reading",
@@ -240,7 +264,10 @@
       "auditStatus": "pending",
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/godot-reading/",
-      "sourceHead": "97a4f8aa5381032663f51395c62bf5fa4811ccf3"
+      "sourceHead": "97a4f8aa5381032663f51395c62bf5fa4811ccf3",
+      "sourceTreeVerified": true,
+      "sourceRestorationCommit": "c1a96a32c14aa8f0e602ed41511ca3dbcf611ff1",
+      "repositoryHeadCommit": "c1a96a32c14aa8f0e602ed41511ca3dbcf611ff1"
     },
     {
       "id": "car-topview",
@@ -254,7 +281,10 @@
       "auditStatus": "pending",
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/car-topview/",
-      "sourceHead": "5450575feeb6d6b42c48e7d2708ea3863da424c8"
+      "sourceHead": "5450575feeb6d6b42c48e7d2708ea3863da424c8",
+      "sourceTreeVerified": true,
+      "sourceRestorationCommit": "f67de46b997044830e1d6fd3f0e5eeba0132be46",
+      "repositoryHeadCommit": "f67de46b997044830e1d6fd3f0e5eeba0132be46"
     },
     {
       "id": "sdl-space",
@@ -268,7 +298,10 @@
       "auditStatus": "pending",
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/sdl-space/",
-      "sourceHead": "184adda998c5b91e07c0f7cfebe464d87cd4b09a"
+      "sourceHead": "184adda998c5b91e07c0f7cfebe464d87cd4b09a",
+      "sourceTreeVerified": true,
+      "sourceRestorationCommit": "e2210e5e21fc64a0e143d127be3abf29689c455a",
+      "repositoryHeadCommit": "e2210e5e21fc64a0e143d127be3abf29689c455a"
     },
     {
       "id": "network-2d",
@@ -283,7 +316,10 @@
       "releaseStatus": "published_verified",
       "publicUrl": "https://test-network-game.fly.dev/",
       "guidanceReviewed": true,
-      "sourceHead": "09c53f8d3988bfa19d629d64f53a8a450b4d47e3"
+      "sourceHead": "09c53f8d3988bfa19d629d64f53a8a450b4d47e3",
+      "sourceTreeVerified": true,
+      "sourceRestorationCommit": "7ad8541aff2fce467c91629077734e60ef55b4c1",
+      "repositoryHeadCommit": "7ad8541aff2fce467c91629077734e60ef55b4c1"
     },
     {
       "id": "network-3d",
@@ -296,7 +332,11 @@
       "checkpointCommit": "2f44131020a8db88d9be9bc38915df61412f9b27",
       "auditStatus": "pending",
       "releaseStatus": "published_verified",
-      "publicUrl": "https://test-3d-network-game.fly.dev/"
+      "publicUrl": "https://test-3d-network-game.fly.dev/",
+      "sourceHead": "c902a88145a7baf8a14635b4c10f7035e6ec506a",
+      "sourceTreeVerified": true,
+      "sourceRestorationCommit": "2fdb82ea1c01fd831002343d8063f1a2fd51e402",
+      "repositoryHeadCommit": "2fdb82ea1c01fd831002343d8063f1a2fd51e402"
     },
     {
       "id": "neon-interceptor",
@@ -311,7 +351,10 @@
       "releaseStatus": "published_verified",
       "publicUrl": "https://neon-interceptor.joynez11.chatgpt.site/",
       "guidanceReviewed": true,
-      "sourceHead": "e497f79e63f7ad402430a3db15a3e1fc2847aa49"
+      "sourceHead": "e497f79e63f7ad402430a3db15a3e1fc2847aa49",
+      "sourceTreeVerified": true,
+      "sourceRestorationCommit": "6fd7a27158930bf062ae81d1f8dd88d8eb0a44b2",
+      "repositoryHeadCommit": "6fd7a27158930bf062ae81d1f8dd88d8eb0a44b2"
     },
     {
       "id": "worldforge",
@@ -326,7 +369,10 @@
       "releaseStatus": "published_verified",
       "publicUrl": "https://worldforge-self-test.joynez11.chatgpt.site/",
       "guidanceReviewed": true,
-      "sourceHead": "9751aa60e7709732cf46feff2ca022014276d2a3"
+      "sourceHead": "9751aa60e7709732cf46feff2ca022014276d2a3",
+      "sourceTreeVerified": true,
+      "sourceRestorationCommit": "9b6e537398a12aeb212491f8fe671faa9d22ff55",
+      "repositoryHeadCommit": "9b6e537398a12aeb212491f8fe671faa9d22ff55"
     },
     {
       "id": "shadow-racer",
@@ -341,7 +387,9 @@
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/shadow-racer/",
       "createdForAudit": true,
-      "sourceHead": null
+      "sourceHead": null,
+      "sourceTreeVerified": true,
+      "sourceTreeScope": "New repository; archived original and web files are inside web-release."
     },
     {
       "id": "rall-026",
@@ -356,7 +404,9 @@
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/rall-026/",
       "createdForAudit": true,
-      "sourceHead": null
+      "sourceHead": null,
+      "sourceTreeVerified": true,
+      "sourceTreeScope": "New repository; archived original and web files are inside web-release."
     },
     {
       "id": "rall-030",
@@ -371,7 +421,9 @@
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/rall-030/",
       "createdForAudit": true,
-      "sourceHead": null
+      "sourceHead": null,
+      "sourceTreeVerified": true,
+      "sourceTreeScope": "New repository; archived original and web files are inside web-release."
     },
     {
       "id": "rall-054",
@@ -385,7 +437,10 @@
       "auditStatus": "pending",
       "releaseStatus": "in_progress",
       "publicUrl": null,
-      "sourceHead": "c867cc03bf7540e0d44721cf910c5de3b1723923"
+      "sourceHead": "c867cc03bf7540e0d44721cf910c5de3b1723923",
+      "sourceTreeVerified": true,
+      "sourceRestorationCommit": "58f6a89f2440f84afe624a76b205145e1ce2f073",
+      "repositoryHeadCommit": "58f6a89f2440f84afe624a76b205145e1ce2f073"
     },
     {
       "id": "rall-006",
@@ -399,7 +454,10 @@
       "auditStatus": "pending",
       "releaseStatus": "pending",
       "publicUrl": null,
-      "sourceHead": "e9e9c22c6aa46061b3abb4c91e5b10dcb5fe2d21"
+      "sourceHead": "e9e9c22c6aa46061b3abb4c91e5b10dcb5fe2d21",
+      "sourceTreeVerified": true,
+      "sourceRestorationCommit": "01650af6ff701890d8aea9ebd2497e8d09cd50b2",
+      "repositoryHeadCommit": "01650af6ff701890d8aea9ebd2497e8d09cd50b2"
     },
     {
       "id": "rall-080",
@@ -414,7 +472,9 @@
       "releaseStatus": "pending",
       "publicUrl": null,
       "createdForAudit": true,
-      "sourceHead": null
+      "sourceHead": null,
+      "sourceTreeVerified": true,
+      "sourceTreeScope": "New repository; archived original and web files are inside web-release."
     },
     {
       "id": "rall-008",
@@ -428,7 +488,10 @@
       "auditStatus": "pending",
       "releaseStatus": "pending",
       "publicUrl": null,
-      "sourceHead": "71d3947dba0d072adf5694614ca742d9da3af4e3"
+      "sourceHead": "71d3947dba0d072adf5694614ca742d9da3af4e3",
+      "sourceTreeVerified": true,
+      "sourceRestorationCommit": "0d41ad85eea7a85aae0e53568f92042d0e65ca29",
+      "repositoryHeadCommit": "0d41ad85eea7a85aae0e53568f92042d0e65ca29"
     },
     {
       "id": "rall-066",

@@ -6,6 +6,8 @@ Make every identified game and relevant version from GitHub and Google Drive pla
 
 The current owner request is to checkpoint every game in its own repository before further repairs, reuse existing repositories, and create private repositories where no source repository exists. [game-repositories.json](../data/game-repositories.json) tracks the repository, baseline commit and new audit separately from historical release evidence. Public source-repository visibility is being clarified; public release hosting remains available.
 
+Each checkpoint must retain the original source tree alongside the nested web copy. Source paths were compared with their original commit, and the resulting restoration/checkpoint commits are recorded in the repository map. Never commit an uninitialized empty Git index over an existing source tree.
+
 Audit published games in inventory order, one game at a time, including touch and keyboard in a mobile context. Record actual gameplay and recovery results, repair failures, then commit each tested result in its game repository and update the homepage release when needed. Keep unfinished Rall adaptations in the queue and keep the two excluded demos removed.
 
 ## Current priorities
