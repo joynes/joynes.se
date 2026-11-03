@@ -643,16 +643,39 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/shadow-racer",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "3bbd5d8d8f1ef3aeac77d5563f9490884de29d2e",
-      "auditStatus": "pending",
+      "auditStatus": "local-passed-awaiting-live",
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/shadow-racer/",
       "createdForAudit": true,
       "sourceHead": null,
       "sourceTreeVerified": true,
-      "sourceTreeScope": "New repository; archived original and web files are inside web-release.",
+      "sourceTreeScope": "Both original movies and the web adaptation are preserved in web-release; five available ActionScript source files and hashes are preserved in original-source. This is a partial source archive.",
       "auditUrl": "https://github.com/joynes/shadow-racer/tree/audit/2026-11-03-baseline",
-      "inGameControlsAndFullscreenStatus": "pending",
-      "englishInterfaceAuditStatus": "pending"
+      "inGameControlsAndFullscreenStatus": "local-passed-awaiting-live",
+      "englishInterfaceAuditStatus": "local-passed-awaiting-live",
+      "repositoryHeadCommit": "636437d3635b705f3205f94807ddc3028bdd40c6",
+      "auditCommit": "636437d3635b705f3205f94807ddc3028bdd40c6",
+      "auditEvidence": {
+        "game": "shadow-racer",
+        "date": "2026-11-04",
+        "baselineCommit": "3bbd5d8d8f1ef3aeac77d5563f9490884de29d2e",
+        "result": "local-passed-awaiting-live",
+        "scope": "Actual cached Chromium and installed Chrome browser interfaces, desktop 1280x1000 and touch-enabled 390x844/844x390 with physical-keyboard events in every context. Physical devices and Safari are not covered.",
+        "checks": "Both original releases pass native reverse/forward/pause/timer, genuine crash/retry and complete frame-timed DOM-key course finishes, local record persistence and release switching. Separate trusted keyboard/native-touch input suites pass both releases in all three viewports, aliases/axes, combined native actions, independent release, mixed ownership, cancellation, stale held key/contact restart, second-finger actions and fullscreen/rotation. Real parent-frame blur/resume, paused native iframe fullscreen, touch exit/old-contact cleanup and Back navigation pass in all three viewports. Full five-resource 503/retry and blocked-storage suite passes. Native preservation and homepage unit suites pass. Local cross-origin forwarding launch opens direct playable games and keyboard/touch fullscreen at all three sizes.",
+        "findings": "English in-scene HUD/actions replace the visible native HUD; thumbpad and throttle controls are inside the scene, with native/fallback fullscreen. The engine polls one key per frame, so simultaneous held actions are routed across native frames using keyboard events. Original movies, read-only observer and all original physics/rules remain unchanged. Keyboard action ownership survives the intended focus handoff to Ruffle, and releases globally on keyup. Five available ActionScript source files were archived in the existing private repository before changes.",
+        "testScripts": [
+          "scripts/test-shadow-racer-browser.cjs",
+          "scripts/test-shadow-racer-input.cjs",
+          "scripts/test-shadow-racer-frame.cjs",
+          "scripts/test-shadow-racer-domain.cjs",
+          "scripts/test-shadow-racer-navigation.cjs",
+          "scripts/test-shadow-racer.py",
+          "scripts/build-shadow-racer.py"
+        ],
+        "publicUrl": "https://joynes.github.io/joynes.se/games/shadow-racer/"
+      },
+      "secondaryActionTouchAuditStatus": "local-passed-awaiting-live",
+      "sourceArchiveCommit": "f839b50"
     },
     {
       "id": "rall-026",
@@ -812,7 +835,7 @@
     "Visible fullscreen control operable by touch and keyboard, with entry/exit and both orientations verified.",
     "Keyboard input retained on phones/tablets; independent release, cancellation, lost focus and restart verified through the browser."
   ],
-  "currentAuditFocus": "verify original controls/fullscreen/English before its enhanced edition",
+  "currentAuditFocus": "publish and verify original ShadowRacer before its enhanced edition",
   "englishInterfaceRequirement": "All website interface text must be concise and in English.",
   "homepageEnglishCopyStatus": "passed",
   "homepageEnglishCopyEvidence": {

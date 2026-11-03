@@ -13,5 +13,5 @@ try{for(const viewport of [{width:390,height:844},{width:1280,height:1000}]){
  assert.equal(await frame.locator('#version option').count(),2);assert.ok(await frame.locator('#choose').isVisible());
  await page.goto(base+'#games/ai');assert.ok(!(await page.locator('#contentList').innerText()).includes('ShadowRacer'));
  await page.goto(base+'#games/retro');assert.ok((await page.locator('#contentList').innerText()).includes('ShadowRacer'));assert.deepEqual(errors,[]);await page.close();
-}console.log('PASS: embedded native ShadowRacer plays from desktop/mobile homepage, both editions available, Retro inclusion and AI exclusion.');
+}console.log('PASS: embedded native ShadowRacer plays from desktop/mobile homepage, both archived releases available, Retro inclusion and AI exclusion.');
 }finally{await browser.close();}})().catch(e=>{console.error(e);process.exitCode=1});

@@ -28,7 +28,7 @@ window.joynesPublishedGames = [
     href: "games/shadow-racer/",
     source: "https://github.com/joynes/joynes.se/blob/master/games/shadow-racer/source-notes.md",
     sourceLabel: "Source",
-    version: "2008-web.1"
+    version: "2008-web.2"
   },
   {
     id: "worldforge",

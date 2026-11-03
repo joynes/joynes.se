@@ -51,7 +51,10 @@
     "test:night-circuit:browser": "node scripts/test-night-circuit-browser.cjs",
     "test:night-circuit:input": "node scripts/test-night-circuit-input.cjs",
     "test:night-circuit:frame": "node scripts/test-night-circuit-frame.cjs",
-    "test:night-circuit:links": "node scripts/test-night-circuit-navigation.cjs"
+    "test:night-circuit:links": "node scripts/test-night-circuit-navigation.cjs",
+    "test:shadow:input": "node scripts/test-shadow-racer-input.cjs",
+    "test:shadow:frames": "node scripts/test-shadow-racer-frame.cjs",
+    "test:shadow:domain": "node scripts/test-shadow-racer-domain.cjs"
   },
   "devDependencies": {
     "playwright": "1.58.2"
