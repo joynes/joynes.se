@@ -1,6 +1,6 @@
 # Real-time touch controls and fullscreen
 
-Every real-time game must support all gameplay actions through touchscreen input and a physical keyboard, including a keyboard attached to a phone or tablet. Touch controls belong inside the game view; no control rows should sit below the board. Use the existing AI games as the reference: a translucent floating thumbpad or direct dragging for movement, with action buttons over the opposite edge. Preserve the original game mechanics.
+Every real-time game must support all gameplay actions through touchscreen input and a physical keyboard, including a keyboard attached to a phone or tablet. Touch controls belong inside the game view; no control rows should sit below the board. Use the existing AI games as the reference: a translucent floating thumbpad or direct dragging for movement, with action buttons over the opposite edge. Preserve the original game mechanics. Keep website and game-interface labels, descriptions and help concise and in English.
 
 Provide an in-game fullscreen control usable by touch and keyboard. Keep the original scene proportions, use the complete available viewport and keep touch controls over the visible game. Test entry, exit and orientation changes. When the browser lacks the Fullscreen API, provide an expanded game view with a visible exit control.
 
