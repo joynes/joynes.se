@@ -4,8 +4,8 @@
   "runtime": "Ruffle0.7.1 / original AS3 + read-only observer",
   "assets": {
     "games/shadow-racer/LICENSE_APE": "7e15278f714da10a6fcdb76321a4ae519b8e190f8b3881926298cffcd3497f14",
-    "games/shadow-racer/app.mjs": "550b049fdc855549b69aedcdf27e0878bcefce9cfea3b870892ee4faad3e0677",
-    "games/shadow-racer/index.html": "8f6f0fdfc4fa3c592a771683634f1176ca358f24bda966929047490727317890",
+    "games/shadow-racer/app.mjs": "7d95703090efadb61c3bd9597806bee224112644575ea6b02db92d0ef3a5d96c",
+    "games/shadow-racer/index.html": "4a8aa5c2325287a999038b62cdce4086e436e186d571467515c245aa68df651e",
     "games/shadow-racer/native-observer-proof.json": "782613371e494d411215ba826bc2c3456751417551a8339ba0c6bc09148038ab",
     "games/shadow-racer/original/shadow-racer-20080928.swf": "ca347f3481ee254d60ec3bd856821b6f6546f8567120872509659844622a4e3b",
     "games/shadow-racer/original/shadow-racer-20081005.swf": "4bf85f616c53e2f11fef8c40458e032c2555cbf0a8951bcddcf1f5ca26d73c89",

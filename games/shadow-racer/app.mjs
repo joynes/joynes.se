@@ -135,4 +135,4 @@ window.addEventListener('blur',()=>{releaseAll();if(phase==='running'&&!paused)p
 window.addEventListener('resize',releaseAll);
 document.addEventListener('visibilitychange',()=>{if(document.hidden){releaseAll();if(phase==='running'&&!paused)pause(true);}});
 window.shadowRacerDiagnostics=()=>Object.freeze({phase,version,paused,native:native?Object.freeze({...native}):null,held:[...held.values()],records:records.map(r=>Object.freeze({...r})),storageAvailable,metadata:player?.ruffle().metadata?{...player.ruffle().metadata}:null});
-readRecords();paintRecords();if(retryRequested)void start();
+readRecords();paintRecords();$('start').disabled=false;$('start').textContent='Start race';if(retryRequested)void start();

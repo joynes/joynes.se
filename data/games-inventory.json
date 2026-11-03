@@ -1023,7 +1023,7 @@
         "games/car-topview/source-notes.md": "835f4778a09bda0953b8bba9112efb77755167d731ede143a305c53cba274763",
         "games/car-topview/styles.css": "f1a6532206aa7acd92aaf9b861b51e72b6cd1ea61d4f743bfce339873684ba36",
         "index.html": "4a8d6c838a460ba1e60dc0b566ba31137c10c3d0b6088fb497f135f8bd5cdcf6",
-        "assets/games-catalog.js": "6ca24953fa1c74f7341441db7bfd6ea2bcaccaaf455ab7fd6a35e0381022c644",
+        "assets/games-catalog.js": "b2ee9941b0f0d395cded877a5ef244fa03ebed71e6b71789574b4ab3ac502f10",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "docs/games/car-topview.md": "a72015e7e88fb97eff20c8af36015b7bfdfcbbc4ae1d438e14472773baca12b1"
       },
@@ -1139,7 +1139,7 @@
         "games/sdl-space/provenance.json": "8bb1d152becb8495f0368fb7749b7ab83921e22861eed2c74e0948ded9c103ff",
         "games/sdl-space/source-notes.md": "cec67cf314ea095e0b77e136972be9ca026e62b1b09a2f175a4768363245fc56",
         "games/sdl-space/styles.css": "71dd1274cb3d5ee861c48d31b951d3b99346e0dc0b3c61494ae4f2cbd69599e1",
-        "assets/games-catalog.js": "6ca24953fa1c74f7341441db7bfd6ea2bcaccaaf455ab7fd6a35e0381022c644",
+        "assets/games-catalog.js": "b2ee9941b0f0d395cded877a5ef244fa03ebed71e6b71789574b4ab3ac502f10",
         "index.html": "4a8d6c838a460ba1e60dc0b566ba31137c10c3d0b6088fb497f135f8bd5cdcf6",
         "docs/games/sdl-space.md": "9c7377464a776097adac745626959ce2cf9a0e7e91a7d80a4591961e72c7a929",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a"
@@ -1551,6 +1551,10 @@
         {
           "check": "renewed-original-audit-2026-11-04-local",
           "result": "Both original releases pass native reverse/forward/pause/timer, genuine crash/retry and complete frame-timed DOM-key course finishes, local record persistence and release switching. Separate trusted keyboard/native-touch input suites pass both releases in all three viewports, aliases/axes, combined native actions, independent release, mixed ownership, cancellation, stale held key/contact restart, second-finger actions and fullscreen/rotation. Real parent-frame blur/resume, paused native iframe fullscreen, touch exit/old-contact cleanup and Back navigation pass in all three viewports. Full five-resource 503/retry and blocked-storage suite passes. Native preservation and homepage unit suites pass. Local cross-origin forwarding launch opens direct playable games and keyboard/touch fullscreen at all three sizes."
+        },
+        {
+          "check": "delayed-controls-startup-local",
+          "result": "The public candidate allowed Start before the input module loaded. New regression delays that module: disabled loading state, first keyboard activation and actual driving pass at all three viewport sizes. Local native iframe and forwarding launch checks also pass."
         }
       ],
       "publishedUrl": "https://joynes.github.io/joynes.se/games/shadow-racer/",
@@ -1612,11 +1616,11 @@
       },
       "renewedAuditStatus": "local-passed-awaiting-live",
       "inGameControlsAndFullscreenStatus": "local-passed-awaiting-live",
-      "renewedAuditSourceCommit": "636437d3635b705f3205f94807ddc3028bdd40c6",
+      "renewedAuditSourceCommit": "389aadf7c8c8366eae4a4083429d0cd22dac066f",
       "releaseFilesSha256": {
         "games/shadow-racer/LICENSE_APE": "7e15278f714da10a6fcdb76321a4ae519b8e190f8b3881926298cffcd3497f14",
-        "games/shadow-racer/app.mjs": "550b049fdc855549b69aedcdf27e0878bcefce9cfea3b870892ee4faad3e0677",
-        "games/shadow-racer/index.html": "8f6f0fdfc4fa3c592a771683634f1176ca358f24bda966929047490727317890",
+        "games/shadow-racer/app.mjs": "7d95703090efadb61c3bd9597806bee224112644575ea6b02db92d0ef3a5d96c",
+        "games/shadow-racer/index.html": "4a8aa5c2325287a999038b62cdce4086e436e186d571467515c245aa68df651e",
         "games/shadow-racer/native-observer-proof.json": "782613371e494d411215ba826bc2c3456751417551a8339ba0c6bc09148038ab",
         "games/shadow-racer/original/shadow-racer-20080928.swf": "ca347f3481ee254d60ec3bd856821b6f6546f8567120872509659844622a4e3b",
         "games/shadow-racer/original/shadow-racer-20081005.swf": "4bf85f616c53e2f11fef8c40458e032c2555cbf0a8951bcddcf1f5ca26d73c89",
@@ -1638,7 +1642,7 @@
         "games/shadow-racer/vendor/ruffle/ruffle.js": "26036a94567088dfb3de88a759e8ed10a4cea07b29500af36f345eef42420098",
         "games/shadow-racer/vendor/ruffle/ruffle.js.map": "bf8dabc8144a0e087cdbade5da77de5a998ab55a271b32bae6e3173248d4188a",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
-        "docs/games/shadow-racer-assets.json": "b7b38bebaee8d1fbdbcad2b5f5b1894598f13a611a96fbbfcfff54968595f6e5"
+        "docs/games/shadow-racer-assets.json": "975b4f62c5a734aa26cccc910ec891a430b1f3d329e3f695574bec1efb928c94"
       }
     },
     {
