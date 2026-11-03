@@ -227,13 +227,24 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/small-wonders",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "50b5623d6a3fec5fa403d572b9ab121c1e58bb9c",
-      "auditStatus": "pending",
+      "auditStatus": "local-passed-awaiting-live",
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/llmspel-play/",
       "sourceHead": "e6b665abd359f072607c5c74c8463aa44a9c793b",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "32ccb338b8ad979685512d04d9e2e04613449b04",
-      "repositoryHeadCommit": "32ccb338b8ad979685512d04d9e2e04613449b04"
+      "repositoryHeadCommit": "0999254eb63b1d173acf8cedb42033e945d6f24a",
+      "auditCommit": "0999254eb63b1d173acf8cedb42033e945d6f24a",
+      "auditEvidence": {
+        "game": "small-wonders",
+        "date": "2026-11-03",
+        "baselineCommit": "50b5623d6a3fec5fa403d572b9ab121c1e58bb9c",
+        "sourceTreeCheckpoint": "32ccb338b8ad979685512d04d9e2e04613449b04",
+        "result": "local-passed-awaiting-live",
+        "checks": "33 full production-preview tests passed across all three routes, complete lessons/adventure, mistakes, replay, persistence, recovery, accessibility and portrait/landscape. Added mobile touch + attached-keyboard checks passed all three routes: opposing keys, independent key release, actual canvas-to-control focus transfer, multi-touch secondary-contact release and cancellation.",
+        "findings": "Reproduced stale movement after moving focus away from the canvas. Added blur cleanup to all three movement implementations. Removed accessible labels that disagreed with the visible question strip/name examples; current accessibility audit passes.",
+        "scope": "Actual Chromium desktop/mobile contexts; physical devices and operating-system window blur are not claimed."
+      }
     },
     {
       "id": "marble-tables",

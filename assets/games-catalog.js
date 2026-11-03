@@ -132,7 +132,7 @@ window.joynesPublishedGames = [
     playLabel: "LLM tower",
     source: "https://github.com/joynes/llmspel-play",
     sourceLabel: "Web build",
-    version: "5d3c30c"
+    version: "ba1f7bf"
   },
   {
     id: "hardword",

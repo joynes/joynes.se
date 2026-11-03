@@ -482,6 +482,10 @@
         {
           "check": "homepage deployment identity",
           "result": "HTML and catalog byte-equal to tested source; canonical homepage current; successful Pages run 41283165519. Public game repo HEAD remains verified 5d3c30c."
+        },
+        {
+          "check": "2026-11-03 renewed audit — local",
+          "result": "33 production-preview tests passed. Reproduced and fixed held movement after canvas focus transfer in all three routes; visible labels now supply accessible names. Added mobile keyboard and real touch tests pass opposing directions, independent key/contact release, cancellation and focus cleanup. Public build ba1f7bf contains exactly the 109 tested files; live checks pending."
         }
       ],
       "publishedUrl": "https://joynes.github.io/llmspel-play/",
@@ -522,7 +526,9 @@
         "index.html": "11114ef627b524cff1efacab15018a508f586884b863ae77f38cc5d133791e82",
         "assets/games-catalog.js": "2d80cf8f0e241a58cc14b9729fd485109d3817c3b4729b92ff403f89eba23561"
       },
-      "websiteSection": "ai"
+      "websiteSection": "ai",
+      "sourceAuditCommit": "0999254eb63b1d173acf8cedb42033e945d6f24a",
+      "browserBuildCommit": "ba1f7bf3c25fbae98fcbcd534d49c278b6da593b"
     },
     {
       "id": "marble-tables",
