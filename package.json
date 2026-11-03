@@ -47,7 +47,11 @@
     "test:car-topview:input": "node scripts/test-car-topview-input.cjs",
     "test:sdl-space:input": "node scripts/test-sdl-space-input.cjs",
     "test:sdl-space:fullscreen": "node scripts/test-sdl-space-fullscreen.cjs",
-    "test:games:forwarded": "node scripts/test-forwarded-game-launch.cjs"
+    "test:games:forwarded": "node scripts/test-forwarded-game-launch.cjs",
+    "test:night-circuit:browser": "node scripts/test-night-circuit-browser.cjs",
+    "test:night-circuit:input": "node scripts/test-night-circuit-input.cjs",
+    "test:night-circuit:frame": "node scripts/test-night-circuit-frame.cjs",
+    "test:night-circuit:links": "node scripts/test-night-circuit-navigation.cjs"
   },
   "devDependencies": {
     "playwright": "1.58.2"

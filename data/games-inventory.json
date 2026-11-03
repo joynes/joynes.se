@@ -980,6 +980,10 @@
         {
           "check": "fullscreen-and-forwarded-domain-2026-11-03-live",
           "result": "Local and canonical live full driving/image/audio/four-wall/recovery and expanded desktop/mobile keyboard/touch/fullscreen suites passed after the shared fullscreen transition fix. Actual joynes.se forwarding launch opens direct windows with working keyboard/touch fullscreen on desktop and mobile. All 11 release files match SHA256; Pages 41731059870 succeeded. Core physics, PNG and WAV unchanged."
+        },
+        {
+          "check": "enhanced-edition-local",
+          "result": "Passed all three courses through real keyboard/touch, medals/unlocks/ghost persistence, actual generated audio, eleven load failures with playable retries, expanded input/focus/restart/native fullscreen/fallback, both mobile orientations/rotation, installed Chrome controls and homepage edition switch. Original full/input regression and root tests pass."
         }
       ],
       "publishedUrl": "https://joynes.github.io/joynes.se/games/car-topview/",
@@ -993,17 +997,31 @@
       "webPath": "games/car-topview/",
       "implementationNotes": "Latest free-drive Godot4 prototype; original car PNG and looping PCM24 engine WAV preserved. Acceleration 400, max speed 800, friction 200, steer 3 rad/s, drift factor 2, pitch 0.5\u20133. JavaScript formula port and rotated rectangle wall contacts, not native Godot. Source wall collision offset repaired; start/pause/reset/mute and multitouch added. No authored races or score.",
       "releaseFilesSha256": {
-        "games/car-topview/app.mjs": "6e693ad95b0098fabaf88c9f4722d6824d05e0c7157424c078f704b6eec84836",
+        "games/car-topview/app.mjs": "7849950d89b2d925b166877060278be5af3632fbedad6c1a9c866e3b3c3a75ee",
         "games/car-topview/car.png": "92daedcd612290c05ff3debedce20b1ac0b1006c8a9d03b035b21b7be9df2236",
         "games/car-topview/core.mjs": "fb54033ea52e79f93b7458d4a8ab8f0958e9e3042a01b1bb1875e08cbe11dd9c",
         "games/car-topview/engine.wav": "729dbfa505b858123746d8f2930691a066b5da46934ff075bc30de1efa1d5732",
-        "games/car-topview/index.html": "3e33b734ee9196e156e4531b50da3749a28c8af9e0da532280001d75629ea552",
+        "games/car-topview/enhanced/app.mjs": "890a14d06b642c67d0a60e5c923d17f2139e63f55c64700f33f23a1f2351a8f7",
+        "games/car-topview/enhanced/assets/car.png": "4bf0ca9b2b29c23c7f943a6ed44b917d224cab9dd87c4470c21e67001ad01f45",
+        "games/car-topview/enhanced/assets/chime.mp3": "56b270803bb7fbd4251d658f0318e8b5166ab7eb5effd15cb1b6a2ab1273c821",
+        "games/car-topview/enhanced/assets/course-garden.jpg": "522a4de6d70c57f0fedb02eafdaa5809c71e339c5b8f856a2838ca83aa729004",
+        "games/car-topview/enhanced/assets/course-port.jpg": "40847f9ae8b78e598b5d6149b56108ed1583709b60aa64381c7e763a3ff9d94f",
+        "games/car-topview/enhanced/assets/course-switchback.jpg": "555cae3172e056a4d5b00ef341f238be032bf84d0eb2fb56174c566c11489d7c",
+        "games/car-topview/enhanced/assets/courses.json": "bd8ae045985813855004377600a47a480302c64bc8c8a979ea3dcd46c813ca66",
+        "games/car-topview/enhanced/assets/engine.mp3": "d606157ff936ace31513dcddcf6889b13d5dc5e22cd5d9b9055ca543a930b7d3",
+        "games/car-topview/enhanced/assets/music.mp3": "4bad1e0cb97a5ecd76b05b36a1586d573d5e7c8391b43fea4dd6bbdf3c530e3d",
+        "games/car-topview/enhanced/core.mjs": "5d2eda32ee4c9a6240d1da29258f976d618febd44f46dd6e39dde735c70c263f",
+        "games/car-topview/enhanced/index.html": "ec42634d73af659e3ba871602f2417402b6552cc7af64341bd40332aceef9863",
+        "games/car-topview/enhanced/provenance.json": "0d6891922b6425d5f4ce8f8256454311989a8974a711adf2b88567dde3ebde46",
+        "games/car-topview/enhanced/styles.css": "bb8660d140d5e5d7b10cd28b9ebb5bd62ec4bcb84114a314a8fbfc56bfbcc5cb",
+        "games/car-topview/index.html": "7b0bc62974f631eaffe799c1976eae080c70a748527eaca8d25a7f82c9737684",
         "games/car-topview/provenance.json": "2c7a3b776e92c8842f8e3b698d0ae788f322775001715e4b079da54f9778f6f9",
-        "games/car-topview/source-notes.md": "18b9c6dcc82e368965aecc0670e39d24d7612eb9b06ccfc0ba1fe05e21c8a5c5",
-        "games/car-topview/styles.css": "c0ca28230c48a8ba86416d90bfa40616c679ba76647578319a81f5666d33a1d6",
-        "assets/games-catalog.js": "a43ba7404e9bba575771076345b7d9466a199ee46e53e3b19bb38a00ea8a61e8",
+        "games/car-topview/source-notes.md": "835f4778a09bda0953b8bba9112efb77755167d731ede143a305c53cba274763",
+        "games/car-topview/styles.css": "f1a6532206aa7acd92aaf9b861b51e72b6cd1ea61d4f743bfce339873684ba36",
         "index.html": "4a8d6c838a460ba1e60dc0b566ba31137c10c3d0b6088fb497f135f8bd5cdcf6",
-        "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a"
+        "assets/games-catalog.js": "222afa18b65db7dd585dfdf0d764b51848cffd5a87e7af4d016cbd5b66f59ab1",
+        "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
+        "docs/games/car-topview.md": "a72015e7e88fb97eff20c8af36015b7bfdfcbbc4ae1d438e14472773baca12b1"
       },
       "deploymentRun": 41731059870,
       "websiteSection": "ai",
@@ -1012,13 +1030,27 @@
       "renewedAuditCommit": "f8ba1cd81787d3062fda246d2e86a9fb36718324",
       "inGameControlsAndFullscreenStatus": "passed",
       "enhancedEdition": {
-        "status": "planned-after-original-audit",
+        "status": "local-passed-awaiting-live",
         "launchChoices": [
           "Original",
           "AI Enhanced"
         ],
         "graphics": "Blender",
-        "soundAndMusic": "ElevenLabs"
+        "soundAndMusic": "ElevenLabs",
+        "title": "Night Circuit",
+        "version": "1.0.0",
+        "sourceCommit": "8bc840c63f93df4e8115f9b5221bbd3f0eb42717",
+        "webPath": "games/car-topview/enhanced/",
+        "publicUrl": "https://joynes.github.io/joynes.se/games/car-topview/enhanced/",
+        "localChecks": [
+          "All three courses completed with ordinary keyboard and native touch events, including boost. Ordered gates, medals, unlocks, saved best time and ghost survive reload.",
+          "Generated audio buffers decode to nonzero data; actual audio output verified after user activation. Eleven asset/module failures recover to actual driving.",
+          "Keyboard aliases, independent axes, simultaneous boost, mixed touch/keyboard, all four touch directions, cancellation, second-finger sound/pause/resume/restart/fullscreen and stale held key/contact cleanup pass.",
+          "Real iframe-window focus loss freezes the game and clears controls; fresh input resumes. Native standalone/iframe fullscreen, second-finger activation, rotation, immediate keyboard after entry/exit, fallback and Escape pass. All actions lie inside the scene.",
+          "Actual off-road recovery penalty, time-limit loss and playable restart pass. Installed Chrome input suite and canonical homepage preview edition switch, driving and fullscreen pass in all three viewports.",
+          "Original edition full gameplay/audio/wall/load-recovery suite and expanded touch/keyboard/fullscreen regressions pass. Original core, PNG and WAV unchanged. Root unit/preservation tests pass."
+        ],
+        "provenance": "games/car-topview/enhanced/provenance.json"
       }
     },
     {
@@ -1099,7 +1131,7 @@
         "games/sdl-space/provenance.json": "8bb1d152becb8495f0368fb7749b7ab83921e22861eed2c74e0948ded9c103ff",
         "games/sdl-space/source-notes.md": "cec67cf314ea095e0b77e136972be9ca026e62b1b09a2f175a4768363245fc56",
         "games/sdl-space/styles.css": "71dd1274cb3d5ee861c48d31b951d3b99346e0dc0b3c61494ae4f2cbd69599e1",
-        "assets/games-catalog.js": "a43ba7404e9bba575771076345b7d9466a199ee46e53e3b19bb38a00ea8a61e8",
+        "assets/games-catalog.js": "222afa18b65db7dd585dfdf0d764b51848cffd5a87e7af4d016cbd5b66f59ab1",
         "index.html": "4a8d6c838a460ba1e60dc0b566ba31137c10c3d0b6088fb497f135f8bd5cdcf6",
         "docs/games/sdl-space.md": "9c7377464a776097adac745626959ce2cf9a0e7e91a7d80a4591961e72c7a929",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a"

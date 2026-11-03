@@ -1,27 +1,23 @@
-# Bilspel ovanifrån
+# Top-down Driving
 
-Privat original `joynes/car_topview_game`, commit `5450575feeb6d6b42c48e7d2708ea3863da424c8`. Nio commits granskade; senaste fungerande Godot 4.3-prototypen från december 2024 används. Kategori AI-spel enligt Johannes gräns ungefär två år bakåt.
+Choose **Original** or **AI Enhanced** when the game opens.
 
-En grön 1024×600-yta, fyra väggar och fri bilkörning. Ingen bana, poäng eller multiplayer har utelämnats: sådant finns inte i senaste originalet. Äldre commits innehåller en annan bilmodell/debugreglage; de är historik, inte dolda lägen i senaste spelet.
+The original is Johannes’s Godot 4.3 free-driving prototype from December 2024, preserved as a JavaScript port. Its car PNG, engine WAV and motion formulas are unchanged. The original has no races or scores. The wall collision alignment repair and exact source/media hashes are documented in [source notes](../../games/car-topview/source-notes.md).
 
-PNG och PCM24/WAV är oförändrade, verifierade med SHA256. Fysikformlerna är direkt portade (acceleration 400, friktion 200, driftfaktor 2, svänghastighet 3, maxfart 800). JavaScript-kollisionen är en dokumenterad rekonstruktion, inte en identisk Godot-export. Ursprunglig kollisionsrektangel 30×50, separat spritevridning 270° och bildskala 0.5 är kvar. Väggarnas kollisionsytor har justerats till deras grafik; originalet saknade halvstorleksförskjutning och lät bilen lämna spelplanen genom luckor.
+## AI Enhanced: Night Circuit
 
-Start, paus, omstart, motorljud av/på, WASD och samtidiga touchknappar tillkommer. Tonhöjd 0.5–3 och framåtloop enligt WAV-importen bevaras. Se publika `games/car-topview/source-notes.md` och `provenance.json` för exakta tillgångs-/källhashar och ändringar.
+A new arcade time-trial game with three distinct courses: Port Lights, Switchback and Garden Sprint. Pass eight gates in order and finish before the time limit. Clean cornering recharges boost. Gold, Silver and Bronze medals, sequential course unlocks, personal records and a saved best-lap ghost provide replay goals. Leaving the road slows the car; prolonged off-road driving recovers it with a three-second penalty.
 
-## Lokal testning
+All courses and the new car were modelled and rendered in Blender 5.2.2 LTS. Optimized JPEG courses, a transparent PNG car and ElevenLabs-generated music, motor and checkpoint sounds total about 860 KB. Reproducible Blender/export scripts, four `.blend` scenes, all twelve original audio takes, prompts, generation IDs and hashes are committed in the existing private `joynes/car_topview_game` repository. The public [provenance manifest](../../games/car-topview/enhanced/provenance.json) identifies the exported assets.
 
-`npm test`: 30 tester godkända, inklusive fyra fysik-/mediakontroller.
+Arrows/WASD drive; Space boosts, P/Escape pauses, R restarts and M toggles sound. A floating thumbpad combines acceleration and steering; a second finger operates boost and the overlaid actions. Both editions support physical keyboards in touch-enabled mobile browsers. All controls stay inside the scene. Fullscreen uses the native API, with an expanded-view fallback and Escape exit. The two editions use separate assets and enhanced save data.
 
-Webbläsartestet verifierar riktiga bildpixlar och vanlig tangentbordsstyrning fram/back/stopp, styrning i stillastående och rörelse, alla fyra väggarna, paus/släpp/omstart, faktiskt avkodad ljudbuffer med loop och hastighetsberoende ton samt gain för ljud av/på och paus. Riktiga samtidiga touchhändelser verifierar gas plus styrning och separat fingersläpp/cancel. Bild, ljud och kod kan svara 503; nytt försök måste följas av faktisk körning.
+## Verification
 
-En första felaktig reverse-assert jämförde med positionen före utrullning; korrigerad att jämföra från det verkliga stoppet. Touch-testets första fingersläpp listade fel kontakt: Chromium-loggen visade att styrfingret släpptes, medan gasfingret korrekt var kvar. Testet rättades att släppa avsedd kontakt. Ingen rörelse-/friktionsändring krävdes.
+The original’s complete image/audio/physics/boundary/recovery suite and desktop/mobile keyboard/touch/fullscreen checks remain required. Its original core, PNG and WAV hashes must remain unchanged.
 
-Desktop 1280×1000 och porträtt 390×844 visuellt granskade. Kompakt liggande vy 844×390 håller plan och kontroller synliga samtidigt; både gränser och riktig touchkörning passerade och skärmbilden granskades. Testet läser renderade koordinater och ljudobjekt, skriver inte till bilens tillstånd.
+The enhanced browser suites drive all three courses through real keyboard and native touch events, earn medals, unlock courses, reload saved records/ghosts, verify generated audio output, exercise all eleven asset/module failures and retry into actual driving. Additional checks cover keyboard aliases/independent axes, simultaneous boost, mixed keyboard/touch ownership, cancellation, stale held keys/contacts after restart, real iframe-window blur/resume, in-scene controls, native standalone/iframe fullscreen, both orientations, rotation, immediate keyboard control after fullscreen, fallback/Escape, timeout loss and replay.
 
-Katalogkontroll passerade lokalt: spelbar iframe under AI-spel, utelämnad från Retrospel. Tidigare spel och AI-musik passerade navigationsregression. Publiceringen är verifierad enligt nedan.
+These are actual Chromium and Chrome browser-interface checks in desktop and touch-enabled mobile contexts; physical phones/tablets and Safari are not covered. The enhanced edition is a release candidate until the public deployment and file hashes are verified in [the inventory](../../data/games-inventory.json).
 
-## Publicerad och verifierad
-
-https://joynes.github.io/joynes.se/games/car-topview/
-
-Kodcommit `f2d65e8a50755b078d2f45af74537be2caf49ad4`, Pages-körning `41294880333` lyckad. Alla tio spel-/media-/katalog-/HTML-filer matchar SHA256 på kanoniska liveadresser. Hela webbläsarsviten, inklusive riktiga musknappar, touch, ljud, tre nätfel/nytt försök och spelbar AI-iframe, passerade på liveadressen. Tidigare spel och AI-musik passerade navigationsregression. Inventeringen går vidare till SDL Space.
+[Open editions](https://joynes.github.io/joynes.se/games/car-topview/)

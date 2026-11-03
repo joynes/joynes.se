@@ -94,11 +94,11 @@ window.joynesPublishedGames = [
     id: "car-topview",
     title: "Top-down Driving",
     kind: "ai",
-    description: "AI · 2024 · Free driving with a touchpad, keyboard and fullscreen.",
+    description: "Original + AI Enhanced · Time trials, boost and ghosts.",
     href: "games/car-topview/",
     source: "https://github.com/joynes/joynes.se/tree/master/games/car-topview",
     sourceLabel: "Source",
-    version: "2024-car-web.4"
+    version: "2024-car-web.5"
   },
   {
     id: "godot-reading",

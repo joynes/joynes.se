@@ -21,7 +21,7 @@ function draw(){
 }
 function pause(value){paused=value;release();last=0;acc=0;$('#pause-screen').hidden=!paused;$('#pause').textContent=paused?'▶':'Ⅱ';$('#pause').setAttribute('aria-label',paused?'Resume':'Pause');$('#pause').title=paused?'Resume':'Pause';$('#pause').setAttribute('aria-pressed',String(paused));$('#state').textContent=paused?'Paused':'Free driving';if(gain)gain.gain.value=(sound&&!paused)?0.5:0;}
 async function start(){
- if(loading)return;loading=true;$('#error').hidden=true;$('#start').disabled=true;$('#start').textContent='Loading car and engine sound…';
+ if(loading)return;loading=true;$('#error').hidden=true;$('#start').disabled=true;$('#start').textContent='Loading original…';
  try{
   audio??=new AudioContext();await audio.resume();
   const img=new Image();img.src='car.png';
@@ -30,7 +30,7 @@ async function start(){
   source?.stop();source=audio.createBufferSource();source.buffer=buffer;source.loop=true;gain=audio.createGain();gain.gain.value=sound?0.5:0;source.connect(gain).connect(audio.destination);source.start();
   running=true;car=createCar();$('#intro').hidden=true;$('#play').hidden=false;pause(false);draw();canvas.focus();
  }catch(error){$('#error-message').textContent='Could not load the car or engine sound. Check your connection and retry.';$('#error').hidden=false;}
- finally{loading=false;$('#start').disabled=false;$('#start').textContent='Start with engine sound';}
+ finally{loading=false;$('#start').disabled=false;$('#start').textContent='Original';}
 }
 $('#start').addEventListener('click',start);$('#retry').addEventListener('click',start);
 bindGameAction($('#reset'),()=>{release();car=createCar();pause(false);draw();canvas.focus();});bindGameAction($('#pause'),()=>{pause(!paused);if(!paused)canvas.focus();});bindGameAction($('#resume'),()=>{pause(false);canvas.focus();});
@@ -57,4 +57,4 @@ bindFullscreen($('#board'),$('#fullscreen'),()=>{release();last=0;acc=0;if(runni
 function frame(now){if(running&&!paused&&!document.hidden){if(last)acc+=Math.min(.1,(now-last)/1000);while(acc>=1/60){step(car,input);acc-=1/60;}draw();}last=now;requestAnimationFrame(frame);}requestAnimationFrame(frame);
 window.addEventListener('pagehide',()=>{if(running)pause(true);});
 
-$('#start').textContent='Start with engine sound';$('#start').disabled=false;
+$('#start').textContent='Original';$('#start').disabled=false;

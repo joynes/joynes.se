@@ -1,0 +1,61 @@
+{
+  "title": "Night Circuit",
+  "edition": "AI Enhanced",
+  "originalGame": "Top-down Driving",
+  "originalSourceCommit": "5450575feeb6d6b42c48e7d2708ea3863da424c8",
+  "graphics": {
+    "tool": "Blender 5.2.2 LTS",
+    "method": "Procedural 3D course scenes and car model, orthographic JPEG backgrounds and transparent PNG car",
+    "sourceScript": "enhanced-source/blender/build_assets.py",
+    "sourceRepository": "joynes/car_topview_game (private)"
+  },
+  "audio": {
+    "provider": "ElevenLabs",
+    "models": [
+      "eleven_music_v2",
+      "eleven_text_to_sound_v2"
+    ],
+    "flowId": "v2ppv5BToy2aOCe7EV3o",
+    "exports": {
+      "music": {
+        "generationId": "EWUfCw98HsNjU95YOtqD",
+        "file": "music.mp3",
+        "sha256": "4bad1e0cb97a5ecd76b05b36a1586d573d5e7c8391b43fea4dd6bbdf3c530e3d",
+        "bytes": 471501,
+        "processing": "Crossfade loop seam and normalize",
+        "selection": "First complete soundtrack; longest steady motor take; one-second checkpoint take"
+      },
+      "engine": {
+        "generationId": "KcZQ7fjJJ0gPHJHo3fYb",
+        "file": "engine.mp3",
+        "sha256": "d606157ff936ace31513dcddcf6889b13d5dc5e22cd5d9b9055ca543a930b7d3",
+        "bytes": 47272,
+        "processing": "Crossfade loop seam and normalize",
+        "selection": "First complete soundtrack; longest steady motor take; one-second checkpoint take"
+      },
+      "chime": {
+        "generationId": "43tCP0jnzh0SqBGLY39Z",
+        "file": "chime.mp3",
+        "sha256": "56b270803bb7fbd4251d658f0318e8b5166ab7eb5effd15cb1b6a2ab1273c821",
+        "bytes": 17179,
+        "processing": "Normalize",
+        "selection": "First complete soundtrack; longest steady motor take; one-second checkpoint take"
+      }
+    },
+    "prompts": {
+      "music": "A 30-second instrumental soundtrack for a stylish friendly night-driving time-trial game. Warm analog synth arpeggios, soft glass mallets, restrained punchy electronic percussion, 112 BPM, hopeful late-night coastal city exploration, memorable gentle melody, no vocals or speech, no sudden loud stings. Smooth ending suitable for a crossfaded game loop.",
+      "engine": "A clean 4-second steady loop of a small futuristic electric rally car motor, warm low mechanical hum and light turbine whine, constant driving load, no speech, no music, no traffic or background, no start or stop, suitable for smooth game pitch changes.",
+      "chime": "A single 1-second satisfying electronic checkpoint chime for a friendly driving game: three clean ascending glassy notes, warm rounded pluck, tiny sparkling tail, no music bed, no speech, no hiss."
+    }
+  },
+  "assetHashes": {
+    "car.png": "4bf0ca9b2b29c23c7f943a6ed44b917d224cab9dd87c4470c21e67001ad01f45",
+    "chime.mp3": "56b270803bb7fbd4251d658f0318e8b5166ab7eb5effd15cb1b6a2ab1273c821",
+    "course-garden.jpg": "522a4de6d70c57f0fedb02eafdaa5809c71e339c5b8f856a2838ca83aa729004",
+    "course-port.jpg": "40847f9ae8b78e598b5d6149b56108ed1583709b60aa64381c7e763a3ff9d94f",
+    "course-switchback.jpg": "555cae3172e056a4d5b00ef341f238be032bf84d0eb2fb56174c566c11489d7c",
+    "courses.json": "bd8ae045985813855004377600a47a480302c64bc8c8a979ea3dcd46c813ca66",
+    "engine.mp3": "d606157ff936ace31513dcddcf6889b13d5dc5e22cd5d9b9055ca543a930b7d3",
+    "music.mp3": "4bad1e0cb97a5ecd76b05b36a1586d573d5e7c8391b43fea4dd6bbdf3c530e3d"
+  }
+}

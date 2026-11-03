@@ -1,6 +1,6 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Top-down Driving</title><link rel="stylesheet" href="styles.css?v=c0ca28230c48"></head><body><main>
-<header><a href="../../#games/ai">← AI games</a><p class="eyebrow">AI game · Original December 2024 · Web adaptation with AI</p><h1>Top-down Driving</h1><p>Explore the steering, reverse and drift.</p></header>
-<section id="intro"><h2>Drive the police car</h2><p>↑ accelerates, ↓ brakes and reverses. ← and → steer. Use WASD or drag the thumbpad on the left: up/down for forward/reverse, left/right to steer. The car starts facing left.</p><p>Release the accelerator to slow down. You can steer while stationary. The original has no races or scoring.</p><button id="start" disabled>Loading controls…</button></section>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Top-down Driving</title><link rel="stylesheet" href="styles.css?v=f1a6532206aa"></head><body><main>
+<header><a href="../../#games/ai">← AI games</a><p class="eyebrow">AI game · Original 2024</p><h1>Top-down Driving</h1><p>Pick your drive.</p></header>
+<section id="intro"><h2>Choose edition</h2><p>Original: free driving. AI Enhanced: three time trials, boost and ghosts.</p><div class="edition-choice"><button id="start" disabled>Original</button><a id="enhanced-edition" href="enhanced/?v=1.0.0">AI Enhanced</a></div><p>Arrows / WASD or the thumbpad. P: pause.</p></section>
 <section id="error" hidden role="alert"><p id="error-message">Could not load the game.</p><button id="retry">Retry</button></section>
 <section id="play" hidden>
 <div id="board"><div id="game-surface"><canvas id="view" width="1024" height="600" tabindex="0" aria-label="Police car driving area. Use arrow keys or WASD, or drag on the left to accelerate and steer."></canvas>
@@ -9,4 +9,4 @@
 <p id="position" class="sr-only"></p>
 </section>
 <details><summary>Original and web adaptation</summary><p>Johannes’s Godot 4 prototype from December 2024. The original car image, engine sound and motion formulas are preserved. This AI-assisted adaptation runs JavaScript.</p><p>The original is an open green area with four walls. This adaptation corrects wall collision positions and adds start, pause, reset, sound and touch controls.</p><a href="source-notes.md">Sources and changes</a></details><noscript>This game requires JavaScript.</noscript>
-</main><script type="module" src="app.mjs?v=6e693ad95b00" onerror="document.getElementById('intro').hidden=true;document.getElementById('error').hidden=false;document.getElementById('retry').onclick=()=>location.reload()"></script></body></html>
+</main><script type="module" src="app.mjs?v=7849950d89b2" onerror="document.getElementById('intro').hidden=true;document.getElementById('error').hidden=false;document.getElementById('retry').onclick=()=>location.reload()"></script></body></html>

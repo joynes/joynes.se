@@ -374,7 +374,7 @@
       "sourceHead": "5450575feeb6d6b42c48e7d2708ea3863da424c8",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "f67de46b997044830e1d6fd3f0e5eeba0132be46",
-      "repositoryHeadCommit": "f8ba1cd81787d3062fda246d2e86a9fb36718324",
+      "repositoryHeadCommit": "8bc840c63f93df4e8115f9b5221bbd3f0eb42717",
       "auditUrl": "https://github.com/joynes/car_topview_game/tree/audit/2026-11-03-baseline",
       "auditCommit": "f8ba1cd81787d3062fda246d2e86a9fb36718324",
       "auditEvidence": {
@@ -399,7 +399,40 @@
       "deploymentRun": 41731059870,
       "inGameControlsAndFullscreenStatus": "passed",
       "secondaryActionTouchAuditStatus": "passed",
-      "englishInterfaceAuditStatus": "passed"
+      "englishInterfaceAuditStatus": "passed",
+      "enhancedEdition": {
+        "status": "local-passed-awaiting-live",
+        "title": "Night Circuit",
+        "sourceCommit": "8bc840c63f93df4e8115f9b5221bbd3f0eb42717",
+        "auditEvidence": {
+          "game": "car-topview",
+          "edition": "AI Enhanced",
+          "title": "Night Circuit",
+          "date": "2026-11-03",
+          "result": "local-passed-awaiting-live",
+          "scope": "Actual Chromium and installed Chrome browser interfaces, desktop 1280x1000 and touch-enabled 390x844 / 844x390, including physical-keyboard events in mobile contexts. Physical phones and Safari not covered.",
+          "checks": [
+            "All three courses completed with ordinary keyboard and native touch events, including boost. Ordered gates, medals, unlocks, saved best time and ghost survive reload.",
+            "Generated audio buffers decode to nonzero data; actual audio output verified after user activation. Eleven asset/module failures recover to actual driving.",
+            "Keyboard aliases, independent axes, simultaneous boost, mixed touch/keyboard, all four touch directions, cancellation, second-finger sound/pause/resume/restart/fullscreen and stale held key/contact cleanup pass.",
+            "Real iframe-window focus loss freezes the game and clears controls; fresh input resumes. Native standalone/iframe fullscreen, second-finger activation, rotation, immediate keyboard after entry/exit, fallback and Escape pass. All actions lie inside the scene.",
+            "Actual off-road recovery penalty, time-limit loss and playable restart pass. Installed Chrome input suite and canonical homepage preview edition switch, driving and fullscreen pass in all three viewports.",
+            "Original edition full gameplay/audio/wall/load-recovery suite and expanded touch/keyboard/fullscreen regressions pass. Original core, PNG and WAV unchanged. Root unit/preservation tests pass."
+          ],
+          "findings": [
+            "Paused overlay initially intercepted Fullscreen touch; in-scene actions now remain above it. Fullscreen changes return focus to the canvas.",
+            "Course JPEG exports reduced total runtime assets to about 860 KB. Original model scenes and all twelve generated audio takes remain in the private source repository."
+          ],
+          "assetProvenance": "web-release/games/car-topview/enhanced/provenance.json",
+          "testScripts": [
+            "scripts/test-night-circuit-browser.cjs",
+            "scripts/test-night-circuit-input.cjs",
+            "scripts/test-night-circuit-frame.cjs",
+            "scripts/test-night-circuit-navigation.cjs"
+          ],
+          "publicUrl": "https://joynes.github.io/joynes.se/games/car-topview/enhanced/"
+        }
+      }
     },
     {
       "id": "sdl-space",

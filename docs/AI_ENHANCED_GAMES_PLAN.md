@@ -38,3 +38,5 @@ Use the available `elevenlabs-api`, `music` and `sound-effects` skills. The conn
 ## First implementation
 
 Top-down Driving is first: its original mechanics, touch, keyboard and fullscreen have passed local and live verification, and its existing source repository is private. Build a new time-trial game with Blender courses/car graphics and ElevenLabs audio. Keep every other enhanced edition queued until its own original checks and enhanced gameplay tests pass.
+
+Night Circuit is the first release candidate: three Blender courses, a new car, ElevenLabs soundtrack/motor/chime, checkpoints, boost, medals, unlocks and a persistent best-lap ghost. Local gameplay, failure recovery, input, fullscreen and edition-switch checks pass. Public verification is pending. Other editions remain queued, not published.
