@@ -61,7 +61,7 @@ The machine-readable queue, source links, version relationships, test evidence a
 | 9 | Simple Driving Game | Excluded at owner request; do not republish |
 | 10 | Bus Test Game | Excluded at owner request; do not republish |
 | 11 | Godot Reading Game | Published and verified under earlier release checks |
-| 12 | Bilspel ovanifrån | Published and verified under earlier release checks |
+| 12 | Top-down Driving | Renewed local/live keyboard and touch audit passed |
 | 13 | SDL Space / hinderbana | Published and verified under earlier release checks |
 | 14 | Hello Multiplayer Game | Published and verified under earlier release checks |
 | 15 | 3D Network Game | Published and verified under earlier release checks |

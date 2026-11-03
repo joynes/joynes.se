@@ -355,30 +355,33 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/car-topview",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "f4836b5f2787781d0f27e96416b9c38b9d000579",
-      "auditStatus": "local-passed-awaiting-live",
+      "auditStatus": "passed",
       "releaseStatus": "published_verified",
       "publicUrl": "https://joynes.github.io/joynes.se/games/car-topview/",
       "sourceHead": "5450575feeb6d6b42c48e7d2708ea3863da424c8",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "f67de46b997044830e1d6fd3f0e5eeba0132be46",
-      "repositoryHeadCommit": "3a2d4a6574a3cea1a6b62d5c1aba2dbc4f91ab19",
+      "repositoryHeadCommit": "d047115cb6fa648c07a977575c22958c10e0b551",
       "auditUrl": "https://github.com/joynes/car_topview_game/tree/audit/2026-11-03-baseline",
-      "auditCommit": "3a2d4a6574a3cea1a6b62d5c1aba2dbc4f91ab19",
+      "auditCommit": "d047115cb6fa648c07a977575c22958c10e0b551",
       "auditEvidence": {
         "game": "car-topview",
         "date": "2026-11-03",
         "baselineCommit": "f4836b5f2787781d0f27e96416b9c38b9d000579",
-        "result": "local-passed-awaiting-live",
+        "result": "passed",
         "scope": "Actual Chromium desktop and mobile browser contexts, with touch enabled and keyboard events in both. Physical phones/tablets and Safari are not covered by this result.",
-        "checks": "Full real-browser driving/audio/four-wall/failure-recovery suite; keyboard-only desktop and touch-enabled portrait/landscape; aliases and mixed keyboard/touch ownership; two contacts with independent lift/cancel; stale-repeat protection after reset/pause/focus; real iframe-window focus cleanup, resume, landscape bounds and return navigation.",
-        "findings": "Reproduced stale held-key autorepeat reactivating acceleration after Reset. Guard now requires a fresh key press after release/reset/pause/focus. Interface and source notes translated into English. Original PNG, WAV and core physics unchanged.",
+        "checks": "Passed local and canonical-live full driving/audio/four-wall/recovery suite and expanded desktop/mobile keyboard plus actual touch checks in portrait/landscape; aliases, mixed ownership, independent contacts, cancellation, stale-repeat cleanup after reset/pause/focus, touch restart, real frame-window blur/resume, visible embedded landscape controls and top-level Back. Root unit/asset checks and homepage games/music regression passed; 10 live release hashes match Pages 41711372662 / 32b543d32ef54d26a0708fde63b63892419e1f6b.",
+        "findings": "Fixed reproduced stale hardware key repeat reactivating acceleration after reset/pause/focus. English interface/source notes. Original car PNG, engine WAV and core physics unchanged.",
         "testScripts": [
           "scripts/test-car-topview-browser.cjs",
           "scripts/test-car-topview-input.cjs",
           "scripts/test-car-topview.mjs"
         ],
         "publicUrl": "https://joynes.github.io/joynes.se/games/car-topview/"
-      }
+      },
+      "auditFixCommit": "3a2d4a6",
+      "deploymentCommit": "32b543d32ef54d26a0708fde63b63892419e1f6b",
+      "deploymentRun": 41711372662
     },
     {
       "id": "sdl-space",
@@ -624,5 +627,5 @@
       "publicUrl": null
     }
   ],
-  "currentAuditGame": "car-topview"
+  "currentAuditGame": "sdl-space"
 }
