@@ -786,12 +786,12 @@
       "sourceHead": "c867cc03bf7540e0d44721cf910c5de3b1723923",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "58f6a89f2440f84afe624a76b205145e1ce2f073",
-      "repositoryHeadCommit": "4ac8ea8248c2372cafa7da13e56cff6dec1e2d2b",
+      "repositoryHeadCommit": "7145d6497fd000ee2dabdd7e7092672e049b1d46",
       "auditUrl": "https://github.com/joynes/rall0054/tree/audit/2026-11-03-baseline",
       "inGameControlsAndFullscreenStatus": "local-passed-live-pending",
       "englishInterfaceAuditStatus": "passed",
       "auditFindings": "Reconstructed JavaScript restoration locally verified on all6maps, keyboard/touch and fullscreen. Native probe preserved privately; live verification pending.",
-      "implementationCommit": "4ac8ea8248c2372cafa7da13e56cff6dec1e2d2b"
+      "implementationCommit": "7145d6497fd000ee2dabdd7e7092672e049b1d46"
     },
     {
       "id": "rall-006",

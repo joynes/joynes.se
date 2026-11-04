@@ -2013,11 +2013,11 @@
         },
         {
           "check": "input",
-          "result": "Chromium and installed Chrome all3: both keyboard profiles, touch, simultaneous actions, independent release/aliases, quick taps, cancel, restart stale input, Sound/Siege focus, actual sound, in-map controls, native fullscreen and rotation"
+          "result": "Chromium and installed Chrome all3: both keyboard profiles, touch, simultaneous actions, independent release/aliases, quick taps, cancel, restart stale input, Sound/Siege focus, actual sound, in-map controls, native fullscreen and rotation; four native contacts control both human players simultaneously with independent team release"
         },
         {
           "check": "frame",
-          "result": "All3: actual parent blur/frozen pause/resume, native iframe fullscreen, paused Escape, CSS fallback"
+          "result": "All3: actual parent blur/frozen pause/resume, native iframe fullscreen, paused Escape, CSS fallback; real viewport resize retains freshly pressed keyboard actions while releasing old touch coordinates; Chromium and Chrome"
         },
         {
           "check": "recovery",
@@ -2033,7 +2033,7 @@
         }
       ],
       "publishedUrl": null,
-      "implementationCommit": "4ac8ea8248c2372cafa7da13e56cff6dec1e2d2b",
+      "implementationCommit": "7145d6497fd000ee2dabdd7e7092672e049b1d46",
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
@@ -2053,7 +2053,7 @@
       "implementationRepository": "https://github.com/joynes/rall0054",
       "resourceAudit": "docs/games/rall-054-assets.json",
       "releaseFilesSha256": {
-        "games/rall-054/app.mjs": "cce4ac52a9a88b97b824783764b32e33dfd957b2ff20179ec050dea2a5735dc0",
+        "games/rall-054/app.mjs": "2eb454d9d4f810b038285a8e6d18254b7459c504ebee81892aa0e34750d9f319",
         "games/rall-054/assets/bullet.png": "2e88403b5aad2e51a2f678bafa2d239fcbbeb8f073ce11b55642dc43035009da",
         "games/rall-054/assets/enter-siege.wav": "63b0a962d6005a0e7af6414921f855cec9ef1c5aa7ecc1cc5f2707947f73ab52",
         "games/rall-054/assets/explosion.png": "41805483ee6df8ebf188f32e7d5465831fe50368deb91e2fc526a6ea83fc0071",
@@ -2080,12 +2080,12 @@
         "games/rall-054/assets/tank-green.png": "8809d37d2b9dba01d1703090d0ffb89b3cde4d5f338ddaf806edce022fbf618c",
         "games/rall-054/core.mjs": "7ef1745bd4cabd0925549bc9c89a89dc4e2f5494c583cf1b67fd5f36cc618935",
         "games/rall-054/graphics.mjs": "7f39fb74245878f6e139ee9e1d0a45341ecb8a303d0c3c0365ad0470625f9ed7",
-        "games/rall-054/index.html": "d8d416cdd17c65f7ce5088be769b7e143c282926d5da927ebfb742202fdc7cd8",
+        "games/rall-054/index.html": "3fb50d1faabdf9de9634befefc3fecf75cf392d1ca07e3471ac24a62379e1ffb",
         "games/rall-054/provenance.json": "ea36aec63712d56fc7240380d33975be01a5627c4b20c14b540eaa2d0d1517ad",
         "games/rall-054/source-notes.md": "0dfaf33ddfc9dc93e0e6ad3633be85ff11c93f81c680c5ac9c3ddac14abec006",
         "games/rall-054/styles.css": "b2f89199a05590b4c6bf5dc45bd59335af8efb9e3d3edce896ea54360100456e",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
-        "docs/games/rall-054-assets.json": "55065e0ae19b069fc649f8d30eb27b90a5d6fef96cb80d516926d3e1e46758fc",
+        "docs/games/rall-054-assets.json": "6d8f9b6a1e571a13ff45e4d3ae236ce0ba957b7dbefc83066595548a354e6c86",
         "assets/games-catalog.js": "0b7506697803c05996be703dfbbfeef6536293f94c9db27de94107f9184cd677",
         "index.html": "e8f5d038157b88f1236775a7358a0b7154f766d1177a10873740cdf12ac5238c"
       },

@@ -3,7 +3,7 @@
   "path": "games/rall-054/",
   "runtime": "Reconstructed JavaScript / Canvas2D / original2002 media",
   "assets": {
-    "games/rall-054/app.mjs": "cce4ac52a9a88b97b824783764b32e33dfd957b2ff20179ec050dea2a5735dc0",
+    "games/rall-054/app.mjs": "2eb454d9d4f810b038285a8e6d18254b7459c504ebee81892aa0e34750d9f319",
     "games/rall-054/assets/bullet.png": "2e88403b5aad2e51a2f678bafa2d239fcbbeb8f073ce11b55642dc43035009da",
     "games/rall-054/assets/enter-siege.wav": "63b0a962d6005a0e7af6414921f855cec9ef1c5aa7ecc1cc5f2707947f73ab52",
     "games/rall-054/assets/explosion.png": "41805483ee6df8ebf188f32e7d5465831fe50368deb91e2fc526a6ea83fc0071",
@@ -30,7 +30,7 @@
     "games/rall-054/assets/tank-green.png": "8809d37d2b9dba01d1703090d0ffb89b3cde4d5f338ddaf806edce022fbf618c",
     "games/rall-054/core.mjs": "7ef1745bd4cabd0925549bc9c89a89dc4e2f5494c583cf1b67fd5f36cc618935",
     "games/rall-054/graphics.mjs": "7f39fb74245878f6e139ee9e1d0a45341ecb8a303d0c3c0365ad0470625f9ed7",
-    "games/rall-054/index.html": "d8d416cdd17c65f7ce5088be769b7e143c282926d5da927ebfb742202fdc7cd8",
+    "games/rall-054/index.html": "3fb50d1faabdf9de9634befefc3fecf75cf392d1ca07e3471ac24a62379e1ffb",
     "games/rall-054/provenance.json": "ea36aec63712d56fc7240380d33975be01a5627c4b20c14b540eaa2d0d1517ad",
     "games/rall-054/source-notes.md": "0dfaf33ddfc9dc93e0e6ad3633be85ff11c93f81c680c5ac9c3ddac14abec006",
     "games/rall-054/styles.css": "b2f89199a05590b4c6bf5dc45bd59335af8efb9e3d3edce896ea54360100456e",
