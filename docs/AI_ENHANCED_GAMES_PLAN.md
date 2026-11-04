@@ -18,6 +18,7 @@ Keep both editions in the existing game repository, with separate assets, save d
 | Rall v026 | Rooftop duels with new arenas, gadgets and cover. |
 | Rall v030 | A new 2.5D arena fighter with training and challenge modes. |
 | Top-down Driving | Checkpoint courses, time trials and drifting challenges. |
+| Rall v054 | Isometric tank arenas, capture beacons, breakable cover and siege challenges, with new Blender models and ElevenLabs audio. |
 
 Add the unfinished older Rall games after their original web editions are playable and verified. Each concept above is a starting point; finish a coherent game, not a visual demo.
 
@@ -40,3 +41,5 @@ Use the available `elevenlabs-api`, `music` and `sound-effects` skills. The conn
 Top-down Driving is first: its original mechanics, touch, keyboard and fullscreen have passed local and live verification, and its existing source repository is private. Build a new time-trial game with Blender courses/car graphics and ElevenLabs audio. Keep every other enhanced edition queued until its own original checks and enhanced gameplay tests pass.
 
 Night Circuit is the first release candidate: three Blender courses, a new car, ElevenLabs soundtrack/motor/chime, checkpoints, boost, medals, unlocks and a persistent best-lap ghost. Local gameplay, failure recovery, input, fullscreen and edition-switch checks pass. Night Circuit is now published and verified: complete gameplay/input/fullscreen and original-edition regressions passed on the public site. Both edition choices work through joynes.se and the direct homepage in all three tested viewports. All 25 release files match SHA256; Pages 41735297215 succeeded. Other editions remain queued, not published. ShadowRacer’s original audit passed locally and live. Ridge Courier is published and verified: a new 3D parcel-delivery game with three Blender worlds, wind, gaps, boost and ElevenLabs audio. Complete local/live routes, audio, recovery, touch/keyboard, fullscreen, edition switching and all 49 runtime/integration hashes passed (Pages 41747999054). Other enhanced editions remain queued.
+
+Rall v054’s original browser restoration is now published and verified on all six maps, with solo progression and local duels. Its AI Enhanced tank concept remains queued while the unfinished v080 and rall008 restorations are completed. No enhanced tank launch choice is shown yet.

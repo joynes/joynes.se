@@ -780,18 +780,21 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/rall-054",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "4a1438a3d808e403fb612d281c6f450182929cce",
-      "auditStatus": "local-passed-live-pending",
-      "releaseStatus": "in_progress",
-      "publicUrl": null,
+      "auditStatus": "passed",
+      "releaseStatus": "published_verified",
+      "publicUrl": "https://joynes.github.io/joynes.se/games/rall-054/",
       "sourceHead": "c867cc03bf7540e0d44721cf910c5de3b1723923",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "58f6a89f2440f84afe624a76b205145e1ce2f073",
-      "repositoryHeadCommit": "7145d6497fd000ee2dabdd7e7092672e049b1d46",
+      "repositoryHeadCommit": "385e4b72c329c72ee4b51bd1bd4715d8fec8a8ce",
       "auditUrl": "https://github.com/joynes/rall0054/tree/audit/2026-11-03-baseline",
-      "inGameControlsAndFullscreenStatus": "local-passed-live-pending",
+      "inGameControlsAndFullscreenStatus": "passed",
       "englishInterfaceAuditStatus": "passed",
-      "auditFindings": "Reconstructed JavaScript restoration locally verified on all6maps, keyboard/touch and fullscreen. Native probe preserved privately; live verification pending.",
-      "implementationCommit": "7145d6497fd000ee2dabdd7e7092672e049b1d46"
+      "auditFindings": "Full six-map browser restoration verified locally and live. Chromium/Chrome, keyboard/mobile touch/four-contact duel, fullscreen/rotation/focus, combat/progression/replay, audio/recovery and actual joynes.se passed.35public hashes matched. Original private tree unchanged.",
+      "implementationCommit": "7145d6497fd000ee2dabdd7e7092672e049b1d46",
+      "auditCommit": "385e4b72c329c72ee4b51bd1bd4715d8fec8a8ce",
+      "deploymentCommit": "6762de771cd39cd41acf7b541505b2ef70a8ffea",
+      "deploymentRun": 41764355491
     },
     {
       "id": "rall-006",
@@ -891,7 +894,7 @@
     "Visible fullscreen control operable by touch and keyboard, with entry/exit and both orientations verified.",
     "Keyboard input retained on phones/tablets; independent release, cancellation, lost focus and restart verified through the browser."
   ],
-  "currentAuditFocus": "Publish and verify restored Rall054; enhanced edition remains queued",
+  "currentAuditFocus": "Rall054 restoration verified; finish v080 and rall008 before further AI Enhanced editions",
   "englishInterfaceRequirement": "All website interface text must be concise and in English.",
   "homepageEnglishCopyStatus": "passed",
   "homepageEnglishCopyEvidence": {
