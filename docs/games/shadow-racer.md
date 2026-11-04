@@ -12,4 +12,4 @@ The original has no audio or working ghost playback. Its abandoned leaderboard u
 
 The original gameplay, touch, keyboard, fullscreen and English-interface audit passed locally and live. AI Enhanced adds **Ridge Courier**: three new Blender route worlds, parcel deliveries, boost, wind, gap jumps and checkpoint repairs, with ElevenLabs audio. Choose **Original** or **AI Enhanced** at launch. Local records and assets are separate.
 
-The enhanced release candidate is being checked locally before publication. Browser automation covers Chromium and installed Chrome in desktop, phone portrait and phone landscape contexts; physical devices and Safari are not covered. [Inventory](../../data/games-inventory.json).
+Ridge Courier is published and verified: all three routes, touch and keyboard, audio, recovery, fullscreen and edition switching passed on the live website. Browser automation covers Chromium and installed Chrome in desktop, phone portrait and phone landscape contexts; physical devices and Safari are not covered. [Inventory](../../data/games-inventory.json).

@@ -653,7 +653,7 @@
       "auditUrl": "https://github.com/joynes/shadow-racer/tree/audit/2026-11-03-baseline",
       "inGameControlsAndFullscreenStatus": "passed",
       "englishInterfaceAuditStatus": "passed",
-      "repositoryHeadCommit": "a83e8ac061ce37dc69448decf127247d37008b98",
+      "repositoryHeadCommit": "14ec77d5484ef8db4d503e77e377a5b924392057",
       "auditCommit": "8857df4121f7e433005e3d91dddc0ab09f7bb3fe",
       "auditEvidence": {
         "game": "shadow-racer",
@@ -713,7 +713,7 @@
       "deploymentRun": 41740884604,
       "enhancedEdition": {
         "title": "Ridge Courier",
-        "status": "local_verified",
+        "status": "published_verified",
         "sourceCommit": "a83e8ac061ce37dc69448decf127247d37008b98",
         "auditReport": "audit/2026-11-04-enhanced-result.json",
         "checks": [
@@ -723,7 +723,12 @@
           "In-scene bounds, native fullscreen in both orientations, rotated WebGL viewport, immediate keyboard after entry/exit, fallback/Escape and pause preservation pass. Real iframe-window focus loss freezes physics and discards input. Actual WebGL context loss disables play, clears controls and reloads to playable driving.",
           "Actual rough landings consume repairs, recover the buggy to its checkpoint, clear held controls, reach three-repair loss and allow replay. Unit rule checks separately verify mandatory braking, checkpoint positioning, timeout, terminal state, boost energy/cooldown and terrain gaps.",
           "Original/AI Enhanced choice, enhanced keyboard/native-touch driving and native fullscreen, return to playable original pass through the canonical homepage preview and cross-origin forwarding fixture in all three viewports. Original full native finish/crash/records/retry/storage and six trusted input cases pass. Root unit/preservation suites pass; original movies/runtime unchanged."
-        ]
+        ],
+        "verifiedAt": "2026-11-04",
+        "deploymentCommit": "05de03a3d3f5848a494a7fe3e082d060ddd49251",
+        "deploymentRun": 41747999054,
+        "liveChecks": "All three routes completed on the public site through trusted browser keyboard input and native CDP touch in portrait and landscape, with three deliveries, zero-rescue wins, cargo meshes, unlocks and persisted records. All thirteen load failures recover to actual driving. Actual generated-audio output, complete input/cancel/restart/focus/native fullscreen/rotation/fallback suite, crash loss/replay, real iframe focus and real WebGL context-loss recovery pass. Canonical homepage and actual joynes.se direct-window edition switch, enhanced keyboard/native-touch driving, fullscreen and return to playable Original pass in all three viewports. All 49 runtime and integration SHA256 values match; Pages 41747999054 succeeded.",
+        "auditCommit": "14ec77d5484ef8db4d503e77e377a5b924392057"
       }
     },
     {

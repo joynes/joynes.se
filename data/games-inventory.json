@@ -1563,11 +1563,15 @@
         {
           "check": "ridge-courier-local-2026-11-04",
           "result": "All three routes completed through real browser keyboard input on desktop and native CDP touch in phone portrait and landscape. Three deliveries, zero-rescue wins, disappearing Blender parcel meshes, route unlocks, best times and reload persistence verified; no game-state injection. Generated audio decoded to nonzero buffers and actual output after user activation. All thirteen route/model/audio/module/helper failures recovered through visible Retry to real driving. Cached Chromium and installed Chrome input suites pass desktop and touch-enabled mobile contexts: physical-keyboard aliases/axes, actual lean/boost/jump, independent release, mixed touch/keyboard ownership, four pad directions, cancellation, stale keys/contacts after restart, focus loss, second-finger actions and actual mute/unmute output. In-scene bounds, native fullscreen in both orientations, rotated WebGL viewport, immediate keyboard after entry/exit, fallback/Escape and pause preservation pass. Real iframe-window focus loss freezes physics and discards input. Actual WebGL context loss disables play, clears controls and reloads to playable driving. Actual rough landings consume repairs, recover the buggy to its checkpoint, clear held controls, reach three-repair loss and allow replay. Unit rule checks separately verify mandatory braking, checkpoint positioning, timeout, terminal state, boost energy/cooldown and terrain gaps. Original/AI Enhanced choice, enhanced keyboard/native-touch driving and native fullscreen, return to playable original pass through the canonical homepage preview and cross-origin forwarding fixture in all three viewports. Original full native finish/crash/records/retry/storage and six trusted input cases pass. Root unit/preservation suites pass; original movies/runtime unchanged."
+        },
+        {
+          "check": "ridge-courier-live-2026-11-04",
+          "result": "All three routes completed on the public site through trusted browser keyboard input and native CDP touch in portrait and landscape, with three deliveries, zero-rescue wins, cargo meshes, unlocks and persisted records. All thirteen load failures recover to actual driving. Actual generated-audio output, complete input/cancel/restart/focus/native fullscreen/rotation/fallback suite, crash loss/replay, real iframe focus and real WebGL context-loss recovery pass. Canonical homepage and actual joynes.se direct-window edition switch, enhanced keyboard/native-touch driving, fullscreen and return to playable Original pass in all three viewports. All 49 runtime and integration SHA256 values match; Pages 41747999054 succeeded."
         }
       ],
       "publishedUrl": "https://joynes.github.io/joynes.se/games/shadow-racer/",
-      "implementationCommit": "23333ac4e0c9108a8aca6efe61ecbdf38441151b",
-      "deploymentCommit": "23333ac4e0c9108a8aca6efe61ecbdf38441151b",
+      "implementationCommit": "05de03a3d3f5848a494a7fe3e082d060ddd49251",
+      "deploymentCommit": "05de03a3d3f5848a494a7fe3e082d060ddd49251",
       "category": "retro",
       "webAdaptation": "ai",
       "categoryLabel": "AI remake of a retro game",
@@ -1581,8 +1585,8 @@
       "sourceManifest": "games/shadow-racer/source-manifest.json",
       "nativeObserverProof": "games/shadow-racer/native-observer-proof.json",
       "catalogUrl": "https://joynes.github.io/joynes.se/#games/retro/shadow-racer",
-      "catalogCommit": "23333ac4e0c9108a8aca6efe61ecbdf38441151b",
-      "catalogDeploymentRun": 41740884604,
+      "catalogCommit": "05de03a3d3f5848a494a7fe3e082d060ddd49251",
+      "catalogDeploymentRun": 41747999054,
       "publishedFileSha256": {
         "games/shadow-racer/LICENSE_APE": "7e15278f714da10a6fcdb76321a4ae519b8e190f8b3881926298cffcd3497f14",
         "games/shadow-racer/app.mjs": "314fe964980f3964f5c458c4ed961e74dbe084881adaf00767b4ce7123bb3d75",
@@ -1630,11 +1634,13 @@
         "games/shadow-racer/vendor/ruffle/ruffle.js": "26036a94567088dfb3de88a759e8ed10a4cea07b29500af36f345eef42420098",
         "games/shadow-racer/vendor/ruffle/ruffle.js.map": "bf8dabc8144a0e087cdbade5da77de5a998ab55a271b32bae6e3173248d4188a",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
-        "docs/games/shadow-racer-assets.json": "b8bc0ca0b1e14ae15892349c66c143a5a957ed7256be922285640cbb73296706"
+        "docs/games/shadow-racer-assets.json": "b8bc0ca0b1e14ae15892349c66c143a5a957ed7256be922285640cbb73296706",
+        "index.html": "d47cede26219df52df7a539f4c9917b4b939a842380136837ff344fcb3e222ee",
+        "assets/games-catalog.js": "539d69bf41f30e23f7bfa97ebda6d4173d94785cf8e137dd943a78d5e9d4f2c2"
       },
       "websiteSection": "retro",
       "enhancedEdition": {
-        "status": "local_verified",
+        "status": "published_verified",
         "launchChoices": [
           "Original",
           "AI Enhanced"
@@ -1655,7 +1661,11 @@
           "In-scene bounds, native fullscreen in both orientations, rotated WebGL viewport, immediate keyboard after entry/exit, fallback/Escape and pause preservation pass. Real iframe-window focus loss freezes physics and discards input. Actual WebGL context loss disables play, clears controls and reloads to playable driving.",
           "Actual rough landings consume repairs, recover the buggy to its checkpoint, clear held controls, reach three-repair loss and allow replay. Unit rule checks separately verify mandatory braking, checkpoint positioning, timeout, terminal state, boost energy/cooldown and terrain gaps.",
           "Original/AI Enhanced choice, enhanced keyboard/native-touch driving and native fullscreen, return to playable original pass through the canonical homepage preview and cross-origin forwarding fixture in all three viewports. Original full native finish/crash/records/retry/storage and six trusted input cases pass. Root unit/preservation suites pass; original movies/runtime unchanged."
-        ]
+        ],
+        "verifiedAt": "2026-11-04",
+        "deploymentCommit": "05de03a3d3f5848a494a7fe3e082d060ddd49251",
+        "deploymentRun": 41747999054,
+        "liveChecks": "All three routes completed on the public site through trusted browser keyboard input and native CDP touch in portrait and landscape, with three deliveries, zero-rescue wins, cargo meshes, unlocks and persisted records. All thirteen load failures recover to actual driving. Actual generated-audio output, complete input/cancel/restart/focus/native fullscreen/rotation/fallback suite, crash loss/replay, real iframe focus and real WebGL context-loss recovery pass. Canonical homepage and actual joynes.se direct-window edition switch, enhanced keyboard/native-touch driving, fullscreen and return to playable Original pass in all three viewports. All 49 runtime and integration SHA256 values match; Pages 41747999054 succeeded."
       },
       "renewedAuditStatus": "passed",
       "inGameControlsAndFullscreenStatus": "passed",
@@ -1707,10 +1717,12 @@
         "games/shadow-racer/vendor/ruffle/ruffle.js": "26036a94567088dfb3de88a759e8ed10a4cea07b29500af36f345eef42420098",
         "games/shadow-racer/vendor/ruffle/ruffle.js.map": "bf8dabc8144a0e087cdbade5da77de5a998ab55a271b32bae6e3173248d4188a",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
-        "docs/games/shadow-racer-assets.json": "b8bc0ca0b1e14ae15892349c66c143a5a957ed7256be922285640cbb73296706"
+        "docs/games/shadow-racer-assets.json": "b8bc0ca0b1e14ae15892349c66c143a5a957ed7256be922285640cbb73296706",
+        "index.html": "d47cede26219df52df7a539f4c9917b4b939a842380136837ff344fcb3e222ee",
+        "assets/games-catalog.js": "539d69bf41f30e23f7bfa97ebda6d4173d94785cf8e137dd943a78d5e9d4f2c2"
       },
       "renewedAuditCommit": "8857df4121f7e433005e3d91dddc0ab09f7bb3fe",
-      "deploymentRun": 41740884604
+      "deploymentRun": 41747999054
     },
     {
       "id": "rall-026",
