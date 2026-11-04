@@ -8,7 +8,7 @@ Expose available editions directly in the homepage game picker. Original launche
 
 | Original game | AI Enhanced | Remix |
 | --- | --- | --- |
-| Rall v054 | Faithful six-map restoration with new Blender tank sprites; same core, controls, collision, solo/duel rules and original audio. Local tests pass; homepage/live verification in progress. | Beacon Siege: three new capture-and-extraction missions. |
+| Rall v054 | Faithful six-map restoration with new Blender tank sprites; same core, controls, collision, solo/duel rules and original audio. Published and verified locally/live, including exact gameplay-state parity, complete solo/duel outcomes, touch/keyboard and homepage selection. | Beacon Siege: three new capture-and-extraction missions. |
 | Top-down Driving | Faithful restoration queued. | Night Circuit: new checkpoint time trials, boost and ghosts. |
 | ShadowRacer | Faithful restoration queued. | Ridge Courier: new delivery routes. |
 

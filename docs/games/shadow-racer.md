@@ -15,3 +15,5 @@ The original gameplay, touch, keyboard, fullscreen and English-interface audit p
 Ridge Courier is published and verified: all three routes, touch and keyboard, audio, recovery, fullscreen and edition switching passed on the live website. Browser automation covers Chromium and installed Chrome in desktop, phone portrait and phone landscape contexts; physical devices and Safari are not covered. [Inventory](../../data/games-inventory.json).
 
 Faithful AI Enhanced is queued separately. The homepage now exposes Original / Remix directly; new gameplay is explicitly labeled Remix.
+
+The direct homepage Original / Remix choices are verified on release 6a98ed689890ff3cfcb3fbf2c122fb154e3dcdc4, Pages 41842371865. Both browsers pass actual driving and full-parent fallback fullscreen/cleanup in desktop and mobile contexts; all 50 runtime/integration hashes match. This updates launch/presentation; game rules are unchanged.

@@ -23,3 +23,5 @@ These are actual Chromium and Chrome browser-interface checks in desktop and tou
 [Open editions](https://joynes.github.io/joynes.se/games/car-topview/)
 
 Faithful AI Enhanced is queued separately. The homepage now exposes Original / Remix directly; new gameplay is explicitly labeled Remix.
+
+The direct homepage Original / Remix choices are verified on release 6a98ed689890ff3cfcb3fbf2c122fb154e3dcdc4, Pages 41842371865. Both browsers pass actual driving and full-parent fallback fullscreen/cleanup in desktop and mobile contexts; all 26 runtime/integration hashes match. This updates launch/presentation; game rules are unchanged.

@@ -374,9 +374,9 @@
       "sourceHead": "5450575feeb6d6b42c48e7d2708ea3863da424c8",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "f67de46b997044830e1d6fd3f0e5eeba0132be46",
-      "repositoryHeadCommit": "dbacb9974a3fe4b579fa57170e3ff7bf25d44f32",
+      "repositoryHeadCommit": "946a19bffb74ae40a899de0e42e56485fb5f2d30",
       "auditUrl": "https://github.com/joynes/car_topview_game/tree/audit/2026-11-03-baseline",
-      "auditCommit": "dbacb9974a3fe4b579fa57170e3ff7bf25d44f32",
+      "auditCommit": "946a19bffb74ae40a899de0e42e56485fb5f2d30",
       "auditEvidence": {
         "game": "car-topview",
         "date": "2026-11-03",
@@ -395,8 +395,8 @@
         "publicUrl": "https://joynes.github.io/joynes.se/games/car-topview/"
       },
       "auditFixCommit": "df4bd128c42489756aa32362cf6dfd12c2af7c4e",
-      "deploymentCommit": "543ff67914cb99c4d6d3a50847a847546e46f6e8",
-      "deploymentRun": 41735297215,
+      "deploymentCommit": "6a98ed689890ff3cfcb3fbf2c122fb154e3dcdc4",
+      "deploymentRun": 41842371865,
       "inGameControlsAndFullscreenStatus": "passed",
       "secondaryActionTouchAuditStatus": "passed",
       "englishInterfaceAuditStatus": "passed",
@@ -468,7 +468,7 @@
         "deploymentCommit": "543ff67914cb99c4d6d3a50847a847546e46f6e8",
         "deploymentRun": 41735297215
       },
-      "auditFindings": "Direct homepage edition picker passes both browsers and forwarded fixtures. Rall054 faithful AI Enhanced preserves exact Original gameplay. Existing new concepts are Remix. Source committed before publication; final live checks pending."
+      "auditFindings": "Direct homepage editions verified locally and live. Faithful Rall054 AI Enhanced preserves Original gameplay; reimagined games are Remix. Touch/keyboard, full-parent fullscreen, actual driving and release hashes pass; gameplay engines unchanged."
     },
     {
       "id": "sdl-space",
@@ -654,8 +654,8 @@
       "auditUrl": "https://github.com/joynes/shadow-racer/tree/audit/2026-11-03-baseline",
       "inGameControlsAndFullscreenStatus": "passed",
       "englishInterfaceAuditStatus": "passed",
-      "repositoryHeadCommit": "73787852f36dc8e4aaf2847820015829872ce1d1",
-      "auditCommit": "73787852f36dc8e4aaf2847820015829872ce1d1",
+      "repositoryHeadCommit": "b6778712a02e9c7feab924a2d576e706baa7ded0",
+      "auditCommit": "b6778712a02e9c7feab924a2d576e706baa7ded0",
       "auditEvidence": {
         "game": "shadow-racer",
         "date": "2026-11-04",
@@ -710,8 +710,8 @@
       },
       "secondaryActionTouchAuditStatus": "passed",
       "sourceArchiveCommit": "f839b50",
-      "deploymentCommit": "23333ac4e0c9108a8aca6efe61ecbdf38441151b",
-      "deploymentRun": 41740884604,
+      "deploymentCommit": "6a98ed689890ff3cfcb3fbf2c122fb154e3dcdc4",
+      "deploymentRun": 41842371865,
       "enhancedEdition": {
         "title": "Ridge Courier",
         "status": "published_verified",
@@ -731,7 +731,7 @@
         "liveChecks": "All three routes completed on the public site through trusted browser keyboard input and native CDP touch in portrait and landscape, with three deliveries, zero-rescue wins, cargo meshes, unlocks and persisted records. All thirteen load failures recover to actual driving. Actual generated-audio output, complete input/cancel/restart/focus/native fullscreen/rotation/fallback suite, crash loss/replay, real iframe focus and real WebGL context-loss recovery pass. Canonical homepage and actual joynes.se direct-window edition switch, enhanced keyboard/native-touch driving, fullscreen and return to playable Original pass in all three viewports. All 49 runtime and integration SHA256 values match; Pages 41747999054 succeeded.",
         "auditCommit": "14ec77d5484ef8db4d503e77e377a5b924392057"
       },
-      "auditFindings": "Direct homepage edition picker passes both browsers and forwarded fixtures. Rall054 faithful AI Enhanced preserves exact Original gameplay. Existing new concepts are Remix. Source committed before publication; final live checks pending."
+      "auditFindings": "Direct homepage editions verified locally and live. Faithful Rall054 AI Enhanced preserves Original gameplay; reimagined games are Remix. Touch/keyboard, full-parent fullscreen, actual driving and release hashes pass; gameplay engines unchanged."
     },
     {
       "id": "rall-026",
@@ -788,15 +788,15 @@
       "sourceHead": "c867cc03bf7540e0d44721cf910c5de3b1723923",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "58f6a89f2440f84afe624a76b205145e1ce2f073",
-      "repositoryHeadCommit": "ce262bd9a7ecab3e88920385c297b63a1be017c1",
+      "repositoryHeadCommit": "f1268ac4161256190427d87715ca924e14e046ec",
       "auditUrl": "https://github.com/joynes/rall0054/tree/audit/2026-11-03-baseline",
       "inGameControlsAndFullscreenStatus": "passed",
       "englishInterfaceAuditStatus": "passed",
-      "auditFindings": "Direct homepage edition picker passes both browsers and forwarded fixtures. Rall054 faithful AI Enhanced preserves exact Original gameplay. Existing new concepts are Remix. Source committed before publication; final live checks pending.",
+      "auditFindings": "Direct homepage editions verified locally and live. Faithful Rall054 AI Enhanced preserves Original gameplay; reimagined games are Remix. Touch/keyboard, full-parent fullscreen, actual driving and release hashes pass; gameplay engines unchanged.",
       "implementationCommit": "7145d6497fd000ee2dabdd7e7092672e049b1d46",
-      "auditCommit": "ce262bd9a7ecab3e88920385c297b63a1be017c1",
-      "deploymentCommit": "7a86c42de7aed09601f51f935c872201f537d6ac",
-      "deploymentRun": 41788531534
+      "auditCommit": "f1268ac4161256190427d87715ca924e14e046ec",
+      "deploymentCommit": "6a98ed689890ff3cfcb3fbf2c122fb154e3dcdc4",
+      "deploymentRun": 41842371865
     },
     {
       "id": "rall-006",
