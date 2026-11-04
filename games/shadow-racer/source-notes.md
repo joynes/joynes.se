@@ -43,6 +43,6 @@ Both releases require actual keyboard/native touch checks for all directions, co
 
 These are desktop and touch-enabled Chromium/Chrome checks. Physical devices and Safari require separate verification. Current results and exact release identities are recorded in the homepage inventory.
 
-## AI Enhanced: Ridge Courier
+## Remix: Ridge Courier
 
 A separate 3D delivery adventure: three routes, parcel stops, boost energy, wind, gap jumps, checkpoint repairs and local best times. It uses new Blender models and ElevenLabs music, motor and delivery sounds. The restored editions keep their original physics and files. Saves are separate. [Play Ridge Courier](enhanced/) · [Asset credits and generation provenance](enhanced/provenance.json).

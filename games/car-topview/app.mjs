@@ -53,7 +53,9 @@ for(const event of['pointerup','pointercancel','lostpointercapture'])canvas.addE
 for(const button of document.querySelectorAll('.toolbar button'))button.addEventListener('pointerdown',e=>e.preventDefault());
 canvas.addEventListener('blur',release);window.addEventListener('blur',()=>{if(running)pause(true);});document.addEventListener('visibilitychange',()=>{if(document.hidden&&running)pause(true);last=0;});
 window.addEventListener('resize',release);
-bindFullscreen($('#board'),$('#fullscreen'),()=>{release();last=0;acc=0;if(running){draw();canvas.focus({preventScroll:true});}});
+$('#fullscreen').addEventListener('pointerdown',e=>{if(e.pointerType==='touch')e.preventDefault();});
+bindFullscreen($('#board'),$('#fullscreen'),active=>{release();last=0;acc=0;if(running){draw();canvas.focus({preventScroll:true});}if(parent!==window)parent.postMessage({type:'joynes:game-view',active},location.origin);});
+window.addEventListener('message',e=>{if(e.source===parent&&e.origin===location.origin&&e.data?.type==='joynes:game-view-close'&&$('#board').classList.contains('game-view-expanded'))$('#fullscreen').click();});
 function frame(now){if(running&&!paused&&!document.hidden){if(last)acc+=Math.min(.1,(now-last)/1000);while(acc>=1/60){step(car,input);acc-=1/60;}draw();}last=now;requestAnimationFrame(frame);}requestAnimationFrame(frame);
 window.addEventListener('pagehide',()=>{if(running)pause(true);});
 

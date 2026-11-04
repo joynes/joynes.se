@@ -10,6 +10,8 @@ The original has no audio or working ghost playback. Its abandoned leaderboard u
 
 [Detailed sources and preservation proof](../../games/shadow-racer/source-notes.md)
 
-The original gameplay, touch, keyboard, fullscreen and English-interface audit passed locally and live. AI Enhanced adds **Ridge Courier**: three new Blender route worlds, parcel deliveries, boost, wind, gap jumps and checkpoint repairs, with ElevenLabs audio. Choose **Original** or **AI Enhanced** at launch. Local records and assets are separate.
+The original gameplay, touch, keyboard, fullscreen and English-interface audit passed locally and live. Remix adds **Ridge Courier**: three new Blender route worlds, parcel deliveries, boost, wind, gap jumps and checkpoint repairs, with ElevenLabs audio. Choose **Original** or **Remix** at launch. Local records and assets are separate.
 
 Ridge Courier is published and verified: all three routes, touch and keyboard, audio, recovery, fullscreen and edition switching passed on the live website. Browser automation covers Chromium and installed Chrome in desktop, phone portrait and phone landscape contexts; physical devices and Safari are not covered. [Inventory](../../data/games-inventory.json).
+
+Faithful AI Enhanced is queued separately. The homepage now exposes Original / Remix directly; new gameplay is explicitly labeled Remix.

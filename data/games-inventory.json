@@ -56,7 +56,7 @@
         "games/web-quizzes/questions.json": "9bb2d82c4e317c1747b7ae58b99e10436f936c87896f5c97e114d9921c57bd61",
         "games/web-quizzes/app.mjs": "707b8d6004c33cee1690289cdb15e475fd9eb248b53387dc1a6c684bd99f110b",
         "games/web-quizzes/source-notes.md": "3a18494f56de0f8a2b45206b101a109d2002d7625b149633cac008cbde932b55",
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d"
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6"
       },
       "websiteSection": "quizzes",
       "originalTitle": "Fr\u00e5gespelet",
@@ -124,7 +124,7 @@
         "games/grimace-gemini/app.mjs": "038d066b9a36dd6c4e4c0b6d76d17b6a32e8e3e555140d749d99306af01c345d",
         "games/grimace-gemini/core.mjs": "afbe23a4d4b130cff84afacb199d785bc7c666f7f99f567b4030c370e2e734d3",
         "games/grimace-gemini/styles.css": "eac894c87349643e5c7c072594e4d5503ec7ce0cfac7d4172add4c381d000fba",
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d"
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6"
       },
       "websiteSection": "quizzes",
       "originalTitle": "Milians Grimace Matte-spel \u2014 Gemini"
@@ -184,7 +184,7 @@
         "games/grimace-codex/core.mjs": "3a2369704de27b077329d5e1c4f185f9240bacfacaab4fd215016e3ce586e740",
         "games/grimace-codex/questions.mjs": "0aba6d91d12c3aa49a9fb49e234952cdfc2c2389e753715dcdb13376b8af8b73",
         "games/grimace-codex/styles.css": "8825eadb2ca8f75ed3ac22dc4c00c5f9b4b7630f8c5664c40e6eea8342015aa5",
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d"
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6"
       },
       "websiteSection": "quizzes",
       "originalTitle": "Milians Grimace Matte-spel \u2014 Codex"
@@ -449,8 +449,8 @@
         "games/hardword/sw.js": "d77b7d78300d37537c5dbafc1565b557ca184c4773731a1f706320b5d845e7cc",
         "games/hardword/original-assets.json": "726a02253d5b136bd2f23acbf4605210ab09648a9a0519ecaa7d8e7241c5e685",
         "games/hardword/source-notes.md": "7781fa5d0d650c8687adc92f6c5a58c422a6729209fece5bcb5b81a083fbf231",
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d",
-        "index.html": "bcbdc8900d7a753cc2838fa399c77a3b5f2503b78912dd72f244af0fe786cd41"
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6",
+        "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49"
       },
       "originalTitle": "Skoluppgifter / Ordhj\u00e4lten"
     },
@@ -559,8 +559,8 @@
       ],
       "homepageIntegrationCommit": "9411200bb9ced634eb6a72ab728af8e7a54a1b3d",
       "homepageVerifiedFiles": {
-        "index.html": "bcbdc8900d7a753cc2838fa399c77a3b5f2503b78912dd72f244af0fe786cd41",
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d"
+        "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49",
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6"
       },
       "websiteSection": "ai",
       "sourceAuditCommit": "0999254eb63b1d173acf8cedb42033e945d6f24a",
@@ -648,8 +648,8 @@
         "games/marble-tables/index.html": "b7851b3116c4d88477713ca21aae71c2ddbd6fd47c742e5ae8d70c8f74ba3679",
         "games/marble-tables/keyboard-pointer.js": "5b632567ac794907c83cc9cb6b13da9db6134a9fd958e3bc9be470d424cda0e4",
         "games/marble-tables/styles.css": "e7a7488c23778a7e160d6130cfac796435c35a6612b037bc26c95527912dc20d",
-        "index.html": "bcbdc8900d7a753cc2838fa399c77a3b5f2503b78912dd72f244af0fe786cd41",
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d",
+        "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49",
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6",
         "docs/games/marble-tables.md": "632024309c0b0ca609a3428933245a1b6e8befcd8d21bec23fd94e5d8a3da89c"
       },
       "inputSupport": {
@@ -738,8 +738,8 @@
         "games/simple-driving/Build/cartWeb2.loader.js": "b2857ce93350711103bd72fbc6b665f16bb09afdf65542b52549ecd05b812a54",
         "games/simple-driving/Build/cartWeb2.wasm": "10cb1df56489a17bdab24b1ccdb3acad9f2049de604661c62409d9f26f100afd",
         "games/simple-driving/Build/cartWeb2.data": "f464a31a28caeec8b24e2059aa57e517c4a3c670fc62462fce9f5055f7dd47f5",
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d",
-        "index.html": "bcbdc8900d7a753cc2838fa399c77a3b5f2503b78912dd72f244af0fe786cd41"
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6",
+        "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49"
       },
       "previousPublishedUrl": "https://joynes.github.io/joynes.se/games/simple-driving/",
       "exclusionReason": "Removed at the owner's request: proof-of-concept driving demo with too little gameplay.",
@@ -807,8 +807,8 @@
         "games/simple-driving/Build/cartWeb2.wasm": "10cb1df56489a17bdab24b1ccdb3acad9f2049de604661c62409d9f26f100afd",
         "games/simple-driving/Build/cartWeb2.loader.js": "b2857ce93350711103bd72fbc6b665f16bb09afdf65542b52549ecd05b812a54",
         "games/simple-driving/Build/cartWeb2.framework.js": "18d7c9a73fddf3825d1e3cf71f948157e4720270e1e41651f687c76f29e4b3be",
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d",
-        "index.html": "bcbdc8900d7a753cc2838fa399c77a3b5f2503b78912dd72f244af0fe786cd41"
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6",
+        "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49"
       },
       "deploymentRecovery": {
         "failedAndInconsistentRerun": 41290922621,
@@ -888,8 +888,8 @@
         "games/godot-reading/provenance.json": "771ba6be93c5675555f2fc55745732b076f370dc88c280e08155b3fbc7ce05a8",
         "games/godot-reading/source-notes.md": "0e1b35e181f573430ce7676319d4e857167d571063ccdc01929435470501eed0",
         "games/godot-reading/styles.css": "82389cff0b6c3330b492d290a4af4c6460fd373c816f78a756d22a3bd67ef401",
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d",
-        "index.html": "bcbdc8900d7a753cc2838fa399c77a3b5f2503b78912dd72f244af0fe786cd41"
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6",
+        "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49"
       },
       "deploymentRun": 41293921395,
       "websiteSection": "retro",
@@ -899,10 +899,10 @@
         "games/godot-reading/core.mjs": "4e6543ec6311294c706c17cdb79b98da69b90cca136bab7aef029e8ddbf970c0",
         "games/godot-reading/provenance.json": "771ba6be93c5675555f2fc55745732b076f370dc88c280e08155b3fbc7ce05a8",
         "games/godot-reading/index.html": "f95fde4321bf6d4289eec00ec1c3a6362139d677c42d276d05b347fc0a7e942e",
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d",
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6",
         "games/godot-reading/styles.css": "82389cff0b6c3330b492d290a4af4c6460fd373c816f78a756d22a3bd67ef401",
         "games/godot-reading/source-notes.md": "0e1b35e181f573430ce7676319d4e857167d571063ccdc01929435470501eed0",
-        "index.html": "bcbdc8900d7a753cc2838fa399c77a3b5f2503b78912dd72f244af0fe786cd41",
+        "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49",
         "docs/games/godot-reading.md": "cc8a74b4661dcf78daacb15fcd4158268cd711b6ed362c4a7b8355ae80383d47"
       },
       "originalTitle": "Godot Reading Game",
@@ -927,7 +927,7 @@
           "url": "https://github.com/joynes/car_topview_game"
         }
       ],
-      "work": "Preserve the original free-driving physics and media, with reliable keyboard and simultaneous touch controls.",
+      "work": "Direct homepage Original/Remix choices verified locally, with faithful AI Enhanced for Rall054. Original gameplay retained; complete homepage/live publication verification pending.",
       "tests": [
         {
           "command": "npm test",
@@ -1001,11 +1001,11 @@
       "webPath": "games/car-topview/",
       "implementationNotes": "Latest free-drive Godot4 prototype; original car PNG and looping PCM24 engine WAV preserved. Acceleration 400, max speed 800, friction 200, steer 3 rad/s, drift factor 2, pitch 0.5\u20133. JavaScript formula port and rotated rectangle wall contacts, not native Godot. Source wall collision offset repaired; start/pause/reset/mute and multitouch added. No authored races or score.",
       "releaseFilesSha256": {
-        "games/car-topview/app.mjs": "7849950d89b2d925b166877060278be5af3632fbedad6c1a9c866e3b3c3a75ee",
+        "games/car-topview/app.mjs": "70c7cdc8060a739e2a15eb2db7b82becb7451cd591cd2b81ca45360248728055",
         "games/car-topview/car.png": "92daedcd612290c05ff3debedce20b1ac0b1006c8a9d03b035b21b7be9df2236",
         "games/car-topview/core.mjs": "fb54033ea52e79f93b7458d4a8ab8f0958e9e3042a01b1bb1875e08cbe11dd9c",
         "games/car-topview/engine.wav": "729dbfa505b858123746d8f2930691a066b5da46934ff075bc30de1efa1d5732",
-        "games/car-topview/enhanced/app.mjs": "890a14d06b642c67d0a60e5c923d17f2139e63f55c64700f33f23a1f2351a8f7",
+        "games/car-topview/enhanced/app.mjs": "a9409d5c83d32e3a95fa5678c1bc3132091e6472bc64b04bcc579448e7cacf5d",
         "games/car-topview/enhanced/assets/car.png": "4bf0ca9b2b29c23c7f943a6ed44b917d224cab9dd87c4470c21e67001ad01f45",
         "games/car-topview/enhanced/assets/chime.mp3": "56b270803bb7fbd4251d658f0318e8b5166ab7eb5effd15cb1b6a2ab1273c821",
         "games/car-topview/enhanced/assets/course-garden.jpg": "522a4de6d70c57f0fedb02eafdaa5809c71e339c5b8f856a2838ca83aa729004",
@@ -1015,17 +1015,18 @@
         "games/car-topview/enhanced/assets/engine.mp3": "d606157ff936ace31513dcddcf6889b13d5dc5e22cd5d9b9055ca543a930b7d3",
         "games/car-topview/enhanced/assets/music.mp3": "4bad1e0cb97a5ecd76b05b36a1586d573d5e7c8391b43fea4dd6bbdf3c530e3d",
         "games/car-topview/enhanced/core.mjs": "5d2eda32ee4c9a6240d1da29258f976d618febd44f46dd6e39dde735c70c263f",
-        "games/car-topview/enhanced/index.html": "ec42634d73af659e3ba871602f2417402b6552cc7af64341bd40332aceef9863",
-        "games/car-topview/enhanced/provenance.json": "0d6891922b6425d5f4ce8f8256454311989a8974a711adf2b88567dde3ebde46",
+        "games/car-topview/enhanced/index.html": "1b97d0616d99d41d7cd9dcf321dccc6e13412936dfd969196903edd3457686d0",
+        "games/car-topview/enhanced/provenance.json": "1ff0b3ac6f13e668171d915cc19bbf65a1410686a41c63e799e502e982e333d8",
         "games/car-topview/enhanced/styles.css": "bb8660d140d5e5d7b10cd28b9ebb5bd62ec4bcb84114a314a8fbfc56bfbcc5cb",
-        "games/car-topview/index.html": "7b0bc62974f631eaffe799c1976eae080c70a748527eaca8d25a7f82c9737684",
+        "games/car-topview/index.html": "c8374582ed333f5ae56078a878627fe311324c2f382b8485d98b300ccebf81fe",
         "games/car-topview/provenance.json": "2c7a3b776e92c8842f8e3b698d0ae788f322775001715e4b079da54f9778f6f9",
-        "games/car-topview/source-notes.md": "835f4778a09bda0953b8bba9112efb77755167d731ede143a305c53cba274763",
+        "games/car-topview/source-notes.md": "1906af170225783f80fa3d37e8ca428cd982c692649e5c1fa706737f7e23ce5f",
         "games/car-topview/styles.css": "f1a6532206aa7acd92aaf9b861b51e72b6cd1ea61d4f743bfce339873684ba36",
-        "index.html": "bcbdc8900d7a753cc2838fa399c77a3b5f2503b78912dd72f244af0fe786cd41",
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
-        "docs/games/car-topview.md": "a72015e7e88fb97eff20c8af36015b7bfdfcbbc4ae1d438e14472773baca12b1"
+        "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
+        "docs/games/car-topview-assets.json": "55c8e1853fb2c90ec00afd76e7973f4c5313b8c491c912362fd9362b58ef7422",
+        "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49",
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6"
       },
       "deploymentRun": 41735297215,
       "websiteSection": "ai",
@@ -1033,7 +1034,7 @@
       "renewedAuditSourceCommit": "f8ba1cd81787d3062fda246d2e86a9fb36718324",
       "renewedAuditCommit": "f8ba1cd81787d3062fda246d2e86a9fb36718324",
       "inGameControlsAndFullscreenStatus": "passed",
-      "enhancedEdition": {
+      "remixEdition": {
         "status": "published_verified",
         "launchChoices": [
           "Original",
@@ -1042,8 +1043,8 @@
         "graphics": "Blender",
         "soundAndMusic": "ElevenLabs",
         "title": "Night Circuit",
-        "version": "1.0.0",
-        "sourceCommit": "b1a184589f436b553b5a53e3268c6f24e4ac0ada",
+        "version": "1.0.1",
+        "sourceCommit": "dbacb9974a3fe4b579fa57170e3ff7bf25d44f32",
         "webPath": "games/car-topview/enhanced/",
         "publicUrl": "https://joynes.github.io/joynes.se/games/car-topview/enhanced/",
         "localChecks": [
@@ -1058,8 +1059,22 @@
         "verifiedAt": "2026-11-04",
         "deploymentCommit": "543ff67914cb99c4d6d3a50847a847546e46f6e8",
         "deploymentRun": 41735297215,
-        "liveChecks": "All three courses completed on canonical URLs through keyboard and native touch; full generated-audio/load-recovery, input/restart/focus/native fullscreen/fallback, real iframe focus and original-game full/input regression suites passed. Canonical embedded and actual joynes.se direct-window edition switch, real driving, simultaneous touch boost and keyboard/touch fullscreen passed at desktop, phone portrait and phone landscape sizes. All 25 runtime/integration/documentation files match SHA256; Pages deployment succeeded."
-      }
+        "liveChecks": "All three courses completed on canonical URLs through keyboard and native touch; full generated-audio/load-recovery, input/restart/focus/native fullscreen/fallback, real iframe focus and original-game full/input regression suites passed. Canonical embedded and actual joynes.se direct-window edition switch, real driving, simultaneous touch boost and keyboard/touch fullscreen passed at desktop, phone portrait and phone landscape sizes. All 25 runtime/integration/documentation files match SHA256; Pages deployment succeeded.",
+        "edition": "Remix",
+        "faithfulness": "New gameplay inspired by the original; explicitly distinct from a faithful restoration."
+      },
+      "enhancedEdition": {
+        "status": "planned-faithful-restoration",
+        "launchChoices": [
+          "Original",
+          "AI Enhanced",
+          "Remix"
+        ],
+        "graphics": "Blender",
+        "intent": "Keep original gameplay, maps, controls, progression and identity. Restore graphics/audio; new concepts belong to Remix."
+      },
+      "version": "2024-car-web.6",
+      "resourceAudit": "docs/games/car-topview-assets.json"
     },
     {
       "id": "sdl-space",
@@ -1139,8 +1154,8 @@
         "games/sdl-space/provenance.json": "8bb1d152becb8495f0368fb7749b7ab83921e22861eed2c74e0948ded9c103ff",
         "games/sdl-space/source-notes.md": "cec67cf314ea095e0b77e136972be9ca026e62b1b09a2f175a4768363245fc56",
         "games/sdl-space/styles.css": "71dd1274cb3d5ee861c48d31b951d3b99346e0dc0b3c61494ae4f2cbd69599e1",
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d",
-        "index.html": "bcbdc8900d7a753cc2838fa399c77a3b5f2503b78912dd72f244af0fe786cd41",
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6",
+        "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49",
         "docs/games/sdl-space.md": "9c7377464a776097adac745626959ce2cf9a0e7e91a7d80a4591961e72c7a929",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a"
       },
@@ -1234,13 +1249,13 @@
       "sourceCommitsPushed": true,
       "implementationNotes": "Preserved original 800x450 authoritative shared world, emoji figures, speed250, prediction/reconciliation, tuning and autopilot. English interface with translucent in-game thumbpad, restart/fullscreen overlay, keyboard aliases and stale-repeat cleanup after focus/restart. Native fullscreen and unsupported-API expanded view preserve scene proportions. Existing single Fly Machine/region/VM retained. Source commits pushed to the existing private audit branch; no generated builds committed.",
       "externalReleaseFilesSha256": {
-        "index.html": "bcbdc8900d7a753cc2838fa399c77a3b5f2503b78912dd72f244af0fe786cd41",
+        "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49",
         "assets/index-a9746c54.js": "bfc3a908d5ce92a6f58551f21b621fa8112e348622ce2b4ebdd50dbd101808b0",
         "assets/index-b712e067.css": "b712e06732d0982b12543de77c6a6c753fe60d8de64d9ba6d148244148b488f6"
       },
       "catalogReleaseFilesSha256": {
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d",
-        "index.html": "bcbdc8900d7a753cc2838fa399c77a3b5f2503b78912dd72f244af0fe786cd41",
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6",
+        "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49",
         "docs/games/network-2d.md": "ec4d989fdb27681090410ec57fc2e12c7f3e2723226c842f74ff1595ae3bade7"
       },
       "catalogUrl": "https://joynes.github.io/joynes.se/#games/ai/network-2d",
@@ -1302,7 +1317,7 @@
       "sourceCommitsPushed": false,
       "implementationNotes": "Complete original 53MB FBX, 74340 vertices, 65 bones and walk clip preserved; all six original choices are aliases for the same rig. Original speeds/camera/tint/100 trees/50 rocks retained, now one shared authoritative forest and collision model. Reliable loading/retry, isolated materials, hybrid/two-thumb controls, personal configuration export and reconnect cleanup. Private source commits retained in sibling checkout; existing Fly app and ARN shared1CPU/256MB retained with exactly one in-memory world.",
       "externalReleaseFilesSha256": {
-        "index.html": "bcbdc8900d7a753cc2838fa399c77a3b5f2503b78912dd72f244af0fe786cd41",
+        "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49",
         "main.js": "4ed77c23145edb598aff438105cfea806b755150490e48dcae2f8ceff24cf319",
         "style.css": "3784389cb505c68d9017e52f482d4ded7d35a43f670c481e50931502a9c19ac7",
         "config.yaml": "1340d534d43c1940219628ba8221cdbacda3077d6f4d37656036fa96298ba511",
@@ -1321,8 +1336,8 @@
       },
       "deploymentImageManifestSha256": "b9869fd8b90e20c3e637175f0a03aa59de147d159a431d6620480dbebf24ccfe",
       "catalogReleaseFilesSha256": {
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d",
-        "index.html": "bcbdc8900d7a753cc2838fa399c77a3b5f2503b78912dd72f244af0fe786cd41",
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6",
+        "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49",
         "docs/games/network-3d.md": "5aa5b90875d0ded41070b596146440434bc5c056d16271c1a59956b8e9dbb498"
       },
       "catalogUrl": "https://joynes.github.io/joynes.se/#games/ai/network-3d",
@@ -1408,8 +1423,8 @@
       ],
       "resourceAudit": "docs/games/neon-interceptor-assets.json",
       "catalogReleaseFilesSha256": {
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d",
-        "index.html": "bcbdc8900d7a753cc2838fa399c77a3b5f2503b78912dd72f244af0fe786cd41",
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6",
+        "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49",
         "docs/games/neon-interceptor.md": "1e58974a4ccf0a99ad856372fd7e2d53a5be6ecbdccffed5afdbf2194cdbc287",
         "docs/games/neon-interceptor-assets.json": "56ff5f4e82f61f929dc6451b4e5c15ac86cfa7302545dcc98508b8bd6614ad22"
       },
@@ -1489,7 +1504,7 @@
       "catalogCommit": "66c76ea53cb3e403a8bff9a55ab3db924bbf6635",
       "catalogDeploymentRun": 41336710668,
       "publishedFileSha256": {
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d",
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6",
         "docs/games/worldforge.md": "256ea3317260ef758a5dd94f5ecad5a3ab4d674caf40d39b9d81aa8bd26d065a",
         "docs/games/worldforge-assets.json": "3fff753caa75822e9a4962033784b2449c5c461c9fb492ff999bee965c02b321"
       },
@@ -1506,7 +1521,7 @@
           "url": "https://drive.google.com/drive/folders/1TT9grPo0r_9tHhVN6Lm97YAjC5JnzQh7"
         }
       ],
-      "work": "Preserve both native Flash/AS3 releases with English in-scene controls, combined touch/keyboard input, pause, fullscreen, local records and recovery.",
+      "work": "Direct homepage Original/Remix choices verified locally, with faithful AI Enhanced for Rall054. Original gameplay retained; complete homepage/live publication verification pending.",
       "tests": [
         {
           "command": "npm test",
@@ -1635,45 +1650,17 @@
         "games/shadow-racer/vendor/ruffle/ruffle.js.map": "bf8dabc8144a0e087cdbade5da77de5a998ab55a271b32bae6e3173248d4188a",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "docs/games/shadow-racer-assets.json": "b8bc0ca0b1e14ae15892349c66c143a5a957ed7256be922285640cbb73296706",
-        "index.html": "bcbdc8900d7a753cc2838fa399c77a3b5f2503b78912dd72f244af0fe786cd41",
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d"
+        "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49",
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6"
       },
       "websiteSection": "retro",
-      "enhancedEdition": {
-        "status": "published_verified",
-        "launchChoices": [
-          "Original",
-          "AI Enhanced"
-        ],
-        "graphics": "Blender",
-        "soundAndMusic": "ElevenLabs",
-        "title": "Ridge Courier",
-        "concept": "A new 3D side-view delivery buggy: distinct routes, cargo stops, boost, checkpoints and Blender models with ElevenLabs audio.",
-        "version": "1.0.0",
-        "webPath": "games/shadow-racer/enhanced/",
-        "provenance": "games/shadow-racer/enhanced/provenance.json",
-        "sourceCommit": "a83e8ac061ce37dc69448decf127247d37008b98",
-        "publicUrl": "https://joynes.github.io/joynes.se/games/shadow-racer/enhanced/",
-        "localChecks": [
-          "All three routes completed through real browser keyboard input on desktop and native CDP touch in phone portrait and landscape. Three deliveries, zero-rescue wins, disappearing Blender parcel meshes, route unlocks, best times and reload persistence verified; no game-state injection.",
-          "Generated audio decoded to nonzero buffers and actual output after user activation. All thirteen route/model/audio/module/helper failures recovered through visible Retry to real driving.",
-          "Cached Chromium and installed Chrome input suites pass desktop and touch-enabled mobile contexts: physical-keyboard aliases/axes, actual lean/boost/jump, independent release, mixed touch/keyboard ownership, four pad directions, cancellation, stale keys/contacts after restart, focus loss, second-finger actions and actual mute/unmute output.",
-          "In-scene bounds, native fullscreen in both orientations, rotated WebGL viewport, immediate keyboard after entry/exit, fallback/Escape and pause preservation pass. Real iframe-window focus loss freezes physics and discards input. Actual WebGL context loss disables play, clears controls and reloads to playable driving.",
-          "Actual rough landings consume repairs, recover the buggy to its checkpoint, clear held controls, reach three-repair loss and allow replay. Unit rule checks separately verify mandatory braking, checkpoint positioning, timeout, terminal state, boost energy/cooldown and terrain gaps.",
-          "Original/AI Enhanced choice, enhanced keyboard/native-touch driving and native fullscreen, return to playable original pass through the canonical homepage preview and cross-origin forwarding fixture in all three viewports. Original full native finish/crash/records/retry/storage and six trusted input cases pass. Root unit/preservation suites pass; original movies/runtime unchanged."
-        ],
-        "verifiedAt": "2026-11-04",
-        "deploymentCommit": "05de03a3d3f5848a494a7fe3e082d060ddd49251",
-        "deploymentRun": 41747999054,
-        "liveChecks": "All three routes completed on the public site through trusted browser keyboard input and native CDP touch in portrait and landscape, with three deliveries, zero-rescue wins, cargo meshes, unlocks and persisted records. All thirteen load failures recover to actual driving. Actual generated-audio output, complete input/cancel/restart/focus/native fullscreen/rotation/fallback suite, crash loss/replay, real iframe focus and real WebGL context-loss recovery pass. Canonical homepage and actual joynes.se direct-window edition switch, enhanced keyboard/native-touch driving, fullscreen and return to playable Original pass in all three viewports. All 49 runtime and integration SHA256 values match; Pages 41747999054 succeeded."
-      },
       "renewedAuditStatus": "passed",
       "inGameControlsAndFullscreenStatus": "passed",
       "renewedAuditSourceCommit": "389aadf7c8c8366eae4a4083429d0cd22dac066f",
       "releaseFilesSha256": {
         "games/shadow-racer/LICENSE_APE": "7e15278f714da10a6fcdb76321a4ae519b8e190f8b3881926298cffcd3497f14",
-        "games/shadow-racer/app.mjs": "314fe964980f3964f5c458c4ed961e74dbe084881adaf00767b4ce7123bb3d75",
-        "games/shadow-racer/enhanced/app.mjs": "206a9c8fb896a21404b6122454b9b684dafccc38b58284228db8497fd511af72",
+        "games/shadow-racer/app.mjs": "6c4dfdd6e4e2f2185f9da8330576aac26dcdb9d59bec5633e2b87ef99c7f1d8b",
+        "games/shadow-racer/enhanced/app.mjs": "f883dc34ad5040b0ab023ff36a474be6e46916c6325d33449c4239d3bee9ce3c",
         "games/shadow-racer/enhanced/assets/buggy-card.png": "4aea57a22ae354e8de415b04e9d330da0f15f442ac06d929286d5eb0d7b549ef",
         "games/shadow-racer/enhanced/assets/buggy.glb": "93c91ee128711ca1c8e325d9fd85e6cdb77f670260b6e2fe8229e8194ba24922",
         "games/shadow-racer/enhanced/assets/delivery.mp3": "e96a2b40553052a3f06bb97b826aff2ae80b1455221c7ff942ae1280b48fbd63",
@@ -1688,21 +1675,21 @@
         "games/shadow-racer/enhanced/assets/routes.json": "5ca85320229b2a77a547c8965c0289bf23dab2630702544d7614d1bf364050e0",
         "games/shadow-racer/enhanced/core.mjs": "c3bbf84468aa71763d4dc60a2b399359831592956b9cad20c9b46ee361a6d4b0",
         "games/shadow-racer/enhanced/graphics.mjs": "48adb1b389bf4d5ee377e5131a9191a858056d4b93db80b902dbdc8fbe4fd2fa",
-        "games/shadow-racer/enhanced/index.html": "0f2751d4da3f8bf87ae4e3d5f0f46aa8051f438782850932d2054229e5de5c67",
-        "games/shadow-racer/enhanced/provenance.json": "dd1ac64dbae80fd20d3bc7aaed2a84b8a8320e3808b70377f31985e55594e8b1",
+        "games/shadow-racer/enhanced/index.html": "abe715fae3f4515d2b7a74cd91dc2f50ab93625e57ef568601c099be805a65a5",
+        "games/shadow-racer/enhanced/provenance.json": "f5f357a9608ab24b6963d8d014a9def85691305c1691f26afd5207409b3741da",
         "games/shadow-racer/enhanced/styles.css": "ee3e5bc8ae2aafa1b2fe1351e2ceb774654f8052745a49af4d2461a6423e706f",
         "games/shadow-racer/enhanced/vendor/THREE_LICENSE": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
         "games/shadow-racer/enhanced/vendor/render-engine.mjs": "fb335b10d13e416bcde88b1d854286ba0c9550ffa07411f79e818b39ac8ba803",
         "games/shadow-racer/enhanced/vendor/render-engine.mjs.LEGAL.txt": "cc7cc7e2f53d5db0235ab2226e85fc6e91655161573b39813b41bb00e5919674",
         "games/shadow-racer/enhanced/vendor/versions.json": "1722868ef2fb803b23c112b20adf8f980a0e78c2ef6b5c5123b54bc5744cfe67",
-        "games/shadow-racer/index.html": "4396b0d27fa40aae789f54c9f28ce1b2dff5b0be8411703949baabd1ab072206",
+        "games/shadow-racer/index.html": "7159e3a87c87c6acec10e2a548c697636c355e8ac38ced81ddc0e7acd0ca4c56",
         "games/shadow-racer/native-observer-proof.json": "782613371e494d411215ba826bc2c3456751417551a8339ba0c6bc09148038ab",
         "games/shadow-racer/original/shadow-racer-20080928.swf": "ca347f3481ee254d60ec3bd856821b6f6546f8567120872509659844622a4e3b",
         "games/shadow-racer/original/shadow-racer-20081005.swf": "4bf85f616c53e2f11fef8c40458e032c2555cbf0a8951bcddcf1f5ca26d73c89",
         "games/shadow-racer/shadow-racer-20080928.swf": "6f56ab49e660bbc3c9b05471b0d2f7cf1d738414b988f953ca5ef79e2e501151",
         "games/shadow-racer/shadow-racer-20081005.swf": "c33a6cee03e839251864e416d6f0e9e93aa855fd6bc6a99b80b67d2f7d85b257",
         "games/shadow-racer/source-manifest.json": "d934d88f5f6a412ed61e1e19b61ddfdb81c3e2ec9e04633a90fc14cefe8967e5",
-        "games/shadow-racer/source-notes.md": "876812bbfebaa5930c60fee74aa947cfce4d9a44f29534dc673904cf1d301d7c",
+        "games/shadow-racer/source-notes.md": "2b88daf1972935406dfc61961316ed7e96ab21465a857ef312efa55e5a19d749",
         "games/shadow-racer/styles.css": "c3116b7b7326f4b1768d93cf083eb528e00419d5d24318019420f61add91147a",
         "games/shadow-racer/vendor/ruffle/172de42e6619eac8f371.wasm": "1ed33b9b71a6b01b9aafafed660be343ffeb2d246c5d79e6425a32bf93e38207",
         "games/shadow-racer/vendor/ruffle/878d548199cddef07035.wasm": "af9b6a13a8f5e8d305bc3ce28a4edf3f6242df1183e8576ad4ca086e9f21eaea",
@@ -1717,12 +1704,54 @@
         "games/shadow-racer/vendor/ruffle/ruffle.js": "26036a94567088dfb3de88a759e8ed10a4cea07b29500af36f345eef42420098",
         "games/shadow-racer/vendor/ruffle/ruffle.js.map": "bf8dabc8144a0e087cdbade5da77de5a998ab55a271b32bae6e3173248d4188a",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
-        "docs/games/shadow-racer-assets.json": "b8bc0ca0b1e14ae15892349c66c143a5a957ed7256be922285640cbb73296706",
-        "index.html": "bcbdc8900d7a753cc2838fa399c77a3b5f2503b78912dd72f244af0fe786cd41",
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d"
+        "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
+        "docs/games/shadow-racer-assets.json": "1d36bc3cfabe2c162eb02e7f43a492a14449c662c72c6f3eaed72b1b02681fc2",
+        "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49",
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6"
       },
       "renewedAuditCommit": "8857df4121f7e433005e3d91dddc0ab09f7bb3fe",
-      "deploymentRun": 41747999054
+      "deploymentRun": 41747999054,
+      "remixEdition": {
+        "status": "published_verified",
+        "launchChoices": [
+          "Original",
+          "AI Enhanced"
+        ],
+        "graphics": "Blender",
+        "soundAndMusic": "ElevenLabs",
+        "title": "Ridge Courier",
+        "concept": "A new 3D side-view delivery buggy: distinct routes, cargo stops, boost, checkpoints and Blender models with ElevenLabs audio.",
+        "version": "1.0.1",
+        "webPath": "games/shadow-racer/enhanced/",
+        "provenance": "games/shadow-racer/enhanced/provenance.json",
+        "sourceCommit": "73787852f36dc8e4aaf2847820015829872ce1d1",
+        "publicUrl": "https://joynes.github.io/joynes.se/games/shadow-racer/enhanced/",
+        "localChecks": [
+          "All three routes completed through real browser keyboard input on desktop and native CDP touch in phone portrait and landscape. Three deliveries, zero-rescue wins, disappearing Blender parcel meshes, route unlocks, best times and reload persistence verified; no game-state injection.",
+          "Generated audio decoded to nonzero buffers and actual output after user activation. All thirteen route/model/audio/module/helper failures recovered through visible Retry to real driving.",
+          "Cached Chromium and installed Chrome input suites pass desktop and touch-enabled mobile contexts: physical-keyboard aliases/axes, actual lean/boost/jump, independent release, mixed touch/keyboard ownership, four pad directions, cancellation, stale keys/contacts after restart, focus loss, second-finger actions and actual mute/unmute output.",
+          "In-scene bounds, native fullscreen in both orientations, rotated WebGL viewport, immediate keyboard after entry/exit, fallback/Escape and pause preservation pass. Real iframe-window focus loss freezes physics and discards input. Actual WebGL context loss disables play, clears controls and reloads to playable driving.",
+          "Actual rough landings consume repairs, recover the buggy to its checkpoint, clear held controls, reach three-repair loss and allow replay. Unit rule checks separately verify mandatory braking, checkpoint positioning, timeout, terminal state, boost energy/cooldown and terrain gaps.",
+          "Original/AI Enhanced choice, enhanced keyboard/native-touch driving and native fullscreen, return to playable original pass through the canonical homepage preview and cross-origin forwarding fixture in all three viewports. Original full native finish/crash/records/retry/storage and six trusted input cases pass. Root unit/preservation suites pass; original movies/runtime unchanged."
+        ],
+        "verifiedAt": "2026-11-04",
+        "deploymentCommit": "05de03a3d3f5848a494a7fe3e082d060ddd49251",
+        "deploymentRun": 41747999054,
+        "liveChecks": "All three routes completed on the public site through trusted browser keyboard input and native CDP touch in portrait and landscape, with three deliveries, zero-rescue wins, cargo meshes, unlocks and persisted records. All thirteen load failures recover to actual driving. Actual generated-audio output, complete input/cancel/restart/focus/native fullscreen/rotation/fallback suite, crash loss/replay, real iframe focus and real WebGL context-loss recovery pass. Canonical homepage and actual joynes.se direct-window edition switch, enhanced keyboard/native-touch driving, fullscreen and return to playable Original pass in all three viewports. All 49 runtime and integration SHA256 values match; Pages 41747999054 succeeded.",
+        "edition": "Remix",
+        "faithfulness": "New gameplay inspired by the original; explicitly distinct from a faithful restoration."
+      },
+      "enhancedEdition": {
+        "status": "planned-faithful-restoration",
+        "launchChoices": [
+          "Original",
+          "AI Enhanced",
+          "Remix"
+        ],
+        "graphics": "Blender",
+        "intent": "Keep original gameplay, maps, controls, progression and identity. Restore graphics/audio; new concepts belong to Remix."
+      },
+      "version": "2008-web.5"
     },
     {
       "id": "rall-026",
@@ -1802,10 +1831,10 @@
         "games/rall-026/vendor/emulators/sources/emulators-v8.5.2.tar.gz": "4f92834936f774ad1e0f8d2cc0fc05dc73cd9962d2b8da0a09f56139a2a70f28",
         "games/rall-026/vendor/emulators/sources/dosbox-528578d.tar.gz": "797efaf22246bbc5b2e6be0a6c791a58addd2bca330e0aa93232780a77e06019",
         "games/rall-026/vendor/emulators/wdosbox.wasm": "b33afba80de1a420c123086e5952d135de041f9e85d4444170e29d9249ec049c",
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d",
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6",
         "games/rall-026/vendor/emulators/wlibzip.js": "b8e55c2aa4c96e961c9965f289c0f40b5d44f02a557dcf980ddc29787b493842",
         "games/rall-026/vendor/emulators/wlibzip.wasm": "25064d970c42ca7ea0fdb8b058204d6e41cc8826a676219677772f5591e8337b",
-        "index.html": "bcbdc8900d7a753cc2838fa399c77a3b5f2503b78912dd72f244af0fe786cd41",
+        "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49",
         "docs/games/rall-026.md": "e689906009815f758a854b186622c68c8fb482ebafd1e260e2091592f1147049",
         "docs/games/rall-026-assets.json": "23aad475f25009756710699965ca81d63f71b7eb230cdfed2ed10e201cc6150b"
       },
@@ -1961,10 +1990,10 @@
         "games/rall-030/vendor/emulators/wlibzip.wasm": "25064d970c42ca7ea0fdb8b058204d6e41cc8826a676219677772f5591e8337b",
         "games/rall-030/vendor/mouse-compat/ALMOUSE.COM": "200942106e626955510b84426802de31790979c1f55d225d7bb65cb74cd3ba37",
         "games/rall-030/vendor/mouse-compat/almouse.asm": "307b24361235edbf526d49ba4c9bc6323c73c4ded087a70832ab903834d2c1c5",
-        "index.html": "bcbdc8900d7a753cc2838fa399c77a3b5f2503b78912dd72f244af0fe786cd41",
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d",
+        "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49",
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6",
         "docs/games/rall-030.md": "fd819f7eccea21de808aa561486b291bd37c5c500bae36d770c7ab9477440168",
-        "docs/games/rall-030-assets.json": "abe806913adf753386e492ca37c24614b09d59d306a1237883136fe024dde25b"
+        "docs/games/rall-030-assets.json": "9cb506dadb892ecc8caf3f30e05487204b08979d5855c669f82de0cf28f499f9"
       },
       "sharedInterfaceCommit": "5ea295cf092444bcee10434953fb12de9ba961b6",
       "websiteSection": "retro",
@@ -1997,7 +2026,7 @@
           "url": "https://drive.google.com/file/d/1kIgJjs2cZA_IERTcx5XekalUaSSO6aTS/view"
         }
       ],
-      "work": "Published and verified Original plus Beacon Siege AI Enhanced: three new Blender capture/extraction missions, siege, shields and ElevenLabs audio. Both launch choices are playable.",
+      "work": "Direct homepage Original/Remix choices verified locally, with faithful AI Enhanced for Rall054. Original gameplay retained; complete homepage/live publication verification pending.",
       "tests": [
         {
           "check": "rules",
@@ -2049,40 +2078,10 @@
       "compatibilityNotes": "docs/games/rall-054-compatibility.md",
       "prototypeSource": "scripts/rall054-probe-ui/",
       "websiteSection": "retro",
-      "enhancedEdition": {
-        "status": "published_verified",
-        "launchChoices": [
-          "Original",
-          "AI Enhanced"
-        ],
-        "title": "Beacon Siege",
-        "version": "1.0.0",
-        "graphics": "Blender",
-        "soundAndMusic": "ElevenLabs",
-        "concept": "Three new 3D tank capture-and-extraction missions, breakable cover, siege mortars, shields, reinforcements, medals and unlocks.",
-        "webPath": "games/rall-054/enhanced/",
-        "publicUrl": "https://joynes.github.io/joynes.se/games/rall-054/enhanced/",
-        "provenance": "games/rall-054/enhanced/credits.json",
-        "sourceCommit": "a4ee1197983de73385ae1f487e14d81ff19f6492",
-        "localChecks": [
-          "All three missions won through actual browser controls on desktop keyboard, portrait and landscape native touch: real AI combat, destructible cover, three beacons, extraction, medals, unlocks, records and reload persistence.",
-          "Native touch verifies aimed mortar cover destruction, finite four-shell ammunition, beacon resupply and a full win; Shield intercepts genuine incoming enemy shots. Keyboard and touch real AI defeats, frozen terminal state, stale held inputs after replay and fresh keyboard control pass.",
-          "Chromium and installed Chrome pass four input viewports: physical keyboard on mobile, four touch contacts, mixed ownership/independent release/cancel, quick taps, stale repeat/restart, Sound/Fullscreen focus, actual audible output/mute, in-scene controls and rotation. Both pass real parent blur/pause, native/fallback fullscreen, forced full-parent fallback, resize and Menu cleanup.",
-          "All 22 representative failed critical resources recover through visible Retry to artwork, real 3D movement/fire and six audio buffers. Denied storage preserves in-memory unlocks after an actual touch victory and remains playable after reload. Actual WebGL context loss and failed-model restore/retry preserve the frozen mission and resume movement in three viewports per browser.",
-          "Original rules and archived media unchanged. Original regression passes 18 complete duels across six maps and three viewports, four input viewports per browser and both browser parent/fullscreen suites. Compact duel controls and fullscreen fallback bridge improved.",
-          "Core/asset checks: 8 passed. Tests use normal browser keyboard/native CDP touch and cloned read-only state; no gameplay injection. Physical devices and Safari not covered.",
-          "Canonical homepage Chrome full-parent fallback and Chromium cross-origin forwarding fixture native fullscreen pass all three sizes: edition selection, actual enhanced keyboard/native-touch combat, playable Original and Retro return. Root unit/preservation suites pass."
-        ],
-        "auditCommit": "23499dcfbcd792cda43ed24de7777eb78e6048a4",
-        "verifiedAt": "2026-11-04",
-        "deploymentCommit": "7a86c42de7aed09601f51f935c872201f537d6ac",
-        "deploymentRun": 41788531534,
-        "liveChecks": "All nine full mission wins, both browser input/frame/graphics suites, 22 loading retries, denied storage after a native-touch win, mortar/shield interactions, real AI defeat/replay, canonical homepage and actual joynes.se version switching/Original return at three sizes per browser, and all 63 release/integration hashes pass. Native fullscreen exercised in Chromium; Chrome uses native where granted or full-page fallback. Mobile contexts are emulated; physical devices and Safari not covered."
-      },
       "implementationRepository": "https://github.com/joynes/rall0054",
       "resourceAudit": "docs/games/rall-054-assets.json",
       "releaseFilesSha256": {
-        "games/rall-054/app.mjs": "c83ab3d17d295fd76efa6b0c2ee65e4791a6696b1fe3651ec3d9c7713cabb8b3",
+        "games/rall-054/app.mjs": "7fb8c6ac99ff444583a087d7e6dc8965a146e970f56e75dab6a9f999bd182ec5",
         "games/rall-054/assets/bullet.png": "2e88403b5aad2e51a2f678bafa2d239fcbbeb8f073ce11b55642dc43035009da",
         "games/rall-054/assets/enter-siege.wav": "63b0a962d6005a0e7af6414921f855cec9ef1c5aa7ecc1cc5f2707947f73ab52",
         "games/rall-054/assets/explosion.png": "41805483ee6df8ebf188f32e7d5465831fe50368deb91e2fc526a6ea83fc0071",
@@ -2127,29 +2126,38 @@
         "games/rall-054/enhanced/assets/tank.glb": "7915a13d73cdeb98d6daad485d9cd92632c95fd37f4f8c5bfdefd334ae19bd26",
         "games/rall-054/enhanced/audio.mjs": "19858c4a9b9f65fdf5a336081505f269b5364ea58902b0f6e2ee5cde22c84cb8",
         "games/rall-054/enhanced/core.mjs": "51d609d5d741f07704eb0d8eacdd9bbef229c2667db995fbc2df8cd337736156",
-        "games/rall-054/enhanced/credits.json": "0bdb4e12f5022971fcdc80dd908c75334722169fc9c152937c79ba704ec3c232",
+        "games/rall-054/enhanced/credits.json": "c5ef0f1d0bd298114655a215641a2bb2ba5c609dec0fa47ecea6cd921df95b2e",
         "games/rall-054/enhanced/graphics.mjs": "50b379f7d9904da4c1ab9f130bf47863abe7bc5abe2c21f71acda7a0cb8ae391",
-        "games/rall-054/enhanced/index.html": "d9b09e4b30d8a0eb0f17f15e9b8862826fc72bb6dedb701574c8c03faf7b62c5",
+        "games/rall-054/enhanced/index.html": "6d27b72e577c970a41f8870ba0d7810c164c455f31623499f8b6f16985e6f1ad",
         "games/rall-054/enhanced/styles.css": "cd3aec8e64141945619404dc6dcac99f71cccb9f6401addb4a9bc9c1c5e200e0",
         "games/rall-054/enhanced/vendor/THREE_LICENSE": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
         "games/rall-054/enhanced/vendor/render-engine.mjs": "36806480ae9736c406f5658f32056334a075f216af9acb23fca6ed77f541abb1",
         "games/rall-054/enhanced/vendor/render-engine.mjs.LEGAL.txt": "cc7cc7e2f53d5db0235ab2226e85fc6e91655161573b39813b41bb00e5919674",
         "games/rall-054/enhanced/vendor/versions.json": "1722868ef2fb803b23c112b20adf8f980a0e78c2ef6b5c5123b54bc5744cfe67",
-        "games/rall-054/graphics.mjs": "c499d49f6c619034f5b86e7dfa55ba5e622f18587c65605d274271578c4ffb12",
-        "games/rall-054/index.html": "e854ef8bee8833f93420bb7121f1b820834c5e3bb9afabfaac72b721fb85d97a",
+        "games/rall-054/graphics.mjs": "03ee34ef5c0e711b6c71198ab867b33632a2a2e606abe37d69763b120506334d",
+        "games/rall-054/index.html": "3f54f38c871fe6556507130801603fa90452e9fe85f7ef5f139af0ccb295d66c",
         "games/rall-054/provenance.json": "ea36aec63712d56fc7240380d33975be01a5627c4b20c14b540eaa2d0d1517ad",
-        "games/rall-054/source-notes.md": "f338fd1e26256d17ea444b1395af2324b88c3e7c9426e1b3cac62e8a8543dc99",
+        "games/rall-054/restored/assets/bullet.png": "2b111df6af7b82197dcf205bb3cbc1a8ef29d425ab0f4b93f10b32a2160abed5",
+        "games/rall-054/restored/assets/gun.png": "664d20d83acc74facca4413fe806e53a6aa69353cb7ce9ff5758c060f6dd09ab",
+        "games/rall-054/restored/assets/siege.png": "12aeec31ac804912327f5257c6823f6b4448b2d053a24b543a034e49291bb1a1",
+        "games/rall-054/restored/assets/sprites-provenance.json": "96ebb37485657c28f0367429bc066f5b7a7ab51e2d73397cf34d066e83d0b290",
+        "games/rall-054/restored/assets/tank-blue-hit.png": "68213702bb11ff05b8afcebd72c3a0e94e29b406c931ad6441f7d01a2d95166b",
+        "games/rall-054/restored/assets/tank-blue.png": "21dbd0460f5d1292391cabf265baf738331a47f25f6ec3245df59e8f46e571af",
+        "games/rall-054/restored/assets/tank-green-hit.png": "be23eed0fd80b78af64a313bb44bc2aa71cb74b01a307a8415c90e714b246813",
+        "games/rall-054/restored/assets/tank-green.png": "9fd331c414adfbeab55e2ed517e908dfec60e59f14cd9534bac459a2f0a0c84b",
+        "games/rall-054/restored/index.html": "7b73a552addec4cdd246ce0ac6ea211d0c77a79567d4fff25909002ab949c9d6",
+        "games/rall-054/source-notes.md": "afa72f0a883fd6c2447365f34a0ea8d425cd1312055e2067a2d1a06cf1cb8908",
         "games/rall-054/styles.css": "efd21b74be45f8ea4f7e9f191e522d7fb748f4802b8ce868c8a3a671ba94dd86",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
-        "docs/games/rall-054-assets.json": "b78ea94e27762995ad88072dfa491b87d9917087c75affedf74bf4998c5e32e3",
-        "index.html": "bcbdc8900d7a753cc2838fa399c77a3b5f2503b78912dd72f244af0fe786cd41",
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d"
+        "docs/games/rall-054-assets.json": "7e3aad11abbb29325f62ffb8e67315bf6fafd3f0d5e7dc5a33bdb19d6d85575d",
+        "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49",
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6"
       },
       "inGameControlsAndFullscreenStatus": "passed",
       "englishInterfaceAuditStatus": "passed",
       "catalogUrl": "https://joynes.github.io/joynes.se/#games/retro/rall-054",
-      "version": "2002-web.2",
+      "version": "2002-web.3",
       "deploymentRun": 41788531534,
       "auditCommit": "23499dcfbcd792cda43ed24de7777eb78e6048a4",
       "publishedFileSha256": {
@@ -2214,8 +2222,8 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
         "docs/games/rall-054-assets.json": "b78ea94e27762995ad88072dfa491b87d9917087c75affedf74bf4998c5e32e3",
-        "index.html": "bcbdc8900d7a753cc2838fa399c77a3b5f2503b78912dd72f244af0fe786cd41",
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d"
+        "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49",
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6"
       },
       "verificationLimits": "Emulated mobile Chromium/Chrome; physical devices and Safari not covered. Browser tests only normal input and cloned observer. Unit tests explicitly construct isolated fixtures.",
       "liveVerification": {
@@ -2262,6 +2270,55 @@
           "domain-final": 3
         },
         "result": "All final live suites passed. Includes six maps/full blue matches, Green full matches and solo progression/loss/replay, both browser input/frame suites, four-finger duel touch, actual joynes.se, recovery and hashes."
+      },
+      "remixEdition": {
+        "status": "published_verified",
+        "launchChoices": [
+          "Original",
+          "AI Enhanced"
+        ],
+        "title": "Beacon Siege",
+        "version": "1.0.1",
+        "graphics": "Blender",
+        "soundAndMusic": "ElevenLabs",
+        "concept": "Three new 3D tank capture-and-extraction missions, breakable cover, siege mortars, shields, reinforcements, medals and unlocks.",
+        "webPath": "games/rall-054/enhanced/",
+        "publicUrl": "https://joynes.github.io/joynes.se/games/rall-054/enhanced/",
+        "provenance": "games/rall-054/enhanced/credits.json",
+        "sourceCommit": "ce262bd9a7ecab3e88920385c297b63a1be017c1",
+        "localChecks": [
+          "All three missions won through actual browser controls on desktop keyboard, portrait and landscape native touch: real AI combat, destructible cover, three beacons, extraction, medals, unlocks, records and reload persistence.",
+          "Native touch verifies aimed mortar cover destruction, finite four-shell ammunition, beacon resupply and a full win; Shield intercepts genuine incoming enemy shots. Keyboard and touch real AI defeats, frozen terminal state, stale held inputs after replay and fresh keyboard control pass.",
+          "Chromium and installed Chrome pass four input viewports: physical keyboard on mobile, four touch contacts, mixed ownership/independent release/cancel, quick taps, stale repeat/restart, Sound/Fullscreen focus, actual audible output/mute, in-scene controls and rotation. Both pass real parent blur/pause, native/fallback fullscreen, forced full-parent fallback, resize and Menu cleanup.",
+          "All 22 representative failed critical resources recover through visible Retry to artwork, real 3D movement/fire and six audio buffers. Denied storage preserves in-memory unlocks after an actual touch victory and remains playable after reload. Actual WebGL context loss and failed-model restore/retry preserve the frozen mission and resume movement in three viewports per browser.",
+          "Original rules and archived media unchanged. Original regression passes 18 complete duels across six maps and three viewports, four input viewports per browser and both browser parent/fullscreen suites. Compact duel controls and fullscreen fallback bridge improved.",
+          "Core/asset checks: 8 passed. Tests use normal browser keyboard/native CDP touch and cloned read-only state; no gameplay injection. Physical devices and Safari not covered.",
+          "Canonical homepage Chrome full-parent fallback and Chromium cross-origin forwarding fixture native fullscreen pass all three sizes: edition selection, actual enhanced keyboard/native-touch combat, playable Original and Retro return. Root unit/preservation suites pass."
+        ],
+        "auditCommit": "23499dcfbcd792cda43ed24de7777eb78e6048a4",
+        "verifiedAt": "2026-11-04",
+        "deploymentCommit": "7a86c42de7aed09601f51f935c872201f537d6ac",
+        "deploymentRun": 41788531534,
+        "liveChecks": "All nine full mission wins, both browser input/frame/graphics suites, 22 loading retries, denied storage after a native-touch win, mortar/shield interactions, real AI defeat/replay, canonical homepage and actual joynes.se version switching/Original return at three sizes per browser, and all 63 release/integration hashes pass. Native fullscreen exercised in Chromium; Chrome uses native where granted or full-page fallback. Mobile contexts are emulated; physical devices and Safari not covered.",
+        "edition": "Remix",
+        "faithfulness": "New gameplay inspired by the original; explicitly distinct from a faithful restoration."
+      },
+      "enhancedEdition": {
+        "status": "local-passed-publishing",
+        "launchChoices": [
+          "Original",
+          "AI Enhanced",
+          "Remix"
+        ],
+        "graphics": "Blender",
+        "intent": "Keep original gameplay, maps, controls, progression and identity. Restore graphics/audio; new concepts belong to Remix.",
+        "title": "Rall v054 \u00b7 AI Enhanced",
+        "version": "1.0.0",
+        "webPath": "games/rall-054/restored/",
+        "publicUrl": "https://joynes.github.io/joynes.se/games/rall-054/restored/",
+        "sourceCommit": "ce262bd9a7ecab3e88920385c297b63a1be017c1",
+        "provenance": "games/rall-054/restored/assets/sprites-provenance.json",
+        "localChecks": "Six-map exact gameplay-state parity with Original, same app/core and original audio, new Blender tank sprites. All 18 duels, solo/Green/loss/replay, four input sizes per browser, both frame suites, 24 failed resources and eight art/style Retry cases, storage/music resilience and Original 18-duel regression pass. Homepage direct choices pass four sizes per browser plus forwarded fixtures; Original/Remix fullscreen/actual-driving checks pass. Root units pass. Live verification pending."
       }
     },
     {
@@ -2667,8 +2724,8 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
         "docs/games/rall-080-assets.json": "6472f3251f791a12df77f91951ff5d7bb2a96552a8412a41a320fe0d581913b8",
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d",
-        "index.html": "bcbdc8900d7a753cc2838fa399c77a3b5f2503b78912dd72f244af0fe786cd41"
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6",
+        "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49"
       },
       "verificationLimits": "Emulated mobile browser contexts; no physical-device or Safari claim. Browser tests use normal keys/native CDP touch and a cloned read-only native observer; no gameplay-state injection.",
       "inGameControlsAndFullscreenStatus": "local-passed-live-pending",
@@ -2914,8 +2971,8 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
         "docs/games/rall-080-assets.json": "6472f3251f791a12df77f91951ff5d7bb2a96552a8412a41a320fe0d581913b8",
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d",
-        "index.html": "bcbdc8900d7a753cc2838fa399c77a3b5f2503b78912dd72f244af0fe786cd41"
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6",
+        "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49"
       },
       "liveChecks": {
         "fullGameplay": 9,
@@ -3183,8 +3240,8 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
         "docs/games/rall-008-assets.json": "a9a46de89f94fffebbd2adf57dc4e1e348e3275319961c49a880a0c6c6c899a3",
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d",
-        "index.html": "bcbdc8900d7a753cc2838fa399c77a3b5f2503b78912dd72f244af0fe786cd41"
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6",
+        "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49"
       },
       "verificationLimits": "Mobile browser contexts are emulated; no physical-device or Safari claim. Tests drive browser keys/native CDP touch with cloned read-only state, without gameplay-state injection.",
       "inGameControlsAndFullscreenStatus": "passed",
@@ -3372,8 +3429,8 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
         "docs/games/rall-008-assets.json": "a9a46de89f94fffebbd2adf57dc4e1e348e3275319961c49a880a0c6c6c899a3",
-        "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d",
-        "index.html": "bcbdc8900d7a753cc2838fa399c77a3b5f2503b78912dd72f244af0fe786cd41"
+        "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6",
+        "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49"
       },
       "liveChecks": {
         "fullGameplay": 6,

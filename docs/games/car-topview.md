@@ -1,10 +1,10 @@
 # Top-down Driving
 
-Choose **Original** or **AI Enhanced** when the game opens.
+Choose **Original** or **Remix** when the game opens.
 
 The original is Johannes’s Godot 4.3 free-driving prototype from December 2024, preserved as a JavaScript port. Its car PNG, engine WAV and motion formulas are unchanged. The original has no races or scores. The wall collision alignment repair and exact source/media hashes are documented in [source notes](../../games/car-topview/source-notes.md).
 
-## AI Enhanced: Night Circuit
+## Remix: Night Circuit
 
 A new arcade time-trial game with three distinct courses: Port Lights, Switchback and Garden Sprint. Pass eight gates in order and finish before the time limit. Clean cornering recharges boost. Gold, Silver and Bronze medals, sequential course unlocks, personal records and a saved best-lap ghost provide replay goals. Leaving the road slows the car; prolonged off-road driving recovers it with a three-second penalty.
 
@@ -21,3 +21,5 @@ The enhanced browser suites drive all three courses through real keyboard and na
 These are actual Chromium and Chrome browser-interface checks in desktop and touch-enabled mobile contexts; physical phones/tablets and Safari are not covered. The enhanced edition is a release candidate until the public deployment and file hashes are verified in [the inventory](../../data/games-inventory.json).
 
 [Open editions](https://joynes.github.io/joynes.se/games/car-topview/)
+
+Faithful AI Enhanced is queued separately. The homepage now exposes Original / Remix directly; new gameplay is explicitly labeled Remix.

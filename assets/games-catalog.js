@@ -24,11 +24,16 @@ window.joynesPublishedGames = [
     id: "rall-054",
     title: "Rall v054 — Tanks",
     kind: "retro",
-    description: "Retro · 2002 · Original tank duels + AI Enhanced beacon missions.",
+    description: "Retro · 2002 · Original, restored graphics or new missions.",
     href: "games/rall-054/",
+    editions: [
+      { id: "original", label: "Original", href: "games/rall-054/" },
+      { id: "enhanced", label: "AI Enhanced", href: "games/rall-054/restored/", version: "1.0.0" },
+      { id: "remix", label: "Remix", href: "games/rall-054/enhanced/", version: "1.0.1" }
+    ],
     source: "https://github.com/joynes/joynes.se/blob/master/games/rall-054/source-notes.md",
     sourceLabel: "Source",
-    version: "2002-web.2"
+    version: "2002-web.3"
   },
   {
     id: "rall-030",
@@ -54,11 +59,15 @@ window.joynesPublishedGames = [
     id: "shadow-racer",
     title: "ShadowRacer",
     kind: "retro",
-    description: "Retro · 2008 · Original race or AI Enhanced deliveries.",
+    description: "Retro · 2008 · Original race or delivery remix.",
     href: "games/shadow-racer/",
+    editions: [
+      { id: "original", label: "Original", href: "games/shadow-racer/" },
+      { id: "remix", label: "Remix", href: "games/shadow-racer/enhanced/", version: "1.0.1" }
+    ],
     source: "https://github.com/joynes/joynes.se/blob/master/games/shadow-racer/source-notes.md",
     sourceLabel: "Source",
-    version: "2008-web.4"
+    version: "2008-web.5"
   },
   {
     id: "worldforge",
@@ -124,11 +133,15 @@ window.joynesPublishedGames = [
     id: "car-topview",
     title: "Top-down Driving",
     kind: "ai",
-    description: "Original + AI Enhanced · Time trials, boost and ghosts.",
+    description: "Free driving or a time-trial remix.",
     href: "games/car-topview/",
+    editions: [
+      { id: "original", label: "Original", href: "games/car-topview/" },
+      { id: "remix", label: "Remix", href: "games/car-topview/enhanced/", version: "1.0.1" }
+    ],
     source: "https://github.com/joynes/joynes.se/tree/master/games/car-topview",
     sourceLabel: "Source",
-    version: "2024-car-web.5"
+    version: "2024-car-web.6"
   },
   {
     id: "godot-reading",

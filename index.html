@@ -701,6 +701,7 @@
 
     .item-embed {
       width: 100%;
+      scroll-margin-top: 64px;
       min-height: 420px;
       overflow: hidden;
       border: 1px solid rgba(49, 243, 255, 0.36);
@@ -725,6 +726,8 @@
       flex-wrap: wrap;
       gap: 9px;
     }
+    .item-actions [data-game-edition="enhanced"],
+    .item-actions [data-game-edition][aria-current="page"] { border-color: var(--cyan); }
 
     footer {
       padding: 34px 0 18px;
@@ -1493,7 +1496,7 @@
   <script src="assets/jaro-book.js"></script>
   <script src="assets/music-catalog.js"></script>
   <script src="assets/music-library.js?v=b71509c3cf69"></script>
-  <script src="assets/games-catalog.js?v=25d9b0e6585a"></script>
+  <script src="assets/games-catalog.js?v=f85b33ac145f"></script>
   <script>
     const categories = [
       {
@@ -1635,7 +1638,8 @@
         : game.href;
       gamesCategory.items.unshift([game.title, game.description,
         [[game.playLabel || "Play", gameHref], ...(game.modes || []), [game.sourceLabel || "Source", game.source]],
-        {slug: game.id, gameKind: game.kind, gameGenre: game.genre, embed: game.embed === false ? null : gameHref, embedTitle: game.title, embedOnDetail: true}]);
+        {slug: game.id, gameKind: game.kind, gameGenre: game.genre, embed: game.embed === false ? null : gameHref, embedTitle: game.title, embedOnDetail: true,
+          gameEditions: game.editions?.map(edition => ({...edition, href: `${edition.href}?v=${encodeURIComponent(edition.version || game.version)}`}))}]);
     }
 
     function slugify(value) {
@@ -1793,7 +1797,7 @@
 
     function parseRoute() {
       const raw = decodeURIComponent(window.location.hash.replace(/^#\/?/, "")).trim();
-      const [categoryId, subroute, versionSlug] = raw.split("/").filter(Boolean);
+      const [categoryId, subroute, versionSlug, editionSlug] = raw.split("/").filter(Boolean);
       const isAIView = (categoryId === "music" && subroute === "ai") || categoryId === "ai";
       const isOldView = (categoryId === "music" && subroute === "old") || categoryId === "old";
       const isGameFilter = categoryId === "games" && ["retro", "ai", "quizzes"].includes(subroute);
@@ -1809,9 +1813,12 @@
         history.replaceState(null, "", `#music/ai${itemSlug ? "/" + itemSlug : ""}`);
       }
       if (categoryId === "old") history.replaceState(null, "", `#music/old${itemSlug ? "/" + itemSlug : ""}`);
-      const item = itemSlug
+      let item = itemSlug
         ? (category.items.find((entry) => entry[3]?.slug === itemSlug) || (isGameFilter && gamesCategory.items.find(entry => entry[3]?.slug === itemSlug)))
         : null;
+      const editionId = isGameFilter ? editionSlug : versionSlug;
+      const edition = categoryId === "games" && item?.[3]?.gameEditions?.find(entry => entry.id === (editionId || "original"));
+      if (edition) item = [...item.slice(0, 3), {...item[3], activeEdition: edition.id, embed: edition.href}];
       return { category, item };
     }
 
@@ -2250,8 +2257,7 @@
     }
 
     function fitGameFrame() {
-      if (currentCategory?.id !== "games" ||
-          !window.matchMedia("(orientation:landscape) and (max-height:600px)").matches) return;
+      if (currentCategory?.id !== "games") return;
       const frame = list.querySelector(".item-embed");
       if (!frame) return;
       const focused = frame.querySelector("iframe")?.contentDocument?.activeElement;
@@ -2343,11 +2349,21 @@
         actionRow.className = "item-actions";
         if (extras.groupId) {
           actionRow.append(internalLinkButton("Versions", pageHref));
+        } else if (extras.gameEditions) {
+          for (const edition of extras.gameEditions) {
+            const href = edition.id === "original" ? pageHref : `${pageHref}/${edition.id}`;
+            const link = canEmbed ? internalLinkButton(edition.label, href) : linkButton(edition.label, edition.href, category);
+            link.dataset.gameEdition = edition.id;
+            if (selectedItem && (extras.activeEdition || "original") === edition.id) link.setAttribute("aria-current", "page");
+            actionRow.append(link);
+          }
+          actions.slice(-1).forEach(([label, href]) => actionRow.append(linkButton(label, href, category)));
         } else {
           actions.forEach(([label, href]) => actionRow.append(linkButton(label, href, category)));
         }
 
         if (!showEmbed && !(selectedItem && category.id === "games")) article.append(head);
+        if (showEmbed && extras.gameEditions) article.append(actionRow);
         if (showEmbed) {
           const embed = document.createElement("div");
           embed.className = "item-embed";
@@ -2377,7 +2393,7 @@
           embed.append(iframe);
           article.append(embed);
         }
-        article.append(actionRow);
+        if (!showEmbed || !extras.gameEditions) article.append(actionRow);
         return article;
       }));
     }

@@ -1,6 +1,6 @@
 # Top-down Driving
 
-An AI game under Johannes’s age categories: the original dates from December 2024, within two years of the November 2026 web adaptation. The Original edition is a free-driving prototype with no races, scoring or unlocks. A separate AI Enhanced edition adds a new game.
+An AI game under Johannes’s age categories: the original dates from December 2024, within two years of the November 2026 web adaptation. The Original edition is a free-driving prototype with no races, scoring or unlocks. A separate Remix edition adds a new game.
 
 ## Original
 
@@ -40,7 +40,7 @@ Native fullscreen preserves the 1024×600 scene proportions and keeps all contro
 
 `npm run test:car-topview:input` adds keyboard-only play in desktop, touch-enabled portrait and landscape contexts; overlapping keyboard aliases; mixed keyboard/touch ownership; stale repeat protection after reset/pause/focus; all touch directions; mixed keyboard/touch ownership; second-finger sound/pause/resume/reset/fullscreen actions; touch restart; real frame-window focus loss and resume; controls entirely inside the scene; native standalone and embedded fullscreen through touch/keyboard; in-fullscreen rotation; the missing-API fallback and Escape; and returning from the embedded game to the homepage. Tests observe rendered coordinates, control classes and Web Audio objects, without changing game state. These are Chromium browser checks, not physical-device or Safari certification.
 
-## AI Enhanced: Night Circuit
+## Remix: Night Circuit
 
 The launch screen also offers a separate new time-trial game. Three Blender-rendered courses, a new car model, ordered gates, boost charged by cornering, medals, unlocks and a saved personal-best ghost extend the driving idea. Its arcade driving rules are new; the Original edition retains the restored physics and media. Music, motor and checkpoint sounds were generated with ElevenLabs. Asset prompts, model/generation IDs and hashes are recorded in [enhanced provenance](enhanced/provenance.json). Blender scenes, reproducible export scripts and the generated source audio are preserved in the existing private game repository.
 

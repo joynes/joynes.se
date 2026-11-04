@@ -92,7 +92,11 @@
     "test:beacon:abilities": "node scripts/test-beacon-abilities.cjs",
     "test:beacon:recovery": "node scripts/test-beacon-recovery.cjs",
     "test:beacon:loss": "node scripts/test-beacon-loss.cjs",
-    "test:beacon:navigation": "node scripts/test-beacon-navigation.cjs"
+    "test:beacon:navigation": "node scripts/test-beacon-navigation.cjs",
+    "test:games:editions": "node scripts/test-game-editions.cjs",
+    "test:rall-054:faithful": "node scripts/test-rall054-faithful.cjs",
+    "test:rall-054:faithful-recovery": "node scripts/test-rall054-faithful-recovery.cjs",
+    "test:games:remix-launch": "node scripts/test-game-remix-launch.cjs"
   },
   "devDependencies": {
     "playwright": "1.58.2"

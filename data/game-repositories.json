@@ -374,9 +374,9 @@
       "sourceHead": "5450575feeb6d6b42c48e7d2708ea3863da424c8",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "f67de46b997044830e1d6fd3f0e5eeba0132be46",
-      "repositoryHeadCommit": "b1a184589f436b553b5a53e3268c6f24e4ac0ada",
+      "repositoryHeadCommit": "dbacb9974a3fe4b579fa57170e3ff7bf25d44f32",
       "auditUrl": "https://github.com/joynes/car_topview_game/tree/audit/2026-11-03-baseline",
-      "auditCommit": "f8ba1cd81787d3062fda246d2e86a9fb36718324",
+      "auditCommit": "dbacb9974a3fe4b579fa57170e3ff7bf25d44f32",
       "auditEvidence": {
         "game": "car-topview",
         "date": "2026-11-03",
@@ -467,7 +467,8 @@
         "verifiedAt": "2026-11-04",
         "deploymentCommit": "543ff67914cb99c4d6d3a50847a847546e46f6e8",
         "deploymentRun": 41735297215
-      }
+      },
+      "auditFindings": "Direct homepage edition picker passes both browsers and forwarded fixtures. Rall054 faithful AI Enhanced preserves exact Original gameplay. Existing new concepts are Remix. Source committed before publication; final live checks pending."
     },
     {
       "id": "sdl-space",
@@ -653,8 +654,8 @@
       "auditUrl": "https://github.com/joynes/shadow-racer/tree/audit/2026-11-03-baseline",
       "inGameControlsAndFullscreenStatus": "passed",
       "englishInterfaceAuditStatus": "passed",
-      "repositoryHeadCommit": "14ec77d5484ef8db4d503e77e377a5b924392057",
-      "auditCommit": "8857df4121f7e433005e3d91dddc0ab09f7bb3fe",
+      "repositoryHeadCommit": "73787852f36dc8e4aaf2847820015829872ce1d1",
+      "auditCommit": "73787852f36dc8e4aaf2847820015829872ce1d1",
       "auditEvidence": {
         "game": "shadow-racer",
         "date": "2026-11-04",
@@ -729,7 +730,8 @@
         "deploymentRun": 41747999054,
         "liveChecks": "All three routes completed on the public site through trusted browser keyboard input and native CDP touch in portrait and landscape, with three deliveries, zero-rescue wins, cargo meshes, unlocks and persisted records. All thirteen load failures recover to actual driving. Actual generated-audio output, complete input/cancel/restart/focus/native fullscreen/rotation/fallback suite, crash loss/replay, real iframe focus and real WebGL context-loss recovery pass. Canonical homepage and actual joynes.se direct-window edition switch, enhanced keyboard/native-touch driving, fullscreen and return to playable Original pass in all three viewports. All 49 runtime and integration SHA256 values match; Pages 41747999054 succeeded.",
         "auditCommit": "14ec77d5484ef8db4d503e77e377a5b924392057"
-      }
+      },
+      "auditFindings": "Direct homepage edition picker passes both browsers and forwarded fixtures. Rall054 faithful AI Enhanced preserves exact Original gameplay. Existing new concepts are Remix. Source committed before publication; final live checks pending."
     },
     {
       "id": "rall-026",
@@ -786,13 +788,13 @@
       "sourceHead": "c867cc03bf7540e0d44721cf910c5de3b1723923",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "58f6a89f2440f84afe624a76b205145e1ce2f073",
-      "repositoryHeadCommit": "23499dcfbcd792cda43ed24de7777eb78e6048a4",
+      "repositoryHeadCommit": "ce262bd9a7ecab3e88920385c297b63a1be017c1",
       "auditUrl": "https://github.com/joynes/rall0054/tree/audit/2026-11-03-baseline",
       "inGameControlsAndFullscreenStatus": "passed",
       "englishInterfaceAuditStatus": "passed",
-      "auditFindings": "Original and Beacon Siege AI Enhanced published and verified. Three new missions, new Blender graphics/ElevenLabs audio, full keyboard/touch combat, fullscreen, recovery, real win/loss/replay and live edition selection pass. Original core/media unchanged.",
+      "auditFindings": "Direct homepage edition picker passes both browsers and forwarded fixtures. Rall054 faithful AI Enhanced preserves exact Original gameplay. Existing new concepts are Remix. Source committed before publication; final live checks pending.",
       "implementationCommit": "7145d6497fd000ee2dabdd7e7092672e049b1d46",
-      "auditCommit": "23499dcfbcd792cda43ed24de7777eb78e6048a4",
+      "auditCommit": "ce262bd9a7ecab3e88920385c297b63a1be017c1",
       "deploymentCommit": "7a86c42de7aed09601f51f935c872201f537d6ac",
       "deploymentRun": 41788531534
     },

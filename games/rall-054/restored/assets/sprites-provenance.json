@@ -1,0 +1,15 @@
+{
+  "tool": "Blender",
+  "version": "5.2.2 LTS",
+  "builder": "restored-source/build-sprites.py",
+  "orientation": "Original angle zero faces down. 4.8-unit orthographic projection rendered at 256px, displayed at the original 50px sprite footprint.",
+  "assets": {
+    "tank-blue.png": "21dbd0460f5d1292391cabf265baf738331a47f25f6ec3245df59e8f46e571af",
+    "tank-blue-hit.png": "68213702bb11ff05b8afcebd72c3a0e94e29b406c931ad6441f7d01a2d95166b",
+    "tank-green.png": "9fd331c414adfbeab55e2ed517e908dfec60e59f14cd9534bac459a2f0a0c84b",
+    "tank-green-hit.png": "be23eed0fd80b78af64a313bb44bc2aa71cb74b01a307a8415c90e714b246813",
+    "gun.png": "664d20d83acc74facca4413fe806e53a6aa69353cb7ce9ff5758c060f6dd09ab",
+    "siege.png": "12aeec31ac804912327f5257c6823f6b4448b2d053a24b543a034e49291bb1a1",
+    "bullet.png": "2b111df6af7b82197dcf205bb3cbc1a8ef29d425ab0f4b93f10b32a2160abed5"
+  }
+}

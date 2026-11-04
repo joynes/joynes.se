@@ -95,10 +95,12 @@ function pause(next=true){
  else{player.ruffle().resume();$('overlay').hidden=true;focusGame();}
  paintPause(paused);$('state').textContent=paused?'Paused':'Stay upright';
 }
-bindGameAction($('choose'),()=>{if(busy)return;releaseAll();player?.remove();player=null;native=null;paused=false;phase='ready';$('play').hidden=true;$('intro').hidden=false;$('error').hidden=true;$('start').focus();});
+bindGameAction($('choose'),()=>{if(busy)return;if(document.fullscreenElement||board.classList.contains('game-view-expanded'))$('fullscreen').click();releaseAll();player?.remove();player=null;native=null;paused=false;phase='ready';$('play').hidden=true;$('intro').hidden=false;$('error').hidden=true;$('start').focus();});
 $('start').onclick=start;$('retry').onclick=()=>{try{sessionStorage.setItem('joynes-shadow-retry',JSON.stringify({name:$('name').value}));}catch{}const url=new URL(location.href);url.searchParams.set('version',version);url.searchParams.set('retry','1');location.replace(url);};bindGameAction($('reset'),start);bindGameAction($('again'),start);
 bindGameAction($('pause'),()=>pause(!paused));bindGameAction($('resume'),()=>pause(false));
-bindFullscreen(board,$('fullscreen'),()=>{releaseAll();if(player&&!busy)focusGame();});
+$('fullscreen').addEventListener('pointerdown',e=>{if(e.pointerType==='touch')e.preventDefault();});
+bindFullscreen(board,$('fullscreen'),active=>{releaseAll();if(player&&!busy)focusGame();if(parent!==window)parent.postMessage({type:'joynes:game-view',active},location.origin);});
+window.addEventListener('message',e=>{if(e.source===parent&&e.origin===location.origin&&e.data?.type==='joynes:game-view-close'&&$('board').classList.contains('game-view-expanded'))$('fullscreen').click();});
 $('version').onchange=()=>{version=$('version').value;paintRecords();};
 for(const button of document.querySelectorAll('[data-key]')){
  button.setAttribute('aria-pressed','false');

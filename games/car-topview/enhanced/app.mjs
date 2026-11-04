@@ -52,8 +52,10 @@ function toggleSound(){muted=!muted;if(master)master.gain.setValueAtTime(muted?0
 $('start').onclick=start;$('retry').onclick=load;
 bindGameAction($('pause'),()=>race?.status==='paused'?resume():pause());bindGameAction($('restart'),start);bindGameAction($('resume'),resume);bindGameAction($('again'),start);bindGameAction($('sound'),toggleSound);
 bindGameAction($('next'),()=>{chosen=Math.min(chosen+1,courses.length-1);start();});
-bindGameAction($('menu-button'),()=>{clearInput();race=null;$('play').hidden=true;$('menu').hidden=false;menu();$('start').focus();});
-bindFullscreen($('board'),$('fullscreen'),()=>{clearInput();canvas.focus({preventScroll:true});});
+bindGameAction($('menu-button'),()=>{if(document.fullscreenElement||$('board').classList.contains('game-view-expanded'))$('fullscreen').click();clearInput();race=null;$('play').hidden=true;$('menu').hidden=false;menu();$('start').focus();});
+$('fullscreen').addEventListener('pointerdown',e=>{if(e.pointerType==='touch')e.preventDefault();});
+bindFullscreen($('board'),$('fullscreen'),active=>{clearInput();canvas.focus({preventScroll:true});if(parent!==window)parent.postMessage({type:'joynes:game-view',active},location.origin);});
+window.addEventListener('message',e=>{if(e.source===parent&&e.origin===location.origin&&e.data?.type==='joynes:game-view-close'&&$('board').classList.contains('game-view-expanded'))$('fullscreen').click();});
 window.addEventListener('keydown',e=>{
  if(e.target instanceof HTMLElement&&e.target.closest('button,a,input,summary'))return;
  if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','KeyW','KeyA','KeyS','KeyD','Space'].includes(e.code)){
