@@ -32,12 +32,13 @@ window.joynesPublishedGames = [
     id: "shadow-racer",
     title: "ShadowRacer",
     kind: "retro",
-    description: "Retro · 2008 · Original course and physics.",
+    description: "Retro · 2008 · Original physics, restored graphics and audio.",
     href: "games/shadow-racer/",
     editions: [
-      { id: "original", label: "Original", href: "games/shadow-racer/" }
+      { id: "original", label: "Original", href: "games/shadow-racer/" },
+      { id: "enhanced", label: "AI Enhanced", href: "games/shadow-racer/restored/", version: "1.0.0" }
     ],
-    version: "2008-web.5"
+    version: "2008-web.6"
   },
   {
     id: "worldforge",

@@ -73,7 +73,13 @@
     "test:rall-054:revision:rules": "node --test scripts/test-rall054-revision-rules.mjs",
     "test:rall-054:revision:input": "node scripts/test-rall054-revision-input.cjs",
     "test:rall-054:revision:solo": "node scripts/test-rall054-revision-solo.cjs",
-    "test:rall-054:revision:rotation": "node scripts/test-rall054-revision-rotation.cjs"
+    "test:rall-054:revision:rotation": "node scripts/test-rall054-revision-rotation.cjs",
+    "test:shadow:restored:preservation": "python3 scripts/test-shadow-restored-preservation.py",
+    "test:shadow:restored:browser": "node scripts/test-shadow-restored-browser.cjs",
+    "test:shadow:restored:input": "node scripts/test-shadow-restored-input.cjs",
+    "test:shadow:restored:frame": "node scripts/test-shadow-restored-frame.cjs",
+    "test:shadow:restored:resilience": "node scripts/test-shadow-restored-resilience.cjs",
+    "test:shadow:restored:homepage": "node scripts/test-shadow-restored-home.cjs"
   },
   "devDependencies": {
     "playwright": "1.58.2"

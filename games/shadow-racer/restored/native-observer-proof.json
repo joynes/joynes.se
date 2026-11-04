@@ -1,0 +1,24 @@
+{
+  "20080928": {
+    "methodsUnchanged": 337,
+    "observerMethod": "ShadowRacerPrototype2.run",
+    "observerBytes": 196,
+    "originalInstructionsPreserved": true,
+    "presentationGeometryObserver": true,
+    "observerOnlyLocals": 2,
+    "originalSha256": "ca347f3481ee254d60ec3bd856821b6f6546f8567120872509659844622a4e3b",
+    "runtimeSha256": "db2c7a4e912430c610e3a5663d2520d547ecd176f328731b24568cb667a7075c",
+    "changedTags": 1
+  },
+  "20081005": {
+    "methodsUnchanged": 337,
+    "observerMethod": "ShadowRacerPrototype2.run",
+    "observerBytes": 199,
+    "originalInstructionsPreserved": true,
+    "presentationGeometryObserver": true,
+    "observerOnlyLocals": 2,
+    "originalSha256": "4bf85f616c53e2f11fef8c40458e032c2555cbf0a8951bcddcf1f5ca26d73c89",
+    "runtimeSha256": "8d8591efc9dfc6241a606b2bd555ee8880bc5e710863c5f3200e217f5bdd8511",
+    "changedTags": 1
+  }
+}

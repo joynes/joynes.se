@@ -1,0 +1,12 @@
+{
+  "title": "ShadowRacer \u00b7 AI Enhanced",
+  "version": "1.0.0",
+  "originalYear": 2008,
+  "method": "Original AS3/APE gameplay in self-hosted Ruffle; new Canvas presentation driven by read-only native particle/camera traces. Original physics, terrain, timer, collision/finish rules and all original instructions are retained.",
+  "observerProof": "native-observer-proof.json",
+  "graphics": "assets/graphics-provenance.json",
+  "audio": "assets/audio-provenance.json",
+  "sourceRepository": "joynes/shadow-racer (private)",
+  "records": "Separate enhanced local records by native release",
+  "remix": "Withdrawn; this edition preserves the original game."
+}

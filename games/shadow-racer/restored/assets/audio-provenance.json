@@ -1,0 +1,61 @@
+{
+  "edition": "ShadowRacer faithful AI Enhanced",
+  "flowId": "Uxzk6ShCGnM8qgKvEPYP",
+  "assets": [
+    {
+      "asset": "music-1.mp3",
+      "provider": "ElevenLabs",
+      "generationId": "nHxCSD9B3a9x9eRnkARP",
+      "model": "eleven_music_v2",
+      "sha256": "89717329dc0e84d4f1fa6159fdf8ff7f6a000499ae6c836d239f41703e027cc6",
+      "duration": 44.71002267573696,
+      "peak": 0.5579296946525574,
+      "rms": 0.08970831611481007,
+      "processing": "Short loop crossfade and loudness normalization"
+    },
+    {
+      "asset": "music-2.mp3",
+      "provider": "ElevenLabs",
+      "generationId": "o1UVrPySuz7YRwrV0a6z",
+      "model": "eleven_music_v2",
+      "sha256": "9cb479403421d18d63ca4f54291a728acbb8bb606630419bfbdfdfea304076a6",
+      "duration": 44.750022675736965,
+      "peak": 0.47502371668815613,
+      "rms": 0.09166316648596061,
+      "processing": "Short loop crossfade and loudness normalization"
+    },
+    {
+      "asset": "engine.wav",
+      "provider": "ElevenLabs",
+      "generationId": "L5C2JiPqkyBVizbFfdgr",
+      "model": "eleven_text_to_sound_v2",
+      "sha256": "a52600e9ee115e81621eaf2ee4b291ec3883abcb142e769054cea7ff155d8cf6",
+      "duration": 2.9500226757369616,
+      "peak": 0.2336169332265854,
+      "rms": 0.07345220490515794,
+      "processing": "Short loop crossfade and loudness normalization"
+    },
+    {
+      "asset": "bump.wav",
+      "provider": "ElevenLabs",
+      "generationId": "eVwwZJ4mPcbKsr4d8fY8",
+      "model": "eleven_text_to_sound_v2",
+      "sha256": "dabd7ba0e789869fa391b5c4f08cc32ebcc9330705aac8927d4d3f66bc466dd7",
+      "duration": 0.6802721088435374,
+      "peak": 0.6330861449241638,
+      "rms": 0.10184836548668263,
+      "processing": "Loudness normalization"
+    },
+    {
+      "asset": "finish.wav",
+      "provider": "ElevenLabs",
+      "generationId": "iHhp1HH8qahtPiZK7COu",
+      "model": "eleven_text_to_sound_v2",
+      "sha256": "87fc67f234e8bae79a6ebf795f40e2a140092a5bb429295a3e08d2bc437728c1",
+      "duration": 1.48,
+      "peak": 0.3333984315395355,
+      "rms": 0.06870921064172335,
+      "processing": "Loudness normalization"
+    }
+  ]
+}

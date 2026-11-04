@@ -1,21 +1,11 @@
-# ShadowRacer
+# ShadowRacer editions
 
-**All Remix editions were withdrawn on 4 November 2026 at the owner’s request. Original remains available. Rall054 AI Enhanced is under revision after user reports of sticking and difficult controls; ShadowRacer’s faithful enhanced edition is in development.**
+The homepage offers Original and AI Enhanced. Ridge Courier and all other Remix editions remain withdrawn.
 
-[Play](https://joynes.github.io/joynes.se/games/shadow-racer/) · [Homepage](https://joynes.github.io/joynes.se/#games/retro/shadow-racer)
+Both editions run the two unchanged archived AS3/APE games in self-hosted Ruffle, with read-only observer prefixes. AI Enhanced 1.0 adds native camera and 39-rectangle course reads; all original instructions and the other 337 methods remain byte-identical. Observer-local writes cannot change gameplay objects. The five available ActionScript files are a partial source archive; the enhanced edition does not recompile or approximate the course from them.
 
-Johannes’s 2008 Flash game, with the complete September and October releases. Both keep their original ActionScript / APE physics, car, course, camera, collision rule, timer and finish. Preservation tests verify the original files and read-only observer.
+A presentation-only Canvas draws new Blender lime buggy/body and wheel art at the native particles, with clearer terrain edges and parallax scenery. The original sprung car, forces, terrain, timer, sixth-collision crash rule and finish at x > 3400 remain. New ElevenLabs music, engine, impact and finish effects have separate provenance and optimized files. Mute, pause and Menu reach silence. Records stay separate from Original.
 
-The English host provides an in-scene thumbpad, throttle/reverse, pause, restart, release selection and fullscreen. Several held actions are routed across native input frames; touch and keyboard retain independent ownership. Native timer pause, stale key/contact cleanup and fullscreen fallback are tested separately.
+Local checks pass both complete races and genuine crashes/retry, saved native records/reload and isolation, thirteen failed critical resources, denied storage, both failed-music tracks with audible engine and correct retry, eight input cases per browser, three parent-frame/fullscreen cases per browser, and Original regression. Native-touch and physical-keyboard full wins were also observed; experimental bot timing is not a deterministic release gate for the original physics challenge. All trusted controls, combined throttle/lean, ownership/cancel, stale repeats/contacts, focus, restart and rotation are tested through the browser. Resize retains physical-key ownership and clears touch positions.
 
-The original has no audio or working ghost playback. Its abandoned leaderboard uses an embedded message; finished times are saved locally per release. Available ActionScript files and web assets are preserved in the existing private game repository.
-
-[Detailed sources and preservation proof](../../games/shadow-racer/source-notes.md)
-
-The original gameplay, touch, keyboard, fullscreen and English-interface audit passed locally and live. Remix adds **Ridge Courier**: three new Blender route worlds, parcel deliveries, boost, wind, gap jumps and checkpoint repairs, with ElevenLabs audio. Choose **Original** or **Remix** at launch. Local records and assets are separate.
-
-Ridge Courier is published and verified: all three routes, touch and keyboard, audio, recovery, fullscreen and edition switching passed on the live website. Browser automation covers Chromium and installed Chrome in desktop, phone portrait and phone landscape contexts; physical devices and Safari are not covered. [Inventory](../../data/games-inventory.json).
-
-Faithful AI Enhanced is queued separately. The homepage now exposes Original / Remix directly; new gameplay is explicitly labeled Remix.
-
-The direct homepage Original / Remix choices are verified on release 6a98ed689890ff3cfcb3fbf2c122fb154e3dcdc4, Pages 41842371865. Both browsers pass actual driving and full-parent fallback fullscreen/cleanup in desktop and mobile contexts; all 50 runtime/integration hashes match. This updates launch/presentation; game rules are unchanged.
+Source, Blender projects, all sixteen original audio takes, metadata and test evidence were committed to the existing private joynes/shadow-racer repository before publication. Homepage and deployment checks are recorded in the publication inventory. Mobile contexts are emulated Chrome/Chromium; physical devices and Safari are not covered.

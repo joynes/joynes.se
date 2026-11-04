@@ -1,0 +1,10 @@
+{
+  "tool": "Blender",
+  "version": "5.2.2 LTS",
+  "builder": "restored-source/build-graphics.py",
+  "intent": "Original lime open-frame buggy with separate round wheels, positioned from the unchanged native APE particles.",
+  "assets": {
+    "buggy-wheel.png": "febd3fc3c99f5530f05db8aac0c18356880e82c9511033f0214aa589c7f47909",
+    "buggy-body.png": "a9e44401d32ab58c46650ebe337b74b7c44ddb309fb5df180be40a0464f0d9db"
+  }
+}

@@ -4,8 +4,6 @@ Johannes’s 2008 game belongs to Retro games. Both archived releases run their 
 
 ## Archived releases
 
-Source folder: [ShadowRacerPrototype2](https://drive.google.com/drive/folders/1TT9grPo0r_9tHhVN6Lm97YAjC5JnzQh7).
-
 | Release | Original bytes | SHA256 |
 | --- | ---: | --- |
 | 28 September 2008 | 20,341 | ca347f3481ee254d60ec3bd856821b6f6546f8567120872509659844622a4e3b |
@@ -27,7 +25,7 @@ The concise English host replaces the visible native HUD. The native fields rema
 
 The floating thumbpad combines throttle and lean; right-hand throttle/reverse buttons support a second finger. Every action stays inside the scene. One contact owns the pad; another cannot steal or release it. Buttons support touch and keyboard activation. Arrows/WASD retain separate physical-key ownership in desktop and mobile browsers.
 
-The archived engine polls one key per native frame. Several held actions are routed across successive native frames using ordinary keyboard events. Opposing directions cancel. The host never writes native car position, force, collisions, timer, score or mode. Contact release/cancellation retains independent keyboard actions. Pause, restart, resize, fullscreen and focus loss clear input; stale hardware repeats and old contacts cannot reactivate movement.
+The archived engine polls one key per native frame. Several held actions are routed across successive native frames using ordinary keyboard events. Opposing directions cancel. The host never writes native car position, force, collisions, timer, score or mode. Contact release/cancellation retains independent keyboard actions. Pause, restart, fullscreen and focus loss clear input; resize clears touch while retaining physical-key ownership; stale hardware repeats and old contacts cannot reactivate movement.
 
 Pause uses Ruffle suspend/resume and freezes the native timer. Fullscreen preserves scene proportions and keeps all controls inside the rendered view. Missing APIs use an expanded viewport with an exit and Escape. The homepage delegates fullscreen; joynes.se launches a direct window because its forwarding frame denies fullscreen.
 
@@ -43,6 +41,10 @@ Both releases require actual keyboard/native touch checks for all directions, co
 
 These are desktop and touch-enabled Chromium/Chrome checks. Physical devices and Safari require separate verification. Current results and exact release identities are recorded in the homepage inventory.
 
-## Remix: Ridge Courier
+## AI Enhanced
 
-A separate 3D delivery adventure: three routes, parcel stops, boost energy, wind, gap jumps, checkpoint repairs and local best times. It uses new Blender models and ElevenLabs music, motor and delivery sounds. The restored editions keep their original physics and files. Saves are separate. [Play Ridge Courier](enhanced/) · [Asset credits and generation provenance](enhanced/provenance.json).
+The faithful edition runs the same two archived AS3/APE games. An extended read-only observer reports all 39 actual terrain rectangles and the native camera. Its trace writes only two new observer-local variables; every original instruction and the other 337 methods remain unchanged. It does not rebuild the course, physics or rules from the partial source archive.
+
+A presentation-only Canvas draws a new Blender lime open-frame buggy and separate wheels at the native particles, with clearer terrain edges and a quiet parallax background. The finish remains at native x > 3400 and the sixth body collision still ends a run. Mobile presentation uses the whole game view. The same touch and keyboard host controls the native game; fresh keys survive fullscreen resize. New ElevenLabs music, engine, impact and finish sounds have separate provenance. Mute and pause reach exact silence. Records use a separate enhanced key.
+
+Both versions pass complete races with native two-contact touch and a physical keyboard, in addition to complete crash/retry and saved-record checks. Resource failures, audio retries and parent-frame fullscreen are tested. Complete source/media and verification logs are preserved in the existing private repository before publication. Current deployment results are in the homepage inventory. All Remix editions, including Ridge Courier, are withdrawn; do not republish them.

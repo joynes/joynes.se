@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-04",
+  "updatedAt": "2026-11-05",
   "objective": "Make every identified game and relevant version playable on the web, tested and published.",
-  "currentGame": "rall-054",
+  "currentGame": "shadow-racer",
   "games": [
     {
       "id": "web-quizzes",
@@ -56,7 +56,7 @@
         "games/web-quizzes/questions.json": "9bb2d82c4e317c1747b7ae58b99e10436f936c87896f5c97e114d9921c57bd61",
         "games/web-quizzes/app.mjs": "707b8d6004c33cee1690289cdb15e475fd9eb248b53387dc1a6c684bd99f110b",
         "games/web-quizzes/source-notes.md": "3a18494f56de0f8a2b45206b101a109d2002d7625b149633cac008cbde932b55",
-        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355"
+        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a"
       },
       "websiteSection": "quizzes",
       "originalTitle": "Fr\u00e5gespelet",
@@ -741,8 +741,8 @@
         "games/simple-driving/Build/cartWeb2.loader.js": "b2857ce93350711103bd72fbc6b665f16bb09afdf65542b52549ecd05b812a54",
         "games/simple-driving/Build/cartWeb2.wasm": "10cb1df56489a17bdab24b1ccdb3acad9f2049de604661c62409d9f26f100afd",
         "games/simple-driving/Build/cartWeb2.data": "f464a31a28caeec8b24e2059aa57e517c4a3c670fc62462fce9f5055f7dd47f5",
-        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355",
-        "index.html": "36031690e85b806b1945b17e1ba8e26169bcda9bdf22d5864e143c58c148c107"
+        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a",
+        "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0"
       },
       "previousPublishedUrl": "https://joynes.github.io/joynes.se/games/simple-driving/",
       "exclusionReason": "Removed at the owner's request: proof-of-concept driving demo with too little gameplay.",
@@ -810,8 +810,8 @@
         "games/simple-driving/Build/cartWeb2.wasm": "10cb1df56489a17bdab24b1ccdb3acad9f2049de604661c62409d9f26f100afd",
         "games/simple-driving/Build/cartWeb2.loader.js": "b2857ce93350711103bd72fbc6b665f16bb09afdf65542b52549ecd05b812a54",
         "games/simple-driving/Build/cartWeb2.framework.js": "18d7c9a73fddf3825d1e3cf71f948157e4720270e1e41651f687c76f29e4b3be",
-        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355",
-        "index.html": "36031690e85b806b1945b17e1ba8e26169bcda9bdf22d5864e143c58c148c107"
+        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a",
+        "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0"
       },
       "deploymentRecovery": {
         "failedAndInconsistentRerun": 41290922621,
@@ -1019,8 +1019,8 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
         "docs/games/car-topview-assets.json": "d85a34c5680cf30fa0b0117f7173b0e3f4c0785df19f6155d2f9ba8018c386c0",
-        "index.html": "36031690e85b806b1945b17e1ba8e26169bcda9bdf22d5864e143c58c148c107",
-        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355"
+        "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0",
+        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a"
       },
       "deploymentRun": 41842371865,
       "websiteSection": "ai",
@@ -1085,8 +1085,8 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
         "docs/games/car-topview-assets.json": "d85a34c5680cf30fa0b0117f7173b0e3f4c0785df19f6155d2f9ba8018c386c0",
-        "index.html": "36031690e85b806b1945b17e1ba8e26169bcda9bdf22d5864e143c58c148c107",
-        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355"
+        "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0",
+        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a"
       },
       "liveVerification": {
         "date": "2026-11-04",
@@ -1535,7 +1535,7 @@
       "catalogCommit": "66c76ea53cb3e403a8bff9a55ab3db924bbf6635",
       "catalogDeploymentRun": 41336710668,
       "publishedFileSha256": {
-        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355",
+        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a",
         "docs/games/worldforge.md": "256ea3317260ef758a5dd94f5ecad5a3ab4d674caf40d39b9d81aa8bd26d065a",
         "docs/games/worldforge-assets.json": "3fff753caa75822e9a4962033784b2449c5c461c9fb492ff999bee965c02b321"
       },
@@ -1552,7 +1552,7 @@
           "url": "https://drive.google.com/drive/folders/1TT9grPo0r_9tHhVN6Lm97YAjC5JnzQh7"
         }
       ],
-      "work": "Original remains available. Remix withdrawn at owner request. Faithful enhanced work follows user feedback; no new edition published without checks.",
+      "work": "Faithful AI Enhanced 1.0 verified locally and committed privately: original native physics/course with read-only Blender/Canvas presentation and new ElevenLabs audio. Homepage/deployment verification pending. Original available, Remix withdrawn.",
       "tests": [
         {
           "command": "npm test",
@@ -1639,15 +1639,15 @@
       "catalogDeploymentRun": 41747999054,
       "publishedFileSha256": {
         "games/shadow-racer/LICENSE_APE": "7e15278f714da10a6fcdb76321a4ae519b8e190f8b3881926298cffcd3497f14",
-        "games/shadow-racer/app.mjs": "6c4dfdd6e4e2f2185f9da8330576aac26dcdb9d59bec5633e2b87ef99c7f1d8b",
-        "games/shadow-racer/index.html": "06ce423e4f1af32254f53a35357697879197ecd543edaf363f81e3a7b6c73bc0",
+        "games/shadow-racer/app.mjs": "6253c638064e875a3387dc2867ae9b09f18cf1b238c2b535d6d4c38637ef6d0c",
+        "games/shadow-racer/index.html": "d87ed2c26dfc7fae05978773da01064a3530861add3b8b5a67119135625d9460",
         "games/shadow-racer/native-observer-proof.json": "782613371e494d411215ba826bc2c3456751417551a8339ba0c6bc09148038ab",
         "games/shadow-racer/original/shadow-racer-20080928.swf": "ca347f3481ee254d60ec3bd856821b6f6546f8567120872509659844622a4e3b",
         "games/shadow-racer/original/shadow-racer-20081005.swf": "4bf85f616c53e2f11fef8c40458e032c2555cbf0a8951bcddcf1f5ca26d73c89",
         "games/shadow-racer/shadow-racer-20080928.swf": "6f56ab49e660bbc3c9b05471b0d2f7cf1d738414b988f953ca5ef79e2e501151",
         "games/shadow-racer/shadow-racer-20081005.swf": "c33a6cee03e839251864e416d6f0e9e93aa855fd6bc6a99b80b67d2f7d85b257",
         "games/shadow-racer/source-manifest.json": "d934d88f5f6a412ed61e1e19b61ddfdb81c3e2ec9e04633a90fc14cefe8967e5",
-        "games/shadow-racer/source-notes.md": "2b88daf1972935406dfc61961316ed7e96ab21465a857ef312efa55e5a19d749",
+        "games/shadow-racer/source-notes.md": "b72f6e68593d1871053413cb7c88402526a205a4b26ddf242ca6ad04e2b60c42",
         "games/shadow-racer/styles.css": "c3116b7b7326f4b1768d93cf083eb528e00419d5d24318019420f61add91147a",
         "games/shadow-racer/vendor/ruffle/172de42e6619eac8f371.wasm": "1ed33b9b71a6b01b9aafafed660be343ffeb2d246c5d79e6425a32bf93e38207",
         "games/shadow-racer/vendor/ruffle/878d548199cddef07035.wasm": "af9b6a13a8f5e8d305bc3ce28a4edf3f6242df1183e8576ad4ca086e9f21eaea",
@@ -1663,9 +1663,25 @@
         "games/shadow-racer/vendor/ruffle/ruffle.js.map": "bf8dabc8144a0e087cdbade5da77de5a998ab55a271b32bae6e3173248d4188a",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
-        "docs/games/shadow-racer-assets.json": "27c0cf1b87c96681884e514d48f3460b960f05a0dd9f434b354fc9f378218adc",
-        "index.html": "36031690e85b806b1945b17e1ba8e26169bcda9bdf22d5864e143c58c148c107",
-        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355"
+        "docs/games/shadow-racer-assets.json": "8faff4fba34068e7410e6f7f0dea483574cb8d269564119a6a9b0f2c653a532f",
+        "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0",
+        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a",
+        "games/shadow-racer/restored/assets/audio-provenance.json": "7f2e1b622c540b120e9373659d2d40e5ed7fe8e0360b149173081173bbdd58af",
+        "games/shadow-racer/restored/assets/buggy-body.png": "a9e44401d32ab58c46650ebe337b74b7c44ddb309fb5df180be40a0464f0d9db",
+        "games/shadow-racer/restored/assets/buggy-wheel.png": "febd3fc3c99f5530f05db8aac0c18356880e82c9511033f0214aa589c7f47909",
+        "games/shadow-racer/restored/assets/bump.wav": "dabd7ba0e789869fa391b5c4f08cc32ebcc9330705aac8927d4d3f66bc466dd7",
+        "games/shadow-racer/restored/assets/engine.wav": "a52600e9ee115e81621eaf2ee4b291ec3883abcb142e769054cea7ff155d8cf6",
+        "games/shadow-racer/restored/assets/finish.wav": "87fc67f234e8bae79a6ebf795f40e2a140092a5bb429295a3e08d2bc437728c1",
+        "games/shadow-racer/restored/assets/graphics-provenance.json": "6265a9de259747ee038144c4b18a82174967ebe54e7e743c29d34062c8e887a2",
+        "games/shadow-racer/restored/assets/music-1.mp3": "89717329dc0e84d4f1fa6159fdf8ff7f6a000499ae6c836d239f41703e027cc6",
+        "games/shadow-racer/restored/assets/music-2.mp3": "9cb479403421d18d63ca4f54291a728acbb8bb606630419bfbdfdfea304076a6",
+        "games/shadow-racer/restored/credits.json": "cd3b831b5c730a694fd2ebd12bf88bb8f6a60cc81f8c698ea3bc79118c61f20a",
+        "games/shadow-racer/restored/index.html": "4608cd8f48b1a00b5141f1e2ed801032aa01947ee9444075f4e806599947a0e4",
+        "games/shadow-racer/restored/native-observer-proof.json": "e815f564ebabd8d11f4fafb3ffd768a112f9d73d31f1588af6de6a76dc6d0e88",
+        "games/shadow-racer/restored/presentation.mjs": "032613d3f5f2968266944982625aee3d3d88123d1dd2d6e7c1cf4048e4347037",
+        "games/shadow-racer/restored/shadow-racer-20080928.swf": "db2c7a4e912430c610e3a5663d2520d547ecd176f328731b24568cb667a7075c",
+        "games/shadow-racer/restored/shadow-racer-20081005.swf": "8d8591efc9dfc6241a606b2bd555ee8880bc5e710863c5f3200e217f5bdd8511",
+        "games/shadow-racer/restored/styles.css": "feaebae1b4b4e3e4d601ba8e4b98df37c14b04cf3158e270ec1e1483c1eb9db4"
       },
       "websiteSection": "retro",
       "renewedAuditStatus": "passed",
@@ -1673,15 +1689,15 @@
       "renewedAuditSourceCommit": "389aadf7c8c8366eae4a4083429d0cd22dac066f",
       "releaseFilesSha256": {
         "games/shadow-racer/LICENSE_APE": "7e15278f714da10a6fcdb76321a4ae519b8e190f8b3881926298cffcd3497f14",
-        "games/shadow-racer/app.mjs": "6c4dfdd6e4e2f2185f9da8330576aac26dcdb9d59bec5633e2b87ef99c7f1d8b",
-        "games/shadow-racer/index.html": "06ce423e4f1af32254f53a35357697879197ecd543edaf363f81e3a7b6c73bc0",
+        "games/shadow-racer/app.mjs": "6253c638064e875a3387dc2867ae9b09f18cf1b238c2b535d6d4c38637ef6d0c",
+        "games/shadow-racer/index.html": "d87ed2c26dfc7fae05978773da01064a3530861add3b8b5a67119135625d9460",
         "games/shadow-racer/native-observer-proof.json": "782613371e494d411215ba826bc2c3456751417551a8339ba0c6bc09148038ab",
         "games/shadow-racer/original/shadow-racer-20080928.swf": "ca347f3481ee254d60ec3bd856821b6f6546f8567120872509659844622a4e3b",
         "games/shadow-racer/original/shadow-racer-20081005.swf": "4bf85f616c53e2f11fef8c40458e032c2555cbf0a8951bcddcf1f5ca26d73c89",
         "games/shadow-racer/shadow-racer-20080928.swf": "6f56ab49e660bbc3c9b05471b0d2f7cf1d738414b988f953ca5ef79e2e501151",
         "games/shadow-racer/shadow-racer-20081005.swf": "c33a6cee03e839251864e416d6f0e9e93aa855fd6bc6a99b80b67d2f7d85b257",
         "games/shadow-racer/source-manifest.json": "d934d88f5f6a412ed61e1e19b61ddfdb81c3e2ec9e04633a90fc14cefe8967e5",
-        "games/shadow-racer/source-notes.md": "2b88daf1972935406dfc61961316ed7e96ab21465a857ef312efa55e5a19d749",
+        "games/shadow-racer/source-notes.md": "b72f6e68593d1871053413cb7c88402526a205a4b26ddf242ca6ad04e2b60c42",
         "games/shadow-racer/styles.css": "c3116b7b7326f4b1768d93cf083eb528e00419d5d24318019420f61add91147a",
         "games/shadow-racer/vendor/ruffle/172de42e6619eac8f371.wasm": "1ed33b9b71a6b01b9aafafed660be343ffeb2d246c5d79e6425a32bf93e38207",
         "games/shadow-racer/vendor/ruffle/878d548199cddef07035.wasm": "af9b6a13a8f5e8d305bc3ce28a4edf3f6242df1183e8576ad4ca086e9f21eaea",
@@ -1697,9 +1713,25 @@
         "games/shadow-racer/vendor/ruffle/ruffle.js.map": "bf8dabc8144a0e087cdbade5da77de5a998ab55a271b32bae6e3173248d4188a",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
-        "docs/games/shadow-racer-assets.json": "27c0cf1b87c96681884e514d48f3460b960f05a0dd9f434b354fc9f378218adc",
-        "index.html": "36031690e85b806b1945b17e1ba8e26169bcda9bdf22d5864e143c58c148c107",
-        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355"
+        "docs/games/shadow-racer-assets.json": "8faff4fba34068e7410e6f7f0dea483574cb8d269564119a6a9b0f2c653a532f",
+        "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0",
+        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a",
+        "games/shadow-racer/restored/assets/audio-provenance.json": "7f2e1b622c540b120e9373659d2d40e5ed7fe8e0360b149173081173bbdd58af",
+        "games/shadow-racer/restored/assets/buggy-body.png": "a9e44401d32ab58c46650ebe337b74b7c44ddb309fb5df180be40a0464f0d9db",
+        "games/shadow-racer/restored/assets/buggy-wheel.png": "febd3fc3c99f5530f05db8aac0c18356880e82c9511033f0214aa589c7f47909",
+        "games/shadow-racer/restored/assets/bump.wav": "dabd7ba0e789869fa391b5c4f08cc32ebcc9330705aac8927d4d3f66bc466dd7",
+        "games/shadow-racer/restored/assets/engine.wav": "a52600e9ee115e81621eaf2ee4b291ec3883abcb142e769054cea7ff155d8cf6",
+        "games/shadow-racer/restored/assets/finish.wav": "87fc67f234e8bae79a6ebf795f40e2a140092a5bb429295a3e08d2bc437728c1",
+        "games/shadow-racer/restored/assets/graphics-provenance.json": "6265a9de259747ee038144c4b18a82174967ebe54e7e743c29d34062c8e887a2",
+        "games/shadow-racer/restored/assets/music-1.mp3": "89717329dc0e84d4f1fa6159fdf8ff7f6a000499ae6c836d239f41703e027cc6",
+        "games/shadow-racer/restored/assets/music-2.mp3": "9cb479403421d18d63ca4f54291a728acbb8bb606630419bfbdfdfea304076a6",
+        "games/shadow-racer/restored/credits.json": "cd3b831b5c730a694fd2ebd12bf88bb8f6a60cc81f8c698ea3bc79118c61f20a",
+        "games/shadow-racer/restored/index.html": "4608cd8f48b1a00b5141f1e2ed801032aa01947ee9444075f4e806599947a0e4",
+        "games/shadow-racer/restored/native-observer-proof.json": "e815f564ebabd8d11f4fafb3ffd768a112f9d73d31f1588af6de6a76dc6d0e88",
+        "games/shadow-racer/restored/presentation.mjs": "032613d3f5f2968266944982625aee3d3d88123d1dd2d6e7c1cf4048e4347037",
+        "games/shadow-racer/restored/shadow-racer-20080928.swf": "db2c7a4e912430c610e3a5663d2520d547ecd176f328731b24568cb667a7075c",
+        "games/shadow-racer/restored/shadow-racer-20081005.swf": "8d8591efc9dfc6241a606b2bd555ee8880bc5e710863c5f3200e217f5bdd8511",
+        "games/shadow-racer/restored/styles.css": "feaebae1b4b4e3e4d601ba8e4b98df37c14b04cf3158e270ec1e1483c1eb9db4"
       },
       "renewedAuditCommit": "8857df4121f7e433005e3d91dddc0ab09f7bb3fe",
       "deploymentRun": 41842371865,
@@ -1737,16 +1769,26 @@
         "previousPublicUrl": "https://joynes.github.io/joynes.se/games/shadow-racer/enhanced/"
       },
       "enhancedEdition": {
-        "status": "in_progress-faithful-restoration",
+        "status": "verified_local_pending_deployment",
         "launchChoices": [
           "Original",
-          "AI Enhanced",
-          "Remix"
+          "AI Enhanced"
         ],
         "graphics": "Blender",
-        "intent": "Keep original gameplay, maps, controls, progression and identity. Restore graphics/audio; new concepts belong to Remix."
+        "intent": "Keep original gameplay, maps, controls, progression and identity. Restore graphics/audio; new concepts belong to Remix.",
+        "version": "1.0.0",
+        "title": "ShadowRacer \u00b7 AI Enhanced",
+        "webPath": "games/shadow-racer/restored/",
+        "publicUrl": "https://joynes.github.io/joynes.se/games/shadow-racer/restored/",
+        "sourceCommit": "59ee0b211879a86f712f18113ac5984ec930c150",
+        "provenance": "games/shadow-racer/restored/credits.json",
+        "soundAndMusic": "Two ElevenLabs instrumental tracks and new engine/impact/finish effects. Original remains silent.",
+        "faithfulness": "Original AS3/APE game engine, all original instructions, native 39-rectangle track, forces, timer, crash/finish rules. New presentation reads native particles/camera; observer writes only two new locals.",
+        "localChecks": "Both native races, crashes/retry, isolated records/reload, 13 critical resource retries, denied storage; both failed music tracks, audible engine and exact mute/retry/pause/Menu; eight trusted input cases per browser, three parent-frame/fullscreen cases per browser; Original regression passes. Full touch/keyboard wins observed; experimental race bot timing is not a deterministic gate.",
+        "verificationLimits": "Browser-emulated mobile Chrome/Chromium; physical devices and Safari untested.",
+        "homepageChecks": "Canonical homepage and cross-origin forwarding fixture pass four sizes each: direct AI Enhanced launch, actual keyboard/native touch, fullscreen, Original play and Back/reload/route cleanup. Root units and available-edition checks pass."
       },
-      "version": "2008-web.5",
+      "version": "2008-web.6",
       "auditCommit": "b6778712a02e9c7feab924a2d576e706baa7ded0",
       "liveVerification": {
         "date": "2026-11-04",
@@ -1845,10 +1887,10 @@
         "games/rall-026/vendor/emulators/sources/emulators-v8.5.2.tar.gz": "4f92834936f774ad1e0f8d2cc0fc05dc73cd9962d2b8da0a09f56139a2a70f28",
         "games/rall-026/vendor/emulators/sources/dosbox-528578d.tar.gz": "797efaf22246bbc5b2e6be0a6c791a58addd2bca330e0aa93232780a77e06019",
         "games/rall-026/vendor/emulators/wdosbox.wasm": "b33afba80de1a420c123086e5952d135de041f9e85d4444170e29d9249ec049c",
-        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355",
+        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a",
         "games/rall-026/vendor/emulators/wlibzip.js": "b8e55c2aa4c96e961c9965f289c0f40b5d44f02a557dcf980ddc29787b493842",
         "games/rall-026/vendor/emulators/wlibzip.wasm": "25064d970c42ca7ea0fdb8b058204d6e41cc8826a676219677772f5591e8337b",
-        "index.html": "36031690e85b806b1945b17e1ba8e26169bcda9bdf22d5864e143c58c148c107",
+        "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0",
         "docs/games/rall-026.md": "e689906009815f758a854b186622c68c8fb482ebafd1e260e2091592f1147049",
         "docs/games/rall-026-assets.json": "23aad475f25009756710699965ca81d63f71b7eb230cdfed2ed10e201cc6150b"
       },
@@ -2004,8 +2046,8 @@
         "games/rall-030/vendor/emulators/wlibzip.wasm": "25064d970c42ca7ea0fdb8b058204d6e41cc8826a676219677772f5591e8337b",
         "games/rall-030/vendor/mouse-compat/ALMOUSE.COM": "200942106e626955510b84426802de31790979c1f55d225d7bb65cb74cd3ba37",
         "games/rall-030/vendor/mouse-compat/almouse.asm": "307b24361235edbf526d49ba4c9bc6323c73c4ded087a70832ab903834d2c1c5",
-        "index.html": "36031690e85b806b1945b17e1ba8e26169bcda9bdf22d5864e143c58c148c107",
-        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355",
+        "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0",
+        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a",
         "docs/games/rall-030.md": "fd819f7eccea21de808aa561486b291bd37c5c500bae36d770c7ab9477440168",
         "docs/games/rall-030-assets.json": "1b702ab9c20481a5708c2e39df397c3d565c37f1370643b9f103ff7412a1ae8f"
       },
@@ -2142,8 +2184,8 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
         "docs/games/rall-054-assets.json": "079cffc3b07ef8a8cb360cb2d55eb370eeb973e46e0efc7ef9d577a0055d7e98",
-        "index.html": "36031690e85b806b1945b17e1ba8e26169bcda9bdf22d5864e143c58c148c107",
-        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355",
+        "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0",
+        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a",
         "games/rall-054/restored/assets/audio-provenance.json": "1cef9ad1ec7d7677c7117345b21a2dc29e11ffdcac98a94c15540ccd1df93477",
         "games/rall-054/restored/assets/enter-siege.wav": "722a9421f6996b9a16f38b30c6987bb3118d281e16598bc66aabf9069e2dbd2c",
         "games/rall-054/restored/assets/explosion.wav": "9bcb18b54fc50b429233ec334163f75ca398fd1d10cc0097b81b30d146501e3b",
@@ -2209,8 +2251,8 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
         "docs/games/rall-054-assets.json": "079cffc3b07ef8a8cb360cb2d55eb370eeb973e46e0efc7ef9d577a0055d7e98",
-        "index.html": "36031690e85b806b1945b17e1ba8e26169bcda9bdf22d5864e143c58c148c107",
-        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355",
+        "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0",
+        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a",
         "games/rall-054/restored/assets/audio-provenance.json": "1cef9ad1ec7d7677c7117345b21a2dc29e11ffdcac98a94c15540ccd1df93477",
         "games/rall-054/restored/assets/enter-siege.wav": "722a9421f6996b9a16f38b30c6987bb3118d281e16598bc66aabf9069e2dbd2c",
         "games/rall-054/restored/assets/explosion.wav": "9bcb18b54fc50b429233ec334163f75ca398fd1d10cc0097b81b30d146501e3b",
@@ -2751,8 +2793,8 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
         "docs/games/rall-080-assets.json": "6472f3251f791a12df77f91951ff5d7bb2a96552a8412a41a320fe0d581913b8",
-        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355",
-        "index.html": "36031690e85b806b1945b17e1ba8e26169bcda9bdf22d5864e143c58c148c107"
+        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a",
+        "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0"
       },
       "verificationLimits": "Emulated mobile browser contexts; no physical-device or Safari claim. Browser tests use normal keys/native CDP touch and a cloned read-only native observer; no gameplay-state injection.",
       "inGameControlsAndFullscreenStatus": "local-passed-live-pending",
@@ -3263,8 +3305,8 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
         "docs/games/rall-008-assets.json": "a9a46de89f94fffebbd2adf57dc4e1e348e3275319961c49a880a0c6c6c899a3",
-        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355",
-        "index.html": "36031690e85b806b1945b17e1ba8e26169bcda9bdf22d5864e143c58c148c107"
+        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a",
+        "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0"
       },
       "verificationLimits": "Mobile browser contexts are emulated; no physical-device or Safari claim. Tests drive browser keys/native CDP touch with cloned read-only state, without gameplay-state injection.",
       "inGameControlsAndFullscreenStatus": "passed",

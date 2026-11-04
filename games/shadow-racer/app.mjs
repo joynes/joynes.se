@@ -1,5 +1,6 @@
 import{bindFullscreen,bindGameAction}from'../../assets/game-view.mjs?v=9a65005d59b1';
-const $=id=>document.getElementById(id);
+const $=id=>document.getElementById(id),FAITHFUL=document.documentElement.dataset.edition==='restored',STORE=FAITHFUL?'joynes-shadow-racer-restored-v1':'joynes-shadow-racer-records-v1';
+let presentation;
 const versions=new Set(['20080928','20081005']);
 const keyCodes={ArrowLeft:37,ArrowUp:38,ArrowRight:39,ArrowDown:40,Enter:13};
 const aliases={a:'ArrowLeft',w:'ArrowUp',d:'ArrowRight',s:'ArrowDown'};
@@ -14,7 +15,7 @@ let routeIndex=0,inputFrame=-1,padPointer=null,padOrigin=null;
 const board=$('board'),surface=$('game-surface'),thumb=$('thumbpad'),knob=$('thumb-knob');
 $('native-hud-mask').addEventListener('pointerdown',event=>{event.preventDefault();if(player)focusGame();});
 function readRecords(){
- try {const saved=JSON.parse(localStorage.getItem('joynes-shadow-racer-records-v1')||'[]');records=Array.isArray(saved)?saved.filter(r=>r&&versions.has(r.version)&&typeof r.name==='string'&&Number.isInteger(r.ticks)&&r.ticks>0&&r.ticks<=60000).slice(0,100):[];}catch{storageAvailable=false;records=[];}
+ try {const saved=JSON.parse(localStorage.getItem(STORE)||'[]');records=Array.isArray(saved)?saved.filter(r=>r&&versions.has(r.version)&&typeof r.name==='string'&&Number.isInteger(r.ticks)&&r.ticks>0&&r.ticks<=60000).slice(0,100):[];}catch{storageAvailable=false;records=[];}
 }
 function paintRecords(){
  $('records').replaceChildren();const sorted=records.filter(r=>r.version===version).sort((a,b)=>a.ticks-b.ticks).slice(0,10);
@@ -44,18 +45,19 @@ function routeHeld(){if(!busy&&!paused&&phase==='running'&&native?.frame!==input
 requestAnimationFrame(routeHeld);
 async function pressEnter(){focusGame();dispatch('keydown','Enter');await wait(160);dispatch('keyup','Enter');}
 function onTrace(message){
+ if(FAITHFUL&&message.startsWith('Surfaces ')){const values=message.slice(9).trim().split(/\s+/).map(Number);if(values.length===6&&values.every(Number.isFinite))presentation?.track(values);return;}
  if(!message.startsWith('ShadowRacerPrototype2 '))return;
  const values=message.slice('ShadowRacerPrototype2 '.length).trim().split(/\s+/).map(Number);
  if(values.length===1&&values[0]===0){nativeInitialized=true;return;}
- if(values.length!==13||values.some(v=>!Number.isFinite(v)))return;
- const [mode,x,y,crashes,ticks,bx,by,leftX,leftY,rightX,rightY,key,frame]=values;
- native={mode,x,y,crashes,ticks,bx,by,leftX,leftY,rightX,rightY,key,frame};
+ if(values.length!==(FAITHFUL?15:13)||values.some(v=>!Number.isFinite(v)))return;
+ const [mode,x,y,crashes,ticks,bx,by,leftX,leftY,rightX,rightY,key,frame,cameraX,cameraY]=values;
+ native={mode,x,y,crashes,ticks,bx,by,leftX,leftY,rightX,rightY,key,frame,...(FAITHFUL?{cameraX,cameraY}:{})};presentation?.observe(native);
  if(mode===1){if(lastMode!==1){recorded=false;$('overlay').hidden=true;}phase='running';resultTicks=ticks;}
  if(mode===0&&crashes>5){phase='crashed';$('pause').disabled=true;releaseAll();showOverlay('Crashed','Too many body collisions. Lean to stay upright.','again');}
  if(mode===3&&!recorded){
   recorded=true;phase='finished';$('pause').disabled=true;resultTicks=ticks;releaseAll();
   if(ticks>0){records.push({name:($('name').value.trim()||'Player').slice(0,24),ticks,version});records=records.sort((a,b)=>a.ticks-b.ticks).slice(0,100);
-   try {localStorage.setItem('joynes-shadow-racer-records-v1',JSON.stringify(records));}catch{storageAvailable=false;}
+   try {localStorage.setItem(STORE,JSON.stringify(records));}catch{storageAvailable=false;}
    paintRecords();}
   showOverlay('Finished!',`Your time: ${(ticks/100).toLocaleString('en-GB',{minimumFractionDigits:2,maximumFractionDigits:2})} seconds.`,'again');
  }
@@ -66,7 +68,7 @@ async function loadRuffle(){
  if(window.RufflePlayer?.newest)return;
  if(!loadedScript){loadedScript=new Promise((resolve,reject)=>{
   window.RufflePlayer={config:{polyfills:false}};
-  const script=document.createElement('script');script.src='vendor/ruffle/ruffle.js';script.onload=resolve;script.onerror=()=>{script.remove();reject(Error('Could not load the engine.'));};document.head.append(script);
+  const script=document.createElement('script');script.src=(FAITHFUL?'../':'')+'vendor/ruffle/ruffle.js';script.onload=resolve;script.onerror=()=>{script.remove();reject(Error('Could not load the engine.'));};document.head.append(script);
  }).catch(error=>{loadedScript=null;throw error;});}
  await loadedScript;
 }
@@ -74,7 +76,9 @@ async function start(){
  if(busy)return;busy=true;const generation=++loadGeneration;releaseAll();paused=false;native=null;nativeInitialized=false;resultTicks=0;lastMode=null;recorded=false;phase='loading';version=versions.has($('version').value)?$('version').value:'20081005';paintRecords();
  document.querySelectorAll('[data-key]').forEach(b=>b.disabled=true);$('intro').hidden=true;$('error').hidden=true;$('play').hidden=false;$('pause').disabled=$('reset').disabled=$('choose').disabled=true;paintPause(false);showOverlay('Loading…','Loading the original engine.');
  try {
+  if(FAITHFUL&&document.documentElement.dataset.stylesFailed)throw Error('Could not load the presentation. Retry.');
   if(player){player.remove();player=null;}
+  if(FAITHFUL){presentation||=await(await import('./restored/presentation.mjs?v=032613d3f5f2')).createPresentation(surface);presentation.reset(version);}
   await loadRuffle();player=window.RufflePlayer.newest().createPlayer();player.tabIndex=0;player.setAttribute('aria-label','ShadowRacer. Arrows or WASD drive and lean.');$('player-holder').replaceChildren(player);player.addEventListener('focusout',()=>{if(document.activeElement!==player&&!player?.contains(document.activeElement))releaseAll();});
   const response=await fetch(`shadow-racer-${version}.swf`,{cache:'no-cache',signal:AbortSignal.timeout(30000)});
   if(!response.ok)throw Error('Could not load the original. Retry.');
@@ -91,13 +95,15 @@ async function start(){
 function paintPause(value){$('pause').textContent=value?'▶':'Ⅱ';$('pause').setAttribute('aria-label',value?'Resume':'Pause');$('pause').title=value?'Resume':'Pause';$('pause').setAttribute('aria-pressed',String(value));}
 function pause(next=true){
  if(!player||busy||!['running','ready'].includes(phase))return;releaseAll();paused=next;
- if(paused){player.ruffle().suspend();showOverlay('Paused','Resume when ready.','resume');}
- else{player.ruffle().resume();$('overlay').hidden=true;focusGame();}
+ if(paused){player.ruffle().suspend();presentation?.pause(true);showOverlay('Paused','Resume when ready.','resume');}
+ else{player.ruffle().resume();presentation?.pause(false);$('overlay').hidden=true;focusGame();}
  paintPause(paused);$('state').textContent=paused?'Paused':'Stay upright';
 }
-bindGameAction($('choose'),()=>{if(busy)return;if(document.fullscreenElement||board.classList.contains('game-view-expanded'))$('fullscreen').click();releaseAll();player?.remove();player=null;native=null;paused=false;phase='ready';$('play').hidden=true;$('intro').hidden=false;$('error').hidden=true;$('start').focus();});
+bindGameAction($('choose'),()=>{if(busy)return;if(document.fullscreenElement||board.classList.contains('game-view-expanded'))$('fullscreen').click();releaseAll();presentation?.stop();player?.remove();player=null;native=null;paused=false;phase='ready';$('play').hidden=true;$('intro').hidden=false;$('error').hidden=true;$('start').focus();});
 $('start').onclick=start;$('retry').onclick=()=>{try{sessionStorage.setItem('joynes-shadow-retry',JSON.stringify({name:$('name').value}));}catch{}const url=new URL(location.href);url.searchParams.set('version',version);url.searchParams.set('retry','1');location.replace(url);};bindGameAction($('reset'),start);bindGameAction($('again'),start);
 bindGameAction($('pause'),()=>pause(!paused));bindGameAction($('resume'),()=>pause(false));
+if(FAITHFUL){$('sound').addEventListener('click',()=>{const muted=presentation?.sound()||false;$('sound').setAttribute('aria-pressed',String(muted));$('sound').setAttribute('aria-label',muted?'Unmute sound':'Mute sound');focusGame();});}
+$('fullscreen').addEventListener('mousedown',e=>e.preventDefault());$('fullscreen').addEventListener('click',e=>{if(e.detail>0&&player)focusGame();});
 $('fullscreen').addEventListener('pointerdown',e=>{if(e.pointerType==='touch')e.preventDefault();});
 bindFullscreen(board,$('fullscreen'),active=>{releaseAll();if(player&&!busy)focusGame();if(parent!==window)parent.postMessage({type:'joynes:game-view',active},location.origin);});
 window.addEventListener('message',e=>{if(e.source===parent&&e.origin===location.origin&&e.data?.type==='joynes:game-view-close'&&$('board').classList.contains('game-view-expanded'))$('fullscreen').click();});
@@ -134,7 +140,7 @@ window.addEventListener('keydown',event=>{
 },true);
 window.addEventListener('keyup',event=>{if(synthetic)return;let controlReleased=false;for(const token of [...held.keys()])if(token.startsWith('control:')&&token.endsWith(':'+event.code)){held.delete(token);controlReleased=true;}if(controlReleased){updateKey();event.preventDefault();event.stopImmediatePropagation();return;}const key=aliases[event.key.toLowerCase()]||event.key;if(keyCodes[key]&&!$('play').hidden){const active=held.has('key:'+event.code);held.delete('key:'+event.code);updateKey();if(active||!event.target.closest?.('button,a,input,select,summary')){event.preventDefault();event.stopImmediatePropagation();}}},true);
 window.addEventListener('blur',()=>{releaseAll();if(phase==='running'&&!paused)pause(true);});
-window.addEventListener('resize',releaseAll);
+window.addEventListener('resize',()=>{for(const token of [...held.keys()])if(!token.startsWith('key:'))held.delete(token);releasePad();updateKey();});
 document.addEventListener('visibilitychange',()=>{if(document.hidden){releaseAll();if(phase==='running'&&!paused)pause(true);}});
-window.shadowRacerDiagnostics=()=>Object.freeze({phase,version,paused,native:native?Object.freeze({...native}):null,held:[...held.values()],records:records.map(r=>Object.freeze({...r})),storageAvailable,metadata:player?.ruffle().metadata?{...player.ruffle().metadata}:null});
-readRecords();paintRecords();$('start').disabled=false;$('start').textContent='Original';if(retryRequested)void start();
+window.shadowRacerDiagnostics=()=>Object.freeze({phase,version,paused,native:native?Object.freeze({...native}):null,held:[...held.values()],records:records.map(r=>Object.freeze({...r})),storageAvailable,presentation:presentation?.stats(),metadata:player?.ruffle().metadata?{...player.ruffle().metadata}:null});
+readRecords();paintRecords();$('start').disabled=false;$('start').textContent=FAITHFUL?'AI Enhanced':'Original';if(retryRequested)void start();

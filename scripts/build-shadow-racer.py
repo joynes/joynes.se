@@ -55,24 +55,26 @@ class Abc(Reader):
         self.strings = ['']
         for _ in range(max(0, self.number() - 1)):
             self.strings.append(self.take(self.number()).decode('utf8'))
+        self.namespaces = [None]
         for _ in range(max(0, self.number() - 1)):
-            self.byte(); self.number()
+            self.namespaces.append((self.byte(), self.strings[self.number()]))
+        self.nssets = [None]
         for _ in range(max(0, self.number() - 1)):
-            for _ in range(self.number()):
-                self.number()
+            self.nssets.append([self.number() for _ in range(self.number())])
         self.names = ['']
+        self.multinames = [None]
         for _ in range(max(0, self.number() - 1)):
-            kind = self.byte()
+            kind = self.byte(); namespace = None; nsset = None
             if kind in (7, 13):
-                self.number(); name = self.number()
+                namespace = self.number(); name = self.number()
             elif kind in (15, 16):
                 name = self.number()
             elif kind in (17, 18):
                 name = 0
             elif kind in (9, 14):
-                name = self.number(); self.number()
+                name = self.number(); nsset = self.number()
             elif kind in (27, 28):
-                name = 0; self.number()
+                name = 0; nsset = self.number()
             elif kind == 29:
                 name = 0; self.number()
                 for _ in range(self.number()):
@@ -80,6 +82,7 @@ class Abc(Reader):
             else:
                 raise ValueError('unknown multiname ' + str(kind))
             self.names.append(self.strings[name])
+            self.multinames.append(dict(kind=kind, namespace=namespace, nsset=nsset))
         for _ in range(self.number()):
             count = self.number(); self.number()
             for _ in range(count):
@@ -98,7 +101,7 @@ class Abc(Reader):
         self.classes = []
         class_count = self.number()
         for _ in range(class_count):
-            name = self.number(); self.number(); flags = self.byte()
+            name = self.number(); nsset = self.number(); flags = self.byte()
             if flags & 8:
                 self.number()
             for _ in range(self.number()):
@@ -144,7 +147,7 @@ class Abc(Reader):
         return result
 
 
-def instrument_abc(data):
+def instrument_abc(data, enhanced=False):
     abc = Abc(data)
     traits = dict((name, (kind, method, name_id)) for name, kind, method, name_id
                   in next(traits for name, traits in abc.classes if name == 'ShadowRacerPrototype2'))
@@ -174,12 +177,48 @@ def instrument_abc(data):
         + own('car') + prop(unique('crashLimit'))
         + own('myTimer') + prop(unique('currentCount')) + points + own('keyPress') + own('frameNr')
         + b'\x4f' + u30(trace) + u30(14))
+    local_count = body['locals']
+    if enhanced:
+        # Presentation-only geometry reads. The only writes are two new locals.
+        def public(name):
+            hits = [i for i, text in enumerate(abc.names) if text == name
+                    and abc.multinames[i]['kind'] == 7
+                    and abc.namespaces[abc.multinames[i]['namespace']] == (22, '')]
+            assert len(hits) == 1, (name, hits)
+            return hits[0]
+        index_name = next(i for i, item in enumerate(abc.multinames) if item
+                          and item['kind'] == 27 and any(abc.namespaces[n] == (22, '')
+                          for n in abc.nssets[item['nsset']]))
+        loop = bytearray(); labels = {}; jumps = []
+        def emit(data): loop.extend(data)
+        def label(name): labels[name] = len(loop)
+        def jump(op, name):
+            loop.append(op); jumps.append((len(loop), name)); loop.extend(b'\0\0\0')
+        idx, particle = body['locals'], body['locals'] + 1
+        get = lambda n: b'\x62' + u30(n)
+        put = lambda n: b'\x63' + u30(n)
+        emit(own('frameNr') + b'\x24\0'); jump(0x14, 'end')  # ifne
+        emit(b'\x24\0' + put(idx)); label('loop'); emit(b'\x09')
+        emit(get(idx) + own('surfaces') + prop(unique('particles')) + prop(public('length')))
+        jump(0x18, 'end')  # ifge
+        emit(own('surfaces') + prop(unique('particles')) + get(idx) + prop(index_name) + put(particle))
+        emit(b'\x5d' + u30(trace) + b'\x2c' + u30(abc.strings.index('Surfaces')) + get(idx))
+        for name in ('px', 'py', 'width', 'height', 'radian'):
+            emit(get(particle) + prop(unique(name)))
+        emit(b'\x4f' + u30(trace) + u30(7) + b'\xc2' + u30(idx)); jump(0x10, 'loop')
+        label('end')
+        for at, name in jumps:
+            loop[at:at+3] = (labels[name] - at - 3).to_bytes(3, 'little', signed=True)
+        suffix = b'\x4f' + u30(trace) + u30(14)
+        assert observed.endswith(suffix)
+        observed = bytes(loop) + observed[:-len(suffix)] + b'\xd0' + prop(public('x')) + b'\xd0' + prop(public('y')) + b'\x4f' + u30(trace) + u30(16)
+        local_count += 2
     ready = (b'\x5d' + u30(trace) + b'\x2c' + u30(abc.strings.index('ShadowRacerPrototype2'))
              + own('mode') + b'\x4f' + u30(trace) + u30(2))
     prefix = (own('car') + b'\x76\x12' + (len(observed)+4).to_bytes(3, 'little')
               + observed + b'\x10' + len(ready).to_bytes(3, 'little') + ready)
     code = body['code'][:prologue] + prefix + body['code'][prologue:]
-    replacement = (u30(method) + u30(max(body['stack'], 16)) + u30(body['locals'])
+    replacement = (u30(method) + u30(max(body['stack'], 20 if enhanced else 16)) + u30(local_count)
         + u30(body['initial']) + u30(body['scope']) + u30(len(code)) + code + body['tail'])
     patched = data[:body['start']] + replacement + data[body['end']:]
     check = Abc(patched)
@@ -188,7 +227,7 @@ def instrument_abc(data):
     for index, original in abc.bodies.items():
         revised = check.bodies[index]
         assert revised['tail'] == original['tail']
-        assert revised['locals'] == original['locals']
+        assert revised['locals'] == original['locals'] + (2 if enhanced and index == method else 0)
         assert revised['initial'] == original['initial']
         assert revised['scope'] == original['scope']
         if index != method:
@@ -196,10 +235,10 @@ def instrument_abc(data):
         else:
             assert revised['code'][:prologue] + revised['code'][prologue+len(prefix):] == original['code']
     return patched, dict(methodsUnchanged=len(abc.bodies)-1, observerMethod='ShadowRacerPrototype2.run',
-                        observerBytes=len(prefix), originalInstructionsPreserved=True)
+                        observerBytes=len(prefix), originalInstructionsPreserved=True, presentationGeometryObserver=enhanced, observerOnlyLocals=2 if enhanced else 0)
 
 
-def build(source):
+def build(source, enhanced=False):
     assert source[:3] == b'CWS'
     raw = zlib.decompress(source[8:])
     rect_bytes = (5 + 4 * (raw[0] >> 3) + 7) // 8
@@ -214,7 +253,7 @@ def build(source):
         payload = reader.take(size)
         if tag == 82:
             offset = payload.index(b'\0', 4) + 1
-            abc, proof = instrument_abc(payload[offset:])
+            abc, proof = instrument_abc(payload[offset:], enhanced=enhanced)
             payload = payload[:offset] + abc
             result += struct.pack('<HI', (tag << 6) | 63, len(payload)) + payload
             changed += 1
