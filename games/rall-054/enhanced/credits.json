@@ -1,0 +1,42 @@
+{
+  "title": "Beacon Siege",
+  "edition": "AI Enhanced",
+  "originalGame": "Rall v054 by Johannes, 2002",
+  "graphics": {
+    "tool": "Blender",
+    "version": "5.2.2 LTS",
+    "assets": {
+      "arena-garden.glb": "25804965f67bc4b4c639fa9a7089915076ee21a6efb5624664db6b0689e5a008",
+      "arena-garden.jpg": "fe850356e3df3e87c292308a5573ff2073d3997f6d4a4a815e4ee4ac1a1dfe67",
+      "arena-locks.glb": "d4f9af52b5f89fac380c78a8370afae56a44833405a185efa1e4feacff4f4e44",
+      "arena-locks.jpg": "f1e9a5800168d511bb339c73dea700c92466a062a01d218da814d74a6c8f95f3",
+      "arena-quarry.glb": "9b6cf9ae222b53e0b3f8af5d756a18960ffb7a7403175c106b422c988169e202",
+      "arena-quarry.jpg": "0ed408240151293a8abb9af47c31e7db58baf97c200b5cb141d0aad522ff39c9",
+      "audio-provenance.json": "48f4757137f3ba21cf19ceaee2ea9781e0250ee3c478056eef35dda80d07cb9c",
+      "missions.json": "263d540e367af37befa9b79738071d6165b67de69f051229fb93775e8efb8b67",
+      "tank-card.png": "515fe99a12e733e195e89d382178eb1f6fc69b139530180a78f9fe24785da24c",
+      "tank.glb": "7915a13d73cdeb98d6daad485d9cd92632c95fd37f4f8c5bfdefd334ae19bd26"
+    }
+  },
+  "audio": {
+    "provider": "ElevenLabs",
+    "models": [
+      "eleven_music_v2",
+      "eleven_text_to_sound_v2"
+    ],
+    "provenance": "assets/audio-provenance.json",
+    "selectedGenerationIds": [
+      "RmVd3DrgfKGNVcgeyzI5",
+      "heG4zXch4JYmAlJjmzJD",
+      "k6HHRyWDFKETkAcntsPa",
+      "GBh4929f4WBuZkrUS4YE",
+      "ejIYDqSwFRmftrQSEKmo",
+      "XWymlbge4bcJ1p28jz9W"
+    ]
+  },
+  "renderer": {
+    "engine": "Three.js",
+    "version": "0.187.0",
+    "license": "vendor/THREE_LICENSE"
+  }
+}

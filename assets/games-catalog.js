@@ -24,11 +24,11 @@ window.joynesPublishedGames = [
     id: "rall-054",
     title: "Rall v054 — Tanks",
     kind: "retro",
-    description: "Retro · 2002 · Solo survival and two-player tank duels.",
+    description: "Retro · 2002 · Original tank duels + AI Enhanced beacon missions.",
     href: "games/rall-054/",
     source: "https://github.com/joynes/joynes.se/blob/master/games/rall-054/source-notes.md",
     sourceLabel: "Source",
-    version: "2002-web.1"
+    version: "2002-web.2"
   },
   {
     id: "rall-030",

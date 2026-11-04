@@ -1,0 +1,6 @@
+{
+  "three": "0.187.0",
+  "esbuild": "0.28.2",
+  "source": "https://github.com/mrdoob/three.js",
+  "build": "enhanced-source/build-renderer.mjs"
+}

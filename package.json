@@ -83,7 +83,16 @@
     "test:rall-008:input": "node scripts/test-rall008-input.cjs",
     "test:rall-008:frame": "node scripts/test-rall008-frame.cjs",
     "test:rall-008:recovery": "node scripts/test-rall008-recovery.cjs",
-    "test:rall-008:links": "node scripts/test-rall008-navigation.cjs"
+    "test:rall-008:links": "node scripts/test-rall008-navigation.cjs",
+    "test:beacon:rules": "node --test scripts/test-beacon-core.mjs scripts/test-beacon-assets.mjs",
+    "test:beacon:browser": "node scripts/test-beacon-browser.cjs",
+    "test:beacon:input": "node scripts/test-beacon-input.cjs",
+    "test:beacon:frame": "node scripts/test-beacon-frame.cjs",
+    "test:beacon:graphics": "node scripts/test-beacon-graphics.cjs",
+    "test:beacon:abilities": "node scripts/test-beacon-abilities.cjs",
+    "test:beacon:recovery": "node scripts/test-beacon-recovery.cjs",
+    "test:beacon:loss": "node scripts/test-beacon-loss.cjs",
+    "test:beacon:navigation": "node scripts/test-beacon-navigation.cjs"
   },
   "devDependencies": {
     "playwright": "1.58.2"

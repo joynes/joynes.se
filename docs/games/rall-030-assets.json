@@ -44,8 +44,8 @@
     "games/rall-030/vendor/emulators/wlibzip.wasm": "25064d970c42ca7ea0fdb8b058204d6e41cc8826a676219677772f5591e8337b",
     "games/rall-030/vendor/mouse-compat/ALMOUSE.COM": "200942106e626955510b84426802de31790979c1f55d225d7bb65cb74cd3ba37",
     "games/rall-030/vendor/mouse-compat/almouse.asm": "307b24361235edbf526d49ba4c9bc6323c73c4ded087a70832ab903834d2c1c5",
-    "index.html": "1a5f47ed6802043bac8b0bc5427d67e8b777b9f12a2017f155f65759e322f11e",
-    "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65",
+    "index.html": "bcbdc8900d7a753cc2838fa399c77a3b5f2503b78912dd72f244af0fe786cd41",
+    "assets/games-catalog.js": "25d9b0e6585a4f813ec4176bb5326ced67d7b6bbb1c5748b37a9b33453bc279d",
     "docs/games/rall-030.md": "fd819f7eccea21de808aa561486b291bd37c5c500bae36d770c7ab9477440168"
   }
 }

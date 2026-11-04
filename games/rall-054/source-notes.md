@@ -10,4 +10,4 @@ Blue uses arrows, I/O, P/Space and U. Green uses D/X/Z/C, B/N, V and M. W/Escape
 
 PNG exports preserve the archived 16-bit appearance. PCM WAV effects are unchanged. Complete tracker songs were rendered offline using OpenMPT and normalized to streaming MP3; decoder and export metadata are in the provenance file. No Wine, Boxedwine, FMOD or audio decoder executable is shipped with the playable port.
 
-The separate native GDI prototype remains an unpublished compatibility investigation. AI Enhanced is a future separate edition; no enhanced choice is shown before its own gameplay and input checks pass.
+The separate native GDI prototype remains an unpublished compatibility investigation. The separate AI Enhanced edition, Beacon Siege, adds three new 3D capture-and-extraction missions, Blender graphics, destructible cover, shields and ElevenLabs audio. It has its own controls and records. Choose Original to play the restored game.

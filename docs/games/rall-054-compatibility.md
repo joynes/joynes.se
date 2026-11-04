@@ -1,7 +1,8 @@
 # rall0054 compatibility investigation
 
-Status: original gameplay reached in a local GDI prototype; no web release has
-been published.
+Status: the reconstructed Original browser edition is published and verified.
+The GDI prototype below remains a separate unpublished investigation. See
+[rall-054.md](rall-054.md) for the current release and enhanced-edition checks.
 
 ## Preserved release
 
