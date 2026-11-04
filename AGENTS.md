@@ -14,6 +14,6 @@
 # AI Enhanced editions
 
 - After the current fixes, create a new AI Enhanced edition of each adapted older game, one game at a time.
-- Use new gameplay ideas, Blender graphics and ElevenLabs sound/music through the available skills.
+- Use Blender graphics and ElevenLabs sound/music through the available skills when appropriate. Preserve the original gameplay in AI Enhanced; new gameplay ideas belong to Remix.
 - Offer Original / AI Enhanced at launch once the enhanced edition is playable and verified. Preserve the restored edition and keep saves and assets separate.
 - AI Enhanced must closely restore the original game's gameplay, maps, controls and identity. Label reimagined games with new rules or missions Remix, and expose available editions directly in the homepage game picker.
