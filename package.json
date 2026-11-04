@@ -74,7 +74,16 @@
     "test:rall-080:frame": "node scripts/test-rall080-frame.cjs",
     "test:rall-080:combat": "node scripts/test-rall080-combat.cjs",
     "test:rall-080:recovery": "node scripts/test-rall080-recovery.cjs",
-    "test:rall-080:links": "node scripts/test-rall080-navigation.cjs"
+    "test:rall-080:links": "node scripts/test-rall080-navigation.cjs",
+    "test:rall-008:assets": "node --test scripts/test-rall008-assets.mjs",
+    "test:rall-008:browser": "node scripts/test-rall008-browser.cjs",
+    "test:rall-008:practice": "node scripts/test-rall008-practice.cjs",
+    "test:rall-008:combat": "node scripts/test-rall008-combat.cjs",
+    "test:rall-008:roster": "node scripts/test-rall008-roster.cjs",
+    "test:rall-008:input": "node scripts/test-rall008-input.cjs",
+    "test:rall-008:frame": "node scripts/test-rall008-frame.cjs",
+    "test:rall-008:recovery": "node scripts/test-rall008-recovery.cjs",
+    "test:rall-008:links": "node scripts/test-rall008-navigation.cjs"
   },
   "devDependencies": {
     "playwright": "1.58.2"

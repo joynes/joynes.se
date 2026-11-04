@@ -1,6 +1,16 @@
 // Only tested releases belong here. The complete work queue is in data/games-inventory.json.
 window.joynesPublishedGames = [
   {
+    id: "rall-008",
+    title: "Rall008",
+    kind: "retro",
+    description: "Retro · 2006 · Shipboard fighting. Practice or local duel.",
+    href: "games/rall-008/",
+    source: "https://github.com/joynes/joynes.se/blob/master/games/rall-008/source-notes.md",
+    sourceLabel: "Source",
+    version: "2006-web.1"
+  },
+  {
     id: "rall-080",
     title: "Rall v080 — Fighters",
     kind: "retro",

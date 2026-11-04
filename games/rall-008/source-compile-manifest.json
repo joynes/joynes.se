@@ -1,0 +1,85 @@
+{
+  "originalSources": {
+    "src/fighter/fighter.cpp": "dc920df7bda6f965c75e75f364cb023968d79ac4187a43ebf809b4097d831dfa",
+    "src/fighter/fighter_states.cpp": "3dad3becf3415a11e0676f31eb584b532fb5e1910c62c487caf4c38206f3447f",
+    "src/fighter/jump.cpp": "bbf830dac225a3f7d1e59e8eed65780e69679ebe24ab89c6d3694c20e8a0feef",
+    "src/fighter/physics.cpp": "b5d083e789d48570c9e22dd443af404c235a8dcd8837a18a803afbed6e9126d0",
+    "src/game/controls.cpp": "7ccf856fb6b94a0e38a67900e50fdc44165ca0610cf08a6cc61cef0e12075d49",
+    "src/game/state.cpp": "707978ac443a8fd9a741bb9b4f645f9b47e6c169da31ff9f9271d0d423b4576e",
+    "src/game/servergame.cpp": "51a5e7dd27cf8f86c33e1f8ccb22d2e62c45fb1b5c7e09eb018b039420e5d52c",
+    "src/editor/part.cpp": "5daa8880c1f0ea2dd644fead207e4b9a7d8ef38eb2a9f20a9f464d765f57a059",
+    "src/editor/anim.cpp": "f1668ffac9151265be40987b9e860365fa630435f10996881ca176d901427ec8",
+    "src/global/global.cpp": "4ec32da8f8e7aab28a2ca11ebbd1df1bda76f5451edb7bed2eb600de3eaa457a",
+    "src/global/timer.cpp": "5767bc9abe1b04c64aea6418072c1b32b39f88002cb712226379f9fd37083b03",
+    "src/stage/stage.cpp": "f684c7ca2d3d45f8aa44f06b0fb37ae0f0ce0d8d130e406f2477532121ab8c75",
+    "src/stage/cruiser.cpp": "0b43ae8cdc960c7530466e476a2df826bc1a60c606ab641d7d7192dde176f733",
+    "src/sound/sound.cpp": "29c567a842d9a44196d4674facda010a5a7efaa89e13f93097e8d516c7e44e66"
+  },
+  "originalHeaders": {
+    "include/ProgramManager.h": "0ed1fb69163cc5e0d6a943f88f460c325cf92db8f138c101fbbcc913a14a8bdf",
+    "include/console/conalleg.h": "0aa0229e864d97715edb5ac018b1a36ba35180ec6eaddb295be13b60daa27e77",
+    "include/console/console.h": "b6f87eb8e574f1a2d182758958e482a3a961fd1fdb3a851290ac2c7183c2e143",
+    "include/editor/anim.h": "3eae71642e2d2b890ec3ee4d9b341f81ceba9e338d2934e4e3e5a678bba22e95",
+    "include/editor/editor.h": "64670d76f3ae65d93e5bccc7cb9b22f4402e98ac4abc69cdb625b63fe587442f",
+    "include/editor/part.h": "6ab6dd33f02d288fd516612a2994dce10a514746f2fa92250041628eccf1a48e",
+    "include/fighter/fighter.h": "9ab4e9a8a5d33ff9dca69b326dd42bd30a461d75348045631094dda08a465d8f",
+    "include/fighter/fighter_states.h": "bc55f261835f03344f28f06b2f457fba7a0eed2888c64d608dfa353d6494e7db",
+    "include/fighter/jump.h": "80070899f219fea82129438e7c0eaec6cb02e918b23a99b4cbe56510e84a3b1f",
+    "include/fighter/physics.h": "0f7be5067273779e0caf9f817bfa247a1346a21f9a025ea26fe1638bde4392df",
+    "include/game/GameManager.h": "b7fb392a3ac27f1207d5baa25acc169c1395b910cae3c5139bb095ce2dacbc04",
+    "include/game/game.h": "01f2d04d4c1ba7d8495dc033ed4ed6553d69afe2a5ef51d0140a63465b3b0a8e",
+    "include/global/filedata.h": "41b7dd1d3f55822d5d607a5810bcfe7eacff6bec5e5948f9c0fb059e24270d6e",
+    "include/global/global.h": "d360e6ee38b349a3fd9d6ee9206a01cda41bb9d7bf7a91422dcce2ed496a19c1",
+    "include/global/timer.h": "cf60a45d2dccaec7668c653d29b8cc326557a7eb528ab1e71282c5098001782f",
+    "include/menu/intro.h": "2bcab07720f18163d6c2d7fb17c8849b6f59ef254a879d20bcfab97110ba56c6",
+    "include/menu/menu.h": "8a90628431f996b8c2b4a0ddecd50740a414b319841def4fd23ea1a26092a04e",
+    "include/menu/menu_rall.h": "02df554cbdc53dcd3dbca43f40b15e50505d22633d662d45ca1a5eb6e71d4ff8",
+    "include/network/client.h": "26843ca0422b382ac4b6c8dd81878eda0480fa17d7ff1000149b14ba605cd369",
+    "include/network/common.h": "80970eeffca95f673bd3ce6903ef50c74a674d7709824e224928864ef93ecb3a",
+    "include/network/network.h": "a4f89e3dc0c1a1f45cd731644cfe48d4b5cf25a139bf29fbee6d957d536db2b6",
+    "include/network/server.h": "052b8a71f3b541103fbc351dde3ede5e524ebf20fddf24985e55cd57475c18c5",
+    "include/sound/music.h": "68aaf55ce89a0a52c62de86ecf800d50df9932afd2e8498fb3ae24d618197422",
+    "include/sound/sound.h": "3046f87b142061fb1ef0bb486d66860378cbee2d3aa244294862b735365a119d",
+    "include/stage/cruiser.h": "9ee112bbe5008366f97278628a34a71f0efbf48e3540ce9c7625030c0c26d2e3",
+    "include/stage/stage.h": "f0c2e3f8cc7e35d63aeb9794d6502db12011c47ef750a818e71d7c11c9adb22b"
+  },
+  "derivedSources": {
+    "src/game/clientgame.cpp": {
+      "sha256": "68490b8e81dc7ed45c18de5394abff30812772a9eff1bb2cf3cd76769ca51ffd",
+      "extraction": "Client::playSound only, renamed Server::playSound for the shared local world"
+    }
+  },
+  "sdk": "Emscripten 6.0.13",
+  "compatibilityChanges": [
+    "Normalize Windows include separators",
+    "Qualify Allegro fixed to avoid std::fixed ambiguity",
+    "Remove extra class qualification on jump declaration",
+    "Mark draw-order comparator const",
+    "Replace unused editor iterator null sentinel with a default iterator",
+    "Omit unused legacy animation-editor methods"
+  ],
+  "browserAdapter": [
+    "One local authoritative world replaces Windows Zoidcom transport; online play not implemented",
+    "Original native server update at 50 Hz; original combat, scoring, bot logic and respawns",
+    "Original client sound dispatcher applied to the shared local world",
+    "Browser Canvas/WebAudio/configuration/font adapter",
+    "Short host replaces native menus and animation editor"
+  ],
+  "adapterSources": {
+    "alfont.h": "49e419fba474cc933be0313a07bc43f6d78389ba2f9bb354d2f8589eed4e340c",
+    "allegro.h": "00d952c43d133e3bee2a8c1521b0e1f47ddb446e3c1fce2115309b8e26ef5ba7",
+    "compat.cpp": "5936058282480894648557c0696f50d7da0b75e2f8c3c7f84d07f132da510b44",
+    "console/conalleg.h": "05e0bfa6bf63dc1c71607ab41e8b8cbebe64a5d11a2d14063c4b27300b974eee",
+    "console-stub.h": "0e28a6669fbc9eb1f525ff49e86c432b25f24de404cc239184b22169b24423c1",
+    "entry.cpp": "57dcbb181bcbd3ed0bd06fa6dcea4596e7c88e2cebe390b53b659f2e19b80ea1",
+    "fmod.h": "b3adf106d95b8934f690943f2921308b90be5b766c4c8ba250c792de56400201",
+    "jpgalleg.h": "87fe575bd7d1395b046c58acdc252e227b93be83c2babb029589ca0d81d1b952",
+    "network/server.h": "d18990e813ed7c8ad17da9563c94d2bc59a2875d41b152fd11a866ba7badd1de",
+    "sound/music.h": "18fd55d871f7240d1490a0427393af79c86e6bc39894e286021bffde3c9802ba",
+    "zoidcom.h": "76808c1c235bbcf9171ea5d732a1b433773391f6ecbf40987462bc2ce07c7f7d"
+  },
+  "files": {
+    "engine.mjs": "f1539f443475b524c3ca74384dcde91ed16fad12906c62dc157146cd20d2e37d",
+    "engine.wasm": "059ea916d75fe6065b808227f3e4ad349cecfe13cacc5d40c4fd906482e86478"
+  }
+}

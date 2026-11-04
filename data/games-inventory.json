@@ -56,7 +56,7 @@
         "games/web-quizzes/questions.json": "9bb2d82c4e317c1747b7ae58b99e10436f936c87896f5c97e114d9921c57bd61",
         "games/web-quizzes/app.mjs": "707b8d6004c33cee1690289cdb15e475fd9eb248b53387dc1a6c684bd99f110b",
         "games/web-quizzes/source-notes.md": "3a18494f56de0f8a2b45206b101a109d2002d7625b149633cac008cbde932b55",
-        "assets/games-catalog.js": "657e420972a9a1f9f4c3a6a70fe770eab3b0f79e0b8c8c9ec3edb8f469c2b9cf"
+        "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65"
       },
       "websiteSection": "quizzes",
       "originalTitle": "Fr\u00e5gespelet",
@@ -124,7 +124,7 @@
         "games/grimace-gemini/app.mjs": "038d066b9a36dd6c4e4c0b6d76d17b6a32e8e3e555140d749d99306af01c345d",
         "games/grimace-gemini/core.mjs": "afbe23a4d4b130cff84afacb199d785bc7c666f7f99f567b4030c370e2e734d3",
         "games/grimace-gemini/styles.css": "eac894c87349643e5c7c072594e4d5503ec7ce0cfac7d4172add4c381d000fba",
-        "assets/games-catalog.js": "657e420972a9a1f9f4c3a6a70fe770eab3b0f79e0b8c8c9ec3edb8f469c2b9cf"
+        "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65"
       },
       "websiteSection": "quizzes",
       "originalTitle": "Milians Grimace Matte-spel \u2014 Gemini"
@@ -184,7 +184,7 @@
         "games/grimace-codex/core.mjs": "3a2369704de27b077329d5e1c4f185f9240bacfacaab4fd215016e3ce586e740",
         "games/grimace-codex/questions.mjs": "0aba6d91d12c3aa49a9fb49e234952cdfc2c2389e753715dcdb13376b8af8b73",
         "games/grimace-codex/styles.css": "8825eadb2ca8f75ed3ac22dc4c00c5f9b4b7630f8c5664c40e6eea8342015aa5",
-        "assets/games-catalog.js": "657e420972a9a1f9f4c3a6a70fe770eab3b0f79e0b8c8c9ec3edb8f469c2b9cf"
+        "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65"
       },
       "websiteSection": "quizzes",
       "originalTitle": "Milians Grimace Matte-spel \u2014 Codex"
@@ -449,8 +449,8 @@
         "games/hardword/sw.js": "d77b7d78300d37537c5dbafc1565b557ca184c4773731a1f706320b5d845e7cc",
         "games/hardword/original-assets.json": "726a02253d5b136bd2f23acbf4605210ab09648a9a0519ecaa7d8e7241c5e685",
         "games/hardword/source-notes.md": "7781fa5d0d650c8687adc92f6c5a58c422a6729209fece5bcb5b81a083fbf231",
-        "assets/games-catalog.js": "657e420972a9a1f9f4c3a6a70fe770eab3b0f79e0b8c8c9ec3edb8f469c2b9cf",
-        "index.html": "6e442bbb0a01cd2abc5a5dd680c474ac4780416cfc28b511dd9fa8bf7a4a635d"
+        "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65",
+        "index.html": "1a5f47ed6802043bac8b0bc5427d67e8b777b9f12a2017f155f65759e322f11e"
       },
       "originalTitle": "Skoluppgifter / Ordhj\u00e4lten"
     },
@@ -559,8 +559,8 @@
       ],
       "homepageIntegrationCommit": "9411200bb9ced634eb6a72ab728af8e7a54a1b3d",
       "homepageVerifiedFiles": {
-        "index.html": "6e442bbb0a01cd2abc5a5dd680c474ac4780416cfc28b511dd9fa8bf7a4a635d",
-        "assets/games-catalog.js": "657e420972a9a1f9f4c3a6a70fe770eab3b0f79e0b8c8c9ec3edb8f469c2b9cf"
+        "index.html": "1a5f47ed6802043bac8b0bc5427d67e8b777b9f12a2017f155f65759e322f11e",
+        "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65"
       },
       "websiteSection": "ai",
       "sourceAuditCommit": "0999254eb63b1d173acf8cedb42033e945d6f24a",
@@ -648,8 +648,8 @@
         "games/marble-tables/index.html": "b7851b3116c4d88477713ca21aae71c2ddbd6fd47c742e5ae8d70c8f74ba3679",
         "games/marble-tables/keyboard-pointer.js": "5b632567ac794907c83cc9cb6b13da9db6134a9fd958e3bc9be470d424cda0e4",
         "games/marble-tables/styles.css": "e7a7488c23778a7e160d6130cfac796435c35a6612b037bc26c95527912dc20d",
-        "index.html": "6e442bbb0a01cd2abc5a5dd680c474ac4780416cfc28b511dd9fa8bf7a4a635d",
-        "assets/games-catalog.js": "657e420972a9a1f9f4c3a6a70fe770eab3b0f79e0b8c8c9ec3edb8f469c2b9cf",
+        "index.html": "1a5f47ed6802043bac8b0bc5427d67e8b777b9f12a2017f155f65759e322f11e",
+        "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65",
         "docs/games/marble-tables.md": "632024309c0b0ca609a3428933245a1b6e8befcd8d21bec23fd94e5d8a3da89c"
       },
       "inputSupport": {
@@ -738,8 +738,8 @@
         "games/simple-driving/Build/cartWeb2.loader.js": "b2857ce93350711103bd72fbc6b665f16bb09afdf65542b52549ecd05b812a54",
         "games/simple-driving/Build/cartWeb2.wasm": "10cb1df56489a17bdab24b1ccdb3acad9f2049de604661c62409d9f26f100afd",
         "games/simple-driving/Build/cartWeb2.data": "f464a31a28caeec8b24e2059aa57e517c4a3c670fc62462fce9f5055f7dd47f5",
-        "assets/games-catalog.js": "657e420972a9a1f9f4c3a6a70fe770eab3b0f79e0b8c8c9ec3edb8f469c2b9cf",
-        "index.html": "6e442bbb0a01cd2abc5a5dd680c474ac4780416cfc28b511dd9fa8bf7a4a635d"
+        "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65",
+        "index.html": "1a5f47ed6802043bac8b0bc5427d67e8b777b9f12a2017f155f65759e322f11e"
       },
       "previousPublishedUrl": "https://joynes.github.io/joynes.se/games/simple-driving/",
       "exclusionReason": "Removed at the owner's request: proof-of-concept driving demo with too little gameplay.",
@@ -807,8 +807,8 @@
         "games/simple-driving/Build/cartWeb2.wasm": "10cb1df56489a17bdab24b1ccdb3acad9f2049de604661c62409d9f26f100afd",
         "games/simple-driving/Build/cartWeb2.loader.js": "b2857ce93350711103bd72fbc6b665f16bb09afdf65542b52549ecd05b812a54",
         "games/simple-driving/Build/cartWeb2.framework.js": "18d7c9a73fddf3825d1e3cf71f948157e4720270e1e41651f687c76f29e4b3be",
-        "assets/games-catalog.js": "657e420972a9a1f9f4c3a6a70fe770eab3b0f79e0b8c8c9ec3edb8f469c2b9cf",
-        "index.html": "6e442bbb0a01cd2abc5a5dd680c474ac4780416cfc28b511dd9fa8bf7a4a635d"
+        "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65",
+        "index.html": "1a5f47ed6802043bac8b0bc5427d67e8b777b9f12a2017f155f65759e322f11e"
       },
       "deploymentRecovery": {
         "failedAndInconsistentRerun": 41290922621,
@@ -888,8 +888,8 @@
         "games/godot-reading/provenance.json": "771ba6be93c5675555f2fc55745732b076f370dc88c280e08155b3fbc7ce05a8",
         "games/godot-reading/source-notes.md": "0e1b35e181f573430ce7676319d4e857167d571063ccdc01929435470501eed0",
         "games/godot-reading/styles.css": "82389cff0b6c3330b492d290a4af4c6460fd373c816f78a756d22a3bd67ef401",
-        "assets/games-catalog.js": "657e420972a9a1f9f4c3a6a70fe770eab3b0f79e0b8c8c9ec3edb8f469c2b9cf",
-        "index.html": "6e442bbb0a01cd2abc5a5dd680c474ac4780416cfc28b511dd9fa8bf7a4a635d"
+        "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65",
+        "index.html": "1a5f47ed6802043bac8b0bc5427d67e8b777b9f12a2017f155f65759e322f11e"
       },
       "deploymentRun": 41293921395,
       "websiteSection": "retro",
@@ -899,10 +899,10 @@
         "games/godot-reading/core.mjs": "4e6543ec6311294c706c17cdb79b98da69b90cca136bab7aef029e8ddbf970c0",
         "games/godot-reading/provenance.json": "771ba6be93c5675555f2fc55745732b076f370dc88c280e08155b3fbc7ce05a8",
         "games/godot-reading/index.html": "f95fde4321bf6d4289eec00ec1c3a6362139d677c42d276d05b347fc0a7e942e",
-        "assets/games-catalog.js": "657e420972a9a1f9f4c3a6a70fe770eab3b0f79e0b8c8c9ec3edb8f469c2b9cf",
+        "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65",
         "games/godot-reading/styles.css": "82389cff0b6c3330b492d290a4af4c6460fd373c816f78a756d22a3bd67ef401",
         "games/godot-reading/source-notes.md": "0e1b35e181f573430ce7676319d4e857167d571063ccdc01929435470501eed0",
-        "index.html": "6e442bbb0a01cd2abc5a5dd680c474ac4780416cfc28b511dd9fa8bf7a4a635d",
+        "index.html": "1a5f47ed6802043bac8b0bc5427d67e8b777b9f12a2017f155f65759e322f11e",
         "docs/games/godot-reading.md": "cc8a74b4661dcf78daacb15fcd4158268cd711b6ed362c4a7b8355ae80383d47"
       },
       "originalTitle": "Godot Reading Game",
@@ -1022,8 +1022,8 @@
         "games/car-topview/provenance.json": "2c7a3b776e92c8842f8e3b698d0ae788f322775001715e4b079da54f9778f6f9",
         "games/car-topview/source-notes.md": "835f4778a09bda0953b8bba9112efb77755167d731ede143a305c53cba274763",
         "games/car-topview/styles.css": "f1a6532206aa7acd92aaf9b861b51e72b6cd1ea61d4f743bfce339873684ba36",
-        "index.html": "6e442bbb0a01cd2abc5a5dd680c474ac4780416cfc28b511dd9fa8bf7a4a635d",
-        "assets/games-catalog.js": "657e420972a9a1f9f4c3a6a70fe770eab3b0f79e0b8c8c9ec3edb8f469c2b9cf",
+        "index.html": "1a5f47ed6802043bac8b0bc5427d67e8b777b9f12a2017f155f65759e322f11e",
+        "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "docs/games/car-topview.md": "a72015e7e88fb97eff20c8af36015b7bfdfcbbc4ae1d438e14472773baca12b1"
       },
@@ -1139,8 +1139,8 @@
         "games/sdl-space/provenance.json": "8bb1d152becb8495f0368fb7749b7ab83921e22861eed2c74e0948ded9c103ff",
         "games/sdl-space/source-notes.md": "cec67cf314ea095e0b77e136972be9ca026e62b1b09a2f175a4768363245fc56",
         "games/sdl-space/styles.css": "71dd1274cb3d5ee861c48d31b951d3b99346e0dc0b3c61494ae4f2cbd69599e1",
-        "assets/games-catalog.js": "657e420972a9a1f9f4c3a6a70fe770eab3b0f79e0b8c8c9ec3edb8f469c2b9cf",
-        "index.html": "6e442bbb0a01cd2abc5a5dd680c474ac4780416cfc28b511dd9fa8bf7a4a635d",
+        "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65",
+        "index.html": "1a5f47ed6802043bac8b0bc5427d67e8b777b9f12a2017f155f65759e322f11e",
         "docs/games/sdl-space.md": "9c7377464a776097adac745626959ce2cf9a0e7e91a7d80a4591961e72c7a929",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a"
       },
@@ -1234,13 +1234,13 @@
       "sourceCommitsPushed": true,
       "implementationNotes": "Preserved original 800x450 authoritative shared world, emoji figures, speed250, prediction/reconciliation, tuning and autopilot. English interface with translucent in-game thumbpad, restart/fullscreen overlay, keyboard aliases and stale-repeat cleanup after focus/restart. Native fullscreen and unsupported-API expanded view preserve scene proportions. Existing single Fly Machine/region/VM retained. Source commits pushed to the existing private audit branch; no generated builds committed.",
       "externalReleaseFilesSha256": {
-        "index.html": "6e442bbb0a01cd2abc5a5dd680c474ac4780416cfc28b511dd9fa8bf7a4a635d",
+        "index.html": "1a5f47ed6802043bac8b0bc5427d67e8b777b9f12a2017f155f65759e322f11e",
         "assets/index-a9746c54.js": "bfc3a908d5ce92a6f58551f21b621fa8112e348622ce2b4ebdd50dbd101808b0",
         "assets/index-b712e067.css": "b712e06732d0982b12543de77c6a6c753fe60d8de64d9ba6d148244148b488f6"
       },
       "catalogReleaseFilesSha256": {
-        "assets/games-catalog.js": "657e420972a9a1f9f4c3a6a70fe770eab3b0f79e0b8c8c9ec3edb8f469c2b9cf",
-        "index.html": "6e442bbb0a01cd2abc5a5dd680c474ac4780416cfc28b511dd9fa8bf7a4a635d",
+        "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65",
+        "index.html": "1a5f47ed6802043bac8b0bc5427d67e8b777b9f12a2017f155f65759e322f11e",
         "docs/games/network-2d.md": "ec4d989fdb27681090410ec57fc2e12c7f3e2723226c842f74ff1595ae3bade7"
       },
       "catalogUrl": "https://joynes.github.io/joynes.se/#games/ai/network-2d",
@@ -1302,7 +1302,7 @@
       "sourceCommitsPushed": false,
       "implementationNotes": "Complete original 53MB FBX, 74340 vertices, 65 bones and walk clip preserved; all six original choices are aliases for the same rig. Original speeds/camera/tint/100 trees/50 rocks retained, now one shared authoritative forest and collision model. Reliable loading/retry, isolated materials, hybrid/two-thumb controls, personal configuration export and reconnect cleanup. Private source commits retained in sibling checkout; existing Fly app and ARN shared1CPU/256MB retained with exactly one in-memory world.",
       "externalReleaseFilesSha256": {
-        "index.html": "6e442bbb0a01cd2abc5a5dd680c474ac4780416cfc28b511dd9fa8bf7a4a635d",
+        "index.html": "1a5f47ed6802043bac8b0bc5427d67e8b777b9f12a2017f155f65759e322f11e",
         "main.js": "4ed77c23145edb598aff438105cfea806b755150490e48dcae2f8ceff24cf319",
         "style.css": "3784389cb505c68d9017e52f482d4ded7d35a43f670c481e50931502a9c19ac7",
         "config.yaml": "1340d534d43c1940219628ba8221cdbacda3077d6f4d37656036fa96298ba511",
@@ -1321,8 +1321,8 @@
       },
       "deploymentImageManifestSha256": "b9869fd8b90e20c3e637175f0a03aa59de147d159a431d6620480dbebf24ccfe",
       "catalogReleaseFilesSha256": {
-        "assets/games-catalog.js": "657e420972a9a1f9f4c3a6a70fe770eab3b0f79e0b8c8c9ec3edb8f469c2b9cf",
-        "index.html": "6e442bbb0a01cd2abc5a5dd680c474ac4780416cfc28b511dd9fa8bf7a4a635d",
+        "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65",
+        "index.html": "1a5f47ed6802043bac8b0bc5427d67e8b777b9f12a2017f155f65759e322f11e",
         "docs/games/network-3d.md": "5aa5b90875d0ded41070b596146440434bc5c056d16271c1a59956b8e9dbb498"
       },
       "catalogUrl": "https://joynes.github.io/joynes.se/#games/ai/network-3d",
@@ -1408,8 +1408,8 @@
       ],
       "resourceAudit": "docs/games/neon-interceptor-assets.json",
       "catalogReleaseFilesSha256": {
-        "assets/games-catalog.js": "657e420972a9a1f9f4c3a6a70fe770eab3b0f79e0b8c8c9ec3edb8f469c2b9cf",
-        "index.html": "6e442bbb0a01cd2abc5a5dd680c474ac4780416cfc28b511dd9fa8bf7a4a635d",
+        "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65",
+        "index.html": "1a5f47ed6802043bac8b0bc5427d67e8b777b9f12a2017f155f65759e322f11e",
         "docs/games/neon-interceptor.md": "1e58974a4ccf0a99ad856372fd7e2d53a5be6ecbdccffed5afdbf2194cdbc287",
         "docs/games/neon-interceptor-assets.json": "56ff5f4e82f61f929dc6451b4e5c15ac86cfa7302545dcc98508b8bd6614ad22"
       },
@@ -1489,7 +1489,7 @@
       "catalogCommit": "66c76ea53cb3e403a8bff9a55ab3db924bbf6635",
       "catalogDeploymentRun": 41336710668,
       "publishedFileSha256": {
-        "assets/games-catalog.js": "657e420972a9a1f9f4c3a6a70fe770eab3b0f79e0b8c8c9ec3edb8f469c2b9cf",
+        "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65",
         "docs/games/worldforge.md": "256ea3317260ef758a5dd94f5ecad5a3ab4d674caf40d39b9d81aa8bd26d065a",
         "docs/games/worldforge-assets.json": "3fff753caa75822e9a4962033784b2449c5c461c9fb492ff999bee965c02b321"
       },
@@ -1635,8 +1635,8 @@
         "games/shadow-racer/vendor/ruffle/ruffle.js.map": "bf8dabc8144a0e087cdbade5da77de5a998ab55a271b32bae6e3173248d4188a",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "docs/games/shadow-racer-assets.json": "b8bc0ca0b1e14ae15892349c66c143a5a957ed7256be922285640cbb73296706",
-        "index.html": "6e442bbb0a01cd2abc5a5dd680c474ac4780416cfc28b511dd9fa8bf7a4a635d",
-        "assets/games-catalog.js": "657e420972a9a1f9f4c3a6a70fe770eab3b0f79e0b8c8c9ec3edb8f469c2b9cf"
+        "index.html": "1a5f47ed6802043bac8b0bc5427d67e8b777b9f12a2017f155f65759e322f11e",
+        "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65"
       },
       "websiteSection": "retro",
       "enhancedEdition": {
@@ -1718,8 +1718,8 @@
         "games/shadow-racer/vendor/ruffle/ruffle.js.map": "bf8dabc8144a0e087cdbade5da77de5a998ab55a271b32bae6e3173248d4188a",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "docs/games/shadow-racer-assets.json": "b8bc0ca0b1e14ae15892349c66c143a5a957ed7256be922285640cbb73296706",
-        "index.html": "6e442bbb0a01cd2abc5a5dd680c474ac4780416cfc28b511dd9fa8bf7a4a635d",
-        "assets/games-catalog.js": "657e420972a9a1f9f4c3a6a70fe770eab3b0f79e0b8c8c9ec3edb8f469c2b9cf"
+        "index.html": "1a5f47ed6802043bac8b0bc5427d67e8b777b9f12a2017f155f65759e322f11e",
+        "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65"
       },
       "renewedAuditCommit": "8857df4121f7e433005e3d91dddc0ab09f7bb3fe",
       "deploymentRun": 41747999054
@@ -1802,10 +1802,10 @@
         "games/rall-026/vendor/emulators/sources/emulators-v8.5.2.tar.gz": "4f92834936f774ad1e0f8d2cc0fc05dc73cd9962d2b8da0a09f56139a2a70f28",
         "games/rall-026/vendor/emulators/sources/dosbox-528578d.tar.gz": "797efaf22246bbc5b2e6be0a6c791a58addd2bca330e0aa93232780a77e06019",
         "games/rall-026/vendor/emulators/wdosbox.wasm": "b33afba80de1a420c123086e5952d135de041f9e85d4444170e29d9249ec049c",
-        "assets/games-catalog.js": "657e420972a9a1f9f4c3a6a70fe770eab3b0f79e0b8c8c9ec3edb8f469c2b9cf",
+        "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65",
         "games/rall-026/vendor/emulators/wlibzip.js": "b8e55c2aa4c96e961c9965f289c0f40b5d44f02a557dcf980ddc29787b493842",
         "games/rall-026/vendor/emulators/wlibzip.wasm": "25064d970c42ca7ea0fdb8b058204d6e41cc8826a676219677772f5591e8337b",
-        "index.html": "6e442bbb0a01cd2abc5a5dd680c474ac4780416cfc28b511dd9fa8bf7a4a635d",
+        "index.html": "1a5f47ed6802043bac8b0bc5427d67e8b777b9f12a2017f155f65759e322f11e",
         "docs/games/rall-026.md": "e689906009815f758a854b186622c68c8fb482ebafd1e260e2091592f1147049",
         "docs/games/rall-026-assets.json": "23aad475f25009756710699965ca81d63f71b7eb230cdfed2ed10e201cc6150b"
       },
@@ -1961,10 +1961,10 @@
         "games/rall-030/vendor/emulators/wlibzip.wasm": "25064d970c42ca7ea0fdb8b058204d6e41cc8826a676219677772f5591e8337b",
         "games/rall-030/vendor/mouse-compat/ALMOUSE.COM": "200942106e626955510b84426802de31790979c1f55d225d7bb65cb74cd3ba37",
         "games/rall-030/vendor/mouse-compat/almouse.asm": "307b24361235edbf526d49ba4c9bc6323c73c4ded087a70832ab903834d2c1c5",
-        "index.html": "6e442bbb0a01cd2abc5a5dd680c474ac4780416cfc28b511dd9fa8bf7a4a635d",
-        "assets/games-catalog.js": "657e420972a9a1f9f4c3a6a70fe770eab3b0f79e0b8c8c9ec3edb8f469c2b9cf",
+        "index.html": "1a5f47ed6802043bac8b0bc5427d67e8b777b9f12a2017f155f65759e322f11e",
+        "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65",
         "docs/games/rall-030.md": "fd819f7eccea21de808aa561486b291bd37c5c500bae36d770c7ab9477440168",
-        "docs/games/rall-030-assets.json": "cb9fa595beaaa066570563e05c43e3ad417e8624d3322875d5e64b9ace4742c4"
+        "docs/games/rall-030-assets.json": "f646735ec7635bfe0b842e5efafc2f72895dff2b966da1beed2a8902f36ee045"
       },
       "sharedInterfaceCommit": "5ea295cf092444bcee10434953fb12de9ba961b6",
       "websiteSection": "retro",
@@ -2090,8 +2090,8 @@
         "games/rall-054/styles.css": "b2f89199a05590b4c6bf5dc45bd59335af8efb9e3d3edce896ea54360100456e",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "docs/games/rall-054-assets.json": "6d8f9b6a1e571a13ff45e4d3ae236ce0ba957b7dbefc83066595548a354e6c86",
-        "assets/games-catalog.js": "657e420972a9a1f9f4c3a6a70fe770eab3b0f79e0b8c8c9ec3edb8f469c2b9cf",
-        "index.html": "6e442bbb0a01cd2abc5a5dd680c474ac4780416cfc28b511dd9fa8bf7a4a635d"
+        "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65",
+        "index.html": "1a5f47ed6802043bac8b0bc5427d67e8b777b9f12a2017f155f65759e322f11e"
       },
       "inGameControlsAndFullscreenStatus": "passed",
       "englishInterfaceAuditStatus": "passed",
@@ -2133,8 +2133,8 @@
         "games/rall-054/styles.css": "b2f89199a05590b4c6bf5dc45bd59335af8efb9e3d3edce896ea54360100456e",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "docs/games/rall-054-assets.json": "6d8f9b6a1e571a13ff45e4d3ae236ce0ba957b7dbefc83066595548a354e6c86",
-        "assets/games-catalog.js": "657e420972a9a1f9f4c3a6a70fe770eab3b0f79e0b8c8c9ec3edb8f469c2b9cf",
-        "index.html": "6e442bbb0a01cd2abc5a5dd680c474ac4780416cfc28b511dd9fa8bf7a4a635d"
+        "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65",
+        "index.html": "1a5f47ed6802043bac8b0bc5427d67e8b777b9f12a2017f155f65759e322f11e"
       },
       "verificationLimits": "Emulated mobile Chromium/Chrome; physical devices and Safari not covered. Browser tests only normal input and cloned observer. Unit tests explicitly construct isolated fixtures.",
       "liveVerification": {
@@ -2560,8 +2560,8 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
         "docs/games/rall-080-assets.json": "6472f3251f791a12df77f91951ff5d7bb2a96552a8412a41a320fe0d581913b8",
-        "assets/games-catalog.js": "657e420972a9a1f9f4c3a6a70fe770eab3b0f79e0b8c8c9ec3edb8f469c2b9cf",
-        "index.html": "6e442bbb0a01cd2abc5a5dd680c474ac4780416cfc28b511dd9fa8bf7a4a635d"
+        "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65",
+        "index.html": "1a5f47ed6802043bac8b0bc5427d67e8b777b9f12a2017f155f65759e322f11e"
       },
       "verificationLimits": "Emulated mobile browser contexts; no physical-device or Safari claim. Browser tests use normal keys/native CDP touch and a cloned read-only native observer; no gameplay-state injection.",
       "inGameControlsAndFullscreenStatus": "local-passed-live-pending",
@@ -2807,8 +2807,8 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
         "docs/games/rall-080-assets.json": "6472f3251f791a12df77f91951ff5d7bb2a96552a8412a41a320fe0d581913b8",
-        "assets/games-catalog.js": "657e420972a9a1f9f4c3a6a70fe770eab3b0f79e0b8c8c9ec3edb8f469c2b9cf",
-        "index.html": "6e442bbb0a01cd2abc5a5dd680c474ac4780416cfc28b511dd9fa8bf7a4a635d"
+        "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65",
+        "index.html": "1a5f47ed6802043bac8b0bc5427d67e8b777b9f12a2017f155f65759e322f11e"
       },
       "liveChecks": {
         "fullGameplay": 9,
@@ -2829,7 +2829,7 @@
       "id": "rall-008",
       "title": "Rall008",
       "order": 26,
-      "status": "in_progress",
+      "status": "local-release-candidate",
       "sources": [
         {
           "kind": "github",
@@ -2840,15 +2840,47 @@
           "url": "https://drive.google.com/drive/folders/1ApVIMy-WxmkkmHCtq9d7s2zmqfIQvjBz"
         }
       ],
-      "work": "Restore the distinct 2006 C++ network fighter. Private browser probe runs original articulated fighters, moving ship, native combat, scoring and respawns; complete local gameplay and input checks are in progress. No public playable release yet.",
+      "work": "Original C++ restoration passed full local matches/practice, all characters, touch/keyboard, fullscreen, recovery and homepage navigation. Final live verification pending.",
       "tests": [
         {
-          "check": "sourceComparison",
-          "result": "All 375 local and Drive relative names/sizes match. Executable and eight selected source/header/data/image files downloaded and byte-identical."
+          "check": "fullGameplay",
+          "result": "6 complete 500-point matches: both teams, desktop physical keyboard and portrait/landscape native touch; genuine hits, damage, deaths, native respawns, victory, restart and menu."
+        },
+        {
+          "check": "practice",
+          "result": "3 complete real bot defeat/respawn and unarmed player defeat/respawn cases; original bot zero points, kills, stored record and reload."
+        },
+        {
+          "check": "roster",
+          "result": "6 original character choices each load articulated assets/animations, move and land real damage."
+        },
+        {
+          "check": "combat",
+          "result": "Both teams: native touch punch, physical guard awards original points and prevents damage, touch grab becomes native throw with reaction and damage."
+        },
+        {
+          "check": "input",
+          "result": "Both browsers, four viewports (1280x1000,390x844,844x390,320x568): both keyboard profiles including mobile, aliases/quick taps, jump/crouch/attacks, four native touch contacts, independent release/cancel/mixed input, audio, pause/restart/stale held repeats, secondary buttons, in-scene bounds and fullscreen rotation."
+        },
+        {
+          "check": "frame",
+          "result": "Both browsers, four viewports including568x320: real parent blur freezes native state, stale repeats, fresh key movement survives resizing, paused Escape, full-parent fallback without reload and Menu cleanup. Chromium native and fallback; installed Chrome fallback. Final Chrome fixture advances its paused clock100ms for frame startup."
+        },
+        {
+          "check": "recovery",
+          "result": "16 critical resource503/retry cases reach native combat and actual movement; denied storage through actual bot defeat/reload; music503 leaves audible FX, then retries actual streaming audio and continued combat."
+        },
+        {
+          "check": "assets",
+          "result": "All375 original archive hashes retained; 128 image dimensions/export hashes,26 unchanged WAVs,font,four full MP3s and compiled output/source/header hashes verified. Corresponding source bundle rebuilds engine.mjs and engine.wasm byte-identically."
+        },
+        {
+          "check": "website",
+          "result": "Canonical homepage all three viewports in Chromium/native fullscreen and Chrome/full-page fallback; restricted forwarding fixture all three direct-window launches. Actual movement, native touch attack and top-level Retro return passed. Root regression suite passed."
         }
       ],
       "publishedUrl": null,
-      "implementationCommit": null,
+      "implementationCommit": "1469b0296fa4a67976257ed3f893bcd1a102ab88",
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
@@ -2863,7 +2895,195 @@
         "graphics": "Blender",
         "soundAndMusic": "ElevenLabs"
       },
-      "sourceAuditCommit": "ba6a844"
+      "sourceAuditCommit": "ba6a8441d59271a1d47400acd82f1286824ccec6",
+      "version": "2006-web.1",
+      "implementationRepository": "https://github.com/joynes/rall008",
+      "resourceAudit": "docs/games/rall-008-assets.json",
+      "releaseFilesSha256": {
+        "games/rall-008/app.mjs": "23378fb52e726b73c12e88519b7b113f2e794a795f0fe6b6055c7ca32bd9b84c",
+        "games/rall-008/assets/graph/fighter/blueangel/arm_lower_left.bmp.png": "d7edba260a79e7794c9cfa2cc9424a8b507eafd88a592785831206613d451e37",
+        "games/rall-008/assets/graph/fighter/blueangel/arm_lower_right.bmp.png": "fa443b2d946e3d1efcbaf55d63d888fd378d3e8ed8b8c6da98e3318022f2c467",
+        "games/rall-008/assets/graph/fighter/blueangel/arm_upper_left.bmp.png": "8cdd8554153b63d787aa23a9e1132588e335d24e1712789f2506e452bd10f9f2",
+        "games/rall-008/assets/graph/fighter/blueangel/arm_upper_right.bmp.png": "89b0687b2bd7f536b4d1fa636c439f789deab8ff743fc4a08daad020c2fc9015",
+        "games/rall-008/assets/graph/fighter/blueangel/body.bmp.png": "73fdd0692347491da0ee687829f71ee56b8c23f0509d5252c4e6d628a016fd71",
+        "games/rall-008/assets/graph/fighter/blueangel/foot_left.bmp.png": "ea626d732764931b1ab11b4c0f5ef6c426b3364754b89a4e5515352f2258d0c1",
+        "games/rall-008/assets/graph/fighter/blueangel/foot_right.bmp.png": "a4e252f423b6a7d3cbc4e60868d39e63012f8ec349dc19d9ca517d9ac1253d0e",
+        "games/rall-008/assets/graph/fighter/blueangel/hand_left.bmp.png": "07abf92e602a165e3ad2160c2d55d48f62cfb7c3d5d3052451cffbbe1b19da7c",
+        "games/rall-008/assets/graph/fighter/blueangel/hand_right.bmp.png": "55a987095fa7fc93cdd278e15aed5bf2e46fc1297011824f1ffdce33ae5d34e9",
+        "games/rall-008/assets/graph/fighter/blueangel/head.bmp.png": "2be49c49c9b64e7663390e974496badafbea35365cbb87e12858fd6ed8e93ddb",
+        "games/rall-008/assets/graph/fighter/blueangel/leg_lower_left.bmp.png": "c9eac7a7e91d8b5442fec81b4eafe0864a8a85241b452590711375ca5f94c685",
+        "games/rall-008/assets/graph/fighter/blueangel/leg_lower_right.bmp.png": "52176259404d1b997e98f0955b2985b0228518d4af7341cf20062de5c9cd6106",
+        "games/rall-008/assets/graph/fighter/blueangel/leg_upper_left.bmp.png": "38b2283e010e42dd7c089031124015083a8c7e6706cf749f599cfcb6b9865a34",
+        "games/rall-008/assets/graph/fighter/blueangel/leg_upper_right.bmp.png": "0b282c0398b58de6dd3a83b75af156ee72193d3c324a374dd28121bb317636ca",
+        "games/rall-008/assets/graph/fighter/bot/arm_lower_left.bmp.png": "e0e8cdbb8632a3eea588553bd89bd3c5563af607a7dad30dffe43eda2b05d7ab",
+        "games/rall-008/assets/graph/fighter/bot/arm_lower_right.bmp.png": "edec5c7efa7ab8a43808ab1f78ee96c6c9f16b82b61ca05c682dea7d6097accf",
+        "games/rall-008/assets/graph/fighter/bot/arm_upper_left.bmp.png": "ed075f1f9848a988973894dfe77a74aea27ce24f6cc9b703cf0c8649329ede37",
+        "games/rall-008/assets/graph/fighter/bot/arm_upper_right.bmp.png": "b319ecd2656f8a761cea9781a072b55f0870e4d9e4f733eb642231c274781309",
+        "games/rall-008/assets/graph/fighter/bot/body.bmp.png": "d324997d05c7fa67b58eab6ddf1e39f3295a717e0bc95bc051e93d0d93824f58",
+        "games/rall-008/assets/graph/fighter/bot/foot_left.bmp.png": "db6d10da8fa6a69fd2e7317ac51bee4c150f72763991fd4dd63bb43ebd915612",
+        "games/rall-008/assets/graph/fighter/bot/foot_right.bmp.png": "0edba226638fcaf45e064ef5cf05bc1b6f44c42f65d17dba2b3ba26bfcdf4869",
+        "games/rall-008/assets/graph/fighter/bot/hand_left.bmp.png": "aecb466285379318d2b53d45fbad46fd7bad93321bf361569d77a8cfe3537186",
+        "games/rall-008/assets/graph/fighter/bot/hand_right.bmp.png": "243f8f01b5c42314d53b77113931e3a0fa5d7b54d20ccad60440d30ca3aa3ad2",
+        "games/rall-008/assets/graph/fighter/bot/head.bmp.png": "c812e9e945c239769d2bcbad4dff32d29f1ced21c5cd62b826ceddbc3964a667",
+        "games/rall-008/assets/graph/fighter/bot/leg_lower_left.bmp.png": "9f814e9b55e1faf0e43d969a0c7cfb15871ca7632b0120e31f05fd17c0e2a5c9",
+        "games/rall-008/assets/graph/fighter/bot/leg_lower_right.bmp.png": "168c8adc47340f3a5fb66aec570efbfadfb4d1da77158d199b8cbc59fd178542",
+        "games/rall-008/assets/graph/fighter/bot/leg_upper_left.bmp.png": "46d63af1a2e6543d974768f94f750652b73c6b83c2426d1d04e0848980d148d6",
+        "games/rall-008/assets/graph/fighter/bot/leg_upper_right.bmp.png": "6227cbe4056e5b3b9f3c304b07749640df12ab1873d996375d6951c6de835dc0",
+        "games/rall-008/assets/graph/fighter/elgreco/arm_lower_left.bmp.png": "e0e8cdbb8632a3eea588553bd89bd3c5563af607a7dad30dffe43eda2b05d7ab",
+        "games/rall-008/assets/graph/fighter/elgreco/arm_lower_right.bmp.png": "edec5c7efa7ab8a43808ab1f78ee96c6c9f16b82b61ca05c682dea7d6097accf",
+        "games/rall-008/assets/graph/fighter/elgreco/arm_upper_left.bmp.png": "ed075f1f9848a988973894dfe77a74aea27ce24f6cc9b703cf0c8649329ede37",
+        "games/rall-008/assets/graph/fighter/elgreco/arm_upper_right.bmp.png": "b319ecd2656f8a761cea9781a072b55f0870e4d9e4f733eb642231c274781309",
+        "games/rall-008/assets/graph/fighter/elgreco/body.bmp.png": "d324997d05c7fa67b58eab6ddf1e39f3295a717e0bc95bc051e93d0d93824f58",
+        "games/rall-008/assets/graph/fighter/elgreco/foot_left.bmp.png": "db6d10da8fa6a69fd2e7317ac51bee4c150f72763991fd4dd63bb43ebd915612",
+        "games/rall-008/assets/graph/fighter/elgreco/foot_right.bmp.png": "0edba226638fcaf45e064ef5cf05bc1b6f44c42f65d17dba2b3ba26bfcdf4869",
+        "games/rall-008/assets/graph/fighter/elgreco/hand_left.bmp.png": "aecb466285379318d2b53d45fbad46fd7bad93321bf361569d77a8cfe3537186",
+        "games/rall-008/assets/graph/fighter/elgreco/hand_right.bmp.png": "243f8f01b5c42314d53b77113931e3a0fa5d7b54d20ccad60440d30ca3aa3ad2",
+        "games/rall-008/assets/graph/fighter/elgreco/head.bmp.png": "464bd30a51ac4b6bbee865042f469cf614989a1b6822733689c45e8e3799bc4e",
+        "games/rall-008/assets/graph/fighter/elgreco/leg_lower_left.bmp.png": "9f814e9b55e1faf0e43d969a0c7cfb15871ca7632b0120e31f05fd17c0e2a5c9",
+        "games/rall-008/assets/graph/fighter/elgreco/leg_lower_right.bmp.png": "168c8adc47340f3a5fb66aec570efbfadfb4d1da77158d199b8cbc59fd178542",
+        "games/rall-008/assets/graph/fighter/elgreco/leg_upper_left.bmp.png": "46d63af1a2e6543d974768f94f750652b73c6b83c2426d1d04e0848980d148d6",
+        "games/rall-008/assets/graph/fighter/elgreco/leg_upper_right.bmp.png": "6227cbe4056e5b3b9f3c304b07749640df12ab1873d996375d6951c6de835dc0",
+        "games/rall-008/assets/graph/fighter/joynes/arm_lower_left.bmp.png": "0e7e665fe2bcd0cd21d2d7a1ba1064237bc6f755423512418ea533b557d9d147",
+        "games/rall-008/assets/graph/fighter/joynes/arm_lower_right.bmp.png": "32189689d58577f9310d960d86a6320d96358233e769bcd89733026a0624b45d",
+        "games/rall-008/assets/graph/fighter/joynes/arm_upper_left.bmp.png": "d8fefd23601354ba1e047f20ac5e7386ef7a80765e1d9ef22eca2164bd65102c",
+        "games/rall-008/assets/graph/fighter/joynes/arm_upper_right.bmp.png": "d2c8ee5d3e6ecd5c8414309b3a499c7a1e89f0d7b6bda05b17f1ae1c7dae1646",
+        "games/rall-008/assets/graph/fighter/joynes/body.bmp.png": "6d1ba3918cd29778e7cf69b4eaac4a37cee7e87a04c14555a26fd7749b11bfa0",
+        "games/rall-008/assets/graph/fighter/joynes/foot_left.bmp.png": "d3e89fac2dac3816fc6adaf3d4f0b23eae67109d399fb287ec64a2c9fe77ade1",
+        "games/rall-008/assets/graph/fighter/joynes/foot_right.bmp.png": "3b87254807daa5447eb66b49b858a7f8993306db4d2a749fdab5ee9fd2556f3f",
+        "games/rall-008/assets/graph/fighter/joynes/hand_left.bmp.png": "7cdab5953135eb4d765637cb410acd2e7caf1fcc6e3bfe6b1908c65fa03efc50",
+        "games/rall-008/assets/graph/fighter/joynes/hand_right.bmp.png": "a783fb7e3925f80125ae61edfb2e885c126413cca2c45bf8baa883097cbc643d",
+        "games/rall-008/assets/graph/fighter/joynes/head.bmp.png": "96eb4c4da7fbaf56d106b2708d94ac846a9c831f6d893f7ef55863538d322214",
+        "games/rall-008/assets/graph/fighter/joynes/leg_lower_left.bmp.png": "56d8a8cd06e58e88c38781ae71eef5c252acf55699fea7283a955785c7ab16c1",
+        "games/rall-008/assets/graph/fighter/joynes/leg_lower_right.bmp.png": "13d45fa72aeed124c3e7c877782dd7b2ac29fb0ef12660a2196847ddd031a39b",
+        "games/rall-008/assets/graph/fighter/joynes/leg_upper_left.bmp.png": "9a9809fad6045a9bee802cc0655655da1606ac7bc0d66ba63d271c44cf6d7cff",
+        "games/rall-008/assets/graph/fighter/joynes/leg_upper_right.bmp.png": "14b6355b9cee2e9d82b47aa691dab1a203b0b364b7508a0e5a74b0d9b71864d2",
+        "games/rall-008/assets/graph/fighter/marre/arm_lower_left.bmp.png": "5269494515b84f51152f62d4a6a739005766b18d37d02247321e98e20f240543",
+        "games/rall-008/assets/graph/fighter/marre/arm_lower_right.bmp.png": "4fc76edfc0765e5a8604e9d7dfa7847fe8b5520d6061b1e2ba9cb2739fdb8f2c",
+        "games/rall-008/assets/graph/fighter/marre/arm_upper_left.bmp.png": "05a9297d30b51e3cfe2680643e5d691ea751770c45c424d2d1a5b92a2b28d370",
+        "games/rall-008/assets/graph/fighter/marre/arm_upper_right.bmp.png": "49f509e390fd91037562dc8f0e07082860600ea5adc5073dfb600bd5b5c5a7e2",
+        "games/rall-008/assets/graph/fighter/marre/body.bmp.png": "c68560eb4f94d5e3fc1151e56821b84d23bbdaeaf43b1a0d18e0ac295a287d28",
+        "games/rall-008/assets/graph/fighter/marre/foot_left.bmp.png": "06c5369caa28e5fdd1b5e3b9ff9df7e332a221892ee19715c9067a60e8c54493",
+        "games/rall-008/assets/graph/fighter/marre/foot_right.bmp.png": "4c2e8daf6eb6b5753b39617041e6b7104f4975e7d12a673e06ef89411e967927",
+        "games/rall-008/assets/graph/fighter/marre/hand_left.bmp.png": "89d81eba786f7f8ad412e48ed294e76b18661d508b9f8b986dc7dc21e8416fc4",
+        "games/rall-008/assets/graph/fighter/marre/hand_right.bmp.png": "761162f02be40a46d7ae702675f5e258874d615bc29c82cf8bbabd93a47961f7",
+        "games/rall-008/assets/graph/fighter/marre/head.bmp.png": "e6309f6d6b7f637372051b9d3c8bf5eb4a34fc9cc3a281713644ca98bb764168",
+        "games/rall-008/assets/graph/fighter/marre/leg_lower_left.bmp.png": "0db9fae59001e6ec3be6b7149296c2faf0260b509d6f2636ea45b54a35b0f07c",
+        "games/rall-008/assets/graph/fighter/marre/leg_lower_right.bmp.png": "78fac354b13c1b0a0bb5ba2a17d31b0db2366966e792afc8bb614c0c055a36be",
+        "games/rall-008/assets/graph/fighter/marre/leg_upper_left.bmp.png": "8c6d2d6648a0088f06e556aa432cf1c17da6f045aae29c84c424c61a3e6002f8",
+        "games/rall-008/assets/graph/fighter/marre/leg_upper_right.bmp.png": "0288e0c88a9cedf231ed6a920b53b0e872a76de24b6ce6e584a7f4c3e5be0dad",
+        "games/rall-008/assets/graph/fighter/peeta/arm_lower_left.bmp.png": "b3a0ef516612876661228408d3944520ef91d9115aa110d5445ebc0692ea21cf",
+        "games/rall-008/assets/graph/fighter/peeta/arm_lower_right.bmp.png": "a1bf42df47001a6b6ac26b2199ac17e91dc19140057e81c1c935f4f90980f7d9",
+        "games/rall-008/assets/graph/fighter/peeta/arm_upper_left.bmp.png": "2f0df76634e1fd5e6c2378e18ba84a01c6799e5abf4b1630b60bb67dfc4ec80e",
+        "games/rall-008/assets/graph/fighter/peeta/arm_upper_right.bmp.png": "74e53857fe97ec1ad60bc95fe4b815a3942f8f87e06e360701c401de0f9ed6ad",
+        "games/rall-008/assets/graph/fighter/peeta/body.bmp.png": "ae5c6150d9652747cc05a012e585f93f0c2d92ab1ce97ff90f66a6009ae401d3",
+        "games/rall-008/assets/graph/fighter/peeta/foot_left.bmp.png": "6ed00828c028521ff1031cfd5fa9af10cba76f7e73de36ec7dded268dd3038df",
+        "games/rall-008/assets/graph/fighter/peeta/foot_right.bmp.png": "643beb07a72dbe793aa909c648f2a98f0292cd990d104c0906b55dc2231a4856",
+        "games/rall-008/assets/graph/fighter/peeta/hand_left.bmp.png": "2f857b93aeb1be7b3f6dea42094282685fce071c1cf0c00a0e395d1261968513",
+        "games/rall-008/assets/graph/fighter/peeta/hand_right.bmp.png": "bd26b3e46cdd8b40d747eb3ed3c60a769ccd08e8403448346cab23572b9cabb1",
+        "games/rall-008/assets/graph/fighter/peeta/head.bmp.png": "bbab571c72e3784519eca1032935fe72e00d84141e2bb701d87a87d13324c9d6",
+        "games/rall-008/assets/graph/fighter/peeta/leg_lower_left.bmp.png": "82019e4a57db8b2c66704bac38d94b7fc2ef4bb7cb38ca2f0a0de3db95575be7",
+        "games/rall-008/assets/graph/fighter/peeta/leg_lower_right.bmp.png": "5e9365f9e18325c84f70522c1bdbd89c2feadac2938d6e2761441dc01a9ed5ec",
+        "games/rall-008/assets/graph/fighter/peeta/leg_upper_left.bmp.png": "9eb43a7757394d4677601192d1d15ddce3c426f4f1487310f2baf07d6eb1bcdf",
+        "games/rall-008/assets/graph/fighter/peeta/leg_upper_right.bmp.png": "f111ad29b4996d2740c18f95491f487644af019676e2c393006643f4b0db7355",
+        "games/rall-008/assets/graph/fighter/tiger_my/arm_lower_left.bmp.png": "8be799b06a3d69598e6160d9059694d3ec10edb40fe5dc2b07576e087515bac4",
+        "games/rall-008/assets/graph/fighter/tiger_my/arm_lower_right.bmp.png": "aec764bec5e8ffc6b4eeada79101622c25852edb320cfd6e0b4374fbf60f5d65",
+        "games/rall-008/assets/graph/fighter/tiger_my/arm_upper_left.bmp.png": "a54d23b133a6124f790e263483805defb145feed4b5b085f3bff11a35149a0ac",
+        "games/rall-008/assets/graph/fighter/tiger_my/arm_upper_right.bmp.png": "16dc00688819cd60ed180673a6c4fa2db2e65d00c3ffb2d3bd71f4be4c0a3e76",
+        "games/rall-008/assets/graph/fighter/tiger_my/body.bmp.png": "670d6a7a92fba610f4c0701383e18bee43dfcfbf4b271f0e142b8a0a9a3c5a4c",
+        "games/rall-008/assets/graph/fighter/tiger_my/foot_left.bmp.png": "1e70384a30bf8fad1d954c1eb80ab6504e41580bbcf4a5bab24b23dadb3e894e",
+        "games/rall-008/assets/graph/fighter/tiger_my/foot_right.bmp.png": "a19e1d0d7043f32863658d034062b7cf21d06106197eedf6905f99bae8c6b7fe",
+        "games/rall-008/assets/graph/fighter/tiger_my/hand_left.bmp.png": "33e4f671ba9e54e8f6441f2f93f504704a42287ca039647278c7f89c75f7eda3",
+        "games/rall-008/assets/graph/fighter/tiger_my/hand_right.bmp.png": "f995881b46227fb2ba96ca2ff1da56f258949776083cffaba72c6e613d268bc4",
+        "games/rall-008/assets/graph/fighter/tiger_my/head.bmp.png": "d1e84f51c287078878266ce7d4c5c1b676a5d9e96e53572cb77b5aaf55ad8617",
+        "games/rall-008/assets/graph/fighter/tiger_my/leg_lower_left.bmp.png": "d3a4f5995409527225dae504d71ce1de202f2501546d0720c193084e9824c9a8",
+        "games/rall-008/assets/graph/fighter/tiger_my/leg_lower_right.bmp.png": "b7c4df46a26cfa6e827efc311f927a0c7d29794015e4c3b0f6e2893548a48bdd",
+        "games/rall-008/assets/graph/fighter/tiger_my/leg_upper_left.bmp.png": "71fde39d20a0ff65cdeeec2cae5eef4d31a9fe34a2b36614d64b8138223e316e",
+        "games/rall-008/assets/graph/fighter/tiger_my/leg_upper_right.bmp.png": "9dd2ca0d28b85dc9393545889e6a2bc42ea59a14ba90085ee509bfe0dfc5eee1",
+        "games/rall-008/assets/graph/font/Godzilla.ttf": "e4c7bf54d9c494d5bb9b4a851b2f1ef36e3adc9776729bc01877aa4b699f7b5b",
+        "games/rall-008/assets/graph/game/bar1.bmp.png": "1befc44245744fe408770e26119ab2486c2bd5f1be7fa5511bee654d0e103db0",
+        "games/rall-008/assets/graph/game/bar2.bmp.png": "294e6f18a950b3e0e8c183590ea913e99c7c518a3f503f89b142a577cd9b8872",
+        "games/rall-008/assets/graph/intro/intro.jpg.png": "5aad6a06df11f947495fa06288f73b87a3e950c7f5a5de74a76a8c53fdf95020",
+        "games/rall-008/assets/graph/intro/libs.jpg.png": "96753791421a458f17b1479447e454d3363ea9a23ee9e38691f0c29807faf585",
+        "games/rall-008/assets/graph/intro/story.jpg.png": "ddf1d7488e0b65f1023fd98cb1257e916c359e8051ee98a96947346afc60083c",
+        "games/rall-008/assets/graph/menu/background.jpg.png": "9337a432696b56c5511546cf436a7601fc99da5e050a3f78c120b9dd3b3f0e8a",
+        "games/rall-008/assets/graph/menu/black_samurai.jpg.png": "8df1367bd5fdd400077657c75ff46eb3b48d7251eebc8c7950e3cddfae74aa60",
+        "games/rall-008/assets/graph/menu/black_samurai1.bmp.png": "902ad20014b710b252bac5a3cf3eb99d3d0dc44ecb87b455c2c097d3e6cc3638",
+        "games/rall-008/assets/graph/menu/black_samurai2.bmp.png": "45cbd4bbe614cbc8b18acdab7b39019f0110247d35e3c318e9208be9209dbe65",
+        "games/rall-008/assets/graph/menu/elgreco.jpg.png": "a95c92d43479416707a461583a83178ec0df6118b50e36dd2f6277fbf8933529",
+        "games/rall-008/assets/graph/menu/elgreco1.bmp.png": "502d2c6c5358a54ad84b189ee6c2acd50a56d3fd207b038ecb5b750407542e7c",
+        "games/rall-008/assets/graph/menu/elgreco2.bmp.png": "84142649806545e3ff74c70d8f543d268ea131d2f166004d4e82b70afebe480a",
+        "games/rall-008/assets/graph/menu/help.jpg.png": "3927ceecb9505396dbb3348ee1bdae68d049debb634e99463b0fe4f90150463c",
+        "games/rall-008/assets/graph/menu/joynes.jpg.png": "e9d3a15b9b7cbc8488c0e6299ffe24f359659a07d4eafca3f40dd00cea514f00",
+        "games/rall-008/assets/graph/menu/joynes1.bmp.png": "7a2be71c5e3718883b3e174d77ea939be0f75e4b3210c490686afe799dba1d81",
+        "games/rall-008/assets/graph/menu/joynes2.bmp.png": "716b3081e76f4944e6ef2fa734065d2449df21846f91bb90f84c82adc2594889",
+        "games/rall-008/assets/graph/menu/marre.jpg.png": "25ecccf6bfed63b3cfbb1c189a31b8cac726f9186500b8324d3b6260e5e4df84",
+        "games/rall-008/assets/graph/menu/marre1.bmp.png": "63243602ad9c0b54313e614df7188f44e0039b213e82429b414bcdc0edb440e7",
+        "games/rall-008/assets/graph/menu/marre2.bmp.png": "9220f648c8647dd62db99d3962bbc626e5d248e943bd1c91266adcea9943df11",
+        "games/rall-008/assets/graph/menu/peeta.jpg.png": "9f73f1fe6a03648a4c67a2adf63a739524303f3329266319ffb9e91ce2429f57",
+        "games/rall-008/assets/graph/menu/peeta1.bmp.png": "d725f5a02bc4fef5ef07caf9ec6c39c8be4a10ae6c8ea81ace4e26b1f3a7bf65",
+        "games/rall-008/assets/graph/menu/peeta2.bmp.png": "27691deb6ca58a704576c0b155e1c3824a344eafaf89fff4422d6834a3df8b94",
+        "games/rall-008/assets/graph/menu/select.bmp.png": "447f391cd0b65d5389ac86c3c9e020684d3110f1ffe193de1bfaa5d32ff05b9a",
+        "games/rall-008/assets/graph/menu/tiger_my.jpg.png": "6d089274fd8037da1b101e5e328ea0d23487d3849abda39c19cd7989e8703811",
+        "games/rall-008/assets/graph/menu/tiger_my1.bmp.png": "6811f9c0867e68d632d302c4124df357e5ff2d4d0349f0dd55e2f61636488a79",
+        "games/rall-008/assets/graph/menu/tiger_my2.bmp.png": "342eb903ad8dffb904b94a2be5a2efc10cfdeb1abdd1faf7f9851c347f647c90",
+        "games/rall-008/assets/graph/stage/cruiser/deck.bmp.png": "209e820e4a3bb8a4398ba0b44e9584f6be5ee1c01d278a2ccb8c9b7ce6ee3898",
+        "games/rall-008/assets/graph/stage/cruiser/water1.jpg.png": "554795c53a63f7817b708ee0d174f65904dc273d08ae97a2e1f0b90f9f7880e3",
+        "games/rall-008/assets/graph/stage/cruiser/water2.jpg.png": "3caade6b6e3ce045788f96a71734e46b2532c9de72e5d3a4dda06f85e8183ba5",
+        "games/rall-008/assets/graph/stage/cruiser/water3.jpg.png": "9f449dc9d7479a913e37be23d24c0b00296e253983092fd279fe17caac26eca2",
+        "games/rall-008/assets/manifest.json": "4ea0aef4a5748cb73f2187036048bcc9a7a265f552df86510ebfadb1f4feb015",
+        "games/rall-008/assets/music/03 - joynes - Cyborg Hybrid.mp3": "ed6a406c69760533f900077ea9629ca6a7ff808e5af4e7ec5754d9135fe6ea2e",
+        "games/rall-008/assets/music/04 - joynes - Flangman.mp3": "ba444089edffb7be9e7999fb5955d349938dab7e20a2e0ac498da4646c71650b",
+        "games/rall-008/assets/music/05 - joynes - SOR the bridge.mp3": "1f80a00b9b0d0bf09b02c6bb7787b282bce8934f4a3069ea061f4f861062dd12",
+        "games/rall-008/assets/music/06 - joynes - Ich bin stark.mp3": "ded166f1b98f0adb19656ad55b99ebabc0d73178337f00808e7520c68f9b7412",
+        "games/rall-008/assets/sound/effects/block.wav": "0c6b8a43d6b2781d4b30b8b0c4b1b4698a937cc759e7e4911a392cb6acef48b0",
+        "games/rall-008/assets/sound/effects/duck_hit.wav": "cc62464ba559d19a6e0febf9592aa8c07a376de060c3c69da34665a5c8a7882d",
+        "games/rall-008/assets/sound/effects/elbow.wav": "3b693a5dd975da7e26514376d8ffcdae187dc12379174241567b268b13b0f70d",
+        "games/rall-008/assets/sound/effects/hit.wav": "2eff8e5ec0ecfb6d7ef0d828fb5f84a28efaaddf3ca5e7bb9de47f1e22b7cb5b",
+        "games/rall-008/assets/sound/effects/hit_air.wav": "f3082cb48bc4b83fe06d1b52be473b9783b4ba093fdfe1866eacdaa0a87a515a",
+        "games/rall-008/assets/sound/effects/hit_ground.wav": "21f6cd4935c4e6ddb65bc45b8563620b9a18a936eb01f886ae6b3a77430c65f6",
+        "games/rall-008/assets/sound/effects/jump.wav": "23271274fbc3273bc60ac2fe35ef0189aaf0d974931c90f2fca190ea489d3474",
+        "games/rall-008/assets/sound/effects/jump_land.wav": "33b815fae4015b8443af956ba6c190a91da39bebae5dcce512ecc87b753b3c30",
+        "games/rall-008/assets/sound/effects/kick.wav": "de95d8ed2d5d5f2fb1d19ce3fdb0917989ca47e593f181d9f7b39913025309cd",
+        "games/rall-008/assets/sound/effects/knee.wav": "5f5a3d0f56201fc2023b11eb8348db1ec42cd92ddf25db8e012b87eb2c14be79",
+        "games/rall-008/assets/sound/intro/Jqp.wav": "0db14fccc686ab616a8ff3b91b96b5dd368df2b002bb19ca8649b1381038f0b3",
+        "games/rall-008/assets/sound/menu/backspace.wav": "fd1121157c533c478af12b39b0876cc9a6b767e6e4db7ebb1869c740a45d6509",
+        "games/rall-008/assets/sound/menu/black_samurai.wav": "4cf54f60f4d512389b137093ebb3328348cdf3e33204bd784f4fd2d9f8418919",
+        "games/rall-008/assets/sound/menu/cheer.wav": "7f46905bb1102a6e79d8aa20b12f0f7b16ff364b7aadfc85289551adb50fbb7d",
+        "games/rall-008/assets/sound/menu/cling.wav": "356d5daa03dd995c711d73c26b9f009ed1f4ddcf76215fe98f16ea569c95ec19",
+        "games/rall-008/assets/sound/menu/elgreco.wav": "15f80f4f3f3f580aedfed7449b3e91868abc8915211e68d318bc06fcad26cc23",
+        "games/rall-008/assets/sound/menu/joynes.wav": "a0fbec5ef21645e69f12c2da47bc2236e4dfc8ca3af70477c46a216fc034b2f6",
+        "games/rall-008/assets/sound/menu/marre.wav": "4dbae4d4d63a6362973de721d498e458f1076b59d5e8ea8c1c9d93517639eb7f",
+        "games/rall-008/assets/sound/menu/peeta.wav": "960f24a6318e3904cb58718712b59ef45c3550f2a4231e760adcb299bd3abe08",
+        "games/rall-008/assets/sound/menu/select.wav": "6a36da9946a7797abd7f741f5cbe281bd613ee2cef9da9c39d64061c795ab92f",
+        "games/rall-008/assets/sound/menu/select_fighter.wav": "49d9eb5c647c902c40f055c62cc57f652350fef7da75545f3fd62eb5c092810e",
+        "games/rall-008/assets/sound/menu/select_intro.wav": "7e64b67a9e824a35b17566783e117b62ed794c131be606c0d72aeb423ab45adf",
+        "games/rall-008/assets/sound/menu/tiger_my.wav": "363d134e79f295953a250f6f2d444b353bebf6ffbe8e2e2034034c8bc53eb272",
+        "games/rall-008/assets/sound/menu/typewriter.wav": "c5b46caf10a40e3a03dddf07594d29469da5fb37588b0ca9d1be42d860546bac",
+        "games/rall-008/assets/sound/stage/engine.WAV": "65ee2dc9ceb657db81bd5dcfd00a698c69de9461a8af5ad68d798f4c447cd0bc",
+        "games/rall-008/assets/sound/stage/horn.WAV": "51e44bbe254dca7d4f8be5863b4617625bb7f2d50fe3fd0159c166ae97537600",
+        "games/rall-008/bridge.mjs": "3b6bfd8ae71543eb44a7e133e9300b453fe87646a0beca03472cf4079d01bac5",
+        "games/rall-008/engine.mjs": "f1539f443475b524c3ca74384dcde91ed16fad12906c62dc157146cd20d2e37d",
+        "games/rall-008/engine.wasm": "059ea916d75fe6065b808227f3e4ad349cecfe13cacc5d40c4fd906482e86478",
+        "games/rall-008/index.html": "699946208c5125febea768520ba6420e8f1f4ef1e551ec9565b990b23b676c9e",
+        "games/rall-008/provenance.json": "855580651344c47f941b60307ab06218a7a93e05faad311d2b217670f0fbcfca",
+        "games/rall-008/source-compile-manifest.json": "675bc1b86aa060d3de851666090a5345687f8f7f837c9828336c19378284ad7f",
+        "games/rall-008/source-notes.md": "c8ea815ba4dfb356972b84b65c06d6e18b1a4ee1ca35c8aba999323081edf00f",
+        "games/rall-008/source.zip": "4cbaedb46259c75dbe7a37d70921c3a82fb37b07beef29e2666b99d20d16491d",
+        "games/rall-008/styles.css": "9ad2f6bb036cdbb7f0bbe0a00511225a027d00a704c649aa78b37623ad88540f",
+        "games/rall-008/vendor/EMSCRIPTEN_LICENSE.txt": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86",
+        "games/rall-008/vendor/LIBCXX_LICENSE.txt": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b",
+        "games/rall-008/vendor/MUSL_COPYRIGHT.txt": "b870108ec5e7790e9f9919064f1b9421d62d5f9b0e6c230c6adf7ea2da62e97b",
+        "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
+        "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
+        "docs/games/rall-008-assets.json": "a9a46de89f94fffebbd2adf57dc4e1e348e3275319961c49a880a0c6c6c899a3",
+        "assets/games-catalog.js": "c2fbfe20c4e1177522e9c2e205ff964c509847b2348bdeb3bce94e6ce2a5fd65",
+        "index.html": "1a5f47ed6802043bac8b0bc5427d67e8b777b9f12a2017f155f65759e322f11e"
+      },
+      "verificationLimits": "Mobile browser contexts are emulated; no physical-device or Safari claim. Tests drive browser keys/native CDP touch with cloned read-only state, without gameplay-state injection.",
+      "inGameControlsAndFullscreenStatus": "local-passed-live-pending",
+      "englishInterfaceAuditStatus": "passed",
+      "catalogUrl": "https://joynes.github.io/joynes.se/#games/retro/rall-008",
+      "auditCommit": "0fbf1e33665990da82c992716445d9867a02e39e"
     },
     {
       "id": "rall-082",

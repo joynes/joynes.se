@@ -1,0 +1,1340 @@
+{
+  "game": "Rall008 2006 network fighter",
+  "originalFiles": {
+    "Makefile.win": "a1721c77375e69a8067a4816fa7935759c4dd8d682fd3d072a55dc5eac01a934",
+    "alleg42.dll": "6774cc32a88db86a9b3baee5326050c47bfa185d3bf57c23410642adda7adae9",
+    "config/config.txt": "8287f9cd682a60efbb1e7867617598dbf1a02eb14359c00534687d3b43b11aca",
+    "config/stage1.txt": "0214998235a7897d0afd30df41ae1fb201722cd98330504dd730a5028adfb90e",
+    "data/black_samurai.str": "e904dd14d16a7c2917f363a70b6127caed55445afa6bd25b68ad38b44ed7dbe3",
+    "data/bot.str": "87ddfea295fcb5391830c9ecb20ff0c6048890e95482ecfc705f41aae549c4ab",
+    "data/default.ani": "95c95d8ea8c74a4041b40e5a8a0a1e54b4ad09ade68cfa006986dbb343f741a8",
+    "data/elgreco.str": "1f32d6897ebe66af024c76bd08d418dcba371da40f30d8a55d6339c86378455e",
+    "data/joynes.str": "9d4ba7a3299c4a01aba2fecc70f9598994cbe5323c36c8d4fd62dcbbff811c8f",
+    "data/marre.str": "e43c72f8f7b010e0bfb7644d414ca44f9bc9bcffbeef80c2504aefa4d267ee44",
+    "data/peeta.str": "39d92b474ef6255736374e3040695de476cfb8978604b2d903d4c2b01ddcd4aa",
+    "data/tiger_my.str": "dbe6a057db0e7eb77459e90ada8b3633f346b112a33eada43dcecb5d1d5b696a",
+    "doc/Doxyfile": "dc2dc7c4c8c0f4ffb9b8c5ca6f7373b23b4e4143cef7c0c26d1e573ac89c2d8e",
+    "doc/buggs.txt": "8caeaa66c4dab258c0b44cbdc1c96b4bf0ba68e5329fd924c2573ba443317df4",
+    "doc/build character.txt": "704ec7a3dfe717acc7697aa1eda53d917cb4890a98ceaeafd7aab76ce823ff3a",
+    "doc/create_release.txt": "3d55b80438136fe1c7ec4b77cef502bb6602a9aa27d8b47df25b76e596a01600",
+    "doc/gpl.txt": "40a607e086bc23f10e2953bcccdccdf857d26ad40b8cbdc974df96c678f51afa",
+    "doc/html/annotated.html": "08a6d0cebdefd6e2e22c1b5eee7d7c54ee735c61817cf1e172b4de8d56f2889e",
+    "doc/html/class_client-members.html": "bb70a5db4b2f76ff53be039e38a0d4af0aaf49e8d73a05df0e949f40292792ed",
+    "doc/html/class_client.html": "80565e7354c15f86a7f0c187a556954cafecc5c2891ffbe3dad980de41f75d88",
+    "doc/html/class_editor-members.html": "eda2051f63405311401775751496c3e443540d7b846700819d86aa5516f6be53",
+    "doc/html/class_editor.html": "e6cfd690ff5c0517671cc80566eb8f182db10f974b3d0ae85da522a1719a2a63",
+    "doc/html/class_fighter-members.html": "1f50f3bf35a19ddf5315fcd891846f91f2fb558cc8e56637de75e8c68866b40c",
+    "doc/html/class_fighter.html": "963887926786bf292336ab408bbc8e838d0aff1b1b38b9f377f6fe2286fe033e",
+    "doc/html/class_game-members.html": "243f035bee45555a696ca48ad20ea3da25f80e07dc2d0c62b3e116bc89f1b5df",
+    "doc/html/class_game.html": "c459fcd6e6226d2310d6a97788e5107245460dffee3cd10b6d3baace664ce806",
+    "doc/html/class_game_manager-members.html": "2dafa5af17dda5e13eafcbf34f560008bb658cd374f9f1e8db21390e22b3fdbd",
+    "doc/html/class_game_manager.html": "530801ca953a4b2ac47b1cd4dc8f7da7ce25e47e94281b9c922adab7cfd21a3d",
+    "doc/html/class_menu_exit-members.html": "c14e389565f6bd13f6ab20254bf3707673d5d6a3257aee484e51c59a258f6a5e",
+    "doc/html/class_menu_exit.html": "50d1756f6309ee4fd907836cc880facd78c11e35f84468ba1655b1d024ebd0ac",
+    "doc/html/class_menu_exit.png": "c2ba2e6175fef3868d57d2034b4f9b16fc3fa531598ce1b845320f15baafbe8b",
+    "doc/html/class_menu_fixed-members.html": "de018aab5a15d821105b3cd37e225498504af9e6fbb4ad04a9e4cf8020a89bd5",
+    "doc/html/class_menu_fixed.html": "048f2986f11213d93fe354fbfbde45ed2a495ea264283c2f2474c0b4fa335aa8",
+    "doc/html/class_menu_fixed.png": "2933cd64f9541fc9e454e31fc3f27af4cbb909192d69e69419aaea1cca58b280",
+    "doc/html/class_menu_input-members.html": "92ca5fad4467a7692468dc00c987af39f9e21c8d2dcd6a87526273090fabbb97",
+    "doc/html/class_menu_input.html": "1e7768bb9c509b103dea49792a6f833cd9ba4843a06ba328e708bba2d5f54d86",
+    "doc/html/class_menu_input.png": "1a00f119f1585b5be64d8f2891b0419f7ccb9e668b73acb4d25fa307cf54f0e2",
+    "doc/html/class_menu_object-members.html": "ade796a26522f6f56fdfe7cf029c625a302562de5490868f2297dfb1d0e19b88",
+    "doc/html/class_menu_object.html": "7bdd791be26b4d2f4e2ada901b77b961e0a561aac618a3e3e6262b9e0522ff11",
+    "doc/html/class_menu_object.png": "9bbef8024232417829a8733467202c9966245626ed07fab2dbd7ea91020ffdc7",
+    "doc/html/class_menu_percent-members.html": "0186f258a2f4d496feddc526481fbd12a389824ff4e985fcae7accf5695e9034",
+    "doc/html/class_menu_percent.html": "00b0a8a14288200a620ff52c947581f467a6aa31542654f3b00dadd454241f9d",
+    "doc/html/class_menu_percent.png": "685266f43b53139d8fc9ee9ca8a96beb86dc14092393e785530faacd19ac9f60",
+    "doc/html/class_menu_rall-members.html": "708e382e1594ed8aaa78200859776f611f73f8e349b25bcfa97b513587cd5256",
+    "doc/html/class_menu_rall.html": "da1a80175aad07bde6af52fe72f31d158a596516add16cbed07d01fcb8d2fb57",
+    "doc/html/class_move-members.html": "975aa32f5bf940858e96d819f03f793ff54e3b8177665bea7173fa7bbad096e1",
+    "doc/html/class_move.html": "834a93566605847be3d73d7277f9f1b9e2329c906fa2981ea6564e2386c96157",
+    "doc/html/class_multi_anim-members.html": "4e23ae32fa28cd010cdf646689b0ac83adaf29ee32e71c1048c66e05c4ddc462",
+    "doc/html/class_multi_anim.html": "ded7231f2d3126ac891dda44131240ec9d31633c21a96e598f8f566f2e8890cb",
+    "doc/html/class_music-members.html": "242f0c89a15a4a69c691fb1f219a0c19d6f11ba842b7a20c06d1307ae3b6ad99",
+    "doc/html/class_music.html": "c486980bc194eb94be1a36b1b37e34a5c51bb6609b6f264fc8008a30070245f3",
+    "doc/html/class_program_manager-members.html": "b8ef0476b092e10ccfe33d2ef81228599c39b68e5ade9448ca0c5cb177f1d7c0",
+    "doc/html/class_program_manager.html": "e56b6d98c0a1cf1b0dec0de1827fa5f7d838a8cda2199aed47feef323414e33a",
+    "doc/html/class_server-members.html": "fdcb6ef0a10e6f21d0b053928d8082b36fec1bde94df0329b67f5735c619acfb",
+    "doc/html/class_server.html": "1cd9c4469ba1db346936f285f0392da5f0eecab1fba6b3a967014ac3580b8826",
+    "doc/html/doxygen.css": "2738112688a2e9e26655d7aa70c02eba977e37149dabac36a6c310dadcef9d27",
+    "doc/html/doxygen.png": "c94b0fff66087999935e12fd492b9a1b2160b44b91841860d13ce0e33d20d8f2",
+    "doc/html/functions.html": "9887d7713efb99b60d0f77541acd89f917fc9ebcedf90d6d0aa62260f3a2f29f",
+    "doc/html/functions_func.html": "5263bfa8399db60519a1927a66a32d8ab791db0975688bed9b8d5e4ebe14de90",
+    "doc/html/functions_vars.html": "67c5d13fccc92625d6be07e9296b0101111c99925939a2508f8937f7b8534605",
+    "doc/html/hierarchy.html": "5f865c0b9f1b5f2d72dca83b94b30309285c3fccfe902799d32d9dcfbe0ddbcd",
+    "doc/html/index.html": "d04d424cffba8bdd7649132d1ad78fac13d63eb2adb2990c7f48bc7b1fcccae8",
+    "doc/html/struct_action-members.html": "228336a277cb4535f442075a16d7f6d019029e69bca34bf3e8cc23ad836452e3",
+    "doc/html/struct_action.html": "81202f308a21e096790c3860c73577fdb91b93d679ef3c803b17a0c3e657c58e",
+    "doc/html/struct_anim-members.html": "69df12b19d98b8e609bac95758c9875f037c4a3c8a1ced5a18321f9e5ef3a110",
+    "doc/html/struct_anim.html": "0e567aedd9cb19e026bb424886a008eff1d6e4bf96604d4d99af969647d38f83",
+    "doc/html/struct_file_data-members.html": "3e5e3a79344bef8b69ff53f64cae454bc56ffa195c0709bcb9e468b38f2f7014",
+    "doc/html/struct_file_data.html": "a5439eb915a8d36760f9b7cb403b44efde28fe4c5c86b3f8dc7c97e5e7a74a16",
+    "doc/html/struct_intro-members.html": "f471b235781c02d72fbf3398619349836b4f8f78be55955dce0d7a499a9b56fb",
+    "doc/html/struct_intro.html": "e1a8f1b3aff6a5eeb4b623b7e8a82a29ed78ff01a195591b6306b4c1816ee81b",
+    "doc/html/struct_jump__data-members.html": "527f852ece8aeae194204739f982dfa22f628b8007dc1f9ff2477631c8110f30",
+    "doc/html/struct_jump__data.html": "6eae277356fa3f6850c7ce7e8069772fd33679e6544db8b0081d4f9d7c76e6f7",
+    "doc/html/struct_menu_return-members.html": "e0ebebd128f7503ba60a2be4739fb4c01ef9d713a5baea060ff406169efbafb2",
+    "doc/html/struct_menu_return.html": "debc08871bee95295d30f5e1eb10e7d56a0f1db3fd6b104dc39db0d12988c158",
+    "doc/html/struct_part-members.html": "c6ad205d9c7625247c59694eaeb6ae1d68abd9588fedeab7930f56ff0ca504f0",
+    "doc/html/struct_part.html": "518a005327ef4cc3a2047bde9c195cda95c091c125958afd0fca4e7f196cf379",
+    "doc/html/struct_sample-members.html": "71aaebd3ba4f67976133666d0a6a770a5ac1487a10d4dbcc949adb2785ad4fe9",
+    "doc/html/struct_sample.html": "4e529af0547cac4ac66064c2a2e1c7dc10aa502bad35dac76ab8f776f0288adb",
+    "doc/html/struct_sound-members.html": "b98b9cc97ff15c2a6165401dd707508c9b69d7454930d425d3c309de9a8c9783",
+    "doc/html/struct_sound.html": "41611610cc9bc6f0deed1931b0af63d2a2a885bc4f6c007616f559a518192e4e",
+    "doc/html/tab_b.gif": "50eb5bf4441ea3073ec1ca36dd63bc2b1eb736f514c6de2bc648e98f0fe9cecd",
+    "doc/html/tab_l.gif": "d5ecca2b2495aa6b20a860061133a58c00942a408b7828369af4d4b7e08a54d5",
+    "doc/html/tab_r.gif": "1876b505a59e66fdc10880a43b6aee462f3ca4dfefcb963b9de9c2d82539a85b",
+    "doc/html/tabs.css": "6265df6e05ba97c17338524ed3d1d1ef2431a8bd83689a626c2c00ab84709c20",
+    "doc/logg.txt": "2699af842199dce143650981823d16311150843fb3c3b3041a815ac11f95c2cf",
+    "doc/pics/MinMax.JPG": "78a9c919f2f7db1597a1546782b840ca7d14840c42264555e64c876e6eeab997",
+    "doc/pics/MinMaxFlip.JPG": "a6dfacbd5248c0a236fa9f56d43fb24e8977e975e1b8cdc07f54df8cca64a1f6",
+    "doc/pics/animate.jpg": "5ccca6b660d754d7e6abc55a0a98a367a240f500abee211a9839cc2d3d9aef8e",
+    "doc/pics/connection_points.JPG": "8957a2ff15715b097e9a6dfa7340223a634d844e1b8eacd6e7930d6ce2e84496",
+    "doc/pics/draw_direction.JPG": "65d668dc1c1aa98833dc5854972e844fed086427080166a7f915ad020380983e",
+    "doc/pics/flip rotation.JPG": "0df58d91183113baa77be69137041d89b2f92f54c14f49dc9172e2ec2645089e",
+    "doc/pics/init_points.JPG": "81603c5c4c920ef0d2b543609f61fa43e99993abf61c90af7fd9c70f8cd1a42b",
+    "doc/pics/part.jpg": "f2705a84477a823096ef37b54d23a4dbd651159dbe8a4b3efe71040293f8b9a4",
+    "doc/pics/rooms.JPG": "97564ffee7b77376473136c7e7eb9c24c1a5d61a76ff71e45266c60dc3b703ee",
+    "doc/pics/zindex.jpg": "80be15d4abfd96a448a8111b178f57fa211c45ad94553fde6ab28df820244b3b",
+    "doc/pics/zoidcom hierarki/owner client.jpg": "b4f7b6cd297489f725647daeb6b223b8493b4738134a9536eda72e5d49877052",
+    "doc/pics/zoidcom hierarki/server.jpg": "6ad914c701a3b4f4b35b3eb4da63a103bb010763ee31540c7d8d8f0e41a21478",
+    "doc/readme.txt": "73b1f2444f5334d4379072aeb836458b8bc128afb804eb456548475a0d8c3cbd",
+    "fmodex.dll": "cbfd815f21fbc8a2a9f0478742bf54786cdd724b3172d7a626a81f601091f082",
+    "gmon.out": "82e076d9d89035d9673af64932f4fdfe201fd58c0c7e68067e5e5dfb527fc68a",
+    "graph/fighter/blueangel/arm_lower_left.bmp": "756f8c07e182c2b3544442f7f4e394b0ebc6597e0c5f01b65f706d47b878c165",
+    "graph/fighter/blueangel/arm_lower_right.bmp": "63d3cb4d30d96471028fd745e0e9206c2f05a7dc361c7cde7f0a3997bdcca759",
+    "graph/fighter/blueangel/arm_upper_left.bmp": "53e1f192236096e2a18c019a8c521a0dd7b57b6addf49fb13c4d5333e03e115e",
+    "graph/fighter/blueangel/arm_upper_right.bmp": "3cba55613dc0b4e31ec0d206f76a327e3933393198cefb7b23f1dff2a4d40cbe",
+    "graph/fighter/blueangel/body.bmp": "20ceaccbd1607c4714e0be1a96fbcfbdf456712f77be9448fa9a6ab77cc8a7b1",
+    "graph/fighter/blueangel/foot_left.bmp": "b32874263b184ec941ef2c7ea0884a066a43bc4abcfe9e30cb5afc9f293de470",
+    "graph/fighter/blueangel/foot_right.bmp": "0da312bea2c908cdd65737008ea2bbde359506acbf057d7c4b9a94e0642f9570",
+    "graph/fighter/blueangel/hand_left.bmp": "3885c6c95e7dd34ddf0a17f7d8b201fd2eecfb93145b8555bbee3cdbda87d121",
+    "graph/fighter/blueangel/hand_right.bmp": "50a8e1814df4ee2eed22f18b8fd480312f4431cf5c9caf7ed3892edf8fd13fc2",
+    "graph/fighter/blueangel/head.bmp": "6f1ed3a2a9e9f132dbffa93c642240e4d097144346e301292093203f935a5af8",
+    "graph/fighter/blueangel/leg_lower_left.bmp": "3346dd2ba0bad38d636add64fd92e9804e6a5055b18a3d38fb7bac092368104b",
+    "graph/fighter/blueangel/leg_lower_right.bmp": "0baf11ea28118d7d527126241daf571febe25e0224dcadd38c9d0945af9d7b6e",
+    "graph/fighter/blueangel/leg_upper_left.bmp": "73147f2d713dbbc36822468390aaf0724935b52ee47ef5dbf2e7325ee0cfa47f",
+    "graph/fighter/blueangel/leg_upper_right.bmp": "04c6c8771fada0221f50b48aefdd0736ac56d64add7ded7675383196eb18507c",
+    "graph/fighter/bot/arm_lower_left.bmp": "e0ebcbfa5cbbc483b595891d172ba5e019e7c1c7cefc7e28713804da16ac5ce6",
+    "graph/fighter/bot/arm_lower_right.bmp": "9db471ab62a18197533ea0d47c1f94267fcecfca4340ce22cab803a04205cac7",
+    "graph/fighter/bot/arm_upper_left.bmp": "cd183c95fda927c67638a760c57d1012748edecd05614d252215d2d9639eb21c",
+    "graph/fighter/bot/arm_upper_right.bmp": "e238327ba81e9bcb81f7f0162a85df7536ffd582594a08e606ebb0350df4950e",
+    "graph/fighter/bot/body.bmp": "898b0ecaf5eb9cf0ffc06d988c38343f44f03cce9092970b5ca7ae761728229a",
+    "graph/fighter/bot/foot_left.bmp": "521d641048938cab6195563138b820a19c3d0686a71b711ea9e7b818595a6969",
+    "graph/fighter/bot/foot_right.bmp": "7d9650a5ebf5c9acdf12d30b4846df8779f4ddd55ef7e43a4354ae9a2ec84f21",
+    "graph/fighter/bot/hand_left.bmp": "aff06fde89f54f0f00b130f1e9f2894290ecaa7f2f40c64963775358efb0385f",
+    "graph/fighter/bot/hand_right.bmp": "9526b7b8e194d47af7d0e23421fe97021b0f237af95b9137cd3755217d9229d6",
+    "graph/fighter/bot/head.bmp": "1bad3dd6a3bdf066c0fdfd9dc2a46b0ee57c6d535b3f3cde28961d144ded0392",
+    "graph/fighter/bot/leg_lower_left.bmp": "8f60333bc4278845d3e0b69a2daf1732d2935279b7b1710150edadf5eb50cbee",
+    "graph/fighter/bot/leg_lower_right.bmp": "99c64a3045c79b3f45e0ac276f01556c7ee5f2c0b93c6dc9db1fd1b60653282e",
+    "graph/fighter/bot/leg_upper_left.bmp": "9170af00cce28bff8242a3e6ea7e22a7655b1070df1e806514612add1f317aac",
+    "graph/fighter/bot/leg_upper_right.bmp": "ea5d4c370c4657adb5d70ec4564a7be380efc983f3bd9baba909e7a75be94a42",
+    "graph/fighter/elgreco/arm_lower_left.bmp": "e0ebcbfa5cbbc483b595891d172ba5e019e7c1c7cefc7e28713804da16ac5ce6",
+    "graph/fighter/elgreco/arm_lower_right.bmp": "9db471ab62a18197533ea0d47c1f94267fcecfca4340ce22cab803a04205cac7",
+    "graph/fighter/elgreco/arm_upper_left.bmp": "cd183c95fda927c67638a760c57d1012748edecd05614d252215d2d9639eb21c",
+    "graph/fighter/elgreco/arm_upper_right.bmp": "e238327ba81e9bcb81f7f0162a85df7536ffd582594a08e606ebb0350df4950e",
+    "graph/fighter/elgreco/body.bmp": "898b0ecaf5eb9cf0ffc06d988c38343f44f03cce9092970b5ca7ae761728229a",
+    "graph/fighter/elgreco/foot_left.bmp": "521d641048938cab6195563138b820a19c3d0686a71b711ea9e7b818595a6969",
+    "graph/fighter/elgreco/foot_right.bmp": "7d9650a5ebf5c9acdf12d30b4846df8779f4ddd55ef7e43a4354ae9a2ec84f21",
+    "graph/fighter/elgreco/hand_left.bmp": "aff06fde89f54f0f00b130f1e9f2894290ecaa7f2f40c64963775358efb0385f",
+    "graph/fighter/elgreco/hand_right.bmp": "9526b7b8e194d47af7d0e23421fe97021b0f237af95b9137cd3755217d9229d6",
+    "graph/fighter/elgreco/head.bmp": "93c6a290c946222d3aa9abf3e49d881fbcad5ac929e7847b6416655e51a6e969",
+    "graph/fighter/elgreco/leg_lower_left.bmp": "8f60333bc4278845d3e0b69a2daf1732d2935279b7b1710150edadf5eb50cbee",
+    "graph/fighter/elgreco/leg_lower_right.bmp": "99c64a3045c79b3f45e0ac276f01556c7ee5f2c0b93c6dc9db1fd1b60653282e",
+    "graph/fighter/elgreco/leg_upper_left.bmp": "9170af00cce28bff8242a3e6ea7e22a7655b1070df1e806514612add1f317aac",
+    "graph/fighter/elgreco/leg_upper_right.bmp": "ea5d4c370c4657adb5d70ec4564a7be380efc983f3bd9baba909e7a75be94a42",
+    "graph/fighter/joynes/arm_lower_left.bmp": "fc53bfe96beafdd7b152022fa5e91358151c74aa177b8629b5f23e05aae6e42b",
+    "graph/fighter/joynes/arm_lower_right.bmp": "a9664cad77af7bed59cc0b2098498cd7843786ff05f07fc8e857ca2734a78c9e",
+    "graph/fighter/joynes/arm_upper_left.bmp": "898a5074b64486ca53d38603069962527890f94d28a2400dafbf0d0241257ad1",
+    "graph/fighter/joynes/arm_upper_right.bmp": "f00eeda65a2cd277cf187c11255d85523c81c5953a0bdf29c14fec7e2f0a0c18",
+    "graph/fighter/joynes/body.bmp": "65d77310522067c7f934c05d5a8bb234ccf9147c76e3727c83ef9e3a669445b6",
+    "graph/fighter/joynes/foot_left.bmp": "276316e4c67736ab06065dadbdd0b9971870b743583a091b969a51322387d8ed",
+    "graph/fighter/joynes/foot_right.bmp": "c6610987dc52b957868fcf7a61b7afd3c9525c12e39377f721f894995689be4b",
+    "graph/fighter/joynes/hand_left.bmp": "f4bc37d48f48b377b45f5da09c8917f91b1b53baa82b42fcc08626ab4b649f08",
+    "graph/fighter/joynes/hand_right.bmp": "57aa945bb83a8ed03fbe0d164da235bb1f52e8167bd4c8ff5c175273de7cd362",
+    "graph/fighter/joynes/head.bmp": "3474707365281828584681bcf673324bf527ee40fe53221359afc9d2d6756270",
+    "graph/fighter/joynes/leg_lower_left.bmp": "dabe1acec620fb03cb04b33a943a6ec1f54f26cc89ed8107970eea644240bf81",
+    "graph/fighter/joynes/leg_lower_right.bmp": "fbb7d8e06cf594dbcc5daf26ead5873e96c18db8a94e812f6746549d037ea3d0",
+    "graph/fighter/joynes/leg_upper_left.bmp": "49b6c1d798f560c85012cc714b0bc712bc0a0701431c0278a40d27c699265a4b",
+    "graph/fighter/joynes/leg_upper_right.bmp": "7a762cd4d7dea603473831cf4c03b81119bbb9ba69672caeac52edb79c34c653",
+    "graph/fighter/marre/arm_lower_left.bmp": "7c3986a0b0835231beae2aa8c131c2a7d6d465a55ccf674b98bcf56d88618958",
+    "graph/fighter/marre/arm_lower_right.bmp": "efd54d9418e9741829c56d56f054b325864325b6005e62a6937cf57cd6ad94bb",
+    "graph/fighter/marre/arm_upper_left.bmp": "d24cd13bd122dd759e80fe20ecc15900813f717e70f36046fa7930d977c426e1",
+    "graph/fighter/marre/arm_upper_right.bmp": "7dc0cf9d8a4119f0fdfbc4c5bcf7e364d003962b13ebdfee5997d529897ebc14",
+    "graph/fighter/marre/body.bmp": "cfbe34322287d3511d072fa55a0428823e498e1d15077841eb762ac39b61c162",
+    "graph/fighter/marre/foot_left.bmp": "1687876217439c4f332bd6b2cb260a57ef183bbabd40efddc8f6748cf85a3459",
+    "graph/fighter/marre/foot_right.bmp": "97e4b2a394326549925205c172307e6e0702c7eb780c71ab2cbac4a2131ed442",
+    "graph/fighter/marre/hand_left.bmp": "c59d1ee9c8ddcbbd939069a0d647b5736ce47a36ed30bdc45a8377c69427885e",
+    "graph/fighter/marre/hand_right.bmp": "41c9d0d047127f7c1448bcfd6edc8409ff180679ef8e24d4cd910cd7a35c50d0",
+    "graph/fighter/marre/head.bmp": "290cf96086f59993c4e38e73912da37f5d1251b3c57a544c41abe3b75f2b62c7",
+    "graph/fighter/marre/leg_lower_left.bmp": "a554dbade76b5a0b171c231e811ad2d0999ad293c70c7d294e20b19ca5523b56",
+    "graph/fighter/marre/leg_lower_right.bmp": "857facd575ceecbb5a837e7fb7f9df4f7690dd2ae5c24a34ea0123a80fbd88a0",
+    "graph/fighter/marre/leg_upper_left.bmp": "9ec2c4dfe34be96842a9e1ab1c593d81f44db48367734718c6a99ae0dd657aa2",
+    "graph/fighter/marre/leg_upper_right.bmp": "83d6ff2dc652bbf2d4e8d2d17eecb878414b0bf81817d72482db24a4230a2b52",
+    "graph/fighter/peeta/arm_lower_left.bmp": "914adfdf03dd1ce993ba50811e76ad2357dd52ff7be7e9b88b612b55e7a3a739",
+    "graph/fighter/peeta/arm_lower_right.bmp": "d3619bb118a460cc62861d85f0274c70d5c550dec41f041ecfafd2cff0e3cd7d",
+    "graph/fighter/peeta/arm_upper_left.bmp": "7d77ddacf8bcf6b791c10a04c2f9ea3ff0554794722ede884981cc685f2311d6",
+    "graph/fighter/peeta/arm_upper_right.bmp": "6db0c34638039550938ba628f9a14dfe536c1d09921ead12e4b10f1d9530c6b5",
+    "graph/fighter/peeta/body.bmp": "701ff5905354aef5f738502a5701d91538058e608d1b1be3848d0805e3c5038d",
+    "graph/fighter/peeta/foot_left.bmp": "5d9d78c737e00d7528fe89cfd1bb473c663b4f7d8428c65a15981b3fcb817b73",
+    "graph/fighter/peeta/foot_right.bmp": "2e8fb4b95e96e029e6a65a81820a98918c339865e839c9325559afd206e0986a",
+    "graph/fighter/peeta/hand_left.bmp": "8712cddaa7ac82968d6b6e3208a044bd13db19325a12b7dfa5622486c3663b23",
+    "graph/fighter/peeta/hand_right.bmp": "aca8f92b050251636aa06eeb1faa048a68058d976f2c4ae15b2b73fad926143c",
+    "graph/fighter/peeta/head.bmp": "ac43584278cc2c693c6bba4bb1cd428886a16b4b9367b30f86336c6c4b2b6af6",
+    "graph/fighter/peeta/leg_lower_left.bmp": "97d82c190618feece48dc1f1c66a8ea1543e67161b46db60ecb0f160f42ee43a",
+    "graph/fighter/peeta/leg_lower_right.bmp": "6128304ec83fb0b2162220b23ca2a8ab7cffc845ff1d217062c3b768e38c6ec3",
+    "graph/fighter/peeta/leg_upper_left.bmp": "0175122cc414f4ecc430af700773c736f0dfc379cdfc43ce9ff468d377637187",
+    "graph/fighter/peeta/leg_upper_right.bmp": "46acea17509b4a5a16e0903cbb09633cf43ca6ad14e7be65d822d4dab9698ee6",
+    "graph/fighter/tiger_my/arm_lower_left.bmp": "c3a0256a3a4434c43add968f5fc1d70a608f8ebfe20811558346cb65f07376ec",
+    "graph/fighter/tiger_my/arm_lower_right.bmp": "c7325f6aaed3377e21c2d2b13fa1e7bed31d41c5eabf45436dc9f3d78602f35b",
+    "graph/fighter/tiger_my/arm_upper_left.bmp": "b092bb474c929687166113feaf4994ec174c40a9956bbf3fdfc52b53dafbbc29",
+    "graph/fighter/tiger_my/arm_upper_right.bmp": "85a6ea14964852b00ae22bb2b47355f4e8fd6f174204305a968ee8968cadea03",
+    "graph/fighter/tiger_my/body.bmp": "ad7b2b87d044936f74552264ef22cbf49bfe248ada6004b79f2ea717cce88cb0",
+    "graph/fighter/tiger_my/foot_left.bmp": "fb6097652a834b7396cf1c516e795f02f253e7fc7aa215ca5feaeae9d67edf52",
+    "graph/fighter/tiger_my/foot_right.bmp": "25a9618312c4038373ee28881120c4415d36d9f6afc3463a6b65660b38e89a3e",
+    "graph/fighter/tiger_my/hand_left.bmp": "79a577935c794ce7fe7006655515d92699a91b9d02e12807685e3c91c82ff9eb",
+    "graph/fighter/tiger_my/hand_right.bmp": "3e9466d71115bef6c5443fba4fb1b6a53cb8abb5054c4c809bf8345193fae462",
+    "graph/fighter/tiger_my/head.bmp": "aaaa3cac032fd9ed2b4298a6426094697818a0df6b8de2ab3ab1a719e4ec0a6d",
+    "graph/fighter/tiger_my/leg_lower_left.bmp": "86f0e0f54672d1b2e43786e1462ea19b5f6021f381eccc63d50f7f19f4968dc7",
+    "graph/fighter/tiger_my/leg_lower_right.bmp": "49e56eab1cd4e331db590ec2d064846b58e1d7b2231c1783161e2921b39cfa77",
+    "graph/fighter/tiger_my/leg_upper_left.bmp": "b5f4f93e9a15fcc65d98a1f824b02367cb7cefd473e6ee9411d8f97e98b6bfbb",
+    "graph/fighter/tiger_my/leg_upper_right.bmp": "a4a18a05c7b1adf2bf63637df951f56686ff3187b0df9aba71ba49000cc409be",
+    "graph/font/Agent.ttf": "3a666e006de3607a7aedc95b9d1dad11d537f7295347edba4d41cade07541e8c",
+    "graph/font/Dazzler.ttf": "b0ab3ef8dd712626cd27e1d580f6573abdf87bf5d5376e08946853c3d3386441",
+    "graph/font/Face.ttf": "251eb7486a5d44ae3713712ae4e9e2b3fae9d61e18888a1eecf279f2b194c204",
+    "graph/font/Godzilla.ttf": "e4c7bf54d9c494d5bb9b4a851b2f1ef36e3adc9776729bc01877aa4b699f7b5b",
+    "graph/game/bar1.bmp": "47da5bf215e92a146fba13532aa36ddaa82053234daf43ad538fb4e1c59a2b20",
+    "graph/game/bar2.bmp": "99ab69c2ee0f4f7910521066e6fb2ee75a115485a554536d1f07172ea3a0e991",
+    "graph/intro/intro.jpg": "54d2c2c0cd6ea4e0c652ff948e55b04233c35bc5b21350ac4ef37f79c6f45d40",
+    "graph/intro/libs.jpg": "3cf2fac0c8cb8d49c7fd19acbb6df4da31d393225eb8fe739c4afef9f11b8435",
+    "graph/intro/story.jpg": "a70322e10d936d593d228649c573264f36910dbebff77125bbe08b782e85dc50",
+    "graph/menu/background.jpg": "96e9713996b5052b06362bf70c427ecdd3b7749c37d49b1cdabf75a6bcd9d7bd",
+    "graph/menu/black_samurai.jpg": "3d4eda9c50a2fb454f87bed58e19d15397595939152004abedeeeef556b2e8bf",
+    "graph/menu/black_samurai1.bmp": "98e57c31185dbbba33aff10443a41c9584ec84f0a4d916471397f39aa266e71e",
+    "graph/menu/black_samurai2.bmp": "3422d19e638447636817e61315b4c2d1822e17b354a7dd986b94f6df58187b77",
+    "graph/menu/elgreco.jpg": "b8bd64e86d4d0c941f374ef9582ed6126c6fb127830b23e3abf1b98e2bb33ac7",
+    "graph/menu/elgreco1.bmp": "397fa34d9b7d9cde51e99952883d86b3f7f59f5f88e1c0a236eea99dd6d496db",
+    "graph/menu/elgreco2.bmp": "cd1d8c5395f6b1671d23a525432103b3589de98a5266ce286bfcdada1d475b94",
+    "graph/menu/help.jpg": "2cfd5b4ee8f2314d8f461a4fe463bf2cb3c7cdfee80aafbf4e94543088cf60da",
+    "graph/menu/joynes.jpg": "fff5798b8d553edd64e43c140a245596cc9b28b227793b21ff7f67cceca6065f",
+    "graph/menu/joynes1.bmp": "cd2829ed82298179608fe7eba922b79a5b12546ab3ff8fb9750dfe87a6d03c50",
+    "graph/menu/joynes2.bmp": "d456877eb0fe0471ccc7c69ebb7b4df8b3437e469b92cc5c1f0647509cd5f28a",
+    "graph/menu/marre.jpg": "c3a86205a485252ff7831e981b9b7e97649455bb169ff6c4daa97013f825bd72",
+    "graph/menu/marre1.bmp": "c6065ac5659bdfef5c4403b2e73f51a53d15eb4a7a51d4a9f35a07d0ebadde88",
+    "graph/menu/marre2.bmp": "051d1f9bdd5e338b60dc0a823e711cf35e7f2b93541e4857e8ba619222506f08",
+    "graph/menu/peeta.jpg": "6ecf0be8258ebded1717c953bfc2af1984f0cdfc4c7234193795f9267517739b",
+    "graph/menu/peeta1.bmp": "0d9fc7ab5531bf95b2b05463e1d47bc348085ce8999262578aae10959fbfd869",
+    "graph/menu/peeta2.bmp": "f0db11272e88ac61ecbf685121d07d1172a1aa61495beb42418536d51f7534c3",
+    "graph/menu/select.bmp": "704a017a9f50e92f718248c2012a9f7900fd090cd1c5d75b5f0324ebdaee8163",
+    "graph/menu/tiger_my.jpg": "f1ef123d620ec496cb7ac5081001b4b5db79400472c1babba65095b89ff8ddde",
+    "graph/menu/tiger_my1.bmp": "cc205e57294d732854504de66b8d314e18a1558e01a76e6b93ca6b8488061218",
+    "graph/menu/tiger_my2.bmp": "ababdbd2ae0e5085971e31e6ad48d7033bacc84556def74093e4ee604fe6f48f",
+    "graph/stage/cruiser/deck.bmp": "4c268181d1b97274e4c81c129d96b0fc391b7b68a55cfc2e648ec52cbcc8c55d",
+    "graph/stage/cruiser/water1.jpg": "baad0fdaffb7598afef803cbc9840d8059689da84cb3b5421b58d48aa850a86b",
+    "graph/stage/cruiser/water2.jpg": "de4784f31467f6880f6d21cc641ac3f01cc15cd83e13108b0e454c53d6319345",
+    "graph/stage/cruiser/water3.jpg": "6cb66b75eb98b38defaa7c48af3ce408c9856ef4c06c37130e43cf3d7a0a46fc",
+    "include/ProgramManager.h": "0ed1fb69163cc5e0d6a943f88f460c325cf92db8f138c101fbbcc913a14a8bdf",
+    "include/console/conalleg.h": "0aa0229e864d97715edb5ac018b1a36ba35180ec6eaddb295be13b60daa27e77",
+    "include/console/console.h": "b6f87eb8e574f1a2d182758958e482a3a961fd1fdb3a851290ac2c7183c2e143",
+    "include/editor/anim.h": "3eae71642e2d2b890ec3ee4d9b341f81ceba9e338d2934e4e3e5a678bba22e95",
+    "include/editor/editor.h": "64670d76f3ae65d93e5bccc7cb9b22f4402e98ac4abc69cdb625b63fe587442f",
+    "include/editor/part.h": "6ab6dd33f02d288fd516612a2994dce10a514746f2fa92250041628eccf1a48e",
+    "include/fighter/fighter.h": "9ab4e9a8a5d33ff9dca69b326dd42bd30a461d75348045631094dda08a465d8f",
+    "include/fighter/fighter_states.h": "bc55f261835f03344f28f06b2f457fba7a0eed2888c64d608dfa353d6494e7db",
+    "include/fighter/jump.h": "80070899f219fea82129438e7c0eaec6cb02e918b23a99b4cbe56510e84a3b1f",
+    "include/fighter/physics.h": "0f7be5067273779e0caf9f817bfa247a1346a21f9a025ea26fe1638bde4392df",
+    "include/game/GameManager.h": "b7fb392a3ac27f1207d5baa25acc169c1395b910cae3c5139bb095ce2dacbc04",
+    "include/game/game.h": "01f2d04d4c1ba7d8495dc033ed4ed6553d69afe2a5ef51d0140a63465b3b0a8e",
+    "include/global/filedata.h": "41b7dd1d3f55822d5d607a5810bcfe7eacff6bec5e5948f9c0fb059e24270d6e",
+    "include/global/global.h": "d360e6ee38b349a3fd9d6ee9206a01cda41bb9d7bf7a91422dcce2ed496a19c1",
+    "include/global/timer.h": "cf60a45d2dccaec7668c653d29b8cc326557a7eb528ab1e71282c5098001782f",
+    "include/menu/intro.h": "2bcab07720f18163d6c2d7fb17c8849b6f59ef254a879d20bcfab97110ba56c6",
+    "include/menu/menu.h": "8a90628431f996b8c2b4a0ddecd50740a414b319841def4fd23ea1a26092a04e",
+    "include/menu/menu_rall.h": "02df554cbdc53dcd3dbca43f40b15e50505d22633d662d45ca1a5eb6e71d4ff8",
+    "include/network/client.h": "26843ca0422b382ac4b6c8dd81878eda0480fa17d7ff1000149b14ba605cd369",
+    "include/network/common.h": "80970eeffca95f673bd3ce6903ef50c74a674d7709824e224928864ef93ecb3a",
+    "include/network/network.h": "a4f89e3dc0c1a1f45cd731644cfe48d4b5cf25a139bf29fbee6d957d536db2b6",
+    "include/network/server.h": "052b8a71f3b541103fbc351dde3ede5e524ebf20fddf24985e55cd57475c18c5",
+    "include/sound/music.h": "68aaf55ce89a0a52c62de86ecf800d50df9932afd2e8498fb3ae24d618197422",
+    "include/sound/sound.h": "3046f87b142061fb1ef0bb486d66860378cbee2d3aa244294862b735365a119d",
+    "include/stage/cruiser.h": "9ee112bbe5008366f97278628a34a71f0efbf48e3540ce9c7625030c0c26d2e3",
+    "include/stage/stage.h": "f0c2e3f8cc7e35d63aeb9794d6502db12011c47ef750a818e71d7c11c9adb22b",
+    "msvcr71.dll": "8094af5ee310714caebccaeee7769ffb08048503ba478b879edfef5f1a24fefe",
+    "music/03 - joynes - Cyborg Hybrid.mp3": "ed6a406c69760533f900077ea9629ca6a7ff808e5af4e7ec5754d9135fe6ea2e",
+    "music/04 - joynes - Flangman.mp3": "ba444089edffb7be9e7999fb5955d349938dab7e20a2e0ac498da4646c71650b",
+    "music/05 - joynes - SOR the bridge.mp3": "1f80a00b9b0d0bf09b02c6bb7787b282bce8934f4a3069ea061f4f861062dd12",
+    "music/06 - joynes - Ich bin stark.mp3": "ded166f1b98f0adb19656ad55b99ebabc0d73178337f00808e7520c68f9b7412",
+    "obj/GameManager.o": "a38fa676093379d928d4aa7dfcf68d56826ce0f64eab5ca6c60cffd0edecbf3b",
+    "obj/ProgramManager.o": "5c9793a905137084966883b99c2a7764ba1dd8ad4d6fced83b7be20befcc05ef",
+    "obj/anim.o": "8d5221bf9c456711b2b1be18136de25f6d7cfcdb756a3f2f814db8eb396d32ce",
+    "obj/client.o": "7349ecbdc9a0381a52da2e8a622612c9b3d6fe3962c42b228eaf3463dd806be9",
+    "obj/clientgame.o": "60a6c7e568a3431365ad17ca4fbd9235d08da4edd1007b906c1cd1306d310706",
+    "obj/common.o": "1cb722951d0b0221d1ac29120b8953bb37a08bc784a87c80feb2183831a35516",
+    "obj/conalleg.o": "399769f9fa2c25db0854ea4118b698bd34541e026d14838cf41210a27e4a105f",
+    "obj/console.o": "70db0fd1ba4a2d9412ca481b1e8a54f77b472730882253ba0f3709b546554c4b",
+    "obj/controls.o": "3c7f3b929bf92b7467aa38b93d3a8f0324a7c016edf53175f585f7ad6bce6451",
+    "obj/cruiser.o": "dc42abbe9e8dd0f23b4566a946376e75bf2533a03f7995cad96c95d8c4c5297b",
+    "obj/editor.o": "65097398f2aa2f80e81753a3a0ca5e0ab7f3ba7f0923185a5777a20f3ff0e02b",
+    "obj/energybar.o": "f9562084f808cc731fd44a80798286a3076c933472efc0497c54845d3b694a3a",
+    "obj/fade.o": "6e8fc1f887182f401b9959ccf51e30cdb0c7deacfaa89a99b83d754a902f6182",
+    "obj/fighter.o": "b5ba26d08efefa61f6d379a32d7cfada7da468b0dc24278890b056e24faeb47f",
+    "obj/fighter_states.o": "64d4d877b09e4f5a759ffb006d4a592a1771d69cc37b7526b8dec9544f94964b",
+    "obj/filedata.o": "c5a7fbcee883db095c4ec0bd121a03fdb7e091385df49587c0e764dcbad30ea7",
+    "obj/game.o": "f9da147f4f8e916cd65b43b9366904f6936a0a673cf72806d119941fdf133dd1",
+    "obj/global.o": "cad26d96d2be20e44d22545d03bc794469391d401c7d3e427231d34f6bec693c",
+    "obj/icons.o": "dc80254d7ceb36b75f218e72043f0be42aa704032a1da5a25e0591520b4c1575",
+    "obj/intro.o": "d395b10bac97b33ed735260cfda9471a816461748638ec610db2a41dd3172e6f",
+    "obj/jump.o": "11d41f5d49387fd4ebf036bb7674ac4739ae47bc38065447d86d87c0bf24dc55",
+    "obj/main.o": "71f13b6cf81fa7cbe5c0018f6c41c3a3ba7030b0ca8d15487f7fceab4ff87563",
+    "obj/menu.o": "f5df7e59dfb4bab3074a020476cae14f321982de07ab4473fe99d3b9877e75af",
+    "obj/menu_rall.o": "92d563f2397fdd99f2f543c04c6ade7be9afe183c948c1a8f1a5f159260fb7b5",
+    "obj/movement.o": "1139fe532984371f760c86f19c8fd5098cec579541c3ecd341465051bf078b2e",
+    "obj/music.o": "3a63720b7e137d7cc39664e818a2927b5f170aed1c1c3197a6241c20e0d199c2",
+    "obj/netfighter.o": "e659d8ee1fc6f6c58617d40f36ff3d893c6af234fccccc4688001cac2c962cd0",
+    "obj/network.o": "b44fcd6f29d6bf3e38ef8002645c9016920abd374f3827b29616b97244f69eaf",
+    "obj/part.o": "a4b388b0a5f021df03e345ab075db03848172430429ec151776b2e3d79c317ea",
+    "obj/physics.o": "dbf53224405c487bc4b5ae688e7c507b9264d2326f1a7516ba61205792e4aa31",
+    "obj/rall008_private.res": "b25a600d0e8da477dcaf3fb9e3a1e2a9b9b29747a93f1cecd70df8c48d22e7ee",
+    "obj/server.o": "88f0ad3a0add4bb9a286503d77ad03a16f184d496ea555ec6717e116076ab9f8",
+    "obj/servergame.o": "9c71f0373fa2040c3017acbcdab7ae9b7f0b9aa4e73e0655d2fa76748bc5d845",
+    "obj/sound.o": "b78f9e20d0308a8235f1a221b70cd61bd857ce9f82ef9712eb511c0e93ddd0c9",
+    "obj/stage.o": "9e474305a778b284db3543f8d37e6ac67d2ec05194f245be61055d3086cde82e",
+    "obj/state.o": "2fd584ae777c633e0b5b8c9bc9c1b69d45365f44b0e6d9ba47af8fb3c55632d4",
+    "obj/timer.o": "e35887c1034607d88d2ad6949a4ab26f53f0ce8026b0781e24a55f89100e101e",
+    "rall.exe": "c83f613155bcaf972b7c2bed04bc40c05c86d028f42cbc08f664e08c7d39e6e2",
+    "rall.ico": "263ca592672fa771419be9e19da7d5eb1a6510192effd4338d4bae5568463bbd",
+    "rall008.dev": "acac69e53316ace2b3807e55f5282d00d1af3efdb0f7bd5a79b6d4220c286d3c",
+    "rall008.layout": "ebb0070862f5252ec273c124812aafd136d3e71c518788d2ff635bfa818e546d",
+    "rall008_private.h": "6277f24f6c283e7fe884fb4e7649997d78f9a6a82fc15a2fe2bf86cd5ee0bd3d",
+    "rall008_private.rc": "8036af0b13c89c06cb2309f197a0fdf85d76b661cbd59a1abe7da5f8b90c3dcc",
+    "rall008_private.res": "0441e0fc1e307a6e2ddee6b560a419f643ef33cb93b785be009d9fcad8c688fa",
+    "sound/effects/block.wav": "0c6b8a43d6b2781d4b30b8b0c4b1b4698a937cc759e7e4911a392cb6acef48b0",
+    "sound/effects/duck_hit.wav": "cc62464ba559d19a6e0febf9592aa8c07a376de060c3c69da34665a5c8a7882d",
+    "sound/effects/elbow.wav": "3b693a5dd975da7e26514376d8ffcdae187dc12379174241567b268b13b0f70d",
+    "sound/effects/hit.wav": "2eff8e5ec0ecfb6d7ef0d828fb5f84a28efaaddf3ca5e7bb9de47f1e22b7cb5b",
+    "sound/effects/hit_air.wav": "f3082cb48bc4b83fe06d1b52be473b9783b4ba093fdfe1866eacdaa0a87a515a",
+    "sound/effects/hit_ground.wav": "21f6cd4935c4e6ddb65bc45b8563620b9a18a936eb01f886ae6b3a77430c65f6",
+    "sound/effects/jump.wav": "23271274fbc3273bc60ac2fe35ef0189aaf0d974931c90f2fca190ea489d3474",
+    "sound/effects/jump_land.wav": "33b815fae4015b8443af956ba6c190a91da39bebae5dcce512ecc87b753b3c30",
+    "sound/effects/kick.wav": "de95d8ed2d5d5f2fb1d19ce3fdb0917989ca47e593f181d9f7b39913025309cd",
+    "sound/effects/knee.wav": "5f5a3d0f56201fc2023b11eb8348db1ec42cd92ddf25db8e012b87eb2c14be79",
+    "sound/intro/Jqp.wav": "0db14fccc686ab616a8ff3b91b96b5dd368df2b002bb19ca8649b1381038f0b3",
+    "sound/intro/story.mp3": "f53e1c3e8f81161aada923e5f27e66cbf1b523a1df1a05b007dfdf7de78f4fb5",
+    "sound/menu/Jaro.mp3": "d9b34a1e4e2092cf4d88ac5d9ca89c4d32f7434373f776cbd1118823101832ad",
+    "sound/menu/backspace.wav": "fd1121157c533c478af12b39b0876cc9a6b767e6e4db7ebb1869c740a45d6509",
+    "sound/menu/black_samurai.wav": "4cf54f60f4d512389b137093ebb3328348cdf3e33204bd784f4fd2d9f8418919",
+    "sound/menu/cheer.wav": "7f46905bb1102a6e79d8aa20b12f0f7b16ff364b7aadfc85289551adb50fbb7d",
+    "sound/menu/cling.wav": "356d5daa03dd995c711d73c26b9f009ed1f4ddcf76215fe98f16ea569c95ec19",
+    "sound/menu/elgreco.wav": "15f80f4f3f3f580aedfed7449b3e91868abc8915211e68d318bc06fcad26cc23",
+    "sound/menu/joynes.wav": "a0fbec5ef21645e69f12c2da47bc2236e4dfc8ca3af70477c46a216fc034b2f6",
+    "sound/menu/marre.wav": "4dbae4d4d63a6362973de721d498e458f1076b59d5e8ea8c1c9d93517639eb7f",
+    "sound/menu/peeta.wav": "960f24a6318e3904cb58718712b59ef45c3550f2a4231e760adcb299bd3abe08",
+    "sound/menu/select.wav": "6a36da9946a7797abd7f741f5cbe281bd613ee2cef9da9c39d64061c795ab92f",
+    "sound/menu/select_fighter.wav": "49d9eb5c647c902c40f055c62cc57f652350fef7da75545f3fd62eb5c092810e",
+    "sound/menu/select_intro.wav": "7e64b67a9e824a35b17566783e117b62ed794c131be606c0d72aeb423ab45adf",
+    "sound/menu/tiger_my.wav": "363d134e79f295953a250f6f2d444b353bebf6ffbe8e2e2034034c8bc53eb272",
+    "sound/menu/typewriter.wav": "c5b46caf10a40e3a03dddf07594d29469da5fb37588b0ca9d1be42d860546bac",
+    "sound/stage/engine.WAV": "65ee2dc9ceb657db81bd5dcfd00a698c69de9461a8af5ad68d798f4c447cd0bc",
+    "sound/stage/horn.WAV": "51e44bbe254dca7d4f8be5863b4617625bb7f2d50fe3fd0159c166ae97537600",
+    "src/ProgramManager.cpp": "c32f72e493ababaa4f8d70a5b12a47316fd62458f82e4816ce7e068e46c2a610",
+    "src/console/conalleg.cpp": "f058f86b3f857a260c2722c3cef38661fb9bd1f2cd7e1c4ac05d3d5bb60b8510",
+    "src/console/console.cpp": "1af91f9ccb9ae273c0c11fe24f014fde0f74f746c271a0530e57f3f7e9305a25",
+    "src/editor/anim.cpp": "f1668ffac9151265be40987b9e860365fa630435f10996881ca176d901427ec8",
+    "src/editor/editor.cpp": "f41eedcf052558497e7bc386f786f07c78804f3bbba7934d25e692115f37a83c",
+    "src/editor/part.cpp": "5daa8880c1f0ea2dd644fead207e4b9a7d8ef38eb2a9f20a9f464d765f57a059",
+    "src/fighter/fighter.cpp": "dc920df7bda6f965c75e75f364cb023968d79ac4187a43ebf809b4097d831dfa",
+    "src/fighter/fighter_states.cpp": "3dad3becf3415a11e0676f31eb584b532fb5e1910c62c487caf4c38206f3447f",
+    "src/fighter/jump.cpp": "bbf830dac225a3f7d1e59e8eed65780e69679ebe24ab89c6d3694c20e8a0feef",
+    "src/fighter/physics.cpp": "b5d083e789d48570c9e22dd443af404c235a8dcd8837a18a803afbed6e9126d0",
+    "src/game/GameManager.cpp": "8b8a4a685addbcc5faf1c2c1cfd1f8e162ada44a2ce0ea568674ece067ec7c05",
+    "src/game/clientgame.cpp": "68490b8e81dc7ed45c18de5394abff30812772a9eff1bb2cf3cd76769ca51ffd",
+    "src/game/clientgame.cpp~": "71889d52d65b00c36a314bd96a7e5de8825dec08c33adcdbbd842e36ad7ff28b",
+    "src/game/controls.cpp": "7ccf856fb6b94a0e38a67900e50fdc44165ca0610cf08a6cc61cef0e12075d49",
+    "src/game/energybar.cpp": "8c6be6282ce17c748d1df2a760ff0f1bb7e5a303c2887f1badc8ed9eb8387409",
+    "src/game/game.cpp": "c8c01c4cad69739c8cf47263a297ef21599f8fa58980b75006674d0204842e5f",
+    "src/game/servergame.cpp": "51a5e7dd27cf8f86c33e1f8ccb22d2e62c45fb1b5c7e09eb018b039420e5d52c",
+    "src/game/servergame.cpp~": "1d18d8c593bfe056deaa4be7848eb2bd415288998de74f513b891a8e612a38c0",
+    "src/game/state.cpp": "707978ac443a8fd9a741bb9b4f645f9b47e6c169da31ff9f9271d0d423b4576e",
+    "src/global/fade.cpp": "831a0022a7657bd304fccc467093c8a30579877b335f87f1427d391ce6710d03",
+    "src/global/filedata.cpp": "285fa67f87cc02870438a04a6592cc6a05cdd60ed78d82c7cd96418922f9e698",
+    "src/global/global.cpp": "4ec32da8f8e7aab28a2ca11ebbd1df1bda76f5451edb7bed2eb600de3eaa457a",
+    "src/global/pageflip.cpp": "d70a24b7810515df5af8210e151fc7118c8fcd9f3f8d48860b5ad9edfc3059ef",
+    "src/global/timer.cpp": "5767bc9abe1b04c64aea6418072c1b32b39f88002cb712226379f9fd37083b03",
+    "src/main.cpp": "f3a03a8ed92718d87c3fe58e182530b68b008f49e769f0d6c382d3f264bee58e",
+    "src/menu/icons.cpp": "6089152028905d4b089fbb9e0c22252f21541820fe47d133606958fd23faf7a1",
+    "src/menu/intro.cpp": "c9987353d32f48447533c4cb0c6da0adee1276954a545f824da53aeb6c3f0aa2",
+    "src/menu/menu.cpp": "3c17f6e16c315e806cf8d5f0ad8423dd7ae4b0a2bd0c4dacc54e9a402367aad2",
+    "src/menu/menu_rall.cpp": "33f324f585dfd2fddb38c6f3a503e4bb8a4a10674f8a9d087288776c4840f952",
+    "src/network/client.cpp": "bda800a171f60b25be0d546de5deb61817c331eed87b050d2e0b4a8b098d128f",
+    "src/network/common.cpp": "15944f3c276338555056fa20a4ff515fa43cf957b419a864a48ad6cb44b2b09e",
+    "src/network/movement.cpp": "5b5c5a6ca7e5dab5ac4f7c19a242882dac0cd7e212a3c214a9f4349271a0ff6a",
+    "src/network/netfighter.cpp": "02ff2f2764ea1d63406dd647c9794642157bbd95ecb5b23e5f76a2ac84e12cfe",
+    "src/network/network.cpp": "2b7b9ccc5774c7c776c1e98b8cc8e58e9562f6aff35ac33086a6d288fa57f1dd",
+    "src/network/server.cpp": "0504dc2ab69a9fbe859579df6a88f3a39a1d8a6f31d8b77707d582ee78e7c94b",
+    "src/sound/music.cpp": "c6c1b16e3ee11f19884e854bac4a6de66053c8de5b3a14385f3c7a71a0e5011a",
+    "src/sound/sound.cpp": "29c567a842d9a44196d4674facda010a5a7efaa89e13f93097e8d516c7e44e66",
+    "src/stage/cruiser.cpp": "0b43ae8cdc960c7530466e476a2df826bc1a60c606ab641d7d7192dde176f733",
+    "src/stage/stage.cpp": "f684c7ca2d3d45f8aa44f06b0fb37ae0f0ce0d8d130e406f2477532121ab8c75",
+    "zoidcom_mw.dll": "75c739b28e49136da9006d359cefab847c1fe8609aaa6451958d4970ffaca1be"
+  },
+  "webAssets": {
+    "graph/fighter/blueangel/arm_lower_left.bmp.png": {
+      "sha256": "d7edba260a79e7794c9cfa2cc9424a8b507eafd88a592785831206613d451e37",
+      "original": "graph/fighter/blueangel/arm_lower_left.bmp",
+      "originalSha256": "756f8c07e182c2b3544442f7f4e394b0ebc6597e0c5f01b65f706d47b878c165",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/blueangel/arm_lower_right.bmp.png": {
+      "sha256": "fa443b2d946e3d1efcbaf55d63d888fd378d3e8ed8b8c6da98e3318022f2c467",
+      "original": "graph/fighter/blueangel/arm_lower_right.bmp",
+      "originalSha256": "63d3cb4d30d96471028fd745e0e9206c2f05a7dc361c7cde7f0a3997bdcca759",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/blueangel/arm_upper_left.bmp.png": {
+      "sha256": "8cdd8554153b63d787aa23a9e1132588e335d24e1712789f2506e452bd10f9f2",
+      "original": "graph/fighter/blueangel/arm_upper_left.bmp",
+      "originalSha256": "53e1f192236096e2a18c019a8c521a0dd7b57b6addf49fb13c4d5333e03e115e",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/blueangel/arm_upper_right.bmp.png": {
+      "sha256": "89b0687b2bd7f536b4d1fa636c439f789deab8ff743fc4a08daad020c2fc9015",
+      "original": "graph/fighter/blueangel/arm_upper_right.bmp",
+      "originalSha256": "3cba55613dc0b4e31ec0d206f76a327e3933393198cefb7b23f1dff2a4d40cbe",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/blueangel/body.bmp.png": {
+      "sha256": "73fdd0692347491da0ee687829f71ee56b8c23f0509d5252c4e6d628a016fd71",
+      "original": "graph/fighter/blueangel/body.bmp",
+      "originalSha256": "20ceaccbd1607c4714e0be1a96fbcfbdf456712f77be9448fa9a6ab77cc8a7b1",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/blueangel/foot_left.bmp.png": {
+      "sha256": "ea626d732764931b1ab11b4c0f5ef6c426b3364754b89a4e5515352f2258d0c1",
+      "original": "graph/fighter/blueangel/foot_left.bmp",
+      "originalSha256": "b32874263b184ec941ef2c7ea0884a066a43bc4abcfe9e30cb5afc9f293de470",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/blueangel/foot_right.bmp.png": {
+      "sha256": "a4e252f423b6a7d3cbc4e60868d39e63012f8ec349dc19d9ca517d9ac1253d0e",
+      "original": "graph/fighter/blueangel/foot_right.bmp",
+      "originalSha256": "0da312bea2c908cdd65737008ea2bbde359506acbf057d7c4b9a94e0642f9570",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/blueangel/hand_left.bmp.png": {
+      "sha256": "07abf92e602a165e3ad2160c2d55d48f62cfb7c3d5d3052451cffbbe1b19da7c",
+      "original": "graph/fighter/blueangel/hand_left.bmp",
+      "originalSha256": "3885c6c95e7dd34ddf0a17f7d8b201fd2eecfb93145b8555bbee3cdbda87d121",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/blueangel/hand_right.bmp.png": {
+      "sha256": "55a987095fa7fc93cdd278e15aed5bf2e46fc1297011824f1ffdce33ae5d34e9",
+      "original": "graph/fighter/blueangel/hand_right.bmp",
+      "originalSha256": "50a8e1814df4ee2eed22f18b8fd480312f4431cf5c9caf7ed3892edf8fd13fc2",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/blueangel/head.bmp.png": {
+      "sha256": "2be49c49c9b64e7663390e974496badafbea35365cbb87e12858fd6ed8e93ddb",
+      "original": "graph/fighter/blueangel/head.bmp",
+      "originalSha256": "6f1ed3a2a9e9f132dbffa93c642240e4d097144346e301292093203f935a5af8",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/blueangel/leg_lower_left.bmp.png": {
+      "sha256": "c9eac7a7e91d8b5442fec81b4eafe0864a8a85241b452590711375ca5f94c685",
+      "original": "graph/fighter/blueangel/leg_lower_left.bmp",
+      "originalSha256": "3346dd2ba0bad38d636add64fd92e9804e6a5055b18a3d38fb7bac092368104b",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/blueangel/leg_lower_right.bmp.png": {
+      "sha256": "52176259404d1b997e98f0955b2985b0228518d4af7341cf20062de5c9cd6106",
+      "original": "graph/fighter/blueangel/leg_lower_right.bmp",
+      "originalSha256": "0baf11ea28118d7d527126241daf571febe25e0224dcadd38c9d0945af9d7b6e",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/blueangel/leg_upper_left.bmp.png": {
+      "sha256": "38b2283e010e42dd7c089031124015083a8c7e6706cf749f599cfcb6b9865a34",
+      "original": "graph/fighter/blueangel/leg_upper_left.bmp",
+      "originalSha256": "73147f2d713dbbc36822468390aaf0724935b52ee47ef5dbf2e7325ee0cfa47f",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/blueangel/leg_upper_right.bmp.png": {
+      "sha256": "0b282c0398b58de6dd3a83b75af156ee72193d3c324a374dd28121bb317636ca",
+      "original": "graph/fighter/blueangel/leg_upper_right.bmp",
+      "originalSha256": "04c6c8771fada0221f50b48aefdd0736ac56d64add7ded7675383196eb18507c",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/bot/arm_lower_left.bmp.png": {
+      "sha256": "e0e8cdbb8632a3eea588553bd89bd3c5563af607a7dad30dffe43eda2b05d7ab",
+      "original": "graph/fighter/bot/arm_lower_left.bmp",
+      "originalSha256": "e0ebcbfa5cbbc483b595891d172ba5e019e7c1c7cefc7e28713804da16ac5ce6",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/bot/arm_lower_right.bmp.png": {
+      "sha256": "edec5c7efa7ab8a43808ab1f78ee96c6c9f16b82b61ca05c682dea7d6097accf",
+      "original": "graph/fighter/bot/arm_lower_right.bmp",
+      "originalSha256": "9db471ab62a18197533ea0d47c1f94267fcecfca4340ce22cab803a04205cac7",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/bot/arm_upper_left.bmp.png": {
+      "sha256": "ed075f1f9848a988973894dfe77a74aea27ce24f6cc9b703cf0c8649329ede37",
+      "original": "graph/fighter/bot/arm_upper_left.bmp",
+      "originalSha256": "cd183c95fda927c67638a760c57d1012748edecd05614d252215d2d9639eb21c",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/bot/arm_upper_right.bmp.png": {
+      "sha256": "b319ecd2656f8a761cea9781a072b55f0870e4d9e4f733eb642231c274781309",
+      "original": "graph/fighter/bot/arm_upper_right.bmp",
+      "originalSha256": "e238327ba81e9bcb81f7f0162a85df7536ffd582594a08e606ebb0350df4950e",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/bot/body.bmp.png": {
+      "sha256": "d324997d05c7fa67b58eab6ddf1e39f3295a717e0bc95bc051e93d0d93824f58",
+      "original": "graph/fighter/bot/body.bmp",
+      "originalSha256": "898b0ecaf5eb9cf0ffc06d988c38343f44f03cce9092970b5ca7ae761728229a",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/bot/foot_left.bmp.png": {
+      "sha256": "db6d10da8fa6a69fd2e7317ac51bee4c150f72763991fd4dd63bb43ebd915612",
+      "original": "graph/fighter/bot/foot_left.bmp",
+      "originalSha256": "521d641048938cab6195563138b820a19c3d0686a71b711ea9e7b818595a6969",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/bot/foot_right.bmp.png": {
+      "sha256": "0edba226638fcaf45e064ef5cf05bc1b6f44c42f65d17dba2b3ba26bfcdf4869",
+      "original": "graph/fighter/bot/foot_right.bmp",
+      "originalSha256": "7d9650a5ebf5c9acdf12d30b4846df8779f4ddd55ef7e43a4354ae9a2ec84f21",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/bot/hand_left.bmp.png": {
+      "sha256": "aecb466285379318d2b53d45fbad46fd7bad93321bf361569d77a8cfe3537186",
+      "original": "graph/fighter/bot/hand_left.bmp",
+      "originalSha256": "aff06fde89f54f0f00b130f1e9f2894290ecaa7f2f40c64963775358efb0385f",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/bot/hand_right.bmp.png": {
+      "sha256": "243f8f01b5c42314d53b77113931e3a0fa5d7b54d20ccad60440d30ca3aa3ad2",
+      "original": "graph/fighter/bot/hand_right.bmp",
+      "originalSha256": "9526b7b8e194d47af7d0e23421fe97021b0f237af95b9137cd3755217d9229d6",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/bot/head.bmp.png": {
+      "sha256": "c812e9e945c239769d2bcbad4dff32d29f1ced21c5cd62b826ceddbc3964a667",
+      "original": "graph/fighter/bot/head.bmp",
+      "originalSha256": "1bad3dd6a3bdf066c0fdfd9dc2a46b0ee57c6d535b3f3cde28961d144ded0392",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/bot/leg_lower_left.bmp.png": {
+      "sha256": "9f814e9b55e1faf0e43d969a0c7cfb15871ca7632b0120e31f05fd17c0e2a5c9",
+      "original": "graph/fighter/bot/leg_lower_left.bmp",
+      "originalSha256": "8f60333bc4278845d3e0b69a2daf1732d2935279b7b1710150edadf5eb50cbee",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/bot/leg_lower_right.bmp.png": {
+      "sha256": "168c8adc47340f3a5fb66aec570efbfadfb4d1da77158d199b8cbc59fd178542",
+      "original": "graph/fighter/bot/leg_lower_right.bmp",
+      "originalSha256": "99c64a3045c79b3f45e0ac276f01556c7ee5f2c0b93c6dc9db1fd1b60653282e",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/bot/leg_upper_left.bmp.png": {
+      "sha256": "46d63af1a2e6543d974768f94f750652b73c6b83c2426d1d04e0848980d148d6",
+      "original": "graph/fighter/bot/leg_upper_left.bmp",
+      "originalSha256": "9170af00cce28bff8242a3e6ea7e22a7655b1070df1e806514612add1f317aac",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/bot/leg_upper_right.bmp.png": {
+      "sha256": "6227cbe4056e5b3b9f3c304b07749640df12ab1873d996375d6951c6de835dc0",
+      "original": "graph/fighter/bot/leg_upper_right.bmp",
+      "originalSha256": "ea5d4c370c4657adb5d70ec4564a7be380efc983f3bd9baba909e7a75be94a42",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/elgreco/arm_lower_left.bmp.png": {
+      "sha256": "e0e8cdbb8632a3eea588553bd89bd3c5563af607a7dad30dffe43eda2b05d7ab",
+      "original": "graph/fighter/elgreco/arm_lower_left.bmp",
+      "originalSha256": "e0ebcbfa5cbbc483b595891d172ba5e019e7c1c7cefc7e28713804da16ac5ce6",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/elgreco/arm_lower_right.bmp.png": {
+      "sha256": "edec5c7efa7ab8a43808ab1f78ee96c6c9f16b82b61ca05c682dea7d6097accf",
+      "original": "graph/fighter/elgreco/arm_lower_right.bmp",
+      "originalSha256": "9db471ab62a18197533ea0d47c1f94267fcecfca4340ce22cab803a04205cac7",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/elgreco/arm_upper_left.bmp.png": {
+      "sha256": "ed075f1f9848a988973894dfe77a74aea27ce24f6cc9b703cf0c8649329ede37",
+      "original": "graph/fighter/elgreco/arm_upper_left.bmp",
+      "originalSha256": "cd183c95fda927c67638a760c57d1012748edecd05614d252215d2d9639eb21c",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/elgreco/arm_upper_right.bmp.png": {
+      "sha256": "b319ecd2656f8a761cea9781a072b55f0870e4d9e4f733eb642231c274781309",
+      "original": "graph/fighter/elgreco/arm_upper_right.bmp",
+      "originalSha256": "e238327ba81e9bcb81f7f0162a85df7536ffd582594a08e606ebb0350df4950e",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/elgreco/body.bmp.png": {
+      "sha256": "d324997d05c7fa67b58eab6ddf1e39f3295a717e0bc95bc051e93d0d93824f58",
+      "original": "graph/fighter/elgreco/body.bmp",
+      "originalSha256": "898b0ecaf5eb9cf0ffc06d988c38343f44f03cce9092970b5ca7ae761728229a",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/elgreco/foot_left.bmp.png": {
+      "sha256": "db6d10da8fa6a69fd2e7317ac51bee4c150f72763991fd4dd63bb43ebd915612",
+      "original": "graph/fighter/elgreco/foot_left.bmp",
+      "originalSha256": "521d641048938cab6195563138b820a19c3d0686a71b711ea9e7b818595a6969",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/elgreco/foot_right.bmp.png": {
+      "sha256": "0edba226638fcaf45e064ef5cf05bc1b6f44c42f65d17dba2b3ba26bfcdf4869",
+      "original": "graph/fighter/elgreco/foot_right.bmp",
+      "originalSha256": "7d9650a5ebf5c9acdf12d30b4846df8779f4ddd55ef7e43a4354ae9a2ec84f21",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/elgreco/hand_left.bmp.png": {
+      "sha256": "aecb466285379318d2b53d45fbad46fd7bad93321bf361569d77a8cfe3537186",
+      "original": "graph/fighter/elgreco/hand_left.bmp",
+      "originalSha256": "aff06fde89f54f0f00b130f1e9f2894290ecaa7f2f40c64963775358efb0385f",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/elgreco/hand_right.bmp.png": {
+      "sha256": "243f8f01b5c42314d53b77113931e3a0fa5d7b54d20ccad60440d30ca3aa3ad2",
+      "original": "graph/fighter/elgreco/hand_right.bmp",
+      "originalSha256": "9526b7b8e194d47af7d0e23421fe97021b0f237af95b9137cd3755217d9229d6",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/elgreco/head.bmp.png": {
+      "sha256": "464bd30a51ac4b6bbee865042f469cf614989a1b6822733689c45e8e3799bc4e",
+      "original": "graph/fighter/elgreco/head.bmp",
+      "originalSha256": "93c6a290c946222d3aa9abf3e49d881fbcad5ac929e7847b6416655e51a6e969",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/elgreco/leg_lower_left.bmp.png": {
+      "sha256": "9f814e9b55e1faf0e43d969a0c7cfb15871ca7632b0120e31f05fd17c0e2a5c9",
+      "original": "graph/fighter/elgreco/leg_lower_left.bmp",
+      "originalSha256": "8f60333bc4278845d3e0b69a2daf1732d2935279b7b1710150edadf5eb50cbee",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/elgreco/leg_lower_right.bmp.png": {
+      "sha256": "168c8adc47340f3a5fb66aec570efbfadfb4d1da77158d199b8cbc59fd178542",
+      "original": "graph/fighter/elgreco/leg_lower_right.bmp",
+      "originalSha256": "99c64a3045c79b3f45e0ac276f01556c7ee5f2c0b93c6dc9db1fd1b60653282e",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/elgreco/leg_upper_left.bmp.png": {
+      "sha256": "46d63af1a2e6543d974768f94f750652b73c6b83c2426d1d04e0848980d148d6",
+      "original": "graph/fighter/elgreco/leg_upper_left.bmp",
+      "originalSha256": "9170af00cce28bff8242a3e6ea7e22a7655b1070df1e806514612add1f317aac",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/elgreco/leg_upper_right.bmp.png": {
+      "sha256": "6227cbe4056e5b3b9f3c304b07749640df12ab1873d996375d6951c6de835dc0",
+      "original": "graph/fighter/elgreco/leg_upper_right.bmp",
+      "originalSha256": "ea5d4c370c4657adb5d70ec4564a7be380efc983f3bd9baba909e7a75be94a42",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/joynes/arm_lower_left.bmp.png": {
+      "sha256": "0e7e665fe2bcd0cd21d2d7a1ba1064237bc6f755423512418ea533b557d9d147",
+      "original": "graph/fighter/joynes/arm_lower_left.bmp",
+      "originalSha256": "fc53bfe96beafdd7b152022fa5e91358151c74aa177b8629b5f23e05aae6e42b",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/joynes/arm_lower_right.bmp.png": {
+      "sha256": "32189689d58577f9310d960d86a6320d96358233e769bcd89733026a0624b45d",
+      "original": "graph/fighter/joynes/arm_lower_right.bmp",
+      "originalSha256": "a9664cad77af7bed59cc0b2098498cd7843786ff05f07fc8e857ca2734a78c9e",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/joynes/arm_upper_left.bmp.png": {
+      "sha256": "d8fefd23601354ba1e047f20ac5e7386ef7a80765e1d9ef22eca2164bd65102c",
+      "original": "graph/fighter/joynes/arm_upper_left.bmp",
+      "originalSha256": "898a5074b64486ca53d38603069962527890f94d28a2400dafbf0d0241257ad1",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/joynes/arm_upper_right.bmp.png": {
+      "sha256": "d2c8ee5d3e6ecd5c8414309b3a499c7a1e89f0d7b6bda05b17f1ae1c7dae1646",
+      "original": "graph/fighter/joynes/arm_upper_right.bmp",
+      "originalSha256": "f00eeda65a2cd277cf187c11255d85523c81c5953a0bdf29c14fec7e2f0a0c18",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/joynes/body.bmp.png": {
+      "sha256": "6d1ba3918cd29778e7cf69b4eaac4a37cee7e87a04c14555a26fd7749b11bfa0",
+      "original": "graph/fighter/joynes/body.bmp",
+      "originalSha256": "65d77310522067c7f934c05d5a8bb234ccf9147c76e3727c83ef9e3a669445b6",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/joynes/foot_left.bmp.png": {
+      "sha256": "d3e89fac2dac3816fc6adaf3d4f0b23eae67109d399fb287ec64a2c9fe77ade1",
+      "original": "graph/fighter/joynes/foot_left.bmp",
+      "originalSha256": "276316e4c67736ab06065dadbdd0b9971870b743583a091b969a51322387d8ed",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/joynes/foot_right.bmp.png": {
+      "sha256": "3b87254807daa5447eb66b49b858a7f8993306db4d2a749fdab5ee9fd2556f3f",
+      "original": "graph/fighter/joynes/foot_right.bmp",
+      "originalSha256": "c6610987dc52b957868fcf7a61b7afd3c9525c12e39377f721f894995689be4b",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/joynes/hand_left.bmp.png": {
+      "sha256": "7cdab5953135eb4d765637cb410acd2e7caf1fcc6e3bfe6b1908c65fa03efc50",
+      "original": "graph/fighter/joynes/hand_left.bmp",
+      "originalSha256": "f4bc37d48f48b377b45f5da09c8917f91b1b53baa82b42fcc08626ab4b649f08",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/joynes/hand_right.bmp.png": {
+      "sha256": "a783fb7e3925f80125ae61edfb2e885c126413cca2c45bf8baa883097cbc643d",
+      "original": "graph/fighter/joynes/hand_right.bmp",
+      "originalSha256": "57aa945bb83a8ed03fbe0d164da235bb1f52e8167bd4c8ff5c175273de7cd362",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/joynes/head.bmp.png": {
+      "sha256": "96eb4c4da7fbaf56d106b2708d94ac846a9c831f6d893f7ef55863538d322214",
+      "original": "graph/fighter/joynes/head.bmp",
+      "originalSha256": "3474707365281828584681bcf673324bf527ee40fe53221359afc9d2d6756270",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/joynes/leg_lower_left.bmp.png": {
+      "sha256": "56d8a8cd06e58e88c38781ae71eef5c252acf55699fea7283a955785c7ab16c1",
+      "original": "graph/fighter/joynes/leg_lower_left.bmp",
+      "originalSha256": "dabe1acec620fb03cb04b33a943a6ec1f54f26cc89ed8107970eea644240bf81",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/joynes/leg_lower_right.bmp.png": {
+      "sha256": "13d45fa72aeed124c3e7c877782dd7b2ac29fb0ef12660a2196847ddd031a39b",
+      "original": "graph/fighter/joynes/leg_lower_right.bmp",
+      "originalSha256": "fbb7d8e06cf594dbcc5daf26ead5873e96c18db8a94e812f6746549d037ea3d0",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/joynes/leg_upper_left.bmp.png": {
+      "sha256": "9a9809fad6045a9bee802cc0655655da1606ac7bc0d66ba63d271c44cf6d7cff",
+      "original": "graph/fighter/joynes/leg_upper_left.bmp",
+      "originalSha256": "49b6c1d798f560c85012cc714b0bc712bc0a0701431c0278a40d27c699265a4b",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/joynes/leg_upper_right.bmp.png": {
+      "sha256": "14b6355b9cee2e9d82b47aa691dab1a203b0b364b7508a0e5a74b0d9b71864d2",
+      "original": "graph/fighter/joynes/leg_upper_right.bmp",
+      "originalSha256": "7a762cd4d7dea603473831cf4c03b81119bbb9ba69672caeac52edb79c34c653",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/marre/arm_lower_left.bmp.png": {
+      "sha256": "5269494515b84f51152f62d4a6a739005766b18d37d02247321e98e20f240543",
+      "original": "graph/fighter/marre/arm_lower_left.bmp",
+      "originalSha256": "7c3986a0b0835231beae2aa8c131c2a7d6d465a55ccf674b98bcf56d88618958",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/marre/arm_lower_right.bmp.png": {
+      "sha256": "4fc76edfc0765e5a8604e9d7dfa7847fe8b5520d6061b1e2ba9cb2739fdb8f2c",
+      "original": "graph/fighter/marre/arm_lower_right.bmp",
+      "originalSha256": "efd54d9418e9741829c56d56f054b325864325b6005e62a6937cf57cd6ad94bb",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/marre/arm_upper_left.bmp.png": {
+      "sha256": "05a9297d30b51e3cfe2680643e5d691ea751770c45c424d2d1a5b92a2b28d370",
+      "original": "graph/fighter/marre/arm_upper_left.bmp",
+      "originalSha256": "d24cd13bd122dd759e80fe20ecc15900813f717e70f36046fa7930d977c426e1",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/marre/arm_upper_right.bmp.png": {
+      "sha256": "49f509e390fd91037562dc8f0e07082860600ea5adc5073dfb600bd5b5c5a7e2",
+      "original": "graph/fighter/marre/arm_upper_right.bmp",
+      "originalSha256": "7dc0cf9d8a4119f0fdfbc4c5bcf7e364d003962b13ebdfee5997d529897ebc14",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/marre/body.bmp.png": {
+      "sha256": "c68560eb4f94d5e3fc1151e56821b84d23bbdaeaf43b1a0d18e0ac295a287d28",
+      "original": "graph/fighter/marre/body.bmp",
+      "originalSha256": "cfbe34322287d3511d072fa55a0428823e498e1d15077841eb762ac39b61c162",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/marre/foot_left.bmp.png": {
+      "sha256": "06c5369caa28e5fdd1b5e3b9ff9df7e332a221892ee19715c9067a60e8c54493",
+      "original": "graph/fighter/marre/foot_left.bmp",
+      "originalSha256": "1687876217439c4f332bd6b2cb260a57ef183bbabd40efddc8f6748cf85a3459",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/marre/foot_right.bmp.png": {
+      "sha256": "4c2e8daf6eb6b5753b39617041e6b7104f4975e7d12a673e06ef89411e967927",
+      "original": "graph/fighter/marre/foot_right.bmp",
+      "originalSha256": "97e4b2a394326549925205c172307e6e0702c7eb780c71ab2cbac4a2131ed442",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/marre/hand_left.bmp.png": {
+      "sha256": "89d81eba786f7f8ad412e48ed294e76b18661d508b9f8b986dc7dc21e8416fc4",
+      "original": "graph/fighter/marre/hand_left.bmp",
+      "originalSha256": "c59d1ee9c8ddcbbd939069a0d647b5736ce47a36ed30bdc45a8377c69427885e",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/marre/hand_right.bmp.png": {
+      "sha256": "761162f02be40a46d7ae702675f5e258874d615bc29c82cf8bbabd93a47961f7",
+      "original": "graph/fighter/marre/hand_right.bmp",
+      "originalSha256": "41c9d0d047127f7c1448bcfd6edc8409ff180679ef8e24d4cd910cd7a35c50d0",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/marre/head.bmp.png": {
+      "sha256": "e6309f6d6b7f637372051b9d3c8bf5eb4a34fc9cc3a281713644ca98bb764168",
+      "original": "graph/fighter/marre/head.bmp",
+      "originalSha256": "290cf96086f59993c4e38e73912da37f5d1251b3c57a544c41abe3b75f2b62c7",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/marre/leg_lower_left.bmp.png": {
+      "sha256": "0db9fae59001e6ec3be6b7149296c2faf0260b509d6f2636ea45b54a35b0f07c",
+      "original": "graph/fighter/marre/leg_lower_left.bmp",
+      "originalSha256": "a554dbade76b5a0b171c231e811ad2d0999ad293c70c7d294e20b19ca5523b56",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/marre/leg_lower_right.bmp.png": {
+      "sha256": "78fac354b13c1b0a0bb5ba2a17d31b0db2366966e792afc8bb614c0c055a36be",
+      "original": "graph/fighter/marre/leg_lower_right.bmp",
+      "originalSha256": "857facd575ceecbb5a837e7fb7f9df4f7690dd2ae5c24a34ea0123a80fbd88a0",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/marre/leg_upper_left.bmp.png": {
+      "sha256": "8c6d2d6648a0088f06e556aa432cf1c17da6f045aae29c84c424c61a3e6002f8",
+      "original": "graph/fighter/marre/leg_upper_left.bmp",
+      "originalSha256": "9ec2c4dfe34be96842a9e1ab1c593d81f44db48367734718c6a99ae0dd657aa2",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/marre/leg_upper_right.bmp.png": {
+      "sha256": "0288e0c88a9cedf231ed6a920b53b0e872a76de24b6ce6e584a7f4c3e5be0dad",
+      "original": "graph/fighter/marre/leg_upper_right.bmp",
+      "originalSha256": "83d6ff2dc652bbf2d4e8d2d17eecb878414b0bf81817d72482db24a4230a2b52",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/peeta/arm_lower_left.bmp.png": {
+      "sha256": "b3a0ef516612876661228408d3944520ef91d9115aa110d5445ebc0692ea21cf",
+      "original": "graph/fighter/peeta/arm_lower_left.bmp",
+      "originalSha256": "914adfdf03dd1ce993ba50811e76ad2357dd52ff7be7e9b88b612b55e7a3a739",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/peeta/arm_lower_right.bmp.png": {
+      "sha256": "a1bf42df47001a6b6ac26b2199ac17e91dc19140057e81c1c935f4f90980f7d9",
+      "original": "graph/fighter/peeta/arm_lower_right.bmp",
+      "originalSha256": "d3619bb118a460cc62861d85f0274c70d5c550dec41f041ecfafd2cff0e3cd7d",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/peeta/arm_upper_left.bmp.png": {
+      "sha256": "2f0df76634e1fd5e6c2378e18ba84a01c6799e5abf4b1630b60bb67dfc4ec80e",
+      "original": "graph/fighter/peeta/arm_upper_left.bmp",
+      "originalSha256": "7d77ddacf8bcf6b791c10a04c2f9ea3ff0554794722ede884981cc685f2311d6",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/peeta/arm_upper_right.bmp.png": {
+      "sha256": "74e53857fe97ec1ad60bc95fe4b815a3942f8f87e06e360701c401de0f9ed6ad",
+      "original": "graph/fighter/peeta/arm_upper_right.bmp",
+      "originalSha256": "6db0c34638039550938ba628f9a14dfe536c1d09921ead12e4b10f1d9530c6b5",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/peeta/body.bmp.png": {
+      "sha256": "ae5c6150d9652747cc05a012e585f93f0c2d92ab1ce97ff90f66a6009ae401d3",
+      "original": "graph/fighter/peeta/body.bmp",
+      "originalSha256": "701ff5905354aef5f738502a5701d91538058e608d1b1be3848d0805e3c5038d",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/peeta/foot_left.bmp.png": {
+      "sha256": "6ed00828c028521ff1031cfd5fa9af10cba76f7e73de36ec7dded268dd3038df",
+      "original": "graph/fighter/peeta/foot_left.bmp",
+      "originalSha256": "5d9d78c737e00d7528fe89cfd1bb473c663b4f7d8428c65a15981b3fcb817b73",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/peeta/foot_right.bmp.png": {
+      "sha256": "643beb07a72dbe793aa909c648f2a98f0292cd990d104c0906b55dc2231a4856",
+      "original": "graph/fighter/peeta/foot_right.bmp",
+      "originalSha256": "2e8fb4b95e96e029e6a65a81820a98918c339865e839c9325559afd206e0986a",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/peeta/hand_left.bmp.png": {
+      "sha256": "2f857b93aeb1be7b3f6dea42094282685fce071c1cf0c00a0e395d1261968513",
+      "original": "graph/fighter/peeta/hand_left.bmp",
+      "originalSha256": "8712cddaa7ac82968d6b6e3208a044bd13db19325a12b7dfa5622486c3663b23",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/peeta/hand_right.bmp.png": {
+      "sha256": "bd26b3e46cdd8b40d747eb3ed3c60a769ccd08e8403448346cab23572b9cabb1",
+      "original": "graph/fighter/peeta/hand_right.bmp",
+      "originalSha256": "aca8f92b050251636aa06eeb1faa048a68058d976f2c4ae15b2b73fad926143c",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/peeta/head.bmp.png": {
+      "sha256": "bbab571c72e3784519eca1032935fe72e00d84141e2bb701d87a87d13324c9d6",
+      "original": "graph/fighter/peeta/head.bmp",
+      "originalSha256": "ac43584278cc2c693c6bba4bb1cd428886a16b4b9367b30f86336c6c4b2b6af6",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/peeta/leg_lower_left.bmp.png": {
+      "sha256": "82019e4a57db8b2c66704bac38d94b7fc2ef4bb7cb38ca2f0a0de3db95575be7",
+      "original": "graph/fighter/peeta/leg_lower_left.bmp",
+      "originalSha256": "97d82c190618feece48dc1f1c66a8ea1543e67161b46db60ecb0f160f42ee43a",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/peeta/leg_lower_right.bmp.png": {
+      "sha256": "5e9365f9e18325c84f70522c1bdbd89c2feadac2938d6e2761441dc01a9ed5ec",
+      "original": "graph/fighter/peeta/leg_lower_right.bmp",
+      "originalSha256": "6128304ec83fb0b2162220b23ca2a8ab7cffc845ff1d217062c3b768e38c6ec3",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/peeta/leg_upper_left.bmp.png": {
+      "sha256": "9eb43a7757394d4677601192d1d15ddce3c426f4f1487310f2baf07d6eb1bcdf",
+      "original": "graph/fighter/peeta/leg_upper_left.bmp",
+      "originalSha256": "0175122cc414f4ecc430af700773c736f0dfc379cdfc43ce9ff468d377637187",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/peeta/leg_upper_right.bmp.png": {
+      "sha256": "f111ad29b4996d2740c18f95491f487644af019676e2c393006643f4b0db7355",
+      "original": "graph/fighter/peeta/leg_upper_right.bmp",
+      "originalSha256": "46acea17509b4a5a16e0903cbb09633cf43ca6ad14e7be65d822d4dab9698ee6",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/tiger_my/arm_lower_left.bmp.png": {
+      "sha256": "8be799b06a3d69598e6160d9059694d3ec10edb40fe5dc2b07576e087515bac4",
+      "original": "graph/fighter/tiger_my/arm_lower_left.bmp",
+      "originalSha256": "c3a0256a3a4434c43add968f5fc1d70a608f8ebfe20811558346cb65f07376ec",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/tiger_my/arm_lower_right.bmp.png": {
+      "sha256": "aec764bec5e8ffc6b4eeada79101622c25852edb320cfd6e0b4374fbf60f5d65",
+      "original": "graph/fighter/tiger_my/arm_lower_right.bmp",
+      "originalSha256": "c7325f6aaed3377e21c2d2b13fa1e7bed31d41c5eabf45436dc9f3d78602f35b",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/tiger_my/arm_upper_left.bmp.png": {
+      "sha256": "a54d23b133a6124f790e263483805defb145feed4b5b085f3bff11a35149a0ac",
+      "original": "graph/fighter/tiger_my/arm_upper_left.bmp",
+      "originalSha256": "b092bb474c929687166113feaf4994ec174c40a9956bbf3fdfc52b53dafbbc29",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/tiger_my/arm_upper_right.bmp.png": {
+      "sha256": "16dc00688819cd60ed180673a6c4fa2db2e65d00c3ffb2d3bd71f4be4c0a3e76",
+      "original": "graph/fighter/tiger_my/arm_upper_right.bmp",
+      "originalSha256": "85a6ea14964852b00ae22bb2b47355f4e8fd6f174204305a968ee8968cadea03",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/tiger_my/body.bmp.png": {
+      "sha256": "670d6a7a92fba610f4c0701383e18bee43dfcfbf4b271f0e142b8a0a9a3c5a4c",
+      "original": "graph/fighter/tiger_my/body.bmp",
+      "originalSha256": "ad7b2b87d044936f74552264ef22cbf49bfe248ada6004b79f2ea717cce88cb0",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/tiger_my/foot_left.bmp.png": {
+      "sha256": "1e70384a30bf8fad1d954c1eb80ab6504e41580bbcf4a5bab24b23dadb3e894e",
+      "original": "graph/fighter/tiger_my/foot_left.bmp",
+      "originalSha256": "fb6097652a834b7396cf1c516e795f02f253e7fc7aa215ca5feaeae9d67edf52",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/tiger_my/foot_right.bmp.png": {
+      "sha256": "a19e1d0d7043f32863658d034062b7cf21d06106197eedf6905f99bae8c6b7fe",
+      "original": "graph/fighter/tiger_my/foot_right.bmp",
+      "originalSha256": "25a9618312c4038373ee28881120c4415d36d9f6afc3463a6b65660b38e89a3e",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/tiger_my/hand_left.bmp.png": {
+      "sha256": "33e4f671ba9e54e8f6441f2f93f504704a42287ca039647278c7f89c75f7eda3",
+      "original": "graph/fighter/tiger_my/hand_left.bmp",
+      "originalSha256": "79a577935c794ce7fe7006655515d92699a91b9d02e12807685e3c91c82ff9eb",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/tiger_my/hand_right.bmp.png": {
+      "sha256": "f995881b46227fb2ba96ca2ff1da56f258949776083cffaba72c6e613d268bc4",
+      "original": "graph/fighter/tiger_my/hand_right.bmp",
+      "originalSha256": "3e9466d71115bef6c5443fba4fb1b6a53cb8abb5054c4c809bf8345193fae462",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/tiger_my/head.bmp.png": {
+      "sha256": "d1e84f51c287078878266ce7d4c5c1b676a5d9e96e53572cb77b5aaf55ad8617",
+      "original": "graph/fighter/tiger_my/head.bmp",
+      "originalSha256": "aaaa3cac032fd9ed2b4298a6426094697818a0df6b8de2ab3ab1a719e4ec0a6d",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/tiger_my/leg_lower_left.bmp.png": {
+      "sha256": "d3a4f5995409527225dae504d71ce1de202f2501546d0720c193084e9824c9a8",
+      "original": "graph/fighter/tiger_my/leg_lower_left.bmp",
+      "originalSha256": "86f0e0f54672d1b2e43786e1462ea19b5f6021f381eccc63d50f7f19f4968dc7",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/tiger_my/leg_lower_right.bmp.png": {
+      "sha256": "b7c4df46a26cfa6e827efc311f927a0c7d29794015e4c3b0f6e2893548a48bdd",
+      "original": "graph/fighter/tiger_my/leg_lower_right.bmp",
+      "originalSha256": "49e56eab1cd4e331db590ec2d064846b58e1d7b2231c1783161e2921b39cfa77",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/tiger_my/leg_upper_left.bmp.png": {
+      "sha256": "71fde39d20a0ff65cdeeec2cae5eef4d31a9fe34a2b36614d64b8138223e316e",
+      "original": "graph/fighter/tiger_my/leg_upper_left.bmp",
+      "originalSha256": "b5f4f93e9a15fcc65d98a1f824b02367cb7cefd473e6ee9411d8f97e98b6bfbb",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/fighter/tiger_my/leg_upper_right.bmp.png": {
+      "sha256": "9dd2ca0d28b85dc9393545889e6a2bc42ea59a14ba90085ee509bfe0dfc5eee1",
+      "original": "graph/fighter/tiger_my/leg_upper_right.bmp",
+      "originalSha256": "a4a18a05c7b1adf2bf63637df951f56686ff3187b0df9aba71ba49000cc409be",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/game/bar1.bmp.png": {
+      "sha256": "1befc44245744fe408770e26119ab2486c2bd5f1be7fa5511bee654d0e103db0",
+      "original": "graph/game/bar1.bmp",
+      "originalSha256": "47da5bf215e92a146fba13532aa36ddaa82053234daf43ad538fb4e1c59a2b20",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/game/bar2.bmp.png": {
+      "sha256": "294e6f18a950b3e0e8c183590ea913e99c7c518a3f503f89b142a577cd9b8872",
+      "original": "graph/game/bar2.bmp",
+      "originalSha256": "99ab69c2ee0f4f7910521066e6fb2ee75a115485a554536d1f07172ea3a0e991",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/intro/intro.jpg.png": {
+      "sha256": "5aad6a06df11f947495fa06288f73b87a3e950c7f5a5de74a76a8c53fdf95020",
+      "original": "graph/intro/intro.jpg",
+      "originalSha256": "54d2c2c0cd6ea4e0c652ff948e55b04233c35bc5b21350ac4ef37f79c6f45d40",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/intro/libs.jpg.png": {
+      "sha256": "96753791421a458f17b1479447e454d3363ea9a23ee9e38691f0c29807faf585",
+      "original": "graph/intro/libs.jpg",
+      "originalSha256": "3cf2fac0c8cb8d49c7fd19acbb6df4da31d393225eb8fe739c4afef9f11b8435",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/intro/story.jpg.png": {
+      "sha256": "ddf1d7488e0b65f1023fd98cb1257e916c359e8051ee98a96947346afc60083c",
+      "original": "graph/intro/story.jpg",
+      "originalSha256": "a70322e10d936d593d228649c573264f36910dbebff77125bbe08b782e85dc50",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/menu/background.jpg.png": {
+      "sha256": "9337a432696b56c5511546cf436a7601fc99da5e050a3f78c120b9dd3b3f0e8a",
+      "original": "graph/menu/background.jpg",
+      "originalSha256": "96e9713996b5052b06362bf70c427ecdd3b7749c37d49b1cdabf75a6bcd9d7bd",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/menu/black_samurai.jpg.png": {
+      "sha256": "8df1367bd5fdd400077657c75ff46eb3b48d7251eebc8c7950e3cddfae74aa60",
+      "original": "graph/menu/black_samurai.jpg",
+      "originalSha256": "3d4eda9c50a2fb454f87bed58e19d15397595939152004abedeeeef556b2e8bf",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/menu/black_samurai1.bmp.png": {
+      "sha256": "902ad20014b710b252bac5a3cf3eb99d3d0dc44ecb87b455c2c097d3e6cc3638",
+      "original": "graph/menu/black_samurai1.bmp",
+      "originalSha256": "98e57c31185dbbba33aff10443a41c9584ec84f0a4d916471397f39aa266e71e",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/menu/black_samurai2.bmp.png": {
+      "sha256": "45cbd4bbe614cbc8b18acdab7b39019f0110247d35e3c318e9208be9209dbe65",
+      "original": "graph/menu/black_samurai2.bmp",
+      "originalSha256": "3422d19e638447636817e61315b4c2d1822e17b354a7dd986b94f6df58187b77",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/menu/elgreco.jpg.png": {
+      "sha256": "a95c92d43479416707a461583a83178ec0df6118b50e36dd2f6277fbf8933529",
+      "original": "graph/menu/elgreco.jpg",
+      "originalSha256": "b8bd64e86d4d0c941f374ef9582ed6126c6fb127830b23e3abf1b98e2bb33ac7",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/menu/elgreco1.bmp.png": {
+      "sha256": "502d2c6c5358a54ad84b189ee6c2acd50a56d3fd207b038ecb5b750407542e7c",
+      "original": "graph/menu/elgreco1.bmp",
+      "originalSha256": "397fa34d9b7d9cde51e99952883d86b3f7f59f5f88e1c0a236eea99dd6d496db",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/menu/elgreco2.bmp.png": {
+      "sha256": "84142649806545e3ff74c70d8f543d268ea131d2f166004d4e82b70afebe480a",
+      "original": "graph/menu/elgreco2.bmp",
+      "originalSha256": "cd1d8c5395f6b1671d23a525432103b3589de98a5266ce286bfcdada1d475b94",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/menu/help.jpg.png": {
+      "sha256": "3927ceecb9505396dbb3348ee1bdae68d049debb634e99463b0fe4f90150463c",
+      "original": "graph/menu/help.jpg",
+      "originalSha256": "2cfd5b4ee8f2314d8f461a4fe463bf2cb3c7cdfee80aafbf4e94543088cf60da",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/menu/joynes.jpg.png": {
+      "sha256": "e9d3a15b9b7cbc8488c0e6299ffe24f359659a07d4eafca3f40dd00cea514f00",
+      "original": "graph/menu/joynes.jpg",
+      "originalSha256": "fff5798b8d553edd64e43c140a245596cc9b28b227793b21ff7f67cceca6065f",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/menu/joynes1.bmp.png": {
+      "sha256": "7a2be71c5e3718883b3e174d77ea939be0f75e4b3210c490686afe799dba1d81",
+      "original": "graph/menu/joynes1.bmp",
+      "originalSha256": "cd2829ed82298179608fe7eba922b79a5b12546ab3ff8fb9750dfe87a6d03c50",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/menu/joynes2.bmp.png": {
+      "sha256": "716b3081e76f4944e6ef2fa734065d2449df21846f91bb90f84c82adc2594889",
+      "original": "graph/menu/joynes2.bmp",
+      "originalSha256": "d456877eb0fe0471ccc7c69ebb7b4df8b3437e469b92cc5c1f0647509cd5f28a",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/menu/marre.jpg.png": {
+      "sha256": "25ecccf6bfed63b3cfbb1c189a31b8cac726f9186500b8324d3b6260e5e4df84",
+      "original": "graph/menu/marre.jpg",
+      "originalSha256": "c3a86205a485252ff7831e981b9b7e97649455bb169ff6c4daa97013f825bd72",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/menu/marre1.bmp.png": {
+      "sha256": "63243602ad9c0b54313e614df7188f44e0039b213e82429b414bcdc0edb440e7",
+      "original": "graph/menu/marre1.bmp",
+      "originalSha256": "c6065ac5659bdfef5c4403b2e73f51a53d15eb4a7a51d4a9f35a07d0ebadde88",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/menu/marre2.bmp.png": {
+      "sha256": "9220f648c8647dd62db99d3962bbc626e5d248e943bd1c91266adcea9943df11",
+      "original": "graph/menu/marre2.bmp",
+      "originalSha256": "051d1f9bdd5e338b60dc0a823e711cf35e7f2b93541e4857e8ba619222506f08",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/menu/peeta.jpg.png": {
+      "sha256": "9f73f1fe6a03648a4c67a2adf63a739524303f3329266319ffb9e91ce2429f57",
+      "original": "graph/menu/peeta.jpg",
+      "originalSha256": "6ecf0be8258ebded1717c953bfc2af1984f0cdfc4c7234193795f9267517739b",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/menu/peeta1.bmp.png": {
+      "sha256": "d725f5a02bc4fef5ef07caf9ec6c39c8be4a10ae6c8ea81ace4e26b1f3a7bf65",
+      "original": "graph/menu/peeta1.bmp",
+      "originalSha256": "0d9fc7ab5531bf95b2b05463e1d47bc348085ce8999262578aae10959fbfd869",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/menu/peeta2.bmp.png": {
+      "sha256": "27691deb6ca58a704576c0b155e1c3824a344eafaf89fff4422d6834a3df8b94",
+      "original": "graph/menu/peeta2.bmp",
+      "originalSha256": "f0db11272e88ac61ecbf685121d07d1172a1aa61495beb42418536d51f7534c3",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/menu/select.bmp.png": {
+      "sha256": "447f391cd0b65d5389ac86c3c9e020684d3110f1ffe193de1bfaa5d32ff05b9a",
+      "original": "graph/menu/select.bmp",
+      "originalSha256": "704a017a9f50e92f718248c2012a9f7900fd090cd1c5d75b5f0324ebdaee8163",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/menu/tiger_my.jpg.png": {
+      "sha256": "6d089274fd8037da1b101e5e328ea0d23487d3849abda39c19cd7989e8703811",
+      "original": "graph/menu/tiger_my.jpg",
+      "originalSha256": "f1ef123d620ec496cb7ac5081001b4b5db79400472c1babba65095b89ff8ddde",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/menu/tiger_my1.bmp.png": {
+      "sha256": "6811f9c0867e68d632d302c4124df357e5ff2d4d0349f0dd55e2f61636488a79",
+      "original": "graph/menu/tiger_my1.bmp",
+      "originalSha256": "cc205e57294d732854504de66b8d314e18a1558e01a76e6b93ca6b8488061218",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/menu/tiger_my2.bmp.png": {
+      "sha256": "342eb903ad8dffb904b94a2be5a2efc10cfdeb1abdd1faf7f9851c347f647c90",
+      "original": "graph/menu/tiger_my2.bmp",
+      "originalSha256": "ababdbd2ae0e5085971e31e6ad48d7033bacc84556def74093e4ee604fe6f48f",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/stage/cruiser/deck.bmp.png": {
+      "sha256": "209e820e4a3bb8a4398ba0b44e9584f6be5ee1c01d278a2ccb8c9b7ce6ee3898",
+      "original": "graph/stage/cruiser/deck.bmp",
+      "originalSha256": "4c268181d1b97274e4c81c129d96b0fc391b7b68a55cfc2e648ec52cbcc8c55d",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/stage/cruiser/water1.jpg.png": {
+      "sha256": "554795c53a63f7817b708ee0d174f65904dc273d08ae97a2e1f0b90f9f7880e3",
+      "original": "graph/stage/cruiser/water1.jpg",
+      "originalSha256": "baad0fdaffb7598afef803cbc9840d8059689da84cb3b5421b58d48aa850a86b",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/stage/cruiser/water2.jpg.png": {
+      "sha256": "3caade6b6e3ce045788f96a71734e46b2532c9de72e5d3a4dda06f85e8183ba5",
+      "original": "graph/stage/cruiser/water2.jpg",
+      "originalSha256": "de4784f31467f6880f6d21cc641ac3f01cc15cd83e13108b0e454c53d6319345",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "graph/stage/cruiser/water3.jpg.png": {
+      "sha256": "9f449dc9d7479a913e37be23d24c0b00296e253983092fd279fe17caac26eca2",
+      "original": "graph/stage/cruiser/water3.jpg",
+      "originalSha256": "6cb66b75eb98b38defaa7c48af3ce408c9856ef4c06c37130e43cf3d7a0a46fc",
+      "export": "Lossless PNG; exact magenta key becomes alpha. Yellow/cyan skeleton markers retained for native point discovery."
+    },
+    "sound/effects/block.wav": {
+      "sha256": "0c6b8a43d6b2781d4b30b8b0c4b1b4698a937cc759e7e4911a392cb6acef48b0",
+      "original": "sound/effects/block.wav",
+      "originalSha256": "0c6b8a43d6b2781d4b30b8b0c4b1b4698a937cc759e7e4911a392cb6acef48b0",
+      "export": "Unchanged original WAV."
+    },
+    "sound/effects/duck_hit.wav": {
+      "sha256": "cc62464ba559d19a6e0febf9592aa8c07a376de060c3c69da34665a5c8a7882d",
+      "original": "sound/effects/duck_hit.wav",
+      "originalSha256": "cc62464ba559d19a6e0febf9592aa8c07a376de060c3c69da34665a5c8a7882d",
+      "export": "Unchanged original WAV."
+    },
+    "sound/effects/elbow.wav": {
+      "sha256": "3b693a5dd975da7e26514376d8ffcdae187dc12379174241567b268b13b0f70d",
+      "original": "sound/effects/elbow.wav",
+      "originalSha256": "3b693a5dd975da7e26514376d8ffcdae187dc12379174241567b268b13b0f70d",
+      "export": "Unchanged original WAV."
+    },
+    "sound/effects/hit.wav": {
+      "sha256": "2eff8e5ec0ecfb6d7ef0d828fb5f84a28efaaddf3ca5e7bb9de47f1e22b7cb5b",
+      "original": "sound/effects/hit.wav",
+      "originalSha256": "2eff8e5ec0ecfb6d7ef0d828fb5f84a28efaaddf3ca5e7bb9de47f1e22b7cb5b",
+      "export": "Unchanged original WAV."
+    },
+    "sound/effects/hit_air.wav": {
+      "sha256": "f3082cb48bc4b83fe06d1b52be473b9783b4ba093fdfe1866eacdaa0a87a515a",
+      "original": "sound/effects/hit_air.wav",
+      "originalSha256": "f3082cb48bc4b83fe06d1b52be473b9783b4ba093fdfe1866eacdaa0a87a515a",
+      "export": "Unchanged original WAV."
+    },
+    "sound/effects/hit_ground.wav": {
+      "sha256": "21f6cd4935c4e6ddb65bc45b8563620b9a18a936eb01f886ae6b3a77430c65f6",
+      "original": "sound/effects/hit_ground.wav",
+      "originalSha256": "21f6cd4935c4e6ddb65bc45b8563620b9a18a936eb01f886ae6b3a77430c65f6",
+      "export": "Unchanged original WAV."
+    },
+    "sound/effects/jump.wav": {
+      "sha256": "23271274fbc3273bc60ac2fe35ef0189aaf0d974931c90f2fca190ea489d3474",
+      "original": "sound/effects/jump.wav",
+      "originalSha256": "23271274fbc3273bc60ac2fe35ef0189aaf0d974931c90f2fca190ea489d3474",
+      "export": "Unchanged original WAV."
+    },
+    "sound/effects/jump_land.wav": {
+      "sha256": "33b815fae4015b8443af956ba6c190a91da39bebae5dcce512ecc87b753b3c30",
+      "original": "sound/effects/jump_land.wav",
+      "originalSha256": "33b815fae4015b8443af956ba6c190a91da39bebae5dcce512ecc87b753b3c30",
+      "export": "Unchanged original WAV."
+    },
+    "sound/effects/kick.wav": {
+      "sha256": "de95d8ed2d5d5f2fb1d19ce3fdb0917989ca47e593f181d9f7b39913025309cd",
+      "original": "sound/effects/kick.wav",
+      "originalSha256": "de95d8ed2d5d5f2fb1d19ce3fdb0917989ca47e593f181d9f7b39913025309cd",
+      "export": "Unchanged original WAV."
+    },
+    "sound/effects/knee.wav": {
+      "sha256": "5f5a3d0f56201fc2023b11eb8348db1ec42cd92ddf25db8e012b87eb2c14be79",
+      "original": "sound/effects/knee.wav",
+      "originalSha256": "5f5a3d0f56201fc2023b11eb8348db1ec42cd92ddf25db8e012b87eb2c14be79",
+      "export": "Unchanged original WAV."
+    },
+    "sound/intro/Jqp.wav": {
+      "sha256": "0db14fccc686ab616a8ff3b91b96b5dd368df2b002bb19ca8649b1381038f0b3",
+      "original": "sound/intro/Jqp.wav",
+      "originalSha256": "0db14fccc686ab616a8ff3b91b96b5dd368df2b002bb19ca8649b1381038f0b3",
+      "export": "Unchanged original WAV."
+    },
+    "sound/menu/backspace.wav": {
+      "sha256": "fd1121157c533c478af12b39b0876cc9a6b767e6e4db7ebb1869c740a45d6509",
+      "original": "sound/menu/backspace.wav",
+      "originalSha256": "fd1121157c533c478af12b39b0876cc9a6b767e6e4db7ebb1869c740a45d6509",
+      "export": "Unchanged original WAV."
+    },
+    "sound/menu/black_samurai.wav": {
+      "sha256": "4cf54f60f4d512389b137093ebb3328348cdf3e33204bd784f4fd2d9f8418919",
+      "original": "sound/menu/black_samurai.wav",
+      "originalSha256": "4cf54f60f4d512389b137093ebb3328348cdf3e33204bd784f4fd2d9f8418919",
+      "export": "Unchanged original WAV."
+    },
+    "sound/menu/cheer.wav": {
+      "sha256": "7f46905bb1102a6e79d8aa20b12f0f7b16ff364b7aadfc85289551adb50fbb7d",
+      "original": "sound/menu/cheer.wav",
+      "originalSha256": "7f46905bb1102a6e79d8aa20b12f0f7b16ff364b7aadfc85289551adb50fbb7d",
+      "export": "Unchanged original WAV."
+    },
+    "sound/menu/cling.wav": {
+      "sha256": "356d5daa03dd995c711d73c26b9f009ed1f4ddcf76215fe98f16ea569c95ec19",
+      "original": "sound/menu/cling.wav",
+      "originalSha256": "356d5daa03dd995c711d73c26b9f009ed1f4ddcf76215fe98f16ea569c95ec19",
+      "export": "Unchanged original WAV."
+    },
+    "sound/menu/elgreco.wav": {
+      "sha256": "15f80f4f3f3f580aedfed7449b3e91868abc8915211e68d318bc06fcad26cc23",
+      "original": "sound/menu/elgreco.wav",
+      "originalSha256": "15f80f4f3f3f580aedfed7449b3e91868abc8915211e68d318bc06fcad26cc23",
+      "export": "Unchanged original WAV."
+    },
+    "sound/menu/joynes.wav": {
+      "sha256": "a0fbec5ef21645e69f12c2da47bc2236e4dfc8ca3af70477c46a216fc034b2f6",
+      "original": "sound/menu/joynes.wav",
+      "originalSha256": "a0fbec5ef21645e69f12c2da47bc2236e4dfc8ca3af70477c46a216fc034b2f6",
+      "export": "Unchanged original WAV."
+    },
+    "sound/menu/marre.wav": {
+      "sha256": "4dbae4d4d63a6362973de721d498e458f1076b59d5e8ea8c1c9d93517639eb7f",
+      "original": "sound/menu/marre.wav",
+      "originalSha256": "4dbae4d4d63a6362973de721d498e458f1076b59d5e8ea8c1c9d93517639eb7f",
+      "export": "Unchanged original WAV."
+    },
+    "sound/menu/peeta.wav": {
+      "sha256": "960f24a6318e3904cb58718712b59ef45c3550f2a4231e760adcb299bd3abe08",
+      "original": "sound/menu/peeta.wav",
+      "originalSha256": "960f24a6318e3904cb58718712b59ef45c3550f2a4231e760adcb299bd3abe08",
+      "export": "Unchanged original WAV."
+    },
+    "sound/menu/select.wav": {
+      "sha256": "6a36da9946a7797abd7f741f5cbe281bd613ee2cef9da9c39d64061c795ab92f",
+      "original": "sound/menu/select.wav",
+      "originalSha256": "6a36da9946a7797abd7f741f5cbe281bd613ee2cef9da9c39d64061c795ab92f",
+      "export": "Unchanged original WAV."
+    },
+    "sound/menu/select_fighter.wav": {
+      "sha256": "49d9eb5c647c902c40f055c62cc57f652350fef7da75545f3fd62eb5c092810e",
+      "original": "sound/menu/select_fighter.wav",
+      "originalSha256": "49d9eb5c647c902c40f055c62cc57f652350fef7da75545f3fd62eb5c092810e",
+      "export": "Unchanged original WAV."
+    },
+    "sound/menu/select_intro.wav": {
+      "sha256": "7e64b67a9e824a35b17566783e117b62ed794c131be606c0d72aeb423ab45adf",
+      "original": "sound/menu/select_intro.wav",
+      "originalSha256": "7e64b67a9e824a35b17566783e117b62ed794c131be606c0d72aeb423ab45adf",
+      "export": "Unchanged original WAV."
+    },
+    "sound/menu/tiger_my.wav": {
+      "sha256": "363d134e79f295953a250f6f2d444b353bebf6ffbe8e2e2034034c8bc53eb272",
+      "original": "sound/menu/tiger_my.wav",
+      "originalSha256": "363d134e79f295953a250f6f2d444b353bebf6ffbe8e2e2034034c8bc53eb272",
+      "export": "Unchanged original WAV."
+    },
+    "sound/menu/typewriter.wav": {
+      "sha256": "c5b46caf10a40e3a03dddf07594d29469da5fb37588b0ca9d1be42d860546bac",
+      "original": "sound/menu/typewriter.wav",
+      "originalSha256": "c5b46caf10a40e3a03dddf07594d29469da5fb37588b0ca9d1be42d860546bac",
+      "export": "Unchanged original WAV."
+    },
+    "sound/stage/engine.WAV": {
+      "sha256": "65ee2dc9ceb657db81bd5dcfd00a698c69de9461a8af5ad68d798f4c447cd0bc",
+      "original": "sound/stage/engine.WAV",
+      "originalSha256": "65ee2dc9ceb657db81bd5dcfd00a698c69de9461a8af5ad68d798f4c447cd0bc",
+      "export": "Unchanged original WAV."
+    },
+    "sound/stage/horn.WAV": {
+      "sha256": "51e44bbe254dca7d4f8be5863b4617625bb7f2d50fe3fd0159c166ae97537600",
+      "original": "sound/stage/horn.WAV",
+      "originalSha256": "51e44bbe254dca7d4f8be5863b4617625bb7f2d50fe3fd0159c166ae97537600",
+      "export": "Unchanged original WAV."
+    },
+    "graph/font/Godzilla.ttf": {
+      "sha256": "e4c7bf54d9c494d5bb9b4a851b2f1ef36e3adc9776729bc01877aa4b699f7b5b",
+      "original": "graph/font/Godzilla.ttf",
+      "originalSha256": "e4c7bf54d9c494d5bb9b4a851b2f1ef36e3adc9776729bc01877aa4b699f7b5b",
+      "export": "Unchanged original file."
+    },
+    "music/06 - joynes - Ich bin stark.mp3": {
+      "sha256": "ded166f1b98f0adb19656ad55b99ebabc0d73178337f00808e7520c68f9b7412",
+      "original": "music/06 - joynes - Ich bin stark.mp3",
+      "originalSha256": "ded166f1b98f0adb19656ad55b99ebabc0d73178337f00808e7520c68f9b7412",
+      "export": "Unchanged original file."
+    },
+    "music/04 - joynes - Flangman.mp3": {
+      "sha256": "ba444089edffb7be9e7999fb5955d349938dab7e20a2e0ac498da4646c71650b",
+      "original": "music/04 - joynes - Flangman.mp3",
+      "originalSha256": "ba444089edffb7be9e7999fb5955d349938dab7e20a2e0ac498da4646c71650b",
+      "export": "Unchanged original file."
+    },
+    "music/03 - joynes - Cyborg Hybrid.mp3": {
+      "sha256": "ed6a406c69760533f900077ea9629ca6a7ff808e5af4e7ec5754d9135fe6ea2e",
+      "original": "music/03 - joynes - Cyborg Hybrid.mp3",
+      "originalSha256": "ed6a406c69760533f900077ea9629ca6a7ff808e5af4e7ec5754d9135fe6ea2e",
+      "export": "Unchanged original file."
+    },
+    "music/05 - joynes - SOR the bridge.mp3": {
+      "sha256": "1f80a00b9b0d0bf09b02c6bb7787b282bce8934f4a3069ea061f4f861062dd12",
+      "original": "music/05 - joynes - SOR the bridge.mp3",
+      "originalSha256": "1f80a00b9b0d0bf09b02c6bb7787b282bce8934f4a3069ea061f4f861062dd12",
+      "export": "Unchanged original file."
+    },
+    "manifest.json": {
+      "sha256": "4ea0aef4a5748cb73f2187036048bcc9a7a265f552df86510ebfadb1f4feb015",
+      "export": "Original configuration/structure/animation text decoded from Windows-1252 plus image/sample metadata."
+    }
+  }
+}
