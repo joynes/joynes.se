@@ -1,0 +1,1613 @@
+{
+  "game": "Rallv080 Fighter / archive readme0.0081",
+  "source": "Johannes original2004\u20132005 Windows release and C++ source",
+  "driveArchiveSha256": "8d27fa252d31a204a59bf4a33669202cce7b0d6d69beec88f1668d4800d7ccf5",
+  "originalFiles": {
+    "1.mp3": "5cd3a66ed23d7c7c02b827b47841e74d1323150f5bbd686fc6d53c4fd623b1b6",
+    "Makefile.win": "7bee5798d232d0ce642dd2b8003185f2a400b1f7e6f3f7a927c266522f578886",
+    "alleg40.dll": "a0572135e43cc7c1c0469e59ca8c07350c95e5ae8a6778150817714c131b6ec7",
+    "config/Kopia av dog.txt": "c83ed08d7063bba1245baba70fe839b5c7eca31f49a8f635c15f656354044580",
+    "config/blueangel.txt": "5ebd03cf59819bbc14bef6028565e494b92f26d5c8340def01b427b65c16e9fc",
+    "config/config.txt": "d7fe90c89a8df4f1b45408b47567710ee13fdbd56d6158a9b5be88cbcba8f957",
+    "config/default.txt": "fe36ec3d75f575693ae108546b284fdb5ba0ef2a7ca498a2a9d9a5893b347771",
+    "config/dog.txt": "8d858316067aa0fba3a044abcbeef3c20ea6351b3d33f96fdc4f2e952938020b",
+    "config/joynes.txt": "1087ca907eec865319db37a1bd9b327cbda542acb9944966943dde1a0a6a1ae1",
+    "config/stage1.txt": "725a53570b7c0d2893d3615f40339958807b660d4695523b74cb8957ca662736",
+    "doc/license.txt": "3cd33298571214d890342bc732c87acc931bf57b35fb7a4bdfcaa3a153bcd46e",
+    "doc/readme.txt": "73b1f2444f5334d4379072aeb836458b8bc128afb804eb456548475a0d8c3cbd",
+    "gmon.out": "6e115d24fea3934980bc5b9077bf7c6f188a2c8ff900476aa72935803fac2ebc",
+    "graph/fighters/blueangel/block_high1.bmp": "ba5f77643b0c664cbde56685970b9d22708be1a3dadf317a3d9e5e1626987f91",
+    "graph/fighters/blueangel/block_high2.bmp": "37312920582c4b664c0c15824fb51ed5252db72ce9debc24604b4b636d6eb967",
+    "graph/fighters/blueangel/block_jump1.bmp": "ae9d34699d1ebb617fb86d9b964ed172e45bb5773d2a1356275247358f181ddc",
+    "graph/fighters/blueangel/block_jump2.bmp": "4744c810f6e30c04687bc161e2e237b989c31087321dfd92e83405f736d89446",
+    "graph/fighters/blueangel/block_low1.bmp": "0b0eb67e74079691ecbf500b508df0c98ae2f1f1e8e03c646c551a1dfe95aa93",
+    "graph/fighters/blueangel/block_low2.bmp": "811a1b88d51f2f14c989c5a3295a92abc9c0f3e7d03882e4c8ce05c448d8d2fc",
+    "graph/fighters/blueangel/block_middle1.bmp": "c90c2b945662fcb5ed9ccf0110779e027f13305c8e623732e26f735081cabc47",
+    "graph/fighters/blueangel/block_middle2.bmp": "cd0610205b3cdfbd11290b09c8b7da0d7b23c3ad61b957e08b08c30d416bab50",
+    "graph/fighters/blueangel/duck1.bmp": "f1a82592d43d1b564ca2b1221bac52766269cb7758f780e19eb37229c033c7f2",
+    "graph/fighters/blueangel/duck2.bmp": "06da651049de52e4ba33caa1b4a40d6141fd0cba55d3211b08179693fc1928bb",
+    "graph/fighters/blueangel/duck_hit1.bmp": "05d0ad3aac09f7784452b3069d3995051c19ac2253ae727a608c95c149adcf42",
+    "graph/fighters/blueangel/duck_hit2.bmp": "2198ee057fda202b23697c348906d128b236938df71543e1332cd52255f413aa",
+    "graph/fighters/blueangel/duck_hit3.bmp": "0f516d13cbf780a6b12e2339d1ed349eed13c2750077aab613c889308cbdc838",
+    "graph/fighters/blueangel/duck_kick1.bmp": "304c9976069d6f3755bcc1ff1bb4e028c4bff0682aca24e5c3bda9ef71a8da6a",
+    "graph/fighters/blueangel/duck_kick2.bmp": "0f723f003a59638542782aae2813ef3409f08c66f3c1e1de23aeef80bf70f1aa",
+    "graph/fighters/blueangel/elbow1.bmp": "eee2f8d12f36241035110ecaa1460b8907bda9adc2ae7c82dabd9d5ab37e8384",
+    "graph/fighters/blueangel/elbow2.bmp": "f8917150a76dde00b9b3032f1a47a8af0e4cc8a55f9ba07c113a6777e20b469a",
+    "graph/fighters/blueangel/head1.bmp": "811f6608faf3a5e29c3df7a755f4c48e5efdfdf24878921a687c7670f7ef8649",
+    "graph/fighters/blueangel/head10.bmp": "e726dce43f04046e789797ad888d476cf34cdfb8d03e2a050b78ef542ef41b39",
+    "graph/fighters/blueangel/head11.bmp": "4e0dfc1853c926864bfeb7182aa2ded34cb3dc70e1aeba917c340b9d8c6dda6c",
+    "graph/fighters/blueangel/head12.bmp": "ec4d3ba6791c76b4dba756d784d16e9b0e5109eb52d6d3d0a9398b9734b159c6",
+    "graph/fighters/blueangel/head13.bmp": "3880407822e24359b685fc7ab95435f8903111f5faa8c3b75ed19a226d6f1474",
+    "graph/fighters/blueangel/head14.bmp": "c5d993f64bb1c2c40f4e7f64195ad68d1770a49c868bf40d610e3a73104ee88c",
+    "graph/fighters/blueangel/head15.bmp": "958679d42c71926b5e06cf010e5868dcb8fecb8c7e25b179a32ef91ca990f4d7",
+    "graph/fighters/blueangel/head16.bmp": "ea846cdf15b466586b3f90850520e96ebcfbb5f649dcf891265e0b10999d9630",
+    "graph/fighters/blueangel/head2.bmp": "1b259755e8e770af8d5d710b3112c3c1c445d1a732595b2c96363a88aa38e067",
+    "graph/fighters/blueangel/head3.bmp": "00b15e9d3bfe377c9babc5567948ca86cc8aa755d7398b3280b285e6000c4df6",
+    "graph/fighters/blueangel/head4.bmp": "7e87917441a7c237812d333242feaa302f4ca7dba981ca0c2cc2af3d871731af",
+    "graph/fighters/blueangel/head5.bmp": "c069459bf189b6667cc9be359c0d18e3c66142f02a761baf87a37f6b0247f993",
+    "graph/fighters/blueangel/head6.bmp": "7e5e8e030b2285fa94f20fb0dbcc48e7079452ccad21c1ca4dd15c1da0e04dc2",
+    "graph/fighters/blueangel/head7.bmp": "dae7a390b6264b2cd085296f39d321d7ec965733df61ef6533870bc23191ba66",
+    "graph/fighters/blueangel/head8.bmp": "681aa750ccd8717e3d5214d267204ab5f778065de857a4a92159158efd790a2f",
+    "graph/fighters/blueangel/head9.bmp": "573aa19e1af0b21773a8d79ee5be453111ff46d5bb9c42e1cbeebc3e5dd179f2",
+    "graph/fighters/blueangel/hit1.bmp": "ed71466632ee4186c1959879991611ea59c022d1f4808e63a3ac791c7952dac4",
+    "graph/fighters/blueangel/hit2.bmp": "567a2bae46c174adf3bb8abf25fb8260da938a846dbdf684b31118838a0c7ba3",
+    "graph/fighters/blueangel/hit3.bmp": "6c9c83350593042e875f792709cc96950454e0536a3ef1d177197571dc7632b2",
+    "graph/fighters/blueangel/hit_duck.bmp": "056d6d28fac741088f90ee1ee922ef7b696caa8c24430f97fcadb71a3ed2f802",
+    "graph/fighters/blueangel/hit_high.bmp": "60d0dc188c32fb859bda30442585915e3044a34baec247307dc7ecd6fc65c2f2",
+    "graph/fighters/blueangel/hit_low.bmp": "78a05c933f67e246557bf12064d4a75dcfda6a9847fdb7fc559239aba999f1b1",
+    "graph/fighters/blueangel/hit_middle.bmp": "d56641002c8f3a13183960349e666565d49ad34c3bc499d54caa9bf0786d5684",
+    "graph/fighters/blueangel/intro1.bmp": "71acdf7a38e7ad8a82d2eda1863c72aa5d45ac0ebfb709b4dcec57c5c954c5d1",
+    "graph/fighters/blueangel/intro2.bmp": "5ed5acc21889e81f52abc59d70255d51d513a513e84ead27a4338237141d794f",
+    "graph/fighters/blueangel/jump.bmp": "9e66430c04e3239a1cb76d17dc41eaade0dfddff12c8b49d471582a2e9f80e3a",
+    "graph/fighters/blueangel/jump_hit1.bmp": "f67dcc779e4f888bfe6d304c2d6b32861ea552ff311769a5524f8778e0b22750",
+    "graph/fighters/blueangel/jump_hit2.bmp": "f6632a1c39ec0b8b29b39e940db377854942824bbb6936ca44ba1c08e645bebf",
+    "graph/fighters/blueangel/jump_hit3.bmp": "9bb36d819c09d9bb2fe65af598a68e7f94aa3a64f57537ddbc64b391d92d0520",
+    "graph/fighters/blueangel/jump_kick2.bmp": "9845e09125e26f324846532f7d37dc97498d04a0d3e21509dc9e566b757fa85a",
+    "graph/fighters/blueangel/jump_kick3.bmp": "86b7310ec22df8c4c1609ed7b15b8495e5890770bb9840c8e48fb490bbe226b9",
+    "graph/fighters/blueangel/kick1.bmp": "b8956b2991700789e0204aa436be3745bef4e8be16b1b3b7838b98f420c5ffaa",
+    "graph/fighters/blueangel/kick2.bmp": "dea4db6daae01d1058c14f9845eddf551782b9464a7ecc3759017eb17288b3d1",
+    "graph/fighters/blueangel/kick3.bmp": "4445f6083c715e1039a7d8b3facb0ac8336ec4ca9a9a32792906258f0bdef08c",
+    "graph/fighters/blueangel/knee1.bmp": "431bae1c95d21e24253610a17cd982864c691011b5e119c289aab36531ab0798",
+    "graph/fighters/blueangel/knee2.bmp": "d2d2c5195fe1952805a3e01002c5d48fe267f9a4f2d4f977fd15ba4c64346649",
+    "graph/fighters/blueangel/move1.bmp": "886468d27b525ceba57985ad645f8b9ef9b19e1512b520fe0515b865bf7d91d9",
+    "graph/fighters/blueangel/move2.bmp": "3860914f640293f56aeec907df5347d0f6360f5eea92485a43f0125c8bc06698",
+    "graph/fighters/blueangel/move3.bmp": "0d27ac36fe89f00255d8d17bded2840f596c1710dc02317c989084a3454bd00a",
+    "graph/fighters/blueangel/stand.bmp": "99b164319573a5bcc30f2ac5228fdc5734fd9060bf48e59f0e5b1595b0964358",
+    "graph/fighters/blueangel/stand1.bmp": "26443a4a825a798d6d25c17223ff36bb01d2c09cc82eaee3ab248b96f24c3993",
+    "graph/fighters/blueangel/stand2.bmp": "973c063b040750027697c2fd3f20958c71b497c581bce54f71dcb5d2747abd15",
+    "graph/fighters/blueangel/stand3.bmp": "25b75fb4af70fdbde78157d3193e673d1f1f31227b2abb152855c8b08113f77f",
+    "graph/fighters/blueangel/taunt10.jpg": "d44e5697e09cb67fcb498d92767784620c151fdc7b137f9a2cd40c697abdb02b",
+    "graph/fighters/blueangel/taunt11.jpg": "4cc3caf7edb941dc39b52200f503c9b5b52ee400e7f4d6a023442a1f010d7f15",
+    "graph/fighters/blueangel/taunt110.jpg": "cdf9a12606d247d18d53bbc11ca6f32a8e8de3e102329b13fad26a67e24966a2",
+    "graph/fighters/blueangel/taunt111.jpg": "78cbebda8f06782aeb2a5a4d16076b607fc2305a44f5e6e9cb47d7a185cb7510",
+    "graph/fighters/blueangel/taunt112.jpg": "850301cbba8e6193deb026e73a02135f1a64348b69f4f629c3afd979caf6df8c",
+    "graph/fighters/blueangel/taunt113.jpg": "e9165062309da4d49999f1f3999ec59e5a47a15c4084716ff3970217a6284c73",
+    "graph/fighters/blueangel/taunt114.jpg": "4ec2eb681f754b911aee15fbbc798cbc3f0d920e910b7baf7eaa183260de8a83",
+    "graph/fighters/blueangel/taunt115.jpg": "7a5474f859d69c358e0676a6309baf33a7a502df8840916d4d33a9e41fc17b05",
+    "graph/fighters/blueangel/taunt12.jpg": "6c2d3cd82fda6ea82685c1ad181372148c8f9ea0ba4ce04c62b3df085bf6b80f",
+    "graph/fighters/blueangel/taunt13.jpg": "03f33e22507e2f3fb2d083796fe012f97de4f4979a24d34e756d279c0724c511",
+    "graph/fighters/blueangel/taunt14.jpg": "bc3ba0cc6aac460f7b92a3675fb95beebb93a40fa98c90fe7ca3bda0b632e4c7",
+    "graph/fighters/blueangel/taunt15.jpg": "443e104bdeb734c4b67c72ef0ae27cecf9f084383385e9a78614d15ad1f085ab",
+    "graph/fighters/blueangel/taunt16.jpg": "2badcae48e6f7eb2887faca78aa74173b44a1fe3fba0ad994c27903aa776d3d5",
+    "graph/fighters/blueangel/taunt17.jpg": "9722f15d78173e8bc82bcdca4311164004fe2704143e45c4642f9ddee9371832",
+    "graph/fighters/blueangel/taunt18.jpg": "9c4c47fe65c1fbb43718d680e7a21201fce2560c3eca303ab240f6304e627d23",
+    "graph/fighters/blueangel/taunt19.jpg": "5bdca5923992ce0eb989bb9bae92e088eea1dc6f0b41091ffaadd0f7675f32d4",
+    "graph/fighters/blueangel/taunt20.jpg": "228c34c21c782d1fb603ac9c9167e274b93ad5c331fda2b213458c3a26cf4de9",
+    "graph/fighters/blueangel/taunt21.jpg": "5a9fbc1537753696463155b5369cff3c815497ad689b86ff5fcd20779b11ab04",
+    "graph/fighters/blueangel/taunt210.jpg": "543007c10d76aced73949b4bbd1e8d185a3015c0d75f082146461b5527ef6822",
+    "graph/fighters/blueangel/taunt211.jpg": "cf6a3514db053fd9786bc953144da6c69984005e9a32b1850f45e674edc49798",
+    "graph/fighters/blueangel/taunt212.jpg": "534a2f0d72dfcbf67b54c6968569f7ef997f9de19faa035b87247c73238ee714",
+    "graph/fighters/blueangel/taunt213.jpg": "7e4a0a9104b577d133c38a5cd2709a3a052c2afb4e7c71215006860d7ea18b71",
+    "graph/fighters/blueangel/taunt214.jpg": "b7d7e04a5e61bdbff006f0fa13fa36682e04f8ae112b5ac560ccc15693cf00e7",
+    "graph/fighters/blueangel/taunt215.jpg": "f74f6c411bdd6afe0ec9f236c754ff90d45d14b0be2987e829ca1b20f6822f8a",
+    "graph/fighters/blueangel/taunt22.jpg": "6a318f02712b79351179bf077e35e2d5591b882d39c7ffdf59e7cfb235b6c1cc",
+    "graph/fighters/blueangel/taunt23.jpg": "910a5c7b824a33f7307aa683338809d0813c4ed1bd468eec90e563b7266f26d6",
+    "graph/fighters/blueangel/taunt24.jpg": "ba7e5b3ead27e90c0e3d114fa8e3102c85f4bf524e8de40051a31041586317a9",
+    "graph/fighters/blueangel/taunt25.jpg": "bfb1df981bb941ceb6e06888c3c442d964a60e39d85119acd2926315e33f1da7",
+    "graph/fighters/blueangel/taunt26.jpg": "a0c80f8ce37c89c486d4ac41e338209e384f021be90c115cfc51727c57307793",
+    "graph/fighters/blueangel/taunt27.jpg": "49438337ed496cb6f97b7df078cc103d7f5ca0967fc19b37f9507403a17ca907",
+    "graph/fighters/blueangel/taunt28.jpg": "07a4924b32b899d67e1ee3c68212b614fcd8a000fd3d42db13ddfed3cfdeebf8",
+    "graph/fighters/blueangel/taunt29.jpg": "47dec7b58f0119d8745f66a6016fee8175bea88946f098978f65f68318182450",
+    "graph/fighters/blueangel/throw1.bmp": "e97d1ff952fc8de1aa39c8c163b04ab120c24dbf37fe998ed0bad6a374668c7b",
+    "graph/fighters/blueangel/throw2.bmp": "4af09d185c5cf53de56aece0348c1d15c4d7f7376f2cef2908635af755c31eb7",
+    "graph/fighters/blueangel/throw3.bmp": "626622357c080dda5839e0a15207a3d8d475e18a73ee00749c09a63409291815",
+    "graph/fighters/blueangel/will_die.bmp": "f57e302248610a7ea602aff83f83be875406efd5ed9fc45c6f87be89421c5059",
+    "graph/fighters/blueangel/win1.bmp": "dd258690000bb9ab7ab46af6e82e0b6c639fe8bae5a6794fa2fc7ae227147ee3",
+    "graph/fighters/blueangel/win2.bmp": "b8d14b631403b2315e788b00d85efb91ee2a43aa36f06f4de9322c3ff2c9bc34",
+    "graph/fighters/dog/bill.bmp": "be1115482ec2fea7776f85bad2036212207680b30222cf07740019a357ded0ac",
+    "graph/fighters/dog/deniro.bmp": "2cc36c3301aa45982955ef7acba1762240f1e934df978d969f6a5ae830e910cb",
+    "graph/fighters/dog/head1.bmp": "2bc676c18c71c8247dd317febd82973d525e46c695ab4bc8204d953e270b1430",
+    "graph/fighters/dog/hitler.bmp": "37b1c86862f15e826b32dfcca9ad2215f758164451cf606410e0efe0b4aa0a15",
+    "graph/fighters/dog/osama.bmp": "d1bf2f9077fd40e40914990a51571592fe92af1859bdf9a0e683862b1bfee5bf",
+    "graph/fighters/dog/roberto.bmp": "f393c945d14e644c7557cfba5661c7e184afa1d1014773f7b0f1097c2f56d210",
+    "graph/fighters/dog/stallone.bmp": "86a85cd708842471798090ce12a36d18b63ac0b4b26d5f30e2653af00eb29e9e",
+    "graph/fighters/dog/tyson.bmp": "a8b39263ed22517b22ed9d3dd6708936690d74dc01808c2c046c1d27a61a6cc8",
+    "graph/fighters/joynes/block_high1.bmp": "03ba75ee5d1cc6092ce4b0fec739183238f2755429e424f1a3d17a0d40eea7b0",
+    "graph/fighters/joynes/block_high2.bmp": "64b5514720485884cb7f4346ea427fde94ab4f7926177244d326bfa2b54e059f",
+    "graph/fighters/joynes/block_jump1.bmp": "b82bbbfb723f0f281ca0ecb0df6bdff5c2c3e3af3612b2ab4d1e9124700f92cb",
+    "graph/fighters/joynes/block_jump2.bmp": "6e6e58748923d0933edff0a6a26fd187792deb264dee77a0b063c115980db5ad",
+    "graph/fighters/joynes/block_low1.bmp": "e858df6a76ceb41704d6635bfc1103733b60293d8903ae4dbc4a1c5a4fe8cb36",
+    "graph/fighters/joynes/block_low2.bmp": "92a1a2cf7468257eeab791cdecfee286e3dbab6b9edbce5684f9ddacf114326e",
+    "graph/fighters/joynes/block_middle1.bmp": "b1767b330da9164de35485b5f581504b7dbd968f652cc4bf764e5f90d828dd71",
+    "graph/fighters/joynes/block_middle2.bmp": "af411b8a0123cb52695a9042f12730bf49e7e3af2c4b218a38d8ed46c59594ae",
+    "graph/fighters/joynes/duck.bmp": "0e35eb927d385d0b0663367e855bd9f66cda0d85d6fb99ba6233426c3d364a6b",
+    "graph/fighters/joynes/duck1.bmp": "8a8d821a0b4a21916c8ea2a30b69dd3a8c08f44043bdff016222ae31a745d51b",
+    "graph/fighters/joynes/duck2.bmp": "0cc8e13f2f1cb35ec21ab2272c17ce668fe5b94263ddbf5e083b419f542a06bc",
+    "graph/fighters/joynes/duck_hit1.bmp": "a3aeb7f37adfde5e6ea9f59bc70c398b2e623b20baf5e627e52ee17deb0f6711",
+    "graph/fighters/joynes/duck_hit2.bmp": "8675ce37dfd4cb7007fca5fe4884db60de13923be996c8f45d44e4bb713fc3f7",
+    "graph/fighters/joynes/duck_hit3.bmp": "7c0d35bb0cf68336f86856aaac68a4ab5be506dda4173201dd541a76ad2cef81",
+    "graph/fighters/joynes/duck_kick1.bmp": "187b28904d607edbbadba1fd5332513ab384300e839661bcbae27727dd98806f",
+    "graph/fighters/joynes/duck_kick2.bmp": "dc9d37de0ff1430520480968b7e0483d868971d397c8e68c3eeb6ac392c78601",
+    "graph/fighters/joynes/elbow.bmp": "b5a72bc2548a64c4ffd051bc199454315d1b65f8e7092eebc3a6bb303effc137",
+    "graph/fighters/joynes/elbow1.bmp": "c5867cd4b798521e6589ef94295f70d0947c4accc2d7f50f578fd864da939ef4",
+    "graph/fighters/joynes/elbow2.bmp": "8bf701b17ea8d2bf196d168c210598f6a86433f010f52d6d14ffe9b5228de40a",
+    "graph/fighters/joynes/head1.bmp": "c6126bb148f8dbc188fd9231910283a7f2e863996c6a4974b9d5be4540ccf456",
+    "graph/fighters/joynes/head10.bmp": "e1f010cac79dea96eec36418cc306327467c62d55823650ebfd53133d7e87bed",
+    "graph/fighters/joynes/head11.bmp": "c4d864482f62b56b5198d295dd189a98a230daa79a1e9b9d6fa32247e9aa2686",
+    "graph/fighters/joynes/head12.bmp": "6d44bf6af81cb5c6f305d6f54922c551e24fbab543a12c2f58eb7b1a366103a6",
+    "graph/fighters/joynes/head13.bmp": "1eb4730c9b2d74ecf7a3ff7e7944edd8657f20c9b334def258ed59f8e0f3a39b",
+    "graph/fighters/joynes/head14.bmp": "5b974051b7551aed2f806b5e219a49edbc262e8c79ffc9defac42d1ceffdce33",
+    "graph/fighters/joynes/head15.bmp": "a9543dcf17ecf7698914e769870c900f9e41c5240df71648754c8a441530a7e6",
+    "graph/fighters/joynes/head16.bmp": "1454edc0e137fa8965cbc1d9dd62caedadd5d7db8fc90063476db900fbefc4fd",
+    "graph/fighters/joynes/head2.bmp": "9b61e9f5baae4f7dbed2775566c15a43564035491a1101b5b044589135d2fac1",
+    "graph/fighters/joynes/head3.bmp": "cc6f4d8f692de2a0d71aa311885b42e6244379fdbbf562ef8bb1a08c189558aa",
+    "graph/fighters/joynes/head4.bmp": "c2c458a6785f76670b10d08909544db9fd2b2519b579aa4399b51356fc701e5c",
+    "graph/fighters/joynes/head5.bmp": "fd8fbe352676342b544e98808ec1649e354384b8116dbe42bc0b943ca7bb4fb2",
+    "graph/fighters/joynes/head6.bmp": "82bfd34812b6a77f3f89946b9e6aa77455c209cf72495f5497bc827b438321cf",
+    "graph/fighters/joynes/head7.bmp": "718c138232cf022572c9eafa1053086b55fd36f4790fd80e236eab5991b6f801",
+    "graph/fighters/joynes/head8.bmp": "e88a50725efa0948e87f141cebe06a220d86a5b77aeba5732ad6cbf88833f4c2",
+    "graph/fighters/joynes/head9.bmp": "618c039fc4c857877641a221cc6e068ef634abb5fc0aa20bb252d3038569ac81",
+    "graph/fighters/joynes/hit.bmp": "79128b5ab113d8d3ed26d2264419fc84ede9394b70f2d0c967af3b2ec3a1cae8",
+    "graph/fighters/joynes/hit1.bmp": "a46e537a76824aa3312ceb193a5e247dadb619685887ae11a96ea10a6599a83b",
+    "graph/fighters/joynes/hit2.bmp": "8f1e76b7a30f75a37e7dcb7751e5116b7c967e90b7acef64c5d666405bc012f4",
+    "graph/fighters/joynes/hit3.bmp": "79128b5ab113d8d3ed26d2264419fc84ede9394b70f2d0c967af3b2ec3a1cae8",
+    "graph/fighters/joynes/hit_duck.bmp": "2086806ef5caf5b8858c510697dc1af6913c852587406fd49dd7c7febdc19c4e",
+    "graph/fighters/joynes/hit_high.bmp": "4bdd9bce96ede832bbee167aad680408abb54a6438d9e5b61ee20608ea02eb49",
+    "graph/fighters/joynes/hit_low.bmp": "f09a13994dcab617cf003a1224e06e346f9783ec9881cc9a386f78837360c3c1",
+    "graph/fighters/joynes/hit_middle.bmp": "b57e968bffeac04564464b617ed25180e7425e6abbd23cd1b2311f75abdbc1f3",
+    "graph/fighters/joynes/jump_hit.bmp": "ca7d2739478f8e4b53dcb849f070030fdd0d76e45c4855a78c24c0b739d536ca",
+    "graph/fighters/joynes/jump_kick.bmp": "62e8776ef029248d393af7236280787f2b506267aa8c8436c03a3d90c8ee148a",
+    "graph/fighters/joynes/kick.bmp": "0ce4fb4208fb08a37adc852eca31a3547b0ddeab042235247e2bb8e0d837ed96",
+    "graph/fighters/joynes/kick1.bmp": "789f4fc505f7af89d4f9e730f50187522b49235e8f7b99385cb3722cd0f3eb67",
+    "graph/fighters/joynes/kick2.bmp": "f81223a080810f9d95ebeda59f5e7d2b67adbb58942335ecf51c5299428393eb",
+    "graph/fighters/joynes/kick3.bmp": "c51ac86f28c3b57a2e9b059a3c1e530cc4ebbc54c6d5090cb7c48377a6496ca2",
+    "graph/fighters/joynes/knee1.bmp": "dae14dc7eb733227896ed184abbe376aacba5dddb10477f1d850e8bb1f14a946",
+    "graph/fighters/joynes/knee2.bmp": "1dacf467f6b0e413c07f05b8b4a76330c14cc92f35409c53988bbfeaad4efffd",
+    "graph/fighters/joynes/move1.bmp": "7e9c5214951f55c7aff7a827a0773a9c8e2433403137f9f4e9fd3ab79874cbee",
+    "graph/fighters/joynes/move2.bmp": "1cb8df7bc8f60a5a81ef5aff89573ee2ed0f1061fbb75d20d7df6bfbea85b21e",
+    "graph/fighters/joynes/move3.bmp": "ab2fe4bf8599678a27bc4a97ce4d13bb712d9450908e1719d04e1dcbd0ac1768",
+    "graph/fighters/joynes/move4.bmp": "4dc12455104616a8d1cc212c8fbc93cdd14baf828b1206a9b2fddc199ebb794d",
+    "graph/fighters/joynes/move5.bmp": "d1d59aa1c24f2b52ca4bf67eace9c1ade83eac948dea7fd12073cbfa378aebfb",
+    "graph/fighters/joynes/stand1.bmp": "6a5f74be6649b1dec5d835005f351fe25a916efd0f4055985eacb42e5316105d",
+    "graph/fighters/joynes/stand2.bmp": "e549f203f796595842b889340ac9f6e1f2f8e200bf64fa9b516f65dda0d8e50e",
+    "graph/fighters/joynes/stand3.bmp": "cdd45702a9b29d19779d8f8460ccd494ec9b64fdf644ad5fa26d9b852f2cb3a2",
+    "graph/fighters/joynes/taunt1.bmp": "5f68464530c306baa5952142c9b40cc5a746ee66c823936298dfc989f857aec3",
+    "graph/fighters/joynes/taunt10.jpg": "4ce4997cb08b226f55a87e6ae393e9e6b69c98f12b3dde19bf0250071262bf5e",
+    "graph/fighters/joynes/taunt2.bmp": "b9ea4a1ad3da3450309b00be8d1fffafb75e591eebc0fa6347ed72159b31804d",
+    "graph/fighters/joynes/taunt20.jpg": "dffee8eb9d645a6eb6331c82a3f3453baf0d3a5bb0757c9d735d77c21d2f1064",
+    "graph/fighters/joynes/taunt3.bmp": "f09c4ef8293491b0d98afefc29d47f89eb7ccc1b48171c6637b4cd634164657b",
+    "graph/fighters/joynes/taunt4.bmp": "798360a70ad35ff49e46158a83c00522f9f1f76cb97dc1109aae92caec680bdb",
+    "graph/fighters/joynes/throw1.bmp": "1f082ddb21dfb3817928dfe83f3e961cc8eb2df2542c0ecbbf42c230049bb03c",
+    "graph/fighters/joynes/throw2.bmp": "c2a3b0c3b6aceb5d63647403fd5dd06c1f2a5f5c467c34fa7b8c93a5835a3ab9",
+    "graph/fighters/joynes/throw3.bmp": "94c2658528934334be447ea3eac457d03bf4166fdbdabf1729845024f3c68af7",
+    "graph/fighters/joynes/will_die.bmp": "48db9ea8daba1cf484e45ebc21e0291f6ceafbc30dd5e0ca51144b4f935deaa3",
+    "graph/fighters/joynes/win1.bmp": "9b6b27b9fa523f8d0f8fab74a2480d2b6c0c4833592102f14dc89f52f7396dc0",
+    "graph/fighters/joynes/win2.bmp": "60815f28af0148aa5eded55eff639cd3f97b209375d51f38599a293ef05c04ad",
+    "graph/fighters/smiley.bmp": "87ae28cf701e655285e3ca8a1bc75b5458ababb8d29cbd08f93992833234ab0a",
+    "graph/font/Godzilla.ttf": "e4c7bf54d9c494d5bb9b4a851b2f1ef36e3adc9776729bc01877aa4b699f7b5b",
+    "graph/judge/hand_high.bmp": "636cba92b5e0a8dff10a22abd24844682d10c6510b204cfc35f2f8bbdd4aa42e",
+    "graph/judge/hands_high.bmp": "58766df82291242638d000c25e3282095dffd9e02ceca1e5fb16157ac2ddd1f4",
+    "graph/judge/run1.bmp": "3405abddcc8bdf957b3d44195725599eb3629ff6709d7ec3ecae04bd8de3b481",
+    "graph/judge/run2.bmp": "ae656490d4519933b5234ec1c6c48f8eaed9c73d508af1ae90b7d49c9c4e00fc",
+    "graph/judge/stand1.bmp": "5168bf0dd6332e85fe01d84cc3a87dbb818f80b3266e63c4a7f8674abe34e45d",
+    "graph/judge/stand2.bmp": "c2baef7b82195f6228e084f58d8b23f8375e8631a063b5d4e9d81d5c9be58550",
+    "graph/judge/talk_front1.jpg": "763f3e6e37d8450e16a226b8d7476a2d576ace91f8d5ff6cb413d9f0659d7b4a",
+    "graph/judge/talk_front2.jpg": "9e9d51b5940f4899d3756bab494e7427ec56a94a2219a862086459071869ffda",
+    "graph/judge/talk_right1.jpg": "adb4aac699e1614e306c4a2ce0fc1cdc49a8b38b4c2adc710619a6b3d8ce46cf",
+    "graph/judge/talk_right2.jpg": "46c7c37ce063a41592c5717992073654cf1d55a932c95683e9e891334a171476",
+    "graph/other/bar1.bmp": "47da5bf215e92a146fba13532aa36ddaa82053234daf43ad538fb4e1c59a2b20",
+    "graph/other/bar2.bmp": "99ab69c2ee0f4f7910521066e6fb2ee75a115485a554536d1f07172ea3a0e991",
+    "graph/stage/beach.jpg": "77975f344e33e7507f531cb271c9d3af7aeed470bc13e9383b6f00f098ff8369",
+    "graph/stage/stage1.bmp": "0c8919c97f1913d4c8e861eff19cf1ed6cd972e6e39f02d8bf009ec501c26c3f",
+    "graph/texts/fight.bmp": "0269d06bf58a62016d014a1cf474be573ee73e5fc7788a626ed6ab9497d2c5ed",
+    "graph/texts/help.bmp": "4607f22cc1349a432106f393e87f292a4257e0250fb2d5f3bfcc74019c08e49c",
+    "rall008.dev": "eacc5bcf47f49eafb4466c18e66bebb1aa05db6790ed16587323f58551f5a2e4",
+    "rall008.exe": "6670732e7d264c2baca55d67e2a456e013c7ce18be42d542e1c5385576486366",
+    "rall008.layout": "b5402539c14f54ac037d5be3052c8e7d81c8020fea4fcbbeb2be64c41fec4e13",
+    "sound/effects/block.wav": "0c6b8a43d6b2781d4b30b8b0c4b1b4698a937cc759e7e4911a392cb6acef48b0",
+    "sound/effects/dead.wav": "78afe399955cddcae19abb09e3bd377c4642709f1e7a5aee6d37ad1fa18f7709",
+    "sound/effects/dead3.wav": "4bd3d74dc2c0eefa95bad67f37d25c6078b66073d2099e72398d24cf11c0a88e",
+    "sound/effects/duck_hit.wav": "cc62464ba559d19a6e0febf9592aa8c07a376de060c3c69da34665a5c8a7882d",
+    "sound/effects/elbow.wav": "3b693a5dd975da7e26514376d8ffcdae187dc12379174241567b268b13b0f70d",
+    "sound/effects/fight.wav": "6bc246dbe1ea541e8636280f0b03c45c032a1f2f9590288a1b0882f644de5c5e",
+    "sound/effects/hit.wav": "2eff8e5ec0ecfb6d7ef0d828fb5f84a28efaaddf3ca5e7bb9de47f1e22b7cb5b",
+    "sound/effects/hit_air.wav": "f3082cb48bc4b83fe06d1b52be473b9783b4ba093fdfe1866eacdaa0a87a515a",
+    "sound/effects/hit_ground.wav": "21f6cd4935c4e6ddb65bc45b8563620b9a18a936eb01f886ae6b3a77430c65f6",
+    "sound/effects/hit_ground3.wav": "2a82bac1712503a962b5689e0ba09cd8ae8a1310f62b7beb5651aa2924fb26ad",
+    "sound/effects/jump.wav": "23271274fbc3273bc60ac2fe35ef0189aaf0d974931c90f2fca190ea489d3474",
+    "sound/effects/jump_land.wav": "33b815fae4015b8443af956ba6c190a91da39bebae5dcce512ecc87b753b3c30",
+    "sound/effects/kick.wav": "de95d8ed2d5d5f2fb1d19ce3fdb0917989ca47e593f181d9f7b39913025309cd",
+    "sound/effects/knee.wav": "5f5a3d0f56201fc2023b11eb8348db1ec42cd92ddf25db8e012b87eb2c14be79",
+    "sound/effects/round1.wav": "d47b3fafbea828d0737fe1ec3124c6b1b665f032e9b84653e677b47a200e401a",
+    "sound/effects/round2.wav": "7a620b6717eecd22bb1e6257a4e4d23531d96641118460ba1d966234f76550c6",
+    "sound/effects/roundfinal.wav": "368b17231ae98c1f18c610abc46759684dfcf548f6610d1b77092099000621da",
+    "sound/fighters/blueangel/taunt1.gpk": "45e5d88016e236d7ef67a0237c71daa71a55c9bec2b4e45f361104d8c791ec34",
+    "sound/fighters/blueangel/taunt1.wav": "cebe36ef01182b8c54a58a79b3822802cbb4638f32b9c855da10f389bdc74dea",
+    "sound/fighters/joynes/taunt1.wav": "7f258944b7f1e4b3d80e1d3ef975cbe0d156cbc5a32e855790d28e35830b1093",
+    "sound/judge/getiton.wav": "477e06575108da06dc157916130d7c0552dfe23eb829ace3fdc14f39d15229c1",
+    "sound/judge/ready1.wav": "a7a840339456226f68d4be1f64d8bf745acb87e3b85120d939dc2906c1d07072",
+    "sound/judge/ready2.wav": "193448c87808871c19ca3aed16e63eb623d5054110a4636cdec1c3c50d585948",
+    "src/animation.cpp": "066976759a091d628552f9839e0d88d4a428b75f7533010abd971d9b13c61f92",
+    "src/animation.h": "77d11c5cc8797b06bf16be91fadfbe39c4f72cc755985e47ad285e615f8d2127",
+    "src/animation.o": "ec9271f0c53d346b779f1b5a895d8510f0a0a578fdac67c1b2cebedb13948898",
+    "src/bot.cpp": "cb04782babf29ed1751a3ff32f17bdc1b3956f33494aa15e27f61e6767b3e328",
+    "src/bot.o": "5a01e12d141fb3e0d5a9a40c7123d47c057aa7032bcf6d2a0f033199c03cc585",
+    "src/camera.h": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "src/collision.cpp": "f2ebb64a379990e44daea1c83ba4369859ef2cc34b7e74cec3519e10ee2f6161",
+    "src/collision.o": "c9eb7544654a5b4595c05108f1724c3e01b922418fa731597789c747becdf740",
+    "src/conalleg.cpp": "bf5ffaa48eedd4c244b4ccc7819c57efb5772669936ab0270937ac7708c660fd",
+    "src/conalleg.h": "265aa3f7992852575292a5a551c57cdf38b49cfb47aa18c804a07638ffa88b36",
+    "src/conalleg.o": "985e314ecd33c6a4de74e5c39c67e95d6600b4a176833edd05027b3ca83f6926",
+    "src/console.cpp": "25ac06fbca20895c7c2feb4800f74a70a3412011f1e5d6cf24c2e1d335d34f84",
+    "src/console.h": "1a7c117379009c8e83eb52bb5f1c82e63625cc618ae5ba4f9a4e9b11975d913e",
+    "src/console.o": "ec2bb646bd93bf03e66a11ff919c0d43cd865358df3b576220dde8930ec9f987",
+    "src/controls.cpp": "a600a3182c4f107a7e6e104b207c5f99e38b4ef5438f4550f564158d0ef47e7f",
+    "src/controls.o": "83de79541df3c1709aae03117c472cabb87e0c10871cc7c17ad023130f1c1681",
+    "src/example.c": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/fade.cpp": "4b93c76c117ed22f88bca2bc252b3280c68365958f484200913324d1e50db139",
+    "src/fade.o": "84e0138e1778ae7ecc5c791badf7474c4528c8bfea5386cfcf6fd6ce3fa45322",
+    "src/fighter.cpp": "cb45bb81923908b4f4f5d53e9f7fd84b6029e55b0cb177e495b3deb9650f2d70",
+    "src/fighter.h": "b84690fd97dec45e2f4f617a70654f7c1a62de4d2f46de419205632b6a334dbf",
+    "src/fighter.o": "2faf22b9963778ca87cb886c8547db68a275a3dee451adddd3e02f127534b965",
+    "src/game.cpp": "c36a50b4c45c73a4370c527d6acd5a81b82166c3db869b735c491afca4c6ad77",
+    "src/game.h": "25bbacdb747e2fb0b35c720237bf8b94bf0736322412a21c0f500a23c5782630",
+    "src/game.o": "93e1080ee948e782a9db9db1898349fd4b944e05dacde924d9e8bad1695505a4",
+    "src/global.h": "f0a1637982d1e8fb3a472471f5490fdfb470d409f1c490ab005e8855499e770c",
+    "src/gravity.cpp": "3c6e3026dc6b69d6594dad8f24bcf9751d065b95ba47c58b02cd97b4ca37e119",
+    "src/gravity.o": "b6e91e9bd603b7fa1accfd957c5dac6199ff61cc6cc54af2b502bb5e870ab2be",
+    "src/init.cpp": "4d447985dd8cb40b077307cd190da90ef301716d2f4f770cbccf41ca2d394faa",
+    "src/init.o": "7e343c3ef30a66e57061a7969c6c1be99b27bf868dd595a76449a91c442fec4b",
+    "src/intro.cpp": "e3b1515ef7c044096bba9031626111fee4815794644551eb0f7df2c403c07d52",
+    "src/intro.h": "360aa2b23cd1236e7f4b0a69456d62c17c5fd24f45f1d0809f4e5b39324a16a9",
+    "src/intro.o": "c6d76ac8dc7a500391dab83d2c643f542a90f53be1ec2c489f0cb08acb0a3ffa",
+    "src/judge.cpp": "39f904d07a3e672efbe9eaaa26447bdb313ad2111a8c45c375f8f29c88d7bd30",
+    "src/judge.h": "874fefbe9872656d5055ba95943fde05acb639ed077744a615030102f35dae2d",
+    "src/judge.o": "8fda4422fb9944d8a469ebd0b59d957f2d48e4a89eb36de3e7b48396660b8641",
+    "src/load_joy.cpp": "9431b33ab92572d715b99a7db170b9bc5bfd7e9de26055c963b7e583b6954b55",
+    "src/load_joy.o": "41223afc58a0bc8d48af4e8b306189bdbae33ef512c7e65af80b45ae198597fc",
+    "src/music.cpp": "a5f0cdd0dd62951938c81e6508eb3f0f65445e8b5c6d94bd8e0c7574814f4522",
+    "src/music.h": "5ed3caab76a3993d601d2bd4285279b7579763add6aca6d4e9d4bf41e8e56a4b",
+    "src/music.o": "c0b1f5b87a96550fcfdd79ff6868ee67f9b7e607d61dc4298636effeebd113e9",
+    "src/pageflip.cpp": "c7a44b51436942ed5a1819bf00f7db485b704e3c3e3f6b8563c7659fbb2d3710",
+    "src/rules.cpp": "748cd0ec2c9062e024ab27930293a2a80c0047e37a795a3cc49661a9f38a8f90",
+    "src/rules.o": "e9096b5147aad2a47f9f796a97ec4beb82fdf072a35f5fbb9691d017f05eed13",
+    "src/sound.cpp": "013c0bb640da491b20169ea07d3d1fa2f5fe6d367006810ccf1778499e0d3cee",
+    "src/sound.h": "11fad163b8d127accacf5c1c8f618b3b059680730900aa39f14ab79705d73696",
+    "src/sound.o": "573b6c7a733140fb2721d8522fa44046b72799edbc299f1f9160a3206909ce07",
+    "src/stage.cpp": "734e1bd0c5032027965a88acacaf215c03cf1a77e1f0070b400e7c8608f5cb09",
+    "src/stage.h": "0d3c2cfdb21012b6537f33cc1326603fddf04f692b0b626bf88f5d6b3f3f8a8b",
+    "src/stage.k.cpp": "a55fe3aa3ef34ac607f595cef5cbc18ee2c464975f60cc9f629d9c06556800ec",
+    "src/stage.o": "4ffc057cdb772a446cf24a34ad4ab6a4feebcd758dba2bf6a11bc8d2eeed9ace",
+    "src/states.cpp": "ec9c68110ca160f3c30c24b3bab2723604798f0e91625413f0bedf75adf2caa6",
+    "src/states.o": "29d81589abea49fd0eb1773c51a5d694814b32c82b9751427870933c2820a30d",
+    "src/timer.cpp": "746017da46b962f9ff789c02132ca4b41d6f39261520495f3c624f9315ce945d",
+    "src/timer.h": "0e037e5ed82b97ec50bc0a9963ff5213d9659a0466fc8344cd9bb2e3508a14a6",
+    "src/timer.o": "e328ea1974ce7b56e354cd11f8177bdf2b1e2549bacb4e69dc84d9ee05b5f794",
+    "src/timing.cpp": "553998050a81fb2fd0c982adc232d6ad09c8fd0106bbb6591d316f936b2685fd",
+    "taunt1.mp3": "bc3b89cbe1b22de699298ea9bf05d1133fad7462a054e03be2322001b5154a94"
+  },
+  "webAssets": {
+    "graph/fighters/blueangel/block_high1.bmp.png": {
+      "sha256": "0ea9ab2e5b9311fbb09e037e7c39e6cd917ec2cea7a8a4252ecabd6192dcae44",
+      "original": "graph/fighters/blueangel/block_high1.bmp",
+      "originalSha256": "ba5f77643b0c664cbde56685970b9d22708be1a3dadf317a3d9e5e1626987f91",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/block_high2.bmp.png": {
+      "sha256": "a34679c5b9aff404354b2665042a3c5ee4ae306d55c290dd567f41bd9d297c89",
+      "original": "graph/fighters/blueangel/block_high2.bmp",
+      "originalSha256": "37312920582c4b664c0c15824fb51ed5252db72ce9debc24604b4b636d6eb967",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/block_jump1.bmp.png": {
+      "sha256": "41c8f7557f7fc2810e9f08ff448736bc7ae1d9ee3e1676c32be3e6e23fa39328",
+      "original": "graph/fighters/blueangel/block_jump1.bmp",
+      "originalSha256": "ae9d34699d1ebb617fb86d9b964ed172e45bb5773d2a1356275247358f181ddc",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/block_jump2.bmp.png": {
+      "sha256": "f810dfae226a74ecb723c1595a9c328bfa626f226f6ca933a8fad38e8e0edb5d",
+      "original": "graph/fighters/blueangel/block_jump2.bmp",
+      "originalSha256": "4744c810f6e30c04687bc161e2e237b989c31087321dfd92e83405f736d89446",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/block_low1.bmp.png": {
+      "sha256": "aad4c5fd1eeb23e53d1bce66cf38e6526db36ca9e3dbb4f1600894700963d093",
+      "original": "graph/fighters/blueangel/block_low1.bmp",
+      "originalSha256": "0b0eb67e74079691ecbf500b508df0c98ae2f1f1e8e03c646c551a1dfe95aa93",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/block_low2.bmp.png": {
+      "sha256": "5678491b2dbfa8ed529961ddd13e2bb4f6bd12f2c6396517906685e438bbced3",
+      "original": "graph/fighters/blueangel/block_low2.bmp",
+      "originalSha256": "811a1b88d51f2f14c989c5a3295a92abc9c0f3e7d03882e4c8ce05c448d8d2fc",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/block_middle1.bmp.png": {
+      "sha256": "39344afb15611c4fa3691e426c9fd68561014a54efeb54aea3590c59f34ab224",
+      "original": "graph/fighters/blueangel/block_middle1.bmp",
+      "originalSha256": "c90c2b945662fcb5ed9ccf0110779e027f13305c8e623732e26f735081cabc47",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/block_middle2.bmp.png": {
+      "sha256": "6cdaf385a9f16314ffba286d69fc89e57df0fb3bd04ef37dd1bd0e7e2903929c",
+      "original": "graph/fighters/blueangel/block_middle2.bmp",
+      "originalSha256": "cd0610205b3cdfbd11290b09c8b7da0d7b23c3ad61b957e08b08c30d416bab50",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/duck1.bmp.png": {
+      "sha256": "c8f8d6f863e49ce5772878035c46591fecee199ce219a699196431cdce70fe3e",
+      "original": "graph/fighters/blueangel/duck1.bmp",
+      "originalSha256": "f1a82592d43d1b564ca2b1221bac52766269cb7758f780e19eb37229c033c7f2",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/duck2.bmp.png": {
+      "sha256": "54afbb451cd0e3d70c9f86ef79dbbbdd0723a157199450f0ecddd9b7b03daf9a",
+      "original": "graph/fighters/blueangel/duck2.bmp",
+      "originalSha256": "06da651049de52e4ba33caa1b4a40d6141fd0cba55d3211b08179693fc1928bb",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/duck_hit1.bmp.png": {
+      "sha256": "2cc59c2c46c403dd3a14da70c0b6427aff2481d53b96975ba9d09022d13b6ade",
+      "original": "graph/fighters/blueangel/duck_hit1.bmp",
+      "originalSha256": "05d0ad3aac09f7784452b3069d3995051c19ac2253ae727a608c95c149adcf42",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/duck_hit2.bmp.png": {
+      "sha256": "953f03675635d96166286abd34dedb2a0a66bb7361b6f742edd3bb4f0aafb4fb",
+      "original": "graph/fighters/blueangel/duck_hit2.bmp",
+      "originalSha256": "2198ee057fda202b23697c348906d128b236938df71543e1332cd52255f413aa",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/duck_hit3.bmp.png": {
+      "sha256": "0c748fd87a4d85a266d55722bbea88e1a15125f7d8c99bae2e65974ebd3da4a5",
+      "original": "graph/fighters/blueangel/duck_hit3.bmp",
+      "originalSha256": "0f516d13cbf780a6b12e2339d1ed349eed13c2750077aab613c889308cbdc838",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/duck_kick1.bmp.png": {
+      "sha256": "a1f4af6364bbd474c01bf29c8220918b54e229dcb216c23ad84d2d4170a66e45",
+      "original": "graph/fighters/blueangel/duck_kick1.bmp",
+      "originalSha256": "304c9976069d6f3755bcc1ff1bb4e028c4bff0682aca24e5c3bda9ef71a8da6a",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/duck_kick2.bmp.png": {
+      "sha256": "776587e29b95e1619ccf694a0092b457536bb7081132114c98f4be202cc411b7",
+      "original": "graph/fighters/blueangel/duck_kick2.bmp",
+      "originalSha256": "0f723f003a59638542782aae2813ef3409f08c66f3c1e1de23aeef80bf70f1aa",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/elbow1.bmp.png": {
+      "sha256": "e1b3a1cc6618d3c7178e5b0d8ea93f4943ff4ef7ab45c472af313bee0e77f312",
+      "original": "graph/fighters/blueangel/elbow1.bmp",
+      "originalSha256": "eee2f8d12f36241035110ecaa1460b8907bda9adc2ae7c82dabd9d5ab37e8384",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/elbow2.bmp.png": {
+      "sha256": "e9c4415e6902ccec14ce904d0521bb6ecf1acc87fbd0d7b7143d5bb17978616d",
+      "original": "graph/fighters/blueangel/elbow2.bmp",
+      "originalSha256": "f8917150a76dde00b9b3032f1a47a8af0e4cc8a55f9ba07c113a6777e20b469a",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/head1.bmp.png": {
+      "sha256": "0eabfc1434d5c34a6ef7070b76ae116c1932fdc902db453b6e04a034964eb61e",
+      "original": "graph/fighters/blueangel/head1.bmp",
+      "originalSha256": "811f6608faf3a5e29c3df7a755f4c48e5efdfdf24878921a687c7670f7ef8649",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/head10.bmp.png": {
+      "sha256": "e174e8c0987697582bfa2666d35261a35a0032c8f01d913e121a667d90c186c4",
+      "original": "graph/fighters/blueangel/head10.bmp",
+      "originalSha256": "e726dce43f04046e789797ad888d476cf34cdfb8d03e2a050b78ef542ef41b39",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/head11.bmp.png": {
+      "sha256": "6055e7bbdc534d2d747ec850cfabd9fec025deb909d2b7513c1c4cfd18dcdeed",
+      "original": "graph/fighters/blueangel/head11.bmp",
+      "originalSha256": "4e0dfc1853c926864bfeb7182aa2ded34cb3dc70e1aeba917c340b9d8c6dda6c",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/head12.bmp.png": {
+      "sha256": "860f1e15fa6d6efd3a197ad5eafaad63eec2a3972944dcb63523538aafaffe04",
+      "original": "graph/fighters/blueangel/head12.bmp",
+      "originalSha256": "ec4d3ba6791c76b4dba756d784d16e9b0e5109eb52d6d3d0a9398b9734b159c6",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/head13.bmp.png": {
+      "sha256": "32e8700468e79762ac76108ba2ce5b9035859dc20eff6d55cf62adb080b4644d",
+      "original": "graph/fighters/blueangel/head13.bmp",
+      "originalSha256": "3880407822e24359b685fc7ab95435f8903111f5faa8c3b75ed19a226d6f1474",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/head14.bmp.png": {
+      "sha256": "2c2dc683b95caeb25e70c09138f5b21b13ddb21dea763659b8a790e91df6b778",
+      "original": "graph/fighters/blueangel/head14.bmp",
+      "originalSha256": "c5d993f64bb1c2c40f4e7f64195ad68d1770a49c868bf40d610e3a73104ee88c",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/head15.bmp.png": {
+      "sha256": "2406f641d7b39011e82d3b3b210e4c34a71dca4df6ef6cdeecf70e095d942802",
+      "original": "graph/fighters/blueangel/head15.bmp",
+      "originalSha256": "958679d42c71926b5e06cf010e5868dcb8fecb8c7e25b179a32ef91ca990f4d7",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/head16.bmp.png": {
+      "sha256": "54be2d9eea769e8c7fecca257ceac98783d8682389719d7e94bdc1aee679288f",
+      "original": "graph/fighters/blueangel/head16.bmp",
+      "originalSha256": "ea846cdf15b466586b3f90850520e96ebcfbb5f649dcf891265e0b10999d9630",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/head2.bmp.png": {
+      "sha256": "2cbe83d80685e071ad35123ab7b03429bae5793a6d1e8afbd10cb83d419defa5",
+      "original": "graph/fighters/blueangel/head2.bmp",
+      "originalSha256": "1b259755e8e770af8d5d710b3112c3c1c445d1a732595b2c96363a88aa38e067",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/head3.bmp.png": {
+      "sha256": "a65ab436d1832350e676f36435b2999981d66acebbfd051f1434e5c120bb2041",
+      "original": "graph/fighters/blueangel/head3.bmp",
+      "originalSha256": "00b15e9d3bfe377c9babc5567948ca86cc8aa755d7398b3280b285e6000c4df6",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/head4.bmp.png": {
+      "sha256": "fb2fcd86ade5702ad249d670d4e29e57d5fc26ef645ad35fca514dbb1101836d",
+      "original": "graph/fighters/blueangel/head4.bmp",
+      "originalSha256": "7e87917441a7c237812d333242feaa302f4ca7dba981ca0c2cc2af3d871731af",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/head5.bmp.png": {
+      "sha256": "5a1c36a0a8ba027d37221fc16b0f43d3f9aa6f030d2060f699e99eb35310d8f5",
+      "original": "graph/fighters/blueangel/head5.bmp",
+      "originalSha256": "c069459bf189b6667cc9be359c0d18e3c66142f02a761baf87a37f6b0247f993",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/head6.bmp.png": {
+      "sha256": "611163ef537a15fe28179d536aad8834d08cfe62d2482924a24c5ab9ee66a35c",
+      "original": "graph/fighters/blueangel/head6.bmp",
+      "originalSha256": "7e5e8e030b2285fa94f20fb0dbcc48e7079452ccad21c1ca4dd15c1da0e04dc2",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/head7.bmp.png": {
+      "sha256": "18f2257b83c43a05fb541f2fc2ef53f64f8b597a8594fec6e239402ebf6338f1",
+      "original": "graph/fighters/blueangel/head7.bmp",
+      "originalSha256": "dae7a390b6264b2cd085296f39d321d7ec965733df61ef6533870bc23191ba66",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/head8.bmp.png": {
+      "sha256": "b2ae65559c532d3de5e6f46ef120abf7a9d7f44cd9ddec7de27eb354cd7a42c7",
+      "original": "graph/fighters/blueangel/head8.bmp",
+      "originalSha256": "681aa750ccd8717e3d5214d267204ab5f778065de857a4a92159158efd790a2f",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/head9.bmp.png": {
+      "sha256": "9a6874b75e2b935792820662063eafbb928a576c4966717889b00c8ad012c069",
+      "original": "graph/fighters/blueangel/head9.bmp",
+      "originalSha256": "573aa19e1af0b21773a8d79ee5be453111ff46d5bb9c42e1cbeebc3e5dd179f2",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/hit1.bmp.png": {
+      "sha256": "932c174ce52f37b76dc39d0737061a2206c7b5d4733c28a9556f41cd0b6e71fe",
+      "original": "graph/fighters/blueangel/hit1.bmp",
+      "originalSha256": "ed71466632ee4186c1959879991611ea59c022d1f4808e63a3ac791c7952dac4",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/hit2.bmp.png": {
+      "sha256": "4006ee50759cb1c4e90c4ba979162c2027b222019465bda1f50c544600f2a4ae",
+      "original": "graph/fighters/blueangel/hit2.bmp",
+      "originalSha256": "567a2bae46c174adf3bb8abf25fb8260da938a846dbdf684b31118838a0c7ba3",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/hit3.bmp.png": {
+      "sha256": "23eceb09a86ecaba95d337aaa78bd5a815e7c04604e505349904acd602ba09d2",
+      "original": "graph/fighters/blueangel/hit3.bmp",
+      "originalSha256": "6c9c83350593042e875f792709cc96950454e0536a3ef1d177197571dc7632b2",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/hit_duck.bmp.png": {
+      "sha256": "179510f286fe8c7344bba8b90f710781e918d4dbd0c74e1164e22a776163f0be",
+      "original": "graph/fighters/blueangel/hit_duck.bmp",
+      "originalSha256": "056d6d28fac741088f90ee1ee922ef7b696caa8c24430f97fcadb71a3ed2f802",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/hit_high.bmp.png": {
+      "sha256": "652d424d3cdec92fa7fc57d31be1f193681ff89d43f007fd5d7fdfc86e5da685",
+      "original": "graph/fighters/blueangel/hit_high.bmp",
+      "originalSha256": "60d0dc188c32fb859bda30442585915e3044a34baec247307dc7ecd6fc65c2f2",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/hit_low.bmp.png": {
+      "sha256": "5fa7d88415aa6c212b3f8d67099330c47bd5b752d74fcae3a2550ede7898238d",
+      "original": "graph/fighters/blueangel/hit_low.bmp",
+      "originalSha256": "78a05c933f67e246557bf12064d4a75dcfda6a9847fdb7fc559239aba999f1b1",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/hit_middle.bmp.png": {
+      "sha256": "b17544dbde8dd5db4c6b7872fa14e37e627150913d5b373a2c9022691d28dec5",
+      "original": "graph/fighters/blueangel/hit_middle.bmp",
+      "originalSha256": "d56641002c8f3a13183960349e666565d49ad34c3bc499d54caa9bf0786d5684",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/intro1.bmp.png": {
+      "sha256": "55ac366b366b27ba6a5d0459b3ba9bb53b4911e309ceca2431b92d163fe57b7f",
+      "original": "graph/fighters/blueangel/intro1.bmp",
+      "originalSha256": "71acdf7a38e7ad8a82d2eda1863c72aa5d45ac0ebfb709b4dcec57c5c954c5d1",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/intro2.bmp.png": {
+      "sha256": "0559914b595bb19843cb9913ad1cf53192573991c49d259da0976fe9ad79ad2e",
+      "original": "graph/fighters/blueangel/intro2.bmp",
+      "originalSha256": "5ed5acc21889e81f52abc59d70255d51d513a513e84ead27a4338237141d794f",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/jump.bmp.png": {
+      "sha256": "f55cce011c1ae31df1ea5a6cc68cc5450e2077204ebdf651b11f76a8b370732e",
+      "original": "graph/fighters/blueangel/jump.bmp",
+      "originalSha256": "9e66430c04e3239a1cb76d17dc41eaade0dfddff12c8b49d471582a2e9f80e3a",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/jump_hit1.bmp.png": {
+      "sha256": "85f77c143edda8acfb6cce8749beb188871a41fd4cc98f85fbbc25283b809f5b",
+      "original": "graph/fighters/blueangel/jump_hit1.bmp",
+      "originalSha256": "f67dcc779e4f888bfe6d304c2d6b32861ea552ff311769a5524f8778e0b22750",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/jump_hit2.bmp.png": {
+      "sha256": "d83b750d16f0590268461986ae3ef800e2cca17f4c10b15fd6b00e20654685bc",
+      "original": "graph/fighters/blueangel/jump_hit2.bmp",
+      "originalSha256": "f6632a1c39ec0b8b29b39e940db377854942824bbb6936ca44ba1c08e645bebf",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/jump_hit3.bmp.png": {
+      "sha256": "8a170be8322a101fcdb4da5284a798b521cc403822fc155f7cda24e866bdbf9d",
+      "original": "graph/fighters/blueangel/jump_hit3.bmp",
+      "originalSha256": "9bb36d819c09d9bb2fe65af598a68e7f94aa3a64f57537ddbc64b391d92d0520",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/jump_kick2.bmp.png": {
+      "sha256": "1e7b7b4c3cfcab028a66f0661542621720de2a7858bbecb53fb9ded0e79e8c53",
+      "original": "graph/fighters/blueangel/jump_kick2.bmp",
+      "originalSha256": "9845e09125e26f324846532f7d37dc97498d04a0d3e21509dc9e566b757fa85a",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/jump_kick3.bmp.png": {
+      "sha256": "1547e4f8ca086a62c5675377ad0a486b9b05213c01d8172ed89be6dac6d9669e",
+      "original": "graph/fighters/blueangel/jump_kick3.bmp",
+      "originalSha256": "86b7310ec22df8c4c1609ed7b15b8495e5890770bb9840c8e48fb490bbe226b9",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/kick1.bmp.png": {
+      "sha256": "d58e39511482cd550af58708f31d46ac038dff14f73154bed66bd8bdf0eb85c3",
+      "original": "graph/fighters/blueangel/kick1.bmp",
+      "originalSha256": "b8956b2991700789e0204aa436be3745bef4e8be16b1b3b7838b98f420c5ffaa",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/kick2.bmp.png": {
+      "sha256": "fd94441caf675410778219db2ecafa4ed2a01a4c96838717ec6d768b880c2167",
+      "original": "graph/fighters/blueangel/kick2.bmp",
+      "originalSha256": "dea4db6daae01d1058c14f9845eddf551782b9464a7ecc3759017eb17288b3d1",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/kick3.bmp.png": {
+      "sha256": "46acc64a5b2b1566ef2cc52133a1a3854f84faafb445e60a4f45e28f38768abc",
+      "original": "graph/fighters/blueangel/kick3.bmp",
+      "originalSha256": "4445f6083c715e1039a7d8b3facb0ac8336ec4ca9a9a32792906258f0bdef08c",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/knee1.bmp.png": {
+      "sha256": "c4a138d3ec4a5e2b236a8b3f19a7b0a8448f2c236bbe7c8eba7837a028a431e2",
+      "original": "graph/fighters/blueangel/knee1.bmp",
+      "originalSha256": "431bae1c95d21e24253610a17cd982864c691011b5e119c289aab36531ab0798",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/knee2.bmp.png": {
+      "sha256": "2938aa82cb83bdda61e719590190535c5ab63488bba7a00534288d4ee81c6c7e",
+      "original": "graph/fighters/blueangel/knee2.bmp",
+      "originalSha256": "d2d2c5195fe1952805a3e01002c5d48fe267f9a4f2d4f977fd15ba4c64346649",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/move1.bmp.png": {
+      "sha256": "a6cb2c021a8a57a938d68e586feb728825e259e6be88bc5a05815ef62c1bd418",
+      "original": "graph/fighters/blueangel/move1.bmp",
+      "originalSha256": "886468d27b525ceba57985ad645f8b9ef9b19e1512b520fe0515b865bf7d91d9",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/move2.bmp.png": {
+      "sha256": "79cec645dd9a312494eb72fbc5a412a978c719e1f9acd91d467cd81b8f171b1c",
+      "original": "graph/fighters/blueangel/move2.bmp",
+      "originalSha256": "3860914f640293f56aeec907df5347d0f6360f5eea92485a43f0125c8bc06698",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/move3.bmp.png": {
+      "sha256": "b129a8a3249aa458d9ad39fac7d62aa6c097c9ef38d1e657389d03acdfdcd1b5",
+      "original": "graph/fighters/blueangel/move3.bmp",
+      "originalSha256": "0d27ac36fe89f00255d8d17bded2840f596c1710dc02317c989084a3454bd00a",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/stand.bmp.png": {
+      "sha256": "26ae275b59e6b3e74bc442532e509c67263773a441fcd57a3ab1745a5a53b0bc",
+      "original": "graph/fighters/blueangel/stand.bmp",
+      "originalSha256": "99b164319573a5bcc30f2ac5228fdc5734fd9060bf48e59f0e5b1595b0964358",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/stand1.bmp.png": {
+      "sha256": "52713214058db6476f2f27aa53df91c923833489c5e96375fce45f15ad75f750",
+      "original": "graph/fighters/blueangel/stand1.bmp",
+      "originalSha256": "26443a4a825a798d6d25c17223ff36bb01d2c09cc82eaee3ab248b96f24c3993",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/stand2.bmp.png": {
+      "sha256": "a4f6b100cb5a49fd1f77469cdc24e0982a42f13e35a980825a49c27545753bac",
+      "original": "graph/fighters/blueangel/stand2.bmp",
+      "originalSha256": "973c063b040750027697c2fd3f20958c71b497c581bce54f71dcb5d2747abd15",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/stand3.bmp.png": {
+      "sha256": "ea02fd8e4a72b4291d116797cd78600d252e52c36452455c71609e6fa594d8ed",
+      "original": "graph/fighters/blueangel/stand3.bmp",
+      "originalSha256": "25b75fb4af70fdbde78157d3193e673d1f1f31227b2abb152855c8b08113f77f",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt10.jpg.png": {
+      "sha256": "2c711792c5d1f9f2f299d904782d9f11f936b2e67b1d0f952cc98880d855c5ad",
+      "original": "graph/fighters/blueangel/taunt10.jpg",
+      "originalSha256": "d44e5697e09cb67fcb498d92767784620c151fdc7b137f9a2cd40c697abdb02b",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt11.jpg.png": {
+      "sha256": "1a4064b1ac4c9295e2eb188b60586bae3fad1a75fb65e03ccf786dcfe112b915",
+      "original": "graph/fighters/blueangel/taunt11.jpg",
+      "originalSha256": "4cc3caf7edb941dc39b52200f503c9b5b52ee400e7f4d6a023442a1f010d7f15",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt110.jpg.png": {
+      "sha256": "8470a5ebd15c3a41911f68085e4239722f327018dba0edfacc0650a2a72e5670",
+      "original": "graph/fighters/blueangel/taunt110.jpg",
+      "originalSha256": "cdf9a12606d247d18d53bbc11ca6f32a8e8de3e102329b13fad26a67e24966a2",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt111.jpg.png": {
+      "sha256": "f77ab3f1690212962a65d0f269ed812db8bda36b84b6a1647d2dde6c7c53d709",
+      "original": "graph/fighters/blueangel/taunt111.jpg",
+      "originalSha256": "78cbebda8f06782aeb2a5a4d16076b607fc2305a44f5e6e9cb47d7a185cb7510",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt112.jpg.png": {
+      "sha256": "a97696f1276e1b6255e75f76450d8e84aa158377516df87bb574a16729f1e54b",
+      "original": "graph/fighters/blueangel/taunt112.jpg",
+      "originalSha256": "850301cbba8e6193deb026e73a02135f1a64348b69f4f629c3afd979caf6df8c",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt113.jpg.png": {
+      "sha256": "23fc3bfe8f98e1c88066fcba598de83b1f304b628fe09d1fb94c008eb8a554ef",
+      "original": "graph/fighters/blueangel/taunt113.jpg",
+      "originalSha256": "e9165062309da4d49999f1f3999ec59e5a47a15c4084716ff3970217a6284c73",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt114.jpg.png": {
+      "sha256": "6e484122a81ee887d5c4eecdd57d6c9e10cc1b8de04ffa00f2ec450f66f6f746",
+      "original": "graph/fighters/blueangel/taunt114.jpg",
+      "originalSha256": "4ec2eb681f754b911aee15fbbc798cbc3f0d920e910b7baf7eaa183260de8a83",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt115.jpg.png": {
+      "sha256": "f267f150a417756c1e852f818eeb5ed0e83852f0ea584e4421b06b0a08e686d1",
+      "original": "graph/fighters/blueangel/taunt115.jpg",
+      "originalSha256": "7a5474f859d69c358e0676a6309baf33a7a502df8840916d4d33a9e41fc17b05",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt12.jpg.png": {
+      "sha256": "6105cf9fc8634eb6be024cc809e2c4d103f90f27cbe73e501f77dd55b759e729",
+      "original": "graph/fighters/blueangel/taunt12.jpg",
+      "originalSha256": "6c2d3cd82fda6ea82685c1ad181372148c8f9ea0ba4ce04c62b3df085bf6b80f",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt13.jpg.png": {
+      "sha256": "71741cd2af22277590f31d679d9a8e657be78d2cb92dcd76aa9b41dda52178e4",
+      "original": "graph/fighters/blueangel/taunt13.jpg",
+      "originalSha256": "03f33e22507e2f3fb2d083796fe012f97de4f4979a24d34e756d279c0724c511",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt14.jpg.png": {
+      "sha256": "0a9ed8ad02cab11e06a2cc0a3412af2369618a99fc9b6c694ffc647002f8abab",
+      "original": "graph/fighters/blueangel/taunt14.jpg",
+      "originalSha256": "bc3ba0cc6aac460f7b92a3675fb95beebb93a40fa98c90fe7ca3bda0b632e4c7",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt15.jpg.png": {
+      "sha256": "693cd8e396758d97a412abc4a08b13ed1688fb958f06abffd1c2f2315c35efbf",
+      "original": "graph/fighters/blueangel/taunt15.jpg",
+      "originalSha256": "443e104bdeb734c4b67c72ef0ae27cecf9f084383385e9a78614d15ad1f085ab",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt16.jpg.png": {
+      "sha256": "1af257418136b71f455fc5fb95583d67e93585f708895b7dea30497c9d0242dc",
+      "original": "graph/fighters/blueangel/taunt16.jpg",
+      "originalSha256": "2badcae48e6f7eb2887faca78aa74173b44a1fe3fba0ad994c27903aa776d3d5",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt17.jpg.png": {
+      "sha256": "6c9881fa38cff9a8061f4b82a373f3708ddf2a90f6f95f41310bc758bea1da2b",
+      "original": "graph/fighters/blueangel/taunt17.jpg",
+      "originalSha256": "9722f15d78173e8bc82bcdca4311164004fe2704143e45c4642f9ddee9371832",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt18.jpg.png": {
+      "sha256": "b841aac8bc8a513c5285fd8e703767eaea2ab01d2365346cf042e42f40ca76bc",
+      "original": "graph/fighters/blueangel/taunt18.jpg",
+      "originalSha256": "9c4c47fe65c1fbb43718d680e7a21201fce2560c3eca303ab240f6304e627d23",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt19.jpg.png": {
+      "sha256": "490f6c1d8418ee2b2e376405e8cf0167d8c950b00f33609abd2663b9a7a21a4b",
+      "original": "graph/fighters/blueangel/taunt19.jpg",
+      "originalSha256": "5bdca5923992ce0eb989bb9bae92e088eea1dc6f0b41091ffaadd0f7675f32d4",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt20.jpg.png": {
+      "sha256": "38f27ef2dd80efd9ad946cbd77d149867c8ab0ca3334015f129e42fa86d073b1",
+      "original": "graph/fighters/blueangel/taunt20.jpg",
+      "originalSha256": "228c34c21c782d1fb603ac9c9167e274b93ad5c331fda2b213458c3a26cf4de9",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt21.jpg.png": {
+      "sha256": "3bf88780080411e047d91f00ac7fac9184ca96650df39e82853a85f14dd2914d",
+      "original": "graph/fighters/blueangel/taunt21.jpg",
+      "originalSha256": "5a9fbc1537753696463155b5369cff3c815497ad689b86ff5fcd20779b11ab04",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt210.jpg.png": {
+      "sha256": "cb2dbc39545a29422014f23bbf7cab95d7d79808cbe9d61af9887f0f75d4eb3e",
+      "original": "graph/fighters/blueangel/taunt210.jpg",
+      "originalSha256": "543007c10d76aced73949b4bbd1e8d185a3015c0d75f082146461b5527ef6822",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt211.jpg.png": {
+      "sha256": "67a4acbd15873620533db2da1993dc9fa73f2f140c57837471ec9173e320932e",
+      "original": "graph/fighters/blueangel/taunt211.jpg",
+      "originalSha256": "cf6a3514db053fd9786bc953144da6c69984005e9a32b1850f45e674edc49798",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt212.jpg.png": {
+      "sha256": "f20b1e2d23ced52c4730842b67cb746019f9a09d859a7981d1938eee9519d675",
+      "original": "graph/fighters/blueangel/taunt212.jpg",
+      "originalSha256": "534a2f0d72dfcbf67b54c6968569f7ef997f9de19faa035b87247c73238ee714",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt213.jpg.png": {
+      "sha256": "f8309cccf55e2cd8c5b16d78940c588db4a2b1fd6d51467fc6e675b570f39fc1",
+      "original": "graph/fighters/blueangel/taunt213.jpg",
+      "originalSha256": "7e4a0a9104b577d133c38a5cd2709a3a052c2afb4e7c71215006860d7ea18b71",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt214.jpg.png": {
+      "sha256": "520dcfabb371c907d3c946395c4c6d11a31b25a96b09c9aafeea77a8488e31db",
+      "original": "graph/fighters/blueangel/taunt214.jpg",
+      "originalSha256": "b7d7e04a5e61bdbff006f0fa13fa36682e04f8ae112b5ac560ccc15693cf00e7",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt215.jpg.png": {
+      "sha256": "752577884e757b1a015cf3ea617e0a79023ef6f9e43f0358e06b2143b908a151",
+      "original": "graph/fighters/blueangel/taunt215.jpg",
+      "originalSha256": "f74f6c411bdd6afe0ec9f236c754ff90d45d14b0be2987e829ca1b20f6822f8a",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt22.jpg.png": {
+      "sha256": "4bad120fb344e7406708c632385985abea565059c463a2da4eae4676bf0260db",
+      "original": "graph/fighters/blueangel/taunt22.jpg",
+      "originalSha256": "6a318f02712b79351179bf077e35e2d5591b882d39c7ffdf59e7cfb235b6c1cc",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt23.jpg.png": {
+      "sha256": "62ac3f52de491e9e8ea953816a08d339f487fdb971809c4fa12890b9b013f06f",
+      "original": "graph/fighters/blueangel/taunt23.jpg",
+      "originalSha256": "910a5c7b824a33f7307aa683338809d0813c4ed1bd468eec90e563b7266f26d6",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt24.jpg.png": {
+      "sha256": "743f7e6b8706b63788976a633f4e8ba7ac5370fa7285b44a04269140b449691b",
+      "original": "graph/fighters/blueangel/taunt24.jpg",
+      "originalSha256": "ba7e5b3ead27e90c0e3d114fa8e3102c85f4bf524e8de40051a31041586317a9",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt25.jpg.png": {
+      "sha256": "4fc60e40896c37438d79cf85e55582cac2062f7266c1d22ae7390abcad6db34c",
+      "original": "graph/fighters/blueangel/taunt25.jpg",
+      "originalSha256": "bfb1df981bb941ceb6e06888c3c442d964a60e39d85119acd2926315e33f1da7",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt26.jpg.png": {
+      "sha256": "100632e9f1da5982476dd416d9889ad3b7a4aa41f5391301a0ada5ffa77c2e48",
+      "original": "graph/fighters/blueangel/taunt26.jpg",
+      "originalSha256": "a0c80f8ce37c89c486d4ac41e338209e384f021be90c115cfc51727c57307793",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt27.jpg.png": {
+      "sha256": "79d9a43362dc17bbe770b1fe87bc71fa603ef0f548e3d4a2da231f5520f3f82c",
+      "original": "graph/fighters/blueangel/taunt27.jpg",
+      "originalSha256": "49438337ed496cb6f97b7df078cc103d7f5ca0967fc19b37f9507403a17ca907",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt28.jpg.png": {
+      "sha256": "ed173c6fb71f0a19b2f34990bdd8148eddaa681729f2fae262787ac8a25b9ee5",
+      "original": "graph/fighters/blueangel/taunt28.jpg",
+      "originalSha256": "07a4924b32b899d67e1ee3c68212b614fcd8a000fd3d42db13ddfed3cfdeebf8",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/taunt29.jpg.png": {
+      "sha256": "e2c9fc8008c86bf0bdabd86c284e447163888390240435169c6eaf3e927aa0aa",
+      "original": "graph/fighters/blueangel/taunt29.jpg",
+      "originalSha256": "47dec7b58f0119d8745f66a6016fee8175bea88946f098978f65f68318182450",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/throw1.bmp.png": {
+      "sha256": "84aa3d0aab3e6a185c3e7a26fc02b614b91c00581d8f22483e006bddd66bde37",
+      "original": "graph/fighters/blueangel/throw1.bmp",
+      "originalSha256": "e97d1ff952fc8de1aa39c8c163b04ab120c24dbf37fe998ed0bad6a374668c7b",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/throw2.bmp.png": {
+      "sha256": "7209377352c301287158313ab08f8aa2085bbe4c1f261fdd64624858e769a335",
+      "original": "graph/fighters/blueangel/throw2.bmp",
+      "originalSha256": "4af09d185c5cf53de56aece0348c1d15c4d7f7376f2cef2908635af755c31eb7",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/throw3.bmp.png": {
+      "sha256": "f9d24449738f287ba33f6564111fc791e141513bc1d4d59abfc17c3147df20b5",
+      "original": "graph/fighters/blueangel/throw3.bmp",
+      "originalSha256": "626622357c080dda5839e0a15207a3d8d475e18a73ee00749c09a63409291815",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/will_die.bmp.png": {
+      "sha256": "15519d5f798587c507ba3c2e0a93458ec034258481f9d972c0c99fed2c383ecf",
+      "original": "graph/fighters/blueangel/will_die.bmp",
+      "originalSha256": "f57e302248610a7ea602aff83f83be875406efd5ed9fc45c6f87be89421c5059",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/win1.bmp.png": {
+      "sha256": "9b502a82f55e8201b2fa36c421aab74e76edcf87057ef1e91f112bfb21cd0ab1",
+      "original": "graph/fighters/blueangel/win1.bmp",
+      "originalSha256": "dd258690000bb9ab7ab46af6e82e0b6c639fe8bae5a6794fa2fc7ae227147ee3",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/blueangel/win2.bmp.png": {
+      "sha256": "b8cb4f4d9ea0031bdc1fc4c7840123030bdb75e8204c990651bf7aaf39703e4d",
+      "original": "graph/fighters/blueangel/win2.bmp",
+      "originalSha256": "b8d14b631403b2315e788b00d85efb91ee2a43aa36f06f4de9322c3ff2c9bc34",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/dog/bill.bmp.png": {
+      "sha256": "1482743b6a10321746e82ca28510446df083d6de394b54d40c83757bfff8e0f7",
+      "original": "graph/fighters/dog/bill.bmp",
+      "originalSha256": "be1115482ec2fea7776f85bad2036212207680b30222cf07740019a357ded0ac",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/dog/deniro.bmp.png": {
+      "sha256": "b97e64fc3ff78883178ea7388c951e75a022fa08c9c4915d556714a6835a4c03",
+      "original": "graph/fighters/dog/deniro.bmp",
+      "originalSha256": "2cc36c3301aa45982955ef7acba1762240f1e934df978d969f6a5ae830e910cb",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/dog/head1.bmp.png": {
+      "sha256": "4f28a9a75b08bd60f0b4fe5e2928893a65cf7be538b5aa9903656e645e0043c7",
+      "original": "graph/fighters/dog/head1.bmp",
+      "originalSha256": "2bc676c18c71c8247dd317febd82973d525e46c695ab4bc8204d953e270b1430",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/dog/hitler.bmp.png": {
+      "sha256": "1fdc11b004d9c9791e4a5487179a8e800291279c362e7820aa866bd79ac4b4ef",
+      "original": "graph/fighters/dog/hitler.bmp",
+      "originalSha256": "37b1c86862f15e826b32dfcca9ad2215f758164451cf606410e0efe0b4aa0a15",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/dog/osama.bmp.png": {
+      "sha256": "89f3f02432804ceb4dcf437e7642cf3fde0180ee8f82f7f2ed23a91a706a94ad",
+      "original": "graph/fighters/dog/osama.bmp",
+      "originalSha256": "d1bf2f9077fd40e40914990a51571592fe92af1859bdf9a0e683862b1bfee5bf",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/dog/roberto.bmp.png": {
+      "sha256": "fea6646a4f81d4589ce1c9efc04bece2521f74b3a87e702218126859575c818d",
+      "original": "graph/fighters/dog/roberto.bmp",
+      "originalSha256": "f393c945d14e644c7557cfba5661c7e184afa1d1014773f7b0f1097c2f56d210",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/dog/stallone.bmp.png": {
+      "sha256": "d0e86952debc92aba290b8f5411e4158a3b5b08cd4685aa6f1a178bba32403f7",
+      "original": "graph/fighters/dog/stallone.bmp",
+      "originalSha256": "86a85cd708842471798090ce12a36d18b63ac0b4b26d5f30e2653af00eb29e9e",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/dog/tyson.bmp.png": {
+      "sha256": "60010c0714c8a34cddf54c26a6e23c84fb06bc1feac64e17e208945c2e4d6330",
+      "original": "graph/fighters/dog/tyson.bmp",
+      "originalSha256": "a8b39263ed22517b22ed9d3dd6708936690d74dc01808c2c046c1d27a61a6cc8",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/block_high1.bmp.png": {
+      "sha256": "d96d347a6fc37c5f7aa493c529b9192eb43b5de18b1033bace41ad1eef46377f",
+      "original": "graph/fighters/joynes/block_high1.bmp",
+      "originalSha256": "03ba75ee5d1cc6092ce4b0fec739183238f2755429e424f1a3d17a0d40eea7b0",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/block_high2.bmp.png": {
+      "sha256": "b12018b71d02d5fc50d2cdae4d468ab295b7cb8c1c7f02ffadafc5ced56a8607",
+      "original": "graph/fighters/joynes/block_high2.bmp",
+      "originalSha256": "64b5514720485884cb7f4346ea427fde94ab4f7926177244d326bfa2b54e059f",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/block_jump1.bmp.png": {
+      "sha256": "57a9c77dd8a917bfff30e21919efe3aab2cdbe037162e8140c51284d28875065",
+      "original": "graph/fighters/joynes/block_jump1.bmp",
+      "originalSha256": "b82bbbfb723f0f281ca0ecb0df6bdff5c2c3e3af3612b2ab4d1e9124700f92cb",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/block_jump2.bmp.png": {
+      "sha256": "aa6c0415a4f4593d2d56bb735a488eaadb8e53504ce2cdd4163d49a858abfda5",
+      "original": "graph/fighters/joynes/block_jump2.bmp",
+      "originalSha256": "6e6e58748923d0933edff0a6a26fd187792deb264dee77a0b063c115980db5ad",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/block_low1.bmp.png": {
+      "sha256": "fac2e06d45f5b2c5134661b68e4e995f653bd1c0938fe7717fffa9950b119716",
+      "original": "graph/fighters/joynes/block_low1.bmp",
+      "originalSha256": "e858df6a76ceb41704d6635bfc1103733b60293d8903ae4dbc4a1c5a4fe8cb36",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/block_low2.bmp.png": {
+      "sha256": "bef1f7c71f2e067163d460b69031069e3a8cf19781143c43b6616e1430d46c87",
+      "original": "graph/fighters/joynes/block_low2.bmp",
+      "originalSha256": "92a1a2cf7468257eeab791cdecfee286e3dbab6b9edbce5684f9ddacf114326e",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/block_middle1.bmp.png": {
+      "sha256": "87464ef85cec3832fce3db2928aba6318c1d0760c40b52367b46ea414b420d26",
+      "original": "graph/fighters/joynes/block_middle1.bmp",
+      "originalSha256": "b1767b330da9164de35485b5f581504b7dbd968f652cc4bf764e5f90d828dd71",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/block_middle2.bmp.png": {
+      "sha256": "a46f650aeaa61395dfa29c9fbaa4c29006ab9b1f0b05e9cc5f07ba587c629b01",
+      "original": "graph/fighters/joynes/block_middle2.bmp",
+      "originalSha256": "af411b8a0123cb52695a9042f12730bf49e7e3af2c4b218a38d8ed46c59594ae",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/duck.bmp.png": {
+      "sha256": "b3ff1e88677dcff5bd77d010db0c8ca7faf1d4111297853723fb7aee719a1cf7",
+      "original": "graph/fighters/joynes/duck.bmp",
+      "originalSha256": "0e35eb927d385d0b0663367e855bd9f66cda0d85d6fb99ba6233426c3d364a6b",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/duck1.bmp.png": {
+      "sha256": "0e0608f22a21e1990f46539a7c95e9c0cc3ffbedca7eaf314fc3434ba9a073f6",
+      "original": "graph/fighters/joynes/duck1.bmp",
+      "originalSha256": "8a8d821a0b4a21916c8ea2a30b69dd3a8c08f44043bdff016222ae31a745d51b",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/duck2.bmp.png": {
+      "sha256": "808ccd8d14f066cf3be5a67e6557b3c26f9f40ebc72d5909852057115e39e633",
+      "original": "graph/fighters/joynes/duck2.bmp",
+      "originalSha256": "0cc8e13f2f1cb35ec21ab2272c17ce668fe5b94263ddbf5e083b419f542a06bc",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/duck_hit1.bmp.png": {
+      "sha256": "255d2d94115f58cbf67806b0775c2ef632df902a4febd20c87b06e8f805464f6",
+      "original": "graph/fighters/joynes/duck_hit1.bmp",
+      "originalSha256": "a3aeb7f37adfde5e6ea9f59bc70c398b2e623b20baf5e627e52ee17deb0f6711",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/duck_hit2.bmp.png": {
+      "sha256": "e0f6f273b4dec89e735d08e703d20cb6e1bbf475ed62daf43c9921d8977c73de",
+      "original": "graph/fighters/joynes/duck_hit2.bmp",
+      "originalSha256": "8675ce37dfd4cb7007fca5fe4884db60de13923be996c8f45d44e4bb713fc3f7",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/duck_hit3.bmp.png": {
+      "sha256": "b7b3222ae91670184ad3718d2c9b578e1da36b925d2247f1e8547af56eeb9f31",
+      "original": "graph/fighters/joynes/duck_hit3.bmp",
+      "originalSha256": "7c0d35bb0cf68336f86856aaac68a4ab5be506dda4173201dd541a76ad2cef81",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/duck_kick1.bmp.png": {
+      "sha256": "f49060fda3fa6776ce82cc65e05d950af2b0e738986678d63792584cd1bbf0c1",
+      "original": "graph/fighters/joynes/duck_kick1.bmp",
+      "originalSha256": "187b28904d607edbbadba1fd5332513ab384300e839661bcbae27727dd98806f",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/duck_kick2.bmp.png": {
+      "sha256": "c0bf7595c06acd8de8fcd6ca3aa2a299561cb4aa78d370af0fc4233c8f6750f1",
+      "original": "graph/fighters/joynes/duck_kick2.bmp",
+      "originalSha256": "dc9d37de0ff1430520480968b7e0483d868971d397c8e68c3eeb6ac392c78601",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/elbow.bmp.png": {
+      "sha256": "d5de2d27a9fcca0e59220b591125a280846e23acd17b34f9adf725e8aab7fda1",
+      "original": "graph/fighters/joynes/elbow.bmp",
+      "originalSha256": "b5a72bc2548a64c4ffd051bc199454315d1b65f8e7092eebc3a6bb303effc137",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/elbow1.bmp.png": {
+      "sha256": "f8b860fb8eaad2a047cb63d692e497e5bcaffb299ff36def9b3a3e135882a233",
+      "original": "graph/fighters/joynes/elbow1.bmp",
+      "originalSha256": "c5867cd4b798521e6589ef94295f70d0947c4accc2d7f50f578fd864da939ef4",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/elbow2.bmp.png": {
+      "sha256": "8467b515cb86242e75d1678a3405c6a4b89a73660f963e12b0d92abbcae5b067",
+      "original": "graph/fighters/joynes/elbow2.bmp",
+      "originalSha256": "8bf701b17ea8d2bf196d168c210598f6a86433f010f52d6d14ffe9b5228de40a",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/head1.bmp.png": {
+      "sha256": "2cd9e4097dbbb9d2a991b2b40b603f2fb5177009e1d4e734c7cd2d6d63234500",
+      "original": "graph/fighters/joynes/head1.bmp",
+      "originalSha256": "c6126bb148f8dbc188fd9231910283a7f2e863996c6a4974b9d5be4540ccf456",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/head10.bmp.png": {
+      "sha256": "b6c3120a4e3101b5efdc4b310bacf84535e78286ccfcb3358b58d7791dfc5c56",
+      "original": "graph/fighters/joynes/head10.bmp",
+      "originalSha256": "e1f010cac79dea96eec36418cc306327467c62d55823650ebfd53133d7e87bed",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/head11.bmp.png": {
+      "sha256": "47fd5d61fdb8153196510db855e14af8c5b4e6d1be9530483bfec9971857a15b",
+      "original": "graph/fighters/joynes/head11.bmp",
+      "originalSha256": "c4d864482f62b56b5198d295dd189a98a230daa79a1e9b9d6fa32247e9aa2686",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/head12.bmp.png": {
+      "sha256": "7d7c652c076c0201efb0a19f1b9ede7412f1b246570a1bbc1b6eae984a44998d",
+      "original": "graph/fighters/joynes/head12.bmp",
+      "originalSha256": "6d44bf6af81cb5c6f305d6f54922c551e24fbab543a12c2f58eb7b1a366103a6",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/head13.bmp.png": {
+      "sha256": "ec656c9e3f4659d285b69665648ab5009e11b76f5ba4d83942838f8e4994b6de",
+      "original": "graph/fighters/joynes/head13.bmp",
+      "originalSha256": "1eb4730c9b2d74ecf7a3ff7e7944edd8657f20c9b334def258ed59f8e0f3a39b",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/head14.bmp.png": {
+      "sha256": "3235f19aa01b8911e457134d8ea70150c4821514c082a58e4ae29ac1de4d4596",
+      "original": "graph/fighters/joynes/head14.bmp",
+      "originalSha256": "5b974051b7551aed2f806b5e219a49edbc262e8c79ffc9defac42d1ceffdce33",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/head15.bmp.png": {
+      "sha256": "ad4238df1fbd72ed406dbf84833b4a390c9fef1f49b1a862fe41bf9f36b3797e",
+      "original": "graph/fighters/joynes/head15.bmp",
+      "originalSha256": "a9543dcf17ecf7698914e769870c900f9e41c5240df71648754c8a441530a7e6",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/head16.bmp.png": {
+      "sha256": "3bf696b3f7f340d536fa264b947ba8bf174c5bf3f60421b402809a6470eec0b1",
+      "original": "graph/fighters/joynes/head16.bmp",
+      "originalSha256": "1454edc0e137fa8965cbc1d9dd62caedadd5d7db8fc90063476db900fbefc4fd",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/head2.bmp.png": {
+      "sha256": "869ad7e322136ecc752d7a462143667e6b83ff35db130213dacef303d2e40942",
+      "original": "graph/fighters/joynes/head2.bmp",
+      "originalSha256": "9b61e9f5baae4f7dbed2775566c15a43564035491a1101b5b044589135d2fac1",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/head3.bmp.png": {
+      "sha256": "7862603d29524985a40ffbb3bd83be99e3c2c239fadee78dfe011c96e416fb2f",
+      "original": "graph/fighters/joynes/head3.bmp",
+      "originalSha256": "cc6f4d8f692de2a0d71aa311885b42e6244379fdbbf562ef8bb1a08c189558aa",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/head4.bmp.png": {
+      "sha256": "06cf758c876d55292ec82b75e4f368de190f3e6be7cba1d42f53a3c0d842c971",
+      "original": "graph/fighters/joynes/head4.bmp",
+      "originalSha256": "c2c458a6785f76670b10d08909544db9fd2b2519b579aa4399b51356fc701e5c",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/head5.bmp.png": {
+      "sha256": "d64aaac9ba0d1614c35855ec7c3ce96eeda35158cb798b31f0993342573135bb",
+      "original": "graph/fighters/joynes/head5.bmp",
+      "originalSha256": "fd8fbe352676342b544e98808ec1649e354384b8116dbe42bc0b943ca7bb4fb2",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/head6.bmp.png": {
+      "sha256": "bf6894207e2a83165d57140bbaf3ebc632077c416c017ce5a9214c5c4429c498",
+      "original": "graph/fighters/joynes/head6.bmp",
+      "originalSha256": "82bfd34812b6a77f3f89946b9e6aa77455c209cf72495f5497bc827b438321cf",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/head7.bmp.png": {
+      "sha256": "4017629d6fbc755e98699c42431e774018e460f8bf6a8cbfc60d3f75c918b1e2",
+      "original": "graph/fighters/joynes/head7.bmp",
+      "originalSha256": "718c138232cf022572c9eafa1053086b55fd36f4790fd80e236eab5991b6f801",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/head8.bmp.png": {
+      "sha256": "e3517222d0853d0283a63aba3805328eebb8c0d7c09e7940c9f55e5c359073db",
+      "original": "graph/fighters/joynes/head8.bmp",
+      "originalSha256": "e88a50725efa0948e87f141cebe06a220d86a5b77aeba5732ad6cbf88833f4c2",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/head9.bmp.png": {
+      "sha256": "a7f747149b11dd65538ebb1d4b0ba81d7bc9498787b8afe7af24f695838e1329",
+      "original": "graph/fighters/joynes/head9.bmp",
+      "originalSha256": "618c039fc4c857877641a221cc6e068ef634abb5fc0aa20bb252d3038569ac81",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/hit.bmp.png": {
+      "sha256": "73f73085a9adb9567399259822a01d89b6cbfdaff029f75ef45710779d8622a6",
+      "original": "graph/fighters/joynes/hit.bmp",
+      "originalSha256": "79128b5ab113d8d3ed26d2264419fc84ede9394b70f2d0c967af3b2ec3a1cae8",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/hit1.bmp.png": {
+      "sha256": "91b381bf5fe24ecdfcf1cb0a6fabdffb4919330a141e374cda804fd26dea883f",
+      "original": "graph/fighters/joynes/hit1.bmp",
+      "originalSha256": "a46e537a76824aa3312ceb193a5e247dadb619685887ae11a96ea10a6599a83b",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/hit2.bmp.png": {
+      "sha256": "6a16d619e25d6a5198061b1a678ae2d9aabc9f770803d726a45b007b5ffc11f2",
+      "original": "graph/fighters/joynes/hit2.bmp",
+      "originalSha256": "8f1e76b7a30f75a37e7dcb7751e5116b7c967e90b7acef64c5d666405bc012f4",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/hit3.bmp.png": {
+      "sha256": "73f73085a9adb9567399259822a01d89b6cbfdaff029f75ef45710779d8622a6",
+      "original": "graph/fighters/joynes/hit3.bmp",
+      "originalSha256": "79128b5ab113d8d3ed26d2264419fc84ede9394b70f2d0c967af3b2ec3a1cae8",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/hit_duck.bmp.png": {
+      "sha256": "c73e890e7a40a63fe90a4930d788ca2b0c3e108e61da974dfd0e23613deac3b8",
+      "original": "graph/fighters/joynes/hit_duck.bmp",
+      "originalSha256": "2086806ef5caf5b8858c510697dc1af6913c852587406fd49dd7c7febdc19c4e",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/hit_high.bmp.png": {
+      "sha256": "d97cf6ac55d1d1b324a2e596bb77759917f0b2253dad1ea3fb60b075f14e0ec4",
+      "original": "graph/fighters/joynes/hit_high.bmp",
+      "originalSha256": "4bdd9bce96ede832bbee167aad680408abb54a6438d9e5b61ee20608ea02eb49",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/hit_low.bmp.png": {
+      "sha256": "e47f12d5efb68d40db060c4d1d1c4212df1afd6c94cb770c8fc02b44f075b81c",
+      "original": "graph/fighters/joynes/hit_low.bmp",
+      "originalSha256": "f09a13994dcab617cf003a1224e06e346f9783ec9881cc9a386f78837360c3c1",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/hit_middle.bmp.png": {
+      "sha256": "be118304e9e901e2c28e8edd06e00f9d0f335fbd5cae2a59896e40236f8fdcf6",
+      "original": "graph/fighters/joynes/hit_middle.bmp",
+      "originalSha256": "b57e968bffeac04564464b617ed25180e7425e6abbd23cd1b2311f75abdbc1f3",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/jump_hit.bmp.png": {
+      "sha256": "392088e12a9e02b2adc73c99dad10a1953edc160db839d1e4246b77cc7fc8366",
+      "original": "graph/fighters/joynes/jump_hit.bmp",
+      "originalSha256": "ca7d2739478f8e4b53dcb849f070030fdd0d76e45c4855a78c24c0b739d536ca",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/jump_kick.bmp.png": {
+      "sha256": "7d6a9f14821dce6f126f506cb1af95bd498d313ab9b8de7d626636afab0d5f53",
+      "original": "graph/fighters/joynes/jump_kick.bmp",
+      "originalSha256": "62e8776ef029248d393af7236280787f2b506267aa8c8436c03a3d90c8ee148a",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/kick.bmp.png": {
+      "sha256": "443dda6e9cd6785ded912ad19e2fa71ede3a5dfe4aeefeacfc3cfc9e126d8c97",
+      "original": "graph/fighters/joynes/kick.bmp",
+      "originalSha256": "0ce4fb4208fb08a37adc852eca31a3547b0ddeab042235247e2bb8e0d837ed96",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/kick1.bmp.png": {
+      "sha256": "75ff849735dd63ca9cf0aa17331bcb14225f3e36041cbbf9b807f010cd29e463",
+      "original": "graph/fighters/joynes/kick1.bmp",
+      "originalSha256": "789f4fc505f7af89d4f9e730f50187522b49235e8f7b99385cb3722cd0f3eb67",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/kick2.bmp.png": {
+      "sha256": "02a32c16fd3f0b7fb9c2bfbce9f824305f90d5ed55c5673046c6177ad51d5a79",
+      "original": "graph/fighters/joynes/kick2.bmp",
+      "originalSha256": "f81223a080810f9d95ebeda59f5e7d2b67adbb58942335ecf51c5299428393eb",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/kick3.bmp.png": {
+      "sha256": "a1134ebfbb99a6a7619bf6e50de1064c437780e2a6b80e8b9272780bee4e160a",
+      "original": "graph/fighters/joynes/kick3.bmp",
+      "originalSha256": "c51ac86f28c3b57a2e9b059a3c1e530cc4ebbc54c6d5090cb7c48377a6496ca2",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/knee1.bmp.png": {
+      "sha256": "a845992abc5f6c58b840997a58bb57f7b9b6091dc70a00b4e841340809d01bdc",
+      "original": "graph/fighters/joynes/knee1.bmp",
+      "originalSha256": "dae14dc7eb733227896ed184abbe376aacba5dddb10477f1d850e8bb1f14a946",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/knee2.bmp.png": {
+      "sha256": "46f240c54ec74219e5a61e13bfbb5e4fc79b0094e239bdc509fb4d997dfb5cae",
+      "original": "graph/fighters/joynes/knee2.bmp",
+      "originalSha256": "1dacf467f6b0e413c07f05b8b4a76330c14cc92f35409c53988bbfeaad4efffd",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/move1.bmp.png": {
+      "sha256": "ff17696df95bb93dabc429554b1730aa22e5a72b0ea2c94400501654db738812",
+      "original": "graph/fighters/joynes/move1.bmp",
+      "originalSha256": "7e9c5214951f55c7aff7a827a0773a9c8e2433403137f9f4e9fd3ab79874cbee",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/move2.bmp.png": {
+      "sha256": "e9b43d055c0bea50cd14c7878741ab64915ebbf6d65cf07d410c80b4204377ca",
+      "original": "graph/fighters/joynes/move2.bmp",
+      "originalSha256": "1cb8df7bc8f60a5a81ef5aff89573ee2ed0f1061fbb75d20d7df6bfbea85b21e",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/move3.bmp.png": {
+      "sha256": "7017939036048b94bf0e471ac29b8d0ec8edfbabb533abdf917890f15db4be48",
+      "original": "graph/fighters/joynes/move3.bmp",
+      "originalSha256": "ab2fe4bf8599678a27bc4a97ce4d13bb712d9450908e1719d04e1dcbd0ac1768",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/move4.bmp.png": {
+      "sha256": "bea21fb48d786ddb2c5fe7de1134065c7a55e7562b3b6f630b5291e834c6ca55",
+      "original": "graph/fighters/joynes/move4.bmp",
+      "originalSha256": "4dc12455104616a8d1cc212c8fbc93cdd14baf828b1206a9b2fddc199ebb794d",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/move5.bmp.png": {
+      "sha256": "f2d0871ee989d6c9a22409582ede03aaa70583b573d4274fef169f7fa480867e",
+      "original": "graph/fighters/joynes/move5.bmp",
+      "originalSha256": "d1d59aa1c24f2b52ca4bf67eace9c1ade83eac948dea7fd12073cbfa378aebfb",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/stand1.bmp.png": {
+      "sha256": "56bda5dc82ead9c0c811fbde98c1324b9420643a4efc6d2bce082f4f65d8d67a",
+      "original": "graph/fighters/joynes/stand1.bmp",
+      "originalSha256": "6a5f74be6649b1dec5d835005f351fe25a916efd0f4055985eacb42e5316105d",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/stand2.bmp.png": {
+      "sha256": "6fd1db96ea80884c186148815aabaa231046b1a52fbb8837655e73f26d27612e",
+      "original": "graph/fighters/joynes/stand2.bmp",
+      "originalSha256": "e549f203f796595842b889340ac9f6e1f2f8e200bf64fa9b516f65dda0d8e50e",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/stand3.bmp.png": {
+      "sha256": "754db0d41695cfdc5e5cafd588820ec6cc26ab308b4876856658c766f5d67ea2",
+      "original": "graph/fighters/joynes/stand3.bmp",
+      "originalSha256": "cdd45702a9b29d19779d8f8460ccd494ec9b64fdf644ad5fa26d9b852f2cb3a2",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/taunt1.bmp.png": {
+      "sha256": "1d9eb576f1cd0b5cfe2d7520ca56a38995ae2200bd660603b4c7fd41c7a04ca6",
+      "original": "graph/fighters/joynes/taunt1.bmp",
+      "originalSha256": "5f68464530c306baa5952142c9b40cc5a746ee66c823936298dfc989f857aec3",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/taunt10.jpg.png": {
+      "sha256": "41cc5aab5b4692fc9b3fce4db75a949287b2575990146d355d147bf53a07b235",
+      "original": "graph/fighters/joynes/taunt10.jpg",
+      "originalSha256": "4ce4997cb08b226f55a87e6ae393e9e6b69c98f12b3dde19bf0250071262bf5e",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/taunt2.bmp.png": {
+      "sha256": "bc6149b294d147c69b8ee92254e5c789eaaf7171b25b861e605f7ba4a225ce08",
+      "original": "graph/fighters/joynes/taunt2.bmp",
+      "originalSha256": "b9ea4a1ad3da3450309b00be8d1fffafb75e591eebc0fa6347ed72159b31804d",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/taunt20.jpg.png": {
+      "sha256": "633ffc8a2fbac718590eeab33f39f4f8393e98889c99aa49d274c054b6311499",
+      "original": "graph/fighters/joynes/taunt20.jpg",
+      "originalSha256": "dffee8eb9d645a6eb6331c82a3f3453baf0d3a5bb0757c9d735d77c21d2f1064",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/taunt3.bmp.png": {
+      "sha256": "30af221998e7c248c132ed1af3c17a0e255515231187c58254e78a8f7d9ae1f1",
+      "original": "graph/fighters/joynes/taunt3.bmp",
+      "originalSha256": "f09c4ef8293491b0d98afefc29d47f89eb7ccc1b48171c6637b4cd634164657b",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/taunt4.bmp.png": {
+      "sha256": "5ca6100343e7b03cece6c2d4695efd184d241dd59b253cfd00dd4675de88cf88",
+      "original": "graph/fighters/joynes/taunt4.bmp",
+      "originalSha256": "798360a70ad35ff49e46158a83c00522f9f1f76cb97dc1109aae92caec680bdb",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/throw1.bmp.png": {
+      "sha256": "568c209e45b25a8027faebfb473fcff0d8af4a62e7f673f072be20b8eca59547",
+      "original": "graph/fighters/joynes/throw1.bmp",
+      "originalSha256": "1f082ddb21dfb3817928dfe83f3e961cc8eb2df2542c0ecbbf42c230049bb03c",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/throw2.bmp.png": {
+      "sha256": "d95911c9d18f40f8e6bf12579745ba8018c26acd98c4ac4a1b5ece7b42d57d03",
+      "original": "graph/fighters/joynes/throw2.bmp",
+      "originalSha256": "c2a3b0c3b6aceb5d63647403fd5dd06c1f2a5f5c467c34fa7b8c93a5835a3ab9",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/throw3.bmp.png": {
+      "sha256": "8d36b91cb0c7e7d182ec840b2d16f9ce654ca0c7cbb36ffdf2161265e74d8588",
+      "original": "graph/fighters/joynes/throw3.bmp",
+      "originalSha256": "94c2658528934334be447ea3eac457d03bf4166fdbdabf1729845024f3c68af7",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/will_die.bmp.png": {
+      "sha256": "9d411b8ad5ed1c6e8df5ee7c138d88b87f2eae9354881d7af503e2a37d25d082",
+      "original": "graph/fighters/joynes/will_die.bmp",
+      "originalSha256": "48db9ea8daba1cf484e45ebc21e0291f6ceafbc30dd5e0ca51144b4f935deaa3",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/win1.bmp.png": {
+      "sha256": "95dcd7533fd1ecd2a4a96e484fae11a112b4135f37410e650b2844e7f9fbf0d8",
+      "original": "graph/fighters/joynes/win1.bmp",
+      "originalSha256": "9b6b27b9fa523f8d0f8fab74a2480d2b6c0c4833592102f14dc89f52f7396dc0",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/joynes/win2.bmp.png": {
+      "sha256": "5ae1c14291b4e73b3192fddd163ebe3d38781b821e523749928faa5fcb7c2597",
+      "original": "graph/fighters/joynes/win2.bmp",
+      "originalSha256": "60815f28af0148aa5eded55eff639cd3f97b209375d51f38599a293ef05c04ad",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/fighters/smiley.bmp.png": {
+      "sha256": "cefa8e19ec074b8a9caf627ef6dc776255bf7dc20ebadb2772ed944d5dbefd7a",
+      "original": "graph/fighters/smiley.bmp",
+      "originalSha256": "87ae28cf701e655285e3ca8a1bc75b5458ababb8d29cbd08f93992833234ab0a",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/judge/hand_high.bmp.png": {
+      "sha256": "4791e11c6087e2e8ca5464abc64ffa716ca99f27700e992a5a9b5885e4dc76fb",
+      "original": "graph/judge/hand_high.bmp",
+      "originalSha256": "636cba92b5e0a8dff10a22abd24844682d10c6510b204cfc35f2f8bbdd4aa42e",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/judge/hands_high.bmp.png": {
+      "sha256": "9e33ebe4ce052598cd4559df6a7235a3cc3dc45148e50a2420d8ff527992aebd",
+      "original": "graph/judge/hands_high.bmp",
+      "originalSha256": "58766df82291242638d000c25e3282095dffd9e02ceca1e5fb16157ac2ddd1f4",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/judge/run1.bmp.png": {
+      "sha256": "37d6ea61d343113d971d2bce9e8a5fc057a989639b9aadf1c02d6367bb37a7b3",
+      "original": "graph/judge/run1.bmp",
+      "originalSha256": "3405abddcc8bdf957b3d44195725599eb3629ff6709d7ec3ecae04bd8de3b481",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/judge/run2.bmp.png": {
+      "sha256": "4d65d75d985f693cd93e09820752cfd13029ea7d24b1c0e94f6fc450b3a25e08",
+      "original": "graph/judge/run2.bmp",
+      "originalSha256": "ae656490d4519933b5234ec1c6c48f8eaed9c73d508af1ae90b7d49c9c4e00fc",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/judge/stand1.bmp.png": {
+      "sha256": "28ba2732a4e908b72540262109f077a2daead70e0d50c279d36a619e8033f8da",
+      "original": "graph/judge/stand1.bmp",
+      "originalSha256": "5168bf0dd6332e85fe01d84cc3a87dbb818f80b3266e63c4a7f8674abe34e45d",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/judge/stand2.bmp.png": {
+      "sha256": "ea4898cb7ddd5d99f64651f8656a74289efe1bcd0207ed8ce340b015f53f3ab3",
+      "original": "graph/judge/stand2.bmp",
+      "originalSha256": "c2baef7b82195f6228e084f58d8b23f8375e8631a063b5d4e9d81d5c9be58550",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/judge/talk_front1.jpg.png": {
+      "sha256": "c8c5e9dd122bc2718d0901493385a3ad3519a7565ecd877fe1338719a7b3618b",
+      "original": "graph/judge/talk_front1.jpg",
+      "originalSha256": "763f3e6e37d8450e16a226b8d7476a2d576ace91f8d5ff6cb413d9f0659d7b4a",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/judge/talk_front2.jpg.png": {
+      "sha256": "91eb60089d541cb7c15cab7f1a9ed82c776ce5c3860713cc5e32fdde607a2cad",
+      "original": "graph/judge/talk_front2.jpg",
+      "originalSha256": "9e9d51b5940f4899d3756bab494e7427ec56a94a2219a862086459071869ffda",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/judge/talk_right1.jpg.png": {
+      "sha256": "460e1d6c9bf8e23228cf804624b47b66b10f6a64aee62db2495d7687b11dfced",
+      "original": "graph/judge/talk_right1.jpg",
+      "originalSha256": "adb4aac699e1614e306c4a2ce0fc1cdc49a8b38b4c2adc710619a6b3d8ce46cf",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/judge/talk_right2.jpg.png": {
+      "sha256": "44276bf6b70c61b41d496f186bc97f27bfd52bd66d17a145775f5976a583ca3d",
+      "original": "graph/judge/talk_right2.jpg",
+      "originalSha256": "46c7c37ce063a41592c5717992073654cf1d55a932c95683e9e891334a171476",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/other/bar1.bmp.png": {
+      "sha256": "1befc44245744fe408770e26119ab2486c2bd5f1be7fa5511bee654d0e103db0",
+      "original": "graph/other/bar1.bmp",
+      "originalSha256": "47da5bf215e92a146fba13532aa36ddaa82053234daf43ad538fb4e1c59a2b20",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/other/bar2.bmp.png": {
+      "sha256": "294e6f18a950b3e0e8c183590ea913e99c7c518a3f503f89b142a577cd9b8872",
+      "original": "graph/other/bar2.bmp",
+      "originalSha256": "99ab69c2ee0f4f7910521066e6fb2ee75a115485a554536d1f07172ea3a0e991",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/stage/beach.jpg.png": {
+      "sha256": "9e24a39a302be0f38a454f49c46d8a3579fc0fa9eb3fc8d01d78d848cbec84b0",
+      "original": "graph/stage/beach.jpg",
+      "originalSha256": "77975f344e33e7507f531cb271c9d3af7aeed470bc13e9383b6f00f098ff8369",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/stage/stage1.bmp.png": {
+      "sha256": "0c16d252a439ad6ea71c51ac20a34545169ad98ff72e1178eacc2db5604ebc4c",
+      "original": "graph/stage/stage1.bmp",
+      "originalSha256": "0c8919c97f1913d4c8e861eff19cf1ed6cd972e6e39f02d8bf009ec501c26c3f",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/texts/fight.bmp.png": {
+      "sha256": "404d3abde44b5faa430835bef4f78aa16f9dd699ea558035757aa10289b34216",
+      "original": "graph/texts/fight.bmp",
+      "originalSha256": "0269d06bf58a62016d014a1cf474be573ee73e5fc7788a626ed6ab9497d2c5ed",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "graph/texts/help.bmp.png": {
+      "sha256": "493cc6a3f7bd18d686433451dc8ec61a0c9368cac8d4d1851e35ef2b057b9edb",
+      "original": "graph/texts/help.bmp",
+      "originalSha256": "4607f22cc1349a432106f393e87f292a4257e0250fb2d5f3bfcc74019c08e49c",
+      "export": "Lossless PNG; exact magenta color key becomes alpha."
+    },
+    "sound/effects/block.wav": {
+      "sha256": "0c6b8a43d6b2781d4b30b8b0c4b1b4698a937cc759e7e4911a392cb6acef48b0",
+      "original": "sound/effects/block.wav",
+      "originalSha256": "0c6b8a43d6b2781d4b30b8b0c4b1b4698a937cc759e7e4911a392cb6acef48b0",
+      "export": "Unchanged original WAV."
+    },
+    "sound/effects/dead.wav": {
+      "sha256": "78afe399955cddcae19abb09e3bd377c4642709f1e7a5aee6d37ad1fa18f7709",
+      "original": "sound/effects/dead.wav",
+      "originalSha256": "78afe399955cddcae19abb09e3bd377c4642709f1e7a5aee6d37ad1fa18f7709",
+      "export": "Unchanged original WAV."
+    },
+    "sound/effects/dead3.wav": {
+      "sha256": "4bd3d74dc2c0eefa95bad67f37d25c6078b66073d2099e72398d24cf11c0a88e",
+      "original": "sound/effects/dead3.wav",
+      "originalSha256": "4bd3d74dc2c0eefa95bad67f37d25c6078b66073d2099e72398d24cf11c0a88e",
+      "export": "Unchanged original WAV."
+    },
+    "sound/effects/duck_hit.wav": {
+      "sha256": "cc62464ba559d19a6e0febf9592aa8c07a376de060c3c69da34665a5c8a7882d",
+      "original": "sound/effects/duck_hit.wav",
+      "originalSha256": "cc62464ba559d19a6e0febf9592aa8c07a376de060c3c69da34665a5c8a7882d",
+      "export": "Unchanged original WAV."
+    },
+    "sound/effects/elbow.wav": {
+      "sha256": "3b693a5dd975da7e26514376d8ffcdae187dc12379174241567b268b13b0f70d",
+      "original": "sound/effects/elbow.wav",
+      "originalSha256": "3b693a5dd975da7e26514376d8ffcdae187dc12379174241567b268b13b0f70d",
+      "export": "Unchanged original WAV."
+    },
+    "sound/effects/fight.wav": {
+      "sha256": "6bc246dbe1ea541e8636280f0b03c45c032a1f2f9590288a1b0882f644de5c5e",
+      "original": "sound/effects/fight.wav",
+      "originalSha256": "6bc246dbe1ea541e8636280f0b03c45c032a1f2f9590288a1b0882f644de5c5e",
+      "export": "Unchanged original WAV."
+    },
+    "sound/effects/hit.wav": {
+      "sha256": "2eff8e5ec0ecfb6d7ef0d828fb5f84a28efaaddf3ca5e7bb9de47f1e22b7cb5b",
+      "original": "sound/effects/hit.wav",
+      "originalSha256": "2eff8e5ec0ecfb6d7ef0d828fb5f84a28efaaddf3ca5e7bb9de47f1e22b7cb5b",
+      "export": "Unchanged original WAV."
+    },
+    "sound/effects/hit_air.wav": {
+      "sha256": "f3082cb48bc4b83fe06d1b52be473b9783b4ba093fdfe1866eacdaa0a87a515a",
+      "original": "sound/effects/hit_air.wav",
+      "originalSha256": "f3082cb48bc4b83fe06d1b52be473b9783b4ba093fdfe1866eacdaa0a87a515a",
+      "export": "Unchanged original WAV."
+    },
+    "sound/effects/hit_ground.wav": {
+      "sha256": "21f6cd4935c4e6ddb65bc45b8563620b9a18a936eb01f886ae6b3a77430c65f6",
+      "original": "sound/effects/hit_ground.wav",
+      "originalSha256": "21f6cd4935c4e6ddb65bc45b8563620b9a18a936eb01f886ae6b3a77430c65f6",
+      "export": "Unchanged original WAV."
+    },
+    "sound/effects/hit_ground3.wav": {
+      "sha256": "2a82bac1712503a962b5689e0ba09cd8ae8a1310f62b7beb5651aa2924fb26ad",
+      "original": "sound/effects/hit_ground3.wav",
+      "originalSha256": "2a82bac1712503a962b5689e0ba09cd8ae8a1310f62b7beb5651aa2924fb26ad",
+      "export": "Unchanged original WAV."
+    },
+    "sound/effects/jump.wav": {
+      "sha256": "23271274fbc3273bc60ac2fe35ef0189aaf0d974931c90f2fca190ea489d3474",
+      "original": "sound/effects/jump.wav",
+      "originalSha256": "23271274fbc3273bc60ac2fe35ef0189aaf0d974931c90f2fca190ea489d3474",
+      "export": "Unchanged original WAV."
+    },
+    "sound/effects/jump_land.wav": {
+      "sha256": "33b815fae4015b8443af956ba6c190a91da39bebae5dcce512ecc87b753b3c30",
+      "original": "sound/effects/jump_land.wav",
+      "originalSha256": "33b815fae4015b8443af956ba6c190a91da39bebae5dcce512ecc87b753b3c30",
+      "export": "Unchanged original WAV."
+    },
+    "sound/effects/kick.wav": {
+      "sha256": "de95d8ed2d5d5f2fb1d19ce3fdb0917989ca47e593f181d9f7b39913025309cd",
+      "original": "sound/effects/kick.wav",
+      "originalSha256": "de95d8ed2d5d5f2fb1d19ce3fdb0917989ca47e593f181d9f7b39913025309cd",
+      "export": "Unchanged original WAV."
+    },
+    "sound/effects/knee.wav": {
+      "sha256": "5f5a3d0f56201fc2023b11eb8348db1ec42cd92ddf25db8e012b87eb2c14be79",
+      "original": "sound/effects/knee.wav",
+      "originalSha256": "5f5a3d0f56201fc2023b11eb8348db1ec42cd92ddf25db8e012b87eb2c14be79",
+      "export": "Unchanged original WAV."
+    },
+    "sound/effects/round1.wav": {
+      "sha256": "d47b3fafbea828d0737fe1ec3124c6b1b665f032e9b84653e677b47a200e401a",
+      "original": "sound/effects/round1.wav",
+      "originalSha256": "d47b3fafbea828d0737fe1ec3124c6b1b665f032e9b84653e677b47a200e401a",
+      "export": "Unchanged original WAV."
+    },
+    "sound/effects/round2.wav": {
+      "sha256": "7a620b6717eecd22bb1e6257a4e4d23531d96641118460ba1d966234f76550c6",
+      "original": "sound/effects/round2.wav",
+      "originalSha256": "7a620b6717eecd22bb1e6257a4e4d23531d96641118460ba1d966234f76550c6",
+      "export": "Unchanged original WAV."
+    },
+    "sound/effects/roundfinal.wav": {
+      "sha256": "368b17231ae98c1f18c610abc46759684dfcf548f6610d1b77092099000621da",
+      "original": "sound/effects/roundfinal.wav",
+      "originalSha256": "368b17231ae98c1f18c610abc46759684dfcf548f6610d1b77092099000621da",
+      "export": "Unchanged original WAV."
+    },
+    "sound/fighters/blueangel/taunt1.wav": {
+      "sha256": "cebe36ef01182b8c54a58a79b3822802cbb4638f32b9c855da10f389bdc74dea",
+      "original": "sound/fighters/blueangel/taunt1.wav",
+      "originalSha256": "cebe36ef01182b8c54a58a79b3822802cbb4638f32b9c855da10f389bdc74dea",
+      "export": "Unchanged original WAV."
+    },
+    "sound/fighters/joynes/taunt1.wav": {
+      "sha256": "7f258944b7f1e4b3d80e1d3ef975cbe0d156cbc5a32e855790d28e35830b1093",
+      "original": "sound/fighters/joynes/taunt1.wav",
+      "originalSha256": "7f258944b7f1e4b3d80e1d3ef975cbe0d156cbc5a32e855790d28e35830b1093",
+      "export": "Unchanged original WAV."
+    },
+    "sound/judge/getiton.wav": {
+      "sha256": "477e06575108da06dc157916130d7c0552dfe23eb829ace3fdc14f39d15229c1",
+      "original": "sound/judge/getiton.wav",
+      "originalSha256": "477e06575108da06dc157916130d7c0552dfe23eb829ace3fdc14f39d15229c1",
+      "export": "Unchanged original WAV."
+    },
+    "sound/judge/ready1.wav": {
+      "sha256": "a7a840339456226f68d4be1f64d8bf745acb87e3b85120d939dc2906c1d07072",
+      "original": "sound/judge/ready1.wav",
+      "originalSha256": "a7a840339456226f68d4be1f64d8bf745acb87e3b85120d939dc2906c1d07072",
+      "export": "Unchanged original WAV."
+    },
+    "sound/judge/ready2.wav": {
+      "sha256": "193448c87808871c19ca3aed16e63eb623d5054110a4636cdec1c3c50d585948",
+      "original": "sound/judge/ready2.wav",
+      "originalSha256": "193448c87808871c19ca3aed16e63eb623d5054110a4636cdec1c3c50d585948",
+      "export": "Unchanged original WAV."
+    },
+    "graph/font/Godzilla.ttf": {
+      "sha256": "e4c7bf54d9c494d5bb9b4a851b2f1ef36e3adc9776729bc01877aa4b699f7b5b",
+      "original": "graph/font/Godzilla.ttf",
+      "originalSha256": "e4c7bf54d9c494d5bb9b4a851b2f1ef36e3adc9776729bc01877aa4b699f7b5b",
+      "export": "Unchanged original file."
+    },
+    "1.mp3": {
+      "sha256": "5cd3a66ed23d7c7c02b827b47841e74d1323150f5bbd686fc6d53c4fd623b1b6",
+      "original": "1.mp3",
+      "originalSha256": "5cd3a66ed23d7c7c02b827b47841e74d1323150f5bbd686fc6d53c4fd623b1b6",
+      "export": "Unchanged original file."
+    },
+    "manifest.json": {
+      "sha256": "1c37bdcf3b462b5b4517d8b7ca72e86de0ff4ff4450fa332f9e0f72d69826363",
+      "export": "Image/sample metadata and unchanged Windows-1252 configuration decoded to JSON text."
+    }
+  }
+}

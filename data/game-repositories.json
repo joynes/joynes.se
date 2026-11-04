@@ -825,7 +825,7 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/rall-080",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "8bfca05a8393a3e67b73cf4f01b555b725e69abd",
-      "auditStatus": "in_progress",
+      "auditStatus": "local-passed-live-pending",
       "releaseStatus": "in_progress",
       "publicUrl": null,
       "createdForAudit": true,
@@ -833,10 +833,12 @@
       "sourceTreeVerified": true,
       "sourceTreeScope": "New repository; archived original and web files are inside web-release.",
       "auditUrl": "https://github.com/joynes/rall-v080-fighter/tree/audit/2026-11-03-baseline",
-      "inGameControlsAndFullscreenStatus": "pending",
-      "englishInterfaceAuditStatus": "pending",
-      "repositoryHeadCommit": "373db7a2cedd14fc59d7dca36874cc059cc83c3a",
-      "auditFindings": "Drive archive preserved and compared:290matching files. Original C++ gameplay compiled privately; native intro, movement and a hit reached. No published or fully verified web release yet."
+      "inGameControlsAndFullscreenStatus": "local-passed-live-pending",
+      "englishInterfaceAuditStatus": "passed",
+      "repositoryHeadCommit": "013ee68962b0fc75c536f6194289ad7503065e77",
+      "auditFindings": "Complete local gameplay/input/fullscreen/recovery and homepage navigation passed in Chromium and installed Chrome, plus restricted forwarding fixture and Rall054 navigation regression. Final live verification pending.",
+      "implementationCommit": "7a6152d6dcc5c88efdd1b678c3249d4a0ef8ca2b",
+      "auditCommit": "013ee68962b0fc75c536f6194289ad7503065e77"
     },
     {
       "id": "rall-008",

@@ -1,0 +1,60 @@
+{
+  "runtime": "Original C++ fighting logic / browser platform adapter",
+  "sdk": "Emscripten6.0.13",
+  "sources": {
+    "game.cpp": "c36a50b4c45c73a4370c527d6acd5a81b82166c3db869b735c491afca4c6ad77",
+    "fighter.cpp": "cb45bb81923908b4f4f5d53e9f7fd84b6029e55b0cb177e495b3deb9650f2d70",
+    "rules.cpp": "748cd0ec2c9062e024ab27930293a2a80c0047e37a795a3cc49661a9f38a8f90",
+    "states.cpp": "ec9c68110ca160f3c30c24b3bab2723604798f0e91625413f0bedf75adf2caa6",
+    "controls.cpp": "a600a3182c4f107a7e6e104b207c5f99e38b4ef5438f4550f564158d0ef47e7f",
+    "collision.cpp": "f2ebb64a379990e44daea1c83ba4369859ef2cc34b7e74cec3519e10ee2f6161",
+    "bot.cpp": "cb04782babf29ed1751a3ff32f17bdc1b3956f33494aa15e27f61e6767b3e328",
+    "animation.cpp": "066976759a091d628552f9839e0d88d4a428b75f7533010abd971d9b13c61f92",
+    "load_joy.cpp": "9431b33ab92572d715b99a7db170b9bc5bfd7e9de26055c963b7e583b6954b55",
+    "judge.cpp": "39f904d07a3e672efbe9eaaa26447bdb313ad2111a8c45c375f8f29c88d7bd30",
+    "stage.cpp": "734e1bd0c5032027965a88acacaf215c03cf1a77e1f0070b400e7c8608f5cb09",
+    "sound.cpp": "013c0bb640da491b20169ea07d3d1fa2f5fe6d367006810ccf1778499e0d3cee",
+    "timer.cpp": "746017da46b962f9ff789c02132ca4b41d6f39261520495f3c624f9315ce945d"
+  },
+  "changes": {
+    "collision.cpp": "Correct extern slow_down declaration from int to bool, matching the original definition."
+  },
+  "browserAdapter": [
+    "Omit the native developer FPS label; keep native scene health bars",
+    "Original time-based RNG seeding is supplied by the browser host",
+    "Canvas image/configuration/font/audio replacements",
+    "Short host menu replaces original front menu and developer console",
+    "Fixed60Hz host drives native Game::run; native per-round introductions and combat preserved",
+    "Observe completed native two-win matches before their automatic replay; solo Continue resumes native progression",
+    "Native win counter increments twice per round; the host displays counter/2",
+    "Zero-initialize Game storage before its original constructors run"
+  ],
+  "originalHeaders": {
+    "animation.h": "77d11c5cc8797b06bf16be91fadfbe39c4f72cc755985e47ad285e615f8d2127",
+    "camera.h": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "conalleg.h": "265aa3f7992852575292a5a551c57cdf38b49cfb47aa18c804a07638ffa88b36",
+    "console.h": "1a7c117379009c8e83eb52bb5f1c82e63625cc618ae5ba4f9a4e9b11975d913e",
+    "fighter.h": "b84690fd97dec45e2f4f617a70654f7c1a62de4d2f46de419205632b6a334dbf",
+    "game.h": "25bbacdb747e2fb0b35c720237bf8b94bf0736322412a21c0f500a23c5782630",
+    "global.h": "f0a1637982d1e8fb3a472471f5490fdfb470d409f1c490ab005e8855499e770c",
+    "intro.h": "360aa2b23cd1236e7f4b0a69456d62c17c5fd24f45f1d0809f4e5b39324a16a9",
+    "judge.h": "874fefbe9872656d5055ba95943fde05acb639ed077744a615030102f35dae2d",
+    "music.h": "5ed3caab76a3993d601d2bd4285279b7579763add6aca6d4e9d4bf41e8e56a4b",
+    "sound.h": "11fad163b8d127accacf5c1c8f618b3b059680730900aa39f14ab79705d73696",
+    "stage.h": "0d3c2cfdb21012b6537f33cc1326603fddf04f692b0b626bf88f5d6b3f3f8a8b",
+    "timer.h": "0e037e5ed82b97ec50bc0a9963ff5213d9659a0466fc8344cd9bb2e3508a14a6"
+  },
+  "adapterSources": {
+    "alfont.h": "8c459f93051bbcdef59fee491a0aa2fa009b712a5e4efbcf49acf468524f6a80",
+    "allegro.h": "7232a711b585b9d407d9c5091e8a4861043cbda4921e61e05ba30d36b41ab985",
+    "almp3.h": "240274232505e1fd75cb1bfcaabbec2b6767632fb3077e0e106daf1f7ad02f51",
+    "compat.cpp": "f2632d46bcec6f1b3464d3c25ba75fa1997a7ba39e23ef39d8fdd7bbe2d9e732",
+    "console-stub.h": "0e28a6669fbc9eb1f525ff49e86c432b25f24de404cc239184b22169b24423c1",
+    "entry.cpp": "e60fc7a98908635ddf173f50149ec20ad6a08d724475c8b4d0e21f538c065f6b",
+    "jpgalleg.h": "87fe575bd7d1395b046c58acdc252e227b93be83c2babb029589ca0d81d1b952"
+  },
+  "files": {
+    "engine.mjs": "bd7179e6a630ecb1e9e4495db9c05e1c1c0fbff0a19a5827feb62f3b0a645d64",
+    "engine.wasm": "4ed081895786d59ca8306986d5fd0661fd16894c54080643dc183e4a87414835"
+  }
+}

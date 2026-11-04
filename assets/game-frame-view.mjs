@@ -1,0 +1,11 @@
+// Let an embedded game fill the page when its browser denies native fullscreen.
+const origin=location.origin;
+let active=null,previousOverflow='',previousPopover=null,previousHeight='';
+const style=document.createElement('style');
+style.textContent='iframe[data-game-frame].game-frame-expanded{position:fixed!important;inset:0!important;width:100vw!important;height:100dvh!important;max-width:none!important;max-height:none!important;margin:0!important;padding:0!important;border:0!important;border-radius:0!important;z-index:2147483000!important}iframe.game-frame-expanded::backdrop{background:#000}';
+document.head.append(style);
+function close(){if(!active)return;const frame=active;active=null;try{if(frame.matches(':popover-open'))frame.hidePopover();}catch{}if(previousPopover===null)frame.removeAttribute('popover');else frame.setAttribute('popover',previousPopover);frame.classList.remove('game-frame-expanded');frame.style.height=previousHeight;document.body.style.overflow=previousOverflow;}
+window.addEventListener('message',event=>{if(event.origin!==origin||event.data?.type!=='joynes:game-view'||typeof event.data.active!=='boolean')return;const frame=[...document.querySelectorAll('iframe[data-game-frame]')].find(f=>f.contentWindow===event.source);if(!frame)return;if(!event.data.active){if(active===frame)close();return;}if(document.fullscreenElement)return;if(active===frame)return;close();active=frame;previousOverflow=document.body.style.overflow;previousPopover=frame.getAttribute('popover');previousHeight=frame.style.height;document.body.style.overflow='hidden';frame.classList.add('game-frame-expanded');if(typeof frame.showPopover==='function'){try{frame.setAttribute('popover','manual');frame.showPopover();}catch{if(previousPopover===null)frame.removeAttribute('popover');else frame.setAttribute('popover',previousPopover);}}});
+window.addEventListener('keydown',event=>{if(event.code!=='Escape'||!active)return;event.preventDefault();const frame=active;close();frame.contentWindow?.postMessage({type:'joynes:game-view-close'},origin);},{capture:true});
+document.addEventListener('fullscreenchange',()=>{if(document.fullscreenElement)close();});
+new MutationObserver(()=>{if(active&&!active.isConnected)close();}).observe(document.body,{childList:true,subtree:true});

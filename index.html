@@ -1493,7 +1493,7 @@
   <script src="assets/jaro-book.js"></script>
   <script src="assets/music-catalog.js"></script>
   <script src="assets/music-library.js?v=b71509c3cf69"></script>
-  <script src="assets/games-catalog.js?v=0b7506697803"></script>
+  <script src="assets/games-catalog.js?v=657e420972a9"></script>
   <script>
     const categories = [
       {
@@ -2352,6 +2352,7 @@
           const embed = document.createElement("div");
           embed.className = "item-embed";
           const iframe = document.createElement("iframe");
+          if (category.id === "games") iframe.dataset.gameFrame = name;
           iframe.addEventListener("load", () => {
             if (!iframe.isConnected) return;
             const siteRoot = new URL("./", location.href);
@@ -2717,5 +2718,6 @@
 
     requestAnimationFrame(drawSprites);
   </script>
+  <script type="module" src="assets/game-frame-view.mjs?v=be4a2c65d63d"></script>
 </body>
 </html>
