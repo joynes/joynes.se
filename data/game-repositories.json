@@ -780,7 +780,7 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/rall-054",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "4a1438a3d808e403fb612d281c6f450182929cce",
-      "auditStatus": "pending",
+      "auditStatus": "in_progress",
       "releaseStatus": "in_progress",
       "publicUrl": null,
       "sourceHead": "c867cc03bf7540e0d44721cf910c5de3b1723923",
@@ -789,7 +789,8 @@
       "repositoryHeadCommit": "58f6a89f2440f84afe624a76b205145e1ce2f073",
       "auditUrl": "https://github.com/joynes/rall0054/tree/audit/2026-11-03-baseline",
       "inGameControlsAndFullscreenStatus": "pending",
-      "englishInterfaceAuditStatus": "pending"
+      "englishInterfaceAuditStatus": "pending",
+      "auditFindings": "Native GDI gameplay and original keyboard/touch movement are reached. Verify combat, round transitions, six maps, audio and new in-scene/fullscreen layout before publication. No playable release is claimed."
     },
     {
       "id": "rall-006",

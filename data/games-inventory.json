@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "updatedAt": "2026-11-04",
   "objective": "Make every identified game and relevant version playable on the web, tested and published.",
-  "currentGame": "shadow-racer",
+  "currentGame": "rall-054",
   "games": [
     {
       "id": "web-quizzes",
