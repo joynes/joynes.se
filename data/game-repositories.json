@@ -854,16 +854,17 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/rall-008",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "816c34d0543f39aeb082c27a4f6acc0535512df7",
-      "auditStatus": "pending",
+      "auditStatus": "in_progress",
       "releaseStatus": "pending",
       "publicUrl": null,
       "sourceHead": "71d3947dba0d072adf5694614ca742d9da3af4e3",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "0d41ad85eea7a85aae0e53568f92042d0e65ca29",
-      "repositoryHeadCommit": "0d41ad85eea7a85aae0e53568f92042d0e65ca29",
+      "repositoryHeadCommit": "ba6a844",
       "auditUrl": "https://github.com/joynes/rall008/tree/audit/2026-11-03-baseline",
       "inGameControlsAndFullscreenStatus": "pending",
-      "englishInterfaceAuditStatus": "pending"
+      "englishInterfaceAuditStatus": "pending",
+      "auditFindings": "Distinct 2006 network fighter. Original source unchanged; private local authoritative browser probe compiles native gameplay. Public release and full verification pending."
     },
     {
       "id": "rall-066",

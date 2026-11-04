@@ -2829,7 +2829,7 @@
       "id": "rall-008",
       "title": "Rall008",
       "order": 26,
-      "status": "pending",
+      "status": "in_progress",
       "sources": [
         {
           "kind": "github",
@@ -2840,8 +2840,13 @@
           "url": "https://drive.google.com/drive/folders/1ApVIMy-WxmkkmHCtq9d7s2zmqfIQvjBz"
         }
       ],
-      "work": "Originalarkiv med Allegro/FMOD/Zoidcom. Utred spelregler och multiplayer; anta inte att det \u00e4r identiskt med v080/v082.",
-      "tests": [],
+      "work": "Restore the distinct 2006 C++ network fighter. Private browser probe runs original articulated fighters, moving ship, native combat, scoring and respawns; complete local gameplay and input checks are in progress. No public playable release yet.",
+      "tests": [
+        {
+          "check": "sourceComparison",
+          "result": "All 375 local and Drive relative names/sizes match. Executable and eight selected source/header/data/image files downloaded and byte-identical."
+        }
+      ],
       "publishedUrl": null,
       "implementationCommit": null,
       "deploymentCommit": null,
@@ -2857,7 +2862,8 @@
         ],
         "graphics": "Blender",
         "soundAndMusic": "ElevenLabs"
-      }
+      },
+      "sourceAuditCommit": "ba6a844"
     },
     {
       "id": "rall-082",
