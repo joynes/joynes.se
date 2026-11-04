@@ -1,5 +1,7 @@
 # SDL Space — Survival
 
+**Withdrawn on 4 November 2026 at the owner’s request. Do not republish. The hosted build and homepage listing have been removed; source remains preserved.**
+
 The playable release uses the original SDL2/WebAssembly game from public repository `joynes/sdl2-samples-with-wasm-support`, commit `184adda998c5b91e07c0f7cfebe464d87cd4b09a` (24 July 2020). The game is `simple_game_using_sdl2_wasm.c`; two other programs in the repository are graphics demonstrations.
 
 All three native engine files, five packaged shader/audio assets and the BSD license remain byte-identical. The original rules still control eight recurring rocks, random sizes and speeds, collision, native frame-count scoring and world reset. There is no authored victory condition or shooting mechanic.

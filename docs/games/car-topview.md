@@ -1,5 +1,7 @@
 # Top-down Driving
 
+**All Remix editions were withdrawn on 4 November 2026 at the owner’s request. Original remains available. Rall054 AI Enhanced is under revision after user reports of sticking and difficult controls; ShadowRacer’s faithful enhanced edition is in development.**
+
 Choose **Original** or **Remix** when the game opens.
 
 The original is Johannes’s Godot 4.3 free-driving prototype from December 2024, preserved as a JavaScript port. Its car PNG, engine WAV and motion formulas are unchanged. The original has no races or scores. The wall collision alignment repair and exact source/media hashes are documented in [source notes](../../games/car-topview/source-notes.md).

@@ -1,35 +1,14 @@
 // Only tested releases belong here. The complete work queue is in data/games-inventory.json.
 window.joynesPublishedGames = [
   {
-    id: "rall-008",
-    title: "Rall008",
-    kind: "retro",
-    description: "Retro · 2006 · Shipboard fighting. Practice or local duel.",
-    href: "games/rall-008/",
-    source: "https://github.com/joynes/joynes.se/blob/master/games/rall-008/source-notes.md",
-    sourceLabel: "Source",
-    version: "2006-web.1"
-  },
-  {
-    id: "rall-080",
-    title: "Rall v080 — Fighters",
-    kind: "retro",
-    description: "Retro · 2005 · Solo opponents or two-player fighting.",
-    href: "games/rall-080/",
-    source: "https://github.com/joynes/joynes.se/blob/master/games/rall-080/source-notes.md",
-    sourceLabel: "Source",
-    version: "2005-web.1"
-  },
-  {
     id: "rall-054",
     title: "Rall v054 — Tanks",
     kind: "retro",
-    description: "Retro · 2002 · Original, restored graphics or new missions.",
+    description: "Retro · 2002 · Original tank battles and AI Enhanced.",
     href: "games/rall-054/",
     editions: [
       { id: "original", label: "Original", href: "games/rall-054/" },
-      { id: "enhanced", label: "AI Enhanced", href: "games/rall-054/restored/", version: "1.0.0" },
-      { id: "remix", label: "Remix", href: "games/rall-054/enhanced/", version: "1.0.1" }
+      { id: "enhanced", label: "AI Enhanced", href: "games/rall-054/restored/", version: "1.0.0" }
     ],
     source: "https://github.com/joynes/joynes.se/blob/master/games/rall-054/source-notes.md",
     sourceLabel: "Source",
@@ -59,11 +38,10 @@ window.joynesPublishedGames = [
     id: "shadow-racer",
     title: "ShadowRacer",
     kind: "retro",
-    description: "Retro · 2008 · Original race or delivery remix.",
+    description: "Retro · 2008 · Original course and physics.",
     href: "games/shadow-racer/",
     editions: [
-      { id: "original", label: "Original", href: "games/shadow-racer/" },
-      { id: "remix", label: "Remix", href: "games/shadow-racer/enhanced/", version: "1.0.1" }
+      { id: "original", label: "Original", href: "games/shadow-racer/" }
     ],
     source: "https://github.com/joynes/joynes.se/blob/master/games/shadow-racer/source-notes.md",
     sourceLabel: "Source",
@@ -120,49 +98,17 @@ window.joynesPublishedGames = [
     version: "1.1.2"
   },
   {
-    id: "sdl-space",
-    title: "SDL Space — Survival",
-    kind: "retro",
-    description: "Retro · 2020 · Dodge rocks and survive.",
-    href: "games/sdl-space/",
-    source: "https://github.com/joynes/sdl2-samples-with-wasm-support/tree/184adda998c5b91e07c0f7cfebe464d87cd4b09a",
-    sourceLabel: "Source",
-    version: "2020-sdl-web.3"
-  },
-  {
     id: "car-topview",
     title: "Top-down Driving",
     kind: "ai",
-    description: "Free driving or a time-trial remix.",
+    description: "Free driving with the original physics.",
     href: "games/car-topview/",
     editions: [
-      { id: "original", label: "Original", href: "games/car-topview/" },
-      { id: "remix", label: "Remix", href: "games/car-topview/enhanced/", version: "1.0.1" }
+      { id: "original", label: "Original", href: "games/car-topview/" }
     ],
     source: "https://github.com/joynes/joynes.se/tree/master/games/car-topview",
     sourceLabel: "Source",
     version: "2024-car-web.6"
-  },
-  {
-    id: "godot-reading",
-    title: "Read and Place",
-    kind: "retro",
-    description: "Retro · 2023–2024 · Move objects to solve a reading puzzle.",
-    href: "games/godot-reading/",
-    source: "https://github.com/joynes/joynes.se/tree/master/games/godot-reading",
-    sourceLabel: "Source",
-    version: "2024-reading-web.2"
-  },
-  {
-    id: "marble-tables",
-    title: "Marble Tables",
-    kind: "retro",
-    description: "Retro · 2022 · Drag marbles around a 3D playground.",
-    href: "games/marble-tables/",
-    embed: false,
-    source: "https://github.com/joynes/marble-web-test",
-    sourceLabel: "Source",
-    version: "1.0.2-web.2"
   },
   {
     id: "small-wonders",
@@ -189,6 +135,7 @@ window.joynesPublishedGames = [
   },
   {
     id: "memit",
+    genre: "quiz",
     title: "Memit",
     kind: "retro",
     description: "Retro · 2013 · Four memory modes with 127 Dota heroes.",

@@ -1,5 +1,7 @@
 # Godot Reading Game / Läs och placera
 
+**Withdrawn on 4 November 2026 at the owner’s request. Do not republish. The hosted build and homepage listing have been removed; source remains preserved.**
+
 Källa: privat repo `joynes/godot-reading-game`, commit `97a4f8aa5381032663f51395c62bf5fa4811ccf3`. December 2023–januari 2024, därför Retrospel / AI-remake. Webbversionen finns i `games/godot-reading/`.
 
 Spelet är en liten prototyp, inte en färdig bank med läsuppgifter. Alla tre namngivna föremål, båda plattformarna, golvet och den enda aktiva relationen (ballongen till höger om raketen) är återskapade. Ursprunglig instruktionsetikett sade felaktigt ”dockan”; körbar kod avgör avsikten. Alla GitHub-commits granskade. Saknade `sheet2.png` och Sriracha-fonten hittades inte heller genom riktade Drive-sökningar.

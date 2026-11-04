@@ -12,10 +12,16 @@ Expose available editions directly in the homepage game picker. Original launche
 | Top-down Driving | Faithful restoration queued. | Night Circuit: new checkpoint time trials, boost and ghosts. |
 | ShadowRacer | Faithful restoration queued. | Ridge Courier: new delivery routes. |
 
-The three reimagined games stay available under Remix. Their existing URLs remain compatible. They do not count as faithful AI Enhanced releases.
+All three Remix editions are withdrawn at the owner’s request. Their source and assets are preserved privately; do not republish them.
 
 ## Remaining work
 
-Continue with Top-down Driving and ShadowRacer, then the other adapted older games: SDL Space, Marble Tables, Read and Place, Word Quiz, Quiz Game, Memit, Rall v026, Rall v030, Rall v080 and Rall008. Verify each Original first, preserve its identity, then test and publish the faithful edition. Do not expose placeholders. Keep the police-car and bus POCs excluded.
+Continue with Top-down Driving and ShadowRacer, then the other adapted older games: Word Quiz, Quiz Game, Memit, Rall v026, Rall v030. Verify each Original first, preserve its identity, then test and publish the faithful edition. Do not expose placeholders. Keep the police-car and bus POCs excluded.
 
 Use the available ElevenLabs music/sound-effect skills when new audio is appropriate. Preserve prompts, models, parameters, generation IDs and hashes privately. Publish optimized selected files and accurate provenance; keep credentials, signed URLs and billing data private. Existing generated music and sound remain part of their Remix games.
+
+Marble Tables, Read and Place and SDL Space — Survival are withdrawn at the owner’s request. Keep them unpublished and outside the enhanced-edition queue.
+
+Rall v080 is unlisted at the owner’s request and excluded from the enhanced-edition queue. Do not relist it.
+
+Rall008 is also unlisted at the owner’s request. Do not relist it or create an enhanced edition for publication. Rall054 AI Enhanced is being revised after reports of sticking, difficult touch controls and insufficient graphics/audio improvements. ShadowRacer’s faithful enhanced edition must retain the original track, physics and game feel with better graphics, music and sound.

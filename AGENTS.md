@@ -10,6 +10,9 @@
 - Finish the incomplete rall0054, v080 and rall008 adaptations. Their archive links do not count as playable web releases.
 - Verify game launch and fullscreen through joynes.se as well as the direct Pages URL; its forwarding frame does not delegate fullscreen.
 - Keep the publication inventory accurate. A successful build or a visible menu alone does not establish that a game works.
+- Keep Marble Tables, Read and Place and SDL Space — Survival unpublished, as explicitly requested by the owner. Preserve their source; do not re-add their hosted builds or homepage listings.
+- Keep Rall v080 unlisted on the homepage and outside the enhanced-edition queue, as requested by the owner. Do not relist it.
+- Keep Rall008 unlisted as well. Keep all Remix editions unpublished; the owner requested their removal. Preserve their source and assets privately.
 
 # AI Enhanced editions
 

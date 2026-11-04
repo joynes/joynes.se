@@ -1,5 +1,7 @@
 # Marble Tables
 
+**Withdrawn on 4 November 2026 at the owner’s request. Do not republish. The hosted build and homepage listing have been removed; source remains preserved.**
+
 A 2022 retro physics playground with a web interface adapted using AI. Coloured
 marbles spawn automatically, bounce against five obstacles, and can be picked up
 and dropped. There are no scores, levels or victory conditions. The original

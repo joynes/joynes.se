@@ -1182,7 +1182,6 @@
         padding: 10px;
         margin-inline: -6px;
         border-radius: 4px;
-        animation: none;
       }
 
       .panel-label {
@@ -1313,6 +1312,7 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
+      .intro { transform: none !important; filter: none !important; }
       *,
       *::before,
       *::after {
@@ -1370,8 +1370,9 @@
 
     @media (max-width: 900px) {
       .topbar-inner { display: flex; min-height: 48px; padding: 0; }
-      .status, .intro, .stage-visual, .kicker, .stage .description { display: none; }
-      .hero { padding: 12px 0; gap: 0; }
+      .status, .tagline, .stage-visual, .kicker, .stage .description { display: none; }
+      .intro { padding: 12px 12px 18px; }
+      .hero { padding: 12px 0; gap: 12px; }
       .category-panel { position: relative; top: auto; margin: 0; padding: 0 8px; }
       .category-grid {
         display: grid;
@@ -1379,9 +1380,8 @@
         overflow: visible;
         padding: 0 4px 12px;
       }
-      .category-button { min-height: 44px; padding: 12px; animation: none; }
-      .category-button:hover, .category-button:focus-visible, .category-button.active { transform: none; }
-      .stage { display: block; padding: 12px 14px; animation: none; }
+      .category-button { min-height: 44px; padding: 12px; }
+      .stage { display: block; padding: 12px 14px; }
       .stage-copy { gap: 10px; }
       .stage h2 { font-size: 28px; line-height: 1.15; overflow-wrap: anywhere; }
       .music-controls { margin: 10px 0; padding: 8px 10px; }
@@ -1391,8 +1391,7 @@
       .music-controls > .item-meta { margin-top: 6px; font-size: 11px; }
       .playlist-menu > summary { padding: 10px 4px; }
       .content-list { margin-top: 10px; gap: 8px; }
-      .item { min-height: 0; padding: 12px; gap: 8px; animation: none; }
-      .item:hover, .item:focus-visible { transform: none; }
+      .item { min-height: 0; padding: 12px; gap: 8px; }
       .item.clickable .item-meta {
         display: -webkit-box;
         -webkit-box-orient: vertical;
@@ -1406,6 +1405,11 @@
       .music-list .item.clickable .item-title { font-size: 14px; }
       .music-list .item.clickable .item-actions { justify-content: end; }
       footer { padding: 20px 0; }
+    }
+    .item.embed-card { animation: none; transform: none; translate: none; }
+    @media (max-width: 900px) and (max-height: 520px) and (orientation: landscape) {
+      .intro { padding: 6px 12px 10px; }
+      .intro h1 { font-size: clamp(48px, 12vw, 72px); }
     }
     @media (orientation:landscape) and (max-height:600px) {
       .item-embed { min-height:0; scroll-margin-top:56px; }
@@ -1496,7 +1500,7 @@
   <script src="assets/jaro-book.js"></script>
   <script src="assets/music-catalog.js"></script>
   <script src="assets/music-library.js?v=b71509c3cf69"></script>
-  <script src="assets/games-catalog.js?v=f85b33ac145f"></script>
+  <script src="assets/games-catalog.js?v=0d3a06b9fbb7"></script>
   <script>
     const categories = [
       {
@@ -1563,15 +1567,12 @@
         title: "Games",
         description: "Quizzes, AI games and older games adapted with AI.",
         featured: [
-          ["Quiz games", "#games/quizzes"],
           ["Retro games", "#games/retro"],
-          ["AI games", "#games/ai"]
+          ["AI games", "#games/ai"],
+          ["Quiz games", "#games/quizzes"]
         ],
         items: [
-          ["Rall v080 - fighter", "Game archive folder", [["Folder", "https://drive.google.com/drive/folders/1oiYMpORqC5d_hAyliZp1rQJ1WzlqnhMs"]]],
-          ["rall006", "Web remake using AI.", [["Play remake", "https://rall006-tank-game.joynez11.chatgpt.site/?v=2"], ["Folder", "https://drive.google.com/drive/folders/1PP4d2mWdYiW7hGYP_l6O1iHyJyrd3Mt8"]], { embed: "https://rall006-tank-game.joynez11.chatgpt.site/?v=2", embedTitle: "rall006 web remake using AI", embedOnDetail: true }],
-          ["rall0054", "Game archive folder", [["Folder", "https://drive.google.com/drive/folders/1p-GmiheGisYln6QAOKXopvhnkMfxCx2Y"]]],
-          ["rall008", "Game archive folder", [["Folder", "https://drive.google.com/drive/folders/1ApVIMy-WxmkkmHCtq9d7s2zmqfIQvjBz"]]],
+          ["rall006", "Web remake using AI.", [["Play remake", "https://rall006-tank-game.joynez11.chatgpt.site/?v=2"]], { embed: "https://rall006-tank-game.joynez11.chatgpt.site/?v=2", embedTitle: "rall006 web remake using AI", embedOnDetail: true }],
         ]
       },
       {
@@ -1631,13 +1632,17 @@
     ];
 
     const gamesCategory = categories.find(category => category.id === "games");
-    gamesCategory.items.forEach(item => { item[3] = { ...item[3], gameKind: "retro" }; });
+    gamesCategory.items = gamesCategory.items.filter(item => {
+      item[3] = { ...item[3], gameKind: "retro" };
+      item[2] = item[2].filter(([label]) => !/^(source|sources|folder|archive|github)$/i.test(label));
+      return item[2].length > 0;
+    });
     for (const game of window.joynesPublishedGames || []) {
       const gameHref = game.version && game.href.startsWith("games/")
         ? `${game.href}${game.href.includes("?") ? "&" : "?"}v=${encodeURIComponent(game.version)}`
         : game.href;
       gamesCategory.items.unshift([game.title, game.description,
-        [[game.playLabel || "Play", gameHref], ...(game.modes || []), [game.sourceLabel || "Source", game.source]],
+        [[game.playLabel || "Play", gameHref], ...(game.modes || [])],
         {slug: game.id, gameKind: game.kind, gameGenre: game.genre, embed: game.embed === false ? null : gameHref, embedTitle: game.title, embedOnDetail: true,
           gameEditions: game.editions?.map(edition => ({...edition, href: `${edition.href}?v=${encodeURIComponent(edition.version || game.version)}`}))}]);
     }
@@ -2244,7 +2249,7 @@
       if (controls.hidden) return;
       const links = document.createElement("div");
       links.className = "music-mode-links";
-      for (const [filter, label] of [["", "All games"], ["quizzes", "Quiz games"], ["retro", "Retro games"], ["ai", "AI games"]]) {
+      for (const [filter, label] of [["", "All games"], ["retro", "Retro games"], ["ai", "AI games"], ["quizzes", "Quiz games"]]) {
         const link = internalLinkButton(label, filter ? `#games/${filter}` : "#games");
         if ((category.gameFilter || "") === filter) link.setAttribute("aria-current", "page");
         links.append(link);
@@ -2357,7 +2362,6 @@
             if (selectedItem && (extras.activeEdition || "original") === edition.id) link.setAttribute("aria-current", "page");
             actionRow.append(link);
           }
-          actions.slice(-1).forEach(([label, href]) => actionRow.append(linkButton(label, href, category)));
         } else {
           actions.forEach(([label, href]) => actionRow.append(linkButton(label, href, category)));
         }

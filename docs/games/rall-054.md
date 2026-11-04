@@ -1,5 +1,7 @@
 # Rall v054 editions
 
+**All Remix editions were withdrawn on 4 November 2026 at the owner’s request. Original remains available. Rall054 AI Enhanced is under revision after user reports of sticking and difficult controls; ShadowRacer’s faithful enhanced edition is in development.**
+
 The homepage picker exposes **Original**, **AI Enhanced** and **Remix** directly.
 
 Original is the verified JavaScript restoration of the 2002 tank game, preserving six original maps, collision masks, graphics and audio. It reconstructs gameplay rather than executing the Windows binary; see [restoration notes](../../games/rall-054/source-notes.md).

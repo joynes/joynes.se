@@ -1,5 +1,7 @@
 # ShadowRacer
 
+**All Remix editions were withdrawn on 4 November 2026 at the owner’s request. Original remains available. Rall054 AI Enhanced is under revision after user reports of sticking and difficult controls; ShadowRacer’s faithful enhanced edition is in development.**
+
 [Play](https://joynes.github.io/joynes.se/games/shadow-racer/) · [Homepage](https://joynes.github.io/joynes.se/#games/retro/shadow-racer)
 
 Johannes’s 2008 Flash game, with the complete September and October releases. Both keep their original ActionScript / APE physics, car, course, camera, collision rule, timer and finish. Preservation tests verify the original files and read-only observer.

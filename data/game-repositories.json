@@ -279,8 +279,7 @@
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "510a0e2bda1005eb43bc1fa79c0642c785aa590c",
       "auditStatus": "passed",
-      "releaseStatus": "published_verified",
-      "publicUrl": "https://joynes.github.io/joynes.se/games/marble-tables/",
+      "releaseStatus": "withdrawn_by_user",
       "sourceHead": "b7994d00c0d740d2d7738028daf5c6528c110372",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "1278ab41fe79d6b0ec52b8886aa7cd923abb0d61",
@@ -313,7 +312,14 @@
       },
       "auditTestCommit": "48d2bdf566020a00ecf2e509626318897def263a",
       "inGameControlsAndFullscreenStatus": "pending",
-      "englishInterfaceAuditStatus": "pending"
+      "englishInterfaceAuditStatus": "pending",
+      "withdrawal": {
+        "date": "2026-11-04",
+        "reason": "Unpublished at the owner’s explicit request. Do not republish.",
+        "previousRelease": {
+          "publicUrl": "https://joynes.github.io/joynes.se/games/marble-tables/"
+        }
+      }
     },
     {
       "id": "godot-reading",
@@ -325,8 +331,7 @@
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "e423d53c0f59e3221f00cb9fdd292af86476e4a4",
       "auditStatus": "passed",
-      "releaseStatus": "published_verified",
-      "publicUrl": "https://joynes.github.io/joynes.se/games/godot-reading/",
+      "releaseStatus": "withdrawn_by_user",
       "sourceHead": "97a4f8aa5381032663f51395c62bf5fa4811ccf3",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "c1a96a32c14aa8f0e602ed41511ca3dbcf611ff1",
@@ -357,7 +362,14 @@
       },
       "auditTestCommit": "d7418fac35e3f12ee487541734fd47e8203f8c7e",
       "inGameControlsAndFullscreenStatus": "pending",
-      "englishInterfaceAuditStatus": "pending"
+      "englishInterfaceAuditStatus": "pending",
+      "withdrawal": {
+        "date": "2026-11-04",
+        "reason": "Unpublished at the owner’s explicit request. Do not republish.",
+        "previousRelease": {
+          "publicUrl": "https://joynes.github.io/joynes.se/games/godot-reading/"
+        }
+      }
     },
     {
       "id": "car-topview",
@@ -374,7 +386,7 @@
       "sourceHead": "5450575feeb6d6b42c48e7d2708ea3863da424c8",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "f67de46b997044830e1d6fd3f0e5eeba0132be46",
-      "repositoryHeadCommit": "946a19bffb74ae40a899de0e42e56485fb5f2d30",
+      "repositoryHeadCommit": "90a8f0afb85541dd0e1e8bc11137da35ff5bf275",
       "auditUrl": "https://github.com/joynes/car_topview_game/tree/audit/2026-11-03-baseline",
       "auditCommit": "946a19bffb74ae40a899de0e42e56485fb5f2d30",
       "auditEvidence": {
@@ -480,8 +492,7 @@
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "ceef3ab7d1719c49789a917ce539f56bc9d2ca47",
       "auditStatus": "passed",
-      "releaseStatus": "published_verified",
-      "publicUrl": "https://joynes.github.io/joynes.se/games/sdl-space/",
+      "releaseStatus": "withdrawn_by_user",
       "sourceHead": "184adda998c5b91e07c0f7cfebe464d87cd4b09a",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "e2210e5e21fc64a0e143d127be3abf29689c455a",
@@ -513,7 +524,14 @@
       "deploymentRun": 41731059870,
       "inGameControlsAndFullscreenStatus": "passed",
       "englishInterfaceAuditStatus": "passed",
-      "secondaryActionTouchAuditStatus": "passed"
+      "secondaryActionTouchAuditStatus": "passed",
+      "withdrawal": {
+        "date": "2026-11-04",
+        "reason": "Unpublished at the owner’s explicit request. Do not republish.",
+        "previousRelease": {
+          "publicUrl": "https://joynes.github.io/joynes.se/games/sdl-space/"
+        }
+      }
     },
     {
       "id": "network-2d",
@@ -654,7 +672,7 @@
       "auditUrl": "https://github.com/joynes/shadow-racer/tree/audit/2026-11-03-baseline",
       "inGameControlsAndFullscreenStatus": "passed",
       "englishInterfaceAuditStatus": "passed",
-      "repositoryHeadCommit": "b6778712a02e9c7feab924a2d576e706baa7ded0",
+      "repositoryHeadCommit": "08e9ec2617972a22938f42a533d4421d34323031",
       "auditCommit": "b6778712a02e9c7feab924a2d576e706baa7ded0",
       "auditEvidence": {
         "game": "shadow-racer",
@@ -788,7 +806,7 @@
       "sourceHead": "c867cc03bf7540e0d44721cf910c5de3b1723923",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "58f6a89f2440f84afe624a76b205145e1ce2f073",
-      "repositoryHeadCommit": "f1268ac4161256190427d87715ca924e14e046ec",
+      "repositoryHeadCommit": "9e7a2e9ac72a160115b6bc671e3eb1cf7e35a343",
       "auditUrl": "https://github.com/joynes/rall0054/tree/audit/2026-11-03-baseline",
       "inGameControlsAndFullscreenStatus": "passed",
       "englishInterfaceAuditStatus": "passed",
@@ -845,7 +863,9 @@
       "pagesRun": {
         "id": 41775280593,
         "conclusion": "success"
-      }
+      },
+      "homepageListingStatus": "unlisted_by_user",
+      "homepageListingReason": "Removed from homepage links at the owner’s request. Do not relist."
     },
     {
       "id": "rall-008",
@@ -874,7 +894,9 @@
       "pagesRun": {
         "id": 41779218949,
         "conclusion": "success"
-      }
+      },
+      "homepageListingStatus": "unlisted_by_user",
+      "homepageListingReason": "Removed from homepage links at the owner’s request. Do not relist."
     },
     {
       "id": "rall-066",

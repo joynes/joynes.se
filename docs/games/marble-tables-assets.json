@@ -13,5 +13,7 @@
     "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49",
     "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6",
     "docs/games/marble-tables.md": "632024309c0b0ca609a3428933245a1b6e8befcd8d21bec23fd94e5d8a3da89c"
-  }
+  },
+  "status": "withdrawn_by_user",
+  "withdrawnAt": "2026-11-04"
 }
