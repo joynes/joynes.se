@@ -653,7 +653,7 @@
       "auditUrl": "https://github.com/joynes/shadow-racer/tree/audit/2026-11-03-baseline",
       "inGameControlsAndFullscreenStatus": "passed",
       "englishInterfaceAuditStatus": "passed",
-      "repositoryHeadCommit": "8857df4121f7e433005e3d91dddc0ab09f7bb3fe",
+      "repositoryHeadCommit": "a83e8ac061ce37dc69448decf127247d37008b98",
       "auditCommit": "8857df4121f7e433005e3d91dddc0ab09f7bb3fe",
       "auditEvidence": {
         "game": "shadow-racer",
@@ -710,7 +710,21 @@
       "secondaryActionTouchAuditStatus": "passed",
       "sourceArchiveCommit": "f839b50",
       "deploymentCommit": "23333ac4e0c9108a8aca6efe61ecbdf38441151b",
-      "deploymentRun": 41740884604
+      "deploymentRun": 41740884604,
+      "enhancedEdition": {
+        "title": "Ridge Courier",
+        "status": "local_verified",
+        "sourceCommit": "a83e8ac061ce37dc69448decf127247d37008b98",
+        "auditReport": "audit/2026-11-04-enhanced-result.json",
+        "checks": [
+          "All three routes completed through real browser keyboard input on desktop and native CDP touch in phone portrait and landscape. Three deliveries, zero-rescue wins, disappearing Blender parcel meshes, route unlocks, best times and reload persistence verified; no game-state injection.",
+          "Generated audio decoded to nonzero buffers and actual output after user activation. All thirteen route/model/audio/module/helper failures recovered through visible Retry to real driving.",
+          "Cached Chromium and installed Chrome input suites pass desktop and touch-enabled mobile contexts: physical-keyboard aliases/axes, actual lean/boost/jump, independent release, mixed touch/keyboard ownership, four pad directions, cancellation, stale keys/contacts after restart, focus loss, second-finger actions and actual mute/unmute output.",
+          "In-scene bounds, native fullscreen in both orientations, rotated WebGL viewport, immediate keyboard after entry/exit, fallback/Escape and pause preservation pass. Real iframe-window focus loss freezes physics and discards input. Actual WebGL context loss disables play, clears controls and reloads to playable driving.",
+          "Actual rough landings consume repairs, recover the buggy to its checkpoint, clear held controls, reach three-repair loss and allow replay. Unit rule checks separately verify mandatory braking, checkpoint positioning, timeout, terminal state, boost energy/cooldown and terrain gaps.",
+          "Original/AI Enhanced choice, enhanced keyboard/native-touch driving and native fullscreen, return to playable original pass through the canonical homepage preview and cross-origin forwarding fixture in all three viewports. Original full native finish/crash/records/retry/storage and six trusted input cases pass. Root unit/preservation suites pass; original movies/runtime unchanged."
+        ]
+      }
     },
     {
       "id": "rall-026",

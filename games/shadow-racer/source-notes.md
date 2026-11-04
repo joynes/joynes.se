@@ -42,3 +42,7 @@ Ruffle 0.7.1 is fully vendored with both WASM variants, source maps and MIT/Apac
 Both releases require actual keyboard/native touch checks for all directions, combined native actions, independent release, mixed ownership, cancellation, stale input, second-finger actions, pause/time, fullscreen/rotation and fallback. A frame-timed full-race pilot uses ordinary DOM keyboard events and reads the native observer; separate input tests use trusted browser keyboard and native touch events to verify crashes, finishes, saved results, release switching and failed-load recovery. Native state is observed, never injected.
 
 These are desktop and touch-enabled Chromium/Chrome checks. Physical devices and Safari require separate verification. Current results and exact release identities are recorded in the homepage inventory.
+
+## AI Enhanced: Ridge Courier
+
+A separate 3D delivery adventure: three routes, parcel stops, boost energy, wind, gap jumps, checkpoint repairs and local best times. It uses new Blender models and ElevenLabs music, motor and delivery sounds. The restored editions keep their original physics and files. Saves are separate. [Play Ridge Courier](enhanced/) · [Asset credits and generation provenance](enhanced/provenance.json).

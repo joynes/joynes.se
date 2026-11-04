@@ -55,7 +55,12 @@
     "test:shadow:input": "node scripts/test-shadow-racer-input.cjs",
     "test:shadow:frames": "node scripts/test-shadow-racer-frame.cjs",
     "test:shadow:domain": "node scripts/test-shadow-racer-domain.cjs",
-    "test:shadow:loading": "node scripts/test-shadow-racer-loading.cjs"
+    "test:shadow:loading": "node scripts/test-shadow-racer-loading.cjs",
+    "test:ridge-courier:rules": "node scripts/test-ridge-courier-core.mjs",
+    "test:ridge-courier:browser": "node scripts/test-ridge-courier-browser.cjs",
+    "test:ridge-courier:input": "node scripts/test-ridge-courier-input.cjs",
+    "test:ridge-courier:frame": "node scripts/test-ridge-courier-frame.cjs",
+    "test:ridge-courier:links": "node scripts/test-ridge-courier-navigation.cjs"
   },
   "devDependencies": {
     "playwright": "1.58.2"

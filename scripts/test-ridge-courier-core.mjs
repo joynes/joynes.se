@@ -1,0 +1,8 @@
+import assert from 'node:assert/strict';import{readFileSync}from'node:fs';import{createJob,step,ground}from'../games/shadow-racer/enhanced/core.mjs';
+const levels=JSON.parse(readFileSync(new URL('../games/shadow-racer/enhanced/assets/routes.json',import.meta.url))),idle={throttle:0,lean:0,boost:false},level=levels[0];
+// Rule-boundary tests deliberately construct states; browser gameplay tests never write state.
+let j=createJob(level);j.x=level.depots[0];j.y=ground(level,j.x)+16;j.vx=80;step(j,level,idle);assert.equal(j.dock,0,'moving through a depot cannot deliver');j.vx=0;for(let i=0;i<110;i++)step(j,level,idle);assert.equal(j.delivered,1);assert.equal(j.hull,3);assert(j.energy>99);
+j=createJob(level);j.delivered=1;j.y=-400;j.x=3000;j.grounded=false;j.vy=-600;step(j,level,idle);assert.equal(j.rescues,1);assert.equal(j.hull,2);assert.equal(j.x,level.depots[0]+140);assert(j.time>=5);
+j=createJob(level);j.time=level.limit-.001;step(j,level,idle);assert.equal(j.status,'lost');const ended=structuredClone(j);step(j,level,{throttle:1,lean:1,boost:true});assert.deepEqual(j,ended);
+j=createJob(level);j.energy=29;step(j,level,{...idle,boost:true});assert.equal(j.boostCooldown,0);j.energy=100;step(j,level,{...idle,boost:true});assert(j.boostCooldown>0);assert(j.energy<71);const energy=j.energy;step(j,level,{...idle,boost:true});assert(j.energy>energy,'holding boost respects cooldown');
+assert.equal(ground(levels[2],2490),null);assert.equal(typeof ground(levels[2],2490,true),'number');console.log('PASS Ridge Courier braking, checkpoint recovery, timeout, terminal state, energy/cooldown and gaps');

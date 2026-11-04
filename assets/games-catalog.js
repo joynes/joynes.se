@@ -24,11 +24,11 @@ window.joynesPublishedGames = [
     id: "shadow-racer",
     title: "ShadowRacer",
     kind: "retro",
-    description: "Retro · 2008 · Drive the obstacle course. Two original editions.",
+    description: "Retro · 2008 · Original race or AI Enhanced deliveries.",
     href: "games/shadow-racer/",
     source: "https://github.com/joynes/joynes.se/blob/master/games/shadow-racer/source-notes.md",
     sourceLabel: "Source",
-    version: "2008-web.3"
+    version: "2008-web.4"
   },
   {
     id: "worldforge",
