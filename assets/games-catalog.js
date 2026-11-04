@@ -8,11 +8,9 @@ window.joynesPublishedGames = [
     href: "games/rall-054/",
     editions: [
       { id: "original", label: "Original", href: "games/rall-054/" },
-      { id: "enhanced", label: "AI Enhanced", href: "games/rall-054/restored/", version: "1.0.0" }
+      { id: "enhanced", label: "AI Enhanced", href: "games/rall-054/restored/", version: "1.1.0" }
     ],
-    source: "https://github.com/joynes/joynes.se/blob/master/games/rall-054/source-notes.md",
-    sourceLabel: "Source",
-    version: "2002-web.3"
+    version: "2002-web.4"
   },
   {
     id: "rall-030",
@@ -20,8 +18,6 @@ window.joynesPublishedGames = [
     kind: "retro",
     description: "Retro · 1999 · Fighting for one or two players, with stage and character editors.",
     href: "games/rall-030/",
-    source: "https://github.com/joynes/joynes.se/blob/master/games/rall-030/source-notes.md",
-    sourceLabel: "Source",
     version: "1999-web.1"
   },
   {
@@ -30,8 +26,6 @@ window.joynesPublishedGames = [
     kind: "retro",
     description: "Retro · 1998 · ASCII rooftop duels for one or two players.",
     href: "games/rall-026/",
-    source: "https://github.com/joynes/joynes.se/blob/master/games/rall-026/source-notes.md",
-    sourceLabel: "Source",
     version: "1998-web.1"
   },
   {
@@ -43,8 +37,6 @@ window.joynesPublishedGames = [
     editions: [
       { id: "original", label: "Original", href: "games/shadow-racer/" }
     ],
-    source: "https://github.com/joynes/joynes.se/blob/master/games/shadow-racer/source-notes.md",
-    sourceLabel: "Source",
     version: "2008-web.5"
   },
   {
@@ -55,8 +47,6 @@ window.joynesPublishedGames = [
     href: "https://worldforge-self-test.joynez11.chatgpt.site/",
     embed: false,
     playLabel: "Open WorldForge",
-    source: "https://github.com/joynes/joynes.se/blob/master/docs/games/worldforge.md",
-    sourceLabel: "Source",
     version: "9751aa6"
   },
   {
@@ -68,8 +58,6 @@ window.joynesPublishedGames = [
     embed: false,
     playLabel: "Play Bastion",
     modes: [["Play Manta", "https://manta-interceptor.joynez11.chatgpt.site/"]],
-    source: "https://github.com/joynes/joynes.se/blob/master/docs/games/neon-interceptor.md",
-    sourceLabel: "Source",
     version: "0.3.15"
   },
   {
@@ -80,8 +68,6 @@ window.joynesPublishedGames = [
     href: "https://test-3d-network-game.fly.dev/",
     embed: false,
     playLabel: "Open 3D world",
-    source: "https://github.com/joynes/joynes.se/blob/master/docs/games/network-3d.md",
-    sourceLabel: "Source",
     version: "1.1.0"
   },
   {
@@ -93,8 +79,6 @@ window.joynesPublishedGames = [
     embed: false,
     playLabel: "Open arena",
     modes: [["Autopilot", "https://test-network-game.fly.dev/?bot=1"]],
-    source: "https://github.com/joynes/joynes.se/blob/master/docs/games/network-2d.md",
-    sourceLabel: "Source",
     version: "1.1.2"
   },
   {
@@ -106,8 +90,6 @@ window.joynesPublishedGames = [
     editions: [
       { id: "original", label: "Original", href: "games/car-topview/" }
     ],
-    source: "https://github.com/joynes/joynes.se/tree/master/games/car-topview",
-    sourceLabel: "Source",
     version: "2024-car-web.6"
   },
   {
@@ -119,8 +101,6 @@ window.joynesPublishedGames = [
     modes: [["Name workshop", "https://joynes.github.io/llmspel-play/?demo"], ["Maths adventure", "https://joynes.github.io/llmspel-play/?garden"]],
     embed: false,
     playLabel: "LLM tower",
-    source: "https://github.com/joynes/llmspel-play",
-    sourceLabel: "Source",
     version: "ba1f7bf"
   },
   {
@@ -130,7 +110,6 @@ window.joynesPublishedGames = [
     kind: "ai",
     description: "AI · Learning activities, crosswords and Breakout.",
     href: "games/hardword/",
-    source: "https://github.com/joynes/hardword",
     version: "118-web.3"
   },
   {
@@ -140,7 +119,6 @@ window.joynesPublishedGames = [
     kind: "retro",
     description: "Retro · 2013 · Four memory modes with 127 Dota heroes.",
     href: "games/memit/",
-    source: "https://github.com/joynes/memit",
     version: "2.0.0"
   },
   {
@@ -150,7 +128,6 @@ window.joynesPublishedGames = [
     kind: "retro",
     description: "Retro · 2023 · Match words, pictures and letter sounds.",
     href: "games/quiz-sdl/",
-    source: "https://github.com/joynes/quiz_game",
     version: "1.0.0"
   },
   {
@@ -160,7 +137,6 @@ window.joynesPublishedGames = [
     kind: "ai",
     description: "AI · Codex · Two sets of ten maths questions.",
     href: "games/grimace-codex/",
-    source: "https://github.com/joynes/test-codex-math-game",
     version: "2.0.0"
   },
   {
@@ -170,7 +146,6 @@ window.joynesPublishedGames = [
     kind: "ai",
     description: "AI · Gemini · Addition and subtraction with growing difficulty.",
     href: "games/grimace-gemini/",
-    source: "https://github.com/joynes/test-gemini-math-game",
     version: "2.0.0"
   },
   {
@@ -180,7 +155,6 @@ window.joynesPublishedGames = [
     kind: "retro",
     description: "Retro · 2023 · 154 questions across 12 stages.",
     href: "games/web-quizzes/",
-    source: "https://github.com/joynes/web_quizzes",
     version: "2.0.0"
   }
 ];

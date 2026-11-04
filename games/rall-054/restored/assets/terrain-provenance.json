@@ -1,0 +1,13 @@
+{
+  "tool": "Blender",
+  "version": "5.2.2 LTS",
+  "builder": "restored-source/build-terrain.py",
+  "source": "restored-source/terrain.blend",
+  "dimensions": [
+    512,
+    512
+  ],
+  "usage": "Repeating grass beneath the original arena foreground; collision uses the original map with tiny disconnected decorative fragments removed.",
+  "sha256": "ed41bc54a09b73d5a07418b0433afdb0d5d1496354431be4e22cfaa86fc39937",
+  "builderSha256": "dedf26b62223be755d0dc3db4d33d6959cfe7bb717721f521b0e457f449d1dfb"
+}

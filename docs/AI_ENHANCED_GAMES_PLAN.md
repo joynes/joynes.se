@@ -8,7 +8,7 @@ Expose available editions directly in the homepage game picker. Original launche
 
 | Original game | AI Enhanced | Remix |
 | --- | --- | --- |
-| Rall v054 | Faithful six-map restoration with new Blender tank sprites; same core, controls, collision, solo/duel rules and original audio. Published and verified locally/live, including exact gameplay-state parity, complete solo/duel outcomes, touch/keyboard and homepage selection. | Beacon Siege: three new capture-and-extraction missions. |
+| Rall v054 | Version 1.1: same engine, six arenas, physics and rules; decorative collision cleanup, directional touch, closer solo camera, Blender terrain/tanks and new ElevenLabs audio. Local verification passed; deployment verification pending. | Beacon Siege: three new capture-and-extraction missions. |
 | Top-down Driving | Faithful restoration queued. | Night Circuit: new checkpoint time trials, boost and ghosts. |
 | ShadowRacer | Faithful restoration queued. | Ridge Courier: new delivery routes. |
 
@@ -16,7 +16,7 @@ All three Remix editions are withdrawn at the owner’s request. Their source an
 
 ## Remaining work
 
-Continue with Top-down Driving and ShadowRacer, then the other adapted older games: Word Quiz, Quiz Game, Memit, Rall v026, Rall v030. Verify each Original first, preserve its identity, then test and publish the faithful edition. Do not expose placeholders. Keep the police-car and bus POCs excluded.
+Continue with ShadowRacer and Top-down Driving, then the other adapted older games: Word Quiz, Quiz Game, Memit, Rall v026, Rall v030. Verify each Original first, preserve its identity, then test and publish the faithful edition. Do not expose placeholders. Keep the police-car and bus POCs excluded.
 
 Use the available ElevenLabs music/sound-effect skills when new audio is appropriate. Preserve prompts, models, parameters, generation IDs and hashes privately. Publish optimized selected files and accurate provenance; keep credentials, signed URLs and billing data private. Existing generated music and sound remain part of their Remix games.
 
@@ -24,4 +24,4 @@ Marble Tables, Read and Place and SDL Space — Survival are withdrawn at the ow
 
 Rall v080 is unlisted at the owner’s request and excluded from the enhanced-edition queue. Do not relist it.
 
-Rall008 is also unlisted at the owner’s request. Do not relist it or create an enhanced edition for publication. Rall054 AI Enhanced is being revised after reports of sticking, difficult touch controls and insufficient graphics/audio improvements. ShadowRacer’s faithful enhanced edition must retain the original track, physics and game feel with better graphics, music and sound.
+Rall008 is also unlisted at the owner’s request. Do not relist it or create an enhanced edition for publication. Rall054 AI Enhanced 1.1 addresses sticking, touch controls, readability and audio after owner feedback. ShadowRacer’s faithful enhanced edition must retain the original track, physics and game feel with better graphics, music and sound.

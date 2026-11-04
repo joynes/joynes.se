@@ -68,8 +68,12 @@
     "test:rall-008:recovery": "node scripts/test-rall008-recovery.cjs",
     "test:rall-008:links": "node scripts/test-rall008-navigation.cjs",
     "test:games:editions": "node scripts/test-game-editions.cjs",
-    "test:rall-054:faithful": "node scripts/test-rall054-faithful.cjs",
-    "test:rall-054:faithful-recovery": "node scripts/test-rall054-faithful-recovery.cjs"
+    "test:rall-054:faithful": "node scripts/test-rall054-revision-browser.cjs",
+    "test:rall-054:faithful-recovery": "node scripts/test-rall054-revision-recovery.cjs",
+    "test:rall-054:revision:rules": "node --test scripts/test-rall054-revision-rules.mjs",
+    "test:rall-054:revision:input": "node scripts/test-rall054-revision-input.cjs",
+    "test:rall-054:revision:solo": "node scripts/test-rall054-revision-solo.cjs",
+    "test:rall-054:revision:rotation": "node scripts/test-rall054-revision-rotation.cjs"
   },
   "devDependencies": {
     "playwright": "1.58.2"

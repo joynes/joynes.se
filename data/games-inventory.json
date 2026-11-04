@@ -56,7 +56,7 @@
         "games/web-quizzes/questions.json": "9bb2d82c4e317c1747b7ae58b99e10436f936c87896f5c97e114d9921c57bd61",
         "games/web-quizzes/app.mjs": "707b8d6004c33cee1690289cdb15e475fd9eb248b53387dc1a6c684bd99f110b",
         "games/web-quizzes/source-notes.md": "3a18494f56de0f8a2b45206b101a109d2002d7625b149633cac008cbde932b55",
-        "assets/games-catalog.js": "0d3a06b9fbb7db90f0587ab949122dd79e0d0e36d9929ac66f6f539428ebc357"
+        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355"
       },
       "websiteSection": "quizzes",
       "originalTitle": "Fr\u00e5gespelet",
@@ -740,8 +740,8 @@
         "games/simple-driving/Build/cartWeb2.loader.js": "b2857ce93350711103bd72fbc6b665f16bb09afdf65542b52549ecd05b812a54",
         "games/simple-driving/Build/cartWeb2.wasm": "10cb1df56489a17bdab24b1ccdb3acad9f2049de604661c62409d9f26f100afd",
         "games/simple-driving/Build/cartWeb2.data": "f464a31a28caeec8b24e2059aa57e517c4a3c670fc62462fce9f5055f7dd47f5",
-        "assets/games-catalog.js": "0d3a06b9fbb7db90f0587ab949122dd79e0d0e36d9929ac66f6f539428ebc357",
-        "index.html": "d848d56ed50daf995e6b7014e9f8f42276d3119cb64a39994de2ad182baaccfa"
+        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355",
+        "index.html": "36031690e85b806b1945b17e1ba8e26169bcda9bdf22d5864e143c58c148c107"
       },
       "previousPublishedUrl": "https://joynes.github.io/joynes.se/games/simple-driving/",
       "exclusionReason": "Removed at the owner's request: proof-of-concept driving demo with too little gameplay.",
@@ -809,8 +809,8 @@
         "games/simple-driving/Build/cartWeb2.wasm": "10cb1df56489a17bdab24b1ccdb3acad9f2049de604661c62409d9f26f100afd",
         "games/simple-driving/Build/cartWeb2.loader.js": "b2857ce93350711103bd72fbc6b665f16bb09afdf65542b52549ecd05b812a54",
         "games/simple-driving/Build/cartWeb2.framework.js": "18d7c9a73fddf3825d1e3cf71f948157e4720270e1e41651f687c76f29e4b3be",
-        "assets/games-catalog.js": "0d3a06b9fbb7db90f0587ab949122dd79e0d0e36d9929ac66f6f539428ebc357",
-        "index.html": "d848d56ed50daf995e6b7014e9f8f42276d3119cb64a39994de2ad182baaccfa"
+        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355",
+        "index.html": "36031690e85b806b1945b17e1ba8e26169bcda9bdf22d5864e143c58c148c107"
       },
       "deploymentRecovery": {
         "failedAndInconsistentRerun": 41290922621,
@@ -1018,8 +1018,8 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
         "docs/games/car-topview-assets.json": "d85a34c5680cf30fa0b0117f7173b0e3f4c0785df19f6155d2f9ba8018c386c0",
-        "index.html": "d848d56ed50daf995e6b7014e9f8f42276d3119cb64a39994de2ad182baaccfa",
-        "assets/games-catalog.js": "0d3a06b9fbb7db90f0587ab949122dd79e0d0e36d9929ac66f6f539428ebc357"
+        "index.html": "36031690e85b806b1945b17e1ba8e26169bcda9bdf22d5864e143c58c148c107",
+        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355"
       },
       "deploymentRun": 41842371865,
       "websiteSection": "ai",
@@ -1084,8 +1084,8 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
         "docs/games/car-topview-assets.json": "d85a34c5680cf30fa0b0117f7173b0e3f4c0785df19f6155d2f9ba8018c386c0",
-        "index.html": "d848d56ed50daf995e6b7014e9f8f42276d3119cb64a39994de2ad182baaccfa",
-        "assets/games-catalog.js": "0d3a06b9fbb7db90f0587ab949122dd79e0d0e36d9929ac66f6f539428ebc357"
+        "index.html": "36031690e85b806b1945b17e1ba8e26169bcda9bdf22d5864e143c58c148c107",
+        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355"
       },
       "liveVerification": {
         "date": "2026-11-04",
@@ -1534,7 +1534,7 @@
       "catalogCommit": "66c76ea53cb3e403a8bff9a55ab3db924bbf6635",
       "catalogDeploymentRun": 41336710668,
       "publishedFileSha256": {
-        "assets/games-catalog.js": "0d3a06b9fbb7db90f0587ab949122dd79e0d0e36d9929ac66f6f539428ebc357",
+        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355",
         "docs/games/worldforge.md": "256ea3317260ef758a5dd94f5ecad5a3ab4d674caf40d39b9d81aa8bd26d065a",
         "docs/games/worldforge-assets.json": "3fff753caa75822e9a4962033784b2449c5c461c9fb492ff999bee965c02b321"
       },
@@ -1663,8 +1663,8 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
         "docs/games/shadow-racer-assets.json": "27c0cf1b87c96681884e514d48f3460b960f05a0dd9f434b354fc9f378218adc",
-        "index.html": "d848d56ed50daf995e6b7014e9f8f42276d3119cb64a39994de2ad182baaccfa",
-        "assets/games-catalog.js": "0d3a06b9fbb7db90f0587ab949122dd79e0d0e36d9929ac66f6f539428ebc357"
+        "index.html": "36031690e85b806b1945b17e1ba8e26169bcda9bdf22d5864e143c58c148c107",
+        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355"
       },
       "websiteSection": "retro",
       "renewedAuditStatus": "passed",
@@ -1697,8 +1697,8 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
         "docs/games/shadow-racer-assets.json": "27c0cf1b87c96681884e514d48f3460b960f05a0dd9f434b354fc9f378218adc",
-        "index.html": "d848d56ed50daf995e6b7014e9f8f42276d3119cb64a39994de2ad182baaccfa",
-        "assets/games-catalog.js": "0d3a06b9fbb7db90f0587ab949122dd79e0d0e36d9929ac66f6f539428ebc357"
+        "index.html": "36031690e85b806b1945b17e1ba8e26169bcda9bdf22d5864e143c58c148c107",
+        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355"
       },
       "renewedAuditCommit": "8857df4121f7e433005e3d91dddc0ab09f7bb3fe",
       "deploymentRun": 41842371865,
@@ -1844,10 +1844,10 @@
         "games/rall-026/vendor/emulators/sources/emulators-v8.5.2.tar.gz": "4f92834936f774ad1e0f8d2cc0fc05dc73cd9962d2b8da0a09f56139a2a70f28",
         "games/rall-026/vendor/emulators/sources/dosbox-528578d.tar.gz": "797efaf22246bbc5b2e6be0a6c791a58addd2bca330e0aa93232780a77e06019",
         "games/rall-026/vendor/emulators/wdosbox.wasm": "b33afba80de1a420c123086e5952d135de041f9e85d4444170e29d9249ec049c",
-        "assets/games-catalog.js": "0d3a06b9fbb7db90f0587ab949122dd79e0d0e36d9929ac66f6f539428ebc357",
+        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355",
         "games/rall-026/vendor/emulators/wlibzip.js": "b8e55c2aa4c96e961c9965f289c0f40b5d44f02a557dcf980ddc29787b493842",
         "games/rall-026/vendor/emulators/wlibzip.wasm": "25064d970c42ca7ea0fdb8b058204d6e41cc8826a676219677772f5591e8337b",
-        "index.html": "d848d56ed50daf995e6b7014e9f8f42276d3119cb64a39994de2ad182baaccfa",
+        "index.html": "36031690e85b806b1945b17e1ba8e26169bcda9bdf22d5864e143c58c148c107",
         "docs/games/rall-026.md": "e689906009815f758a854b186622c68c8fb482ebafd1e260e2091592f1147049",
         "docs/games/rall-026-assets.json": "23aad475f25009756710699965ca81d63f71b7eb230cdfed2ed10e201cc6150b"
       },
@@ -2003,8 +2003,8 @@
         "games/rall-030/vendor/emulators/wlibzip.wasm": "25064d970c42ca7ea0fdb8b058204d6e41cc8826a676219677772f5591e8337b",
         "games/rall-030/vendor/mouse-compat/ALMOUSE.COM": "200942106e626955510b84426802de31790979c1f55d225d7bb65cb74cd3ba37",
         "games/rall-030/vendor/mouse-compat/almouse.asm": "307b24361235edbf526d49ba4c9bc6323c73c4ded087a70832ab903834d2c1c5",
-        "index.html": "d848d56ed50daf995e6b7014e9f8f42276d3119cb64a39994de2ad182baaccfa",
-        "assets/games-catalog.js": "0d3a06b9fbb7db90f0587ab949122dd79e0d0e36d9929ac66f6f539428ebc357",
+        "index.html": "36031690e85b806b1945b17e1ba8e26169bcda9bdf22d5864e143c58c148c107",
+        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355",
         "docs/games/rall-030.md": "fd819f7eccea21de808aa561486b291bd37c5c500bae36d770c7ab9477440168",
         "docs/games/rall-030-assets.json": "1b702ab9c20481a5708c2e39df397c3d565c37f1370643b9f103ff7412a1ae8f"
       },
@@ -2039,7 +2039,7 @@
           "url": "https://drive.google.com/file/d/1kIgJjs2cZA_IERTcx5XekalUaSSO6aTS/view"
         }
       ],
-      "work": "Original remains available. Remix withdrawn at owner request. Faithful enhanced work follows user feedback; no new edition published without checks.",
+      "work": "AI Enhanced 1.1 verified locally and committed privately: decorative collision cleanup, directional touch controls, readable solo camera, Blender terrain and new audio. Deployment verification pending. Original remains available; Remix withdrawn.",
       "tests": [
         {
           "check": "rules",
@@ -2098,7 +2098,7 @@
       "implementationRepository": "https://github.com/joynes/rall0054",
       "resourceAudit": "docs/games/rall-054-assets.json",
       "releaseFilesSha256": {
-        "games/rall-054/app.mjs": "7fb8c6ac99ff444583a087d7e6dc8965a146e970f56e75dab6a9f999bd182ec5",
+        "games/rall-054/app.mjs": "69c1d50ddf41dc080356bbecf922d3cfd6839db5ec2d8b3333278654fb4e910e",
         "games/rall-054/assets/bullet.png": "2e88403b5aad2e51a2f678bafa2d239fcbbeb8f073ce11b55642dc43035009da",
         "games/rall-054/assets/enter-siege.wav": "63b0a962d6005a0e7af6414921f855cec9ef1c5aa7ecc1cc5f2707947f73ab52",
         "games/rall-054/assets/explosion.png": "41805483ee6df8ebf188f32e7d5465831fe50368deb91e2fc526a6ea83fc0071",
@@ -2125,7 +2125,7 @@
         "games/rall-054/assets/tank-green.png": "8809d37d2b9dba01d1703090d0ffb89b3cde4d5f338ddaf806edce022fbf618c",
         "games/rall-054/core.mjs": "7ef1745bd4cabd0925549bc9c89a89dc4e2f5494c583cf1b67fd5f36cc618935",
         "games/rall-054/graphics.mjs": "03ee34ef5c0e711b6c71198ab867b33632a2a2e606abe37d69763b120506334d",
-        "games/rall-054/index.html": "4c4f4f35aace24ff14ae6359b9b2004789809e6814cbd868bb514ec7dec3ca79",
+        "games/rall-054/index.html": "af6001879e2148e5734fbe68bacaf70c58af5a424def22542570ee0af841f441",
         "games/rall-054/provenance.json": "ea36aec63712d56fc7240380d33975be01a5627c4b20c14b540eaa2d0d1517ad",
         "games/rall-054/restored/assets/bullet.png": "2b111df6af7b82197dcf205bb3cbc1a8ef29d425ab0f4b93f10b32a2160abed5",
         "games/rall-054/restored/assets/gun.png": "664d20d83acc74facca4413fe806e53a6aa69353cb7ce9ff5758c060f6dd09ab",
@@ -2135,23 +2135,37 @@
         "games/rall-054/restored/assets/tank-blue.png": "21dbd0460f5d1292391cabf265baf738331a47f25f6ec3245df59e8f46e571af",
         "games/rall-054/restored/assets/tank-green-hit.png": "be23eed0fd80b78af64a313bb44bc2aa71cb74b01a307a8415c90e714b246813",
         "games/rall-054/restored/assets/tank-green.png": "9fd331c414adfbeab55e2ed517e908dfec60e59f14cd9534bac459a2f0a0c84b",
-        "games/rall-054/restored/index.html": "7b73a552addec4cdd246ce0ac6ea211d0c77a79567d4fff25909002ab949c9d6",
-        "games/rall-054/source-notes.md": "afa72f0a883fd6c2447365f34a0ea8d425cd1312055e2067a2d1a06cf1cb8908",
+        "games/rall-054/restored/index.html": "2576d16981444ab34e7187f93fc4fe99fa3c53f7af092c32f0a50a5cc0ae74f8",
+        "games/rall-054/source-notes.md": "15031d38a1f815a316040f3b2c2e81b2e28264b090bc515101c4563b1b33283a",
         "games/rall-054/styles.css": "efd21b74be45f8ea4f7e9f191e522d7fb748f4802b8ce868c8a3a671ba94dd86",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
-        "docs/games/rall-054-assets.json": "eaadd2a1d8aa09729148cef9a451b7cb9978516f4db19c0c79d7ef75e38736c2",
-        "index.html": "d848d56ed50daf995e6b7014e9f8f42276d3119cb64a39994de2ad182baaccfa",
-        "assets/games-catalog.js": "0d3a06b9fbb7db90f0587ab949122dd79e0d0e36d9929ac66f6f539428ebc357"
+        "docs/games/rall-054-assets.json": "079cffc3b07ef8a8cb360cb2d55eb370eeb973e46e0efc7ef9d577a0055d7e98",
+        "index.html": "36031690e85b806b1945b17e1ba8e26169bcda9bdf22d5864e143c58c148c107",
+        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355",
+        "games/rall-054/restored/assets/audio-provenance.json": "1cef9ad1ec7d7677c7117345b21a2dc29e11ffdcac98a94c15540ccd1df93477",
+        "games/rall-054/restored/assets/enter-siege.wav": "722a9421f6996b9a16f38b30c6987bb3118d281e16598bc66aabf9069e2dbd2c",
+        "games/rall-054/restored/assets/explosion.wav": "9bcb18b54fc50b429233ec334163f75ca398fd1d10cc0097b81b30d146501e3b",
+        "games/rall-054/restored/assets/gun.wav": "dfe7b7761fd1e4e292452fc500affa10cb114cceb04d63e832cbbc0545261421",
+        "games/rall-054/restored/assets/leave-siege.wav": "c5325780cdcdc0916e6d6c5983684195ac5f3078ef0668144c1d27ec1b11780d",
+        "games/rall-054/restored/assets/music-1.mp3": "5048aec194fa5b350fd469974274b81b18e57ecb3d5f2888f11c319ec1b8117d",
+        "games/rall-054/restored/assets/music-2.mp3": "f1ea7bbab9c85dc7088674955958f804fdaca2f02046740d19176567ddb1fda2",
+        "games/rall-054/restored/assets/music-3.mp3": "39a01cc953e547747706ffde59f1a22cf1ab8cc9cae8e93cdc9da7b4ec96e807",
+        "games/rall-054/restored/assets/siege.wav": "5aebbfe29a1f42e334fcc6b489225f4bc15d1c3304f9d56069e7f334b4154e7b",
+        "games/rall-054/restored/assets/terrain-provenance.json": "c7b93e4dd4f7a03c70e03ba3e6d7e8b16b62d42a2b626e9f97223898bb2bd5a6",
+        "games/rall-054/restored/assets/terrain.png": "ed41bc54a09b73d5a07418b0433afdb0d5d1496354431be4e22cfaa86fc39937",
+        "games/rall-054/restored/enhancements.mjs": "213cc0174661bbe5b66f8434fa02bc4b6e53e054729a9b3e19a614d56accb62f",
+        "games/rall-054/restored/graphics.mjs": "32a618e2bb2a1c2af801c56ea9cd37b28ca3c461e20a8699c2c7d4ea7c177ed4",
+        "games/rall-054/restored/styles.css": "d4c78fcbca9c18e8caa519503d9527464a86942b20b5406032538cdf64468a7a"
       },
       "inGameControlsAndFullscreenStatus": "passed",
       "englishInterfaceAuditStatus": "passed",
       "catalogUrl": "https://joynes.github.io/joynes.se/#games/retro/rall-054",
-      "version": "2002-web.3",
+      "version": "2002-web.4",
       "deploymentRun": 41842371865,
       "auditCommit": "f1268ac4161256190427d87715ca924e14e046ec",
       "publishedFileSha256": {
-        "games/rall-054/app.mjs": "7fb8c6ac99ff444583a087d7e6dc8965a146e970f56e75dab6a9f999bd182ec5",
+        "games/rall-054/app.mjs": "69c1d50ddf41dc080356bbecf922d3cfd6839db5ec2d8b3333278654fb4e910e",
         "games/rall-054/assets/bullet.png": "2e88403b5aad2e51a2f678bafa2d239fcbbeb8f073ce11b55642dc43035009da",
         "games/rall-054/assets/enter-siege.wav": "63b0a962d6005a0e7af6414921f855cec9ef1c5aa7ecc1cc5f2707947f73ab52",
         "games/rall-054/assets/explosion.png": "41805483ee6df8ebf188f32e7d5465831fe50368deb91e2fc526a6ea83fc0071",
@@ -2178,7 +2192,7 @@
         "games/rall-054/assets/tank-green.png": "8809d37d2b9dba01d1703090d0ffb89b3cde4d5f338ddaf806edce022fbf618c",
         "games/rall-054/core.mjs": "7ef1745bd4cabd0925549bc9c89a89dc4e2f5494c583cf1b67fd5f36cc618935",
         "games/rall-054/graphics.mjs": "03ee34ef5c0e711b6c71198ab867b33632a2a2e606abe37d69763b120506334d",
-        "games/rall-054/index.html": "4c4f4f35aace24ff14ae6359b9b2004789809e6814cbd868bb514ec7dec3ca79",
+        "games/rall-054/index.html": "af6001879e2148e5734fbe68bacaf70c58af5a424def22542570ee0af841f441",
         "games/rall-054/provenance.json": "ea36aec63712d56fc7240380d33975be01a5627c4b20c14b540eaa2d0d1517ad",
         "games/rall-054/restored/assets/bullet.png": "2b111df6af7b82197dcf205bb3cbc1a8ef29d425ab0f4b93f10b32a2160abed5",
         "games/rall-054/restored/assets/gun.png": "664d20d83acc74facca4413fe806e53a6aa69353cb7ce9ff5758c060f6dd09ab",
@@ -2188,14 +2202,28 @@
         "games/rall-054/restored/assets/tank-blue.png": "21dbd0460f5d1292391cabf265baf738331a47f25f6ec3245df59e8f46e571af",
         "games/rall-054/restored/assets/tank-green-hit.png": "be23eed0fd80b78af64a313bb44bc2aa71cb74b01a307a8415c90e714b246813",
         "games/rall-054/restored/assets/tank-green.png": "9fd331c414adfbeab55e2ed517e908dfec60e59f14cd9534bac459a2f0a0c84b",
-        "games/rall-054/restored/index.html": "7b73a552addec4cdd246ce0ac6ea211d0c77a79567d4fff25909002ab949c9d6",
-        "games/rall-054/source-notes.md": "afa72f0a883fd6c2447365f34a0ea8d425cd1312055e2067a2d1a06cf1cb8908",
+        "games/rall-054/restored/index.html": "2576d16981444ab34e7187f93fc4fe99fa3c53f7af092c32f0a50a5cc0ae74f8",
+        "games/rall-054/source-notes.md": "15031d38a1f815a316040f3b2c2e81b2e28264b090bc515101c4563b1b33283a",
         "games/rall-054/styles.css": "efd21b74be45f8ea4f7e9f191e522d7fb748f4802b8ce868c8a3a671ba94dd86",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
-        "docs/games/rall-054-assets.json": "eaadd2a1d8aa09729148cef9a451b7cb9978516f4db19c0c79d7ef75e38736c2",
-        "index.html": "d848d56ed50daf995e6b7014e9f8f42276d3119cb64a39994de2ad182baaccfa",
-        "assets/games-catalog.js": "0d3a06b9fbb7db90f0587ab949122dd79e0d0e36d9929ac66f6f539428ebc357"
+        "docs/games/rall-054-assets.json": "079cffc3b07ef8a8cb360cb2d55eb370eeb973e46e0efc7ef9d577a0055d7e98",
+        "index.html": "36031690e85b806b1945b17e1ba8e26169bcda9bdf22d5864e143c58c148c107",
+        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355",
+        "games/rall-054/restored/assets/audio-provenance.json": "1cef9ad1ec7d7677c7117345b21a2dc29e11ffdcac98a94c15540ccd1df93477",
+        "games/rall-054/restored/assets/enter-siege.wav": "722a9421f6996b9a16f38b30c6987bb3118d281e16598bc66aabf9069e2dbd2c",
+        "games/rall-054/restored/assets/explosion.wav": "9bcb18b54fc50b429233ec334163f75ca398fd1d10cc0097b81b30d146501e3b",
+        "games/rall-054/restored/assets/gun.wav": "dfe7b7761fd1e4e292452fc500affa10cb114cceb04d63e832cbbc0545261421",
+        "games/rall-054/restored/assets/leave-siege.wav": "c5325780cdcdc0916e6d6c5983684195ac5f3078ef0668144c1d27ec1b11780d",
+        "games/rall-054/restored/assets/music-1.mp3": "5048aec194fa5b350fd469974274b81b18e57ecb3d5f2888f11c319ec1b8117d",
+        "games/rall-054/restored/assets/music-2.mp3": "f1ea7bbab9c85dc7088674955958f804fdaca2f02046740d19176567ddb1fda2",
+        "games/rall-054/restored/assets/music-3.mp3": "39a01cc953e547747706ffde59f1a22cf1ab8cc9cae8e93cdc9da7b4ec96e807",
+        "games/rall-054/restored/assets/siege.wav": "5aebbfe29a1f42e334fcc6b489225f4bc15d1c3304f9d56069e7f334b4154e7b",
+        "games/rall-054/restored/assets/terrain-provenance.json": "c7b93e4dd4f7a03c70e03ba3e6d7e8b16b62d42a2b626e9f97223898bb2bd5a6",
+        "games/rall-054/restored/assets/terrain.png": "ed41bc54a09b73d5a07418b0433afdb0d5d1496354431be4e22cfaa86fc39937",
+        "games/rall-054/restored/enhancements.mjs": "213cc0174661bbe5b66f8434fa02bc4b6e53e054729a9b3e19a614d56accb62f",
+        "games/rall-054/restored/graphics.mjs": "32a618e2bb2a1c2af801c56ea9cd37b28ca3c461e20a8699c2c7d4ea7c177ed4",
+        "games/rall-054/restored/styles.css": "d4c78fcbca9c18e8caa519503d9527464a86942b20b5406032538cdf64468a7a"
       },
       "verificationLimits": "Emulated mobile Chromium/Chrome; physical devices and Safari not covered. Browser tests only normal input and cloned observer. Unit tests explicitly construct isolated fixtures.",
       "liveVerification": {
@@ -2279,54 +2307,51 @@
         "previousPublicUrl": "https://joynes.github.io/joynes.se/games/rall-054/enhanced/"
       },
       "enhancedEdition": {
-        "status": "published_needs_revision",
+        "status": "verified_local_pending_deployment",
         "launchChoices": [
           "Original",
-          "AI Enhanced",
-          "Remix"
+          "AI Enhanced"
         ],
         "graphics": "Blender",
         "intent": "Keep original gameplay, maps, controls, progression and identity. Restore graphics/audio; new concepts belong to Remix.",
         "title": "Rall v054 \u00b7 AI Enhanced",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "webPath": "games/rall-054/restored/",
         "publicUrl": "https://joynes.github.io/joynes.se/games/rall-054/restored/",
-        "sourceCommit": "ce262bd9a7ecab3e88920385c297b63a1be017c1",
+        "sourceCommit": "e9d34c7b5f04633960787473490aefa76745c846",
         "provenance": "games/rall-054/restored/assets/sprites-provenance.json",
-        "localChecks": "Six-map exact gameplay-state parity with Original, same app/core and original audio, new Blender tank sprites. All 18 duels, solo/Green/loss/replay, four input sizes per browser, both frame suites, 24 failed resources and eight art/style Retry cases, storage/music resilience and Original 18-duel regression pass. Homepage direct choices pass four sizes per browser plus forwarded fixtures; Original/Remix fullscreen/actual-driving checks pass. Root units pass. Live verification pending.",
-        "auditCommit": "f1268ac4161256190427d87715ca924e14e046ec",
-        "verifiedAt": "2026-11-04",
-        "deploymentCommit": "6a98ed689890ff3cfcb3fbf2c122fb154e3dcdc4",
-        "deploymentRun": 41842371865,
-        "soundAndMusic": "Original audio retained",
-        "liveChecks": "All six exact gameplay-state comparisons with Original pass, with distinct Blender graphics. All 18 full duels and three solo/Green/progression/loss/replay cases, four input sizes per browser, three iframe/fullscreen cases per browser, eight visible-art/style Retry cases and all 72 release hashes pass live. Direct homepage/actual joynes.se launch, touch+keyboard play, fullscreen, Back and reload pass four sizes in both browsers. Original maps/collision masks, gameplay engine, controls and audio remain unchanged.",
-        "userReportedIssues": "Frequent sticking, difficult controls and insufficient graphics/audio improvement. Revision in progress."
+        "localChecks": "30 six-map browser navigation/full-duel cases; keyboard and native-touch solo progression/defeat/replay; four input sizes in Chrome and Chromium; three parent/fullscreen sizes each; rotation in both browsers; twelve critical resource Retry cases; music retry, denied storage; 18 full Original regression duels. Read-only observation, no gameplay-state injection.",
+        "soundAndMusic": "Three new ElevenLabs instrumental tracks and cannon/siege/explosion effects; short local synthesized mode cues. Original audio unchanged.",
+        "userReportedIssues": "Addressed in 1.1: decorative collision fragments, difficult touch controls, small solo view, insufficient audio/graphics distinction.",
+        "collisionAndControls": "Same engine, arenas, physics and rules; disconnected decorative collision components <24px removed only in AI Enhanced. Directional touch Drive, assisted Aim/fire and Drive-to-exit-siege.",
+        "audioProvenance": "games/rall-054/restored/assets/audio-provenance.json",
+        "terrainProvenance": "games/rall-054/restored/assets/terrain-provenance.json"
       },
       "priorEditionLiveVerification": {
         "date": "2026-11-04",
-        "deploymentCommit": "7a86c42de7aed09601f51f935c872201f537d6ac",
-        "deploymentRun": 41788531534,
+        "status": "published_verified",
+        "deploymentCommit": "6a98ed689890ff3cfcb3fbf2c122fb154e3dcdc4",
+        "deploymentRun": 41842371865,
         "deploymentStatus": "success",
         "checks": {
-          "campaign": 9,
-          "input-chrome": 4,
-          "input-chromium": 4,
-          "frame-chrome": 4,
-          "frame-chromium": 4,
-          "graphics-chrome": 3,
-          "graphics-chromium": 3,
-          "home-chrome": 3,
-          "home-chromium": 3,
-          "domain-chrome": 3,
-          "domain-chromium": 3,
-          "recovery": 22,
-          "storage": 1,
-          "abilities": 2,
-          "loss": 2
+          "editions-live-home-chrome": 4,
+          "editions-live-domain-chrome": 4,
+          "editions-live-home-chromium": 4,
+          "editions-live-domain-chromium": 4,
+          "editions-live-remix-chrome": 8,
+          "editions-live-remix-chromium": 8,
+          "faithful054-live-parity": 6,
+          "faithful054-live-duels": 18,
+          "faithful054-live-input-chrome": 4,
+          "faithful054-live-input-chromium": 4,
+          "faithful054-live-solo": 3,
+          "faithful054-live-frame-chrome2": 3,
+          "faithful054-live-frame-chromium2": 3,
+          "faithful054-live-recovery": 8
         },
-        "hashes": 63,
-        "result": "All complete campaigns, both browser input/frame/graphics suites, 22 load recovery cases, actual touch storage victory, mortar/shield interaction, real AI defeat/replay, canonical homepage and actual joynes.se edition selection/Original return passed. Original core and all archived media remain unchanged.",
-        "url": "https://joynes.github.io/joynes.se/games/rall-054/enhanced/"
+        "releaseHashChecks": 72,
+        "scope": "Direct homepage choices, actual joynes.se, real keyboard/touch play, fullscreen/cleanup, Back/reload. Existing reimagined games are explicitly Remix. Rall054 AI Enhanced keeps Original gameplay/maps/controls/audio and changes tank graphics.",
+        "limits": "Mobile contexts are emulated Chromium/Chrome; physical devices and Safari not covered."
       }
     },
     {
@@ -2726,8 +2751,8 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
         "docs/games/rall-080-assets.json": "6472f3251f791a12df77f91951ff5d7bb2a96552a8412a41a320fe0d581913b8",
-        "assets/games-catalog.js": "0d3a06b9fbb7db90f0587ab949122dd79e0d0e36d9929ac66f6f539428ebc357",
-        "index.html": "d848d56ed50daf995e6b7014e9f8f42276d3119cb64a39994de2ad182baaccfa"
+        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355",
+        "index.html": "36031690e85b806b1945b17e1ba8e26169bcda9bdf22d5864e143c58c148c107"
       },
       "verificationLimits": "Emulated mobile browser contexts; no physical-device or Safari claim. Browser tests use normal keys/native CDP touch and a cloned read-only native observer; no gameplay-state injection.",
       "inGameControlsAndFullscreenStatus": "local-passed-live-pending",
@@ -3238,8 +3263,8 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
         "docs/games/rall-008-assets.json": "a9a46de89f94fffebbd2adf57dc4e1e348e3275319961c49a880a0c6c6c899a3",
-        "assets/games-catalog.js": "0d3a06b9fbb7db90f0587ab949122dd79e0d0e36d9929ac66f6f539428ebc357",
-        "index.html": "d848d56ed50daf995e6b7014e9f8f42276d3119cb64a39994de2ad182baaccfa"
+        "assets/games-catalog.js": "ae14a1e63c7a92b03667f393afdeb7f118e312acf11f53ce02f7e7b65921b355",
+        "index.html": "36031690e85b806b1945b17e1ba8e26169bcda9bdf22d5864e143c58c148c107"
       },
       "verificationLimits": "Mobile browser contexts are emulated; no physical-device or Safari claim. Tests drive browser keys/native CDP touch with cloned read-only state, without gameplay-state injection.",
       "inGameControlsAndFullscreenStatus": "passed",

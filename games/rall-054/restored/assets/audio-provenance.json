@@ -1,0 +1,86 @@
+{
+  "edition": "Rall054 AI Enhanced revision",
+  "flowId": "YkBjUmNjG55Z2yWNsooF",
+  "assets": [
+    {
+      "asset": "music-1.mp3",
+      "provider": "ElevenLabs",
+      "generationId": "GGmYLH6rHcUSu3L2PQbc",
+      "model": "eleven_music_v2",
+      "prompt": "Original instrumental arcade tank battle soundtrack for a faithful restoration of a 2002 top-down arena game. Energetic melodic breakbeat, crisp punchy drums, warm driving funk bass, bright memorable ",
+      "sha256": "5048aec194fa5b350fd469974274b81b18e57ecb3d5f2888f11c319ec1b8117d",
+      "duration": 39.750022675736965,
+      "peak": 0.571456253528595,
+      "rms": 0.10156606144888815
+    },
+    {
+      "asset": "music-2.mp3",
+      "provider": "ElevenLabs",
+      "generationId": "ABMd2HKJjGDmLoDkKRDG",
+      "model": "eleven_music_v2",
+      "prompt": "Original instrumental arcade tank battle soundtrack for a faithful restoration of a 2002 top-down arena game. Energetic melodic breakbeat, crisp punchy drums, warm driving funk bass, bright memorable ",
+      "sha256": "f1ea7bbab9c85dc7088674955958f804fdaca2f02046740d19176567ddb1fda2",
+      "duration": 39.750022675736965,
+      "peak": 0.6238730549812317,
+      "rms": 0.10536839849954019
+    },
+    {
+      "asset": "music-3.mp3",
+      "provider": "ElevenLabs",
+      "generationId": "pleRy8M1qlaBjfJI2XGk",
+      "model": "eleven_music_v2",
+      "prompt": "Original instrumental arcade tank battle soundtrack for a faithful restoration of a 2002 top-down arena game. Energetic melodic breakbeat, crisp punchy drums, warm driving funk bass, bright memorable ",
+      "sha256": "39a01cc953e547747706ffde59f1a22cf1ab8cc9cae8e93cdc9da7b4ec96e807",
+      "duration": 39.750022675736965,
+      "peak": 0.5679031610488892,
+      "rms": 0.10124376428345476
+    },
+    {
+      "asset": "gun.wav",
+      "provider": "ElevenLabs",
+      "generationId": "pCi2biqvRbOSKKrDVZ6n",
+      "model": "eleven_text_to_sound_v2",
+      "prompt": "One crisp arcade tank cannon shot: instant mechanical clack, compact punchy low-mid thump, tiny bright shell ping and fast clean decay. A single responsive shot with good weight, suitable for rapid re",
+      "sha256": "dfe7b7761fd1e4e292452fc500affa10cb114cceb04d63e832cbbc0545261421",
+      "duration": 0.6,
+      "peak": 0.3756093382835388,
+      "rms": 0.03725911799188542
+    },
+    {
+      "asset": "siege.wav",
+      "provider": "ElevenLabs",
+      "generationId": "ELb7OxOjD3WOXTaTOC7G",
+      "model": "eleven_text_to_sound_v2",
+      "prompt": "One heavy arcade siege mortar launch: quick metallic release, deep controlled cannon thump and a short rising projectile whistle. Powerful, clean and readable, stylized rather than frightening. Short ",
+      "sha256": "5aebbfe29a1f42e334fcc6b489225f4bc15d1c3304f9d56069e7f334b4154e7b",
+      "duration": 1.08,
+      "peak": 0.40935018658638,
+      "rms": 0.0799599432121081
+    },
+    {
+      "asset": "explosion.wav",
+      "provider": "ElevenLabs",
+      "generationId": "VbtD0bOOEsBEBYrb3HtT",
+      "model": "eleven_text_to_sound_v2",
+      "prompt": "One satisfying compact arcade tank explosion: punchy bass impact, brief crunchy metallic debris scatter and a soft descending fizz. Clear single impact, polished game sound, controlled volume, no pier",
+      "sha256": "9bcb18b54fc50b429233ec334163f75ca398fd1d10cc0097b81b30d146501e3b",
+      "duration": 1.36,
+      "peak": 0.7791860103607178,
+      "rms": 0.1550326168528095
+    },
+    {
+      "asset": "enter-siege.wav",
+      "provider": "Local synthesis",
+      "method": "Two short enveloped sine notes for clear mode feedback",
+      "sha256": "722a9421f6996b9a16f38b30c6987bb3118d281e16598bc66aabf9069e2dbd2c",
+      "duration": 0.2
+    },
+    {
+      "asset": "leave-siege.wav",
+      "provider": "Local synthesis",
+      "method": "Two short enveloped sine notes for clear mode feedback",
+      "sha256": "c5325780cdcdc0916e6d6c5983684195ac5f3078ef0668144c1d27ec1b11780d",
+      "duration": 0.2
+    }
+  ]
+}
