@@ -854,20 +854,25 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/rall-008",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "816c34d0543f39aeb082c27a4f6acc0535512df7",
-      "auditStatus": "local-passed-live-pending",
-      "releaseStatus": "pending",
-      "publicUrl": null,
+      "auditStatus": "passed",
+      "releaseStatus": "published_verified",
+      "publicUrl": "https://joynes.github.io/joynes.se/games/rall-008/",
       "sourceHead": "71d3947dba0d072adf5694614ca742d9da3af4e3",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "0d41ad85eea7a85aae0e53568f92042d0e65ca29",
-      "repositoryHeadCommit": "0fbf1e33665990da82c992716445d9867a02e39e",
+      "repositoryHeadCommit": "d204abd8b524003ed3f00c1659078a4c8409564b",
       "auditUrl": "https://github.com/joynes/rall008/tree/audit/2026-11-03-baseline",
-      "inGameControlsAndFullscreenStatus": "local-passed-live-pending",
+      "inGameControlsAndFullscreenStatus": "passed",
       "englishInterfaceAuditStatus": "passed",
-      "auditFindings": "Complete local gameplay, input, fullscreen, recovery and canonical/forwarded homepage navigation passed. Final live verification pending.",
+      "auditFindings": "Live full matches, practice defeats/respawns, six characters, guard/throw, touch/keyboard, in-scene controls, native/fallback fullscreen, recovery, canonical and actual joynes.se navigation passed. All 178 public hashes match; corresponding source rebuilds byte-identically. Local play only; online transport/editor excluded.",
       "implementationCommit": "1469b0296fa4a67976257ed3f893bcd1a102ab88",
-      "auditCommit": "0fbf1e33665990da82c992716445d9867a02e39e",
-      "sourceAuditCommit": "ba6a8441d59271a1d47400acd82f1286824ccec6"
+      "auditCommit": "d204abd8b524003ed3f00c1659078a4c8409564b",
+      "sourceAuditCommit": "ba6a8441d59271a1d47400acd82f1286824ccec6",
+      "deploymentCommit": "cc1fc4ef0c32473bacfcd2d4db4281a2d4087588",
+      "pagesRun": {
+        "id": 41779218949,
+        "conclusion": "success"
+      }
     },
     {
       "id": "rall-066",
