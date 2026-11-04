@@ -1,0 +1,9 @@
+# Rall v054 — Tanks
+
+A reconstructed browser edition of the 23 March 2002 Windows game. Six original maps, archived graphics, unchanged WAV effects and complete tracker songs rendered offline are preserved; movement, collision, AI and rounds are new JavaScript code. See [restoration notes](../../games/rall-054/source-notes.md) and [asset provenance](../../games/rall-054/provenance.json). The original archive and native GDI investigation remain private.
+
+Solo survival and first-to-three local duels are playable. Touch drive/aim/fire pads and siege controls overlay the battlefield. Both keyboard profiles also work in mobile contexts. Pause, restart, sound and fullscreen are inside the scene.
+
+Local automated checks passed all six maps with trusted keyboard and native touch in desktop, phone portrait and phone landscape contexts; solo victory/progression/loss/replay, Green victories, audio, input releases/cancellation/focus/restart, fullscreen rotation and iframe focus, 24 failed resources and retry, denied storage and failed/retried music. Input passed in Chromium and installed Chrome. Physical-device and Safari tests are not claimed. Canonical homepage iframe and restricted forwarding-fixture launch checks passed in all three viewports, including actual driving, native fullscreen and menu return. Live verification is pending.
+
+AI Enhanced remains a separate queued edition with new Blender graphics and ElevenLabs audio. No untested enhanced choice is displayed.

@@ -60,7 +60,14 @@
     "test:ridge-courier:browser": "node scripts/test-ridge-courier-browser.cjs",
     "test:ridge-courier:input": "node scripts/test-ridge-courier-input.cjs",
     "test:ridge-courier:frame": "node scripts/test-ridge-courier-frame.cjs",
-    "test:ridge-courier:links": "node scripts/test-ridge-courier-navigation.cjs"
+    "test:ridge-courier:links": "node scripts/test-ridge-courier-navigation.cjs",
+    "test:rall-054:rules": "node --test scripts/test-rall054-core.mjs",
+    "test:rall-054:browser": "node scripts/test-rall054-browser.cjs",
+    "test:rall-054:input": "node scripts/test-rall054-input.cjs",
+    "test:rall-054:solo": "node scripts/test-rall054-solo.cjs",
+    "test:rall-054:frame": "node scripts/test-rall054-frame.cjs",
+    "test:rall-054:resilience": "node scripts/test-rall054-resilience.cjs",
+    "test:rall-054:links": "node scripts/test-rall054-navigation.cjs"
   },
   "devDependencies": {
     "playwright": "1.58.2"

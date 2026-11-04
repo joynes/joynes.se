@@ -56,7 +56,7 @@
         "games/web-quizzes/questions.json": "9bb2d82c4e317c1747b7ae58b99e10436f936c87896f5c97e114d9921c57bd61",
         "games/web-quizzes/app.mjs": "707b8d6004c33cee1690289cdb15e475fd9eb248b53387dc1a6c684bd99f110b",
         "games/web-quizzes/source-notes.md": "3a18494f56de0f8a2b45206b101a109d2002d7625b149633cac008cbde932b55",
-        "assets/games-catalog.js": "539d69bf41f30e23f7bfa97ebda6d4173d94785cf8e137dd943a78d5e9d4f2c2"
+        "assets/games-catalog.js": "0b7506697803c05996be703dfbbfeef6536293f94c9db27de94107f9184cd677"
       },
       "websiteSection": "quizzes",
       "originalTitle": "Fr\u00e5gespelet",
@@ -124,7 +124,7 @@
         "games/grimace-gemini/app.mjs": "038d066b9a36dd6c4e4c0b6d76d17b6a32e8e3e555140d749d99306af01c345d",
         "games/grimace-gemini/core.mjs": "afbe23a4d4b130cff84afacb199d785bc7c666f7f99f567b4030c370e2e734d3",
         "games/grimace-gemini/styles.css": "eac894c87349643e5c7c072594e4d5503ec7ce0cfac7d4172add4c381d000fba",
-        "assets/games-catalog.js": "539d69bf41f30e23f7bfa97ebda6d4173d94785cf8e137dd943a78d5e9d4f2c2"
+        "assets/games-catalog.js": "0b7506697803c05996be703dfbbfeef6536293f94c9db27de94107f9184cd677"
       },
       "websiteSection": "quizzes",
       "originalTitle": "Milians Grimace Matte-spel \u2014 Gemini"
@@ -184,7 +184,7 @@
         "games/grimace-codex/core.mjs": "3a2369704de27b077329d5e1c4f185f9240bacfacaab4fd215016e3ce586e740",
         "games/grimace-codex/questions.mjs": "0aba6d91d12c3aa49a9fb49e234952cdfc2c2389e753715dcdb13376b8af8b73",
         "games/grimace-codex/styles.css": "8825eadb2ca8f75ed3ac22dc4c00c5f9b4b7630f8c5664c40e6eea8342015aa5",
-        "assets/games-catalog.js": "539d69bf41f30e23f7bfa97ebda6d4173d94785cf8e137dd943a78d5e9d4f2c2"
+        "assets/games-catalog.js": "0b7506697803c05996be703dfbbfeef6536293f94c9db27de94107f9184cd677"
       },
       "websiteSection": "quizzes",
       "originalTitle": "Milians Grimace Matte-spel \u2014 Codex"
@@ -449,8 +449,8 @@
         "games/hardword/sw.js": "d77b7d78300d37537c5dbafc1565b557ca184c4773731a1f706320b5d845e7cc",
         "games/hardword/original-assets.json": "726a02253d5b136bd2f23acbf4605210ab09648a9a0519ecaa7d8e7241c5e685",
         "games/hardword/source-notes.md": "7781fa5d0d650c8687adc92f6c5a58c422a6729209fece5bcb5b81a083fbf231",
-        "assets/games-catalog.js": "539d69bf41f30e23f7bfa97ebda6d4173d94785cf8e137dd943a78d5e9d4f2c2",
-        "index.html": "d47cede26219df52df7a539f4c9917b4b939a842380136837ff344fcb3e222ee"
+        "assets/games-catalog.js": "0b7506697803c05996be703dfbbfeef6536293f94c9db27de94107f9184cd677",
+        "index.html": "e8f5d038157b88f1236775a7358a0b7154f766d1177a10873740cdf12ac5238c"
       },
       "originalTitle": "Skoluppgifter / Ordhj\u00e4lten"
     },
@@ -559,8 +559,8 @@
       ],
       "homepageIntegrationCommit": "9411200bb9ced634eb6a72ab728af8e7a54a1b3d",
       "homepageVerifiedFiles": {
-        "index.html": "d47cede26219df52df7a539f4c9917b4b939a842380136837ff344fcb3e222ee",
-        "assets/games-catalog.js": "539d69bf41f30e23f7bfa97ebda6d4173d94785cf8e137dd943a78d5e9d4f2c2"
+        "index.html": "e8f5d038157b88f1236775a7358a0b7154f766d1177a10873740cdf12ac5238c",
+        "assets/games-catalog.js": "0b7506697803c05996be703dfbbfeef6536293f94c9db27de94107f9184cd677"
       },
       "websiteSection": "ai",
       "sourceAuditCommit": "0999254eb63b1d173acf8cedb42033e945d6f24a",
@@ -648,8 +648,8 @@
         "games/marble-tables/index.html": "b7851b3116c4d88477713ca21aae71c2ddbd6fd47c742e5ae8d70c8f74ba3679",
         "games/marble-tables/keyboard-pointer.js": "5b632567ac794907c83cc9cb6b13da9db6134a9fd958e3bc9be470d424cda0e4",
         "games/marble-tables/styles.css": "e7a7488c23778a7e160d6130cfac796435c35a6612b037bc26c95527912dc20d",
-        "index.html": "d47cede26219df52df7a539f4c9917b4b939a842380136837ff344fcb3e222ee",
-        "assets/games-catalog.js": "539d69bf41f30e23f7bfa97ebda6d4173d94785cf8e137dd943a78d5e9d4f2c2",
+        "index.html": "e8f5d038157b88f1236775a7358a0b7154f766d1177a10873740cdf12ac5238c",
+        "assets/games-catalog.js": "0b7506697803c05996be703dfbbfeef6536293f94c9db27de94107f9184cd677",
         "docs/games/marble-tables.md": "632024309c0b0ca609a3428933245a1b6e8befcd8d21bec23fd94e5d8a3da89c"
       },
       "inputSupport": {
@@ -738,8 +738,8 @@
         "games/simple-driving/Build/cartWeb2.loader.js": "b2857ce93350711103bd72fbc6b665f16bb09afdf65542b52549ecd05b812a54",
         "games/simple-driving/Build/cartWeb2.wasm": "10cb1df56489a17bdab24b1ccdb3acad9f2049de604661c62409d9f26f100afd",
         "games/simple-driving/Build/cartWeb2.data": "f464a31a28caeec8b24e2059aa57e517c4a3c670fc62462fce9f5055f7dd47f5",
-        "assets/games-catalog.js": "539d69bf41f30e23f7bfa97ebda6d4173d94785cf8e137dd943a78d5e9d4f2c2",
-        "index.html": "d47cede26219df52df7a539f4c9917b4b939a842380136837ff344fcb3e222ee"
+        "assets/games-catalog.js": "0b7506697803c05996be703dfbbfeef6536293f94c9db27de94107f9184cd677",
+        "index.html": "e8f5d038157b88f1236775a7358a0b7154f766d1177a10873740cdf12ac5238c"
       },
       "previousPublishedUrl": "https://joynes.github.io/joynes.se/games/simple-driving/",
       "exclusionReason": "Removed at the owner's request: proof-of-concept driving demo with too little gameplay.",
@@ -807,8 +807,8 @@
         "games/simple-driving/Build/cartWeb2.wasm": "10cb1df56489a17bdab24b1ccdb3acad9f2049de604661c62409d9f26f100afd",
         "games/simple-driving/Build/cartWeb2.loader.js": "b2857ce93350711103bd72fbc6b665f16bb09afdf65542b52549ecd05b812a54",
         "games/simple-driving/Build/cartWeb2.framework.js": "18d7c9a73fddf3825d1e3cf71f948157e4720270e1e41651f687c76f29e4b3be",
-        "assets/games-catalog.js": "539d69bf41f30e23f7bfa97ebda6d4173d94785cf8e137dd943a78d5e9d4f2c2",
-        "index.html": "d47cede26219df52df7a539f4c9917b4b939a842380136837ff344fcb3e222ee"
+        "assets/games-catalog.js": "0b7506697803c05996be703dfbbfeef6536293f94c9db27de94107f9184cd677",
+        "index.html": "e8f5d038157b88f1236775a7358a0b7154f766d1177a10873740cdf12ac5238c"
       },
       "deploymentRecovery": {
         "failedAndInconsistentRerun": 41290922621,
@@ -888,8 +888,8 @@
         "games/godot-reading/provenance.json": "771ba6be93c5675555f2fc55745732b076f370dc88c280e08155b3fbc7ce05a8",
         "games/godot-reading/source-notes.md": "0e1b35e181f573430ce7676319d4e857167d571063ccdc01929435470501eed0",
         "games/godot-reading/styles.css": "82389cff0b6c3330b492d290a4af4c6460fd373c816f78a756d22a3bd67ef401",
-        "assets/games-catalog.js": "539d69bf41f30e23f7bfa97ebda6d4173d94785cf8e137dd943a78d5e9d4f2c2",
-        "index.html": "d47cede26219df52df7a539f4c9917b4b939a842380136837ff344fcb3e222ee"
+        "assets/games-catalog.js": "0b7506697803c05996be703dfbbfeef6536293f94c9db27de94107f9184cd677",
+        "index.html": "e8f5d038157b88f1236775a7358a0b7154f766d1177a10873740cdf12ac5238c"
       },
       "deploymentRun": 41293921395,
       "websiteSection": "retro",
@@ -899,10 +899,10 @@
         "games/godot-reading/core.mjs": "4e6543ec6311294c706c17cdb79b98da69b90cca136bab7aef029e8ddbf970c0",
         "games/godot-reading/provenance.json": "771ba6be93c5675555f2fc55745732b076f370dc88c280e08155b3fbc7ce05a8",
         "games/godot-reading/index.html": "f95fde4321bf6d4289eec00ec1c3a6362139d677c42d276d05b347fc0a7e942e",
-        "assets/games-catalog.js": "539d69bf41f30e23f7bfa97ebda6d4173d94785cf8e137dd943a78d5e9d4f2c2",
+        "assets/games-catalog.js": "0b7506697803c05996be703dfbbfeef6536293f94c9db27de94107f9184cd677",
         "games/godot-reading/styles.css": "82389cff0b6c3330b492d290a4af4c6460fd373c816f78a756d22a3bd67ef401",
         "games/godot-reading/source-notes.md": "0e1b35e181f573430ce7676319d4e857167d571063ccdc01929435470501eed0",
-        "index.html": "d47cede26219df52df7a539f4c9917b4b939a842380136837ff344fcb3e222ee",
+        "index.html": "e8f5d038157b88f1236775a7358a0b7154f766d1177a10873740cdf12ac5238c",
         "docs/games/godot-reading.md": "cc8a74b4661dcf78daacb15fcd4158268cd711b6ed362c4a7b8355ae80383d47"
       },
       "originalTitle": "Godot Reading Game",
@@ -1022,8 +1022,8 @@
         "games/car-topview/provenance.json": "2c7a3b776e92c8842f8e3b698d0ae788f322775001715e4b079da54f9778f6f9",
         "games/car-topview/source-notes.md": "835f4778a09bda0953b8bba9112efb77755167d731ede143a305c53cba274763",
         "games/car-topview/styles.css": "f1a6532206aa7acd92aaf9b861b51e72b6cd1ea61d4f743bfce339873684ba36",
-        "index.html": "d47cede26219df52df7a539f4c9917b4b939a842380136837ff344fcb3e222ee",
-        "assets/games-catalog.js": "539d69bf41f30e23f7bfa97ebda6d4173d94785cf8e137dd943a78d5e9d4f2c2",
+        "index.html": "e8f5d038157b88f1236775a7358a0b7154f766d1177a10873740cdf12ac5238c",
+        "assets/games-catalog.js": "0b7506697803c05996be703dfbbfeef6536293f94c9db27de94107f9184cd677",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "docs/games/car-topview.md": "a72015e7e88fb97eff20c8af36015b7bfdfcbbc4ae1d438e14472773baca12b1"
       },
@@ -1139,8 +1139,8 @@
         "games/sdl-space/provenance.json": "8bb1d152becb8495f0368fb7749b7ab83921e22861eed2c74e0948ded9c103ff",
         "games/sdl-space/source-notes.md": "cec67cf314ea095e0b77e136972be9ca026e62b1b09a2f175a4768363245fc56",
         "games/sdl-space/styles.css": "71dd1274cb3d5ee861c48d31b951d3b99346e0dc0b3c61494ae4f2cbd69599e1",
-        "assets/games-catalog.js": "539d69bf41f30e23f7bfa97ebda6d4173d94785cf8e137dd943a78d5e9d4f2c2",
-        "index.html": "d47cede26219df52df7a539f4c9917b4b939a842380136837ff344fcb3e222ee",
+        "assets/games-catalog.js": "0b7506697803c05996be703dfbbfeef6536293f94c9db27de94107f9184cd677",
+        "index.html": "e8f5d038157b88f1236775a7358a0b7154f766d1177a10873740cdf12ac5238c",
         "docs/games/sdl-space.md": "9c7377464a776097adac745626959ce2cf9a0e7e91a7d80a4591961e72c7a929",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a"
       },
@@ -1234,13 +1234,13 @@
       "sourceCommitsPushed": true,
       "implementationNotes": "Preserved original 800x450 authoritative shared world, emoji figures, speed250, prediction/reconciliation, tuning and autopilot. English interface with translucent in-game thumbpad, restart/fullscreen overlay, keyboard aliases and stale-repeat cleanup after focus/restart. Native fullscreen and unsupported-API expanded view preserve scene proportions. Existing single Fly Machine/region/VM retained. Source commits pushed to the existing private audit branch; no generated builds committed.",
       "externalReleaseFilesSha256": {
-        "index.html": "d47cede26219df52df7a539f4c9917b4b939a842380136837ff344fcb3e222ee",
+        "index.html": "e8f5d038157b88f1236775a7358a0b7154f766d1177a10873740cdf12ac5238c",
         "assets/index-a9746c54.js": "bfc3a908d5ce92a6f58551f21b621fa8112e348622ce2b4ebdd50dbd101808b0",
         "assets/index-b712e067.css": "b712e06732d0982b12543de77c6a6c753fe60d8de64d9ba6d148244148b488f6"
       },
       "catalogReleaseFilesSha256": {
-        "assets/games-catalog.js": "539d69bf41f30e23f7bfa97ebda6d4173d94785cf8e137dd943a78d5e9d4f2c2",
-        "index.html": "d47cede26219df52df7a539f4c9917b4b939a842380136837ff344fcb3e222ee",
+        "assets/games-catalog.js": "0b7506697803c05996be703dfbbfeef6536293f94c9db27de94107f9184cd677",
+        "index.html": "e8f5d038157b88f1236775a7358a0b7154f766d1177a10873740cdf12ac5238c",
         "docs/games/network-2d.md": "ec4d989fdb27681090410ec57fc2e12c7f3e2723226c842f74ff1595ae3bade7"
       },
       "catalogUrl": "https://joynes.github.io/joynes.se/#games/ai/network-2d",
@@ -1302,7 +1302,7 @@
       "sourceCommitsPushed": false,
       "implementationNotes": "Complete original 53MB FBX, 74340 vertices, 65 bones and walk clip preserved; all six original choices are aliases for the same rig. Original speeds/camera/tint/100 trees/50 rocks retained, now one shared authoritative forest and collision model. Reliable loading/retry, isolated materials, hybrid/two-thumb controls, personal configuration export and reconnect cleanup. Private source commits retained in sibling checkout; existing Fly app and ARN shared1CPU/256MB retained with exactly one in-memory world.",
       "externalReleaseFilesSha256": {
-        "index.html": "d47cede26219df52df7a539f4c9917b4b939a842380136837ff344fcb3e222ee",
+        "index.html": "e8f5d038157b88f1236775a7358a0b7154f766d1177a10873740cdf12ac5238c",
         "main.js": "4ed77c23145edb598aff438105cfea806b755150490e48dcae2f8ceff24cf319",
         "style.css": "3784389cb505c68d9017e52f482d4ded7d35a43f670c481e50931502a9c19ac7",
         "config.yaml": "1340d534d43c1940219628ba8221cdbacda3077d6f4d37656036fa96298ba511",
@@ -1321,8 +1321,8 @@
       },
       "deploymentImageManifestSha256": "b9869fd8b90e20c3e637175f0a03aa59de147d159a431d6620480dbebf24ccfe",
       "catalogReleaseFilesSha256": {
-        "assets/games-catalog.js": "539d69bf41f30e23f7bfa97ebda6d4173d94785cf8e137dd943a78d5e9d4f2c2",
-        "index.html": "d47cede26219df52df7a539f4c9917b4b939a842380136837ff344fcb3e222ee",
+        "assets/games-catalog.js": "0b7506697803c05996be703dfbbfeef6536293f94c9db27de94107f9184cd677",
+        "index.html": "e8f5d038157b88f1236775a7358a0b7154f766d1177a10873740cdf12ac5238c",
         "docs/games/network-3d.md": "5aa5b90875d0ded41070b596146440434bc5c056d16271c1a59956b8e9dbb498"
       },
       "catalogUrl": "https://joynes.github.io/joynes.se/#games/ai/network-3d",
@@ -1408,8 +1408,8 @@
       ],
       "resourceAudit": "docs/games/neon-interceptor-assets.json",
       "catalogReleaseFilesSha256": {
-        "assets/games-catalog.js": "539d69bf41f30e23f7bfa97ebda6d4173d94785cf8e137dd943a78d5e9d4f2c2",
-        "index.html": "d47cede26219df52df7a539f4c9917b4b939a842380136837ff344fcb3e222ee",
+        "assets/games-catalog.js": "0b7506697803c05996be703dfbbfeef6536293f94c9db27de94107f9184cd677",
+        "index.html": "e8f5d038157b88f1236775a7358a0b7154f766d1177a10873740cdf12ac5238c",
         "docs/games/neon-interceptor.md": "1e58974a4ccf0a99ad856372fd7e2d53a5be6ecbdccffed5afdbf2194cdbc287",
         "docs/games/neon-interceptor-assets.json": "56ff5f4e82f61f929dc6451b4e5c15ac86cfa7302545dcc98508b8bd6614ad22"
       },
@@ -1489,7 +1489,7 @@
       "catalogCommit": "66c76ea53cb3e403a8bff9a55ab3db924bbf6635",
       "catalogDeploymentRun": 41336710668,
       "publishedFileSha256": {
-        "assets/games-catalog.js": "539d69bf41f30e23f7bfa97ebda6d4173d94785cf8e137dd943a78d5e9d4f2c2",
+        "assets/games-catalog.js": "0b7506697803c05996be703dfbbfeef6536293f94c9db27de94107f9184cd677",
         "docs/games/worldforge.md": "256ea3317260ef758a5dd94f5ecad5a3ab4d674caf40d39b9d81aa8bd26d065a",
         "docs/games/worldforge-assets.json": "3fff753caa75822e9a4962033784b2449c5c461c9fb492ff999bee965c02b321"
       },
@@ -1635,8 +1635,8 @@
         "games/shadow-racer/vendor/ruffle/ruffle.js.map": "bf8dabc8144a0e087cdbade5da77de5a998ab55a271b32bae6e3173248d4188a",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "docs/games/shadow-racer-assets.json": "b8bc0ca0b1e14ae15892349c66c143a5a957ed7256be922285640cbb73296706",
-        "index.html": "d47cede26219df52df7a539f4c9917b4b939a842380136837ff344fcb3e222ee",
-        "assets/games-catalog.js": "539d69bf41f30e23f7bfa97ebda6d4173d94785cf8e137dd943a78d5e9d4f2c2"
+        "index.html": "e8f5d038157b88f1236775a7358a0b7154f766d1177a10873740cdf12ac5238c",
+        "assets/games-catalog.js": "0b7506697803c05996be703dfbbfeef6536293f94c9db27de94107f9184cd677"
       },
       "websiteSection": "retro",
       "enhancedEdition": {
@@ -1718,8 +1718,8 @@
         "games/shadow-racer/vendor/ruffle/ruffle.js.map": "bf8dabc8144a0e087cdbade5da77de5a998ab55a271b32bae6e3173248d4188a",
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "docs/games/shadow-racer-assets.json": "b8bc0ca0b1e14ae15892349c66c143a5a957ed7256be922285640cbb73296706",
-        "index.html": "d47cede26219df52df7a539f4c9917b4b939a842380136837ff344fcb3e222ee",
-        "assets/games-catalog.js": "539d69bf41f30e23f7bfa97ebda6d4173d94785cf8e137dd943a78d5e9d4f2c2"
+        "index.html": "e8f5d038157b88f1236775a7358a0b7154f766d1177a10873740cdf12ac5238c",
+        "assets/games-catalog.js": "0b7506697803c05996be703dfbbfeef6536293f94c9db27de94107f9184cd677"
       },
       "renewedAuditCommit": "8857df4121f7e433005e3d91dddc0ab09f7bb3fe",
       "deploymentRun": 41747999054
@@ -1802,10 +1802,10 @@
         "games/rall-026/vendor/emulators/sources/emulators-v8.5.2.tar.gz": "4f92834936f774ad1e0f8d2cc0fc05dc73cd9962d2b8da0a09f56139a2a70f28",
         "games/rall-026/vendor/emulators/sources/dosbox-528578d.tar.gz": "797efaf22246bbc5b2e6be0a6c791a58addd2bca330e0aa93232780a77e06019",
         "games/rall-026/vendor/emulators/wdosbox.wasm": "b33afba80de1a420c123086e5952d135de041f9e85d4444170e29d9249ec049c",
-        "assets/games-catalog.js": "539d69bf41f30e23f7bfa97ebda6d4173d94785cf8e137dd943a78d5e9d4f2c2",
+        "assets/games-catalog.js": "0b7506697803c05996be703dfbbfeef6536293f94c9db27de94107f9184cd677",
         "games/rall-026/vendor/emulators/wlibzip.js": "b8e55c2aa4c96e961c9965f289c0f40b5d44f02a557dcf980ddc29787b493842",
         "games/rall-026/vendor/emulators/wlibzip.wasm": "25064d970c42ca7ea0fdb8b058204d6e41cc8826a676219677772f5591e8337b",
-        "index.html": "d47cede26219df52df7a539f4c9917b4b939a842380136837ff344fcb3e222ee",
+        "index.html": "e8f5d038157b88f1236775a7358a0b7154f766d1177a10873740cdf12ac5238c",
         "docs/games/rall-026.md": "e689906009815f758a854b186622c68c8fb482ebafd1e260e2091592f1147049",
         "docs/games/rall-026-assets.json": "23aad475f25009756710699965ca81d63f71b7eb230cdfed2ed10e201cc6150b"
       },
@@ -1961,10 +1961,10 @@
         "games/rall-030/vendor/emulators/wlibzip.wasm": "25064d970c42ca7ea0fdb8b058204d6e41cc8826a676219677772f5591e8337b",
         "games/rall-030/vendor/mouse-compat/ALMOUSE.COM": "200942106e626955510b84426802de31790979c1f55d225d7bb65cb74cd3ba37",
         "games/rall-030/vendor/mouse-compat/almouse.asm": "307b24361235edbf526d49ba4c9bc6323c73c4ded087a70832ab903834d2c1c5",
-        "index.html": "d47cede26219df52df7a539f4c9917b4b939a842380136837ff344fcb3e222ee",
-        "assets/games-catalog.js": "539d69bf41f30e23f7bfa97ebda6d4173d94785cf8e137dd943a78d5e9d4f2c2",
+        "index.html": "e8f5d038157b88f1236775a7358a0b7154f766d1177a10873740cdf12ac5238c",
+        "assets/games-catalog.js": "0b7506697803c05996be703dfbbfeef6536293f94c9db27de94107f9184cd677",
         "docs/games/rall-030.md": "fd819f7eccea21de808aa561486b291bd37c5c500bae36d770c7ab9477440168",
-        "docs/games/rall-030-assets.json": "d1acb6ec1f1a2a96e76b624ff9248a076ed30b71ba0a7ddc4d11f4859808b292"
+        "docs/games/rall-030-assets.json": "c06c40ef732a46e308a3a4ced9d077a64ffe48b43e020ca554d9ef80fcb50f3e"
       },
       "sharedInterfaceCommit": "5ea295cf092444bcee10434953fb12de9ba961b6",
       "websiteSection": "retro",
@@ -1982,7 +1982,7 @@
       "id": "rall-054",
       "title": "Rall v054 / rall0054 \u2014 Tank",
       "order": 21,
-      "status": "in_progress",
+      "status": "local-release-candidate",
       "sources": [
         {
           "kind": "github",
@@ -1997,23 +1997,43 @@
           "url": "https://drive.google.com/file/d/1kIgJjs2cZA_IERTcx5XekalUaSSO6aTS/view"
         }
       ],
-      "work": "Inspect the original 2002 Windows release and all six maps; preserve gameplay and media. Test a browser compatibility runtime because the referenced C++ source directory is absent from the inspected archives.",
+      "work": "Reconstructed browser restoration; original archive and native investigation retained privately. Local full gameplay/input checks passed; website and live checks pending.",
       "tests": [
         {
-          "check": "source audit",
-          "result": "81 release files in the original SFX ZIP, no C/C++ sources; local and Drive folders also lack the project-referenced src directory."
+          "check": "rules",
+          "result": "7 passed: original81/export hashes, collisions/1px wall,3point duel,finite siege,18map cycles,safe spawns"
         },
         {
-          "check": "local compatibility probe",
-          "result": "Official Boxedwine 26R1.0 SingleThreaded/Wine 6 reaches native gameplay through GDI: one graphics-request byte and graphics configuration differ; 79 other release files remain byte-identical. The executable original is preserved."
+          "check": "duels",
+          "result": "18 passed: all6 maps desktop keyboard,portrait/landscape native touch"
         },
         {
-          "check": "local touch and keyboard prototype",
-          "result": "Passed native player movement in desktop/mobile Chromium contexts; both human profiles, multi-touch, independent lift/cancel, focus cleanup, native pause/resume, fullscreen and restarted gameplay. Actual runtime bindings are blue/arrows and green/letter keys. Not published; combat outcomes, six-map coverage and release checks remain."
+          "check": "solo",
+          "result": "All3: real AI siege, aimed shot/dodge,stage2/two enemies,records/reload,3real deaths,loss/replay and full Green3point duel"
+        },
+        {
+          "check": "input",
+          "result": "Chromium and installed Chrome all3: both keyboard profiles, touch, simultaneous actions, independent release/aliases, quick taps, cancel, restart stale input, Sound/Siege focus, actual sound, in-map controls, native fullscreen and rotation"
+        },
+        {
+          "check": "frame",
+          "result": "All3: actual parent blur/frozen pause/resume, native iframe fullscreen, paused Escape, CSS fallback"
+        },
+        {
+          "check": "recovery",
+          "result": "24 resources503/retry to real driving; denied storage through real solo win/reload; failed music with audible FX and streaming retry"
+        },
+        {
+          "check": "rendering",
+          "result": "Actual canvas pixel diversity and screenshots verify a visible battlefield after fullscreen/rotation; resizing redraws immediately and preserves unchanged buffers."
+        },
+        {
+          "check": "website",
+          "result": "Canonical homepage iframe and restricted forwarding fixture all3: actual movement, keyboard/twin native touch, native fullscreen and menu return"
         }
       ],
       "publishedUrl": null,
-      "implementationCommit": null,
+      "implementationCommit": "4ac8ea8248c2372cafa7da13e56cff6dec1e2d2b",
       "deploymentCommit": null,
       "category": "retro",
       "webAdaptation": "ai",
@@ -2029,7 +2049,49 @@
         ],
         "graphics": "Blender",
         "soundAndMusic": "ElevenLabs"
-      }
+      },
+      "implementationRepository": "https://github.com/joynes/rall0054",
+      "resourceAudit": "docs/games/rall-054-assets.json",
+      "releaseFilesSha256": {
+        "games/rall-054/app.mjs": "cce4ac52a9a88b97b824783764b32e33dfd957b2ff20179ec050dea2a5735dc0",
+        "games/rall-054/assets/bullet.png": "2e88403b5aad2e51a2f678bafa2d239fcbbeb8f073ce11b55642dc43035009da",
+        "games/rall-054/assets/enter-siege.wav": "63b0a962d6005a0e7af6414921f855cec9ef1c5aa7ecc1cc5f2707947f73ab52",
+        "games/rall-054/assets/explosion.png": "41805483ee6df8ebf188f32e7d5465831fe50368deb91e2fc526a6ea83fc0071",
+        "games/rall-054/assets/explosion.wav": "521570d70892b5006e690d479d7a47134207e456682793e63f895d3ddc31a4bc",
+        "games/rall-054/assets/gun.png": "b7d01bcb3ec78b1919caa4cca50012e49673f1627d87386f2eea4230068e3025",
+        "games/rall-054/assets/gun.wav": "8a4243373372b6df7102febc652f618fb10f1b083a3e918426cbb85aec8b2c39",
+        "games/rall-054/assets/leave-siege.wav": "18e87ff7bd136b22b4db8d63a96b56bf8128c013a41f519036b6eeab3e5832ab",
+        "games/rall-054/assets/levels.json": "09f7a398f11f1feafbceb2d4650995332d0ba50cc51ae350f605c0345ffe8b8a",
+        "games/rall-054/assets/map-1.png": "9abb1152e0d2b5ad470fc01635e00cab7018f0f93c9dedf768285d24a0f720b6",
+        "games/rall-054/assets/map-2.png": "8708cefaee4c4c152cfccd2e58e92d3263c73fb4d0edd452adece9da62b8bace",
+        "games/rall-054/assets/map-3.png": "827d93d4d0078398d356bb031d764910b6f16d16c9097e6e8aaceb5dad997f04",
+        "games/rall-054/assets/map-4.png": "9f9d7ba6a45ddfe3d6cdb52cb9872f217da78de8d1ffc9fca73a81c1ca5cb936",
+        "games/rall-054/assets/map-5.png": "e0eb504ccf2100308da60a3798a324c319cdf31a26054603ae3d1571e7f44323",
+        "games/rall-054/assets/map-6.png": "59e9f0bed4d234982e5e9e4ee8178184367bd0c8de3dc0186c1ab5ea5ec36eb8",
+        "games/rall-054/assets/music-1.mp3": "d3692addd3965f59500b1abe4872b89992f988d474c257b697cb73ed16741521",
+        "games/rall-054/assets/music-2.mp3": "477ef3e0d0fc4f5323bac3674fa26014fc7125c26514384630801cdaa07d7b81",
+        "games/rall-054/assets/music-3.mp3": "2fb9f7f0b837f63e6423a7e3b1a3193e34fa73b069372e23c55ab1a96f4267ff",
+        "games/rall-054/assets/music-4.mp3": "37d0a4510e12e079bbd1c0e71a455ecbb62a339d180a335ccdbf147a5ae17676",
+        "games/rall-054/assets/siege.png": "bcc741a43233e9f4692a47dbfa7cf02d3f7479d56480b01eed01af9d1fa7b311",
+        "games/rall-054/assets/siege.wav": "cdf9b4f7f22245770e8a7b7f387d2cc1d47b33939e8e73eae57c32d9aa61e3c1",
+        "games/rall-054/assets/tank-blue-hit.png": "a073fe09ef43ad66cc0791915de95dba7143c151f2e096d4049145fe3e4970ec",
+        "games/rall-054/assets/tank-blue.png": "80f47b0f7162cda619e04a686a27da0b9fb1c4f63528dd8f5f28373e5a3e503f",
+        "games/rall-054/assets/tank-green-hit.png": "a7d512fd8fde53688ae1a3aeceabc1fca193d911e67a6ca8bdfbcacee10326e1",
+        "games/rall-054/assets/tank-green.png": "8809d37d2b9dba01d1703090d0ffb89b3cde4d5f338ddaf806edce022fbf618c",
+        "games/rall-054/core.mjs": "7ef1745bd4cabd0925549bc9c89a89dc4e2f5494c583cf1b67fd5f36cc618935",
+        "games/rall-054/graphics.mjs": "7f39fb74245878f6e139ee9e1d0a45341ecb8a303d0c3c0365ad0470625f9ed7",
+        "games/rall-054/index.html": "d8d416cdd17c65f7ce5088be769b7e143c282926d5da927ebfb742202fdc7cd8",
+        "games/rall-054/provenance.json": "ea36aec63712d56fc7240380d33975be01a5627c4b20c14b540eaa2d0d1517ad",
+        "games/rall-054/source-notes.md": "0dfaf33ddfc9dc93e0e6ad3633be85ff11c93f81c680c5ac9c3ddac14abec006",
+        "games/rall-054/styles.css": "b2f89199a05590b4c6bf5dc45bd59335af8efb9e3d3edce896ea54360100456e",
+        "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
+        "docs/games/rall-054-assets.json": "55065e0ae19b069fc649f8d30eb27b90a5d6fef96cb80d516926d3e1e46758fc",
+        "assets/games-catalog.js": "0b7506697803c05996be703dfbbfeef6536293f94c9db27de94107f9184cd677",
+        "index.html": "e8f5d038157b88f1236775a7358a0b7154f766d1177a10873740cdf12ac5238c"
+      },
+      "inGameControlsAndFullscreenStatus": "local-passed-live-pending",
+      "englishInterfaceAuditStatus": "passed",
+      "catalogUrl": "https://joynes.github.io/joynes.se/#games/retro/rall-054"
     },
     {
       "id": "rall-006",

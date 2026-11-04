@@ -142,3 +142,7 @@ Prepare the runtime's required licensing and corresponding source information
 before shipping it. Publish only after gameplay and input checks pass.
 
 Runtime reference: [official Boxedwine 26R1.0 release](https://github.com/danoon2/Boxedwine/releases/tag/26R1.0).
+
+## Browser restoration decision — 4 November 2026
+
+The native prototype reached real combat and audio, but mixed short-input/round tests were not reliable enough for publication. An isolated original x86 lookup also confirmed that stage six selects a music filename. Its archive and evidence are preserved privately. The playable restoration now reconstructs gameplay in JavaScript using the original six maps, graphics, effects and full tracker songs. It does not ship Wine/Boxedwine or claim identical Windows physics. See the [current restoration](rall-054.md); the runtime-specific release gate above applies to the unpublished native investigation.

@@ -1,6 +1,16 @@
 // Only tested releases belong here. The complete work queue is in data/games-inventory.json.
 window.joynesPublishedGames = [
   {
+    id: "rall-054",
+    title: "Rall v054 — Tanks",
+    kind: "retro",
+    description: "Retro · 2002 · Solo survival and two-player tank duels.",
+    href: "games/rall-054/",
+    source: "https://github.com/joynes/joynes.se/blob/master/games/rall-054/source-notes.md",
+    sourceLabel: "Source",
+    version: "2002-web.1"
+  },
+  {
     id: "rall-030",
     title: "Rall v030 — Fighter",
     kind: "retro",

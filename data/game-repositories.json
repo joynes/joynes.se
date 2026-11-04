@@ -780,17 +780,18 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/rall-054",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "4a1438a3d808e403fb612d281c6f450182929cce",
-      "auditStatus": "in_progress",
+      "auditStatus": "local-passed-live-pending",
       "releaseStatus": "in_progress",
       "publicUrl": null,
       "sourceHead": "c867cc03bf7540e0d44721cf910c5de3b1723923",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "58f6a89f2440f84afe624a76b205145e1ce2f073",
-      "repositoryHeadCommit": "58f6a89f2440f84afe624a76b205145e1ce2f073",
+      "repositoryHeadCommit": "4ac8ea8248c2372cafa7da13e56cff6dec1e2d2b",
       "auditUrl": "https://github.com/joynes/rall0054/tree/audit/2026-11-03-baseline",
-      "inGameControlsAndFullscreenStatus": "pending",
-      "englishInterfaceAuditStatus": "pending",
-      "auditFindings": "Native GDI gameplay and original keyboard/touch movement are reached. Verify combat, round transitions, six maps, audio and new in-scene/fullscreen layout before publication. No playable release is claimed."
+      "inGameControlsAndFullscreenStatus": "local-passed-live-pending",
+      "englishInterfaceAuditStatus": "passed",
+      "auditFindings": "Reconstructed JavaScript restoration locally verified on all6maps, keyboard/touch and fullscreen. Native probe preserved privately; live verification pending.",
+      "implementationCommit": "4ac8ea8248c2372cafa7da13e56cff6dec1e2d2b"
     },
     {
       "id": "rall-006",
@@ -883,14 +884,14 @@
       "englishInterfaceAuditStatus": "pending"
     }
   ],
-  "currentAuditGame": "shadow-racer",
+  "currentAuditGame": "rall-054",
   "realtimeControlRequirements": [
     "All gameplay actions available with touch, including simultaneous movement and action inputs.",
     "Touchpad/direct drag and action controls inside the game view, using the existing AI games as the reference; no control rows below the board.",
     "Visible fullscreen control operable by touch and keyboard, with entry/exit and both orientations verified.",
     "Keyboard input retained on phones/tablets; independent release, cancellation, lost focus and restart verified through the browser."
   ],
-  "currentAuditFocus": "build Ridge Courier AI Enhanced edition after verified original",
+  "currentAuditFocus": "Publish and verify restored Rall054; enhanced edition remains queued",
   "englishInterfaceRequirement": "All website interface text must be concise and in English.",
   "homepageEnglishCopyStatus": "passed",
   "homepageEnglishCopyEvidence": {
