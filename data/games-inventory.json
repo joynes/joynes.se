@@ -1552,7 +1552,7 @@
           "url": "https://drive.google.com/drive/folders/1TT9grPo0r_9tHhVN6Lm97YAjC5JnzQh7"
         }
       ],
-      "work": "Faithful AI Enhanced 1.0 verified locally and committed privately: original native physics/course with read-only Blender/Canvas presentation and new ElevenLabs audio. Homepage/deployment verification pending. Original available, Remix withdrawn.",
+      "work": "Original and faithful AI Enhanced 1.0 published and verified. Same native AS3/APE engine/course with new Blender/Canvas graphics and ElevenLabs audio. All Remix editions remain withdrawn.",
       "tests": [
         {
           "command": "npm test",
@@ -1621,7 +1621,7 @@
       ],
       "publishedUrl": "https://joynes.github.io/joynes.se/games/shadow-racer/",
       "implementationCommit": "05de03a3d3f5848a494a7fe3e082d060ddd49251",
-      "deploymentCommit": "6a98ed689890ff3cfcb3fbf2c122fb154e3dcdc4",
+      "deploymentCommit": "6fa07b54749e732877af4c54b13fed14f49e2635",
       "category": "retro",
       "webAdaptation": "ai",
       "categoryLabel": "AI remake of a retro game",
@@ -1734,7 +1734,7 @@
         "games/shadow-racer/restored/styles.css": "feaebae1b4b4e3e4d601ba8e4b98df37c14b04cf3158e270ec1e1483c1eb9db4"
       },
       "renewedAuditCommit": "8857df4121f7e433005e3d91dddc0ab09f7bb3fe",
-      "deploymentRun": 41842371865,
+      "deploymentRun": 41932435806,
       "remixEdition": {
         "status": "withdrawn_by_user",
         "launchChoices": [
@@ -1769,7 +1769,7 @@
         "previousPublicUrl": "https://joynes.github.io/joynes.se/games/shadow-racer/enhanced/"
       },
       "enhancedEdition": {
-        "status": "verified_local_pending_deployment",
+        "status": "published_verified",
         "launchChoices": [
           "Original",
           "AI Enhanced"
@@ -1786,11 +1786,36 @@
         "faithfulness": "Original AS3/APE game engine, all original instructions, native 39-rectangle track, forces, timer, crash/finish rules. New presentation reads native particles/camera; observer writes only two new locals.",
         "localChecks": "Both native races, crashes/retry, isolated records/reload, 13 critical resource retries, denied storage; both failed music tracks, audible engine and exact mute/retry/pause/Menu; eight trusted input cases per browser, three parent-frame/fullscreen cases per browser; Original regression passes. Full touch/keyboard wins observed; experimental race bot timing is not a deterministic gate.",
         "verificationLimits": "Browser-emulated mobile Chrome/Chromium; physical devices and Safari untested.",
-        "homepageChecks": "Canonical homepage and cross-origin forwarding fixture pass four sizes each: direct AI Enhanced launch, actual keyboard/native touch, fullscreen, Original play and Back/reload/route cleanup. Root units and available-edition checks pass."
+        "homepageChecks": "Canonical homepage and cross-origin forwarding fixture pass four sizes each: direct AI Enhanced launch, actual keyboard/native touch, fullscreen, Original play and Back/reload/route cleanup. Root units and available-edition checks pass.",
+        "verifiedAt": "2026-11-05",
+        "deploymentCommit": "6fa07b54749e732877af4c54b13fed14f49e2635",
+        "deploymentRun": 41932435806,
+        "auditCommit": "89995a848b6eec4e4787e18cfd1139e5fba28899",
+        "liveChecks": "Both complete native releases/crash/retry/isolated saved records; 13 critical resource retries and denied storage; eight input cases plus fallback; both music failure/retry/exact silence; canonical and actual joynes.se launch/play/fullscreen at four sizes; all 41 release hashes match."
       },
       "version": "2008-web.6",
-      "auditCommit": "b6778712a02e9c7feab924a2d576e706baa7ded0",
+      "auditCommit": "89995a848b6eec4e4787e18cfd1139e5fba28899",
       "liveVerification": {
+        "date": "2026-11-05",
+        "status": "published_verified",
+        "deploymentCommit": "6fa07b54749e732877af4c54b13fed14f49e2635",
+        "deploymentRun": 41932435806,
+        "deploymentStatus": "success",
+        "checks": {
+          "fullNativeReleases": 2,
+          "criticalResourceRetries": 13,
+          "deniedStorage": 1,
+          "inputCases": 8,
+          "fullscreenFallback": 1,
+          "musicRetryCases": 2,
+          "canonicalHomepageSizes": 4,
+          "actualJoynesHomepageSizes": 4
+        },
+        "releaseHashChecks": 41,
+        "scope": "Original native AS3/APE physics, course and all original instructions; presentation-only Blender/Canvas graphics and new ElevenLabs audio. Complete races, actual crashes/retry and isolated native records. Trusted input, simultaneous actions, cancellation/focus/restart, fullscreen/rotation and loading/audio recovery.",
+        "limits": "Emulated mobile Chrome/Chromium; no physical-device or Safari claim. Forwarded filters and the narrow 320px forwarding launch use keyboard activation; mobile gameplay uses native touch. Experimental bot timing is not a deterministic release gate for the original physics challenge."
+      },
+      "priorEditionLiveVerification": {
         "date": "2026-11-04",
         "status": "published_verified",
         "deploymentCommit": "6a98ed689890ff3cfcb3fbf2c122fb154e3dcdc4",

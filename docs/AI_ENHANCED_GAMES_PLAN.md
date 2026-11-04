@@ -10,7 +10,7 @@ Expose available editions directly in the homepage game picker. Original launche
 | --- | --- | --- |
 | Rall v054 | Version 1.1: same engine, six arenas, physics and rules; decorative collision cleanup, directional touch, closer solo camera, Blender terrain/tanks and new ElevenLabs audio. Published and verified locally/live on all six maps, with complete keyboard/touch outcomes and recovery checks. | Beacon Siege: three new capture-and-extraction missions. |
 | Top-down Driving | Faithful restoration queued. | Night Circuit: new checkpoint time trials, boost and ghosts. |
-| ShadowRacer | Original native AS3/APE physics/course with read-only presentation observer, Blender buggy art and new ElevenLabs audio. Local checks passed; homepage/deployment checks pending. | Ridge Courier: new delivery routes. |
+| ShadowRacer | Original native AS3/APE physics/course with read-only presentation observer, Blender buggy art and new ElevenLabs audio. Published and verified locally/live, including native races, both input methods, recovery and homepage selection. | Ridge Courier: new delivery routes. |
 
 All three Remix editions are withdrawn at the owner’s request. Their source and assets are preserved privately; do not republish them.
 

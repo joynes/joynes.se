@@ -12,9 +12,11 @@ Audit published games in inventory order, one game at a time, including touch an
 
 ## Current priorities
 
-Finish **rall0054**, **v080** and **rall008** as separate games. They are not yet playable web releases. The active rall0054 compatibility investigation is recorded in [the input audit](INPUT_SUPPORT_AUDIT.md).
+Rall054 Original and AI Enhanced 1.1 are published and verified. ShadowRacer Original and faithful AI Enhanced 1.0 are also published and verified. The enhanced editions retain the original game identity; current checks and source commits are in the inventory.
 
-Eighteen games remain published after removing the police-car and bus proof-of-concept demos at the owner's request. These demos must not be republished without a new request. That count does not mean that the new physical-keyboard-on-mobile requirement has already been verified for every game. Existing releases receive an additional input audit; Marble Tables is the first explicit keyboard repair.
+Rall v080 and Rall008 have playable hosted builds but are unlisted at the owner’s request because they are personal. Do not relist them. Marble Tables, Read and Place, SDL Space — Survival and all Remix editions remain withdrawn; their source and media are preserved privately. Keep the police-car and bus POCs excluded. No Source or Folder buttons belong in the game listings.
+
+Continue faithful enhanced work with Top-down Driving, then the remaining adapted older games, one at a time. Existing release evidence is historical; each new edition needs actual keyboard/touch gameplay and fullscreen checks before publication. The publication inventory and catalog are the current release list.
 
 ## Required behaviour
 
@@ -27,7 +29,7 @@ Eighteen games remain published after removing the police-car and bus proof-of-c
 
 ## Website sections
 
-Games contains three subsections: Quiz games, Retro games and AI games. Knowledge, word and maths quizzes are grouped under Quiz games; the other games follow the Retro/AI classification.
+Game filters are All games, Retro games, AI games and Quiz games, with Quiz games last. Memit belongs to Quiz games. Knowledge, word and maths quizzes are grouped under Quiz games; the other games follow the Retro/AI classification.
 
 ## Categories
 
@@ -60,22 +62,22 @@ The machine-readable queue, source links, version relationships, test evidence a
 | 8 | Marble Tables | Published and verified under earlier release checks |
 | 9 | Simple Driving Game | Excluded at owner request; do not republish |
 | 10 | Bus Test Game | Excluded at owner request; do not republish |
-| 11 | Godot Reading Game | Published and verified under earlier release checks |
+| 11 | Godot Reading Game | Withdrawn at owner request |
 | 12 | Top-down Driving | Renewed local/live keyboard and touch audit passed |
-| 13 | SDL Space — Survival | Renewed local/live keyboard and touch audit passed |
+| 13 | SDL Space — Survival | Withdrawn at owner request |
 | 14 | Hello Multiplayer Game | Renewed local/live input, in-game touchpad and fullscreen passed |
 | 15 | 3D Network Game | Published and verified under earlier release checks |
 | 16 | Neon Bastion & Manta | Published and verified under earlier release checks |
 | 17 | WorldForge | Published and verified under earlier release checks |
-| 18 | ShadowRacer | Published and verified under earlier release checks |
+| 18 | ShadowRacer | Original and faithful AI Enhanced published and verified |
 | 19 | Rall v026 — ASCII | Published and verified under earlier release checks |
 | 20 | Rall v030 — Fighter | Published and verified under earlier release checks |
-| 21 | Rall v054 / rall0054 — Tank | In progress — not yet published |
+| 21 | Rall v054 / rall0054 — Tank | Original and AI Enhanced 1.1 published and verified |
 | 22 | Rall006 — Tank | Pending |
 | 23 | Rall v066 — Tank2 | Pending |
 | 24 | Rall v073 — Party | Pending |
-| 25 | Rall v080 — Fighter | Pending |
-| 26 | Rall008 | Pending |
+| 25 | Rall v080 — Fighter | Hosted build retained; unlisted at owner request |
+| 26 | Rall008 | Hosted build retained; unlisted at owner request |
 | 27 | Rall v082 — Fighter Multi | Pending |
 
 ## Additional candidates
