@@ -8,7 +8,7 @@ Expose available editions directly in the homepage game picker. Original launche
 
 | Original game | AI Enhanced | Remix |
 | --- | --- | --- |
-| Rall v054 | Version 1.1: same engine, six arenas, physics and rules; decorative collision cleanup, directional touch, closer solo camera, Blender terrain/tanks and new ElevenLabs audio. Local verification passed; deployment verification pending. | Beacon Siege: three new capture-and-extraction missions. |
+| Rall v054 | Version 1.1: same engine, six arenas, physics and rules; decorative collision cleanup, directional touch, closer solo camera, Blender terrain/tanks and new ElevenLabs audio. Published and verified locally/live on all six maps, with complete keyboard/touch outcomes and recovery checks. | Beacon Siege: three new capture-and-extraction missions. |
 | Top-down Driving | Faithful restoration queued. | Night Circuit: new checkpoint time trials, boost and ghosts. |
 | ShadowRacer | Faithful restoration queued. | Ridge Courier: new delivery routes. |
 

@@ -331,7 +331,8 @@
         "soundAndMusic": "ElevenLabs"
       },
       "genre": "quiz",
-      "catalogUrl": "https://joynes.github.io/joynes.se/#games/quizzes/memit"
+      "catalogUrl": "https://joynes.github.io/joynes.se/#games/quizzes/memit",
+      "catalogFooterSourceCommit": "d6f5697fc8caac0dfa079c1d7301d2af2e27aeff"
     },
     {
       "id": "hardword",
@@ -2039,7 +2040,7 @@
           "url": "https://drive.google.com/file/d/1kIgJjs2cZA_IERTcx5XekalUaSSO6aTS/view"
         }
       ],
-      "work": "AI Enhanced 1.1 verified locally and committed privately: decorative collision cleanup, directional touch controls, readable solo camera, Blender terrain and new audio. Deployment verification pending. Original remains available; Remix withdrawn.",
+      "work": "AI Enhanced 1.1 published and verified: decorative collision cleanup, directional touch controls, readable solo camera, Blender terrain and new ElevenLabs audio. Original remains available; all Remix editions remain withdrawn.",
       "tests": [
         {
           "check": "rules",
@@ -2088,7 +2089,7 @@
       ],
       "publishedUrl": "https://joynes.github.io/joynes.se/games/rall-054/",
       "implementationCommit": "7145d6497fd000ee2dabdd7e7092672e049b1d46",
-      "deploymentCommit": "6a98ed689890ff3cfcb3fbf2c122fb154e3dcdc4",
+      "deploymentCommit": "152bac392a2276991a80a2db47385d737270d20a",
       "category": "retro",
       "webAdaptation": "ai",
       "categoryLabel": "AI remake of a retro game",
@@ -2162,8 +2163,8 @@
       "englishInterfaceAuditStatus": "passed",
       "catalogUrl": "https://joynes.github.io/joynes.se/#games/retro/rall-054",
       "version": "2002-web.4",
-      "deploymentRun": 41842371865,
-      "auditCommit": "f1268ac4161256190427d87715ca924e14e046ec",
+      "deploymentRun": 41927724531,
+      "auditCommit": "3b966e38396b6bc619dfae9a973e0585b582983f",
       "publishedFileSha256": {
         "games/rall-054/app.mjs": "69c1d50ddf41dc080356bbecf922d3cfd6839db5ec2d8b3333278654fb4e910e",
         "games/rall-054/assets/bullet.png": "2e88403b5aad2e51a2f678bafa2d239fcbbeb8f073ce11b55642dc43035009da",
@@ -2229,28 +2230,22 @@
       "liveVerification": {
         "date": "2026-11-04",
         "status": "published_verified",
-        "deploymentCommit": "6a98ed689890ff3cfcb3fbf2c122fb154e3dcdc4",
-        "deploymentRun": 41842371865,
+        "deploymentCommit": "152bac392a2276991a80a2db47385d737270d20a",
+        "deploymentRun": 41927724531,
         "deploymentStatus": "success",
         "checks": {
-          "editions-live-home-chrome": 4,
-          "editions-live-domain-chrome": 4,
-          "editions-live-home-chromium": 4,
-          "editions-live-domain-chromium": 4,
-          "editions-live-remix-chrome": 8,
-          "editions-live-remix-chromium": 8,
-          "faithful054-live-parity": 6,
-          "faithful054-live-duels": 18,
-          "faithful054-live-input-chrome": 4,
-          "faithful054-live-input-chromium": 4,
-          "faithful054-live-solo": 3,
-          "faithful054-live-frame-chrome2": 3,
-          "faithful054-live-frame-chromium2": 3,
-          "faithful054-live-recovery": 8
+          "sixMapNavigationAndFullDuels": 30,
+          "inputSizes": 4,
+          "touchSoloOrientations": 2,
+          "realClockRotationBrowsers": 2,
+          "criticalResourceRetries": 12,
+          "musicRecovery": 1,
+          "actualJoynesLaunchPlayFullscreenSizes": 4,
+          "homepagePolishSizes": 4
         },
-        "releaseHashChecks": 72,
-        "scope": "Direct homepage choices, actual joynes.se, real keyboard/touch play, fullscreen/cleanup, Back/reload. Existing reimagined games are explicitly Remix. Rall054 AI Enhanced keeps Original gameplay/maps/controls/audio and changes tank graphics.",
-        "limits": "Mobile contexts are emulated Chromium/Chrome; physical devices and Safari not covered."
+        "releaseHashChecks": 57,
+        "scope": "Same engine, six arenas, physics, weapons and progression. Decorative collision cleanup and directional/assisted touch input improve usability. New Blender terrain/tank presentation and ElevenLabs audio. Original core/maps/media untouched. Remix withdrawn; v080/Rall008 unlisted; Source/Folder links removed.",
+        "limits": "Emulated mobile Chrome/Chromium; physical devices and Safari untested. Forwarded filter activation uses a physical keyboard; canonical filters also pass native touch."
       },
       "originalLiveVerification": {
         "date": "2026-11-04",
@@ -2307,7 +2302,7 @@
         "previousPublicUrl": "https://joynes.github.io/joynes.se/games/rall-054/enhanced/"
       },
       "enhancedEdition": {
-        "status": "verified_local_pending_deployment",
+        "status": "published_verified",
         "launchChoices": [
           "Original",
           "AI Enhanced"
@@ -2325,7 +2320,12 @@
         "userReportedIssues": "Addressed in 1.1: decorative collision fragments, difficult touch controls, small solo view, insufficient audio/graphics distinction.",
         "collisionAndControls": "Same engine, arenas, physics and rules; disconnected decorative collision components <24px removed only in AI Enhanced. Directional touch Drive, assisted Aim/fire and Drive-to-exit-siege.",
         "audioProvenance": "games/rall-054/restored/assets/audio-provenance.json",
-        "terrainProvenance": "games/rall-054/restored/assets/terrain-provenance.json"
+        "terrainProvenance": "games/rall-054/restored/assets/terrain-provenance.json",
+        "verifiedAt": "2026-11-04",
+        "deploymentCommit": "152bac392a2276991a80a2db47385d737270d20a",
+        "deploymentRun": 41927724531,
+        "auditCommit": "3b966e38396b6bc619dfae9a973e0585b582983f",
+        "liveChecks": "All 30 six-map navigation/full-duel cases, four input sizes, touch solo progression/defeat/replay in portrait and landscape, real-clock rotation in Chrome/Chromium, twelve resource retries and music recovery, actual joynes.se launch/play/fullscreen and homepage polish at four sizes; all 57 release hashes match. Forwarded filters use keyboard activation; canonical filters also use native touch."
       },
       "priorEditionLiveVerification": {
         "date": "2026-11-04",
