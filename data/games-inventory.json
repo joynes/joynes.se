@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "updatedAt": "2026-11-04",
   "objective": "Make every identified game and relevant version playable on the web, tested and published.",
-  "currentGame": "rall-054",
+  "currentGame": "rall-080",
   "games": [
     {
       "id": "web-quizzes",
@@ -2259,7 +2259,7 @@
       "id": "rall-080",
       "title": "Rall v080 \u2014 Fighter",
       "order": 25,
-      "status": "pending",
+      "status": "in_progress",
       "sources": [
         {
           "kind": "drive-folder",
@@ -2270,8 +2270,17 @@
           "url": "https://drive.google.com/file/d/1RFYQXmmjhVtkOdJGWRZ3PrIArNm5sRek/view"
         }
       ],
-      "work": "Lokalt originalarkiv med C++-k\u00e4lla och Drive-release. L\u00e4s regler, grafik och ljud f\u00f6re portning.",
-      "tests": [],
+      "work": "Restore from preserved original C++ gameplay and media. Drive and local executable/source/assets match; compile and test the browser adapter before publishing.",
+      "tests": [
+        {
+          "check": "Drive/source comparison",
+          "result": "290 byte-identical files including executable, gameplay sources and graphics/audio. Differences: one editor layout, two Drive thumbnail caches and one local MP3 example source. Archive readme0.0081/folderv080 naming recorded."
+        },
+        {
+          "check": "private source build",
+          "result": "13 original gameplay C++ files compile to WebAssembly with a browser platform adapter. Original round intro, keyboard movement and a native hit reached; full gameplay/input and publication checks remain."
+        }
+      ],
       "publishedUrl": null,
       "implementationCommit": null,
       "deploymentCommit": null,
@@ -2287,7 +2296,9 @@
         ],
         "graphics": "Blender",
         "soundAndMusic": "ElevenLabs"
-      }
+      },
+      "implementationRepository": "https://github.com/joynes/rall-v080-fighter",
+      "sourceAuditCommit": "373db7a2cedd14fc59d7dca36874cc059cc83c3a"
     },
     {
       "id": "rall-008",

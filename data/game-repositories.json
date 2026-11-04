@@ -825,8 +825,8 @@
       "auditWorktree": "/Users/joka/Documents/game-web-audit/rall-080",
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "8bfca05a8393a3e67b73cf4f01b555b725e69abd",
-      "auditStatus": "pending",
-      "releaseStatus": "pending",
+      "auditStatus": "in_progress",
+      "releaseStatus": "in_progress",
       "publicUrl": null,
       "createdForAudit": true,
       "sourceHead": null,
@@ -834,7 +834,9 @@
       "sourceTreeScope": "New repository; archived original and web files are inside web-release.",
       "auditUrl": "https://github.com/joynes/rall-v080-fighter/tree/audit/2026-11-03-baseline",
       "inGameControlsAndFullscreenStatus": "pending",
-      "englishInterfaceAuditStatus": "pending"
+      "englishInterfaceAuditStatus": "pending",
+      "repositoryHeadCommit": "373db7a2cedd14fc59d7dca36874cc059cc83c3a",
+      "auditFindings": "Drive archive preserved and compared:290matching files. Original C++ gameplay compiled privately; native intro, movement and a hit reached. No published or fully verified web release yet."
     },
     {
       "id": "rall-008",
@@ -887,14 +889,14 @@
       "englishInterfaceAuditStatus": "pending"
     }
   ],
-  "currentAuditGame": "rall-054",
+  "currentAuditGame": "rall-080",
   "realtimeControlRequirements": [
     "All gameplay actions available with touch, including simultaneous movement and action inputs.",
     "Touchpad/direct drag and action controls inside the game view, using the existing AI games as the reference; no control rows below the board.",
     "Visible fullscreen control operable by touch and keyboard, with entry/exit and both orientations verified.",
     "Keyboard input retained on phones/tablets; independent release, cancellation, lost focus and restart verified through the browser."
   ],
-  "currentAuditFocus": "Rall054 restoration verified; finish v080 and rall008 before further AI Enhanced editions",
+  "currentAuditFocus": "Restore and verify v080 original fighting gameplay before AI Enhanced work",
   "englishInterfaceRequirement": "All website interface text must be concise and in English.",
   "homepageEnglishCopyStatus": "passed",
   "homepageEnglishCopyEvidence": {
