@@ -59,7 +59,7 @@ The machine-readable queue, source links, version relationships, test evidence a
 | 5 | Memit | Published and verified under earlier release checks |
 | 6 | Skoluppgifter / Ordhjälten | Published and verified under earlier release checks |
 | 7 | Small Wonders / Inuti språkmodellen | Published and verified under earlier release checks |
-| 8 | Marble Tables | Published and verified under earlier release checks |
+| 8 | Marble Tables | Withdrawn at owner request |
 | 9 | Simple Driving Game | Excluded at owner request; do not republish |
 | 10 | Bus Test Game | Excluded at owner request; do not republish |
 | 11 | Godot Reading Game | Withdrawn at owner request |
