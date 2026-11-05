@@ -56,7 +56,7 @@
         "games/web-quizzes/questions.json": "9bb2d82c4e317c1747b7ae58b99e10436f936c87896f5c97e114d9921c57bd61",
         "games/web-quizzes/app.mjs": "707b8d6004c33cee1690289cdb15e475fd9eb248b53387dc1a6c684bd99f110b",
         "games/web-quizzes/source-notes.md": "3a18494f56de0f8a2b45206b101a109d2002d7625b149633cac008cbde932b55",
-        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a"
+        "assets/games-catalog.js": "b3819497281f815dd77e20592f410af58aa7c9828825a1b792563bc365dc5c2e"
       },
       "websiteSection": "quizzes",
       "originalTitle": "Fr\u00e5gespelet",
@@ -461,7 +461,7 @@
       "id": "small-wonders",
       "title": "Small Wonders",
       "order": 7,
-      "status": "published_verified",
+      "status": "withdrawn_by_user",
       "sources": [
         {
           "kind": "github",
@@ -472,7 +472,7 @@
           "url": "https://github.com/joynes/llmspel-play"
         }
       ],
-      "work": "K\u00e4llrepo och llmspel-play \u00e4r samma projekt. Testa torn, spelbart kapitel, MicroGPT-demo och garden-vy.",
+      "work": "Removed from the homepage at the owner\u2019s request. Source preserved privately; excluded from enhancement work.",
       "tests": [
         {
           "command": "npm run build -- --base=/llmspel-play/ (source repo)",
@@ -527,7 +527,6 @@
           "result": "Passed all 33 full-route gameplay/accessibility/recovery tests and added real touch plus mobile-keyboard input checks on all three routes. All 109 build files match tested SHA256. Private source 0999254, public build ba1f7bf, successful Pages run 41696898935. Homepage launchers pass at desktop/mobile widths."
         }
       ],
-      "publishedUrl": "https://joynes.github.io/llmspel-play/",
       "implementationCommit": "c13d5ac7c0b652e247746ba8312c5c42a9dc8bb8",
       "deploymentCommit": "5d3c30caf93a756fc86e8bd00459b9a4886ee753",
       "category": "ai",
@@ -542,20 +541,6 @@
         "publicBuildCommit": "5d3c30caf93a756fc86e8bd00459b9a4886ee753",
         "sourceCommit": "c13d5ac7c0b652e247746ba8312c5c42a9dc8bb8"
       },
-      "modes": [
-        {
-          "name": "LLM-tornet",
-          "url": "https://joynes.github.io/llmspel-play/"
-        },
-        {
-          "name": "Namnverkstaden",
-          "url": "https://joynes.github.io/llmspel-play/?demo"
-        },
-        {
-          "name": "Matematik\u00e4ventyret",
-          "url": "https://joynes.github.io/llmspel-play/?garden"
-        }
-      ],
       "limits": [
         "Later tower chapters are explicitly previews; current playable chapter has nine stations.",
         "Name workshop uses adjacent-character counts, not a trained neural transformer."
@@ -568,7 +553,32 @@
       "websiteSection": "ai",
       "sourceAuditCommit": "0999254eb63b1d173acf8cedb42033e945d6f24a",
       "browserBuildCommit": "ba1f7bf3c25fbae98fcbcd534d49c278b6da593b",
-      "originalTitle": "Small Wonders / Inuti spr\u00e5kmodellen"
+      "originalTitle": "Small Wonders / Inuti spr\u00e5kmodellen",
+      "withdrawal": {
+        "date": "2026-11-05",
+        "reason": "Owner requested removal of the three games shown in Screenshot_20261105_182235_Chrome.jpg. Do not relist.",
+        "scope": "Homepage listing and launch links removed; independent deployment unchanged.",
+        "previousRelease": {
+          "publishedUrl": "https://joynes.github.io/llmspel-play/",
+          "modes": [
+            {
+              "name": "LLM-tornet",
+              "url": "https://joynes.github.io/llmspel-play/"
+            },
+            {
+              "name": "Namnverkstaden",
+              "url": "https://joynes.github.io/llmspel-play/?demo"
+            },
+            {
+              "name": "Matematik\u00e4ventyret",
+              "url": "https://joynes.github.io/llmspel-play/?garden"
+            }
+          ]
+        },
+        "sourcePreservedAt": "/Users/joka/Documents/game-web-audit/small-wonders",
+        "privateWithdrawalCommit": "3b34f7feea20f276fd995affbf2bdc7196be88d6"
+      },
+      "homepageListed": false
     },
     {
       "id": "marble-tables",
@@ -741,8 +751,8 @@
         "games/simple-driving/Build/cartWeb2.loader.js": "b2857ce93350711103bd72fbc6b665f16bb09afdf65542b52549ecd05b812a54",
         "games/simple-driving/Build/cartWeb2.wasm": "10cb1df56489a17bdab24b1ccdb3acad9f2049de604661c62409d9f26f100afd",
         "games/simple-driving/Build/cartWeb2.data": "f464a31a28caeec8b24e2059aa57e517c4a3c670fc62462fce9f5055f7dd47f5",
-        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a",
-        "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0"
+        "assets/games-catalog.js": "b3819497281f815dd77e20592f410af58aa7c9828825a1b792563bc365dc5c2e",
+        "index.html": "381c22f6b5fcf048d0cf567218723591ec03500679d8a4ed317cab12262da033"
       },
       "previousPublishedUrl": "https://joynes.github.io/joynes.se/games/simple-driving/",
       "exclusionReason": "Removed at the owner's request: proof-of-concept driving demo with too little gameplay.",
@@ -810,8 +820,8 @@
         "games/simple-driving/Build/cartWeb2.wasm": "10cb1df56489a17bdab24b1ccdb3acad9f2049de604661c62409d9f26f100afd",
         "games/simple-driving/Build/cartWeb2.loader.js": "b2857ce93350711103bd72fbc6b665f16bb09afdf65542b52549ecd05b812a54",
         "games/simple-driving/Build/cartWeb2.framework.js": "18d7c9a73fddf3825d1e3cf71f948157e4720270e1e41651f687c76f29e4b3be",
-        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a",
-        "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0"
+        "assets/games-catalog.js": "b3819497281f815dd77e20592f410af58aa7c9828825a1b792563bc365dc5c2e",
+        "index.html": "381c22f6b5fcf048d0cf567218723591ec03500679d8a4ed317cab12262da033"
       },
       "deploymentRecovery": {
         "failedAndInconsistentRerun": 41290922621,
@@ -923,14 +933,14 @@
       "id": "car-topview",
       "title": "Top-down Driving",
       "order": 12,
-      "status": "published_verified",
+      "status": "withdrawn_by_user",
       "sources": [
         {
           "kind": "github",
           "url": "https://github.com/joynes/car_topview_game"
         }
       ],
-      "work": "Original remains available. Remix withdrawn at owner request. Faithful enhanced work follows user feedback; no new edition published without checks.",
+      "work": "Removed from the homepage at the owner\u2019s request. Source preserved privately; excluded from enhancement work.",
       "tests": [
         {
           "command": "npm test",
@@ -997,7 +1007,6 @@
           "result": "All homepage edition labels/URLs pass on Pages and actual joynes.se in four sizes per browser. Canonical Original/Remix launches pass actual driving, touch/keyboard full-page fullscreen and cleanup in both browsers. Original game rules and Remix game rules unchanged."
         }
       ],
-      "publishedUrl": "https://joynes.github.io/joynes.se/games/car-topview/",
       "implementationCommit": "543ff67914cb99c4d6d3a50847a847546e46f6e8",
       "deploymentCommit": "6a98ed689890ff3cfcb3fbf2c122fb154e3dcdc4",
       "category": "ai",
@@ -1005,23 +1014,7 @@
       "categoryLabel": "AI game",
       "sourceCommit": "5450575feeb6d6b42c48e7d2708ea3863da424c8",
       "sourcePeriod": "2024-12",
-      "webPath": "games/car-topview/",
       "implementationNotes": "Latest free-drive Godot4 prototype; original car PNG and looping PCM24 engine WAV preserved. Acceleration 400, max speed 800, friction 200, steer 3 rad/s, drift factor 2, pitch 0.5\u20133. JavaScript formula port and rotated rectangle wall contacts, not native Godot. Source wall collision offset repaired; start/pause/reset/mute and multitouch added. No authored races or score.",
-      "releaseFilesSha256": {
-        "games/car-topview/app.mjs": "70c7cdc8060a739e2a15eb2db7b82becb7451cd591cd2b81ca45360248728055",
-        "games/car-topview/car.png": "92daedcd612290c05ff3debedce20b1ac0b1006c8a9d03b035b21b7be9df2236",
-        "games/car-topview/core.mjs": "fb54033ea52e79f93b7458d4a8ab8f0958e9e3042a01b1bb1875e08cbe11dd9c",
-        "games/car-topview/engine.wav": "729dbfa505b858123746d8f2930691a066b5da46934ff075bc30de1efa1d5732",
-        "games/car-topview/index.html": "7c27757dcaf6fd52b6ccdc08433d8c2b888c24accdf9f3571fd6c10e9342bf42",
-        "games/car-topview/provenance.json": "2c7a3b776e92c8842f8e3b698d0ae788f322775001715e4b079da54f9778f6f9",
-        "games/car-topview/source-notes.md": "1906af170225783f80fa3d37e8ca428cd982c692649e5c1fa706737f7e23ce5f",
-        "games/car-topview/styles.css": "f1a6532206aa7acd92aaf9b861b51e72b6cd1ea61d4f743bfce339873684ba36",
-        "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
-        "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
-        "docs/games/car-topview-assets.json": "d85a34c5680cf30fa0b0117f7173b0e3f4c0785df19f6155d2f9ba8018c386c0",
-        "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0",
-        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a"
-      },
       "deploymentRun": 41842371865,
       "websiteSection": "ai",
       "renewedAuditStatus": "passed",
@@ -1061,33 +1054,15 @@
         "previousPublicUrl": "https://joynes.github.io/joynes.se/games/car-topview/enhanced/"
       },
       "enhancedEdition": {
-        "status": "planned-faithful-restoration",
-        "launchChoices": [
-          "Original",
-          "AI Enhanced",
-          "Remix"
-        ],
+        "status": "withdrawn_by_user",
+        "launchChoices": [],
         "graphics": "Blender",
-        "intent": "Keep original gameplay, maps, controls, progression and identity. Restore graphics/audio; new concepts belong to Remix."
+        "intent": "Keep original gameplay, maps, controls, progression and identity. Restore graphics/audio; new concepts belong to Remix.",
+        "withdrawalReason": "The owner withdrew the original game; do not develop or publish an enhanced edition."
       },
       "version": "2024-car-web.6",
       "resourceAudit": "docs/games/car-topview-assets.json",
       "auditCommit": "946a19bffb74ae40a899de0e42e56485fb5f2d30",
-      "publishedFileSha256": {
-        "games/car-topview/app.mjs": "70c7cdc8060a739e2a15eb2db7b82becb7451cd591cd2b81ca45360248728055",
-        "games/car-topview/car.png": "92daedcd612290c05ff3debedce20b1ac0b1006c8a9d03b035b21b7be9df2236",
-        "games/car-topview/core.mjs": "fb54033ea52e79f93b7458d4a8ab8f0958e9e3042a01b1bb1875e08cbe11dd9c",
-        "games/car-topview/engine.wav": "729dbfa505b858123746d8f2930691a066b5da46934ff075bc30de1efa1d5732",
-        "games/car-topview/index.html": "7c27757dcaf6fd52b6ccdc08433d8c2b888c24accdf9f3571fd6c10e9342bf42",
-        "games/car-topview/provenance.json": "2c7a3b776e92c8842f8e3b698d0ae788f322775001715e4b079da54f9778f6f9",
-        "games/car-topview/source-notes.md": "1906af170225783f80fa3d37e8ca428cd982c692649e5c1fa706737f7e23ce5f",
-        "games/car-topview/styles.css": "f1a6532206aa7acd92aaf9b861b51e72b6cd1ea61d4f743bfce339873684ba36",
-        "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
-        "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
-        "docs/games/car-topview-assets.json": "d85a34c5680cf30fa0b0117f7173b0e3f4c0785df19f6155d2f9ba8018c386c0",
-        "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0",
-        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a"
-      },
       "liveVerification": {
         "date": "2026-11-04",
         "status": "published_verified",
@@ -1105,7 +1080,49 @@
         "releaseHashChecks": 26,
         "scope": "Direct homepage choices, actual joynes.se, real keyboard/touch play, fullscreen/cleanup, Back/reload. Existing reimagined games are explicitly Remix. Rall054 AI Enhanced keeps Original gameplay/maps/controls/audio and changes tank graphics.",
         "limits": "Mobile contexts are emulated Chromium/Chrome; physical devices and Safari not covered."
-      }
+      },
+      "withdrawal": {
+        "date": "2026-11-05",
+        "reason": "Owner requested removal of the three games shown in Screenshot_20261105_182235_Chrome.jpg. Do not relist.",
+        "scope": "Homepage listing and locally hosted build removed.",
+        "previousRelease": {
+          "publishedUrl": "https://joynes.github.io/joynes.se/games/car-topview/",
+          "webPath": "games/car-topview/",
+          "releaseFilesSha256": {
+            "games/car-topview/app.mjs": "70c7cdc8060a739e2a15eb2db7b82becb7451cd591cd2b81ca45360248728055",
+            "games/car-topview/car.png": "92daedcd612290c05ff3debedce20b1ac0b1006c8a9d03b035b21b7be9df2236",
+            "games/car-topview/core.mjs": "fb54033ea52e79f93b7458d4a8ab8f0958e9e3042a01b1bb1875e08cbe11dd9c",
+            "games/car-topview/engine.wav": "729dbfa505b858123746d8f2930691a066b5da46934ff075bc30de1efa1d5732",
+            "games/car-topview/index.html": "7c27757dcaf6fd52b6ccdc08433d8c2b888c24accdf9f3571fd6c10e9342bf42",
+            "games/car-topview/provenance.json": "2c7a3b776e92c8842f8e3b698d0ae788f322775001715e4b079da54f9778f6f9",
+            "games/car-topview/source-notes.md": "1906af170225783f80fa3d37e8ca428cd982c692649e5c1fa706737f7e23ce5f",
+            "games/car-topview/styles.css": "f1a6532206aa7acd92aaf9b861b51e72b6cd1ea61d4f743bfce339873684ba36",
+            "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
+            "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
+            "docs/games/car-topview-assets.json": "d85a34c5680cf30fa0b0117f7173b0e3f4c0785df19f6155d2f9ba8018c386c0",
+            "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0",
+            "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a"
+          },
+          "publishedFileSha256": {
+            "games/car-topview/app.mjs": "70c7cdc8060a739e2a15eb2db7b82becb7451cd591cd2b81ca45360248728055",
+            "games/car-topview/car.png": "92daedcd612290c05ff3debedce20b1ac0b1006c8a9d03b035b21b7be9df2236",
+            "games/car-topview/core.mjs": "fb54033ea52e79f93b7458d4a8ab8f0958e9e3042a01b1bb1875e08cbe11dd9c",
+            "games/car-topview/engine.wav": "729dbfa505b858123746d8f2930691a066b5da46934ff075bc30de1efa1d5732",
+            "games/car-topview/index.html": "7c27757dcaf6fd52b6ccdc08433d8c2b888c24accdf9f3571fd6c10e9342bf42",
+            "games/car-topview/provenance.json": "2c7a3b776e92c8842f8e3b698d0ae788f322775001715e4b079da54f9778f6f9",
+            "games/car-topview/source-notes.md": "1906af170225783f80fa3d37e8ca428cd982c692649e5c1fa706737f7e23ce5f",
+            "games/car-topview/styles.css": "f1a6532206aa7acd92aaf9b861b51e72b6cd1ea61d4f743bfce339873684ba36",
+            "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
+            "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
+            "docs/games/car-topview-assets.json": "d85a34c5680cf30fa0b0117f7173b0e3f4c0785df19f6155d2f9ba8018c386c0",
+            "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0",
+            "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a"
+          }
+        },
+        "sourcePreservedAt": "/Users/joka/Documents/game-web-audit/car-topview",
+        "privateWithdrawalCommit": "6b55aea0d8e28ff9fdec70ed17a25fc3ea0461e3"
+      },
+      "homepageListed": false
     },
     {
       "id": "sdl-space",
@@ -1210,14 +1227,14 @@
       "id": "network-2d",
       "title": "Hello Multiplayer Game",
       "order": 14,
-      "status": "published_verified",
+      "status": "withdrawn_by_user",
       "sources": [
         {
           "kind": "github",
           "url": "https://github.com/joynes/test-network-game"
         }
       ],
-      "work": "Verify authoritative shared-world gameplay and all keyboard/touch actions, in-game controls and fullscreen.",
+      "work": "Removed from the homepage at the owner\u2019s request. Source preserved privately; excluded from enhancement work.",
       "tests": [
         {
           "command": "pnpm test",
@@ -1264,7 +1281,6 @@
           "result": "Full build/unit/lint, three-client gameplay and desktop/phone portrait/landscape input suites passed. Real secondary touch invokes native fullscreen and New figure while movement is held; restarted figure ignores stale contact. All three live client hashes and exact health release match."
         }
       ],
-      "publishedUrl": "https://test-network-game.fly.dev/",
       "implementationCommit": "6956f5c22fbd04cf8142df8b780923faf6f2e22f",
       "deploymentCommit": "6956f5c22fbd04cf8142df8b780923faf6f2e22f",
       "category": "ai",
@@ -1273,7 +1289,6 @@
       "sourceCommit": "d7d6c33989481dce3e68364f8d438445f34d1e0c",
       "sourcePeriod": "2025-09",
       "implementationRepository": "https://github.com/joynes/test-network-game",
-      "externalUrl": "https://test-network-game.fly.dev/",
       "deploymentImage": "registry.fly.io/test-network-game:deployment-01M6HRTQAT72H31DRZGVQNSQG6",
       "deploymentRegion": "arn",
       "machineCount": 1,
@@ -1289,14 +1304,26 @@
         "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49",
         "docs/games/network-2d.md": "ec4d989fdb27681090410ec57fc2e12c7f3e2723226c842f74ff1595ae3bade7"
       },
-      "catalogUrl": "https://joynes.github.io/joynes.se/#games/ai/network-2d",
       "catalogCommit": "f907ce217f136b7d12e06935c3f87ffef9d72b79",
       "catalogDeploymentRun": 41715530963,
       "websiteSection": "ai",
       "deploymentImageManifestSha256": "4f0df4012ce34b149daaebd21f4b96e82638bef71ee7e432689f8aded921306d",
       "renewedAuditStatus": "passed",
       "inGameControlsAndFullscreenStatus": "passed",
-      "renewedAuditCommit": "5a0a93b4d00c8143614bcb430ff25f9ea24b2ff8"
+      "renewedAuditCommit": "5a0a93b4d00c8143614bcb430ff25f9ea24b2ff8",
+      "withdrawal": {
+        "date": "2026-11-05",
+        "reason": "Owner requested removal of the three games shown in Screenshot_20261105_182235_Chrome.jpg. Do not relist.",
+        "scope": "Homepage listing and launch links removed; independent deployment unchanged.",
+        "previousRelease": {
+          "publishedUrl": "https://test-network-game.fly.dev/",
+          "catalogUrl": "https://joynes.github.io/joynes.se/#games/ai/network-2d",
+          "externalUrl": "https://test-network-game.fly.dev/"
+        },
+        "sourcePreservedAt": "/Users/joka/Documents/game-web-audit/network-2d",
+        "privateWithdrawalCommit": "b8f091ac35d2a915bb7bcfa89b03b6fbb1cd2ade"
+      },
+      "homepageListed": false
     },
     {
       "id": "network-3d",
@@ -1535,7 +1562,7 @@
       "catalogCommit": "66c76ea53cb3e403a8bff9a55ab3db924bbf6635",
       "catalogDeploymentRun": 41336710668,
       "publishedFileSha256": {
-        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a",
+        "assets/games-catalog.js": "b3819497281f815dd77e20592f410af58aa7c9828825a1b792563bc365dc5c2e",
         "docs/games/worldforge.md": "256ea3317260ef758a5dd94f5ecad5a3ab4d674caf40d39b9d81aa8bd26d065a",
         "docs/games/worldforge-assets.json": "3fff753caa75822e9a4962033784b2449c5c461c9fb492ff999bee965c02b321"
       },
@@ -1664,8 +1691,8 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
         "docs/games/shadow-racer-assets.json": "8faff4fba34068e7410e6f7f0dea483574cb8d269564119a6a9b0f2c653a532f",
-        "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0",
-        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a",
+        "index.html": "381c22f6b5fcf048d0cf567218723591ec03500679d8a4ed317cab12262da033",
+        "assets/games-catalog.js": "b3819497281f815dd77e20592f410af58aa7c9828825a1b792563bc365dc5c2e",
         "games/shadow-racer/restored/assets/audio-provenance.json": "7f2e1b622c540b120e9373659d2d40e5ed7fe8e0360b149173081173bbdd58af",
         "games/shadow-racer/restored/assets/buggy-body.png": "a9e44401d32ab58c46650ebe337b74b7c44ddb309fb5df180be40a0464f0d9db",
         "games/shadow-racer/restored/assets/buggy-wheel.png": "febd3fc3c99f5530f05db8aac0c18356880e82c9511033f0214aa589c7f47909",
@@ -1714,8 +1741,8 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
         "docs/games/shadow-racer-assets.json": "8faff4fba34068e7410e6f7f0dea483574cb8d269564119a6a9b0f2c653a532f",
-        "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0",
-        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a",
+        "index.html": "381c22f6b5fcf048d0cf567218723591ec03500679d8a4ed317cab12262da033",
+        "assets/games-catalog.js": "b3819497281f815dd77e20592f410af58aa7c9828825a1b792563bc365dc5c2e",
         "games/shadow-racer/restored/assets/audio-provenance.json": "7f2e1b622c540b120e9373659d2d40e5ed7fe8e0360b149173081173bbdd58af",
         "games/shadow-racer/restored/assets/buggy-body.png": "a9e44401d32ab58c46650ebe337b74b7c44ddb309fb5df180be40a0464f0d9db",
         "games/shadow-racer/restored/assets/buggy-wheel.png": "febd3fc3c99f5530f05db8aac0c18356880e82c9511033f0214aa589c7f47909",
@@ -1912,10 +1939,10 @@
         "games/rall-026/vendor/emulators/sources/emulators-v8.5.2.tar.gz": "4f92834936f774ad1e0f8d2cc0fc05dc73cd9962d2b8da0a09f56139a2a70f28",
         "games/rall-026/vendor/emulators/sources/dosbox-528578d.tar.gz": "797efaf22246bbc5b2e6be0a6c791a58addd2bca330e0aa93232780a77e06019",
         "games/rall-026/vendor/emulators/wdosbox.wasm": "b33afba80de1a420c123086e5952d135de041f9e85d4444170e29d9249ec049c",
-        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a",
+        "assets/games-catalog.js": "b3819497281f815dd77e20592f410af58aa7c9828825a1b792563bc365dc5c2e",
         "games/rall-026/vendor/emulators/wlibzip.js": "b8e55c2aa4c96e961c9965f289c0f40b5d44f02a557dcf980ddc29787b493842",
         "games/rall-026/vendor/emulators/wlibzip.wasm": "25064d970c42ca7ea0fdb8b058204d6e41cc8826a676219677772f5591e8337b",
-        "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0",
+        "index.html": "381c22f6b5fcf048d0cf567218723591ec03500679d8a4ed317cab12262da033",
         "docs/games/rall-026.md": "e689906009815f758a854b186622c68c8fb482ebafd1e260e2091592f1147049",
         "docs/games/rall-026-assets.json": "23aad475f25009756710699965ca81d63f71b7eb230cdfed2ed10e201cc6150b"
       },
@@ -2071,8 +2098,8 @@
         "games/rall-030/vendor/emulators/wlibzip.wasm": "25064d970c42ca7ea0fdb8b058204d6e41cc8826a676219677772f5591e8337b",
         "games/rall-030/vendor/mouse-compat/ALMOUSE.COM": "200942106e626955510b84426802de31790979c1f55d225d7bb65cb74cd3ba37",
         "games/rall-030/vendor/mouse-compat/almouse.asm": "307b24361235edbf526d49ba4c9bc6323c73c4ded087a70832ab903834d2c1c5",
-        "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0",
-        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a",
+        "index.html": "381c22f6b5fcf048d0cf567218723591ec03500679d8a4ed317cab12262da033",
+        "assets/games-catalog.js": "b3819497281f815dd77e20592f410af58aa7c9828825a1b792563bc365dc5c2e",
         "docs/games/rall-030.md": "fd819f7eccea21de808aa561486b291bd37c5c500bae36d770c7ab9477440168",
         "docs/games/rall-030-assets.json": "1b702ab9c20481a5708c2e39df397c3d565c37f1370643b9f103ff7412a1ae8f"
       },
@@ -2209,8 +2236,8 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
         "docs/games/rall-054-assets.json": "079cffc3b07ef8a8cb360cb2d55eb370eeb973e46e0efc7ef9d577a0055d7e98",
-        "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0",
-        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a",
+        "index.html": "381c22f6b5fcf048d0cf567218723591ec03500679d8a4ed317cab12262da033",
+        "assets/games-catalog.js": "b3819497281f815dd77e20592f410af58aa7c9828825a1b792563bc365dc5c2e",
         "games/rall-054/restored/assets/audio-provenance.json": "1cef9ad1ec7d7677c7117345b21a2dc29e11ffdcac98a94c15540ccd1df93477",
         "games/rall-054/restored/assets/enter-siege.wav": "722a9421f6996b9a16f38b30c6987bb3118d281e16598bc66aabf9069e2dbd2c",
         "games/rall-054/restored/assets/explosion.wav": "9bcb18b54fc50b429233ec334163f75ca398fd1d10cc0097b81b30d146501e3b",
@@ -2276,8 +2303,8 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
         "docs/games/rall-054-assets.json": "079cffc3b07ef8a8cb360cb2d55eb370eeb973e46e0efc7ef9d577a0055d7e98",
-        "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0",
-        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a",
+        "index.html": "381c22f6b5fcf048d0cf567218723591ec03500679d8a4ed317cab12262da033",
+        "assets/games-catalog.js": "b3819497281f815dd77e20592f410af58aa7c9828825a1b792563bc365dc5c2e",
         "games/rall-054/restored/assets/audio-provenance.json": "1cef9ad1ec7d7677c7117345b21a2dc29e11ffdcac98a94c15540ccd1df93477",
         "games/rall-054/restored/assets/enter-siege.wav": "722a9421f6996b9a16f38b30c6987bb3118d281e16598bc66aabf9069e2dbd2c",
         "games/rall-054/restored/assets/explosion.wav": "9bcb18b54fc50b429233ec334163f75ca398fd1d10cc0097b81b30d146501e3b",
@@ -2818,8 +2845,8 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
         "docs/games/rall-080-assets.json": "6472f3251f791a12df77f91951ff5d7bb2a96552a8412a41a320fe0d581913b8",
-        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a",
-        "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0"
+        "assets/games-catalog.js": "b3819497281f815dd77e20592f410af58aa7c9828825a1b792563bc365dc5c2e",
+        "index.html": "381c22f6b5fcf048d0cf567218723591ec03500679d8a4ed317cab12262da033"
       },
       "verificationLimits": "Emulated mobile browser contexts; no physical-device or Safari claim. Browser tests use normal keys/native CDP touch and a cloned read-only native observer; no gameplay-state injection.",
       "inGameControlsAndFullscreenStatus": "local-passed-live-pending",
@@ -3330,8 +3357,8 @@
         "assets/game-view.mjs": "9a65005d59b1652c8e76966c9d081fa2bbc2e432965d60d09d0341094f66a96a",
         "assets/game-frame-view.mjs": "be4a2c65d63d2ea785670cb6f2e2d9cdb8162362250c019c2bd1ccdcfde991f0",
         "docs/games/rall-008-assets.json": "a9a46de89f94fffebbd2adf57dc4e1e348e3275319961c49a880a0c6c6c899a3",
-        "assets/games-catalog.js": "52f7b68c9d255c05bae1e523adf3318a8688cf5034c10828a8e49c04d19da51a",
-        "index.html": "c08e2377d8378da7bf771b09b86049f6786da88c78fd26ed06178655e873e0a0"
+        "assets/games-catalog.js": "b3819497281f815dd77e20592f410af58aa7c9828825a1b792563bc365dc5c2e",
+        "index.html": "381c22f6b5fcf048d0cf567218723591ec03500679d8a4ed317cab12262da033"
       },
       "verificationLimits": "Mobile browser contexts are emulated; no physical-device or Safari claim. Tests drive browser keys/native CDP touch with cloned read-only state, without gameplay-state injection.",
       "inGameControlsAndFullscreenStatus": "passed",

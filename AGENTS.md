@@ -15,6 +15,8 @@
 - Do not show Source or Folder links for games, including the Jaro & Grodan game archive.
 - Keep Rall008 unlisted as well. Keep all Remix editions unpublished; the owner requested their removal. Preserve their source and assets privately.
 
+- Keep Small Wonders, Top-down Driving and Hello Multiplayer Game removed from the homepage and outside enhancement work, at the owner’s request. Preserve their source privately; do not relist them.
+
 # AI Enhanced editions
 
 - After the current fixes, create a new AI Enhanced edition of each adapted older game, one game at a time.

@@ -16,7 +16,7 @@ Rall054 Original and AI Enhanced 1.1 are published and verified. ShadowRacer Ori
 
 Rall v080 and Rall008 have playable hosted builds but are unlisted at the owner’s request because they are personal. Do not relist them. Marble Tables, Read and Place, SDL Space — Survival and all Remix editions remain withdrawn; their source and media are preserved privately. Keep the police-car and bus POCs excluded. No Source or Folder buttons belong in the game listings.
 
-Continue faithful enhanced work with Top-down Driving, then the remaining adapted older games, one at a time. Existing release evidence is historical; each new edition needs actual keyboard/touch gameplay and fullscreen checks before publication. The publication inventory and catalog are the current release list.
+Continue faithful enhanced work with the remaining eligible adapted older games, one at a time. Existing release evidence is historical; each new edition needs actual keyboard/touch gameplay and fullscreen checks before publication. The publication inventory and catalog are the current release list.
 
 ## Required behaviour
 
@@ -58,14 +58,14 @@ The machine-readable queue, source links, version relationships, test evidence a
 | 4 | Läs- och ordquiz | Published and verified under earlier release checks |
 | 5 | Memit | Published and verified under earlier release checks |
 | 6 | Skoluppgifter / Ordhjälten | Published and verified under earlier release checks |
-| 7 | Small Wonders / Inuti språkmodellen | Published and verified under earlier release checks |
+| 7 | Small Wonders / Inuti språkmodellen | Removed from homepage at owner request |
 | 8 | Marble Tables | Withdrawn at owner request |
 | 9 | Simple Driving Game | Excluded at owner request; do not republish |
 | 10 | Bus Test Game | Excluded at owner request; do not republish |
 | 11 | Godot Reading Game | Withdrawn at owner request |
-| 12 | Top-down Driving | Renewed local/live keyboard and touch audit passed |
+| 12 | Top-down Driving | Withdrawn at owner request |
 | 13 | SDL Space — Survival | Withdrawn at owner request |
-| 14 | Hello Multiplayer Game | Renewed local/live input, in-game touchpad and fullscreen passed |
+| 14 | Hello Multiplayer Game | Removed from homepage at owner request |
 | 15 | 3D Network Game | Published and verified under earlier release checks |
 | 16 | Neon Bastion & Manta | Published and verified under earlier release checks |
 | 17 | WorldForge | Published and verified under earlier release checks |
@@ -87,3 +87,5 @@ Inspect picture_puzzle, lightbot, relearn and test_share_unity_hello_world befor
 ## Input audit
 
 [INPUT_SUPPORT_AUDIT.md](INPUT_SUPPORT_AUDIT.md) tracks the expanded touch and physical-keyboard requirement, including attached-keyboard scenarios in a mobile browser. Earlier release evidence remains historical evidence; new input checks must be recorded explicitly.
+
+Small Wonders, Top-down Driving and Hello Multiplayer Game are withdrawn from homepage publication. Their original source remains in the existing private repositories. Standalone Small Wonders and multiplayer deployments are separate from this homepage withdrawal.

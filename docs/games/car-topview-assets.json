@@ -1,7 +1,9 @@
 {
   "game": "car-topview",
   "path": "games/car-topview/",
-  "assets": {
+  "status": "withdrawn_by_user",
+  "withdrawnAt": "2026-11-05",
+  "previousReleaseAssets": {
     "games/car-topview/app.mjs": "70c7cdc8060a739e2a15eb2db7b82becb7451cd591cd2b81ca45360248728055",
     "games/car-topview/car.png": "92daedcd612290c05ff3debedce20b1ac0b1006c8a9d03b035b21b7be9df2236",
     "games/car-topview/core.mjs": "fb54033ea52e79f93b7458d4a8ab8f0958e9e3042a01b1bb1875e08cbe11dd9c",

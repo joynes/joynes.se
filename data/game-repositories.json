@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04",
+  "updatedAt": "2026-11-05",
   "homepageBaselineCommit": "4cf29c7574fd6c803bb66dba8fb77786f5eee226",
   "workflow": "Checkpoint source and current web adaptation before auditing one game at a time. Verify real gameplay, touch and keyboard in desktop and mobile browser contexts; commit each result.",
   "games": [
@@ -241,8 +241,7 @@
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "50b5623d6a3fec5fa403d572b9ab121c1e58bb9c",
       "auditStatus": "passed",
-      "releaseStatus": "published_verified",
-      "publicUrl": "https://joynes.github.io/llmspel-play/",
+      "releaseStatus": "withdrawn_by_user",
       "sourceHead": "e6b665abd359f072607c5c74c8463aa44a9c793b",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "32ccb338b8ad979685512d04d9e2e04613449b04",
@@ -267,7 +266,18 @@
       "auditTestCommit": "0999254eb63b1d173acf8cedb42033e945d6f24a",
       "auditUrl": "https://github.com/joynes/llmspel/tree/audit/2026-11-03-baseline",
       "inGameControlsAndFullscreenStatus": "pending",
-      "englishInterfaceAuditStatus": "pending"
+      "englishInterfaceAuditStatus": "pending",
+      "withdrawal": {
+        "date": "2026-11-05",
+        "reason": "Owner requested removal of the three games shown in Screenshot_20261105_182235_Chrome.jpg. Do not relist.",
+        "scope": "Homepage listing and launch links removed; independent deployment unchanged.",
+        "previousRelease": {
+          "publicUrl": "https://joynes.github.io/llmspel-play/"
+        },
+        "sourcePreservedAt": "/Users/joka/Documents/game-web-audit/small-wonders",
+        "privateWithdrawalCommit": "3b34f7feea20f276fd995affbf2bdc7196be88d6"
+      },
+      "homepageListed": false
     },
     {
       "id": "marble-tables",
@@ -315,7 +325,7 @@
       "englishInterfaceAuditStatus": "pending",
       "withdrawal": {
         "date": "2026-11-04",
-        "reason": "Unpublished at the owner’s explicit request. Do not republish.",
+        "reason": "Unpublished at the owner\u2019s explicit request. Do not republish.",
         "previousRelease": {
           "publicUrl": "https://joynes.github.io/joynes.se/games/marble-tables/"
         }
@@ -365,7 +375,7 @@
       "englishInterfaceAuditStatus": "pending",
       "withdrawal": {
         "date": "2026-11-04",
-        "reason": "Unpublished at the owner’s explicit request. Do not republish.",
+        "reason": "Unpublished at the owner\u2019s explicit request. Do not republish.",
         "previousRelease": {
           "publicUrl": "https://joynes.github.io/joynes.se/games/godot-reading/"
         }
@@ -381,8 +391,7 @@
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "f4836b5f2787781d0f27e96416b9c38b9d000579",
       "auditStatus": "passed",
-      "releaseStatus": "published_verified",
-      "publicUrl": "https://joynes.github.io/joynes.se/games/car-topview/",
+      "releaseStatus": "withdrawn_by_user",
       "sourceHead": "5450575feeb6d6b42c48e7d2708ea3863da424c8",
       "sourceTreeVerified": true,
       "sourceRestorationCommit": "f67de46b997044830e1d6fd3f0e5eeba0132be46",
@@ -413,7 +422,7 @@
       "secondaryActionTouchAuditStatus": "passed",
       "englishInterfaceAuditStatus": "passed",
       "enhancedEdition": {
-        "status": "passed",
+        "status": "withdrawn_by_user",
         "title": "Night Circuit",
         "sourceCommit": "b1a184589f436b553b5a53e3268c6f24e4ac0ada",
         "auditEvidence": {
@@ -478,9 +487,22 @@
         },
         "verifiedAt": "2026-11-04",
         "deploymentCommit": "543ff67914cb99c4d6d3a50847a847546e46f6e8",
-        "deploymentRun": 41735297215
+        "deploymentRun": 41735297215,
+        "launchChoices": [],
+        "withdrawalReason": "The owner withdrew the original game; do not develop or publish an enhanced edition."
       },
-      "auditFindings": "Direct homepage editions verified locally and live. Faithful Rall054 AI Enhanced preserves Original gameplay; reimagined games are Remix. Touch/keyboard, full-parent fullscreen, actual driving and release hashes pass; gameplay engines unchanged."
+      "auditFindings": "Direct homepage editions verified locally and live. Faithful Rall054 AI Enhanced preserves Original gameplay; reimagined games are Remix. Touch/keyboard, full-parent fullscreen, actual driving and release hashes pass; gameplay engines unchanged.",
+      "withdrawal": {
+        "date": "2026-11-05",
+        "reason": "Owner requested removal of the three games shown in Screenshot_20261105_182235_Chrome.jpg. Do not relist.",
+        "scope": "Homepage listing and locally hosted build removed.",
+        "previousRelease": {
+          "publicUrl": "https://joynes.github.io/joynes.se/games/car-topview/"
+        },
+        "sourcePreservedAt": "/Users/joka/Documents/game-web-audit/car-topview",
+        "privateWithdrawalCommit": "6b55aea0d8e28ff9fdec70ed17a25fc3ea0461e3"
+      },
+      "homepageListed": false
     },
     {
       "id": "sdl-space",
@@ -527,7 +549,7 @@
       "secondaryActionTouchAuditStatus": "passed",
       "withdrawal": {
         "date": "2026-11-04",
-        "reason": "Unpublished at the owner’s explicit request. Do not republish.",
+        "reason": "Unpublished at the owner\u2019s explicit request. Do not republish.",
         "previousRelease": {
           "publicUrl": "https://joynes.github.io/joynes.se/games/sdl-space/"
         }
@@ -543,8 +565,7 @@
       "checkpointBranch": "audit/2026-11-03-baseline",
       "checkpointCommit": "64a46070ef0363c70c4bc3bdfbd94f049db7df53",
       "auditStatus": "passed",
-      "releaseStatus": "published_verified",
-      "publicUrl": "https://test-network-game.fly.dev/",
+      "releaseStatus": "withdrawn_by_user",
       "guidanceReviewed": true,
       "sourceHead": "09c53f8d3988bfa19d629d64f53a8a450b4d47e3",
       "sourceTreeVerified": true,
@@ -589,7 +610,18 @@
       "catalogCommit": "f907ce217f136b7d12e06935c3f87ffef9d72b79",
       "catalogDeploymentRun": 41715530963,
       "englishInterfaceAuditStatus": "passed",
-      "secondaryActionTouchAuditStatus": "passed"
+      "secondaryActionTouchAuditStatus": "passed",
+      "withdrawal": {
+        "date": "2026-11-05",
+        "reason": "Owner requested removal of the three games shown in Screenshot_20261105_182235_Chrome.jpg. Do not relist.",
+        "scope": "Homepage listing and launch links removed; independent deployment unchanged.",
+        "previousRelease": {
+          "publicUrl": "https://test-network-game.fly.dev/"
+        },
+        "sourcePreservedAt": "/Users/joka/Documents/game-web-audit/network-2d",
+        "privateWithdrawalCommit": "b8f091ac35d2a915bb7bcfa89b03b6fbb1cd2ade"
+      },
+      "homepageListed": false
     },
     {
       "id": "network-3d",
@@ -865,7 +897,7 @@
         "conclusion": "success"
       },
       "homepageListingStatus": "unlisted_by_user",
-      "homepageListingReason": "Removed from homepage links at the owner’s request. Do not relist."
+      "homepageListingReason": "Removed from homepage links at the owner\u2019s request. Do not relist."
     },
     {
       "id": "rall-008",
@@ -896,7 +928,7 @@
         "conclusion": "success"
       },
       "homepageListingStatus": "unlisted_by_user",
-      "homepageListingReason": "Removed from homepage links at the owner’s request. Do not relist."
+      "homepageListingReason": "Removed from homepage links at the owner\u2019s request. Do not relist."
     },
     {
       "id": "rall-066",

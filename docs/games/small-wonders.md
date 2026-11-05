@@ -1,5 +1,7 @@
 # Small Wonders / Inuti språkmodellen
 
+**Removed from the homepage on 5 November 2026 at the owner’s request. Do not relist. Original source is preserved privately. The independent deployment is unchanged.**
+
 Nyare AI-spel med tre separata spelvägar. Publiceringsrepo: [joynes/llmspel-play](https://github.com/joynes/llmspel-play). Utvecklingsrepot förblir privat; hemsidan länkar till det publika webbbygget.
 
 - [LLM-tornet](https://joynes.github.io/llmspel-play/): en spelbar introduktion i nio stationer, med separata resor genom generering respektive tiden före träning. Visar text, token-ID:n, numeriska beskrivningar, informationsvägar, nästa textbit, kontext, arkitektur, träningsmål, jämförelse, bakåtpåverkan och uppdatering.

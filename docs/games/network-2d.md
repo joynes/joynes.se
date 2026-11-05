@@ -1,5 +1,7 @@
 # Hello Multiplayer Game
 
+**Removed from the homepage on 5 November 2026 at the owner’s request. Do not relist. Original source is preserved privately. The independent deployment is unchanged.**
+
 Private repository: `joynes/test-network-game`. The original dates from September 2025 and belongs to the AI games category. The current adaptation and its audit commits are preserved on `audit/2026-11-03-baseline` in that existing repository; the original local workspace and default branch remain available.
 
 ## Preserved game

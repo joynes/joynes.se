@@ -1,5 +1,7 @@
 # Top-down Driving
 
+**Removed from the homepage on 5 November 2026 at the owner’s request. Do not relist. Original source is preserved privately. The local playable build is withdrawn.**
+
 **All Remix editions were withdrawn on 4 November 2026 at the owner’s request. Original remains available. Rall054 AI Enhanced is under revision after user reports of sticking and difficult controls; ShadowRacer’s faithful enhanced edition is in development.**
 
 Choose **Original** or **Remix** when the game opens.

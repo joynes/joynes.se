@@ -72,39 +72,6 @@ window.joynesPublishedGames = [
     version: "1.1.0"
   },
   {
-    id: "network-2d",
-    title: "Hello Multiplayer Game",
-    kind: "ai",
-    description: "AI · 2025 · A shared arena with a touchpad, keyboard and fullscreen.",
-    href: "https://test-network-game.fly.dev/",
-    embed: false,
-    playLabel: "Open arena",
-    modes: [["Autopilot", "https://test-network-game.fly.dev/?bot=1"]],
-    version: "1.1.2"
-  },
-  {
-    id: "car-topview",
-    title: "Top-down Driving",
-    kind: "ai",
-    description: "Free driving with the original physics.",
-    href: "games/car-topview/",
-    editions: [
-      { id: "original", label: "Original", href: "games/car-topview/" }
-    ],
-    version: "2024-car-web.6"
-  },
-  {
-    id: "small-wonders",
-    title: "Small Wonders",
-    kind: "ai",
-    description: "AI · Three playable routes: an LLM tower, names and maths.",
-    href: "https://joynes.github.io/llmspel-play/",
-    modes: [["Name workshop", "https://joynes.github.io/llmspel-play/?demo"], ["Maths adventure", "https://joynes.github.io/llmspel-play/?garden"]],
-    embed: false,
-    playLabel: "LLM tower",
-    version: "ba1f7bf"
-  },
-  {
     id: "hardword",
     genre: "quiz",
     title: "Learning Games",
