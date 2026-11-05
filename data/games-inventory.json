@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "updatedAt": "2026-11-05",
   "objective": "Make every identified game and relevant version playable on the web, tested and published.",
-  "currentGame": "bomberanimals",
+  "currentGame": "upward-platformer",
   "games": [
     {
       "id": "web-quizzes",
@@ -3601,7 +3601,7 @@
     {
       "id": "bomberanimals",
       "title": "BomberAnimals",
-      "status": "ready_pending_publication_verification",
+      "status": "published_verified",
       "sources": [
         {
           "kind": "google-drive",
@@ -3630,6 +3630,10 @@
         {
           "command": "node scripts/test-bomberanimals-home.cjs",
           "result": "passed local homepage iframe at four sizes: original native co-op keyboard movement, touch/cancel, fullscreen and route cleanup."
+        },
+        {
+          "command": "HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ node scripts/test-bomberanimals-home.cjs; FORWARDED_BASE_URL=https://joynes.se/ node scripts/test-bomberanimals-home.cjs",
+          "result": "passed all eight public homepage checks at 1280/390/844/320 widths: embedded and direct-window launch, native co-op keyboard movement, touch/cancel, fullscreen."
         }
       ],
       "releaseFilesSha256": {
@@ -3640,12 +3644,15 @@
         "games/bomberanimals/audio/jump.wav": "556e8785f728f31a86ae1e03cdbf14cabcdccdd69e8071c7680db7de627f395a",
         "games/bomberanimals/index.html": "70786c9be411b230c241147e25750ca5b0eecc7e0e56247d4fb0ab3b12000e63",
         "games/bomberanimals/native-provenance.json": "1affe6213a5dbfe17c174bea96c01528612516851fd5acf630970a7ea145e505",
-        "games/bomberanimals/restoration-notes.md": "83b6fdd828b564bc6fc209e3ba648f8670c2147e2831a2ed049147677a96a16b",
+        "games/bomberanimals/restoration-notes.md": "e713e7d4389f15494c658d36cf66b5d748075d2bab11a717f05293c6c2627486",
         "games/bomberanimals/runtime.data": "2f998ba8e7f983e01049481460184c9b4df63e6af171537753538860f06ac40b",
         "games/bomberanimals/runtime.js": "17f0038024cc2987e4391b48275741d1b97aca45ff887fb8898f1d104c5c7598",
         "games/bomberanimals/runtime.wasm": "b0a70cae92e1e6d91c942dc385d035ac8e24b152dd637b449917163c9ebb88c9",
         "games/bomberanimals/style.css": "6eae953c4d60ee03161ee6006ac70723d249eee5dd3e234f261edf1587d1ab23"
-      }
+      },
+      "auditCommit": "8a5fba19bb0a092e29196daedc74d3c49da28205",
+      "deploymentCommit": "934c1dcc055b094c7acd8bdfdd93ebda529f33d0",
+      "deploymentRunId": 42079603272
     },
     {
       "id": "upward-platformer",
@@ -3660,9 +3667,11 @@
       "category": "retro",
       "webAdaptation": "ai",
       "homepageListed": false,
-      "work": "Archived folder named game: C++ source generates 10,000 platforms, tracks current/max climbing height, uses a following camera, original character/bed/platform atlas and FMOD audio. Official title not yet identified.",
+      "work": "Recovered and checkpointed original desktop/common source, native executable, three atlases, bitmap font, WAV effects, intro, XM music and LodePNG decoder (22 source/media files). Archived as game; official title unconfirmed. Browser restoration in progress.",
       "recoveryDate": "2026-11-05",
-      "publicationRequirement": "Actual browser gameplay, touch, attached keyboard, cancellation/focus/restart and fullscreen checks before publication."
+      "publicationRequirement": "Actual browser gameplay, touch, attached keyboard, cancellation/focus/restart and fullscreen checks before publication.",
+      "sourceCommit": "4fa9ed105e2c129b92fc03c806422c2b17bf8209",
+      "sourceRepository": "https://github.com/joynes/upward-platformer"
     }
   ],
   "candidatesToInspect": [

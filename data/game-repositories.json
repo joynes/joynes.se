@@ -969,19 +969,33 @@
       "checkpointBranch": "main",
       "checkpointCommit": "d655bfa6c1ed7f3d8842db90d5ee6929543c599a",
       "sourceTreeVerified": true,
-      "releaseStatus": "ready_pending_publication_verification",
-      "auditStatus": "passed_local",
-      "repositoryHeadCommit": "7f19a4db32ec37c1f23da694e7f68542b38504e1"
+      "releaseStatus": "published_verified",
+      "auditStatus": "passed",
+      "repositoryHeadCommit": "8a5fba19bb0a092e29196daedc74d3c49da28205",
+      "auditCommit": "8a5fba19bb0a092e29196daedc74d3c49da28205",
+      "publicUrl": "https://joynes.github.io/joynes.se/games/bomberanimals/",
+      "deploymentRunId": 42079603272
+    },
+    {
+      "id": "upward-platformer",
+      "repository": "https://github.com/joynes/upward-platformer",
+      "visibility": "private",
+      "reuseExisting": false,
+      "auditWorktree": "/Users/joka/Documents/game-web-audit/upward-platformer",
+      "checkpointBranch": "main",
+      "checkpointCommit": "4fa9ed105e2c129b92fc03c806422c2b17bf8209",
+      "sourceTreeVerified": true,
+      "releaseStatus": "source_recovered_pending_browser_adaptation"
     }
   ],
-  "currentAuditGame": "bomberanimals",
+  "currentAuditGame": "upward-platformer",
   "realtimeControlRequirements": [
     "All gameplay actions available with touch, including simultaneous movement and action inputs.",
     "Touchpad/direct drag and action controls inside the game view, using the existing AI games as the reference; no control rows below the board.",
     "Visible fullscreen control operable by touch and keyboard, with entry/exit and both orientations verified.",
     "Keyboard input retained on phones/tablets; independent release, cancellation, lost focus and restart verified through the browser."
   ],
-  "currentAuditFocus": "Verify the recovered native BomberAnimals release, then restore the recovered climbing platformer.",
+  "currentAuditFocus": "Restore and verify the recovered native climbing platformer; original title unconfirmed.",
   "englishInterfaceRequirement": "All website interface text must be concise and in English.",
   "homepageEnglishCopyStatus": "passed",
   "homepageEnglishCopyEvidence": {

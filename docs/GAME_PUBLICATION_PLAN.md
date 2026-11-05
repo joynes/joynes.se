@@ -12,7 +12,7 @@ Audit published games in inventory order, one game at a time, including touch an
 
 ## Current priorities
 
-The missing BomberAnimals and upward-climbing platformer were recovered from the owner’s old Drive project backup. BomberAnimals is restored from its native common source with the original cat/dog sprites and effects, verified locally and awaiting public-route verification. The climbing project is archived as `game`; its source generates 10,000 platforms and records maximum height. Restore it next; its final title remains unconfirmed. Recovery links and evidence are in the inventory.
+The missing BomberAnimals and upward-climbing platformer were recovered from the owner’s old Drive project backup. BomberAnimals is restored from its native common source with the original cat/dog sprites and effects, published and verified locally, on the canonical homepage and through joynes.se’s forwarding page. The climbing project is archived as `game`; its source generates 10,000 platforms and records maximum height. Restore it next; its final title remains unconfirmed. Recovery links and evidence are in the inventory.
 
 Rall054 Original and AI Enhanced 1.1 are published and verified. ShadowRacer Original and faithful AI Enhanced 1.0 are also published and verified. The enhanced editions retain the original game identity; current checks and source commits are in the inventory.
 
