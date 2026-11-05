@@ -1,6 +1,14 @@
 // Only tested releases belong here. The complete work queue is in data/games-inventory.json.
 window.joynesPublishedGames = [
   {
+    id: "bomberanimals",
+    title: "BomberAnimals",
+    kind: "retro",
+    description: "Retro · Cats, dogs and bouncing bombs. Solo or local co-op.",
+    href: "games/bomberanimals/",
+    version: "native-web.1"
+  },
+  {
     id: "rall-054",
     title: "Rall v054 — Tanks",
     kind: "retro",

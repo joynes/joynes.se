@@ -325,7 +325,7 @@
       "englishInterfaceAuditStatus": "pending",
       "withdrawal": {
         "date": "2026-11-04",
-        "reason": "Unpublished at the owner\u2019s explicit request. Do not republish.",
+        "reason": "Unpublished at the owner’s explicit request. Do not republish.",
         "previousRelease": {
           "publicUrl": "https://joynes.github.io/joynes.se/games/marble-tables/"
         }
@@ -375,7 +375,7 @@
       "englishInterfaceAuditStatus": "pending",
       "withdrawal": {
         "date": "2026-11-04",
-        "reason": "Unpublished at the owner\u2019s explicit request. Do not republish.",
+        "reason": "Unpublished at the owner’s explicit request. Do not republish.",
         "previousRelease": {
           "publicUrl": "https://joynes.github.io/joynes.se/games/godot-reading/"
         }
@@ -549,7 +549,7 @@
       "secondaryActionTouchAuditStatus": "passed",
       "withdrawal": {
         "date": "2026-11-04",
-        "reason": "Unpublished at the owner\u2019s explicit request. Do not republish.",
+        "reason": "Unpublished at the owner’s explicit request. Do not republish.",
         "previousRelease": {
           "publicUrl": "https://joynes.github.io/joynes.se/games/sdl-space/"
         }
@@ -897,7 +897,7 @@
         "conclusion": "success"
       },
       "homepageListingStatus": "unlisted_by_user",
-      "homepageListingReason": "Removed from homepage links at the owner\u2019s request. Do not relist."
+      "homepageListingReason": "Removed from homepage links at the owner’s request. Do not relist."
     },
     {
       "id": "rall-008",
@@ -928,7 +928,7 @@
         "conclusion": "success"
       },
       "homepageListingStatus": "unlisted_by_user",
-      "homepageListingReason": "Removed from homepage links at the owner\u2019s request. Do not relist."
+      "homepageListingReason": "Removed from homepage links at the owner’s request. Do not relist."
     },
     {
       "id": "rall-066",
@@ -959,16 +959,29 @@
       "publicUrl": null,
       "inGameControlsAndFullscreenStatus": "pending",
       "englishInterfaceAuditStatus": "pending"
+    },
+    {
+      "id": "bomberanimals",
+      "repository": "https://github.com/joynes/BomberAnimals",
+      "visibility": "private",
+      "reuseExisting": false,
+      "auditWorktree": "/Users/joka/Documents/game-web-audit/bomberanimals",
+      "checkpointBranch": "main",
+      "checkpointCommit": "d655bfa6c1ed7f3d8842db90d5ee6929543c599a",
+      "sourceTreeVerified": true,
+      "releaseStatus": "ready_pending_publication_verification",
+      "auditStatus": "passed_local",
+      "repositoryHeadCommit": "7f19a4db32ec37c1f23da694e7f68542b38504e1"
     }
   ],
-  "currentAuditGame": "rall-080",
+  "currentAuditGame": "bomberanimals",
   "realtimeControlRequirements": [
     "All gameplay actions available with touch, including simultaneous movement and action inputs.",
     "Touchpad/direct drag and action controls inside the game view, using the existing AI games as the reference; no control rows below the board.",
     "Visible fullscreen control operable by touch and keyboard, with entry/exit and both orientations verified.",
     "Keyboard input retained on phones/tablets; independent release, cancellation, lost focus and restart verified through the browser."
   ],
-  "currentAuditFocus": "Restore and verify v080 original fighting gameplay before AI Enhanced work",
+  "currentAuditFocus": "Verify the recovered native BomberAnimals release, then restore the recovered climbing platformer.",
   "englishInterfaceRequirement": "All website interface text must be concise and in English.",
   "homepageEnglishCopyStatus": "passed",
   "homepageEnglishCopyEvidence": {

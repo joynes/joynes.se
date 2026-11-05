@@ -12,6 +12,8 @@ Audit published games in inventory order, one game at a time, including touch an
 
 ## Current priorities
 
+The missing BomberAnimals and upward-climbing platformer were recovered from the owner’s old Drive project backup. BomberAnimals is restored from its native common source with the original cat/dog sprites and effects, verified locally and awaiting public-route verification. The climbing project is archived as `game`; its source generates 10,000 platforms and records maximum height. Restore it next; its final title remains unconfirmed. Recovery links and evidence are in the inventory.
+
 Rall054 Original and AI Enhanced 1.1 are published and verified. ShadowRacer Original and faithful AI Enhanced 1.0 are also published and verified. The enhanced editions retain the original game identity; current checks and source commits are in the inventory.
 
 Rall v080 and Rall008 have playable hosted builds but are unlisted at the owner’s request because they are personal. Do not relist them. Marble Tables, Read and Place, SDL Space — Survival and all Remix editions remain withdrawn; their source and media are preserved privately. Keep the police-car and bus POCs excluded. No Source or Folder buttons belong in the game listings.

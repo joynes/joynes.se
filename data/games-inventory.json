@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "updatedAt": "2026-11-05",
   "objective": "Make every identified game and relevant version playable on the web, tested and published.",
-  "currentGame": "shadow-racer",
+  "currentGame": "bomberanimals",
   "games": [
     {
       "id": "web-quizzes",
@@ -15,7 +15,7 @@
           "url": "https://github.com/joynes/web_quizzes"
         }
       ],
-      "work": "Webbspel; laga omstart, \u00e5terkoppling och mobilvy. R\u00e4tta verifierade fel i fr\u00e5gebanken.",
+      "work": "Webbspel; laga omstart, återkoppling och mobilvy. Rätta verifierade fel i frågebanken.",
       "tests": [
         {
           "command": "npm test",
@@ -59,7 +59,7 @@
         "assets/games-catalog.js": "b3819497281f815dd77e20592f410af58aa7c9828825a1b792563bc365dc5c2e"
       },
       "websiteSection": "quizzes",
-      "originalTitle": "Fr\u00e5gespelet",
+      "originalTitle": "Frågespelet",
       "enhancedEdition": {
         "status": "planned-after-original-audit",
         "launchChoices": [
@@ -72,7 +72,7 @@
     },
     {
       "id": "grimace-gemini",
-      "title": "Grimace Maths \u2014 Gemini",
+      "title": "Grimace Maths — Gemini",
       "order": 2,
       "status": "published_verified",
       "sources": [
@@ -81,7 +81,7 @@
           "url": "https://github.com/joynes/test-gemini-math-game"
         }
       ],
-      "work": "Bevara originalets spelregler; testa plus/minus, r\u00e4tt/fel, omstart och mobil.",
+      "work": "Bevara originalets spelregler; testa plus/minus, rätt/fel, omstart och mobil.",
       "tests": [
         {
           "command": "npm test",
@@ -127,11 +127,11 @@
         "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6"
       },
       "websiteSection": "quizzes",
-      "originalTitle": "Milians Grimace Matte-spel \u2014 Gemini"
+      "originalTitle": "Milians Grimace Matte-spel — Gemini"
     },
     {
       "id": "grimace-codex",
-      "title": "Grimace Maths \u2014 Codex",
+      "title": "Grimace Maths — Codex",
       "order": 3,
       "status": "published_verified",
       "sources": [
@@ -140,7 +140,7 @@
           "url": "https://github.com/joynes/test-codex-math-game"
         }
       ],
-      "work": "Separat implementation av samma spelid\u00e9. Bevara som egen spelbar variant.",
+      "work": "Separat implementation av samma spelidé. Bevara som egen spelbar variant.",
       "tests": [
         {
           "command": "npm test",
@@ -187,7 +187,7 @@
         "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6"
       },
       "websiteSection": "quizzes",
-      "originalTitle": "Milians Grimace Matte-spel \u2014 Codex"
+      "originalTitle": "Milians Grimace Matte-spel — Codex"
     },
     {
       "id": "quiz-sdl",
@@ -200,7 +200,7 @@
           "url": "https://github.com/joynes/quiz_game"
         }
       ],
-      "work": "K\u00e4llkod i SDL/C++; befintligt webbbygge finns i quiz_game_online. Kontrollera filer, inmatning och mobilst\u00f6d.",
+      "work": "Källkod i SDL/C++; befintligt webbbygge finns i quiz_game_online. Kontrollera filer, inmatning och mobilstöd.",
       "tests": [
         {
           "command": "npm test",
@@ -244,7 +244,7 @@
         "commit": "bd39e6cfd3a42d621f70d77955115f0438f0f6cd"
       },
       "websiteSection": "quizzes",
-      "originalTitle": "L\u00e4s- och ordquiz",
+      "originalTitle": "Läs- och ordquiz",
       "enhancedEdition": {
         "status": "planned-after-original-audit",
         "launchChoices": [
@@ -270,7 +270,7 @@
           "url": "https://drive.google.com/drive/folders/132I5hcv_54GvCpR1gem7aeGRxo4DfizT"
         }
       ],
-      "work": "\u00d6vnings-, gissnings- och provl\u00e4gen. \u00c5terst\u00e4ll saknade bibliotek och speldata f\u00f6re publicering.",
+      "work": "Övnings-, gissnings- och provlägen. Återställ saknade bibliotek och speldata före publicering.",
       "tests": [
         {
           "command": "npm test",
@@ -309,7 +309,7 @@
       "categoryLabel": "AI remake of a retro game",
       "sourceCommit": "0374025ade4f22aff6b1af45cf0cdf96c4ea5b22",
       "restoredDataset": {
-        "title": "Dota 2 \u2013 \u00e5terst\u00e4lld upps\u00e4ttning",
+        "title": "Dota 2 – återställd uppsättning",
         "count": 127,
         "date": "2026-11-01",
         "source": "https://www.dota2.com/datafeed/herolist?language=english",
@@ -345,7 +345,7 @@
           "url": "https://github.com/joynes/hardword"
         }
       ],
-      "work": "Granska aktuell webbversion och publicerad adress; bevara alla befintliga spell\u00e4gen.",
+      "work": "Granska aktuell webbversion och publicerad adress; bevara alla befintliga spellägen.",
       "tests": [
         {
           "command": "npm test",
@@ -408,11 +408,11 @@
           "result": "all 16 code/data/media/catalog files byte-equal to final tested commit; canonical URL without query also byte-equal; successful Pages run 41281184548"
         },
         {
-          "check": "2026-11-03 touch audit \u2014 local",
+          "check": "2026-11-03 touch audit — local",
           "result": "Full learning/recovery/physics/Breakout/offline suite passed. Reproduced and fixed multi-touch drag loss, cancellation/focus cleanup and short-landscape layout. Real touch transfer and keyboard in desktop/mobile contexts passed. Live verification pending."
         },
         {
-          "check": "2026-11-03 touch audit \u2014 canonical live release",
+          "check": "2026-11-03 touch audit — canonical live release",
           "result": "Passed desktop/mobile keyboard, actual touch transfer and cancellation, focus cleanup, restart, full landscape board with scaled touch mapping, offline play and app-only cache isolation. All 18 released game/shared files match tested source; Pages run 41694261319 succeeded. Physical device and OS window-blur checks are not claimed."
         }
       ],
@@ -455,7 +455,7 @@
         "assets/games-catalog.js": "f85b33ac145fd81d4f24d8a8f6fdb79d1768d91d61524f176905520ff04404a6",
         "index.html": "5c9b5d0a89c04df6da53d1952b82d6f1c86fd5956e0d7035d4f9901fa644cf49"
       },
-      "originalTitle": "Skoluppgifter / Ordhj\u00e4lten"
+      "originalTitle": "Skoluppgifter / Ordhjälten"
     },
     {
       "id": "small-wonders",
@@ -472,7 +472,7 @@
           "url": "https://github.com/joynes/llmspel-play"
         }
       ],
-      "work": "Removed from the homepage at the owner\u2019s request. Source preserved privately; excluded from enhancement work.",
+      "work": "Removed from the homepage at the owner’s request. Source preserved privately; excluded from enhancement work.",
       "tests": [
         {
           "command": "npm run build -- --base=/llmspel-play/ (source repo)",
@@ -519,11 +519,11 @@
           "result": "HTML and catalog byte-equal to tested source; canonical homepage current; successful Pages run 41283165519. Public game repo HEAD remains verified 5d3c30c."
         },
         {
-          "check": "2026-11-03 renewed audit \u2014 local",
+          "check": "2026-11-03 renewed audit — local",
           "result": "33 production-preview tests passed. Reproduced and fixed held movement after canvas focus transfer in all three routes; visible labels now supply accessible names. Added mobile keyboard and real touch tests pass opposing directions, independent key/contact release, cancellation and focus cleanup. Public build ba1f7bf contains exactly the 109 tested files; live checks pending."
         },
         {
-          "check": "2026-11-03 renewed audit \u2014 canonical live build",
+          "check": "2026-11-03 renewed audit — canonical live build",
           "result": "Passed all 33 full-route gameplay/accessibility/recovery tests and added real touch plus mobile-keyboard input checks on all three routes. All 109 build files match tested SHA256. Private source 0999254, public build ba1f7bf, successful Pages run 41696898935. Homepage launchers pass at desktop/mobile widths."
         }
       ],
@@ -553,7 +553,7 @@
       "websiteSection": "ai",
       "sourceAuditCommit": "0999254eb63b1d173acf8cedb42033e945d6f24a",
       "browserBuildCommit": "ba1f7bf3c25fbae98fcbcd534d49c278b6da593b",
-      "originalTitle": "Small Wonders / Inuti spr\u00e5kmodellen",
+      "originalTitle": "Small Wonders / Inuti språkmodellen",
       "withdrawal": {
         "date": "2026-11-05",
         "reason": "Owner requested removal of the three games shown in Screenshot_20261105_182235_Chrome.jpg. Do not relist.",
@@ -570,7 +570,7 @@
               "url": "https://joynes.github.io/llmspel-play/?demo"
             },
             {
-              "name": "Matematik\u00e4ventyret",
+              "name": "Matematikäventyret",
               "url": "https://joynes.github.io/llmspel-play/?garden"
             }
           ]
@@ -591,7 +591,7 @@
           "url": "https://github.com/joynes/marble_tables"
         }
       ],
-      "work": "Withdrawn from the homepage and hosted builds at the owner\u2019s request. Source and local release archive preserved.",
+      "work": "Withdrawn from the homepage and hosted builds at the owner’s request. Source and local release archive preserved.",
       "tests": [
         {
           "command": "npm run test:marble:browser",
@@ -634,11 +634,11 @@
           "result": "passed on canonical live site: all 12 game/native-engine/configuration/shared-portal/document assets match the tested release"
         },
         {
-          "check": "2026-11-03 renewed audit \u2014 local landscape repair",
+          "check": "2026-11-03 renewed audit — local landscape repair",
           "result": "Canonical pre-repair game passed native mouse/touch drag, hold, gravity, restart, fullscreen, keyboard-native marble manipulation in desktop/mobile contexts, engine load failures and retry. Reproduced clipped landscape view. Repaired HTML/CSS passes full native touch cancellation and keyboard drag/drop/focus/fullscreen at 844x390. Unity files unchanged. Live repair verification pending."
         },
         {
-          "check": "2026-11-03 renewed audit \u2014 canonical live landscape repair",
+          "check": "2026-11-03 renewed audit — canonical live landscape repair",
           "result": "Passed real native touch drag/hold/cancel/gravity/restart and keyboard native marble manipulation, independent release, focus cleanup and fullscreen at 844x390. All 12 canonical release/shared files match tested SHA256; successful Pages run 41698933846. All five native Unity build/configuration files unchanged."
         }
       ],
@@ -668,7 +668,7 @@
       },
       "withdrawal": {
         "date": "2026-11-04",
-        "reason": "Unpublished at the owner\u2019s explicit request. Do not republish.",
+        "reason": "Unpublished at the owner’s explicit request. Do not republish.",
         "previousRelease": {
           "publishedUrl": "https://joynes.github.io/joynes.se/games/marble-tables/",
           "releaseFilesSha256": {
@@ -699,7 +699,7 @@
           "url": "https://github.com/joynes/SimpleDrivingGame"
         }
       ],
-      "work": "Polisvarianten publicerad och verifierad med k\u00e4llans modell/textur och exakt matchande k\u00f6rparametrar i den gemensamma native-motorn. Alla tre portar, vinst, omspel, tangentbord/touch, helsk\u00e4rm och laddnings\u00e5terh\u00e4mtning testade \u00e4ven publikt.",
+      "work": "Polisvarianten publicerad och verifierad med källans modell/textur och exakt matchande körparametrar i den gemensamma native-motorn. Alla tre portar, vinst, omspel, tangentbord/touch, helskärm och laddningsåterhämtning testade även publikt.",
       "tests": [
         {
           "command": "node scripts/test-driving-browser.cjs",
@@ -770,7 +770,7 @@
           "url": "https://github.com/joynes/unity_bus"
         }
       ],
-      "work": "\u00c4ldre bussvarianten publicerad och verifierad separat. Ursprunglig grafik/fysik och fungerande treportsuppdrag; gemensam webbv\u00e4rd med polisversionen. Hela mus-/touchuppdrag, vinst/omspel, laddnings\u00e5terh\u00e4mtning och helsk\u00e4rm kontrollerade \u00e4ven p\u00e5 riktig adress.",
+      "work": "Äldre bussvarianten publicerad och verifierad separat. Ursprunglig grafik/fysik och fungerande treportsuppdrag; gemensam webbvärd med polisversionen. Hela mus-/touchuppdrag, vinst/omspel, laddningsåterhämtning och helskärm kontrollerade även på riktig adress.",
       "tests": [
         {
           "command": "npm run test:bus:browser",
@@ -845,7 +845,7 @@
           "url": "https://github.com/joynes/godot-reading-game"
         }
       ],
-      "work": "Withdrawn from the homepage and hosted builds at the owner\u2019s request. Source and local release archive preserved.",
+      "work": "Withdrawn from the homepage and hosted builds at the owner’s request. Source and local release archive preserved.",
       "tests": [
         {
           "command": "npm test",
@@ -876,11 +876,11 @@
           "result": "All 8 game/catalog/index files match release SHA256 hashes on canonical live URLs. Pages run 41293921395 success; deployment API status succeed."
         },
         {
-          "check": "2026-11-03 renewed input audit \u2014 local",
+          "check": "2026-11-03 renewed input audit — local",
           "result": "Full original scene/rule/physics and browser regressions passed. Reproduced and fixed held-key pickup repeat and clipped phone-landscape scene. Added desktop/mobile key/touch/cancel/focus/restart checks and a full embedded keyboard solution passed. Shared website frame sizing and top-level game Back repair also passed five quiz/memory games at 844x390. Publication/live verification pending."
         },
         {
-          "check": "2026-11-03 renewed input audit \u2014 canonical live release",
+          "check": "2026-11-03 renewed input audit — canonical live release",
           "result": "Passed complete scene/physics/recovery suite; desktop/mobile keys, repeat guard, Shift fine movement, real touch/cancel, focus and restart. Embedded keyboard solutions, real frame-window focus loss, rotation and top-level Back passed. Five quiz/memory frame regressions passed. Nine canonical assets match tested hashes; successful Pages run 41706396850."
         }
       ],
@@ -890,7 +890,7 @@
       "webAdaptation": "ai",
       "categoryLabel": "AI remake of a retro game",
       "sourceCommit": "97a4f8aa5381032663f51395c62bf5fa4811ccf3",
-      "sourcePeriod": "2023-12\u20132024-01",
+      "sourcePeriod": "2023-12–2024-01",
       "webPath": "games/godot-reading/",
       "implementationNotes": "One authored relation, three original named objects, two platforms and floor. Missing spritesheet/font replaced by inline SVG and system font. JavaScript rectangle physics preserves dimensions/sensors/gravity, not native Godot engine. Visible boundary clamp, touch/keyboard and feedback added; source conflict doll corrected to actual balloon rule.",
       "deploymentRun": 41293921395,
@@ -913,7 +913,7 @@
       },
       "withdrawal": {
         "date": "2026-11-04",
-        "reason": "Unpublished at the owner\u2019s explicit request. Do not republish.",
+        "reason": "Unpublished at the owner’s explicit request. Do not republish.",
         "previousRelease": {
           "publishedUrl": "https://joynes.github.io/joynes.se/games/godot-reading/",
           "releaseFilesSha256": {
@@ -940,7 +940,7 @@
           "url": "https://github.com/joynes/car_topview_game"
         }
       ],
-      "work": "Removed from the homepage at the owner\u2019s request. Source preserved privately; excluded from enhancement work.",
+      "work": "Removed from the homepage at the owner’s request. Source preserved privately; excluded from enhancement work.",
       "tests": [
         {
           "command": "npm test",
@@ -1014,7 +1014,7 @@
       "categoryLabel": "AI game",
       "sourceCommit": "5450575feeb6d6b42c48e7d2708ea3863da424c8",
       "sourcePeriod": "2024-12",
-      "implementationNotes": "Latest free-drive Godot4 prototype; original car PNG and looping PCM24 engine WAV preserved. Acceleration 400, max speed 800, friction 200, steer 3 rad/s, drift factor 2, pitch 0.5\u20133. JavaScript formula port and rotated rectangle wall contacts, not native Godot. Source wall collision offset repaired; start/pause/reset/mute and multitouch added. No authored races or score.",
+      "implementationNotes": "Latest free-drive Godot4 prototype; original car PNG and looping PCM24 engine WAV preserved. Acceleration 400, max speed 800, friction 200, steer 3 rad/s, drift factor 2, pitch 0.5–3. JavaScript formula port and rotated rectangle wall contacts, not native Godot. Source wall collision offset repaired; start/pause/reset/mute and multitouch added. No authored races or score.",
       "deploymentRun": 41842371865,
       "websiteSection": "ai",
       "renewedAuditStatus": "passed",
@@ -1126,7 +1126,7 @@
     },
     {
       "id": "sdl-space",
-      "title": "SDL Space \u2014 Survival",
+      "title": "SDL Space — Survival",
       "order": 13,
       "status": "withdrawn_by_user",
       "sources": [
@@ -1135,7 +1135,7 @@
           "url": "https://github.com/joynes/sdl2-samples-with-wasm-support"
         }
       ],
-      "work": "Withdrawn from the homepage and hosted builds at the owner\u2019s request. Source and local release archive preserved.",
+      "work": "Withdrawn from the homepage and hosted builds at the owner’s request. Source and local release archive preserved.",
       "tests": [
         {
           "command": "npm test",
@@ -1202,7 +1202,7 @@
       "inGameControlsAndFullscreenStatus": "passed",
       "withdrawal": {
         "date": "2026-11-04",
-        "reason": "Unpublished at the owner\u2019s explicit request. Do not republish.",
+        "reason": "Unpublished at the owner’s explicit request. Do not republish.",
         "previousRelease": {
           "publishedUrl": "https://joynes.github.io/joynes.se/games/sdl-space/",
           "releaseFilesSha256": {
@@ -1234,7 +1234,7 @@
           "url": "https://github.com/joynes/test-network-game"
         }
       ],
-      "work": "Removed from the homepage at the owner\u2019s request. Source preserved privately; excluded from enhancement work.",
+      "work": "Removed from the homepage at the owner’s request. Source preserved privately; excluded from enhancement work.",
       "tests": [
         {
           "command": "pnpm test",
@@ -1336,7 +1336,7 @@
           "url": "https://github.com/joynes/test-rig-gemini"
         }
       ],
-      "work": "3D/Socket.IO-prototyp. Testa spelare, anslutning, r\u00f6relse och touch med riktig server.",
+      "work": "3D/Socket.IO-prototyp. Testa spelare, anslutning, rörelse och touch med riktig server.",
       "tests": [
         {
           "command": "npm test (test-rig-gemini)",
@@ -1414,7 +1414,7 @@
           "url": "https://github.com/joynes/neon-interceptor"
         }
       ],
-      "work": "Befintligt aktivt spelprojekt. Granska r\u00e4tt checkout och instruktioner; bevara kampanj, bossar, butik och multiplayer.",
+      "work": "Befintligt aktivt spelprojekt. Granska rätt checkout och instruktioner; bevara kampanj, bossar, butik och multiplayer.",
       "tests": [
         {
           "command": "npm test; npm --prefix game-server test (schmup)",
@@ -1452,7 +1452,7 @@
       "webAdaptation": "ai",
       "categoryLabel": "AI game",
       "sourceCommit": "e497f79e63f7ad402430a3db15a3e1fc2847aa49",
-      "sourcePeriod": "2026-09\u20132026-11",
+      "sourcePeriod": "2026-09–2026-11",
       "implementationRepository": "https://github.com/joynes/neon-interceptor",
       "sourceCommitsPushed": true,
       "externalUrl": "https://neon-interceptor.joynez11.chatgpt.site/",
@@ -1502,7 +1502,7 @@
           "url": "https://github.com/joynes/worldforge-self-test"
         }
       ],
-      "work": "Befintligt 3D-multiplayerspel. Testa byggande, uth\u00e5llig lagring, avatarer och riktiga samtidiga klienter.",
+      "work": "Befintligt 3D-multiplayerspel. Testa byggande, uthållig lagring, avatarer och riktiga samtidiga klienter.",
       "tests": [
         {
           "command": "npm test (unchanged WorldForge source)",
@@ -1804,7 +1804,7 @@
         "graphics": "Blender",
         "intent": "Keep original gameplay, maps, controls, progression and identity. Restore graphics/audio; new concepts belong to Remix.",
         "version": "1.0.0",
-        "title": "ShadowRacer \u00b7 AI Enhanced",
+        "title": "ShadowRacer · AI Enhanced",
         "webPath": "games/shadow-racer/restored/",
         "publicUrl": "https://joynes.github.io/joynes.se/games/shadow-racer/restored/",
         "sourceCommit": "59ee0b211879a86f712f18113ac5984ec930c150",
@@ -1863,7 +1863,7 @@
     },
     {
       "id": "rall-026",
-      "title": "Rall v026 \u2014 ASCII",
+      "title": "Rall v026 — ASCII",
       "order": 19,
       "status": "published_verified",
       "sources": [
@@ -1959,7 +1959,7 @@
     },
     {
       "id": "rall-030",
-      "title": "Rall v030 \u2014 Fighter",
+      "title": "Rall v030 — Fighter",
       "order": 20,
       "status": "published_verified",
       "sources": [
@@ -1968,7 +1968,7 @@
           "url": "https://drive.google.com/file/d/1FGPeHw10MCgX4vUwJNITWSx8r84M4TZ8/view"
         }
       ],
-      "work": "Originalets DOS-Fighter fr\u00e5n 1999 publicerat och verifierat: of\u00f6r\u00e4ndrade originalfiler, tv\u00e5 m\u00e4nskliga profiler, datorfigurer, tangentbord/touch, MOD/MIDI och nativa redigerare med filbackup.",
+      "work": "Originalets DOS-Fighter från 1999 publicerat och verifierat: oförändrade originalfiler, två mänskliga profiler, datorfigurer, tangentbord/touch, MOD/MIDI och nativa redigerare med filbackup.",
       "tests": [
         {
           "command": "python3 scripts/test-rall-030.py",
@@ -2117,7 +2117,7 @@
     },
     {
       "id": "rall-054",
-      "title": "Rall v054 / rall0054 \u2014 Tank",
+      "title": "Rall v054 / rall0054 — Tank",
       "order": 21,
       "status": "published_verified",
       "sources": [
@@ -2403,7 +2403,7 @@
         ],
         "graphics": "Blender",
         "intent": "Keep original gameplay, maps, controls, progression and identity. Restore graphics/audio; new concepts belong to Remix.",
-        "title": "Rall v054 \u00b7 AI Enhanced",
+        "title": "Rall v054 · AI Enhanced",
         "version": "1.1.0",
         "webPath": "games/rall-054/restored/",
         "publicUrl": "https://joynes.github.io/joynes.se/games/rall-054/restored/",
@@ -2450,7 +2450,7 @@
     },
     {
       "id": "rall-006",
-      "title": "Rall006 \u2014 Tank",
+      "title": "Rall006 — Tank",
       "order": 22,
       "status": "pending",
       "sources": [
@@ -2463,7 +2463,7 @@
           "url": "https://drive.google.com/drive/folders/1PP4d2mWdYiW7hGYP_l6O1iHyJyrd3Mt8"
         }
       ],
-      "work": "Befintlig remake beh\u00f6ver full kontroll mot originalets lag, rundor, kartor, normal/siege och powerups.",
+      "work": "Befintlig remake behöver full kontroll mot originalets lag, rundor, kartor, normal/siege och powerups.",
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
@@ -2484,7 +2484,7 @@
     },
     {
       "id": "rall-066",
-      "title": "Rall v066 \u2014 Tank2",
+      "title": "Rall v066 — Tank2",
       "order": 23,
       "status": "pending",
       "sources": [
@@ -2493,7 +2493,7 @@
           "url": "https://drive.google.com/file/d/18nKEpqA1gdMGeBfRbiRk2zMZC-y0xRtR/view"
         }
       ],
-      "work": "Drive-release. J\u00e4mf\u00f6r med rall006; sl\u00e5 bara ihop poster om faktisk versionsrelation verifieras.",
+      "work": "Drive-release. Jämför med rall006; slå bara ihop poster om faktisk versionsrelation verifieras.",
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
@@ -2514,7 +2514,7 @@
     },
     {
       "id": "rall-073",
-      "title": "Rall v073 \u2014 Party",
+      "title": "Rall v073 — Party",
       "order": 24,
       "status": "pending",
       "sources": [
@@ -2527,7 +2527,7 @@
           "url": "https://drive.google.com/file/d/1PtpYPN1d2DzTHMuPNXIS9VEXSN7-0fhi/view"
         }
       ],
-      "work": "Drive-release och party-k\u00e4llmapp. Inspektera och porta originalets spell\u00e4gen.",
+      "work": "Drive-release och party-källmapp. Inspektera och porta originalets spellägen.",
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
@@ -2548,7 +2548,7 @@
     },
     {
       "id": "rall-080",
-      "title": "Rall v080 \u2014 Fighter",
+      "title": "Rall v080 — Fighter",
       "order": 25,
       "status": "published_verified",
       "sources": [
@@ -3110,7 +3110,7 @@
         "publishedHashes": 236
       },
       "homepageListingStatus": "unlisted_by_user",
-      "homepageListingReason": "Removed from homepage links at the owner\u2019s request. Do not relist."
+      "homepageListingReason": "Removed from homepage links at the owner’s request. Do not relist."
     },
     {
       "id": "rall-008",
@@ -3566,11 +3566,11 @@
         "publishedHashes": 178
       },
       "homepageListingStatus": "unlisted_by_user",
-      "homepageListingReason": "Removed from homepage links at the owner\u2019s request. Do not relist."
+      "homepageListingReason": "Removed from homepage links at the owner’s request. Do not relist."
     },
     {
       "id": "rall-082",
-      "title": "Rall v082 \u2014 Fighter Multi",
+      "title": "Rall v082 — Fighter Multi",
       "order": 27,
       "status": "pending",
       "sources": [
@@ -3579,7 +3579,7 @@
           "url": "https://drive.google.com/file/d/1L8tDvObDXUk_P9UFcLxA9yn1oIK24s7c/view"
         }
       ],
-      "work": "Drive-release som MSI. J\u00e4mf\u00f6r med rall008; multiplayer m\u00e5ste verifieras f\u00f6re sammanslagning.",
+      "work": "Drive-release som MSI. Jämför med rall008; multiplayer måste verifieras före sammanslagning.",
       "tests": [],
       "publishedUrl": null,
       "implementationCommit": null,
@@ -3597,47 +3597,113 @@
         "graphics": "Blender",
         "soundAndMusic": "ElevenLabs"
       }
+    },
+    {
+      "id": "bomberanimals",
+      "title": "BomberAnimals",
+      "status": "ready_pending_publication_verification",
+      "sources": [
+        {
+          "kind": "google-drive",
+          "url": "https://drive.google.com/drive/folders/1-In8-QVJJHtKAMvWnTJfYbPgfJ_RNV31"
+        }
+      ],
+      "category": "retro",
+      "webAdaptation": "ai",
+      "homepageListed": true,
+      "work": "Recovered original native BomberAnimals, compiled its gameplay and renderer to WebAssembly, preserved original art and effects, and verified solo/co-op gameplay plus mobile touch, keyboard and fullscreen before publication.",
+      "recoveryDate": "2026-11-05",
+      "publicationRequirement": "Actual browser gameplay, touch, attached keyboard, cancellation/focus/restart and fullscreen checks before publication.",
+      "publishedUrl": "https://joynes.github.io/joynes.se/games/bomberanimals/",
+      "sourceCommit": "d655bfa6c1ed7f3d8842db90d5ee6929543c599a",
+      "implementationCommit": "7f19a4db32ec37c1f23da694e7f68542b38504e1",
+      "version": "native-web.1",
+      "tests": [
+        {
+          "command": "private scripts/test-browser.cjs",
+          "result": "passed in Chrome at 1280×900, 390×844, 844×390 and 320×740; solo/co-op actual movement, independent release, native touch, cancel, pause, blur event, restart, audio, fullscreen/rotation, native hazards/damage/game over/replay. WebKit unavailable; no physical handset tested."
+        },
+        {
+          "command": "private scripts/test-recovery.cjs",
+          "result": "passed: four failed resources with retry, held-key restart and fullscreen ownership, real graphics-context loss/retry."
+        },
+        {
+          "command": "node scripts/test-bomberanimals-home.cjs",
+          "result": "passed local homepage iframe at four sizes: original native co-op keyboard movement, touch/cancel, fullscreen and route cleanup."
+        }
+      ],
+      "releaseFilesSha256": {
+        "games/bomberanimals/app.mjs": "f85cbf127fbb311d4b0508354ae7051fe241d09a2b4582210c52e0c5b51a85cf",
+        "games/bomberanimals/audio/explosion.wav": "4a516ee0d83d8072a54c6be551d29bc9396c9ac3d1705b8940de6f45c5104bd0",
+        "games/bomberanimals/audio/hit.wav": "148e062686e0387490b73ea1366053cec5586f178188913ef3180ac5bca8eda0",
+        "games/bomberanimals/audio/hurt.wav": "424543bd24798428b3e762cbc2ff4495f0edfb2ba54f4c33340af28d504b70a4",
+        "games/bomberanimals/audio/jump.wav": "556e8785f728f31a86ae1e03cdbf14cabcdccdd69e8071c7680db7de627f395a",
+        "games/bomberanimals/index.html": "70786c9be411b230c241147e25750ca5b0eecc7e0e56247d4fb0ab3b12000e63",
+        "games/bomberanimals/native-provenance.json": "1affe6213a5dbfe17c174bea96c01528612516851fd5acf630970a7ea145e505",
+        "games/bomberanimals/restoration-notes.md": "83b6fdd828b564bc6fc209e3ba648f8670c2147e2831a2ed049147677a96a16b",
+        "games/bomberanimals/runtime.data": "2f998ba8e7f983e01049481460184c9b4df63e6af171537753538860f06ac40b",
+        "games/bomberanimals/runtime.js": "17f0038024cc2987e4391b48275741d1b97aca45ff887fb8898f1d104c5c7598",
+        "games/bomberanimals/runtime.wasm": "b0a70cae92e1e6d91c942dc385d035ac8e24b152dd637b449917163c9ebb88c9",
+        "games/bomberanimals/style.css": "6eae953c4d60ee03161ee6006ac70723d249eee5dd3e234f261edf1587d1ab23"
+      }
+    },
+    {
+      "id": "upward-platformer",
+      "title": "Upward platformer",
+      "status": "source_recovered_pending_browser_adaptation",
+      "sources": [
+        {
+          "kind": "google-drive",
+          "url": "https://drive.google.com/drive/folders/1aV_-qD6--dy6Q3h7HmDeLCkVLh_K0fnv"
+        }
+      ],
+      "category": "retro",
+      "webAdaptation": "ai",
+      "homepageListed": false,
+      "work": "Archived folder named game: C++ source generates 10,000 platforms, tracks current/max climbing height, uses a following camera, original character/bed/platform atlas and FMOD audio. Official title not yet identified.",
+      "recoveryDate": "2026-11-05",
+      "publicationRequirement": "Actual browser gameplay, touch, attached keyboard, cancellation/focus/restart and fullscreen checks before publication."
     }
   ],
   "candidatesToInspect": [
     {
       "repository": "picture_puzzle",
-      "evidence": "Granskad lib/main.dart \u00e4r Flutter-r\u00e4knarmallen; ingen pusselmekanik verifierad. S\u00f6k andra grenar/arkiv f\u00f6re beslut."
+      "evidence": "Granskad lib/main.dart är Flutter-räknarmallen; ingen pusselmekanik verifierad. Sök andra grenar/arkiv före beslut."
     },
     {
       "repository": "lightbot",
-      "evidence": "Namnet r\u00e4cker inte f\u00f6r spelklassificering. L\u00e4s programmet."
+      "evidence": "Namnet räcker inte för spelklassificering. Läs programmet."
     },
     {
       "repository": "relearn",
-      "evidence": "Terminalbaserad l\u00e4randeapp. Kontrollera om det finns spelmoment."
+      "evidence": "Terminalbaserad lärandeapp. Kontrollera om det finns spelmoment."
     },
     {
       "repository": "test_share_unity_hello_world",
-      "evidence": "Unity-delningstest. Kontrollera om det inneh\u00e5ller ett faktiskt spel."
+      "evidence": "Unity-delningstest. Kontrollera om det innehåller ett faktiskt spel."
     }
   ],
   "nonGames": [
     {
       "name": "jaro-och-grodan",
-      "reason": "original/source inneh\u00e5ller ber\u00e4ttelsens textavsnitt; inget spelprogram i det granskade arkivet."
+      "reason": "original/source innehåller berättelsens textavsnitt; inget spelprogram i det granskade arkivet."
     },
     {
       "name": "jaro-and-grodan",
-      "reason": "original inneh\u00e5ller Reason-projekt, PNG och XCF; grafik/musik, inte ett verifierat spel."
+      "reason": "original innehåller Reason-projekt, PNG och XCF; grafik/musik, inte ett verifierat spel."
     },
     {
       "name": "10 -20 - rall",
-      "reason": "Det granskade lokala arkivet inneh\u00e5ller fotografier."
+      "reason": "Det granskade lokala arkivet innehåller fotografier."
     },
     {
       "name": "joyEngine och OpenGL-mallar",
-      "reason": "Spelmotorer/teknikmallar \u00e4r inte separata f\u00e4rdiga spel."
+      "reason": "Spelmotorer/teknikmallar är inte separata färdiga spel."
     }
   ],
   "classification": {
-    "retro": "\u00c4ldre original som g\u00f6rs om till webbspel med AI. Ursprung och AI-remake m\u00e4rks separat.",
-    "ai": "Nyare spel fr\u00e5n ungef\u00e4r de senaste tv\u00e5 \u00e5ren, enligt Johannes kategorisering.",
+    "retro": "Äldre original som görs om till webbspel med AI. Ursprung och AI-remake märks separat.",
+    "ai": "Nyare spel från ungefär de senaste två åren, enligt Johannes kategorisering.",
     "publicationDoesNotChangeOriginalEra": true
   },
   "requirements": {

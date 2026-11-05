@@ -1,0 +1,11 @@
+{
+  "originalSourceSha256": "b366748a8e40aa66388406eff3e728237515f5abb7c403dc382b022a33c1de29",
+  "compiledSourceSha256": "2d227561684c579afd02d3ab627b1c107f9c41eebe468a4997090af0e9155878",
+  "method": "Original native game logic and GL renderer compiled to WebAssembly; Cocoa windowing, paths, logging and AVFoundation audio use browser platform glue. C enum scope is adapted to C++.",
+  "repairs": [
+    "UV attribute size corrected from three to two floats after a WebGL buffer-overread error.",
+    "Missing free-position braces restored after reproducing an overlapping second-player spawn."
+  ],
+  "builder": "scripts/build-browser.py",
+  "sourceSnapshot": "SOURCE_MANIFEST.json"
+}
