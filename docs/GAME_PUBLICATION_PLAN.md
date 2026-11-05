@@ -12,7 +12,7 @@ Audit published games in inventory order, one game at a time, including touch an
 
 ## Current priorities
 
-The missing BomberAnimals and upward-climbing platformer were recovered from the owner’s old Drive project backup. BomberAnimals is restored from its native common source with the original cat/dog sprites and effects, published and verified locally, on the canonical homepage and through joynes.se’s forwarding page. The climbing project is archived as `game`; its source generates 10,000 platforms and records maximum height. Its native browser restoration, provisionally titled Upward Platformer, passed local gameplay/input/recovery checks and is awaiting public launch verification. The final historical title remains unconfirmed. Recovery links and evidence are in the inventory.
+The missing BomberAnimals and upward-climbing platformer were recovered from the owner’s old Drive project backup. BomberAnimals is restored from its native common source with the original cat/dog sprites and effects, published and verified locally, on the canonical homepage and through joynes.se’s forwarding page. The climbing project is archived as `game`; its source generates 10,000 platforms and records maximum height. Its native browser restoration, provisionally titled Upward Platformer, is published and passed local gameplay/input/recovery checks plus all eight canonical-homepage and joynes.se launch checks. The final historical title remains unconfirmed. Recovery links and evidence are in the inventory.
 
 Rall054 Original and AI Enhanced 1.1 are published and verified. ShadowRacer Original and faithful AI Enhanced 1.0 are also published and verified. The enhanced editions retain the original game identity; current checks and source commits are in the inventory.
 
@@ -82,7 +82,7 @@ The machine-readable queue, source links, version relationships, test evidence a
 | 26 | Rall008 | Hosted build retained; unlisted at owner request |
 | 27 | Rall v082 — Fighter Multi | Pending |
 | 28 | BomberAnimals | Recovered native game; restored, published and verified |
-| 29 | Upward Platformer (working title) | Recovered native game; restored and tested locally; public-route verification pending |
+| 29 | Upward Platformer (working title) | Recovered native game; restored, published and verified |
 
 ## Additional candidates
 

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "updatedAt": "2026-11-05",
   "objective": "Make every identified game and relevant version playable on the web, tested and published.",
-  "currentGame": "upward-platformer",
+  "currentGame": null,
   "games": [
     {
       "id": "web-quizzes",
@@ -3657,7 +3657,7 @@
     {
       "id": "upward-platformer",
       "title": "Upward Platformer",
-      "status": "ready_pending_publication_verification",
+      "status": "published_verified",
       "sources": [
         {
           "kind": "google-drive",
@@ -3688,6 +3688,18 @@
         {
           "command": "private scripts/test-recovery.cjs",
           "result": "passed four failed resources/retry, stale-key restart, fullscreen key ownership, graphics loss/retry and failed music recovery."
+        },
+        {
+          "command": "HOMEPAGE_BASE_URL=https://joynes.github.io/joynes.se/ node scripts/test-upward-platformer-home.cjs; FORWARDED_BASE_URL=https://joynes.se/ node scripts/test-upward-platformer-home.cjs",
+          "result": "passed all eight live checks at 1280/390/844/320 widths: original keyboard movement/jump, simultaneous native touch/cancel and fullscreen via homepage iframe and joynes.se direct window."
+        },
+        {
+          "check": "live-file-integrity",
+          "result": "All 26 published files across both recovered games match tested local SHA-256 ledgers."
+        },
+        {
+          "command": "npm test; homepage withdrawal browser checks",
+          "result": "passed 24 Node tests and Python preservation tests; all four sizes retain the requested screenshot-game removals."
         }
       ],
       "releaseFilesSha256": {
@@ -3705,7 +3717,10 @@
         "games/upward-platformer/runtime.js": "82acbfbccf92dc05dc89d3929a6b242f369c25c4a3328e12890b7a8e4bd4f55b",
         "games/upward-platformer/runtime.wasm": "3aa7c03c3d0f5ef27dfee8c9a4eb33f364dedcb340ac8d8e2da54bf5714f3901",
         "games/upward-platformer/style.css": "0ddf6276e7122607bdf9807b574b2590591f18dde52bf2463b259a4857e297ce"
-      }
+      },
+      "auditCommit": "648ed273fc6f65f2d47e887d823ffad4a374dcd0",
+      "deploymentCommit": "beeb752873c6cdcdbb6df5db36ee1b599e9581fd",
+      "deploymentRunId": 42082177162
     }
   ],
   "candidatesToInspect": [
