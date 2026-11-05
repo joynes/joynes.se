@@ -3656,8 +3656,8 @@
     },
     {
       "id": "upward-platformer",
-      "title": "Upward platformer",
-      "status": "source_recovered_pending_browser_adaptation",
+      "title": "Upward Platformer",
+      "status": "ready_pending_publication_verification",
       "sources": [
         {
           "kind": "google-drive",
@@ -3666,12 +3666,46 @@
       ],
       "category": "retro",
       "webAdaptation": "ai",
-      "homepageListed": false,
-      "work": "Recovered and checkpointed original desktop/common source, native executable, three atlases, bitmap font, WAV effects, intro, XM music and LodePNG decoder (22 source/media files). Archived as game; official title unconfirmed. Browser restoration in progress.",
+      "homepageListed": true,
+      "work": "Recovered original native climbing game and compiled its physics, platforms, enemies, water and renderer to WebAssembly. Original art/effects and archived tracker music retained; touch/keyboard, full restart and fullscreen verified locally.",
       "recoveryDate": "2026-11-05",
       "publicationRequirement": "Actual browser gameplay, touch, attached keyboard, cancellation/focus/restart and fullscreen checks before publication.",
       "sourceCommit": "4fa9ed105e2c129b92fc03c806422c2b17bf8209",
-      "sourceRepository": "https://github.com/joynes/upward-platformer"
+      "sourceRepository": "https://github.com/joynes/upward-platformer",
+      "titleStatus": "Descriptive working title; archived as game.",
+      "version": "native-web.1",
+      "implementationCommit": "17d912b854780e0bedef8a132e4c895f8fa87e75",
+      "publishedUrl": "https://joynes.github.io/joynes.se/games/upward-platformer/",
+      "tests": [
+        {
+          "command": "private scripts/test-browser.cjs",
+          "result": "passed Chrome 1280/390/844/320 widths: keyboard movement/jump and native multi-touch, independent lift, cancel, pause/blur/restart, complete course reset, fullscreen/rotation and key ownership, sound/day-night. No physical handset or WebKit tested."
+        },
+        {
+          "command": "private scripts/test-gameplay.cjs",
+          "result": "passed actual ordinary jumping and platform landing, native height 1.4738514, following camera, fall, initial-course restoration and best-height persistence. Does not establish completion of 10,000 platforms; advanced pilots encountered original hazards and remain private."
+        },
+        {
+          "command": "private scripts/test-recovery.cjs",
+          "result": "passed four failed resources/retry, stale-key restart, fullscreen key ownership, graphics loss/retry and failed music recovery."
+        }
+      ],
+      "releaseFilesSha256": {
+        "games/upward-platformer/app.mjs": "e724656cbc64fd4694c255870449cfe6b3047236ea714eda4366669e0d744264",
+        "games/upward-platformer/audio/ambient-dreams.mp3": "ec17e53b771d9d036bf43876679a3019f210e97117f6bd234ffb0b021f6f1167",
+        "games/upward-platformer/audio/hit.wav": "148e062686e0387490b73ea1366053cec5586f178188913ef3180ac5bca8eda0",
+        "games/upward-platformer/audio/hurt.wav": "424543bd24798428b3e762cbc2ff4495f0edfb2ba54f4c33340af28d504b70a4",
+        "games/upward-platformer/audio/intro.wav": "127ccfb96ab64974efe99c3c8f760a5781091705880ebc0d6f7ff68ac69b0f44",
+        "games/upward-platformer/audio/jump.wav": "556e8785f728f31a86ae1e03cdbf14cabcdccdd69e8071c7680db7de627f395a",
+        "games/upward-platformer/audio/typewriter.wav": "d486df17875359f62c0a43a9cfb7572b4f0c548ed808433e6f55ebb7d9a52788",
+        "games/upward-platformer/index.html": "55b834a6f9c259aa3f34cfa515474c539bb02f27ae39898c8367eb73234dcb43",
+        "games/upward-platformer/native-provenance.json": "87e6f90bf943263e2b5ad19f27d5a8b1468df32ae8ba353d8267632cb2cb30fc",
+        "games/upward-platformer/restoration-notes.md": "fb44b636f78e6e1e3e6ac151e2b5e131d16605bf8ad788d0e1fb02a49a97614e",
+        "games/upward-platformer/runtime.data": "8b77aa0386b1de307176e51264dab44f185a3fd64fea94e8d41d4df77446380d",
+        "games/upward-platformer/runtime.js": "82acbfbccf92dc05dc89d3929a6b242f369c25c4a3328e12890b7a8e4bd4f55b",
+        "games/upward-platformer/runtime.wasm": "3aa7c03c3d0f5ef27dfee8c9a4eb33f364dedcb340ac8d8e2da54bf5714f3901",
+        "games/upward-platformer/style.css": "0ddf6276e7122607bdf9807b574b2590591f18dde52bf2463b259a4857e297ce"
+      }
     }
   ],
   "candidatesToInspect": [

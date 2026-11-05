@@ -1,6 +1,14 @@
 // Only tested releases belong here. The complete work queue is in data/games-inventory.json.
 window.joynesPublishedGames = [
   {
+    id: "upward-platformer",
+    title: "Upward Platformer",
+    kind: "retro",
+    description: "Retro · Jump between platforms. Keep climbing.",
+    href: "games/upward-platformer/",
+    version: "native-web.1"
+  },
+  {
     id: "bomberanimals",
     title: "BomberAnimals",
     kind: "retro",

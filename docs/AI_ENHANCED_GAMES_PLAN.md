@@ -16,7 +16,7 @@ All three Remix editions are withdrawn at the owner’s request. Their source an
 
 ## Remaining work
 
-Continue with the remaining adapted older games: Word Quiz, Quiz Game, Memit, Rall v026, Rall v030. Verify each Original first, preserve its identity, then test and publish the faithful edition. Do not expose placeholders. Keep the police-car and bus POCs excluded.
+Continue with the remaining adapted older games: Word Quiz, Quiz Game, Memit, Rall v026, Rall v030. The newly recovered BomberAnimals and Upward Platformer originals join this queue after their browser restorations are published and verified. Verify each Original first, preserve its identity, then test and publish the faithful edition. Do not expose placeholders. Keep the police-car and bus POCs excluded.
 
 Use the available ElevenLabs music/sound-effect skills when new audio is appropriate. Preserve prompts, models, parameters, generation IDs and hashes privately. Publish optimized selected files and accurate provenance; keep credentials, signed URLs and billing data private. Existing generated music and sound remain part of their Remix games.
 

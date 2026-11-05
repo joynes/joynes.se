@@ -985,7 +985,9 @@
       "checkpointBranch": "main",
       "checkpointCommit": "4fa9ed105e2c129b92fc03c806422c2b17bf8209",
       "sourceTreeVerified": true,
-      "releaseStatus": "source_recovered_pending_browser_adaptation"
+      "releaseStatus": "ready_pending_publication_verification",
+      "repositoryHeadCommit": "17d912b854780e0bedef8a132e4c895f8fa87e75",
+      "auditStatus": "passed_local"
     }
   ],
   "currentAuditGame": "upward-platformer",

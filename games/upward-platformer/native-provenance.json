@@ -1,0 +1,9 @@
+{
+  "method": "Original C++ physics, generated platforms and GLES renderer compiled to WebAssembly. Cocoa windowing/paths and FMOD effects use browser platform glue.",
+  "originalSourceSha256": "18ea383d948fd9a71e075c37d7a4ac99b7b8da6295b114fa0a0fe6a10d3eb91f",
+  "compiledSourceSha256": "817c9b6cc842ed8667c2ca59ef801fd424614447322c69e7b3d60810101b8b54",
+  "titleStatus": "Descriptive working title; original archived as game.",
+  "audio": "Original WAV effects. Archived Ambient Dreams XM rendered with libopenmpt and encoded to MP3 for browser streaming; host starts the ambient loop.",
+  "restart": "Restores original setup snapshots for player, camera, initial platforms and enemies.",
+  "observer": "Read-only getters; no game-state setters used by browser tests."
+}
